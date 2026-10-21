@@ -1,5 +1,24 @@
 [
   {
+    "id": "skill-gsap-skills",
+    "kind": "skill",
+    "title": "gsap-skills",
+    "category": "动画动效",
+    "tags": "GSAP / 时间轴 / 滚动联动 / SVG / 动画开发",
+    "description": "GreenSock 官方的 GSAP 技能合集，帮助 AI 正确编写时间轴、滚动联动、错峰和 SVG 动画，并处理框架集成与性能优化。适合网页动效和交互动画开发。",
+    "source": "https://github.com/greensock/gsap-skills",
+    "documentation": "https://github.com/greensock/gsap-skills/blob/main/README.md",
+    "prompt": "gsap-skills\n\n用途：GreenSock 官方提供的一组 AI 动画开发技能，指导代理使用 GSAP 编写和维护网页动画。它是多个 Skills 的合集，并非只有一份 Skill。\n\n覆盖：基础补间与缓动、时间轴编排、错峰入场、ScrollTrigger 滚动联动、动画插件、React/Vue/Svelte 集成和性能优化。\n\n适合：多元素协同动画、滚动叙事、SVG 动效，以及需要暂停、反转或动态控制的交互动画。\n\n主要技能：gsap-core、gsap-timeline、gsap-scrolltrigger、gsap-plugins、gsap-utils、gsap-react、gsap-performance、gsap-frameworks。\n\n收录状态：已收藏官方来源和用途说明，尚未安装或执行。\n预览：本工具箱绘制的动效用途示意图，非运行原 Skill 的实测结果。\n\n官方仓库：https://github.com/greensock/gsap-skills",
+    "addedAt": "2026-10-22",
+    "verifiedAt": "2026-10-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-gsap-skills/preview.svg",
+      "alt": "GSAP 路径与错峰动画效果示意"
+    },
+    "previewNote": "为查找用途绘制的概念示意图，非运行原 Skill 的实测结果。"
+  },
+  {
     "id": "skill-ruic-card-skill",
     "kind": "skill",
     "title": "RuiC-card-skill",
@@ -10,7 +29,13 @@
     "prompt": "RuiC-card-skill\n\n用途：根据文字描述或参考图制作交互式 3D 全息收藏卡，包含随视角变化的镭射材质和分层视差。\n\n主要交付：可交互的 Three.js 网页、可编辑的 card.blend、透明分层图、卡牌配置与渲染图。网页支持拖拽、翻面及材质和景深调整。\n\n适合：角色收藏卡、宠物或团队纪念卡、产品展示卡，以及卡牌材质实验。\n\n使用条件：具备生成和查看图像能力的多模态模型；Python、Pillow、Node.js 和 npm。实际运行流程可能下载项目内使用的 Blender 便携版。\n\n收录状态：已收藏说明与来源，尚未安装或执行该 Skill。\n\n官方仓库：https://github.com/HRuiCcc/RuiC-card-skill\n官方说明：https://github.com/HRuiCcc/RuiC-card-skill/blob/main/SKILL.md",
     "addedAt": "2026-10-22",
     "verifiedAt": "2026-10-22",
-    "documentation": "https://github.com/HRuiCcc/RuiC-card-skill/blob/main/SKILL.md"
+    "documentation": "https://github.com/HRuiCcc/RuiC-card-skill/blob/main/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ruic-card-skill/preview.svg",
+      "alt": "RuiC 全息卡牌流光与分层效果示意"
+    },
+    "previewNote": "为查找用途绘制的概念示意图，非运行原 Skill 的实测结果。"
   },
   {
     "id": "fab-to-sheet",
