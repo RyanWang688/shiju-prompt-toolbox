@@ -15,6 +15,16 @@
 
 ## 数据与实现
 
+## Skills 收录与个人评分（2026-10-22 补充）
+
+- 用户可以告知要加入的 Skill；先读取该 Skill 的实际说明或用户提供的材料，再收录。不要把仅提及的 Skill 自动当作收藏，也不要因收录而安装或执行它。
+- 每次收录 Skill，卡片和回复都用一两句话简短介绍它做什么、适合什么任务。不要只说“已加入”。
+- Skill 使用 `kind: "skill"`，保留名称、来源 `source`、用途 `description` 及说明 `prompt`；现有提示词缺省为 `kind: "prompt"`。不编造 Skills 示例。
+- 个人 1～5 星评分由用户决定；代理不代评。评分独立保存在当前浏览器的 `shiju-ratings-v1`，刷新后保留，不因仓库内容更新而覆盖。重复点击当前星级可清除评分。
+- JSON 导出包含 Skill 信息与用户评分；导入应恢复评分并合并重复条目。目前没有跨设备云同步，不能把浏览器评分说成已保存进 GitHub。
+
+## 数据文件约定
+
 - `prompts.json` 是仓库收录数据源。只收录用户提供的真实提示词，不添加示例。
 - `index.template.html` 是页面源文件，`index.html` 是可直接打开的生成产物，均跟踪。
 - 每条记录：`id`、`title`、`category`、`tags`（字符串）、`description`、`prompt`；可选 `preview: {type: "image" | "animation" | "video", src: "assets/<id>/...", alt: "..."}`。

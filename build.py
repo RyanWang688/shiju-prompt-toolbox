@@ -10,6 +10,9 @@ for item in items:
     assert all(isinstance(item.get(k), str) and item[k].strip() for k in ('id', 'title', 'category', 'prompt'))
     assert item['id'] not in ids, 'Duplicate prompt id'
     ids.add(item['id'])
+    assert item.get('kind', 'prompt') in ('prompt', 'skill')
+    if item.get('kind') == 'skill':
+        assert isinstance(item.get('description'), str) and item['description'].strip(), 'Skill requires a brief purpose'
     preview = item.get('preview')
     if preview:
         assert preview['type'] in ('image', 'animation', 'video')
