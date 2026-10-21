@@ -15,7 +15,7 @@
 
 ## 数据与实现
 
-- `prompts.json` 是仓库收录数据源，当前必须是空数组，直到用户提供真实提示词。
+- `prompts.json` 是仓库收录数据源。只收录用户提供的真实提示词，不添加示例。
 - `index.template.html` 是页面源文件，`index.html` 是可直接打开的生成产物，均跟踪。
 - 每条记录：`id`、`title`、`category`、`tags`（字符串）、`description`、`prompt`；可选 `preview: {type: "image" | "animation" | "video", src: "assets/<id>/...", alt: "..."}`。
 - ID 稳定且唯一。分类优先使用：动画动效、文字效果、界面设计、写作表达、其他；必要时同步扩展分类 UI。

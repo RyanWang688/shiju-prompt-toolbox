@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "id": "fab-to-sheet",
+    "title": "加号展开面板",
+    "category": "动画动效",
+    "tags": "容器变形 / 面板 / 480ms",
+    "description": "容器从悬浮按钮连续展开，选项错峰淡入。",
+    "prompt": "悬浮按钮形变为底部面板（FAB to Sheet）：同一个容器的宽高从64连续过渡到470乘300、圆角从32到28，走cubic-bezier(.2,.9,.22,1)约480ms；面板里的选项等容器落定后按每项4帧交错淡入，关闭时沿同一条曲线反向收回原位。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/fab-to-sheet/preview.html",
+      "alt": "加号展开面板：可交互演示"
+    },
+    "sourceImage": "assets/fab-to-sheet/source.png",
+    "previewNote": "根据提示词手工制作的可交互演示，非模型实测输出。",
+    "addedAt": "2026-10-22"
+  },
+  {
+    "id": "button-loader-success",
+    "title": "提交状态反馈",
+    "category": "动画动效",
+    "tags": "按钮 / 加载 / 状态反馈",
+    "description": "按钮、环形进度和成功结果在同一容器完成。",
+    "prompt": "按钮状态形变链（Button to Loader to Success）：点击后宽度从470收到76变成圆形，沿边缘绘制环形进度；走满后环合拢，勾形用strokeDasharray描边画出来，再横向展开成结果条。三个状态共用一个容器，位置从头到尾不变。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/button-loader-success/preview.html",
+      "alt": "提交状态反馈：可交互演示"
+    },
+    "sourceImage": "assets/button-loader-success/source.png",
+    "previewNote": "根据提示词手工制作的可交互演示，非模型实测输出。",
+    "addedAt": "2026-10-22"
+  },
+  {
+    "id": "elastic-tab-indicator",
+    "title": "标签指示条",
+    "category": "动画动效",
+    "tags": "标签导航 / 弹性 / left-width",
+    "description": "指示条前沿先行、后沿追赶，拉伸后带一次轻微超调。",
+    "prompt": "标签指示器液态拉伸（Elastic Tab Indicator）：切换时前沿先走cubic-bezier(.2,.9,.22,1)奔向目标，后沿延后6帧起步追赶，宽度中途被拉到两倍以上再收回，末端带一次轻微超调；用left和width驱动，别用scaleX，圆角会被拉扁。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/elastic-tab-indicator/preview.html",
+      "alt": "标签指示条：可交互演示"
+    },
+    "sourceImage": "assets/elastic-tab-indicator/source.png",
+    "previewNote": "根据提示词手工制作的可交互演示，非模型实测输出。",
+    "addedAt": "2026-10-22"
+  },
+  {
+    "id": "flip-layout-morph",
+    "title": "列表切换网格",
+    "category": "动画动效",
+    "tags": "FLIP / 列表网格 / 弧线路径",
+    "description": "六张卡片沿弧线从列表归位到网格，图片保持比例。",
+    "prompt": "列表与网格布局形变（FLIP Layout Morph）：先记录每一项切换前后的矩形，再用位移和缩放做反向补偿，各自沿带弧度的路径缓动到新格位，相邻项错开3帧；图片按比例裁切不挤压，过程中不销毁重建节点，也不重新加载。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/flip-layout-morph/preview.html",
+      "alt": "列表切换网格：可交互演示"
+    },
+    "sourceImage": "assets/flip-layout-morph/source.png",
+    "previewNote": "根据提示词手工制作的可交互演示，非模型实测输出。",
+    "addedAt": "2026-10-22"
+  }
+]
