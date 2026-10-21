@@ -1,5 +1,18 @@
 [
   {
+    "id": "skill-ruic-card-skill",
+    "kind": "skill",
+    "title": "RuiC-card-skill",
+    "category": "界面设计",
+    "tags": "全息闪卡 / 3D 卡牌 / Blender / Three.js",
+    "description": "把一句描述或参考图制作成可拖拽旋转、带流光与分层视差的 3D 全息卡牌网页，并交付可编辑的 Blender 工程。适合角色收藏卡、纪念卡和产品展示卡。",
+    "source": "https://github.com/HRuiCcc/RuiC-card-skill",
+    "prompt": "RuiC-card-skill\n\n用途：根据文字描述或参考图制作交互式 3D 全息收藏卡，包含随视角变化的镭射材质和分层视差。\n\n主要交付：可交互的 Three.js 网页、可编辑的 card.blend、透明分层图、卡牌配置与渲染图。网页支持拖拽、翻面及材质和景深调整。\n\n适合：角色收藏卡、宠物或团队纪念卡、产品展示卡，以及卡牌材质实验。\n\n使用条件：具备生成和查看图像能力的多模态模型；Python、Pillow、Node.js 和 npm。实际运行流程可能下载项目内使用的 Blender 便携版。\n\n收录状态：已收藏说明与来源，尚未安装或执行该 Skill。\n\n官方仓库：https://github.com/HRuiCcc/RuiC-card-skill\n官方说明：https://github.com/HRuiCcc/RuiC-card-skill/blob/main/SKILL.md",
+    "addedAt": "2026-10-22",
+    "verifiedAt": "2026-10-22",
+    "documentation": "https://github.com/HRuiCcc/RuiC-card-skill/blob/main/SKILL.md"
+  },
+  {
     "id": "fab-to-sheet",
     "title": "加号展开面板",
     "category": "动画动效",
