@@ -82,3 +82,44 @@ assert.equal(calls,1,'Interrupted transition must not animate a stale filter');
 const reduced=new Function('$','matchMedia','requestAnimationFrame','innerHeight',`let filterRevision=0,filterAnimations=[];${animateCode};return transitionCards`)(()=>mockGrid,()=>({matches:true}),()=>{throw Error('Reduced motion must not enqueue animation')},800);
 reduced(()=>{});
 console.log('Skills topic membership, saved favorites, rapid switching and reduced motion passed.');
+
+// Exercise indicator geometry and its real frame loop: the trailing edge must wait six frames.
+const elasticCode=source.split('\n').filter(line=>/^function (elasticEase|elasticTopicRect|animateTopicIndicator)\(/.test(line)).join('\n');
+function runIndicator(from,to,reduced=false){
+  const samples=[],queue=new Map();let sequence=0;
+  const animate=new Function('paintTopic','matchMedia','requestAnimationFrame','cancelAnimationFrame',`let topicFrame=0,topicMoving=false;${elasticCode};return animateTopicIndicator`)(rect=>samples.push(rect),()=>({matches:reduced}),fn=>{queue.set(++sequence,fn);return sequence},id=>queue.delete(id));
+  animate(from,to);let now=0;
+  while(queue.size){assert.ok(now<2000,'Animation must finish');const [id,fn]=queue.entries().next().value;queue.delete(id);fn(now);now+=1000/60}
+  return samples;
+}
+const origin={left:0,top:0,width:100,height:44},destination={left:110,top:0,width:100,height:44};
+const elasticSamples=runIndicator(origin,destination);
+assert.ok(elasticSamples.slice(0,6).every(r=>r.left===origin.left),'Trailing edge starts only after six frames');
+assert.ok(Math.max(...elasticSamples.map(r=>r.width))>200,'Indicator must stretch beyond twice its width');
+assert.deepEqual(elasticSamples.at(-1),destination);
+assert.deepEqual(runIndicator(destination,origin).at(-1),origin);
+assert.deepEqual(runIndicator(origin,destination,true),[destination]);
+assert.ok(!source.includes('data-rate=')&&!source.includes('function rating(')&&!source.includes('value="rating"'));
+assert.ok(!source.includes('按主题找 Skill')&&!source.includes('可搭配搜索与评分排序'));
+console.log('Elastic indicator delay, stretch, reverse direction, reduced motion and rating removal passed.');
+
+// Clipboard feedback must follow the write result, survive repeated clicks, and ignore stale writes.
+const copyHandler=source.split('\n').find(line=>line.startsWith("$('copy').onclick="));
+const copyReset=source.split('\n').find(line=>line.startsWith('function resetCopy('));
+function copyHarness(writeText){
+  const classes=new Set(),messages=[],timers=new Map();let sequence=0;
+  const button={textContent:'复制提示词',disabled:false,classList:{add:x=>classes.add(x),remove:x=>classes.delete(x)},getAnimations:()=>[],animate:()=>{}};
+  const reset=new Function('$','navigator','selected','toast','matchMedia','setTimeout','clearTimeout',`let copyRevision=0,copyTimer;${copyReset}\n${copyHandler};return resetCopy`)(()=>button,{clipboard:{writeText}},{kind:'prompt',prompt:'保留原文。'},msg=>messages.push(msg),()=>({matches:true}),fn=>{timers.set(++sequence,fn);return sequence},id=>timers.delete(id));
+  return {button,classes,messages,reset,finish:()=>{for(const fn of timers.values())fn();timers.clear()}};
+}
+let copied='';const successfulCopy=copyHarness(async text=>{copied=text});
+await successfulCopy.button.onclick();await successfulCopy.button.onclick();
+assert.equal(copied,'保留原文。');assert.ok(successfulCopy.classes.has('copy-success'));
+assert.ok(successfulCopy.messages.every(message=>message.includes('复制成功')));
+successfulCopy.finish();assert.equal(successfulCopy.button.textContent,'复制提示词');
+const failedCopy=copyHarness(async()=>{throw Error('Clipboard denied')});await failedCopy.button.onclick();
+assert.ok(!failedCopy.classes.has('copy-success'));assert.match(failedCopy.messages[0],/复制失败/);assert.equal(failedCopy.button.disabled,false);
+let resolveWrite;const staleCopy=copyHarness(()=>new Promise(resolve=>{resolveWrite=resolve}));
+const pendingCopy=staleCopy.button.onclick();staleCopy.reset();resolveWrite();await pendingCopy;
+assert.equal(staleCopy.messages.length,0);assert.ok(!staleCopy.classes.has('copy-success'));
+console.log('Copy success, failure, repeated clicks and stale feedback checks passed.');
