@@ -104,7 +104,7 @@
     "previewSource": "https://github.com/user-attachments/assets/d370abcc-1fc4-4de1-903a-09020a6556ce",
     "previewEvidence": "author-repository-example",
     "previewNote": "作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。",
-    "prompt": "guizang · Social Card\n\n用途：把文章、截图、照片或视频整理成小红书组图、公众号封面对与 Live Photo 动态卡。提供电子杂志风和瑞士风版式，适合社媒视觉素材制作。\n\n名称对应：按用户的“guizang：生成视觉素材”及社媒流程，暂对应 Guizang Social Card Skill。官方项目采用 AGPL-3.0，并提供独立商业授权说明；使用项目时以官方最新许可为准。\n\n预览说明：作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。\n\n官方入口：https://github.com/op7418/guizang-social-card-skill\n官方仓库：https://github.com/op7418/guizang-social-card-skill\n使用说明：https://github.com/op7418/guizang-social-card-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+    "prompt": "guizang · Social Card\n\n用途：把文章、截图、照片或视频整理成小红书组图、公众号封面对与 Live Photo 动态卡。提供电子杂志风和瑞士风版式，适合社媒视觉素材制作。\n\n名称对应：用户已确认 guizang 指 Guizang Social Card Skill（社媒组图与封面）。官方项目采用 AGPL-3.0，并提供独立商业授权说明；使用项目时以官方最新许可为准。\n\n预览说明：作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。\n\n官方入口：https://github.com/op7418/guizang-social-card-skill\n官方仓库：https://github.com/op7418/guizang-social-card-skill\n使用说明：https://github.com/op7418/guizang-social-card-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
   },
   {
     "id": "skill-social-auto-upload",
