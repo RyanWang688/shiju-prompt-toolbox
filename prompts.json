@@ -1,5 +1,41 @@
 [
   {
+    "id": "skill-grill-me",
+    "kind": "skill",
+    "title": "grill-me",
+    "category": "其他",
+    "tags": "开发工作流 / 需求澄清 / 方案推敲 / 产品决策 / 开发前准备",
+    "description": "通过分轮追问梳理想法、需求和设计决策，暴露未说明的假设与边界，帮助动手前形成共同理解。",
+    "source": "https://github.com/mattpocock/skills",
+    "documentation": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md",
+    "aliases": [],
+    "previewStatus": "pending",
+    "previewEvidence": "pending",
+    "previewNote": "真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "grill-me（Matt Pocock）\n\n用途：通过分轮追问梳理想法、需求和设计决策，暴露未说明的假设与边界，帮助动手前形成共同理解。\n\n说明：当前 grill-me 是调用 grilling 的入口。真正的访谈逻辑在 productivity/grilling 中；当前版本按已明确前提组织问题轮次，不一定每轮只问一个问题。适合需求澄清，不负责自动实现，也不把访谈当作已完成设计。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/productivity/grill-me.md\n依赖说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md"
+  },
+  {
+    "id": "skill-diagnose",
+    "kind": "skill",
+    "title": "diagnose（现名 diagnosing-bugs）",
+    "category": "其他",
+    "tags": "开发工作流 / Bug 诊断 / 问题复现 / 性能回归 / 回归测试",
+    "description": "先为 Bug 建立可重复的失败信号，再缩小范围、验证假设并修复根因，最后用回归检查确认问题解决。",
+    "source": "https://github.com/mattpocock/skills",
+    "documentation": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md",
+    "aliases": [
+      "diagnosing-bugs"
+    ],
+    "previewStatus": "pending",
+    "previewEvidence": "pending",
+    "previewNote": "真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "diagnose（现名 diagnosing-bugs）（Matt Pocock）\n\n用途：先为 Bug 建立可重复的失败信号，再缩小范围、验证假设并修复根因，最后用回归检查确认问题解决。\n\n说明：Matt Pocock 官方 CHANGELOG 明确将 diagnose 改名为 diagnosing-bugs，当前调用名为 /diagnosing-bugs。保留截图中的旧名便于搜索。适合已有明确症状的疑难 Bug 或性能回归；单纯查看代码不能替代复现证据。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/engineering/diagnosing-bugs.md\n改名记录：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/CHANGELOG.md"
+  },
+  {
     "id": "skill-taste-skill",
     "kind": "skill",
     "title": "Taste-Skill",
