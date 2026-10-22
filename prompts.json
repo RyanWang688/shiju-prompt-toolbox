@@ -5,6 +5,9 @@
     "resourceType": "GitHub 项目",
     "title": "程序员做饭指南 · HowToCook",
     "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
     "tags": "GitHub 项目清单 / 菜谱 / 烹饪 / 生活工具",
     "description": "用结构化菜谱说明食材用量、准备事项和操作步骤，方便按步骤做家常菜，也提供厨房基础知识。",
     "prompt": "程序员做饭指南 · HowToCook\n\n用途：用结构化菜谱说明食材用量、准备事项和操作步骤，方便按步骤做家常菜，也提供厨房基础知识。\n\n使用说明：各菜谱的用量与操作以原文为准。网页入口是仓库推荐的 HowToCook Viewer，菜谱仓库与浏览器项目分别维护。\n\n用户清单顺序：#10（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：菜谱用料精确到克，步骤清晰，告别“少许”的烦恼。\n\n官方入口：https://howtocook.aiursoft.com/\nGitHub：https://github.com/Anduin2017/HowToCook\n说明：https://github.com/Anduin2017/HowToCook/blob/master/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -25,7 +28,12 @@
     },
     "previewEvidence": "live-website-screenshot",
     "previewSource": "https://howtocook.aiursoft.com/",
-    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。"
+    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。",
+    "en": {
+      "title": "HowToCook · A Programmer's Cooking Guide",
+      "description": "Structured recipes with exact ingredient amounts, prep notes and step-by-step instructions for home cooking, plus kitchen basics.",
+      "tags": "GitHub picks / Recipes / Cooking / Everyday tools"
+    }
   },
   {
     "id": "website-musicfree",
@@ -33,6 +41,9 @@
     "resourceType": "GitHub 项目",
     "title": "MusicFree",
     "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
     "tags": "GitHub 项目清单 / 音乐 / 播放器 / 插件",
     "description": "免费、无内置广告的插件化音乐播放器，支持本地音乐，并可通过插件扩展音源；桌面版有独立官方仓库。",
     "prompt": "MusicFree\n\n用途：免费、无内置广告的插件化音乐播放器，支持本地音乐，并可通过插件扩展音源；桌面版有独立官方仓库。\n\n使用说明：安卓与 HarmonyOS 版见主仓库，桌面版见 https://github.com/maotoumao/MusicFreeDesktop 。插件来源和支持能力独立于播放器。\n\n用户清单顺序：#9（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：无广告音乐播放器，通过插件扩展音源，数据本地存储。\n\n官方入口：https://musicfree.catcat.work/\nGitHub：https://github.com/maotoumao/MusicFree\n说明：https://github.com/maotoumao/MusicFree/blob/master/readme.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -53,7 +64,12 @@
     },
     "previewEvidence": "live-website-screenshot",
     "previewSource": "https://github.com/maotoumao/MusicFree#readme",
-    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。"
+    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。",
+    "en": {
+      "title": "MusicFree",
+      "description": "A free, ad-free, plugin-based music player that supports local files and extends sources via plugins; the desktop app has its own official repo.",
+      "tags": "GitHub picks / Music / Player / Plugins"
+    }
   },
   {
     "id": "website-yunx",
@@ -61,6 +77,9 @@
     "resourceType": "GitHub 项目",
     "title": "云析 · YunX",
     "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
     "tags": "GitHub 项目清单 / Android / 网盘 / 下载",
     "description": "安卓网盘分享链接解析与下载工具，支持自动匹配提取码、Range 分片并发、断点续传及媒体预览。",
     "prompt": "云析 · YunX\n\n用途：安卓网盘分享链接解析与下载工具，支持自动匹配提取码、Range 分片并发、断点续传及媒体预览。\n\n使用说明：本条指 CYQawa/YunX 安卓项目；桌面移植版由其他仓库维护。平台支持及登录条件以官方说明为准。\n\n用户清单顺序：#8（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：安卓网盘解析工具，支持自动匹配提取码、分片并发下载。\n\n官方入口：https://github.com/CYQawa/YunX\nGitHub：https://github.com/CYQawa/YunX\n说明：https://github.com/CYQawa/YunX/blob/master/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -81,7 +100,12 @@
     },
     "previewEvidence": "live-website-screenshot",
     "previewSource": "https://github.com/CYQawa/YunX#readme",
-    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。"
+    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。",
+    "en": {
+      "title": "YunX",
+      "description": "An Android tool for parsing and downloading cloud-drive share links, with auto access codes, parallel Range chunks, resumable downloads and media preview.",
+      "tags": "GitHub picks / Android / Cloud drive / Downloads"
+    }
   },
   {
     "id": "website-optimizerduck",
@@ -89,6 +113,9 @@
     "resourceType": "GitHub 项目",
     "title": "optimizerDuck",
     "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
     "tags": "GitHub 项目清单 / Windows / 系统优化 / 隐私",
     "description": "Windows 10 / 11 优化工具，按类别管理遥测、广告建议和系统设置，并提供改动前备份与撤销功能。",
     "prompt": "optimizerDuck\n\n用途：Windows 10 / 11 优化工具，按类别管理遥测、广告建议和系统设置，并提供改动前备份与撤销功能。\n\n使用说明：官方说明提供逐项撤销及整体回退；实际恢复依赖保存的备份。本次仅收录，未运行优化器或更改系统设置。\n\n用户清单顺序：#7（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：Windows 优化工具，可关闭遥测广告，所有改动支持一键撤销。\n\n官方入口：https://optimizerduck.com/\nGitHub：https://github.com/itsfatduck/optimizerDuck\n说明：https://github.com/itsfatduck/optimizerDuck/blob/master/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -109,7 +136,12 @@
     },
     "previewEvidence": "live-website-screenshot",
     "previewSource": "https://optimizerduck.com/",
-    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。"
+    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。",
+    "en": {
+      "title": "optimizerDuck",
+      "description": "A Windows 10 / 11 optimizer that manages telemetry, ad suggestions and system settings by category, with backups and undo before changes.",
+      "tags": "GitHub picks / Windows / System tuning / Privacy"
+    }
   },
   {
     "id": "website-photosuite",
@@ -117,6 +149,9 @@
     "resourceType": "GitHub 项目",
     "title": "PhotoSuite",
     "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
     "tags": "GitHub 项目清单 / 修图 / PSD / 桌面工具 / 访问受限",
     "description": "作者公开介绍为参考经典 Photoshop 操作方式的桌面修图项目，支持 PSD / PSB。仓库当前返回 HTTP 451，最新状态待确认。",
     "prompt": "PhotoSuite\n\n用途：作者公开介绍为参考经典 Photoshop 操作方式的桌面修图项目，支持 PSD / PSB。仓库当前返回 HTTP 451，最新状态待确认。\n\n使用说明：已定位 eolix/photosuite，官方仓库及 Releases 当前均返回 HTTP 451。用途参考官方页面的公开索引摘要，未确认当前维护、下载或完整兼容性；真实预览待补。\n\n用户清单顺序：#6（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：复刻经典 Photoshop 的开源修图软件，支持 PSD 文件。\n\n官方入口：https://github.com/eolix/photosuite\nGitHub：https://github.com/eolix/photosuite\n说明：https://github.com/eolix/photosuite/blob/main/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -132,7 +167,12 @@
     "previewEvidence": "unavailable-official-repository",
     "previewNote": "官方仓库当前返回 HTTP 451，无法取得真实预览，未用概念图替代。",
     "verificationStatus": "official-repository-http-451",
-    "previewSource": "https://github.com/eolix/photosuite"
+    "previewSource": "https://github.com/eolix/photosuite",
+    "en": {
+      "title": "PhotoSuite",
+      "description": "A desktop photo editor the author describes as modeled on classic Photoshop workflows, with PSD / PSB support. The repo currently returns HTTP 451; status unconfirmed.",
+      "tags": "GitHub picks / Photo editing / PSD / Desktop / Restricted"
+    }
   },
   {
     "id": "website-fluxdown",
@@ -140,6 +180,9 @@
     "resourceType": "GitHub 项目",
     "title": "FluxDown",
     "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
     "tags": "GitHub 项目清单 / 下载管理 / Rust / 多协议",
     "description": "Rust 驱动的下载管理器，提供动态分段、断点续传、浏览器集成，以及 HTTP、FTP、BT 和 HLS / DASH 等协议支持。",
     "prompt": "FluxDown\n\n用途：Rust 驱动的下载管理器，提供动态分段、断点续传、浏览器集成，以及 HTTP、FTP、BT 和 HLS / DASH 等协议支持。\n\n使用说明：本地下载功能免费开源，无须账号；可选云服务与套餐单独提供，以当前官网说明为准。\n\n用户清单顺序：#5（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：免费开源的 IDM 替代品，支持动态分段加速和流媒体下载。\n\n官方入口：https://fluxdown.com/\nGitHub：https://github.com/zerx-lab/FluxDown\n说明：https://github.com/zerx-lab/FluxDown/blob/main/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -160,7 +203,12 @@
     },
     "previewEvidence": "live-website-screenshot",
     "previewSource": "https://fluxdown.com/zh/",
-    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。"
+    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。",
+    "en": {
+      "title": "FluxDown",
+      "description": "A Rust-powered download manager with dynamic segmentation, resumable downloads, browser integration and HTTP, FTP, BT and HLS / DASH support.",
+      "tags": "GitHub picks / Download manager / Rust / Multi-protocol"
+    }
   },
   {
     "id": "website-kazumi",
@@ -168,6 +216,9 @@
     "resourceType": "GitHub 项目",
     "title": "Kazumi",
     "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
     "tags": "GitHub 项目清单 / 番剧 / 自定义规则 / 弹幕 / 超分辨率",
     "description": "基于自定义规则的跨平台番剧采集与播放应用，支持弹幕、Anime4K 实时超分辨率，以及基于 SyncPlay 的一起看。",
     "prompt": "Kazumi\n\n用途：基于自定义规则的跨平台番剧采集与播放应用，支持弹幕、Anime4K 实时超分辨率，以及基于 SyncPlay 的一起看。\n\n使用说明：规则、平台和播放能力依实际版本及来源而定；官方仓库提供支持平台与规则使用说明。\n\n用户清单顺序：#4（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：规则驱动的追番 App，支持弹幕、实时超分辨率和好友同看。\n\n官方入口：https://kazumi.app/\nGitHub：https://github.com/Predidit/Kazumi\n说明：https://github.com/Predidit/Kazumi/blob/main/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -188,7 +239,12 @@
     },
     "previewEvidence": "live-website-screenshot",
     "previewSource": "https://kazumi.app/",
-    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。"
+    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。",
+    "en": {
+      "title": "Kazumi",
+      "description": "A cross-platform anime aggregator and player built on custom rules, with danmaku, Anime4K real-time upscaling and SyncPlay watch-together.",
+      "tags": "GitHub picks / Anime / Custom rules / Danmaku / Upscaling"
+    }
   },
   {
     "id": "website-vorssaint",
@@ -196,6 +252,9 @@
     "resourceType": "GitHub 项目",
     "title": "Vorssaint",
     "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
     "tags": "GitHub 项目清单 / macOS / 菜单栏 / 剪贴板 / 效率工具",
     "description": "模块化 macOS 菜单栏工具箱，集成应用独立音量、系统监控、窗口管理、剪贴板历史和文本片段，可按需启用功能。",
     "prompt": "Vorssaint\n\n用途：模块化 macOS 菜单栏工具箱，集成应用独立音量、系统监控、窗口管理、剪贴板历史和文本片段，可按需启用功能。\n\n使用说明：收录作者主仓库 vorssaint/vorssaint-utils，避免使用同名分叉；系统版本、硬件要求与功能权限见官方文档。\n\n用户清单顺序：#3（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：Mac 菜单栏工具箱，集成了音量独立控制、剪贴板历史等多种小工具。\n\n官方入口：https://vorssaint.com/\nGitHub：https://github.com/vorssaint/vorssaint-utils\n说明：https://github.com/vorssaint/vorssaint-utils/blob/main/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -216,13 +275,21 @@
     },
     "previewEvidence": "live-website-screenshot",
     "previewSource": "https://vorssaint.com/",
-    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。"
+    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。",
+    "en": {
+      "title": "Vorssaint",
+      "description": "A modular macOS menu-bar toolbox with per-app volume, system monitoring, window management, clipboard history and snippets — enable only what you need.",
+      "tags": "GitHub picks / macOS / Menu bar / Clipboard / Productivity"
+    }
   },
   {
     "id": "website-opencut",
     "kind": "website",
     "title": "OpenCut",
     "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
     "tags": "视频剪辑 / 在线工具 / 开源 / 创作 / GitHub 项目清单",
     "description": "开源视频编辑器，当前官网可使用经典网页版；项目正以 Rust 内核重写，面向网页、桌面和移动端。",
     "source": "https://opencut.app/",
@@ -244,7 +311,12 @@
     "collection": "GitHub 项目清单",
     "userProvidedRank": 2,
     "updatedAt": "2026-10-23",
-    "documentation": "https://github.com/OpenCut-app/OpenCut/blob/main/README.md"
+    "documentation": "https://github.com/OpenCut-app/OpenCut/blob/main/README.md",
+    "en": {
+      "title": "OpenCut",
+      "description": "An open-source video editor; the site currently offers the classic web version while the project is rewritten on a Rust core for web, desktop and mobile.",
+      "tags": "Video editing / Online tool / Open source / Creation / GitHub picks"
+    }
   },
   {
     "id": "website-opengym",
@@ -252,6 +324,9 @@
     "resourceType": "GitHub 项目",
     "title": "openGym",
     "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
     "tags": "GitHub 项目清单 / 健身 / 自托管 / 训练记录 / 肌群热力图",
     "description": "自托管健身与体重记录应用，可规划训练、记录组次，查看动作演示、肌群热力图和进度统计，并提供浏览器演示。",
     "prompt": "openGym\n\n用途：自托管健身与体重记录应用，可规划训练、记录组次，查看动作演示、肌群热力图和进度统计，并提供浏览器演示。\n\n使用说明：可先查看官网演示；正式使用需按自托管文档部署。收录不代表已经部署服务或录入个人训练数据。\n\n用户清单顺序：#1（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：自托管健身记录应用，提供动作演示和肌群热力图分析。\n\n官方入口：https://opengym.ch/\nGitHub：https://github.com/DuarteSantos8/openGym\n说明：https://github.com/DuarteSantos8/openGym/blob/main/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
@@ -272,13 +347,21 @@
     },
     "previewEvidence": "live-website-screenshot",
     "previewSource": "https://opengym.ch/",
-    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。"
+    "previewNote": "2026-10-23 实际打开官方网页后的浏览器截图；仅为网页预览，非本次安装或运行客户端的画面。",
+    "en": {
+      "title": "openGym",
+      "description": "A self-hosted fitness and weight tracker for planning workouts and logging sets, with exercise demos, muscle heatmaps, progress stats and a browser demo.",
+      "tags": "GitHub picks / Fitness / Self-hosted / Workout log / Muscle heatmap"
+    }
   },
   {
     "id": "perspective-card-flip",
     "kind": "prompt",
     "title": "立体翻面",
     "category": "动画动效",
+    "topics": [
+      "卡片交互"
+    ],
     "tags": "卡片交互 / 3D 翻转 / 透视 / 指针高光",
     "description": "点击卡片，它会像翻书一样绕竖轴进行3D翻转，切换正反面，带有透视和高光效果，模拟真实卡片质感。",
     "prompt": "给卡片添加带透视的3D翻转交互，点击切换正反面，并加入随指针位置变化的柔和高光，让每一步都有回应。",
@@ -298,13 +381,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。",
+    "en": {
+      "title": "3D Card Flip",
+      "description": "Tap the card and it flips around its vertical axis like a page turning, with perspective and a glossy highlight for a tactile feel.",
+      "tags": "Card interaction / 3D flip / Perspective / Pointer glare"
+    }
   },
   {
     "id": "horizontal-snap-cards",
     "kind": "prompt",
     "title": "横滑吸附",
     "category": "动画动效",
+    "topics": [
+      "卡片交互"
+    ],
     "tags": "卡片交互 / 横向卡片 / Scroll Snap / 相邻预览",
     "description": "卡片横向排列，滑动浏览时，松手后会自动对齐到一张完整的卡片，提供流畅的翻页体验。",
     "prompt": "创建横向滑动卡片列表，保留相邻卡片的部分预览，设置滚动吸附和统一间距，让每次滑动都能自然停在完整卡片上。",
@@ -324,13 +415,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。",
+    "en": {
+      "title": "Horizontal Snap Cards",
+      "description": "Cards scroll sideways and snap to a full card on release for a smooth paging feel.",
+      "tags": "Card interaction / Horizontal cards / Scroll snap / Peek neighbors"
+    }
   },
   {
     "id": "drag-card-expand",
     "kind": "prompt",
     "title": "拖拽展开",
     "category": "动画动效",
+    "topics": [
+      "卡片交互"
+    ],
     "tags": "卡片交互 / 拖拽 / 封面联动 / 阈值吸附",
     "description": "按住卡片底部的“把手”向上拖动，可逐步显示更多内容（如下方的播放列表），松手后会自动吸附到展开或收起状态。",
     "prompt": "给卡片添加底部拖拽展开交互，让手势距离同步控制内容高度和封面尺寸。松手后根据阈值吸附到展开或收起状态。",
@@ -350,13 +449,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。",
+    "en": {
+      "title": "Drag to Expand",
+      "description": "Drag the handle at the bottom of the card upward to reveal more (like a playlist); on release it snaps open or closed.",
+      "tags": "Card interaction / Drag / Linked cover / Threshold snap"
+    }
   },
   {
     "id": "depth-stack-expand",
     "kind": "prompt",
     "title": "堆叠展开",
     "category": "动画动效",
+    "topics": [
+      "卡片交互"
+    ],
     "tags": "卡片交互 / 纵深堆叠 / 错位排开 / 弹性收起",
     "description": "多张卡片堆叠，点击后会按顺序错位排开，展示隐藏内容，收起时带有弹性动画。",
     "prompt": "创建多张纵深堆叠的卡片，通过缩放和位移表现前后关系。展开时按顺序错位排开，收起时使用弹性动画恢复堆叠。",
@@ -376,13 +483,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。",
+    "en": {
+      "title": "Stack Expand",
+      "description": "Stacked cards fan out in sequence on tap to reveal hidden content, then collapse back with a springy motion.",
+      "tags": "Card interaction / Depth stack / Staggered fan-out / Elastic collapse"
+    }
   },
   {
     "id": "fullscreen-card-detail",
     "kind": "prompt",
     "title": "全屏详情",
     "category": "动画动效",
+    "topics": [
+      "卡片交互"
+    ],
     "tags": "卡片交互 / 全屏 / 封面过渡 / 错层入场",
     "description": "点击卡片，它会放大并平滑过渡为一个完整的详情页面，信息自然展开。",
     "prompt": "让内容卡片点击后展开为全屏详情，协调封面尺寸、卡片圆角和背景变化，让新增内容错层入场，关闭后恢复原来的卡片状态。",
@@ -402,7 +517,12 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。",
+    "en": {
+      "title": "Full-screen Detail",
+      "description": "Tap a card and it grows smoothly into a full detail page, with the content unfolding naturally.",
+      "tags": "Card interaction / Full screen / Cover transition / Layered entrance"
+    }
   },
   {
     "id": "skill-archify",
@@ -432,13 +552,21 @@
     "previewEvidence": "author-repository-example",
     "previewNote": "作者仓库公开的真实架构图示例，原图未修改；非本次运行生成。来源与 MIT 许可保存在素材目录。",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Archify",
+      "description": "Turns ideas, workflows or codebases into standalone interactive HTML diagrams and one-page explainers. Great for architecture, API calls, data relationships and project plans.",
+      "tags": "Architecture / Flowcharts / Sequence diagrams / Codebase visualization / Interactive HTML / Open source"
+    }
   },
   {
     "id": "website-motionsites",
     "kind": "website",
     "title": "MotionSites.org",
     "category": "动画动效",
+    "topics": [
+      "动效灵感"
+    ],
     "tags": "动效灵感 / AI 提示词 / 网站模板 / Skills 目录 / Motion Sites / 灵感网站 / 定方向，找骨架 / 落地页骨架",
     "description": "提供动效网站案例、页面区块和 AI 设计提示词，适合确定落地页方向、参考内容结构与布局，再交给 AI 辅助实现。",
     "source": "https://motionsites.org/",
@@ -459,13 +587,21 @@
     "verifiedAt": "2026-10-23",
     "officialUrl": "https://motionsites.org/",
     "documentation": "https://motionsites.org/skills",
-    "collection": "网页设计灵感流程"
+    "collection": "网页设计灵感流程",
+    "en": {
+      "title": "MotionSites.org",
+      "description": "Motion website examples, page sections and AI design prompts — useful for choosing a landing-page direction and structure before building it with AI.",
+      "tags": "Motion inspiration / AI prompts / Site templates / Skills directory / Motion Sites / Inspiration sites / Pick a direction / Landing-page skeletons"
+    }
   },
   {
     "id": "website-react-bits",
     "kind": "website",
     "title": "React Bits",
     "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
     "tags": "React / 动效组件 / 背景 / TypeScript / 开源 / 灵感网站 / 做交互，省时间 / React 交互",
     "description": "提供 React 动效组件、动态背景与微交互，支持复制源代码或安装，适合在已有页面中补充交互，再按项目框架与依赖适配。",
     "source": "https://reactbits.dev/",
@@ -484,13 +620,21 @@
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
     "repository": "https://github.com/DavidHDev/react-bits",
-    "collection": "网页设计灵感流程"
+    "collection": "网页设计灵感流程",
+    "en": {
+      "title": "React Bits",
+      "description": "React motion components, animated backgrounds and micro-interactions you can copy or install, then adapt to your project's framework and dependencies.",
+      "tags": "React / Motion components / Backgrounds / TypeScript / Open source / Inspiration sites / Faster interactions / React interactions"
+    }
   },
   {
     "id": "website-uiverse",
     "kind": "website",
     "title": "Uiverse",
     "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
     "tags": "UI 元素 / CSS / Tailwind / 按钮 / 组件 / 灵感网站 / 补细节，去廉价 / 组件细节",
     "description": "社区维护的 UI 元素库，包含按钮、卡片、输入框和加载动画，适合细化界面组件并参考对应实现代码。",
     "source": "https://uiverse.io/",
@@ -509,13 +653,21 @@
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
     "repository": "https://github.com/uiverse-io/galaxy",
-    "collection": "网页设计灵感流程"
+    "collection": "网页设计灵感流程",
+    "en": {
+      "title": "Uiverse",
+      "description": "A community UI element library of buttons, cards, inputs and loaders, handy for refining components with reference code.",
+      "tags": "UI elements / CSS / Tailwind / Buttons / Components / Inspiration sites / Polish details / Component details"
+    }
   },
   {
     "id": "website-gsap",
     "kind": "website",
     "title": "GSAP",
     "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
     "collection": "网页设计灵感流程",
     "tags": "灵感网站 / 升动效，达丝滑 / GSAP / 时间轴 / 视差滚动 / ScrollTrigger / 转场",
     "description": "JavaScript 动画库的官方网站，提供滚动联动、时间轴、SVG 与界面转场工具，以及文档、演示和作品案例，适合细化动画节奏与交互。",
@@ -535,13 +687,21 @@
     "previewNote": "2026-10-23 实际访问 GSAP 官方公开页面保存的浏览器截图，保留原站设计与标识。",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "GSAP",
+      "description": "The official site of the JavaScript animation library: scroll-linked motion, timelines, SVG and UI transitions, plus docs, demos and showcases.",
+      "tags": "Inspiration sites / Silky motion / GSAP / Timeline / Parallax / ScrollTrigger / Transitions"
+    }
   },
   {
     "id": "website-skillry",
     "kind": "website",
     "title": "Skillry",
     "category": "其他",
+    "topics": [
+      "动效灵感"
+    ],
     "tags": "动效灵感 / Agent Skills / 网页设计 / 视频 / 幻灯片 / 图像创作",
     "description": "提供面向 AI 编程工具的创作 Skills 与真实案例预览，涵盖网页设计、视频动效、幻灯片和图像，适合先找效果再选择相应创作流程。",
     "source": "https://skillry.dev/",
@@ -559,13 +719,21 @@
     "previewSource": "https://skillry.dev/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Skillry",
+      "description": "Creative Skills for AI coding tools with real example previews across web design, video motion, slides and images — find the look first, then pick the workflow.",
+      "tags": "Motion inspiration / Agent Skills / Web design / Video / Slides / Image creation"
+    }
   },
   {
     "id": "like-burst",
     "kind": "prompt",
     "title": "点赞爆粒子",
     "category": "动画动效",
+    "topics": [
+      "按钮交互"
+    ],
     "tags": "按钮交互 / 点赞 / 粒子爆发 / 计数滚动",
     "description": "爱心弹跳变红，8 个粒子向外飞散，点赞数向上滚动。",
     "prompt": "做一个点赞按钮（Like Burst）：点击后爱心先缩小到0.8倍再弹到1.2倍，最后回到1倍，同时由灰色变成红色；爱心周围炸开8个彩色小圆点，向外飞散并淡出；右边的点赞数向上滚动+1。总时长约600ms，弹跳使用带回弹的曲线。",
@@ -584,13 +752,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Like Burst",
+      "description": "The heart bounces and turns red, eight particles burst outward, and the like count rolls up.",
+      "tags": "Button interaction / Like / Particle burst / Rolling counter"
+    }
   },
   {
     "id": "submit-morph-reset",
     "kind": "prompt",
     "title": "提交按钮三连变",
     "category": "动画动效",
+    "topics": [
+      "按钮交互"
+    ],
     "tags": "按钮交互 / 按钮形变 / 加载 / 成功后复原",
     "description": "按钮变圆进入加载，显示成功对勾后自动恢复，保留原文规定的时序。",
     "prompt": "做一个提交按钮三段变化（Submit Morph）：点击后文字淡出，按钮宽度收缩成圆形，圆形中间出现旋转的加载圆环；1.2秒后按钮变成绿色并画出对勾；再过1秒恢复原状。收缩约300ms，使用ease-in-out。",
@@ -609,13 +785,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Submit Button Morph",
+      "description": "The button rounds into a loader, shows a success check, then resets automatically — keeping the original timing.",
+      "tags": "Button interaction / Button morph / Loading / Reset after success"
+    }
   },
   {
     "id": "jelly-toggle",
     "kind": "prompt",
     "title": "果冻开关",
     "category": "动画动效",
+    "topics": [
+      "按钮交互"
+    ],
     "tags": "按钮交互 / 开关 / 胶囊拉伸 / 弹簧回弹",
     "description": "圆点滑动中拉长，到达终点弹回圆形，底色同步渐变。",
     "prompt": "做一个果冻开关（Jelly Toggle）：点击后圆点滑向另一端，滑动途中先横向拉长成胶囊形，到达终点回弹恢复圆形；底色从灰色渐变为绿色。时长约350ms，使用带回弹的弹簧曲线。",
@@ -634,13 +818,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Jelly Toggle",
+      "description": "The knob stretches as it slides, springs back to a circle at the end, and the track color blends along.",
+      "tags": "Button interaction / Toggle / Capsule stretch / Spring bounce"
+    }
   },
   {
     "id": "hold-to-confirm",
     "kind": "prompt",
     "title": "长按确认",
     "category": "动画动效",
+    "topics": [
+      "按钮交互"
+    ],
     "tags": "按钮交互 / 长按 / 进度环 / 松手撤回",
     "description": "按住 1.5 秒确认，松手回退；演示只改变状态，不删除任何数据。",
     "prompt": "做一个长按确认按钮（Hold to Confirm）：圆形删除按钮，按住时外围进度环顺时针走满，用时1.5秒；中途松手进度环倒退归零；走满后按钮左右轻震一下，变成对勾和“已删除”。适合删除等危险操作。",
@@ -659,13 +851,22 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Hold to Confirm",
+      "description": "Hold for 1.5 seconds to confirm; release early to roll back. The demo only changes state and deletes nothing.",
+      "tags": "Button interaction / Long press / Progress ring / Release to cancel"
+    }
   },
   {
     "id": "shared-element-transition",
     "kind": "prompt",
     "title": "共享元素无缝展开",
     "category": "动画动效",
+    "topics": [
+      "卡片交互",
+      "App 交互"
+    ],
     "tags": "App 交互 / 共享元素 / 详情转场 / 连续缩放 / 连续展开 / 卡片交互",
     "description": "同一张卡片连续展开为详情，再平滑返回列表。",
     "prompt": "实现Card到详情页的共享元素转场（Shared Element Transition），背景与Card容器做连续平滑缩放。\n\n连续展开（用户补充原文）：\n给卡片添加共享元素转场，连续过渡卡片的位置、尺寸和圆角，让核心信息移动到详情中的对应位置，关闭时反向恢复。",
@@ -686,13 +887,21 @@
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "collection": "卡片交互动效",
-    "updatedAt": "2026-10-23"
+    "updatedAt": "2026-10-23",
+    "en": {
+      "title": "Shared Element Expand",
+      "description": "The same card expands seamlessly into a detail view and glides back into the list.",
+      "tags": "App interaction / Shared element / Detail transition / Continuous scale / Continuous expand / Card interaction"
+    }
   },
   {
     "id": "tilt-glare-card",
     "kind": "prompt",
     "title": "3D 倾斜光影面板",
     "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
     "tags": "App 交互 / 3D 倾斜 / 反射流光 / Spring",
     "description": "倾斜角度与高光跟随指针，松手后弹簧回正。",
     "prompt": "为Card添加跟随触摸位置的3D透视倾斜与径向反射流光，松手带Spring阻尼回正。",
@@ -711,13 +920,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "3D Tilt Glare Panel",
+      "description": "Tilt and highlight follow the pointer, then spring back to rest on release.",
+      "tags": "App interaction / 3D tilt / Reflective sheen / Spring"
+    }
   },
   {
     "id": "fluid-capsule-morph",
     "kind": "prompt",
     "title": "流体胶囊形变",
     "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
     "tags": "App 交互 / 流体形变 / 胶囊按钮 / 弹窗",
     "description": "胶囊与面板共用一个容器，宽高和圆角连续变化。",
     "prompt": "实现胶囊按钮向弹窗面板的流体形态变换，尺寸与圆角采用高阻尼流体曲线（Fluid Morph）无缝过渡。",
@@ -736,13 +953,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Fluid Capsule Morph",
+      "description": "A capsule and a panel share one container, morphing width, height and radius continuously.",
+      "tags": "App interaction / Fluid morph / Capsule button / Popover"
+    }
   },
   {
     "id": "snap-odometer-chart",
     "kind": "prompt",
     "title": "磁吸游标与滚动码表",
     "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
     "tags": "App 交互 / 折线图 / 磁吸吸附 / 滚动计数器",
     "description": "拖动游标吸附到最近数据点，数字滚动更新。",
     "prompt": "折线图横向滑动带数据点磁吸吸附，顶部数值使用滚动计数器（Odometer / Ticker）实时平滑联动。",
@@ -761,13 +986,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Snapping Cursor & Odometer",
+      "description": "Drag the cursor and it snaps to the nearest data point while the number rolls to update.",
+      "tags": "App interaction / Line chart / Magnetic snap / Rolling counter"
+    }
   },
   {
     "id": "damped-bottom-sheet",
     "kind": "prompt",
     "title": "阻尼弹性抽屉",
     "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
     "tags": "App 交互 / 底部抽屉 / 阻尼回弹 / 手势速度",
     "description": "拖动抽屉带边界阻尼，释放后按速度选择吸附位置。",
     "prompt": "实现支持阻尼橡皮筋回弹的底部抽屉（Bottom Sheet），松手根据手势滑动速度（Velocity）自动计算吸附锚点。",
@@ -786,13 +1019,21 @@
       "width": 671,
       "height": 562
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Damped Bottom Sheet",
+      "description": "The sheet resists at its edges while dragged and picks a snap point from release velocity.",
+      "tags": "App interaction / Bottom sheet / Damped bounce / Gesture velocity"
+    }
   },
   {
     "id": "conic-glow-border",
     "kind": "prompt",
     "title": "动态弥散光晕边框",
     "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
     "tags": "App 交互 / 锥形渐变 / 旋转描边 / 呼吸背光",
     "description": "渐变高光沿卡片边缘旋转，背光柔和呼吸。",
     "prompt": "为Card添加旋转渐变描边（Conic Gradient Border），底部附带动态模糊的呼吸弥散背光。",
@@ -811,13 +1052,21 @@
       "width": 671,
       "height": 562
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Conic Glow Border",
+      "description": "A gradient highlight orbits the card edge while a soft backlight breathes.",
+      "tags": "App interaction / Conic gradient / Rotating stroke / Breathing glow"
+    }
   },
   {
     "id": "spring-stagger-cascade",
     "kind": "prompt",
     "title": "物理弹簧交错瀑布",
     "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
     "tags": "App 交互 / 交错动画 / 弹性入场 / 列表瀑布",
     "description": "列表卡片依次弹性入场，可重播并调整交错间隔。",
     "prompt": "列表元素入场使用交错动画（Stagger Delay），每个子项带微弱弹性向\n\n【截图末尾截断，以上为可见原文。】\n补充实现建议（非截图原文）：各子项按 0.10 秒错峰淡入并轻微上移，落定时带一次小幅弹性回弹，支持重播与减少动态效果偏好。",
@@ -837,13 +1086,22 @@
       "width": 671,
       "height": 562
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Spring Stagger Cascade",
+      "description": "List cards spring in one after another; replay it and tune the stagger interval.",
+      "tags": "App interaction / Stagger / Elastic entrance / List cascade"
+    }
   },
   {
     "id": "press-scale-feedback",
     "kind": "prompt",
     "title": "弹性微缩触觉反馈",
     "category": "动画动效",
+    "topics": [
+      "按钮交互",
+      "App 交互"
+    ],
     "tags": "App 交互 / 按压反馈 / scale(0.96) / 超调回弹",
     "description": "按下时缩小并加内阴影，释放时轻微超调恢复。",
     "prompt": "按钮按压添加scale(0.96)物理弹性压缩与深度内阴影，释放时触发轻微超调回弹（Spring Overshoot）。",
@@ -862,13 +1120,21 @@
       "width": 671,
       "height": 562
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Press Scale Feedback",
+      "description": "Shrinks with an inner shadow on press and recovers with a slight overshoot on release.",
+      "tags": "App interaction / Press feedback / scale(0.96) / Overshoot"
+    }
   },
   {
     "id": "website-scrolltide",
     "kind": "website",
     "title": "Scrolltide",
     "category": "其他",
+    "topics": [
+      "动效灵感"
+    ],
     "tags": "网页动效 / AI 提示词 / 模板 / 滚动动画",
     "description": "提供滚动动效网页模板、组件、着色器和 AI 提示词，适合寻找页面效果并将参考交给 AI 编程工具实现。",
     "source": "https://www.scrolltide.co/",
@@ -885,13 +1151,21 @@
     "previewSource": "https://www.scrolltide.co/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Scrolltide",
+      "description": "Scroll-animation web templates, components, shaders and AI prompts — find an effect and hand the reference to your AI coding tool.",
+      "tags": "Web motion / AI prompts / Templates / Scroll animation"
+    }
   },
   {
     "id": "website-mobbin",
     "kind": "website",
     "title": "Mobbin",
     "category": "其他",
+    "topics": [
+      "设计素材"
+    ],
     "tags": "UI 灵感 / UX / App / 网页 / 交互流程",
     "description": "收集真实 App 与网站的界面和用户流程，适合做设计研究、比较交互方式和寻找产品界面参考。",
     "source": "https://mobbin.com/",
@@ -908,13 +1182,21 @@
     "previewSource": "https://mobbin.com/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Mobbin",
+      "description": "A library of real app and website screens and user flows for design research, comparing interactions and finding product UI references.",
+      "tags": "UI inspiration / UX / Apps / Web / User flows"
+    }
   },
   {
     "id": "website-fontshare",
     "kind": "website",
     "title": "Fontshare",
     "category": "其他",
+    "topics": [
+      "设计素材"
+    ],
     "tags": "字体 / 排版 / 字体搭配 / 字体预览",
     "description": "Indian Type Foundry 推出的字体平台，可在线预览字体、查看搭配并下载，适合为品牌、网页和海报选择字体。",
     "source": "https://www.fontshare.com/",
@@ -931,13 +1213,21 @@
     "previewSource": "https://www.fontshare.com/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Fontshare",
+      "description": "A font platform by Indian Type Foundry to preview, pair and download typefaces for brands, websites and posters.",
+      "tags": "Fonts / Typography / Font pairing / Font preview"
+    }
   },
   {
     "id": "website-coolors",
     "kind": "website",
     "title": "Coolors",
     "category": "其他",
+    "topics": [
+      "设计素材"
+    ],
     "tags": "配色 / 色板 / 调色板 / 颜色灵感",
     "description": "快速生成与探索配色方案，并提供取色等设计工具，适合为界面、品牌和插画建立配色。",
     "source": "https://coolors.co/",
@@ -954,13 +1244,21 @@
     "previewSource": "https://coolors.co/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Coolors",
+      "description": "Generate and explore color palettes with tools like a color picker — great for UI, brand and illustration palettes.",
+      "tags": "Color / Swatches / Palettes / Color inspiration"
+    }
   },
   {
     "id": "website-spline",
     "kind": "website",
     "title": "Spline",
     "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
     "tags": "3D 设计 / 交互 / 浏览器 / 建模",
     "description": "在浏览器中创建和协作编辑 3D 场景、材质与交互动画，适合网页三维展示、产品演示和交互原型。",
     "source": "https://spline.design/",
@@ -977,13 +1275,21 @@
     "previewSource": "https://spline.design/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Spline",
+      "description": "Create and co-edit 3D scenes, materials and interactive animations in the browser for web 3D, product demos and prototypes.",
+      "tags": "3D design / Interaction / Browser / Modeling"
+    }
   },
   {
     "id": "website-lottiefiles",
     "kind": "website",
     "title": "LottieFiles",
     "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
     "tags": "Lottie / 动效素材 / 动画制作 / 交互动画",
     "description": "提供轻量动画素材与创建、编辑、管理和接入工具，适合为网页、App、演示和社媒内容添加动效。",
     "source": "https://lottiefiles.com/",
@@ -1000,13 +1306,21 @@
     "previewSource": "https://lottiefiles.com/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "LottieFiles",
+      "description": "Lightweight animation assets plus tools to create, edit, manage and embed them in websites, apps, decks and social content.",
+      "tags": "Lottie / Motion assets / Animation / Interactive animation"
+    }
   },
   {
     "id": "website-threejs-journey",
     "kind": "website",
     "title": "Three.js Journey",
     "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
     "tags": "Three.js / WebGL / WebGPU / 3D 开发 / 学习课程",
     "description": "Bruno Simon 制作的三维网页开发课程，涵盖 Three.js、WebGL 和 WebGPU / TSL 等内容，适合系统学习交互式 3D 网站开发。",
     "source": "https://threejs-journey.com/",
@@ -1023,13 +1337,21 @@
     "previewSource": "https://threejs-journey.com/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Three.js Journey",
+      "description": "Bruno Simon's 3D web development course covering Three.js, WebGL and WebGPU / TSL — a structured path to interactive 3D sites.",
+      "tags": "Three.js / WebGL / WebGPU / 3D development / Course"
+    }
   },
   {
     "id": "website-3dicons",
     "kind": "website",
     "title": "3dicons",
     "category": "其他",
+    "topics": [
+      "设计素材"
+    ],
     "tags": "3D 图标 / 设计素材 / 三维图标 / 图标库",
     "description": "提供多种风格的三维图标与素材集合，适合为网页、App 和演示页面添加 3D 视觉元素。",
     "source": "https://3dicons.co/",
@@ -1046,7 +1368,12 @@
     "previewSource": "https://3dicons.co/",
     "previewEvidence": "official-website-browser-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "3dicons",
+      "description": "Collections of 3D icons and assets in many styles to add 3D visuals to websites, apps and presentations.",
+      "tags": "3D icons / Design assets / 3D graphics / Icon library"
+    }
   },
   {
     "id": "skill-agent-reach",
@@ -1070,7 +1397,12 @@
     "previewSource": "https://github.com/Panniantong/Agent-Reach/blob/main/README.md",
     "previewEvidence": "pending-real-output",
     "previewNote": "真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与使用示例。",
-    "prompt": "Agent-Reach\n\n用途：为 AI Agent 提供网页、社交平台、视频和 RSS 的搜索与阅读能力，适合收集热点讨论、用户问题和选题资料。部分平台需要额外配置；它不是自动生成热点榜单的工具。\n\n定位：用于获取和整理选题资料；热点筛选与最终选题仍由用户或 Agent 判断。\n\n预览说明：真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与使用示例。\n\n官方入口：https://github.com/Panniantong/Agent-Reach\n官方仓库：https://github.com/Panniantong/Agent-Reach\n使用说明：https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+    "prompt": "Agent-Reach\n\n用途：为 AI Agent 提供网页、社交平台、视频和 RSS 的搜索与阅读能力，适合收集热点讨论、用户问题和选题资料。部分平台需要额外配置；它不是自动生成热点榜单的工具。\n\n定位：用于获取和整理选题资料；热点筛选与最终选题仍由用户或 Agent 判断。\n\n预览说明：真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与使用示例。\n\n官方入口：https://github.com/Panniantong/Agent-Reach\n官方仓库：https://github.com/Panniantong/Agent-Reach\n使用说明：https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
+    "en": {
+      "title": "Agent-Reach",
+      "description": "Gives AI agents search and reading access to the web, social platforms, video and RSS — useful for gathering trending discussions, user questions and topic research. Some platforms need extra setup; it does not auto-generate trend rankings.",
+      "tags": "Social media / Trending topics / Research / Multi-platform"
+    }
   },
   {
     "id": "skill-auto-redbook",
@@ -1100,7 +1432,12 @@
     "previewSource": "https://github.com/comeonzhj/Auto-Redbook-Skills/blob/main/demos/playful-geometric/card_1.png",
     "previewEvidence": "author-repository-example",
     "previewNote": "作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。",
-    "prompt": "Auto-Redbook\n\n用途：根据资料撰写小红书标题、正文与标签，并把内容渲染成封面和多页图片卡片。支持多种主题与分页方式，适合快速制作图文笔记。\n\n\n\n预览说明：作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。\n\n官方入口：https://github.com/comeonzhj/Auto-Redbook-Skills\n官方仓库：https://github.com/comeonzhj/Auto-Redbook-Skills\n使用说明：https://github.com/comeonzhj/Auto-Redbook-Skills/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+    "prompt": "Auto-Redbook\n\n用途：根据资料撰写小红书标题、正文与标签，并把内容渲染成封面和多页图片卡片。支持多种主题与分页方式，适合快速制作图文笔记。\n\n\n\n预览说明：作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。\n\n官方入口：https://github.com/comeonzhj/Auto-Redbook-Skills\n官方仓库：https://github.com/comeonzhj/Auto-Redbook-Skills\n使用说明：https://github.com/comeonzhj/Auto-Redbook-Skills/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
+    "en": {
+      "title": "Auto-Redbook",
+      "description": "Writes Xiaohongshu titles, body copy and tags from your material, then renders covers and multi-page image cards. Multiple themes and paging modes for quick image posts.",
+      "tags": "Social media / Xiaohongshu / Copywriting / Image cards"
+    }
   },
   {
     "id": "skill-nuwa-skill",
@@ -1123,7 +1460,12 @@
     "previewSource": "https://github.com/alchaincyf/nuwa-skill/blob/main/README.md",
     "previewEvidence": "pending-real-output",
     "previewNote": "真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与文字对话示例。",
-    "prompt": "nuwa-skill · 女娲\n\n用途：调研人物资料，提炼思维框架、表达习惯与边界，生成可复用的人物视角 Skill。可用于写作视角与风格参考；保持账号风格仍需结合自己的语料和规范。\n\n定位：人物认知和表达提炼，不自带账号长期记忆或风格自动锁定。官方 README 提供文字对话示例。\n\n预览说明：真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与文字对话示例。\n\n官方入口：https://github.com/alchaincyf/nuwa-skill\n官方仓库：https://github.com/alchaincyf/nuwa-skill\n使用说明：https://github.com/alchaincyf/nuwa-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+    "prompt": "nuwa-skill · 女娲\n\n用途：调研人物资料，提炼思维框架、表达习惯与边界，生成可复用的人物视角 Skill。可用于写作视角与风格参考；保持账号风格仍需结合自己的语料和规范。\n\n定位：人物认知和表达提炼，不自带账号长期记忆或风格自动锁定。官方 README 提供文字对话示例。\n\n预览说明：真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与文字对话示例。\n\n官方入口：https://github.com/alchaincyf/nuwa-skill\n官方仓库：https://github.com/alchaincyf/nuwa-skill\n使用说明：https://github.com/alchaincyf/nuwa-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
+    "en": {
+      "title": "nuwa-skill · Nüwa",
+      "description": "Researches a person, distills their thinking frameworks, voice and boundaries, and produces a reusable persona Skill — a reference for perspective and style; keeping your own voice still needs your own corpus and guidelines.",
+      "tags": "Social media / Voice & style / Thinking frameworks / Persona"
+    }
   },
   {
     "id": "skill-guizang-social-card",
@@ -1153,7 +1495,12 @@
     "previewSource": "https://github.com/user-attachments/assets/d370abcc-1fc4-4de1-903a-09020a6556ce",
     "previewEvidence": "author-repository-example",
     "previewNote": "作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。",
-    "prompt": "guizang · Social Card\n\n用途：把文章、截图、照片或视频整理成小红书组图、公众号封面对与 Live Photo 动态卡。提供电子杂志风和瑞士风版式，适合社媒视觉素材制作。\n\n名称对应：用户已确认 guizang 指 Guizang Social Card Skill（社媒组图与封面）。官方项目采用 AGPL-3.0，并提供独立商业授权说明；使用项目时以官方最新许可为准。\n\n预览说明：作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。\n\n官方入口：https://github.com/op7418/guizang-social-card-skill\n官方仓库：https://github.com/op7418/guizang-social-card-skill\n使用说明：https://github.com/op7418/guizang-social-card-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+    "prompt": "guizang · Social Card\n\n用途：把文章、截图、照片或视频整理成小红书组图、公众号封面对与 Live Photo 动态卡。提供电子杂志风和瑞士风版式，适合社媒视觉素材制作。\n\n名称对应：用户已确认 guizang 指 Guizang Social Card Skill（社媒组图与封面）。官方项目采用 AGPL-3.0，并提供独立商业授权说明；使用项目时以官方最新许可为准。\n\n预览说明：作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。\n\n官方入口：https://github.com/op7418/guizang-social-card-skill\n官方仓库：https://github.com/op7418/guizang-social-card-skill\n使用说明：https://github.com/op7418/guizang-social-card-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
+    "en": {
+      "title": "guizang · Social Card",
+      "description": "Turns articles, screenshots, photos or videos into Xiaohongshu carousels, WeChat cover pairs and Live Photo cards, in magazine or Swiss-style layouts.",
+      "tags": "Social media / Guizang / Xiaohongshu carousel / WeChat cover / Live Photo"
+    }
   },
   {
     "id": "skill-social-auto-upload",
@@ -1182,7 +1529,12 @@
     "previewSource": "https://github.com/dreammis/social-auto-upload/blob/main/media/show/tkupload.gif",
     "previewEvidence": "author-published-demo",
     "previewNote": "作者官方公开的实际上传演示 GIF（历史版本），保留原始文件；非本次运行或生成。",
-    "prompt": "social-auto-upload\n\n用途：通过统一命令行和平台 Skills 发布视频、文章与图文，适合将成品内容分发到多个平台。具体内容类型、定时发布和登录要求依各平台支持情况而定。\n\n作者 GIF 为 TikTok 上传流程的历史实际演示，不代表当前所有平台入口或界面。当前能力以主线 README 平台表和 skills 目录为准。发布前需自行配置平台账号与运行环境。\n\n预览说明：作者官方公开的实际上传演示 GIF（历史版本），保留原始文件；非本次运行或生成。\n\n官方入口：https://sap-doc.nasdaddy.com/\n官方仓库：https://github.com/dreammis/social-auto-upload\n使用说明：https://github.com/dreammis/social-auto-upload/tree/main/skills\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+    "prompt": "social-auto-upload\n\n用途：通过统一命令行和平台 Skills 发布视频、文章与图文，适合将成品内容分发到多个平台。具体内容类型、定时发布和登录要求依各平台支持情况而定。\n\n作者 GIF 为 TikTok 上传流程的历史实际演示，不代表当前所有平台入口或界面。当前能力以主线 README 平台表和 skills 目录为准。发布前需自行配置平台账号与运行环境。\n\n预览说明：作者官方公开的实际上传演示 GIF（历史版本），保留原始文件；非本次运行或生成。\n\n官方入口：https://sap-doc.nasdaddy.com/\n官方仓库：https://github.com/dreammis/social-auto-upload\n使用说明：https://github.com/dreammis/social-auto-upload/tree/main/skills\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
+    "en": {
+      "title": "social-auto-upload",
+      "description": "Publishes videos, articles and image posts through one CLI and per-platform Skills to distribute finished content across platforms. Content types, scheduling and login needs vary by platform.",
+      "tags": "Social media / Multi-platform publishing / Video upload / Post distribution"
+    }
   },
   {
     "id": "skill-cloud-doodle-animal",
@@ -1211,7 +1563,12 @@
     "previewEvidence": "author-repository-example",
     "previewNote": "作者官方 examples 目录中的真实作品，保留原始文件；非本次生成。",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "cloud-doodle-animal",
+      "description": "Turns naturally formed clouds in sky photos into animals with minimal black hand-drawn lines, keeping the original cloud shapes, sky and scenery — for cloud doodles and feel-good photo art.",
+      "tags": "Cloud animals / Minimal line art / Photo doodle / Sky / Image creation"
+    }
   },
   {
     "id": "skill-giant-doodle-street-collage",
@@ -1240,7 +1597,12 @@
     "previewEvidence": "author-repository-example",
     "previewNote": "作者官方 examples 目录中的真实作品，保留原始文件；非本次生成。",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "giant-doodle-street-collage",
+      "description": "Overlays giant flat doodle characters onto real street or interior photos, touching buildings and props, using bold outlines and saturated color for surreal contrast.",
+      "tags": "Giant doodles / Street collage / Surreal / Flat illustration / Image creation"
+    }
   },
   {
     "id": "skill-video-shotcraft",
@@ -1269,13 +1631,21 @@
     "verifiedAt": "2026-10-23",
     "skillTopics": [
       "动画视频"
-    ]
+    ],
+    "en": {
+      "title": "video-shotcraft",
+      "description": "Builds product promo videos from real page screenshots with Remotion — storyboards, 2.5D camera moves, rhythmic cuts and sound design — exporting MP4 plus an editable project; also good for single shots.",
+      "tags": "Product promo / Remotion / Video production / Storyboard / Camera moves / Beat sync / Claude Code / Codex"
+    }
   },
   {
     "id": "website-metalforge",
     "kind": "website",
     "title": "MetalForge",
     "category": "其他",
+    "topics": [
+      "动效灵感"
+    ],
     "tags": "着色器 / Shader / 动画动效 / SwiftUI / React Native / Web / MCP",
     "description": "提供面向 SwiftUI、React Native 和 Web 的着色器与交互动效，涵盖玻璃、液体、文字、卡片和按钮等效果，适合浏览灵感并按平台获取实现代码。",
     "source": "https://metalforge.xyz/",
@@ -1293,13 +1663,21 @@
     "previewSource": "https://metalforge.xyz/",
     "previewEvidence": "live-website-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "MetalForge",
+      "description": "Shaders and interactive effects for SwiftUI, React Native and the web — glass, liquid, text, cards and buttons — with code per platform.",
+      "tags": "Shaders / Shader / Motion / SwiftUI / React Native / Web / MCP"
+    }
   },
   {
     "id": "website-60fps",
     "kind": "website",
     "title": "60fps.design",
     "category": "其他",
+    "topics": [
+      "动效灵感"
+    ],
     "tags": "交互灵感 / 动效案例 / App / Web / 设计参考",
     "description": "收集真实 App 与网页的交互细节和动效案例，适合研究界面转场、微交互和产品体验。",
     "source": "https://60fps.design/",
@@ -1316,13 +1694,21 @@
     "previewSource": "https://60fps.design/",
     "previewEvidence": "live-website-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "60fps.design",
+      "description": "A collection of interaction details and motion examples from real apps and websites for studying transitions, micro-interactions and product feel.",
+      "tags": "Interaction inspiration / Motion examples / Apps / Web / Design reference"
+    }
   },
   {
     "id": "website-animejs",
     "kind": "website",
     "title": "Anime.js",
     "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
     "tags": "JavaScript / 动画库 / 弹簧 / 拖拽 / 滚动联动 / Anime / Enemies",
     "description": "JavaScript 动画引擎，支持时间轴、错峰、弹簧、拖拽、滚动观察与 SVG 动画，适合编写网页交互动效。",
     "source": "https://animejs.com/",
@@ -1340,13 +1726,21 @@
     "previewEvidence": "live-website-screenshot",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "repository": "https://github.com/juliangarnier/anime"
+    "repository": "https://github.com/juliangarnier/anime",
+    "en": {
+      "title": "Anime.js",
+      "description": "A JavaScript animation engine with timelines, staggering, springs, dragging, scroll observers and SVG animation for web interactions.",
+      "tags": "JavaScript / Animation library / Springs / Dragging / Scroll-linked / Anime / Enemies"
+    }
   },
   {
     "id": "website-aceternity-ui",
     "kind": "website",
     "title": "Aceternity UI",
     "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
     "tags": "React / Tailwind / Motion / 动效组件 / Astonity UI",
     "description": "提供基于 React、Tailwind CSS 与 Motion 的组件、区块和模板，适合构建带动效的落地页和产品展示。",
     "source": "https://ui.aceternity.com/",
@@ -1363,7 +1757,12 @@
     "previewSource": "https://ui.aceternity.com/",
     "previewEvidence": "live-website-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "en": {
+      "title": "Aceternity UI",
+      "description": "Components, blocks and templates built with React, Tailwind CSS and Motion for animated landing pages and product showcases.",
+      "tags": "React / Tailwind / Motion / Motion components / Astonity UI"
+    }
   },
   {
     "id": "skill-ai-job-search",
@@ -1387,7 +1786,12 @@
     "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。",
     "skillTopics": [
       "求职效率"
-    ]
+    ],
+    "en": {
+      "title": "AI Job Search",
+      "description": "Organizes your job materials, role-fit evaluation, tailored résumés and cover letters, and interview prep into one local workflow for managing applications.",
+      "tags": "Job search / Résumé / CV / Cover letter / Interview prep / MadsLorentzen"
+    }
   },
   {
     "id": "skill-context-mode",
@@ -1410,7 +1814,12 @@
     "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。",
     "skillTopics": [
       "开发工具"
-    ]
+    ],
+    "en": {
+      "title": "Context Mode",
+      "description": "Processes large tool outputs in a sandbox and returns only what's relevant, using indexing and retrieval to carry session state. Good for log analysis, code search and long coding sessions.",
+      "tags": "MCP / Context optimization / Session memory / Tool output / mksglu"
+    }
   },
   {
     "id": "skill-diagram-design",
@@ -1439,7 +1848,12 @@
     "previewNote": "官方架构图示例，来自官方仓库，保留原始素材；非本次运行成果。",
     "skillTopics": [
       "视觉设计"
-    ]
+    ],
+    "en": {
+      "title": "Diagram Design",
+      "description": "Draws architecture, flows, sequences and data relationships as standalone HTML + SVG diagrams, with brand fonts and colors. For technical docs, product explainers and decks.",
+      "tags": "Diagrams / Architecture / HTML / SVG / Brand design / cathrynlavery"
+    }
   },
   {
     "id": "skill-artcraft",
@@ -1469,7 +1883,12 @@
     "skillTopics": [
       "图像创作",
       "动画视频"
-    ]
+    ],
+    "en": {
+      "title": "ArtCraft",
+      "description": "An AI creation tool for artists and designers that combines image and video generation, 2D layer compositing, 3D scene blocking and character posing for precise control.",
+      "tags": "AI creation / Image / Video / 2D canvas / 3D scenes / storytold"
+    }
   },
   {
     "id": "skill-rea",
@@ -1498,13 +1917,21 @@
     "previewNote": "官方 Hopper 分析截图，来自官方仓库，保留原始素材；非本次运行成果。",
     "skillTopics": [
       "开发工具"
-    ]
+    ],
+    "en": {
+      "title": "REA · Reverse Engineer Anything",
+      "description": "Connects coding agents to program-analysis tools to inspect app behavior, JavaScript / Electron and native binaries, with evidence-backed explanations of how things work.",
+      "tags": "Reverse engineering / MCP / Binary analysis / JavaScript / Electron / morluto"
+    }
   },
   {
     "id": "dashboard-hero-module",
     "kind": "prompt",
     "title": "主次布局",
     "category": "界面设计",
+    "topics": [
+      "后台布局"
+    ],
     "tags": "Dashboard / 布局设计 / Hero Module",
     "description": "以跨两行的 8 列主模块建立视觉重心，4 列次要模块围绕排列。",
     "prompt": "首屏采用主次布局（Hero Module），主模块占8列跨两行，次要指标用4列小模块排在右侧和下方，全页只有一个视觉重心。",
@@ -1530,13 +1957,21 @@
       "width": 1265,
       "height": 712
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Hero Module",
+      "description": "An 8-column hero module spanning two rows anchors the layout, with 4-column secondary modules around it.",
+      "tags": "Dashboard / Layout / Hero Module"
+    }
   },
   {
     "id": "dashboard-stacked-bands",
     "kind": "prompt",
     "title": "通栏横带",
     "category": "界面设计",
+    "topics": [
+      "后台布局"
+    ],
     "tags": "Dashboard / 布局设计 / Stacked Bands",
     "description": "概览、趋势、明细横贯全宽，以 48 像素间距组织层级。",
     "prompt": "页面采用通栏横带布局（Stacked Bands），自上而下分为概览、趋势、明细三层，每层横贯全宽，层与层之间留48像素间距。",
@@ -1563,13 +1998,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Stacked Bands",
+      "description": "Overview, trends and details run full width, organized by 48px spacing.",
+      "tags": "Dashboard / Layout / Stacked Bands"
+    }
   },
   {
     "id": "dashboard-full-bleed-canvas",
     "kind": "prompt",
     "title": "全幅画布",
     "category": "界面设计",
+    "topics": [
+      "后台布局"
+    ],
     "tags": "Dashboard / 布局设计 / Full-bleed Canvas / Floating Panels",
     "description": "全幅画布承载主内容，指标和列表以四角浮动面板叠加。",
     "prompt": "主区用全幅画布作底（Full-bleed Canvas），指标与列表做成浮动面板（Floating Panels）叠在上层，面板贴四角排布，留16像素边距。",
@@ -1595,13 +2038,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Full-bleed Canvas",
+      "description": "A full-bleed canvas holds the main content, with metrics and lists in floating corner panels.",
+      "tags": "Dashboard / Layout / Full-bleed Canvas / Floating Panels"
+    }
   },
   {
     "id": "dashboard-kanban-columns",
     "kind": "prompt",
     "title": "看板分列",
     "category": "界面设计",
+    "topics": [
+      "后台布局"
+    ],
     "tags": "Dashboard / 布局设计 / Kanban Columns",
     "description": "任务按状态分入等宽列，列头带计数，支持横向滚动。",
     "prompt": "采用看板分列布局（Kanban Columns），按状态分为等宽列，列头显示名称与计数，列内纵向堆叠，整体可横向滚动。",
@@ -1627,13 +2078,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Kanban Columns",
+      "description": "Tasks are sorted into equal-width status columns with counts in the headers and horizontal scrolling.",
+      "tags": "Dashboard / Layout / Kanban Columns"
+    }
   },
   {
     "id": "dashboard-timeline-swimlanes",
     "kind": "prompt",
     "title": "时间轴泳道",
     "category": "界面设计",
+    "topics": [
+      "后台布局"
+    ],
     "tags": "Dashboard / 布局设计 / Timeline Swimlanes",
     "description": "以横条展示各泳道任务的起止时间，竖线标记当前时刻。",
     "prompt": "采用时间轴泳道布局（Timeline Swimlanes），顶部为时间刻度，每行一条泳道，事项按起止时间绘制为横条，用竖向参考线标记当前时刻。",
@@ -1659,13 +2118,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Timeline Swimlanes",
+      "description": "Horizontal bars show task start and end per swimlane, with a vertical line marking now.",
+      "tags": "Dashboard / Layout / Timeline Swimlanes"
+    }
   },
   {
     "id": "website-easel",
     "kind": "website",
     "title": "Easel",
     "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
     "resourceType": "open-source-social-media-workbench",
     "tags": "社媒运营 / 全链路工作台 / 浙江大学 / 北京大学 / REAL Lab / OpenDCAI / 内容创作 / 多平台发布",
     "description": "面向社媒创作者的开源 AI 工作台，贯通热点发现、选题策划、图文与音视频制作、平台适配发布和效果复盘，并以账号画像保存创作偏好。",
@@ -1686,13 +2153,21 @@
     "previewEvidence": "live-website-screenshot",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "officialUrl": "https://zjureal.com/Easel/"
+    "officialUrl": "https://zjureal.com/Easel/",
+    "en": {
+      "title": "Easel",
+      "description": "An open-source AI workbench for social creators covering trend discovery, topic planning, image / audio / video production, platform-ready publishing and performance reviews, with account profiles that remember preferences.",
+      "tags": "Social media / End-to-end workbench / Zhejiang University / Peking University / REAL Lab / OpenDCAI / Content creation / Multi-platform publishing"
+    }
   },
   {
     "id": "dashboard-transparent-nav",
     "kind": "prompt",
     "title": "透明顶栏",
     "category": "界面设计",
+    "topics": [
+      "导航设计"
+    ],
     "tags": "Dashboard / 后台导航 / Transparent Nav / 透明导航 / 渐变背景",
     "description": "导航直接融入页面背景，选中项以半透明白色圆角底突出。",
     "prompt": "导航改为透明顶栏（Transparent Nav），去掉背景色和分隔线，文字直接落在页面背景上，当前项加半透明白色圆角底。",
@@ -1716,13 +2191,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Transparent Top Bar",
+      "description": "Navigation blends into the page background, with the active item on a translucent white rounded pill.",
+      "tags": "Dashboard / Admin nav / Transparent Nav / Transparent navigation / Gradient background"
+    }
   },
   {
     "id": "dashboard-right-rail",
     "kind": "prompt",
     "title": "右侧竖轨菜单",
     "category": "界面设计",
+    "topics": [
+      "导航设计"
+    ],
     "tags": "Dashboard / 后台导航 / Right Rail / 右侧导航 / 亮色图标轨",
     "description": "亮色图标轨固定在右侧，深色底强调当前项，顶部提供新建入口。",
     "prompt": "主导航放到页面右侧，做成竖向图标轨（Right Rail），通高、整条用亮色，当前项用深色圆角底，新建按钮固定在顶部。",
@@ -1746,13 +2229,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Right Rail Menu",
+      "description": "A light icon rail pinned to the right, a dark fill for the active item, and a create button at the top.",
+      "tags": "Dashboard / Admin nav / Right Rail / Right-side nav / Light icon rail"
+    }
   },
   {
     "id": "dashboard-expanding-tab",
     "kind": "prompt",
     "title": "当前项展开文字",
     "category": "界面设计",
+    "topics": [
+      "导航设计"
+    ],
     "tags": "Dashboard / 后台导航 / Expanding Tab / 弹性缓动 / 图标标签",
     "description": "顶部图标导航仅展开当前项文字，宽度随切换弹性过渡。",
     "prompt": "顶部导航做成图标组，当前项展开显示文字（Expanding Tab），其余只留图标，切换时宽度用弹性缓动过渡。",
@@ -1776,13 +2267,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Expanding Active Tab",
+      "description": "Top icon navigation expands only the active item's label, with an elastic width transition.",
+      "tags": "Dashboard / Admin nav / Expanding Tab / Elastic easing / Icon tabs"
+    }
   },
   {
     "id": "dashboard-page-title-nav",
     "kind": "prompt",
     "title": "图标菜单配大标题",
     "category": "界面设计",
+    "topics": [
+      "导航设计"
+    ],
     "tags": "Dashboard / 后台导航 / Page Title / Icon Rail / 范围选择",
     "description": "用大标题承接当前导航状态，图标轨保持简洁，并提供范围选择。",
     "prompt": "侧边栏收成纯图标轨，当前页面名放大作为页面大标题（Page Title），标题旁接范围选择，切换图标时标题同步更换。",
@@ -1806,13 +2305,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Icon Menu with Page Title",
+      "description": "A large title reflects the current nav state while a minimal icon rail stays put, plus a range picker.",
+      "tags": "Dashboard / Admin nav / Page Title / Icon Rail / Range picker"
+    }
   },
   {
     "id": "dashboard-icon-rail-tooltip",
     "kind": "prompt",
     "title": "图标轨加悬停提示",
     "category": "界面设计",
+    "topics": [
+      "导航设计"
+    ],
     "tags": "Dashboard / 后台导航 / Icon Rail / Tooltip / 分组分隔线",
     "description": "纯图标侧栏以分隔线分组，悬停或聚焦时显示名称提示。",
     "prompt": "侧边栏做成纯图标轨（Icon Rail），悬停时在右侧弹出文字提示（Tooltip），图标之间用分隔线分组。",
@@ -1836,13 +2343,21 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Icon Rail with Tooltips",
+      "description": "An icon-only sidebar grouped by dividers, showing name tooltips on hover or focus.",
+      "tags": "Dashboard / Admin nav / Icon Rail / Tooltip / Group dividers"
+    }
   },
   {
     "id": "dashboard-quick-actions",
     "kind": "prompt",
     "title": "快捷操作",
     "category": "界面设计",
+    "topics": [
+      "导航设计"
+    ],
     "tags": "Dashboard / 后台导航 / Quick Actions / 即时操作 / 圆形按钮",
     "description": "菜单旁增加纵向圆形快捷按钮，常用操作突出，执行后留在当前页。",
     "prompt": "菜单旁边加一列快捷操作（Quick Actions），圆形按钮纵向排列，最常用的一个用主色，点击直接执行，不跳转页面。",
@@ -1866,7 +2381,12 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Quick Actions",
+      "description": "Vertical round shortcut buttons beside the menu highlight common actions and keep you on the current page.",
+      "tags": "Dashboard / Admin nav / Quick Actions / Instant actions / Round buttons"
+    }
   },
   {
     "id": "skill-grill-me",
@@ -1888,7 +2408,12 @@
     "repository": "https://github.com/mattpocock/skills",
     "skillTopics": [
       "开发工具"
-    ]
+    ],
+    "en": {
+      "title": "grill-me",
+      "description": "Clarifies ideas, requirements and design decisions through rounds of questions, surfacing unstated assumptions and edge cases before you build.",
+      "tags": "Dev workflow / Requirement clarification / Design scrutiny / Product decisions / Pre-build prep"
+    }
   },
   {
     "id": "skill-diagnose",
@@ -1912,7 +2437,12 @@
     "repository": "https://github.com/mattpocock/skills",
     "skillTopics": [
       "开发工具"
-    ]
+    ],
+    "en": {
+      "title": "diagnose (now diagnosing-bugs)",
+      "description": "Builds a reproducible failure signal for a bug, narrows the scope, tests hypotheses, fixes the root cause and confirms with regression checks.",
+      "tags": "Dev workflow / Bug diagnosis / Reproduction / Performance regression / Regression tests"
+    }
   },
   {
     "id": "skill-taste-skill",
@@ -1940,7 +2470,12 @@
     "repository": "https://github.com/Leonxlnx/taste-skill",
     "skillTopics": [
       "视觉设计"
-    ]
+    ],
+    "en": {
+      "title": "Taste-Skill",
+      "description": "Gives design direction to AI-built websites and apps — layout, typography, color and imagery — and checks and fixes results in a real browser. For new UIs, reviews and redesigns.",
+      "tags": "Taste review / Frontend design / Typography / Color / Visual QA / design-taste-frontend"
+    }
   },
   {
     "id": "skill-story-long-scan",
@@ -1962,7 +2497,12 @@
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "story-long-scan",
+      "description": "Analyzes rankings and new-release samples across web-novel platforms to surface hot genres, characters and hooks, then scores topics against the author's strengths.",
+      "tags": "Fiction writing / Topic picking / Market trends / Ranking scan"
+    }
   },
   {
     "id": "skill-story-long-analyze",
@@ -1992,7 +2532,12 @@
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "story-long-analyze",
+      "description": "Breaks down a long novel's chapters, characters, causality, emotion and pacing into a revisitable analysis report and reference file.",
+      "tags": "Fiction writing / Book breakdown / Golden first three chapters / Plot structure"
+    }
   },
   {
     "id": "skill-chinese-novelist-skill",
@@ -2021,7 +2566,12 @@
     "repository": "https://github.com/PenglongHuang/chinese-novelist-skill",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "chinese-novelist-skill",
+      "description": "Sets a novel's direction through progressive Q&A, builds an outline and writes chapter by chapter, with resume support and chapter quality checks.",
+      "tags": "Fiction writing / Starting a book / Chinese fiction / Resume writing"
+    }
   },
   {
     "id": "skill-novel-creator-skill",
@@ -2043,7 +2593,12 @@
     "repository": "https://github.com/leenbj/novel-creator-skill",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "novel-creator-skill",
+      "description": "Organizes long-form writing with file memory, a knowledge graph and outline anchors, linking planning, chapter drafting, consistency checks and revision.",
+      "tags": "Fiction writing / Outline / Long-term memory / Foreshadowing"
+    }
   },
   {
     "id": "skill-character-designer",
@@ -2074,7 +2629,12 @@
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "character-designer",
+      "description": "Designs character profiles, motivation chains, arcs, relationships and speech styles. This is Oh Story's built-in character-design agent, added to Skills at your request.",
+      "tags": "Fiction writing / Characters / Character arcs / Dialogue style"
+    }
   },
   {
     "id": "skill-story-long-write",
@@ -2104,7 +2664,12 @@
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "story-long-write",
+      "description": "Advances a long web novel from settings, volume and chapter outlines, writes chapters on explicit request, and tracks characters, foreshadowing and continuation state.",
+      "tags": "Fiction writing / Drafting / Long-form continuation / Chapter planning"
+    }
   },
   {
     "id": "skill-webnovel-writer",
@@ -2135,7 +2700,12 @@
     "repository": "https://github.com/lingfengQAQ/webnovel-writer",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "webnovel-writer",
+      "description": "Chains book setup, planning, chapter writing, review, memory and status queries into one flow to keep long serials consistent in setting and foreshadowing.",
+      "tags": "Fiction writing / Memory / Web serials / Status queries"
+    }
   },
   {
     "id": "skill-story-deslop",
@@ -2165,7 +2735,12 @@
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "story-deslop",
+      "description": "Checks for templated phrasing, narrative padding and story causality while preserving the author's voice and plot, with concrete revision directions.",
+      "tags": "Fiction writing / De-slop / Fiction polishing / Prose check"
+    }
   },
   {
     "id": "skill-story-review",
@@ -2187,7 +2762,12 @@
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "story-review",
+      "description": "Reviews drafts for structure, characters, prose and setting, quoting the text to pinpoint issues and suggest fixes, with a single-reviewer fallback mode.",
+      "tags": "Fiction writing / Review / Consistency / Revision notes"
+    }
   },
   {
     "id": "skill-story-cover",
@@ -2216,7 +2796,12 @@
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
       "写作创作"
-    ]
+    ],
+    "en": {
+      "title": "story-cover",
+      "description": "Creates novel covers with title and byline from the book title, author name and genre; actual rendering depends on an available image tool.",
+      "tags": "Fiction writing / Covers / Title typography / Book visuals"
+    }
   },
   {
     "id": "skill-moss-image",
@@ -2245,7 +2830,12 @@
     "repository": "https://github.com/OpenMOSS/MOSS-Image",
     "skillTopics": [
       "图像创作"
-    ]
+    ],
+    "en": {
+      "title": "MOSS-Image",
+      "description": "OpenMOSS's image generation project with text rendering and layout control; its moss-image-prompt-enhancer Skill turns ideas into detailed descriptions or layout JSON. For posters, illustrations and text placement.",
+      "tags": "AI image generation / Prompt enhancement / Text rendering / Layout control / Posters & illustration"
+    }
   },
   {
     "id": "skill-impeccable",
@@ -2276,7 +2866,12 @@
     "repository": "https://github.com/pbakaus/impeccable",
     "skillTopics": [
       "视觉设计"
-    ]
+    ],
+    "en": {
+      "title": "Impeccable",
+      "description": "Helps AI design and polish frontends — typography, color, layout and interaction — and checks responsiveness and accessibility. For landing pages, product UIs and redesigns.",
+      "tags": "Frontend design / UI review / Type & color / Responsive / Design systems"
+    }
   },
   {
     "id": "skill-awesome-design-md",
@@ -2305,7 +2900,12 @@
     "repository": "https://github.com/VoltAgent/awesome-design-md",
     "skillTopics": [
       "视觉设计"
-    ]
+    ],
+    "en": {
+      "title": "Awesome DESIGN.md",
+      "description": "Captures real websites' colors, fonts, spacing and component rules as DESIGN.md files for AI to follow when building UIs — a style reference library for finding a direction and staying consistent.",
+      "tags": "DESIGN.md / Design reference library / Design tokens / Brand style / UI guidelines"
+    }
   },
   {
     "id": "skill-pixel2motion",
@@ -2334,7 +2934,12 @@
     "repository": "https://github.com/nolangz/pixel2motion",
     "skillTopics": [
       "动画视频"
-    ]
+    ],
+    "en": {
+      "title": "pixel2motion",
+      "description": "Converts bitmap logos into smooth, editable SVGs, then choreographs brand animations as standalone HTML. For logo intros, loaders and hovers, with vector-fit and animation QA.",
+      "tags": "Logo animation / Bitmap to SVG / Brand intro / Vector fitting"
+    }
   },
   {
     "id": "skill-child-photo-doodle-collage",
@@ -2362,7 +2967,12 @@
     "repository": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage",
     "skillTopics": [
       "图像创作"
-    ]
+    ],
+    "en": {
+      "title": "child-photo-doodle-collage",
+      "description": "Blends real photos with crayon doodles while keeping faces, poses and clothing intact, letting little animals and props genuinely interact with people. For playful portraits of kids or adults.",
+      "tags": "Photo doodle / Crayon illustration / Creative portraits / Portrait compositing"
+    }
   },
   {
     "id": "skill-gsap-skills",
@@ -2392,7 +3002,12 @@
     "skillTopics": [
       "动画视频",
       "视觉设计"
-    ]
+    ],
+    "en": {
+      "title": "gsap-skills",
+      "description": "GreenSock's official GSAP Skills collection, helping AI write correct timelines, scroll-linked, staggered and SVG animations, plus framework integration and performance tuning.",
+      "tags": "GSAP / Timeline / Scroll-linked / SVG / Animation development"
+    }
   },
   {
     "id": "skill-ruic-card-skill",
@@ -2422,12 +3037,20 @@
     "skillTopics": [
       "视觉设计",
       "动画视频"
-    ]
+    ],
+    "en": {
+      "title": "RuiC-card-skill",
+      "description": "Turns a one-line description or reference image into a draggable, rotatable 3D holographic card web page with sheen and layered parallax, plus an editable Blender project.",
+      "tags": "Holo cards / 3D cards / Blender / Three.js"
+    }
   },
   {
     "id": "fab-to-sheet",
     "title": "加号展开面板",
     "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
     "tags": "容器变形 / 面板 / 480ms",
     "description": "容器从悬浮按钮连续展开，选项错峰淡入。",
     "prompt": "悬浮按钮形变为底部面板（FAB to Sheet）：同一个容器的宽高从64连续过渡到470乘300、圆角从32到28，走cubic-bezier(.2,.9,.22,1)约480ms；面板里的选项等容器落定后按每项4帧交错淡入，关闭时沿同一条曲线反向收回原位。",
@@ -2446,12 +3069,20 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "FAB to Sheet",
+      "description": "The container expands continuously from the floating button, with options fading in staggered.",
+      "tags": "Container morph / Panel / 480ms"
+    }
   },
   {
     "id": "button-loader-success",
     "title": "提交状态反馈",
     "category": "动画动效",
+    "topics": [
+      "按钮交互"
+    ],
     "tags": "按钮 / 加载 / 状态反馈",
     "description": "按钮、环形进度和成功结果在同一容器完成。",
     "prompt": "按钮状态形变链（Button to Loader to Success）：点击后宽度从470收到76变成圆形，沿边缘绘制环形进度；走满后环合拢，勾形用strokeDasharray描边画出来，再横向展开成结果条。三个状态共用一个容器，位置从头到尾不变。",
@@ -2470,12 +3101,20 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Submit State Feedback",
+      "description": "Button, progress ring and success result all play out in a single container.",
+      "tags": "Button / Loading / State feedback"
+    }
   },
   {
     "id": "elastic-tab-indicator",
     "title": "标签指示条",
     "category": "动画动效",
+    "topics": [
+      "导航设计"
+    ],
     "tags": "标签导航 / 弹性 / left-width",
     "description": "指示条前沿先行、后沿追赶，拉伸后带一次轻微超调。",
     "prompt": "标签指示器液态拉伸（Elastic Tab Indicator）：切换时前沿先走cubic-bezier(.2,.9,.22,1)奔向目标，后沿延后6帧起步追赶，宽度中途被拉到两倍以上再收回，末端带一次轻微超调；用left和width驱动，别用scaleX，圆角会被拉扁。",
@@ -2494,12 +3133,20 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "Tab Indicator",
+      "description": "The indicator's leading edge goes first and the trailing edge catches up, stretching with one slight overshoot.",
+      "tags": "Tab navigation / Elastic / left-width"
+    }
   },
   {
     "id": "flip-layout-morph",
     "title": "列表切换网格",
     "category": "动画动效",
+    "topics": [
+      "卡片交互"
+    ],
     "tags": "FLIP / 列表网格 / 弧线路径",
     "description": "六张卡片沿弧线从列表归位到网格，图片保持比例。",
     "prompt": "列表与网格布局形变（FLIP Layout Morph）：先记录每一项切换前后的矩形，再用位移和缩放做反向补偿，各自沿带弧度的路径缓动到新格位，相邻项错开3帧；图片按比例裁切不挤压，过程中不销毁重建节点，也不重新加载。",
@@ -2518,6 +3165,11 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。",
+    "en": {
+      "title": "List to Grid",
+      "description": "Six cards arc from a list into a grid while images keep their aspect ratio.",
+      "tags": "FLIP / List & grid / Arc path"
+    }
   }
 ]
