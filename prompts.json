@@ -1,5 +1,27 @@
 [
   {
+    "id": "skill-pixel2motion",
+    "kind": "skill",
+    "title": "pixel2motion",
+    "category": "动画动效",
+    "tags": "Logo 动画 / 位图转 SVG / 品牌开场 / 矢量拟合",
+    "description": "把位图 Logo 转成平滑、可编辑的 SVG，再编排为品牌动画与独立 HTML 展示。适合 Logo 开场、加载、悬停动效，并提供矢量拟合和动画验收依据。",
+    "source": "https://github.com/nolangz/pixel2motion",
+    "documentation": "https://github.com/nolangz/pixel2motion/blob/main/SKILL.md",
+    "prompt": "pixel2motion（作者：nolangz / Nolan Lai）\n\n用途：把 PNG、JPG、WebP 或截图中的 Logo 重建为结构清晰、平滑且可编辑的 SVG，再制作品牌动画。\n\n流程：分析源图与品牌动效性格 → 最少复杂度的矢量拟合 → 动画编排 → 几何与动作质量检查。强调平滑边缘、语义化拆分，以及动画最终画面与确认过的静态矢量一致。\n\n适合：Logo reveal、品牌开场、启动屏、加载与悬停动效，以及像素图到 SVG 的重建。\n\n主要交付：静态 logo.svg、可独立打开的动画 HTML、动效规范、拟合叠图与动画帧检查证据；可制作 GIF/视频预览。\n\n预览：作者仓库公开的 Horizon 和 CueRecord 动态 GIF。未在本次运行该 Skill，也未安装。\n\n官方 Skill：https://github.com/nolangz/pixel2motion/blob/main/SKILL.md\n完整互动展示：https://nolangz.github.io/pixel2motion/",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-pixel2motion/author-horizon.gif",
+      "alt": "作者真实示例：Horizon Logo 从位图重建后的动画输出"
+    },
+    "previewNote": "作者真实示例：官方仓库 docs/gifs/claude-horizon.gif；非本次生成。另附 CueRecord 动画与作者完整互动展示。",
+    "previewSource": "https://github.com/nolangz/pixel2motion/blob/e9faedb28930df0da2acf17da00c80730a78cfe8/docs/gifs/claude-horizon.gif",
+    "previewEvidence": "author-published-demo",
+    "demo": "assets/skill-pixel2motion/showcase.html",
+    "addedAt": "2026-10-22",
+    "verifiedAt": "2026-10-22"
+  },
+  {
     "id": "skill-child-photo-doodle-collage",
     "kind": "skill",
     "title": "child-photo-doodle-collage",
