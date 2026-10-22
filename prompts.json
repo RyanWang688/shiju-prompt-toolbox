@@ -1,5 +1,48 @@
 [
   {
+    "id": "skill-impeccable",
+    "kind": "skill",
+    "title": "Impeccable",
+    "category": "界面设计",
+    "tags": "前端设计 / 界面评审 / 排版配色 / 响应式 / 设计系统",
+    "description": "帮助 AI 设计和打磨前端界面，改善排版、配色、布局与交互，并检查响应式和可访问性。适合落地页、产品界面及现有网页的设计优化。",
+    "source": "https://github.com/pbakaus/impeccable",
+    "documentation": "https://github.com/pbakaus/impeccable/blob/main/skill/SKILL.src.md",
+    "prompt": "Impeccable（作者：Paul Bakaus）\n\n用途：为 AI 编码代理提供前端设计指导，覆盖界面创建、设计评审、排版、布局、配色、动效、文案、响应式和可访问性。\n\n适合：网页与落地页设计、产品界面打磨、改善通用模板感，以及从现有代码整理 DESIGN.md、设计令牌与组件。\n\n典型能力：critique 设计评审、audit 技术检查、polish 细节打磨、typeset 排版、layout 布局、animate 动效、adapt 多设备适配。具体命令以官方当前文档为准。\n\n预览：本次实际打开作者发布的 Neo Mirai 工作网站并截图。官方案例介绍了从页面参考图、品牌工具包到响应式网页的实现过程；这是作者真实案例，并非本次生成或实际运行 Impeccable 的结果。案例为虚构会议。\n\n收录状态：收藏用途、来源和真实案例；本次未安装该 Skill。\n\n官方仓库：https://github.com/pbakaus/impeccable\n官方案例说明：https://impeccable.style/cases/neo-mirai/\n实际案例网页：https://impeccable.style/neo-mirai/",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-impeccable/author-neo-mirai.png",
+      "alt": "Impeccable 作者真实案例 Neo Mirai 网站的实际浏览器截图"
+    },
+    "previewNote": "作者真实案例：Neo Mirai 响应式网站，2026-10-22 实际打开后截图。非本次生成；案例流程见官方说明。",
+    "previewSource": "https://impeccable.style/neo-mirai/",
+    "previewEvidence": "author-published-case-screenshot",
+    "addedAt": "2026-10-22",
+    "verifiedAt": "2026-10-22"
+  },
+  {
+    "id": "skill-awesome-design-md",
+    "kind": "skill",
+    "title": "Awesome DESIGN.md",
+    "resourceType": "design-reference-library",
+    "category": "界面设计",
+    "tags": "DESIGN.md / 设计参考库 / 设计令牌 / 品牌风格 / 界面规范",
+    "description": "把真实网站的配色、字体、间距与组件规则整理成 DESIGN.md，供 AI 编写界面时参考。它是设计规范资源库，适合寻找视觉方向并保持多页面风格一致。",
+    "source": "https://github.com/VoltAgent/awesome-design-md",
+    "documentation": "https://github.com/VoltAgent/awesome-design-md/blob/main/README.md",
+    "prompt": "Awesome DESIGN.md（维护者：VoltAgent）\n\n类型：设计规范参考库，按用户要求收录在 Skills 栏目；不是一项独立执行的 Skill。\n\n用途：从真实网站中分析并整理色彩、字体、间距、组件、设计令牌和使用规则，保存为 DESIGN.md，作为 AI 编写界面的视觉参考。\n\n适合：寻找品牌视觉方向、向 AI 说明想要的网页风格、保持多个页面一致，或为项目建立可复用的设计规范。\n\n使用方式：选择一个合适的参考，阅读对应 DESIGN.md，再让编码代理结合项目自己的内容和需求使用规范。参考分析不代表原品牌官方授权或背书。\n\n预览：作者网站 getdesign.md 公开的 Apple 风格设计系统交互实例（页面标题为 Lumora），本次实际打开并截图。它展示作者提供的设计参考效果，不是 Apple 官网截图，也不是本次由 Skill 生成。\n\n收录状态：收藏参考库与作者预览，本次未安装或执行工具。\n\n官方仓库：https://github.com/VoltAgent/awesome-design-md\n参考目录：https://getdesign.md/\n对应参考说明：https://getdesign.md/apple/design-md\n实际交互预览：https://getdesign.md/design-md/apple/preview",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-awesome-design-md/author-apple-preview.png",
+      "alt": "作者 getdesign.md 公开的 Apple 风格 Lumora 设计系统实例实际截图"
+    },
+    "previewNote": "作者真实示例：getdesign.md 公开的 Apple 风格 / Lumora 交互预览，2026-10-22 实际截图。非 Apple 官网，非本次生成。",
+    "previewSource": "https://getdesign.md/design-md/apple/preview",
+    "previewEvidence": "author-published-reference-preview",
+    "addedAt": "2026-10-22",
+    "verifiedAt": "2026-10-22"
+  },
+  {
     "id": "website-opencut",
     "kind": "website",
     "title": "OpenCut",
