@@ -8,7 +8,7 @@ GitHub Pages 从 main 分支根目录自动发布。
 
 采用 Dashboard 布局：左侧为固定纯图标导航轨，按内容类型、收藏和主题分类用分隔线分组；悬停或键盘聚焦显示名称与数量提示，Escape 可关闭。保留浅紫、奶白与黄色配色，小屏内容自动改为单列。
 
-已收录 4 条动效提示词和 7 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image。
+已收录 4 条动效提示词和 17 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
 
 新增 Impeccable（前端设计与界面打磨），配作者 Neo Mirai 真实案例截图；Awesome DESIGN.md 为设计规范参考库，配作者 getdesign.md 的 Apple 风格 / Lumora 实际交互预览截图，按用户要求归入 Skills。两者均注明来源，非本次生成。
 
@@ -47,3 +47,5 @@ python build.py
 ```
 
 `build.py` 校验数据和预览文件路径，再把数据嵌入 `index.html`，因此页面可离线打开，无需安装依赖。页面预览是针对提示词制作的示意或演示；只有实际生成并保存的模型输出才标为生成结果。
+
+2026-10-23 收录截图中的 10 条小说工具：story-long-scan、story-long-analyze、chinese-novelist-skill、novel-creator-skill、character-designer、story-long-write、webnovel-writer、story-deslop、story-review、story-cover。character-designer 为 Oh Story 内置 Agent；webnovel-writer 为合集。扫榜、novel-creator-skill 与审稿三条真实预览待补，其余使用作者真实截图、实际文档节选或明确注明演示数据的官方功能演示，不以宣传图替代生成结果。
