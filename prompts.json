@@ -1,5 +1,108 @@
 [
   {
+    "id": "website-motionsites",
+    "kind": "website",
+    "title": "MotionSites.org",
+    "category": "动画动效",
+    "tags": "动效灵感 / AI 提示词 / 网站模板 / Skills 目录 / Motion Sites / 灵感网站 / 定方向，找骨架 / 落地页骨架",
+    "description": "提供动效网站案例、页面区块和 AI 设计提示词，适合确定落地页方向、参考内容结构与布局，再交给 AI 辅助实现。",
+    "source": "https://motionsites.org/",
+    "homepage": "https://motionsites.org/",
+    "resourceType": "skill-and-prompt-catalog",
+    "prompt": "Motion Sites\n\n用途：收集动效网站、页面区块、AI 设计提示词与 Skills 资源，适合寻找网页视觉方向，再把提示词交给 AI 编程工具实现。\n\n快速用法：找效果 → 查看资源说明 → 复制提示词或代码 → 交给 AI 编程工具或项目调试。\n\n授权与费用：网站有免费项目和付费访问方案，使用前查看当前价格、可用额度及素材授权。不保证提示词可以一键或一比一复刻原站。\n\n官网：https://motionsites.org/\nSkills：https://motionsites.org/skills\n\n本次收录定位：定方向，找骨架\n用户收录说明（原文）：提供大量设计感强的落地页案例，可直接对标其结构和布局，让AI生成的页面框架一步到位。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-motionsites/official-site.png",
+      "alt": "Motion Sites 官网实际截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开官网的网页截图。网站包含免费和付费内容，具体价格与授权以官网为准。",
+    "previewSource": "https://motionsites.org/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "officialUrl": "https://motionsites.org/",
+    "documentation": "https://motionsites.org/skills",
+    "collection": "网页设计灵感流程"
+  },
+  {
+    "id": "website-react-bits",
+    "kind": "website",
+    "title": "React Bits",
+    "category": "其他",
+    "tags": "React / 动效组件 / 背景 / TypeScript / 开源 / 灵感网站 / 做交互，省时间 / React 交互",
+    "description": "提供 React 动效组件、动态背景与微交互，支持复制源代码或安装，适合在已有页面中补充交互，再按项目框架与依赖适配。",
+    "source": "https://reactbits.dev/",
+    "officialUrl": "https://reactbits.dev/",
+    "prompt": "React Bits\n\n用途：提供可调参数的 React 动效组件、背景与微交互，支持复制源代码或按文档安装到项目。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：先查看组件的 Demo、Code 和安装说明，确认所需依赖与项目版本。免费组件和 Pro 产品分开提供，以各自授权条款为准。\n\n官网：https://reactbits.dev/\n\n本次收录定位：做交互，省时间\n用户收录说明（原文）：海量开源的React交互组件和动态背景，让AI直接适配到你的项目，实现丝滑交互。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-react-bits/official-site.png",
+      "alt": "React Bits 官方网页实际截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://reactbits.dev/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "repository": "https://github.com/DavidHDev/react-bits",
+    "collection": "网页设计灵感流程"
+  },
+  {
+    "id": "website-uiverse",
+    "kind": "website",
+    "title": "Uiverse",
+    "category": "其他",
+    "tags": "UI 元素 / CSS / Tailwind / 按钮 / 组件 / 灵感网站 / 补细节，去廉价 / 组件细节",
+    "description": "社区维护的 UI 元素库，包含按钮、卡片、输入框和加载动画，适合细化界面组件并参考对应实现代码。",
+    "source": "https://uiverse.io/",
+    "officialUrl": "https://uiverse.io/",
+    "prompt": "Uiverse\n\n用途：社区维护的 UI 元素库，收集按钮、输入框、卡片与加载效果，可查看 HTML / CSS、Tailwind 等实现。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：选择具体元素查看代码与署名、授权说明，再复制到项目；不把灵感展示等同于所有框架开箱即用。\n\n官网：https://uiverse.io/\n\n本次收录定位：补细节，去廉价\n用户收录说明（原文）：提供高级按钮、立体卡片、加载动画等精致组件，替换AI默认生成的简陋元素，细节感翻倍。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-uiverse/official-site.png",
+      "alt": "Uiverse 官方网页实际截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://uiverse.io/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "repository": "https://github.com/uiverse-io/galaxy",
+    "collection": "网页设计灵感流程"
+  },
+  {
+    "id": "website-gsap",
+    "kind": "website",
+    "title": "GSAP",
+    "category": "其他",
+    "collection": "网页设计灵感流程",
+    "tags": "灵感网站 / 升动效，达丝滑 / GSAP / 时间轴 / 视差滚动 / ScrollTrigger / 转场",
+    "description": "JavaScript 动画库的官方网站，提供滚动联动、时间轴、SVG 与界面转场工具，以及文档、演示和作品案例，适合细化动画节奏与交互。",
+    "source": "https://gsap.com/",
+    "officialUrl": "https://gsap.com/",
+    "repository": "https://github.com/greensock/GSAP",
+    "documentation": "https://gsap.com/docs/v3/",
+    "prompt": "GSAP\n\n本次收录定位：升动效，达丝滑。\n用途：浏览官方作品案例、动画演示与文档，使用时间轴、ScrollTrigger、SVG 和 UI 动画工具实现滚动叙事、视差及平滑转场。\n\n快速用法：找参考效果 → 确认要表达的交互 → 阅读官方 API 和演示 → 让 AI 按项目框架实现 → 检查性能与减少动态效果偏好。\n\n用户收录说明（原文）：解决动效生硬问题，让AI用GSAP重构视差滚动、平滑转场等效果，达到大厂官网级质感。\n\n说明：GSAP 是动画开发工具，实际效果取决于设计与实现。此条为实用网站；已有 gsap-skills 条目仍保留在 Skills 栏目。本次只收藏官网信息及公开页面截图，不安装或执行新工具。\n\n官网：https://gsap.com/\n官方文档：https://gsap.com/docs/v3/\n案例：https://gsap.com/showcase/\n\n预览：2026-10-23 实际浏览器访问官网后的截图。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-gsap/official-site.png",
+      "alt": "GSAP 官方网站实际浏览器截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://gsap.com/",
+    "previewNote": "2026-10-23 实际访问 GSAP 官方公开页面保存的浏览器截图，保留原站设计与标识。",
+    "previewEvidence": "official-website-browser-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
     "id": "website-skillry",
     "kind": "website",
     "title": "Skillry",
@@ -779,54 +882,6 @@
     "verifiedAt": "2026-10-23"
   },
   {
-    "id": "website-react-bits",
-    "kind": "website",
-    "title": "React Bits",
-    "category": "其他",
-    "tags": "React / 动效组件 / 背景 / TypeScript / 开源",
-    "description": "提供可调参数的 React 动效组件、背景与微交互，支持复制源代码或按文档安装到项目。",
-    "source": "https://reactbits.dev/",
-    "officialUrl": "https://reactbits.dev/",
-    "prompt": "React Bits\n\n用途：提供可调参数的 React 动效组件、背景与微交互，支持复制源代码或按文档安装到项目。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：先查看组件的 Demo、Code 和安装说明，确认所需依赖与项目版本。免费组件和 Pro 产品分开提供，以各自授权条款为准。\n\n官网：https://reactbits.dev/",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-react-bits/official-site.png",
-      "alt": "React Bits 官方网页实际截图",
-      "width": 1265,
-      "height": 712
-    },
-    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
-    "previewSource": "https://reactbits.dev/",
-    "previewEvidence": "live-website-screenshot",
-    "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23",
-    "repository": "https://github.com/DavidHDev/react-bits"
-  },
-  {
-    "id": "website-uiverse",
-    "kind": "website",
-    "title": "Uiverse",
-    "category": "其他",
-    "tags": "UI 元素 / CSS / Tailwind / 按钮 / 组件",
-    "description": "社区维护的 UI 元素库，收集按钮、输入框、卡片与加载效果，可查看 HTML / CSS、Tailwind 等实现。",
-    "source": "https://uiverse.io/",
-    "officialUrl": "https://uiverse.io/",
-    "prompt": "Uiverse\n\n用途：社区维护的 UI 元素库，收集按钮、输入框、卡片与加载效果，可查看 HTML / CSS、Tailwind 等实现。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：选择具体元素查看代码与署名、授权说明，再复制到项目；不把灵感展示等同于所有框架开箱即用。\n\n官网：https://uiverse.io/",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-uiverse/official-site.png",
-      "alt": "Uiverse 官方网页实际截图",
-      "width": 1265,
-      "height": 712
-    },
-    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
-    "previewSource": "https://uiverse.io/",
-    "previewEvidence": "live-website-screenshot",
-    "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23",
-    "repository": "https://github.com/uiverse-io/galaxy"
-  },
-  {
     "id": "website-animejs",
     "kind": "website",
     "title": "Anime.js",
@@ -1449,32 +1504,6 @@
     "skillTopics": [
       "视觉设计"
     ]
-  },
-  {
-    "id": "website-motionsites",
-    "kind": "website",
-    "title": "MotionSites.org",
-    "category": "动画动效",
-    "tags": "动效灵感 / AI 提示词 / 网站模板 / Skills 目录 / Motion Sites",
-    "description": "收集动效网站、页面区块、AI 设计提示词与 Skills 资源，适合寻找网页视觉方向，再把提示词交给 AI 编程工具实现。",
-    "source": "https://motionsites.org/",
-    "homepage": "https://motionsites.org/",
-    "resourceType": "skill-and-prompt-catalog",
-    "prompt": "Motion Sites\n\n用途：收集动效网站、页面区块、AI 设计提示词与 Skills 资源，适合寻找网页视觉方向，再把提示词交给 AI 编程工具实现。\n\n快速用法：找效果 → 查看资源说明 → 复制提示词或代码 → 交给 AI 编程工具或项目调试。\n\n授权与费用：网站有免费项目和付费访问方案，使用前查看当前价格、可用额度及素材授权。不保证提示词可以一键或一比一复刻原站。\n\n官网：https://motionsites.org/\nSkills：https://motionsites.org/skills",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-motionsites/official-site.png",
-      "alt": "Motion Sites 官网实际截图",
-      "width": 1265,
-      "height": 712
-    },
-    "previewNote": "2026-10-23 实际打开官网的网页截图。网站包含免费和付费内容，具体价格与授权以官网为准。",
-    "previewSource": "https://motionsites.org/",
-    "previewEvidence": "live-website-screenshot",
-    "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23",
-    "officialUrl": "https://motionsites.org/",
-    "documentation": "https://motionsites.org/skills"
   },
   {
     "id": "skill-story-long-scan",
