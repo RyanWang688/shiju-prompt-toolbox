@@ -4,6 +4,8 @@
 
 GitHub Pages 从 main 分支根目录自动发布。
 
+新增“实用网站”栏目：目前收录 OpenCut，附实际官网截图、用途介绍和访问入口，同样支持收藏、个人评分与备份。网站截图按记录日期展示，不是实时抓取。
+
 采用已选定的 C「彩色灵感画板」视觉方向。已收录 4 条动效提示词和 4 个 Skills：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion。
 
 Skills 使用真实效果预览：涂鸦照片与 RuiC 卡牌采用原作者公开的作品/演示，GSAP 使用本次实际运行动画后保存的截图，并附可播放演示。详情标明来源和生成方式；素材归属与许可说明见各自 assets 目录的 ATTRIBUTION.md。

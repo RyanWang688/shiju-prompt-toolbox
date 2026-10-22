@@ -1,6 +1,7 @@
 """Embed the curated collection so index.html works offline as well as on a server."""
 import json
 from pathlib import Path
+from urllib.parse import urlparse
 
 root = Path(__file__).resolve().parent
 items = json.loads((root / 'prompts.json').read_text(encoding='utf-8'))
@@ -10,9 +11,12 @@ for item in items:
     assert all(isinstance(item.get(k), str) and item[k].strip() for k in ('id', 'title', 'category', 'prompt'))
     assert item['id'] not in ids, 'Duplicate prompt id'
     ids.add(item['id'])
-    assert item.get('kind', 'prompt') in ('prompt', 'skill')
-    if item.get('kind') == 'skill':
-        assert isinstance(item.get('description'), str) and item['description'].strip(), 'Skill requires a brief purpose'
+    assert item.get('kind', 'prompt') in ('prompt', 'skill', 'website')
+    if item.get('kind') in ('skill', 'website'):
+        assert isinstance(item.get('description'), str) and item['description'].strip(), 'Skill/website requires a brief purpose'
+    if item.get('kind') == 'website':
+        url = urlparse(item.get('source', ''))
+        assert url.scheme in ('http', 'https') and url.netloc, 'Website requires a valid address'
     preview = item.get('preview')
     if preview:
         assert preview['type'] in ('image', 'animation', 'video')

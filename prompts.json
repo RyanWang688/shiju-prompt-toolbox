@@ -1,5 +1,26 @@
 [
   {
+    "id": "website-opencut",
+    "kind": "website",
+    "title": "OpenCut",
+    "category": "其他",
+    "tags": "视频剪辑 / 在线工具 / 开源 / 创作",
+    "description": "开源视频编辑器，提供浏览器中的视频剪辑入口，适合快速处理视频素材、编排时间轴与制作短片。当前官网为早期测试版。",
+    "source": "https://opencut.app/",
+    "repository": "https://github.com/OpenCut-app/OpenCut",
+    "prompt": "OpenCut\n\n用途：开源视频编辑器，官方提供网页版入口，可用于视频剪辑与时间轴编排。\n\n适合：快速处理视频素材、制作短片，或寻找开源视频编辑工具。\n\n版本说明（2026-10-22 核实）：作者仓库说明项目正在重写；opencut.app 仍运行经典版，重写版在 new.opencut.app。功能与稳定性以实际网页为准。\n\n官网：https://opencut.app/\n项目：https://github.com/OpenCut-app/OpenCut\n\n预览为本次实际打开官网首页后的浏览器截图，非设计稿或概念图。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-opencut/homepage.png",
+      "alt": "OpenCut 官方网站实际页面截图"
+    },
+    "previewNote": "真实网页截图：本次于 2026-10-22 打开 https://opencut.app/ 后保存，展示官网首页。",
+    "previewSource": "https://opencut.app/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-22",
+    "verifiedAt": "2026-10-22"
+  },
+  {
     "id": "skill-pixel2motion",
     "kind": "skill",
     "title": "pixel2motion",
