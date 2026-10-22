@@ -1,5 +1,29 @@
 [
   {
+    "id": "website-easel",
+    "kind": "website",
+    "title": "Easel",
+    "category": "其他",
+    "resourceType": "open-source-social-media-workbench",
+    "tags": "社媒运营 / 全链路工作台 / 浙江大学 / 北京大学 / REAL Lab / OpenDCAI / 内容创作 / 多平台发布",
+    "description": "面向社媒创作者的开源 AI 工作台，贯通热点发现、选题策划、图文与音视频制作、平台适配发布和效果复盘，并以账号画像保存创作偏好。",
+    "source": "https://zjureal.com/Easel/",
+    "repository": "https://github.com/ZJU-REAL/Easel",
+    "documentation": "https://github.com/ZJU-REAL/Easel/blob/3f1d4fb8b99694f7231ee97163b637df89b50d3b/README.md",
+    "affiliations": "官方项目页列示：浙江大学 REAL 实验室、北京大学 OpenDCAI 实验室",
+    "prompt": "Easel · 开源社媒内容工作台\n\n用途：把 AI Agent、账号画像、内容技能与媒体工具连接起来，覆盖“发现 → 策划 → 创作 → 发布 → 归因”五层社媒运营工作流。\n\n高校与团队：官方项目页面同时列示浙江大学 REAL 实验室、北京大学 OpenDCAI 实验室，官方仓库为 ZJU-REAL/Easel。\n\n主要能力：发现热榜与内容机会；策划选题、标题、脚本和排期；制作文案、卡片、海报、配音、字幕、短剧和视频；按平台适配发布；回收内容表现并沉淀到账号画像。\n\n适合：需要把多种内容制作工具与多平台运营串联起来的个人创作者和内容团队。\n\n使用方式：这是需要按官方说明部署、配置的开源工作台，官网是项目介绍与案例页，不是打开网页即可使用的托管运营服务。仓库推荐 Web 前端。\n\n平台说明（2026-10-23 核实）：官方文档列出小红书、抖音、快手、知乎、B站、微信视频号、微信公众号等接入；实际发布需相应登录与配置。官方对小红书建议使用预览与发布前检查，并由用户确认后手动发布，不能将“全链路”理解为所有平台都无需人工处理。\n\n预览：本次实际打开官方项目页后的浏览器截图。展示官网，不是本次部署的工作台，也不是本次生成的运营结果。\n\n收录状态：仅收藏项目、用途与真实网页截图，未安装、接入账号、上传素材或执行社媒发布。\n\n官方项目页：https://zjureal.com/Easel/\n原项目地址（现重定向）：https://zju-real.github.io/Easel/\n官方仓库：https://github.com/ZJU-REAL/Easel",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-easel/official-site.png",
+      "alt": "Easel 官方网页实际截图，展示浙江大学与北京大学相关实验室标识及工作台介绍"
+    },
+    "previewNote": "真实网页截图：2026-10-23 实际打开 Easel 官方项目介绍页。非本次部署，不代表本次生成的运营成果。",
+    "previewSource": "https://zjureal.com/Easel/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
     "id": "dashboard-transparent-nav",
     "kind": "prompt",
     "title": "透明顶栏",
