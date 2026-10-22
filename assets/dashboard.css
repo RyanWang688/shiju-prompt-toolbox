@@ -67,6 +67,9 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 
 /* Shared black / yellow / white interaction palette across every collection. */
 .dashboard .preview,.dashboard .skill-cover{color:var(--ink)}
+.dashboard #detail .actions{align-items:center}.dashboard #detailVisit{display:contents}
+.dashboard #detailVisit .visit-site{min-height:44px;padding:10px 18px;font-size:13px;background:#fff;border-color:var(--ink);color:var(--ink)}
+.dashboard #detailVisit .visit-site:hover{background:var(--card-hover)}
 .dashboard .rating button{color:#595959}.dashboard .rating button.filled{color:#191919}
 .dashboard .topic-chip.active{background:var(--accent);border-color:var(--ink);color:var(--ink)}
 .topic-chip.active small{background:#fff;color:var(--ink)}
