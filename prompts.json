@@ -1,5 +1,40 @@
 [
   {
+    "id": "skill-collage-design",
+    "title": "collage-design",
+    "kind": "skill",
+    "resourceType": "拼贴艺术 Skill",
+    "category": "界面设计",
+    "repository": "https://github.com/polgarp/collage-design",
+    "officialUrl": "https://github.com/polgarp/collage-design",
+    "documentation": "https://github.com/polgarp/collage-design/blob/main/SKILL.md",
+    "tags": "拼贴 / 剪贴画 / 开放授权素材 / SVG / 海报封面 / polgarp",
+    "description": "从开放授权档案搜集真实照片与印刷品，剪切、统一色调后层叠成完整的拼贴作品，输出 SVG / PNG 与可调整的构建脚本，并记录每张素材的授权。适合海报、封面和装饰画。",
+    "source": "https://github.com/polgarp/collage-design",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "collage-design\n\n类型：拼贴艺术 Skill\n\n用途：从开放授权档案搜集真实照片与印刷品，剪切、统一色调后层叠成完整的拼贴作品，输出 SVG / PNG 与可调整的构建脚本，并记录每张素材的授权。适合海报、封面和装饰画。\n\n说明：按四步工作——先写出这件作品的拼贴理念，再推敲隐含的参照，然后只从开放授权档案（或你指定的本地文件夹）获取真实素材，最后在 SVG 上剪切、处理并组合，经过评审和打磨后交付。不使用生成图像，也不照搬在世艺术家的构图；每张素材的出处与授权写入 attributions.md，并提示 CC BY-SA 等授权对成品的影响。仅支持 Claude Code，需要本机安装 ImageMagick、Inkscape、librsvg、fontconfig 与 Python（Pillow、NumPy）；单件作品约 20–40 分钟。预览使用作者仓库中的示例作品。\n\nGitHub：https://github.com/polgarp/collage-design\n使用说明：https://github.com/polgarp/collage-design/blob/main/SKILL.md\n\n收录状态：仅收藏资源，未安装或执行。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-collage-design/author-strike-anywhere.jpg",
+      "alt": "作者示例作品 Strike Anywhere：上百张复古火柴盒标签拼贴",
+      "width": 1200,
+      "height": 1200
+    },
+    "previewSource": "https://raw.githubusercontent.com/polgarp/collage-design/main/examples/strike-anywhere.jpg",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者示例作品 Strike Anywhere，由 179 张公有领域火柴盒标签剪出 244 个碎片拼成，来自官方仓库，保留原始素材；非本次运行成果。",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "en": {
+      "title": "collage-design",
+      "description": "Sources real photos and printed matter from open-licensed archives, then cuts, unifies and layers them into a finished collage, exporting SVG / PNG plus an editable build script and logging every source's licence. Great for posters, covers and wall art.",
+      "tags": "Collage / Cut-and-paste / Open-licensed sources / SVG / Posters & covers / polgarp"
+    }
+  },
+  {
     "id": "website-howtocook",
     "kind": "website",
     "resourceType": "GitHub 项目",
