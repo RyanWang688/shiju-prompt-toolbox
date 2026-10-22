@@ -24,7 +24,8 @@ console.log('Website filtering and safe link checks passed.');
 const groupsLine=source.split('\n').find(line=>line.startsWith('const navGroups='));
 const groups=new Function(`${groupsLine};return navGroups`)();
 assert.equal(groups.length,3);
-assert.equal(new Set(groups.flatMap(g=>g.items.map(([label])=>label))).size,10);
+assert.equal(new Set(groups.flatMap(g=>g.items.map(([label])=>label))).size,6);
+assert.deepEqual(groups.at(-1).items.map(([label])=>label),['Categories'],'Theme entries collapse into one Categories entry');
 for(const group of groups)for(const [,icon] of group.items){
   assert.ok(existsSync(new URL(`./assets/icons/${icon}.svg`,import.meta.url)),`Missing navigation icon ${icon}`);
 }
@@ -85,8 +86,10 @@ for(const item of seedItems){
 // Every navigation label and topic tab must have an English label.
 const enLine=source.match(/^const EN=[\s\S]*?\};$/m)[0];
 const EN=new Function(`${enLine};return EN`)();
-for(const label of [...groups.flatMap(g=>[g.label,...g.items.map(([name])=>name)]),...Object.values(topicAPI.topicNames).flat(),'全部'])if(label!=='Skills')assert.ok(EN[label],`Missing English label: ${label}`);
-console.log('Prompt and website topics, English entries and labels passed.');
+for(const label of [...groups.flatMap(g=>[g.label,...g.items.map(([name])=>name)]),...Object.values(topicAPI.topicNames).flat(),'全部'])if(!['Skills','Categories'].includes(label))assert.ok(EN[label],`Missing English label: ${label}`);
+const notes=new Function(`${source.match(/^const categoryNotes=[\s\S]*?\};$/m)[0]};return categoryNotes`)();
+for(const [section,names] of Object.entries(topicAPI.topicNames))for(const topic of names)assert.equal(notes[`${section}/${topic}`]?.filter(Boolean).length,2,`Missing category note: ${section}/${topic}`);
+console.log('Prompt and website topics, English entries, labels and category notes passed.');
 const animateCode=source.split('\n').filter(line=>/^(const springRise=|function transitionCards\()/.test(line)).join('\n');
 let calls=0;const frames=[];
 const mockCard={dataset:{card:'one'},style:{},getBoundingClientRect:()=>({top:200,left:10,bottom:400}),animate:()=>{calls++;return {cancel(){}}}};
