@@ -1,6 +1,8 @@
 # 拾句 · 个人提示词工具箱
 
-采用已选定的 C「彩色灵感画板」视觉方向。已收录 4 条来自用户截图的动效提示词，分别配有可交互的 HTML 动效与原始截图；另收藏了 RuiC-card-skill 与 gsap-skills 的用途说明、官方来源和效果示意图。
+采用已选定的 C「彩色灵感画板」视觉方向。已收录 4 条动效提示词和 3 个 Skills：RuiC-card-skill、gsap-skills、child-photo-doodle-collage。
+
+Skills 使用真实效果预览：涂鸦照片与 RuiC 卡牌采用原作者公开的作品/演示，GSAP 使用本次实际运行动画后保存的截图，并附可播放演示。详情标明来源和生成方式；素材归属与许可说明见各自 assets 目录的 ATTRIBUTION.md。
 
 支持搜索、分类、收藏、原文复制、手动新增与编辑、JSON 备份和恢复；预览可使用图片、视频或独立 HTML 动效。
 

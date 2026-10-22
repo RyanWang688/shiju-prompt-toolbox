@@ -1,5 +1,26 @@
 [
   {
+    "id": "skill-child-photo-doodle-collage",
+    "kind": "skill",
+    "title": "child-photo-doodle-collage",
+    "category": "界面设计",
+    "tags": "照片涂鸦 / 蜡笔插画 / 创意写真 / 人像合成",
+    "description": "把真人照片与蜡笔手绘涂鸦融合，保留人物面容、姿态和服装，让小动物、道具与人物产生真实接触。适合儿童或成人的童趣写真和创意照片合成。",
+    "source": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage",
+    "documentation": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage/blob/main/skill/child-photo-doodle-collage/SKILL.md",
+    "prompt": "child-photo-doodle-collage\n\n用途：将用户提供的照片加工为真人与蜡笔涂鸦共同出现的创意写真，适用于儿童和成人。\n\n核心要求：保留面容、表情、姿势、发型与服装；使用平面蜡笔或彩铅质感的插画；主要涂鸦需要接触人物身体或照片中的真实道具，例如小猫趴肩、鸟停指尖或小动物扒住包口。\n\n背景：默认替换为留白充分的暖白影棚背景；当环境配色、户外场景或真实道具是画面核心时保留原场景。\n\n可附加：简短英文手写词、爱心、星星和符合动作状态的运动线。\n\n输入：一张需要处理的原始照片。\n\n预览来源：作者仓库公开的标准输出与作品合集，并非本次重新生成。\n\n来源：https://github.com/haomiaomou-cmd/child-photo-doodle-collage",
+    "addedAt": "2026-10-22",
+    "verifiedAt": "2026-10-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-child-photo-doodle-collage/author-showcase.jpg",
+      "alt": "作者公开的真实照片涂鸦合成作品合集"
+    },
+    "previewNote": "作者真实示例：公开仓库 showcase-overview.jpg，保留原始作品与水印；非本次生成。",
+    "previewSource": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage/blob/main/showcase/comparisons/showcase-overview.jpg",
+    "previewEvidence": "author-published-output"
+  },
+  {
     "id": "skill-gsap-skills",
     "kind": "skill",
     "title": "gsap-skills",
@@ -8,15 +29,18 @@
     "description": "GreenSock 官方的 GSAP 技能合集，帮助 AI 正确编写时间轴、滚动联动、错峰和 SVG 动画，并处理框架集成与性能优化。适合网页动效和交互动画开发。",
     "source": "https://github.com/greensock/gsap-skills",
     "documentation": "https://github.com/greensock/gsap-skills/blob/main/README.md",
-    "prompt": "gsap-skills\n\n用途：GreenSock 官方提供的一组 AI 动画开发技能，指导代理使用 GSAP 编写和维护网页动画。它是多个 Skills 的合集，并非只有一份 Skill。\n\n覆盖：基础补间与缓动、时间轴编排、错峰入场、ScrollTrigger 滚动联动、动画插件、React/Vue/Svelte 集成和性能优化。\n\n适合：多元素协同动画、滚动叙事、SVG 动效，以及需要暂停、反转或动态控制的交互动画。\n\n主要技能：gsap-core、gsap-timeline、gsap-scrolltrigger、gsap-plugins、gsap-utils、gsap-react、gsap-performance、gsap-frameworks。\n\n收录状态：已收藏官方来源和用途说明，尚未安装或执行。\n预览：本工具箱绘制的动效用途示意图，非运行原 Skill 的实测结果。\n\n官方仓库：https://github.com/greensock/gsap-skills",
+    "prompt": "gsap-skills\n\n用途：GreenSock 官方提供的一组 AI 动画开发技能，指导代理使用 GSAP 编写和维护网页动画。它是多个 Skills 的合集，并非只有一份 Skill。\n\n覆盖：基础补间与缓动、时间轴编排、错峰入场、ScrollTrigger 滚动联动、动画插件、React/Vue/Svelte 集成和性能优化。\n\n适合：多元素协同动画、滚动叙事、SVG 动效，以及需要暂停、反转或动态控制的交互动画。\n\n主要技能：gsap-core、gsap-timeline、gsap-scrolltrigger、gsap-plugins、gsap-utils、gsap-react、gsap-performance、gsap-frameworks。\n\n收录状态：已收藏官方来源和用途说明，尚未安装或执行。\n预览：本次运行 GSAP 的实际画面，按官方 core / timeline 示例模式制作；另附可播放的本地演示。\n\n官方仓库：https://github.com/greensock/gsap-skills",
     "addedAt": "2026-10-22",
     "verifiedAt": "2026-10-22",
     "preview": {
       "type": "image",
-      "src": "assets/skill-gsap-skills/preview.svg",
-      "alt": "GSAP 路径与错峰动画效果示意"
+      "src": "assets/skill-gsap-skills/runtime-preview.png",
+      "alt": "实际运行 GSAP 时间轴与错峰动画后保存的浏览器画面"
     },
-    "previewNote": "为查找用途绘制的概念示意图，非运行原 Skill 的实测结果。"
+    "previewNote": "本次真实运行截图：使用 GSAP 3.15.0，按官方 core / timeline 模式制作。点击“打开实际演示”可播放、暂停或重播。",
+    "previewSource": "https://github.com/greensock/gsap-skills/blob/main/examples/vanilla/main.js",
+    "previewEvidence": "locally-executed-gsap",
+    "demo": "assets/skill-gsap-skills/live-demo.html"
   },
   {
     "id": "skill-ruic-card-skill",
@@ -32,10 +56,13 @@
     "documentation": "https://github.com/HRuiCcc/RuiC-card-skill/blob/main/SKILL.md",
     "preview": {
       "type": "image",
-      "src": "assets/skill-ruic-card-skill/preview.svg",
-      "alt": "RuiC 全息卡牌流光与分层效果示意"
+      "src": "assets/skill-ruic-card-skill/author-demo.gif",
+      "alt": "作者发布的真实全息卡牌动态演示"
     },
-    "previewNote": "为查找用途绘制的概念示意图，非运行原 Skill 的实测结果。"
+    "previewNote": "作者真实演示 GIF：来自官方仓库 demo-after.gif（调整后效果），非本次生成。",
+    "previewSource": "https://github.com/HRuiCcc/RuiC-card-skill/blob/main/assets/demo-after.gif",
+    "previewEvidence": "author-published-demo",
+    "demo": "assets/skill-ruic-card-skill/author-demo.mp4"
   },
   {
     "id": "fab-to-sheet",
