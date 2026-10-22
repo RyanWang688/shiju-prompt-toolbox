@@ -1,0 +1,2 @@
+/* The gallery uses captured covers; interactive demos remain scrollable in detail. */
+html{scrollbar-width:none}html::-webkit-scrollbar{display:none}

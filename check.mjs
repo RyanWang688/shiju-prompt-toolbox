@@ -43,3 +43,26 @@ tooltipAPI.hideRailTooltip();
 assert.equal(tooltip.hidden,true);
 assert.equal(attributes['aria-describedby'],undefined);
 console.log('Grouped navigation assets and tooltip placement checks passed.');
+
+const resourceFn=source.split('\n').find(line=>line.startsWith('function resourceLinks('));
+const resourceLinks=new Function('websiteUrl',resourceFn+';return resourceLinks')(websiteUrl);
+assert.deepEqual(resourceLinks({kind:'skill',source:'https://github.com/example/project',repository:'https://github.com/example/project',documentation:'https://github.com/example/project/blob/main/SKILL.md'}).map(x=>x.label),['官方项目','使用说明']);
+assert.deepEqual(resourceLinks({kind:'website',officialUrl:'javascript:alert(1)',repository:'data:text/html,x',documentation:'file:///test'}),[]);
+assert.equal(resourceLinks({kind:'prompt',source:'https://example.com'}).length,0);
+assert.equal(resourceLinks({kind:'website',source:'https://opencut.app/'}).length,1);
+console.log('Official resource links: safe protocols, fallback and deduplication passed.');
+assert.ok(!source.includes('id="edit"')&&!source.includes('id="delete"'));
+assert.ok(!source.includes("$('edit').onclick")&&!source.includes("$('delete').onclick"));
+const outsideFn=source.split('\n').find(line=>line.startsWith('function outsideDetail('));
+const outsideDetail=new Function('$',outsideFn+';return outsideDetail')(()=>({getBoundingClientRect:()=>({left:100,right:800,top:50,bottom:600})}));
+assert.equal(outsideDetail({clientX:400,clientY:300}),false);
+assert.equal(outsideDetail({clientX:90,clientY:300}),true);
+assert.equal(outsideDetail({clientX:400,clientY:610}),true);
+console.log('Detail dismissal geometry and removed edit/delete controls passed.');
+const visualFn=source.split('\n').find(line=>line.startsWith('function visual('));
+const visual=new Function('seed','esc',visualFn+';return visual')([{id:'saved-favorite',cardPreview:{type:'image',src:'assets/cover.png'}}],x=>String(x||''));
+// Previously saved favorites predate cardPreview: the current seed still supplies the cover.
+assert.ok(visual({id:'saved-favorite',preview:{type:'animation',src:'assets/demo.html'}},true).includes('<img'));
+assert.ok(!visual({id:'custom',preview:{type:'animation',src:'assets/demo.html'}},true).includes('<iframe'));
+assert.ok(visual({id:'custom',preview:{type:'animation',src:'assets/demo.html'}},false).includes('<iframe'));
+console.log('Saved-favorite and custom-animation cards remain free of nested iframes.');

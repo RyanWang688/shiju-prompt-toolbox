@@ -1,5 +1,242 @@
 [
   {
+    "id": "website-60fps",
+    "kind": "website",
+    "title": "60fps.design",
+    "category": "其他",
+    "tags": "交互灵感 / 动效案例 / App / Web / 设计参考",
+    "description": "收集真实 App 与网页的交互细节和动效案例，适合研究界面转场、微交互和产品体验。",
+    "source": "https://60fps.design/",
+    "officialUrl": "https://60fps.design/",
+    "prompt": "60fps.design\n\n用途：收集真实 App 与网页的交互细节和动效案例，适合研究界面转场、微交互和产品体验。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：这是灵感与案例网站，不能把案例视频理解为自动附带可复制的实现代码。\n\n官网：https://60fps.design/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-60fps/official-site.png",
+      "alt": "60fps.design 官方网页实际截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://60fps.design/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "website-react-bits",
+    "kind": "website",
+    "title": "React Bits",
+    "category": "其他",
+    "tags": "React / 动效组件 / 背景 / TypeScript / 开源",
+    "description": "提供可调参数的 React 动效组件、背景与微交互，支持复制源代码或按文档安装到项目。",
+    "source": "https://reactbits.dev/",
+    "officialUrl": "https://reactbits.dev/",
+    "prompt": "React Bits\n\n用途：提供可调参数的 React 动效组件、背景与微交互，支持复制源代码或按文档安装到项目。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：先查看组件的 Demo、Code 和安装说明，确认所需依赖与项目版本。免费组件和 Pro 产品分开提供，以各自授权条款为准。\n\n官网：https://reactbits.dev/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-react-bits/official-site.png",
+      "alt": "React Bits 官方网页实际截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://reactbits.dev/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "repository": "https://github.com/DavidHDev/react-bits"
+  },
+  {
+    "id": "website-uiverse",
+    "kind": "website",
+    "title": "Uiverse",
+    "category": "其他",
+    "tags": "UI 元素 / CSS / Tailwind / 按钮 / 组件",
+    "description": "社区维护的 UI 元素库，收集按钮、输入框、卡片与加载效果，可查看 HTML / CSS、Tailwind 等实现。",
+    "source": "https://uiverse.io/",
+    "officialUrl": "https://uiverse.io/",
+    "prompt": "Uiverse\n\n用途：社区维护的 UI 元素库，收集按钮、输入框、卡片与加载效果，可查看 HTML / CSS、Tailwind 等实现。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：选择具体元素查看代码与署名、授权说明，再复制到项目；不把灵感展示等同于所有框架开箱即用。\n\n官网：https://uiverse.io/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-uiverse/official-site.png",
+      "alt": "Uiverse 官方网页实际截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://uiverse.io/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "repository": "https://github.com/uiverse-io/galaxy"
+  },
+  {
+    "id": "website-animejs",
+    "kind": "website",
+    "title": "Anime.js",
+    "category": "其他",
+    "tags": "JavaScript / 动画库 / 弹簧 / 拖拽 / 滚动联动 / Anime / Enemies",
+    "description": "JavaScript 动画引擎，支持时间轴、错峰、弹簧、拖拽、滚动观察与 SVG 动画，适合编写网页交互动效。",
+    "source": "https://animejs.com/",
+    "officialUrl": "https://animejs.com/",
+    "prompt": "Anime.js\n\n用途：JavaScript 动画引擎，支持时间轴、错峰、弹簧、拖拽、滚动观察与 SVG 动画，适合编写网页交互动效。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：正式名称为 Anime.js，视频中的 Enemies 为误写。先按文档确认 API 版本、依赖与许可，再集成示例。\n\n官网：https://animejs.com/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-animejs/official-site.png",
+      "alt": "Anime.js 官方网页实际截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://animejs.com/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "repository": "https://github.com/juliangarnier/anime"
+  },
+  {
+    "id": "website-aceternity-ui",
+    "kind": "website",
+    "title": "Aceternity UI",
+    "category": "其他",
+    "tags": "React / Tailwind / Motion / 动效组件 / Astonity UI",
+    "description": "提供基于 React、Tailwind CSS 与 Motion 的组件、区块和模板，适合构建带动效的落地页和产品展示。",
+    "source": "https://ui.aceternity.com/",
+    "officialUrl": "https://ui.aceternity.com/",
+    "prompt": "Aceternity UI\n\n用途：提供基于 React、Tailwind CSS 与 Motion 的组件、区块和模板，适合构建带动效的落地页和产品展示。\n\n快速用法：找效果 → 阅读示例与依赖 → 复制提示词或代码 → 粘贴到 AI 编程工具或项目 → 按实际框架调试。\n\n说明：正式名称为 Aceternity UI，Astonity UI 为误写。包含免费与付费内容；复制代码前查看组件依赖、使用方式与对应授权。\n\n官网：https://ui.aceternity.com/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-aceternity-ui/official-site.png",
+      "alt": "Aceternity UI 官方网页实际截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://ui.aceternity.com/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "skill-ai-job-search",
+    "title": "AI Job Search",
+    "kind": "skill",
+    "resourceType": "求职工作流 / Skills 集合",
+    "category": "写作表达",
+    "repository": "https://github.com/ai-job-search-dev/ai-job-search",
+    "originalSource": "https://github.com/MadsLorentzen/ai-job-search",
+    "officialUrl": "https://github.com/ai-job-search-dev/ai-job-search",
+    "documentation": "https://github.com/ai-job-search-dev/ai-job-search/blob/master/.claude/skills/job-application-assistant/SKILL.md",
+    "tags": "求职 / 简历 / CV / 求职信 / 面试准备 / MadsLorentzen",
+    "description": "把求职资料、岗位匹配评估、定制简历与求职信、面试准备组织成一套本地工作流，适合系统管理求职申请。",
+    "source": "https://github.com/ai-job-search-dev/ai-job-search",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "AI Job Search\n\n类型：求职工作流 / Skills 集合\n\n用途：把求职资料、岗位匹配评估、定制简历与求职信、面试准备组织成一套本地工作流，适合系统管理求职申请。\n\n说明：核心申请流程基于 Claude Code，仓库也提供其他 Agent 可用的岗位搜索 Skills。部分求职站点适配以丹麦市场为主。旧仓库 MadsLorentzen/ai-job-search 现重定向到 ai-job-search-dev/ai-job-search。\n\n官方项目：https://github.com/ai-job-search-dev/ai-job-search\nGitHub：https://github.com/ai-job-search-dev/ai-job-search\n使用说明：https://github.com/ai-job-search-dev/ai-job-search/blob/master/.claude/skills/job-application-assistant/SKILL.md\n\n收录状态：仅收藏资源，未安装或执行。",
+    "previewStatus": "pending",
+    "previewEvidence": "pending-real-output",
+    "previewSource": "https://github.com/ai-job-search-dev/ai-job-search/blob/master/.claude/skills/job-application-assistant/SKILL.md",
+    "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。"
+  },
+  {
+    "id": "skill-context-mode",
+    "title": "Context Mode",
+    "kind": "skill",
+    "resourceType": "MCP 工具 / 配套 Skills",
+    "category": "其他",
+    "repository": "https://github.com/mksglu/context-mode",
+    "officialUrl": "https://context-mode.com/",
+    "documentation": "https://github.com/mksglu/context-mode/blob/main/skills/context-mode/SKILL.md",
+    "tags": "MCP / 上下文优化 / 会话记忆 / 工具输出 / mksglu",
+    "description": "在沙盒中处理大型工具输出，只把相关结果送回上下文，并用索引与检索延续会话状态。适合日志分析、代码检索和长时间编码任务。",
+    "source": "https://github.com/mksglu/context-mode",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "Context Mode\n\n类型：MCP 工具 / 配套 Skills\n\n用途：在沙盒中处理大型工具输出，只把相关结果送回上下文，并用索引与检索延续会话状态。适合日志分析、代码检索和长时间编码任务。\n\n说明：本条收录开源 Context Mode Engine 与配套 Skills；官网还介绍其他产品，不将整套官网服务能力等同于开源插件。实际节省效果取决于任务和接入方式。\n\n官方项目：https://context-mode.com/\nGitHub：https://github.com/mksglu/context-mode\n使用说明：https://github.com/mksglu/context-mode/blob/main/skills/context-mode/SKILL.md\n\n收录状态：仅收藏资源，未安装或执行。",
+    "previewStatus": "pending",
+    "previewEvidence": "pending-real-output",
+    "previewSource": "https://github.com/mksglu/context-mode/blob/main/skills/context-mode/SKILL.md",
+    "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。"
+  },
+  {
+    "id": "skill-diagram-design",
+    "title": "Diagram Design",
+    "kind": "skill",
+    "resourceType": "图表设计 Skill",
+    "category": "界面设计",
+    "repository": "https://github.com/cathrynlavery/diagram-design",
+    "officialUrl": "https://diagramdesign.dev/",
+    "documentation": "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/SKILL.md",
+    "tags": "图表 / 架构图 / HTML / SVG / 品牌设计 / cathrynlavery",
+    "description": "把架构、流程、时序和数据关系绘制成独立 HTML + SVG 图表，并按品牌调整字体与配色。适合技术文档、产品说明和演示材料。",
+    "source": "https://github.com/cathrynlavery/diagram-design",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "Diagram Design\n\n类型：图表设计 Skill\n\n用途：把架构、流程、时序和数据关系绘制成独立 HTML + SVG 图表，并按品牌调整字体与配色。适合技术文档、产品说明和演示材料。\n\n说明：官方提供多种图表类型、样式变体与案例图库。预览使用官方仓库的架构图截图，保留原始内容。\n\n官方项目：https://diagramdesign.dev/\nGitHub：https://github.com/cathrynlavery/diagram-design\n使用说明：https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/SKILL.md\n\n收录状态：仅收藏资源，未安装或执行。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-diagram-design/author-architecture.png",
+      "alt": "官方架构图示例",
+      "width": 2400,
+      "height": 1154
+    },
+    "previewSource": "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/docs/screenshots/architecture.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方架构图示例，来自官方仓库，保留原始素材；非本次运行成果。"
+  },
+  {
+    "id": "skill-artcraft",
+    "title": "ArtCraft",
+    "kind": "skill",
+    "resourceType": "开源创作软件 / 非单独 Skill",
+    "category": "其他",
+    "repository": "https://github.com/storytold/artcraft",
+    "officialUrl": "https://getartcraft.com/",
+    "documentation": "https://github.com/storytold/artcraft/blob/main/README.md",
+    "tags": "AI 创作 / 图像 / 视频 / 2D 画布 / 3D 场景 / storytold",
+    "description": "面向艺术家与设计师的 AI 创作工具，结合图像与视频生成、2D 图层合成、3D 场景构图和角色摆姿，帮助更精确地控制画面。",
+    "source": "https://github.com/storytold/artcraft",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "ArtCraft\n\n类型：开源创作软件 / 非单独 Skill\n\n用途：面向艺术家与设计师的 AI 创作工具，结合图像与视频生成、2D 图层合成、3D 场景构图和角色摆姿，帮助更精确地控制画面。\n\n说明：这是创作软件项目，非单独的 Agent Skill；按用户请求收藏在 Skills / 设计资源栏目并标明类型。官网提供桌面端和 Web 入口。未登录、安装或调用付费模型。\n\n官方项目：https://getartcraft.com/\nGitHub：https://github.com/storytold/artcraft\n使用说明：https://github.com/storytold/artcraft/blob/main/README.md\n\n收录状态：仅收藏资源，未安装或执行。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-artcraft/author-canvas.webp",
+      "alt": "官方 2D 画布演示",
+      "width": 320,
+      "height": 320
+    },
+    "previewSource": "https://raw.githubusercontent.com/storytold/artcraft/main/frontend/apps/artcraft/app/public/resources/gifs/2D_CANVAS_DEMO.webp",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方 2D 画布演示，来自官方仓库，保留原始素材；非本次运行成果。"
+  },
+  {
+    "id": "skill-rea",
+    "title": "REA · Reverse Engineer Anything",
+    "kind": "skill",
+    "resourceType": "MCP 逆向分析工具 / 配套 Skill",
+    "category": "其他",
+    "repository": "https://github.com/morluto/rea",
+    "officialUrl": "https://rea.tools/",
+    "documentation": "https://github.com/morluto/rea/blob/main/.agents/skills/reverse-engineer-anything/SKILL.md",
+    "tags": "逆向工程 / MCP / 二进制分析 / JavaScript / Electron / morluto",
+    "description": "把编码 Agent 连接到程序分析工具，检查应用行为、JavaScript / Electron 与原生二进制，并给出带证据的功能解释。适合理解已有软件和研究实现方式。",
+    "source": "https://github.com/morluto/rea",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "REA · Reverse Engineer Anything\n\n类型：MCP 逆向分析工具 / 配套 Skill\n\n用途：把编码 Agent 连接到程序分析工具，检查应用行为、JavaScript / Electron 与原生二进制，并给出带证据的功能解释。适合理解已有软件和研究实现方式。\n\n说明：REA 包含 MCP、CLI 与 reverse-engineer-anything 工作流说明。原生分析需要匹配的分析引擎与配置；本次仅收藏项目，未安装或执行分析。\n\n官方项目：https://rea.tools/\nGitHub：https://github.com/morluto/rea\n使用说明：https://github.com/morluto/rea/blob/main/.agents/skills/reverse-engineer-anything/SKILL.md\n\n收录状态：仅收藏资源，未安装或执行。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-rea/author-hopper.png",
+      "alt": "官方 Hopper 分析截图",
+      "width": 1662,
+      "height": 946
+    },
+    "previewSource": "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/rea-hopper-analysis.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方 Hopper 分析截图，来自官方仓库，保留原始素材；非本次运行成果。"
+  },
+  {
     "id": "dashboard-hero-module",
     "kind": "prompt",
     "title": "主次布局",
@@ -21,7 +258,15 @@
     "demo": "assets/dashboard-hero-module/preview.html",
     "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-hero-module/card-preview.png",
+      "alt": "主次布局 实际网页演示截图；点开可交互",
+      "width": 1265,
+      "height": 712
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-stacked-bands",
@@ -46,7 +291,15 @@
     "demo": "assets/dashboard-stacked-bands/preview.html",
     "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-stacked-bands/card-preview.png",
+      "alt": "通栏横带 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-full-bleed-canvas",
@@ -70,7 +323,15 @@
     "demo": "assets/dashboard-full-bleed-canvas/preview.html",
     "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。全幅画布以原创路线地图演示叠层布局。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-full-bleed-canvas/card-preview.png",
+      "alt": "全幅画布 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-kanban-columns",
@@ -94,7 +355,15 @@
     "demo": "assets/dashboard-kanban-columns/preview.html",
     "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-kanban-columns/card-preview.png",
+      "alt": "看板分列 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-timeline-swimlanes",
@@ -118,7 +387,15 @@
     "demo": "assets/dashboard-timeline-swimlanes/preview.html",
     "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-timeline-swimlanes/card-preview.png",
+      "alt": "时间轴泳道 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "website-easel",
@@ -136,13 +413,16 @@
     "preview": {
       "type": "image",
       "src": "assets/website-easel/official-site.png",
-      "alt": "Easel 官方网页实际截图，展示浙江大学与北京大学相关实验室标识及工作台介绍"
+      "alt": "Easel 官方网页实际截图，展示浙江大学与北京大学相关实验室标识及工作台介绍",
+      "width": 1265,
+      "height": 712
     },
     "previewNote": "真实网页截图：2026-10-23 实际打开 Easel 官方项目介绍页。非本次部署，不代表本次生成的运营成果。",
     "previewSource": "https://zjureal.com/Easel/",
     "previewEvidence": "live-website-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "officialUrl": "https://zjureal.com/Easel/"
   },
   {
     "id": "dashboard-transparent-nav",
@@ -164,7 +444,15 @@
     "demo": "assets/dashboard-transparent-nav/preview.html",
     "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-transparent-nav/card-preview.png",
+      "alt": "透明顶栏 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-right-rail",
@@ -186,7 +474,15 @@
     "demo": "assets/dashboard-right-rail/preview.html",
     "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-right-rail/card-preview.png",
+      "alt": "右侧竖轨菜单 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-expanding-tab",
@@ -208,7 +504,15 @@
     "demo": "assets/dashboard-expanding-tab/preview.html",
     "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-expanding-tab/card-preview.png",
+      "alt": "当前项展开文字 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-page-title-nav",
@@ -230,7 +534,15 @@
     "demo": "assets/dashboard-page-title-nav/preview.html",
     "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-page-title-nav/card-preview.png",
+      "alt": "图标菜单配大标题 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-icon-rail-tooltip",
@@ -252,7 +564,15 @@
     "demo": "assets/dashboard-icon-rail-tooltip/preview.html",
     "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-icon-rail-tooltip/card-preview.png",
+      "alt": "图标轨加悬停提示 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "dashboard-quick-actions",
@@ -274,7 +594,15 @@
     "demo": "assets/dashboard-quick-actions/preview.html",
     "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
     "previewEvidence": "handcrafted-interactive-demo",
-    "addedAt": "2026-10-23"
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dashboard-quick-actions/card-preview.png",
+      "alt": "快捷操作 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "skill-grill-me",
@@ -291,7 +619,9 @@
     "previewNote": "真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "prompt": "grill-me（Matt Pocock）\n\n用途：通过分轮追问梳理想法、需求和设计决策，暴露未说明的假设与边界，帮助动手前形成共同理解。\n\n说明：当前 grill-me 是调用 grilling 的入口。真正的访谈逻辑在 productivity/grilling 中；当前版本按已明确前提组织问题轮次，不一定每轮只问一个问题。适合需求澄清，不负责自动实现，也不把访谈当作已完成设计。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/productivity/grill-me.md\n依赖说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md"
+    "prompt": "grill-me（Matt Pocock）\n\n用途：通过分轮追问梳理想法、需求和设计决策，暴露未说明的假设与边界，帮助动手前形成共同理解。\n\n说明：当前 grill-me 是调用 grilling 的入口。真正的访谈逻辑在 productivity/grilling 中；当前版本按已明确前提组织问题轮次，不一定每轮只问一个问题。适合需求澄清，不负责自动实现，也不把访谈当作已完成设计。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/productivity/grill-me.md\n依赖说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md",
+    "officialUrl": "https://github.com/mattpocock/skills",
+    "repository": "https://github.com/mattpocock/skills"
   },
   {
     "id": "skill-diagnose",
@@ -310,7 +640,9 @@
     "previewNote": "真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "prompt": "diagnose（现名 diagnosing-bugs）（Matt Pocock）\n\n用途：先为 Bug 建立可重复的失败信号，再缩小范围、验证假设并修复根因，最后用回归检查确认问题解决。\n\n说明：Matt Pocock 官方 CHANGELOG 明确将 diagnose 改名为 diagnosing-bugs，当前调用名为 /diagnosing-bugs。保留截图中的旧名便于搜索。适合已有明确症状的疑难 Bug 或性能回归；单纯查看代码不能替代复现证据。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/engineering/diagnosing-bugs.md\n改名记录：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/CHANGELOG.md"
+    "prompt": "diagnose（现名 diagnosing-bugs）（Matt Pocock）\n\n用途：先为 Bug 建立可重复的失败信号，再缩小范围、验证假设并修复根因，最后用回归检查确认问题解决。\n\n说明：Matt Pocock 官方 CHANGELOG 明确将 diagnose 改名为 diagnosing-bugs，当前调用名为 /diagnosing-bugs。保留截图中的旧名便于搜索。适合已有明确症状的疑难 Bug 或性能回归；单纯查看代码不能替代复现证据。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/engineering/diagnosing-bugs.md\n改名记录：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/CHANGELOG.md",
+    "officialUrl": "https://github.com/mattpocock/skills",
+    "repository": "https://github.com/mattpocock/skills"
   },
   {
     "id": "skill-taste-skill",
@@ -325,35 +657,43 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-taste-skill/author-coffee-storefront.webp",
-      "alt": "Taste-Skill 作者公开的真实咖啡店页面截图"
+      "alt": "Taste-Skill 作者公开的真实咖啡店页面截图",
+      "width": 1200,
+      "height": 696
     },
     "previewNote": "作者真实作品：官方 README 展示的 coffee-storefront 页面截图，原图保留，非本次生成；引用和素材署名见 AUTHOR-CREDITS.md。",
     "previewSource": "https://github.com/Leonxlnx/taste-skill/blob/6010f91a9935f1c167dfc500fb1a475681892e6b/examples/v2/coffee-storefront.webp",
     "previewEvidence": "author-published-output",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "officialUrl": "https://github.com/Leonxlnx/taste-skill",
+    "repository": "https://github.com/Leonxlnx/taste-skill"
   },
   {
     "id": "website-motionsites",
     "kind": "website",
     "title": "MotionSites.org",
     "category": "动画动效",
-    "tags": "动效灵感 / Skills 目录 / 网站提示词 / UI / 模板资源",
-    "description": "提供网站、页面区块、视觉素材与 Agent Skills 的资源目录，涵盖前端、GSAP、3D 和视频等方向。适合查找设计灵感、参考演示与对应技能来源。",
-    "source": "https://motionsites.org/skills",
+    "tags": "动效灵感 / AI 提示词 / 网站模板 / Skills 目录 / Motion Sites",
+    "description": "收集动效网站、页面区块、AI 设计提示词与 Skills 资源，适合寻找网页视觉方向，再把提示词交给 AI 编程工具实现。",
+    "source": "https://motionsites.org/",
     "homepage": "https://motionsites.org/",
     "resourceType": "skill-and-prompt-catalog",
-    "prompt": "MotionSites.org\n\n类型：网站提示词、设计资源与 Skills 目录，不是一个名叫 MotionSites 的独立 Skill，按资源类型放入“实用网站”。\n\n用途：浏览网站、应用、页面区块、图标与素材参考；在 Skills 目录中按前端、动效、3D、图像和视频等主题查找技能、演示与来源。\n\n适合：寻找网页设计与动效灵感、挑选相关工具、查看技能用途和示例。目录里的项目需要逐一核实，不把整站目录自动加入收藏。\n\n使用说明：网站包含免费和付费内容，具体获取方式以各条目说明为准。本次没有登录、购买或安装。\n\n预览：2026-10-23 实际打开官网 Skills 目录后的浏览器截图，展示真实案例卡片；不是本次生成的作品，也不代表单一 Skill 的输出。\n\n官网：https://motionsites.org/\nSkills 目录：https://motionsites.org/skills\n网站介绍：https://motionsites.org/about",
+    "prompt": "Motion Sites\n\n用途：收集动效网站、页面区块、AI 设计提示词与 Skills 资源，适合寻找网页视觉方向，再把提示词交给 AI 编程工具实现。\n\n快速用法：找效果 → 查看资源说明 → 复制提示词或代码 → 交给 AI 编程工具或项目调试。\n\n授权与费用：网站有免费项目和付费访问方案，使用前查看当前价格、可用额度及素材授权。不保证提示词可以一键或一比一复刻原站。\n\n官网：https://motionsites.org/\nSkills：https://motionsites.org/skills",
     "preview": {
       "type": "image",
-      "src": "assets/website-motionsites/skills-catalog.png",
-      "alt": "MotionSites 官方 Skills 目录及真实案例卡片的浏览器截图"
+      "src": "assets/website-motionsites/official-site.png",
+      "alt": "Motion Sites 官网实际截图",
+      "width": 1265,
+      "height": 712
     },
-    "previewNote": "真实网页截图：2026-10-23 实际打开 MotionSites 官方 Skills 目录，展示目录中的案例预览卡片。",
-    "previewSource": "https://motionsites.org/skills",
+    "previewNote": "2026-10-23 实际打开官网的网页截图。网站包含免费和付费内容，具体价格与授权以官网为准。",
+    "previewSource": "https://motionsites.org/",
     "previewEvidence": "live-website-screenshot",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "officialUrl": "https://motionsites.org/",
+    "documentation": "https://motionsites.org/skills"
   },
   {
     "id": "skill-story-long-scan",
@@ -370,7 +710,9 @@
     "previewStatus": "pending",
     "previewNote": "真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。",
     "previewEvidence": "pending",
-    "prompt": "story-long-scan\n\n用途：分析多个网文平台的排行榜与新书样本，提炼热门题材、人设和切入点，并结合作者条件评估选题。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-scan/SKILL.md"
+    "prompt": "story-long-scan\n\n用途：分析多个网文平台的排行榜与新书样本，提炼热门题材、人设和切入点，并结合作者条件评估选题。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-scan/SKILL.md",
+    "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
   },
   {
     "id": "skill-story-long-analyze",
@@ -389,11 +731,15 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-story-long-analyze/author-preview.png",
-      "alt": "story-long-analyze 作者公开真实文档节选的阅读截图"
+      "alt": "story-long-analyze 作者公开真实文档节选的阅读截图",
+      "width": 1265,
+      "height": 712
     },
     "previewEvidence": "author-published-text-output",
     "previewNote": "作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/拆文库/盘龙/拆文报告.md",
-    "prompt": "story-long-analyze\n\n用途：拆解长篇小说的章节、角色、因果、情绪与节奏，生成可回读的拆文报告和参考档案。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/拆文库/盘龙/拆文报告.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-analyze/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/拆文库/盘龙/拆文报告.md"
+    "prompt": "story-long-analyze\n\n用途：拆解长篇小说的章节、角色、因果、情绪与节奏，生成可回读的拆文报告和参考档案。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/拆文库/盘龙/拆文报告.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-analyze/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/拆文库/盘龙/拆文报告.md",
+    "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
   },
   {
     "id": "skill-chinese-novelist-skill",
@@ -411,11 +757,15 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-chinese-novelist-skill/author-example.png",
-      "alt": "chinese-novelist-skill 作者公开的真实示例"
+      "alt": "chinese-novelist-skill 作者公开的真实示例",
+      "width": 1444,
+      "height": 784
     },
     "previewEvidence": "author-published-output",
     "previewNote": "作者真实示例：官方仓库 assets/phase2-plan.png；保留原图，非本次生成。",
-    "prompt": "chinese-novelist-skill\n\n用途：通过递进问答确定小说方向，建立大纲并分章创作，支持中断续写和章节质量检查。\n\n仓库名为 chinese-novelist-skill；实际 Skill 名称为 chinese-novelist。\n\n预览：作者真实示例：官方仓库 assets/phase2-plan.png；保留原图，非本次生成。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/PenglongHuang/chinese-novelist-skill\n说明文档：https://github.com/PenglongHuang/chinese-novelist-skill/blob/7017828a0052e2e030d90d630446401a812e50e6/SKILL.md\n真实示例出处：https://github.com/PenglongHuang/chinese-novelist-skill/blob/7017828a0052e2e030d90d630446401a812e50e6/assets/phase2-plan.png"
+    "prompt": "chinese-novelist-skill\n\n用途：通过递进问答确定小说方向，建立大纲并分章创作，支持中断续写和章节质量检查。\n\n仓库名为 chinese-novelist-skill；实际 Skill 名称为 chinese-novelist。\n\n预览：作者真实示例：官方仓库 assets/phase2-plan.png；保留原图，非本次生成。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/PenglongHuang/chinese-novelist-skill\n说明文档：https://github.com/PenglongHuang/chinese-novelist-skill/blob/7017828a0052e2e030d90d630446401a812e50e6/SKILL.md\n真实示例出处：https://github.com/PenglongHuang/chinese-novelist-skill/blob/7017828a0052e2e030d90d630446401a812e50e6/assets/phase2-plan.png",
+    "officialUrl": "https://github.com/PenglongHuang/chinese-novelist-skill",
+    "repository": "https://github.com/PenglongHuang/chinese-novelist-skill"
   },
   {
     "id": "skill-novel-creator-skill",
@@ -432,7 +782,9 @@
     "previewStatus": "pending",
     "previewNote": "真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。",
     "previewEvidence": "pending",
-    "prompt": "novel-creator-skill\n\n用途：以文件记忆、知识图谱和大纲锚点组织长篇创作，连接规划、分章写作、一致性检查与修稿流程。\n\n仓库名为 novel-creator-skill；实际 Skill 名称为 novel-claude-ai。作者的规模宣传不视作稳定性保证。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/leenbj/novel-creator-skill\n说明文档：https://github.com/leenbj/novel-creator-skill/blob/a327428ea26962163f823ad74001243f91bc7738/SKILL.md"
+    "prompt": "novel-creator-skill\n\n用途：以文件记忆、知识图谱和大纲锚点组织长篇创作，连接规划、分章写作、一致性检查与修稿流程。\n\n仓库名为 novel-creator-skill；实际 Skill 名称为 novel-claude-ai。作者的规模宣传不视作稳定性保证。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/leenbj/novel-creator-skill\n说明文档：https://github.com/leenbj/novel-creator-skill/blob/a327428ea26962163f823ad74001243f91bc7738/SKILL.md",
+    "officialUrl": "https://github.com/leenbj/novel-creator-skill",
+    "repository": "https://github.com/leenbj/novel-creator-skill"
   },
   {
     "id": "skill-character-designer",
@@ -452,11 +804,15 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-character-designer/author-preview.png",
-      "alt": "character-designer 作者公开真实文档节选的阅读截图"
+      "alt": "character-designer 作者公开真实文档节选的阅读截图",
+      "width": 1265,
+      "height": 712
     },
     "previewEvidence": "author-published-text-output",
     "previewNote": "作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md",
-    "prompt": "character-designer\n\n用途：设计角色档案、动机链、人物弧线、关系与语言风格。此条是 Oh Story 内置角色设计 Agent，按用户要求收进 Skills。\n\n这是 Oh Story 的内置 Agent 模板，不是同名独立 Skill；仅凭截图无法确定作者指向，本条选取与截图中其他 story-* 同仓库的版本，并明确记录来源。预览是作者公开的角色档案，不能证明由此 Agent 单独产出。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-setup/references/templates/agents/character-designer.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md"
+    "prompt": "character-designer\n\n用途：设计角色档案、动机链、人物弧线、关系与语言风格。此条是 Oh Story 内置角色设计 Agent，按用户要求收进 Skills。\n\n这是 Oh Story 的内置 Agent 模板，不是同名独立 Skill；仅凭截图无法确定作者指向，本条选取与截图中其他 story-* 同仓库的版本，并明确记录来源。预览是作者公开的角色档案，不能证明由此 Agent 单独产出。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-setup/references/templates/agents/character-designer.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md",
+    "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
   },
   {
     "id": "skill-story-long-write",
@@ -475,11 +831,15 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-story-long-write/author-preview.png",
-      "alt": "story-long-write 作者公开真实文档节选的阅读截图"
+      "alt": "story-long-write 作者公开真实文档节选的阅读截图",
+      "width": 1265,
+      "height": 712
     },
     "previewEvidence": "author-published-text-output",
     "previewNote": "作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md",
-    "prompt": "story-long-write\n\n用途：从设定、卷纲和细纲推进长篇网文，按明确的正文请求写章，并维护角色、伏笔与续写状态。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-write/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md"
+    "prompt": "story-long-write\n\n用途：从设定、卷纲和细纲推进长篇网文，按明确的正文请求写章，并维护角色、伏笔与续写状态。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-write/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md",
+    "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
   },
   {
     "id": "skill-webnovel-writer",
@@ -499,11 +859,15 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-webnovel-writer/author-preview.png",
-      "alt": "作者归档的 Webnovel Writer Dashboard 功能演示实际运行截图"
+      "alt": "作者归档的 Webnovel Writer Dashboard 功能演示实际运行截图",
+      "width": 1280,
+      "height": 720
     },
     "previewEvidence": "author-published-functional-demo",
     "previewNote": "作者功能演示：归档 Dashboard HTML 的实际运行截图，使用内置演示数据；不是用户项目或小说生成结果。",
-    "prompt": "webnovel-writer\n\n用途：将开书、规划、写章、审稿、记忆沉淀与状态查询串成流程，帮助长篇连载维持设定和伏笔的一致性。\n\n这是技能与 Agent 合集。此条文档对应 master 分支 v6 Claude Code 插件；另有 v8 DeepSeek Harness 工作台，使用时需核对版本和宿主，不能混用安装说明。\n\n预览：作者功能演示：归档 Dashboard HTML 的实际运行截图，使用内置演示数据；不是用户项目或小说生成结果。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/lingfengQAQ/webnovel-writer\n说明文档：https://github.com/lingfengQAQ/webnovel-writer/blob/b38056ec3ae288af613c0af162d648e4a4e8825c/README.md\n真实示例出处：https://github.com/lingfengQAQ/webnovel-writer/blob/b38056ec3ae288af613c0af162d648e4a4e8825c/docs/archive/architecture/dashboard-demo.html"
+    "prompt": "webnovel-writer\n\n用途：将开书、规划、写章、审稿、记忆沉淀与状态查询串成流程，帮助长篇连载维持设定和伏笔的一致性。\n\n这是技能与 Agent 合集。此条文档对应 master 分支 v6 Claude Code 插件；另有 v8 DeepSeek Harness 工作台，使用时需核对版本和宿主，不能混用安装说明。\n\n预览：作者功能演示：归档 Dashboard HTML 的实际运行截图，使用内置演示数据；不是用户项目或小说生成结果。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/lingfengQAQ/webnovel-writer\n说明文档：https://github.com/lingfengQAQ/webnovel-writer/blob/b38056ec3ae288af613c0af162d648e4a4e8825c/README.md\n真实示例出处：https://github.com/lingfengQAQ/webnovel-writer/blob/b38056ec3ae288af613c0af162d648e4a4e8825c/docs/archive/architecture/dashboard-demo.html",
+    "officialUrl": "https://github.com/lingfengQAQ/webnovel-writer",
+    "repository": "https://github.com/lingfengQAQ/webnovel-writer"
   },
   {
     "id": "skill-story-deslop",
@@ -522,11 +886,15 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-story-deslop/author-preview.png",
-      "alt": "story-deslop 作者公开真实文档节选的阅读截图"
+      "alt": "story-deslop 作者公开真实文档节选的阅读截图",
+      "width": 1265,
+      "height": 712
     },
     "previewEvidence": "author-published-text-output",
     "previewNote": "作者真实检查记录：对人工构造测试文本进行扫描。非本次改写，不是独立 AI 检测结论。",
-    "prompt": "story-deslop\n\n用途：检查模板化表达、叙事笔墨与故事因果，保留作者文风和既定剧情，给出具体的修稿方向。\n\n去 AI 味指改善读感、表达和叙事，不保证通过 AI 检测。作者对照中“改前”为人工构造测试样例，“改后”为真实续写正文；预览展示作者发布的检查记录，不冒充本次改写。\n\n预览：作者真实检查记录：对人工构造测试文本进行扫描。非本次改写，不是独立 AI 检测结论。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-deslop/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/去AI味对照/README.md"
+    "prompt": "story-deslop\n\n用途：检查模板化表达、叙事笔墨与故事因果，保留作者文风和既定剧情，给出具体的修稿方向。\n\n去 AI 味指改善读感、表达和叙事，不保证通过 AI 检测。作者对照中“改前”为人工构造测试样例，“改后”为真实续写正文；预览展示作者发布的检查记录，不冒充本次改写。\n\n预览：作者真实检查记录：对人工构造测试文本进行扫描。非本次改写，不是独立 AI 检测结论。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-deslop/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/去AI味对照/README.md",
+    "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
   },
   {
     "id": "skill-story-review",
@@ -543,7 +911,9 @@
     "previewStatus": "pending",
     "previewNote": "真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。",
     "previewEvidence": "pending",
-    "prompt": "story-review\n\n用途：从结构、角色、文字与设定等角度审查稿件，引用原文指出问题并提出修改建议，支持单人回退模式。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-review/SKILL.md"
+    "prompt": "story-review\n\n用途：从结构、角色、文字与设定等角度审查稿件，引用原文指出问题并提出修改建议，支持单人回退模式。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-review/SKILL.md",
+    "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
   },
   {
     "id": "skill-story-cover",
@@ -561,11 +931,15 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-story-cover/author-example.png",
-      "alt": "story-cover 作者公开的真实示例"
+      "alt": "story-cover 作者公开的真实示例",
+      "width": 1024,
+      "height": 1536
     },
     "previewEvidence": "author-published-output",
     "previewNote": "作者真实示例：官方仓库 demo/封面-剑道独尊.png；保留原图，非本次生成。",
-    "prompt": "story-cover\n\n用途：根据书名、作者名与题材制作含标题和署名的小说封面，实际生成依赖可用的图像工具。\n\n预览：作者真实示例：官方仓库 demo/封面-剑道独尊.png；保留原图，非本次生成。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-cover/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/封面-剑道独尊.png"
+    "prompt": "story-cover\n\n用途：根据书名、作者名与题材制作含标题和署名的小说封面，实际生成依赖可用的图像工具。\n\n预览：作者真实示例：官方仓库 demo/封面-剑道独尊.png；保留原图，非本次生成。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-cover/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/封面-剑道独尊.png",
+    "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
   },
   {
     "id": "skill-moss-image",
@@ -581,13 +955,17 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-moss-image/author-showcase.webp",
-      "alt": "OpenMOSS 官方发布的 MOSS-Image 模型真实输出合集，非 Prompt Enhancer 单独输出"
+      "alt": "OpenMOSS 官方发布的 MOSS-Image 模型真实输出合集，非 Prompt Enhancer 单独输出",
+      "width": 2400,
+      "height": 2680
     },
     "previewNote": "作者真实模型示例：官方 assets/showcase/overview.webp 原图。展示 MOSS-Image 模型效果；配套 Skill 只增强提示词，本图非本次生成。",
     "previewSource": "https://github.com/OpenMOSS/MOSS-Image/blob/52b87fca23acedc399d062d593bec388aee9926a/assets/showcase/overview.webp",
     "previewEvidence": "author-published-model-output",
     "addedAt": "2026-10-22",
-    "verifiedAt": "2026-10-22"
+    "verifiedAt": "2026-10-22",
+    "officialUrl": "https://github.com/OpenMOSS/MOSS-Image",
+    "repository": "https://github.com/OpenMOSS/MOSS-Image"
   },
   {
     "id": "skill-impeccable",
@@ -602,7 +980,9 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-impeccable/author-neo-mirai.png",
-      "alt": "Impeccable 作者真实案例 Neo Mirai 网站的实际浏览器截图"
+      "alt": "Impeccable 作者真实案例 Neo Mirai 网站的实际浏览器截图",
+      "width": 1265,
+      "height": 712
     },
     "previewNote": "作者真实案例：Neo Mirai 响应式网站，2026-10-22 实际打开后截图。非本次生成；案例流程见官方说明。",
     "previewSource": "https://impeccable.style/neo-mirai/",
@@ -611,7 +991,9 @@
     "verifiedAt": "2026-10-23",
     "aliases": [
       "Impact-Cable"
-    ]
+    ],
+    "officialUrl": "https://github.com/pbakaus/impeccable",
+    "repository": "https://github.com/pbakaus/impeccable"
   },
   {
     "id": "skill-awesome-design-md",
@@ -627,13 +1009,17 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-awesome-design-md/author-apple-preview.png",
-      "alt": "作者 getdesign.md 公开的 Apple 风格 Lumora 设计系统实例实际截图"
+      "alt": "作者 getdesign.md 公开的 Apple 风格 Lumora 设计系统实例实际截图",
+      "width": 1265,
+      "height": 712
     },
     "previewNote": "作者真实示例：getdesign.md 公开的 Apple 风格 / Lumora 交互预览，2026-10-22 实际截图。非 Apple 官网，非本次生成。",
     "previewSource": "https://getdesign.md/design-md/apple/preview",
     "previewEvidence": "author-published-reference-preview",
     "addedAt": "2026-10-22",
-    "verifiedAt": "2026-10-22"
+    "verifiedAt": "2026-10-22",
+    "officialUrl": "https://github.com/VoltAgent/awesome-design-md",
+    "repository": "https://github.com/VoltAgent/awesome-design-md"
   },
   {
     "id": "website-opencut",
@@ -648,13 +1034,16 @@
     "preview": {
       "type": "image",
       "src": "assets/website-opencut/homepage.png",
-      "alt": "OpenCut 官方网站实际页面截图"
+      "alt": "OpenCut 官方网站实际页面截图",
+      "width": 1265,
+      "height": 712
     },
     "previewNote": "真实网页截图：本次于 2026-10-22 打开 https://opencut.app/ 后保存，展示官网首页。",
     "previewSource": "https://opencut.app/",
     "previewEvidence": "live-website-screenshot",
     "addedAt": "2026-10-22",
-    "verifiedAt": "2026-10-22"
+    "verifiedAt": "2026-10-22",
+    "officialUrl": "https://opencut.app/"
   },
   {
     "id": "skill-pixel2motion",
@@ -669,14 +1058,18 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-pixel2motion/author-horizon.gif",
-      "alt": "作者真实示例：Horizon Logo 从位图重建后的动画输出"
+      "alt": "作者真实示例：Horizon Logo 从位图重建后的动画输出",
+      "width": 640,
+      "height": 418
     },
     "previewNote": "作者真实示例：官方仓库 docs/gifs/claude-horizon.gif；非本次生成。另附 CueRecord 动画与作者完整互动展示。",
     "previewSource": "https://github.com/nolangz/pixel2motion/blob/e9faedb28930df0da2acf17da00c80730a78cfe8/docs/gifs/claude-horizon.gif",
     "previewEvidence": "author-published-demo",
     "demo": "assets/skill-pixel2motion/showcase.html",
     "addedAt": "2026-10-22",
-    "verifiedAt": "2026-10-22"
+    "verifiedAt": "2026-10-22",
+    "officialUrl": "https://github.com/nolangz/pixel2motion",
+    "repository": "https://github.com/nolangz/pixel2motion"
   },
   {
     "id": "skill-child-photo-doodle-collage",
@@ -693,11 +1086,15 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-child-photo-doodle-collage/author-showcase.jpg",
-      "alt": "作者公开的真实照片涂鸦合成作品合集"
+      "alt": "作者公开的真实照片涂鸦合成作品合集",
+      "width": 1219,
+      "height": 1198
     },
     "previewNote": "作者真实示例：公开仓库 showcase-overview.jpg，保留原始作品与水印；非本次生成。",
     "previewSource": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage/blob/main/showcase/comparisons/showcase-overview.jpg",
-    "previewEvidence": "author-published-output"
+    "previewEvidence": "author-published-output",
+    "officialUrl": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage",
+    "repository": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage"
   },
   {
     "id": "skill-gsap-skills",
@@ -714,12 +1111,16 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-gsap-skills/runtime-preview.png",
-      "alt": "实际运行 GSAP 时间轴与错峰动画后保存的浏览器画面"
+      "alt": "实际运行 GSAP 时间轴与错峰动画后保存的浏览器画面",
+      "width": 1280,
+      "height": 720
     },
     "previewNote": "本次真实运行截图：使用 GSAP 3.15.0，按官方 core / timeline 模式制作。点击“打开实际演示”可播放、暂停或重播。",
     "previewSource": "https://github.com/greensock/gsap-skills/blob/main/examples/vanilla/main.js",
     "previewEvidence": "locally-executed-gsap",
-    "demo": "assets/skill-gsap-skills/live-demo.html"
+    "demo": "assets/skill-gsap-skills/live-demo.html",
+    "officialUrl": "https://github.com/greensock/gsap-skills",
+    "repository": "https://github.com/greensock/gsap-skills"
   },
   {
     "id": "skill-ruic-card-skill",
@@ -736,12 +1137,16 @@
     "preview": {
       "type": "image",
       "src": "assets/skill-ruic-card-skill/author-demo.gif",
-      "alt": "作者发布的真实全息卡牌动态演示"
+      "alt": "作者发布的真实全息卡牌动态演示",
+      "width": 560,
+      "height": 352
     },
     "previewNote": "作者真实演示 GIF：来自官方仓库 demo-after.gif（调整后效果），非本次生成。",
     "previewSource": "https://github.com/HRuiCcc/RuiC-card-skill/blob/main/assets/demo-after.gif",
     "previewEvidence": "author-published-demo",
-    "demo": "assets/skill-ruic-card-skill/author-demo.mp4"
+    "demo": "assets/skill-ruic-card-skill/author-demo.mp4",
+    "officialUrl": "https://github.com/HRuiCcc/RuiC-card-skill",
+    "repository": "https://github.com/HRuiCcc/RuiC-card-skill"
   },
   {
     "id": "fab-to-sheet",
@@ -757,7 +1162,15 @@
     },
     "sourceImage": "assets/fab-to-sheet/source.png",
     "previewNote": "根据提示词手工制作的可交互演示，非模型实测输出。",
-    "addedAt": "2026-10-22"
+    "addedAt": "2026-10-22",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/fab-to-sheet/card-preview.png",
+      "alt": "加号展开面板 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "button-loader-success",
@@ -773,7 +1186,15 @@
     },
     "sourceImage": "assets/button-loader-success/source.png",
     "previewNote": "根据提示词手工制作的可交互演示，非模型实测输出。",
-    "addedAt": "2026-10-22"
+    "addedAt": "2026-10-22",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/button-loader-success/card-preview.png",
+      "alt": "提交状态反馈 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "elastic-tab-indicator",
@@ -789,7 +1210,15 @@
     },
     "sourceImage": "assets/elastic-tab-indicator/source.png",
     "previewNote": "根据提示词手工制作的可交互演示，非模型实测输出。",
-    "addedAt": "2026-10-22"
+    "addedAt": "2026-10-22",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/elastic-tab-indicator/card-preview.png",
+      "alt": "标签指示条 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   },
   {
     "id": "flip-layout-morph",
@@ -805,6 +1234,14 @@
     },
     "sourceImage": "assets/flip-layout-morph/source.png",
     "previewNote": "根据提示词手工制作的可交互演示，非模型实测输出。",
-    "addedAt": "2026-10-22"
+    "addedAt": "2026-10-22",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/flip-layout-morph/card-preview.png",
+      "alt": "列表切换网格 实际网页演示截图；点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "本工具箱实际网页演示的浏览器截图，卡片使用静态封面，详情保留完整交互。"
   }
 ]

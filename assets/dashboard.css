@@ -22,3 +22,36 @@ body.dashboard{--bg:#f5f4f9;--panel:#fffefa;--ink:#292538;--muted:#6b657a;--line
 @media(max-width:720px){body.dashboard{--rail:64px}.icon-rail{padding-top:14px}.rail-brand{margin-bottom:15px}.rail-button.active:before{left:-10px}.dashboard .top{height:62px;padding:0 18px}.workspace-label{display:none}.dashboard .brand{font-size:20px}.dashboard .brand small{font-size:11px}.brand-divider{margin:0 7px}.dashboard .main{padding:22px 16px}.dashboard-heading{margin-bottom:19px}.dashboard-heading h1{font-size:25px}.dashboard-heading .eyebrow{font-size:8px}.dashboard-heading p{font-size:12px}.collection-total{display:none}.overview{grid-template-columns:repeat(2,minmax(0,1fr));padding:0;margin-bottom:22px}.overview>div{padding:12px 14px;border-bottom:1px solid var(--line)}.overview>div:nth-child(2){border-right:0}.overview>div:nth-child(n+3){border-bottom:0}.overview strong{font-size:22px}.overview span{font-size:12px}.dashboard .toolbar{flex-wrap:wrap;gap:8px}.dashboard .search{flex-basis:100%}.dashboard .toolbar select{flex:1;min-width:0}.dashboard .toolbar .primary{flex:0 1 auto}.dashboard .grid{grid-template-columns:1fr;gap:16px}.dashboard .results>span:last-child{display:none}.dashboard .preview{height:185px}.dashboard .rating button{min-width:38px;width:38px}.dashboard .foot{flex-direction:column;align-items:flex-start;gap:12px}.dashboard #detailPreview .preview{height:230px}.dashboard .rail-separator{margin:13px 0}}
 @media(max-width:360px){.dashboard .brand small,.brand-divider{display:none}.dashboard .rating button{min-width:32px;width:32px}.dashboard .card-body{padding:12px}}
 @media(prefers-reduced-motion:reduce){.rail-button,.dashboard .card{transition:none}}
+
+/* Collection wall: natural-height cards, measured grid spans keep DOM and keyboard order. */
+.dashboard .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:8px;gap:20px;align-items:start}
+.dashboard .card{position:relative;display:block;align-self:start;overflow:visible;border-radius:18px;background:#fffefa;transition:transform .22s ease,background-color .22s ease,border-color .22s ease,box-shadow .22s ease}
+.dashboard .card .preview{height:auto;min-height:0;display:block;border-radius:17px 17px 0 0;overflow:hidden;background:#eeeaf2}
+.dashboard .card .preview img{display:block;width:calc(100% + 6px)!important;max-width:none;height:auto!important;max-height:460px;object-fit:contain!important;border-radius:17px 17px 0 0}
+.dashboard .card .preview iframe,.dashboard .card .preview video{pointer-events:none}
+.dashboard .card .skill-cover{display:flex;align-items:flex-start;padding:25px 21px;min-height:170px;background:#ece8f4}
+.dashboard .skill-cover strong{font-size:23px;letter-spacing:-.6px}.dashboard .skill-cover p{font-size:12px;line-height:1.8;color:#625972}
+.dashboard .card-body{padding:18px 19px 17px;display:block;background:transparent}
+.dashboard .card h2{font-size:19px;letter-spacing:-.3px;margin:7px 0 10px;line-height:1.5}
+.dashboard .card .description{font-size:13px;line-height:1.85;color:#645d70}
+.dashboard .card .meta{gap:10px;align-items:flex-start;line-height:1.6}.dashboard .card .meta>span{max-width:calc(100% - 48px)}
+.dashboard .card .rating{margin:7px 0;justify-content:space-between}.dashboard .card .rating button{width:36px;min-width:32px;min-height:44px}.dashboard .card .rating small{font-size:11px}
+.dashboard .card-foot{display:flex;align-items:center;justify-content:flex-end;gap:12px;border-top:1px solid #dfd9e6;padding-top:13px}
+.dashboard .card-foot>span{font-size:11px;line-height:1.7}.dashboard .visit-site{min-height:40px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;padding:8px 13px;background:#f7f5fb;color:#433850;border:1px solid #d9d1e3;border-radius:10px}
+.dashboard .card .visit-site:hover{background:#fff;border-color:#7d6b94}.dashboard .source-unavailable{font-size:11px;color:#847a8d}
+.dashboard .card .card-open{position:absolute;inset:0;z-index:1;width:100%;height:100%;min-height:0;margin:0;padding:0;border:0;border-radius:18px;background:transparent;box-shadow:none;cursor:pointer}
+.dashboard .card .card-open:hover{background:transparent;border:0;box-shadow:none}.dashboard .card .card-open:focus-visible{outline:3px solid #3d7c66;outline-offset:4px}
+.dashboard .card :is(.rating,.star,.visit-site){position:relative;z-index:2}
+.dashboard .card:focus-within{border-color:#7d9e8c;box-shadow:0 4px 18px #2b433a10}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(hover:hover) and (pointer:fine){.dashboard .card:hover{z-index:4;transform:translateY(-3px);border-color:#a6b9ac;box-shadow:0 12px 28px #29433312}.dashboard .card[data-kind=skill]:hover{background:#e3f1e9;transform:translateY(-5px) scale(1.018);border-color:#7ca38e;box-shadow:0 16px 34px #2943331c}.dashboard .card[data-kind=skill]:hover .visit-site{background:#cce5d6;border-color:#9bc3ad;color:#294a3a}}
+.dashboard #detail{width:min(940px,calc(100vw - 44px));max-height:88dvh;border-radius:22px;padding:28px;overscroll-behavior:contain}
+.dashboard #detail::backdrop{background:#24233170;backdrop-filter:blur(7px)}
+.dashboard #detail .dialog-head{gap:20px}.dashboard #detail .dialog-head button{min-width:44px;min-height:44px;border-radius:50%;font-size:24px;flex-shrink:0}
+.dashboard #detail .preview{overflow:hidden;border-radius:14px}.dashboard #detail .preview:has(img){height:auto!important;max-height:none;background:#eeeaf2}
+.dashboard #detail .preview img{display:block;width:100%!important;height:auto!important;max-height:58dvh;object-fit:contain!important}
+.dashboard #detail #sourceLink{gap:10px;line-height:1.7}.dashboard #detail #sourceLink .visit-site{color:#433850}.dashboard #detail .actions{position:sticky;bottom:-28px;background:#fffefa;padding:14px 0;margin-top:16px;border-top:1px solid var(--line)}
+@media(min-width:1550px){.dashboard .grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:1100px){.dashboard .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.dashboard .grid{grid-template-columns:minmax(0,1fr);gap:16px}.dashboard .card-body{padding:16px}.dashboard #detail{width:calc(100vw - 24px);padding:18px;border-radius:18px}.dashboard #detail .actions{bottom:-18px}.dashboard .card .preview img{max-height:none}.dashboard #detailPreview .preview{height:340px}.dashboard .card .visit-site{min-height:44px}}
+@media(prefers-reduced-motion:reduce){.dashboard .card{transition:none}.dashboard .card:hover,.dashboard .card[data-kind=skill]:hover{transform:none}}

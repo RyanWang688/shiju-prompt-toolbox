@@ -4,11 +4,11 @@
 
 GitHub Pages 从 main 分支根目录自动发布。
 
-新增“实用网站”栏目：目前收录 OpenCut、MotionSites.org 和 Easel，附实际官网截图、用途介绍和访问入口，同样支持收藏、个人评分与备份。网站截图按记录日期展示，不是实时抓取。
+新增“实用网站”栏目：目前收录 60fps.design、React Bits、Uiverse、Anime.js、Aceternity UI、OpenCut、MotionSites.org 和 Easel，附实际官网截图、用途介绍和访问入口，同样支持收藏、个人评分与备份。网站截图按记录日期展示，不是实时抓取。
 
 采用 Dashboard 布局：左侧为固定纯图标导航轨，按内容类型、收藏和主题分类用分隔线分组；悬停或键盘聚焦显示名称与数量提示，Escape 可关闭。保留浅紫、奶白与黄色配色，小屏内容自动改为单列。
 
-已收录 15 条提示词（含动效、Dashboard 导航与布局）和 20 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
+已收录 15 条提示词（含动效、Dashboard 导航与布局）和 25 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
 
 新增 Impeccable（前端设计与界面打磨），配作者 Neo Mirai 真实案例截图；Awesome DESIGN.md 为设计规范参考库，配作者 getdesign.md 的 Apple 风格 / Lumora 实际交互预览截图，按用户要求归入 Skills。两者均注明来源，非本次生成。
 
@@ -16,7 +16,7 @@ MOSS-Image 收录官方图像模型项目及其 moss-image-prompt-enhancer Skill
 
 Skills 使用真实效果预览：涂鸦照片与 RuiC 卡牌采用原作者公开的作品/演示，GSAP 使用本次实际运行动画后保存的截图，并附可播放演示。详情标明来源和生成方式；素材归属与许可说明见各自 assets 目录的 ATTRIBUTION.md。
 
-支持搜索、分类、收藏、原文复制、手动新增与编辑、JSON 备份和恢复；预览可使用图片、视频或独立 HTML 动效。
+支持搜索、分类、收藏、原文复制、手动新增、JSON 备份和恢复；预览可使用图片、视频或独立 HTML 动效。
 
 也可收录 Skills：保存名称、来源和一句话用途介绍。提示词和 Skills 均支持用户自评 1～5 星、按评分排序；重复点击当前星级可清除评分。评分保存在当前浏览器，刷新后保留，并随 JSON 备份导出、导入恢复；目前不跨设备自动同步。
 
@@ -59,3 +59,7 @@ python build.py
 2026-10-23 在“实用网站”收录 Easel：开源社媒工作台，覆盖发现、策划、创作、发布与归因，附官方网页实际截图、用途及部署说明。官方页面列示浙大 REAL 与北大 OpenDCAI 实验室；收录不代表已部署或接入社媒账号。
 
 2026-10-23：新增主次布局、通栏横带、全幅画布、看板分列、时间轴泳道 5 条提示词及独立交互演示。6 张原始截图完整保留，其中两张通栏横带合并收录。布局预览合集：`assets/dashboard-layouts/`。
+
+2026-10-23：收录 AI Job Search、Context Mode、Diagram Design、ArtCraft、REA。ArtCraft 标注为创作软件，Context Mode / REA 标注 MCP 类型。Diagram Design、ArtCraft、REA 使用官方仓库真实预览；AI Job Search 与 Context Mode 实际运行预览待补。所有 Skills / 实用网站增加官方项目入口，详情同时展示已有 GitHub 与使用说明链接。
+
+2026-10-23：新增 60fps.design、React Bits、Uiverse、Anime.js、Aceternity UI，更新已有 Motion Sites，不重复收录；均附真实官网截图。卡片改为瀑布流、整卡打开、薄荷色悬停反馈和官网按钮，详情支持点击外部关闭；移除编辑与删除入口。动画卡封面采用实际网页截图，详情保留完整交互。

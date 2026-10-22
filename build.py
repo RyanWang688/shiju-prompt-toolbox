@@ -17,8 +17,13 @@ for item in items:
     if item.get('kind') == 'website':
         url = urlparse(item.get('source', ''))
         assert url.scheme in ('http', 'https') and url.netloc, 'Website requires a valid address'
-    preview = item.get('preview')
-    if preview:
+    for field in ('officialUrl', 'repository', 'documentation'):
+        if item.get(field):
+            link = urlparse(item[field])
+            assert link.scheme in ('http', 'https') and link.netloc, f'Invalid {field}'
+    for preview in (item.get('preview'), item.get('cardPreview')):
+        if not preview:
+            continue
         assert preview['type'] in ('image', 'animation', 'video')
         path = (root / preview['src']).resolve()
         assert path.is_relative_to((root / 'assets').resolve()) and path.is_file()
