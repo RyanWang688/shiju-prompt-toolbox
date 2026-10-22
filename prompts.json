@@ -1,5 +1,141 @@
 [
   {
+    "id": "skill-agent-reach",
+    "kind": "skill",
+    "title": "Agent-Reach",
+    "resourceType": "互联网检索工具与 Skill",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具",
+      "写作创作"
+    ],
+    "tags": "社媒运营 / 热点选题 / 信息检索 / 多平台调研",
+    "description": "为 AI Agent 提供网页、社交平台、视频和 RSS 的搜索与阅读能力，适合收集热点讨论、用户问题和选题资料。部分平台需要额外配置；它不是自动生成热点榜单的工具。",
+    "source": "https://github.com/Panniantong/Agent-Reach",
+    "repository": "https://github.com/Panniantong/Agent-Reach",
+    "officialUrl": "https://github.com/Panniantong/Agent-Reach",
+    "documentation": "https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "previewStatus": "pending",
+    "previewSource": "https://github.com/Panniantong/Agent-Reach/blob/main/README.md",
+    "previewEvidence": "pending-real-output",
+    "previewNote": "真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与使用示例。",
+    "prompt": "Agent-Reach\n\n用途：为 AI Agent 提供网页、社交平台、视频和 RSS 的搜索与阅读能力，适合收集热点讨论、用户问题和选题资料。部分平台需要额外配置；它不是自动生成热点榜单的工具。\n\n定位：用于获取和整理选题资料；热点筛选与最终选题仍由用户或 Agent 判断。\n\n预览说明：真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与使用示例。\n\n官方入口：https://github.com/Panniantong/Agent-Reach\n官方仓库：https://github.com/Panniantong/Agent-Reach\n使用说明：https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+  },
+  {
+    "id": "skill-auto-redbook",
+    "kind": "skill",
+    "title": "Auto-Redbook",
+    "resourceType": "小红书内容创作 Skill",
+    "category": "写作表达",
+    "skillTopics": [
+      "写作创作",
+      "视觉设计"
+    ],
+    "tags": "社媒运营 / 小红书 / 文案创作 / 图文卡片",
+    "description": "根据资料撰写小红书标题、正文与标签，并把内容渲染成封面和多页图片卡片。支持多种主题与分页方式，适合快速制作图文笔记。",
+    "source": "https://github.com/comeonzhj/Auto-Redbook-Skills",
+    "repository": "https://github.com/comeonzhj/Auto-Redbook-Skills",
+    "officialUrl": "https://github.com/comeonzhj/Auto-Redbook-Skills",
+    "documentation": "https://github.com/comeonzhj/Auto-Redbook-Skills/blob/main/SKILL.md",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-auto-redbook/author-example.png",
+      "alt": "Auto-Redbook 作者官方真实作品或操作演示",
+      "width": 2160,
+      "height": 2880
+    },
+    "previewSource": "https://github.com/comeonzhj/Auto-Redbook-Skills/blob/main/demos/playful-geometric/card_1.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。",
+    "prompt": "Auto-Redbook\n\n用途：根据资料撰写小红书标题、正文与标签，并把内容渲染成封面和多页图片卡片。支持多种主题与分页方式，适合快速制作图文笔记。\n\n\n\n预览说明：作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。\n\n官方入口：https://github.com/comeonzhj/Auto-Redbook-Skills\n官方仓库：https://github.com/comeonzhj/Auto-Redbook-Skills\n使用说明：https://github.com/comeonzhj/Auto-Redbook-Skills/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+  },
+  {
+    "id": "skill-nuwa-skill",
+    "kind": "skill",
+    "title": "nuwa-skill · 女娲",
+    "resourceType": "人物思维与表达提炼 Skill",
+    "category": "写作表达",
+    "skillTopics": [
+      "写作创作"
+    ],
+    "tags": "社媒运营 / 表达风格 / 思维框架 / 人物视角",
+    "description": "调研人物资料，提炼思维框架、表达习惯与边界，生成可复用的人物视角 Skill。可用于写作视角与风格参考；保持账号风格仍需结合自己的语料和规范。",
+    "source": "https://github.com/alchaincyf/nuwa-skill",
+    "repository": "https://github.com/alchaincyf/nuwa-skill",
+    "officialUrl": "https://github.com/alchaincyf/nuwa-skill",
+    "documentation": "https://github.com/alchaincyf/nuwa-skill/blob/main/SKILL.md",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "previewStatus": "pending",
+    "previewSource": "https://github.com/alchaincyf/nuwa-skill/blob/main/README.md",
+    "previewEvidence": "pending-real-output",
+    "previewNote": "真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与文字对话示例。",
+    "prompt": "nuwa-skill · 女娲\n\n用途：调研人物资料，提炼思维框架、表达习惯与边界，生成可复用的人物视角 Skill。可用于写作视角与风格参考；保持账号风格仍需结合自己的语料和规范。\n\n定位：人物认知和表达提炼，不自带账号长期记忆或风格自动锁定。官方 README 提供文字对话示例。\n\n预览说明：真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与文字对话示例。\n\n官方入口：https://github.com/alchaincyf/nuwa-skill\n官方仓库：https://github.com/alchaincyf/nuwa-skill\n使用说明：https://github.com/alchaincyf/nuwa-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+  },
+  {
+    "id": "skill-guizang-social-card",
+    "kind": "skill",
+    "title": "guizang · Social Card",
+    "resourceType": "社媒视觉卡片 Skill",
+    "category": "界面设计",
+    "skillTopics": [
+      "视觉设计",
+      "写作创作"
+    ],
+    "tags": "社媒运营 / 归藏 / 小红书组图 / 公众号封面 / Live Photo",
+    "description": "把文章、截图、照片或视频整理成小红书组图、公众号封面对与 Live Photo 动态卡。提供电子杂志风和瑞士风版式，适合社媒视觉素材制作。",
+    "source": "https://github.com/op7418/guizang-social-card-skill",
+    "repository": "https://github.com/op7418/guizang-social-card-skill",
+    "officialUrl": "https://github.com/op7418/guizang-social-card-skill",
+    "documentation": "https://github.com/op7418/guizang-social-card-skill/blob/main/SKILL.md",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-guizang-social-card/author-example.png",
+      "alt": "guizang · Social Card 作者官方真实作品或操作演示",
+      "width": 2400,
+      "height": 1350
+    },
+    "previewSource": "https://github.com/user-attachments/assets/d370abcc-1fc4-4de1-903a-09020a6556ce",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。",
+    "prompt": "guizang · Social Card\n\n用途：把文章、截图、照片或视频整理成小红书组图、公众号封面对与 Live Photo 动态卡。提供电子杂志风和瑞士风版式，适合社媒视觉素材制作。\n\n名称对应：按用户的“guizang：生成视觉素材”及社媒流程，暂对应 Guizang Social Card Skill。官方项目采用 AGPL-3.0，并提供独立商业授权说明；使用项目时以官方最新许可为准。\n\n预览说明：作者官方公开的实际卡片作品展示，保留原始文件；非本次运行或生成。\n\n官方入口：https://github.com/op7418/guizang-social-card-skill\n官方仓库：https://github.com/op7418/guizang-social-card-skill\n使用说明：https://github.com/op7418/guizang-social-card-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+  },
+  {
+    "id": "skill-social-auto-upload",
+    "kind": "skill",
+    "title": "social-auto-upload",
+    "resourceType": "多平台发布工具与 Skills",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "社媒运营 / 多平台发布 / 视频上传 / 图文分发",
+    "description": "通过统一命令行和平台 Skills 发布视频、文章与图文，适合将成品内容分发到多个平台。具体内容类型、定时发布和登录要求依各平台支持情况而定。",
+    "source": "https://github.com/dreammis/social-auto-upload",
+    "repository": "https://github.com/dreammis/social-auto-upload",
+    "officialUrl": "https://sap-doc.nasdaddy.com/",
+    "documentation": "https://github.com/dreammis/social-auto-upload/tree/main/skills",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-social-auto-upload/author-demo.gif",
+      "alt": "social-auto-upload 作者官方真实作品或操作演示",
+      "width": 1645,
+      "height": 1030
+    },
+    "previewSource": "https://github.com/dreammis/social-auto-upload/blob/main/media/show/tkupload.gif",
+    "previewEvidence": "author-published-demo",
+    "previewNote": "作者官方公开的实际上传演示 GIF（历史版本），保留原始文件；非本次运行或生成。",
+    "prompt": "social-auto-upload\n\n用途：通过统一命令行和平台 Skills 发布视频、文章与图文，适合将成品内容分发到多个平台。具体内容类型、定时发布和登录要求依各平台支持情况而定。\n\n作者 GIF 为 TikTok 上传流程的历史实际演示，不代表当前所有平台入口或界面。当前能力以主线 README 平台表和 skills 目录为准。发布前需自行配置平台账号与运行环境。\n\n预览说明：作者官方公开的实际上传演示 GIF（历史版本），保留原始文件；非本次运行或生成。\n\n官方入口：https://sap-doc.nasdaddy.com/\n官方仓库：https://github.com/dreammis/social-auto-upload\n使用说明：https://github.com/dreammis/social-auto-upload/tree/main/skills\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。"
+  },
+  {
     "id": "skill-cloud-doodle-animal",
     "kind": "skill",
     "title": "cloud-doodle-animal",
