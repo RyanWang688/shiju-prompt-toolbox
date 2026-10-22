@@ -6,7 +6,9 @@ GitHub Pages 从 main 分支根目录自动发布。
 
 新增“实用网站”栏目：目前收录 OpenCut，附实际官网截图、用途介绍和访问入口，同样支持收藏、个人评分与备份。网站截图按记录日期展示，不是实时抓取。
 
-采用已选定的 C「彩色灵感画板」视觉方向。已收录 4 条动效提示词和 7 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image。
+采用 Dashboard 布局：左侧为固定纯图标导航轨，按内容类型、收藏和主题分类用分隔线分组；悬停或键盘聚焦显示名称与数量提示，Escape 可关闭。保留浅紫、奶白与黄色配色，小屏内容自动改为单列。
+
+已收录 4 条动效提示词和 7 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image。
 
 新增 Impeccable（前端设计与界面打磨），配作者 Neo Mirai 真实案例截图；Awesome DESIGN.md 为设计规范参考库，配作者 getdesign.md 的 Apple 风格 / Lumora 实际交互预览截图，按用户要求归入 Skills。两者均注明来源，非本次生成。
 
