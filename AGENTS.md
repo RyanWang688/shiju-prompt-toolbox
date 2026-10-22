@@ -1,6 +1,8 @@
 # 拾句：项目约定与持续收录流程
 
-仓库：https://github.com/RyanWang688/shiju-prompt-toolbox （私有）。
+仓库：https://github.com/RyanWang688/shiju-prompt-toolbox （公开；用户已明确授权）。
+
+网页：https://ryanwang688.github.io/shiju-prompt-toolbox/ 。GitHub Pages 从 main 分支根目录发布；保留 .nojekyll，更新 index.html 与素材后提交推送，后续网页会自动部署。用户评分仍保存在访问网页的浏览器里，不会自动提交。
 
 用户在 2026-10-22 选定 C「彩色灵感画板」方向，要求当前不放任何提示词；后续由用户发来真实提示词，再自动添加，并根据内容生成合适的预览图或动效。保留此流程，不为凑内容添加示例。
 
