@@ -1,5 +1,126 @@
 [
   {
+    "id": "dashboard-hero-module",
+    "kind": "prompt",
+    "title": "主次布局",
+    "category": "界面设计",
+    "tags": "Dashboard / 布局设计 / Hero Module",
+    "description": "以跨两行的 8 列主模块建立视觉重心，4 列次要模块围绕排列。",
+    "prompt": "首屏采用主次布局（Hero Module），主模块占8列跨两行，次要指标用4列小模块排在右侧和下方，全页只有一个视觉重心。",
+    "collection": "Dashboard 布局设计",
+    "source": "用户提供的 Dashboard 布局设计截图",
+    "sourceImage": "assets/dashboard-hero-module/source.png",
+    "sourceImages": [
+      "assets/dashboard-hero-module/source.png"
+    ],
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-hero-module/preview.html",
+      "alt": "主次布局：手工交互演示"
+    },
+    "demo": "assets/dashboard-hero-module/preview.html",
+    "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-stacked-bands",
+    "kind": "prompt",
+    "title": "通栏横带",
+    "category": "界面设计",
+    "tags": "Dashboard / 布局设计 / Stacked Bands",
+    "description": "概览、趋势、明细横贯全宽，以 48 像素间距组织层级。",
+    "prompt": "页面采用通栏横带布局（Stacked Bands），自上而下分为概览、趋势、明细三层，每层横贯全宽，层与层之间留48像素间距。",
+    "collection": "Dashboard 布局设计",
+    "source": "用户提供的 Dashboard 布局设计截图",
+    "sourceImage": "assets/dashboard-stacked-bands/source.png",
+    "sourceImages": [
+      "assets/dashboard-stacked-bands/source.png",
+      "assets/dashboard-stacked-bands/source-alternate.png"
+    ],
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-stacked-bands/preview.html",
+      "alt": "通栏横带：手工交互演示"
+    },
+    "demo": "assets/dashboard-stacked-bands/preview.html",
+    "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-full-bleed-canvas",
+    "kind": "prompt",
+    "title": "全幅画布",
+    "category": "界面设计",
+    "tags": "Dashboard / 布局设计 / Full-bleed Canvas / Floating Panels",
+    "description": "全幅画布承载主内容，指标和列表以四角浮动面板叠加。",
+    "prompt": "主区用全幅画布作底（Full-bleed Canvas），指标与列表做成浮动面板（Floating Panels）叠在上层，面板贴四角排布，留16像素边距。",
+    "collection": "Dashboard 布局设计",
+    "source": "用户提供的 Dashboard 布局设计截图",
+    "sourceImage": "assets/dashboard-full-bleed-canvas/source.png",
+    "sourceImages": [
+      "assets/dashboard-full-bleed-canvas/source.png"
+    ],
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-full-bleed-canvas/preview.html",
+      "alt": "全幅画布：手工交互演示"
+    },
+    "demo": "assets/dashboard-full-bleed-canvas/preview.html",
+    "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。全幅画布以原创路线地图演示叠层布局。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-kanban-columns",
+    "kind": "prompt",
+    "title": "看板分列",
+    "category": "界面设计",
+    "tags": "Dashboard / 布局设计 / Kanban Columns",
+    "description": "任务按状态分入等宽列，列头带计数，支持横向滚动。",
+    "prompt": "采用看板分列布局（Kanban Columns），按状态分为等宽列，列头显示名称与计数，列内纵向堆叠，整体可横向滚动。",
+    "collection": "Dashboard 布局设计",
+    "source": "用户提供的 Dashboard 布局设计截图",
+    "sourceImage": "assets/dashboard-kanban-columns/source.png",
+    "sourceImages": [
+      "assets/dashboard-kanban-columns/source.png"
+    ],
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-kanban-columns/preview.html",
+      "alt": "看板分列：手工交互演示"
+    },
+    "demo": "assets/dashboard-kanban-columns/preview.html",
+    "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-timeline-swimlanes",
+    "kind": "prompt",
+    "title": "时间轴泳道",
+    "category": "界面设计",
+    "tags": "Dashboard / 布局设计 / Timeline Swimlanes",
+    "description": "以横条展示各泳道任务的起止时间，竖线标记当前时刻。",
+    "prompt": "采用时间轴泳道布局（Timeline Swimlanes），顶部为时间刻度，每行一条泳道，事项按起止时间绘制为横条，用竖向参考线标记当前时刻。",
+    "collection": "Dashboard 布局设计",
+    "source": "用户提供的 Dashboard 布局设计截图",
+    "sourceImage": "assets/dashboard-timeline-swimlanes/source.png",
+    "sourceImages": [
+      "assets/dashboard-timeline-swimlanes/source.png"
+    ],
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-timeline-swimlanes/preview.html",
+      "alt": "时间轴泳道：手工交互演示"
+    },
+    "demo": "assets/dashboard-timeline-swimlanes/preview.html",
+    "previewNote": "按提示词手工制作的交互演示，使用示例数据；非源视频、非模型实测输出。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
     "id": "website-easel",
     "kind": "website",
     "title": "Easel",

@@ -8,7 +8,7 @@ GitHub Pages 从 main 分支根目录自动发布。
 
 采用 Dashboard 布局：左侧为固定纯图标导航轨，按内容类型、收藏和主题分类用分隔线分组；悬停或键盘聚焦显示名称与数量提示，Escape 可关闭。保留浅紫、奶白与黄色配色，小屏内容自动改为单列。
 
-已收录 10 条提示词（含动效与 Dashboard 导航）和 20 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
+已收录 15 条提示词（含动效、Dashboard 导航与布局）和 20 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
 
 新增 Impeccable（前端设计与界面打磨），配作者 Neo Mirai 真实案例截图；Awesome DESIGN.md 为设计规范参考库，配作者 getdesign.md 的 Apple 风格 / Lumora 实际交互预览截图，按用户要求归入 Skills。两者均注明来源，非本次生成。
 
@@ -57,3 +57,5 @@ python build.py
 2026-10-23 收录用户提供的 6 条 Dashboard 导航提示词原文：透明顶栏、右侧竖轨菜单、当前项展开文字、图标菜单配大标题、图标轨加悬停提示、快捷操作。均归入“界面设计”，支持搜索 Dashboard；每条保留原始截图，并附独立可点击的手工交互演示（示例数据，非模型实测输出）。
 
 2026-10-23 在“实用网站”收录 Easel：开源社媒工作台，覆盖发现、策划、创作、发布与归因，附官方网页实际截图、用途及部署说明。官方页面列示浙大 REAL 与北大 OpenDCAI 实验室；收录不代表已部署或接入社媒账号。
+
+2026-10-23：新增主次布局、通栏横带、全幅画布、看板分列、时间轴泳道 5 条提示词及独立交互演示。6 张原始截图完整保留，其中两张通栏横带合并收录。布局预览合集：`assets/dashboard-layouts/`。
