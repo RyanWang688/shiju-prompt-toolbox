@@ -1,5 +1,29 @@
 [
   {
+    "id": "website-skillry",
+    "kind": "website",
+    "title": "Skillry",
+    "category": "其他",
+    "tags": "动效灵感 / Agent Skills / 网页设计 / 视频 / 幻灯片 / 图像创作",
+    "description": "提供面向 AI 编程工具的创作 Skills 与真实案例预览，涵盖网页设计、视频动效、幻灯片和图像，适合先找效果再选择相应创作流程。",
+    "source": "https://skillry.dev/",
+    "officialUrl": "https://skillry.dev/",
+    "documentation": "https://skillry.dev/learn",
+    "prompt": "Skillry\n\n用途：浏览网页、视频、幻灯片与图像创作案例，选择对应的 Agent Skills，供兼容的 AI 工具使用。\n\n官网：https://skillry.dev/\n使用指南：https://skillry.dev/learn\n\n说明：包含免费与 Premium 内容，具体功能、价格及使用许可以官方说明为准。本次只收藏网站与公开页面截图，未登录、购买、安装或执行站内 Skills。\n\n预览：2026-10-23 实际访问官方网站保存的浏览器截图，非重建页面。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-skillry/official-site.png",
+      "alt": "Skillry 官网实际浏览器截图：Agent Skills 与创作案例展示",
+      "width": 1270,
+      "height": 714
+    },
+    "previewNote": "2026-10-23 实际访问官方公开页面保存的浏览器截图，保留原站标识与作品展示。",
+    "previewSource": "https://skillry.dev/",
+    "previewEvidence": "official-website-browser-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
     "id": "like-burst",
     "kind": "prompt",
     "title": "点赞爆粒子",

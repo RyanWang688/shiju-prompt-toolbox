@@ -44,7 +44,7 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 .dashboard .card :is(.rating,.star,.visit-site){position:relative;z-index:2}
 .dashboard .card:focus-within{border-color:#191919;box-shadow:0 4px 18px #19191910}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-@media(hover:hover) and (pointer:fine){.dashboard .card:hover{z-index:4;transform:translateY(-3px);border-color:#a3a3a3;box-shadow:0 12px 28px #19191912}.dashboard .card:hover{background:var(--card-hover);transform:translateY(-5px) scale(1.018);border-color:#d9a600;box-shadow:0 16px 34px #1919191c}.dashboard .card:hover .visit-site{background:#ffd43b;border-color:#d9a600;color:#191919}}
+
 .dashboard #detail{width:min(940px,calc(100vw - 44px));max-height:88dvh;border-radius:22px;padding:28px;overscroll-behavior:contain}
 .dashboard #detail::backdrop{background:#19191970;backdrop-filter:blur(7px)}
 .dashboard #detail .dialog-head{gap:20px}.dashboard #detail .dialog-head button{min-width:44px;min-height:44px;border-radius:50%;font-size:24px;flex-shrink:0}
@@ -74,10 +74,12 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 .dashboard .topic-chip.active{background:var(--accent);border-color:var(--ink);color:var(--ink)}
 .topic-chip.active small{background:#fff;color:var(--ink)}
 .dashboard .topic-chip:hover{background:var(--card-hover);border-color:var(--ink);color:var(--ink)}
-@media(hover:hover) and (pointer:fine){
- .dashboard .card:hover :is(h2,.description,.meta,.preview-credit,.rating small,.card-foot>span,.source-unavailable,.skill-cover,.skill-cover p,.rating button,.star){color:var(--ink)}
- .dashboard .card:hover .skill-cover{background:transparent}
- .dashboard .card:hover .card-foot{border-color:#19191955}
- .dashboard .card:hover .visit-site{background:#fff;border-color:var(--ink);color:var(--ink)}
- .dashboard .card:hover .visit-site:hover{background:var(--ink);color:#fff}
-}
+/* Text-only inversion: the background wipe and difference text stay inside the body. */
+.dashboard .card-body{isolation:isolate;border-radius:0 0 17px 17px;background-color:#fff;background-image:linear-gradient(#191919,#191919);background-repeat:no-repeat;background-position:top left;background-size:100% 0%;transition:background-size .46s cubic-bezier(.22,.65,.25,1)}
+.dashboard .card-body :is(h2,.description,.preview-credit,.meta>span,.rating small,.rating button,.star,.card-foot>span,.visit-site){color:#fff;mix-blend-mode:difference}
+.dashboard .card-body .visit-site{background:transparent;border-color:#fff}
+.dashboard .card .card-body .visit-site:hover{background:transparent;border-color:#fff;color:#fff;text-decoration:underline;text-underline-offset:3px}
+.dashboard .card:hover{transform:none;border-color:#dedede;box-shadow:0 2px 3px #19191903}
+@media(hover:hover) and (pointer:fine){.dashboard .card:hover .card-body{background-size:100% 100%}}
+.dashboard .card:has(:focus-visible) .card-body{background-size:100% 100%}
+@media(prefers-reduced-motion:reduce){.dashboard .card-body{transition:none}}
