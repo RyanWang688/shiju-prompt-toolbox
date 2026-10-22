@@ -1,5 +1,48 @@
 [
   {
+    "id": "skill-taste-skill",
+    "kind": "skill",
+    "title": "Taste-Skill",
+    "category": "界面设计",
+    "tags": "审美评审 / 前端设计 / 排版 / 配色 / 视觉检查 / design-taste-frontend",
+    "description": "为 AI 编写的网页和应用界面提供设计方向，指导布局、排版、配色与素材选择，并通过真实浏览器检查和修正结果。适合新界面创作、现有页面评审与改版。",
+    "source": "https://github.com/Leonxlnx/taste-skill",
+    "documentation": "https://github.com/Leonxlnx/taste-skill/blob/6010f91a9935f1c167dfc500fb1a475681892e6b/skills/taste-skill/SKILL.md",
+    "prompt": "Taste-Skill（Leonxlnx）\n\n用途：帮助 AI 从创作需求推导视觉方向，设计网页和应用界面，而不是重复通用模板；覆盖布局、字体、配色、图像与浏览器视觉检查。\n\n适合：落地页、作品集、产品页，以及应用界面的设计、改版和视觉评审。\n\n当前核实的核心 Skill 名称：design-taste-frontend。仓库与文档会演进；实际使用时以对应版本的说明为准。\n\n预览：作者在 README 中明确列为由 Skill 构建的 coffee-storefront 页面原始截图。不是本次生成，也不是概念图。素材来源见 assets/skill-taste-skill/AUTHOR-CREDITS.md。\n\n收录状态：仅收藏用途、来源和作者真实作品，不因本次收录安装、更新或执行 Skill；不导入截图中的 GitHub 星数。\n\n官方仓库：https://github.com/Leonxlnx/taste-skill\n官方文档：https://www.tasteskill.dev/docs",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-taste-skill/author-coffee-storefront.webp",
+      "alt": "Taste-Skill 作者公开的真实咖啡店页面截图"
+    },
+    "previewNote": "作者真实作品：官方 README 展示的 coffee-storefront 页面截图，原图保留，非本次生成；引用和素材署名见 AUTHOR-CREDITS.md。",
+    "previewSource": "https://github.com/Leonxlnx/taste-skill/blob/6010f91a9935f1c167dfc500fb1a475681892e6b/examples/v2/coffee-storefront.webp",
+    "previewEvidence": "author-published-output",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "website-motionsites",
+    "kind": "website",
+    "title": "MotionSites.org",
+    "category": "动画动效",
+    "tags": "动效灵感 / Skills 目录 / 网站提示词 / UI / 模板资源",
+    "description": "提供网站、页面区块、视觉素材与 Agent Skills 的资源目录，涵盖前端、GSAP、3D 和视频等方向。适合查找设计灵感、参考演示与对应技能来源。",
+    "source": "https://motionsites.org/skills",
+    "homepage": "https://motionsites.org/",
+    "resourceType": "skill-and-prompt-catalog",
+    "prompt": "MotionSites.org\n\n类型：网站提示词、设计资源与 Skills 目录，不是一个名叫 MotionSites 的独立 Skill，按资源类型放入“实用网站”。\n\n用途：浏览网站、应用、页面区块、图标与素材参考；在 Skills 目录中按前端、动效、3D、图像和视频等主题查找技能、演示与来源。\n\n适合：寻找网页设计与动效灵感、挑选相关工具、查看技能用途和示例。目录里的项目需要逐一核实，不把整站目录自动加入收藏。\n\n使用说明：网站包含免费和付费内容，具体获取方式以各条目说明为准。本次没有登录、购买或安装。\n\n预览：2026-10-23 实际打开官网 Skills 目录后的浏览器截图，展示真实案例卡片；不是本次生成的作品，也不代表单一 Skill 的输出。\n\n官网：https://motionsites.org/\nSkills 目录：https://motionsites.org/skills\n网站介绍：https://motionsites.org/about",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-motionsites/skills-catalog.png",
+      "alt": "MotionSites 官方 Skills 目录及真实案例卡片的浏览器截图"
+    },
+    "previewNote": "真实网页截图：2026-10-23 实际打开 MotionSites 官方 Skills 目录，展示目录中的案例预览卡片。",
+    "previewSource": "https://motionsites.org/skills",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
     "id": "skill-story-long-scan",
     "kind": "skill",
     "title": "story-long-scan",
@@ -242,7 +285,7 @@
     "description": "帮助 AI 设计和打磨前端界面，改善排版、配色、布局与交互，并检查响应式和可访问性。适合落地页、产品界面及现有网页的设计优化。",
     "source": "https://github.com/pbakaus/impeccable",
     "documentation": "https://github.com/pbakaus/impeccable/blob/main/skill/SKILL.src.md",
-    "prompt": "Impeccable（作者：Paul Bakaus）\n\n用途：为 AI 编码代理提供前端设计指导，覆盖界面创建、设计评审、排版、布局、配色、动效、文案、响应式和可访问性。\n\n适合：网页与落地页设计、产品界面打磨、改善通用模板感，以及从现有代码整理 DESIGN.md、设计令牌与组件。\n\n典型能力：critique 设计评审、audit 技术检查、polish 细节打磨、typeset 排版、layout 布局、animate 动效、adapt 多设备适配。具体命令以官方当前文档为准。\n\n预览：本次实际打开作者发布的 Neo Mirai 工作网站并截图。官方案例介绍了从页面参考图、品牌工具包到响应式网页的实现过程；这是作者真实案例，并非本次生成或实际运行 Impeccable 的结果。案例为虚构会议。\n\n收录状态：收藏用途、来源和真实案例；本次未安装该 Skill。\n\n官方仓库：https://github.com/pbakaus/impeccable\n官方案例说明：https://impeccable.style/cases/neo-mirai/\n实际案例网页：https://impeccable.style/neo-mirai/",
+    "prompt": "Impeccable（作者：Paul Bakaus）\n\n用途：为 AI 编码代理提供前端设计指导，覆盖界面创建、设计评审、排版、布局、配色、动效、文案、响应式和可访问性。\n\n适合：网页与落地页设计、产品界面打磨、改善通用模板感，以及从现有代码整理 DESIGN.md、设计令牌与组件。\n\n典型能力：critique 设计评审、audit 技术检查、polish 细节打磨、typeset 排版、layout 布局、animate 动效、adapt 多设备适配。具体命令以官方当前文档为准。\n\n预览：本次实际打开作者发布的 Neo Mirai 工作网站并截图。官方案例介绍了从页面参考图、品牌工具包到响应式网页的实现过程；这是作者真实案例，并非本次生成或实际运行 Impeccable 的结果。案例为虚构会议。\n\n收录状态：收藏用途、来源和真实案例；本次未安装该 Skill。\n\n官方仓库：https://github.com/pbakaus/impeccable\n官方案例说明：https://impeccable.style/cases/neo-mirai/\n实际案例网页：https://impeccable.style/neo-mirai/\n\n搜索别名：Impact-Cable。2026-10-23 用户确认截图中的此名称指向 Impeccable，因此合并到现有条目，不新增同名项目。",
     "preview": {
       "type": "image",
       "src": "assets/skill-impeccable/author-neo-mirai.png",
@@ -252,7 +295,10 @@
     "previewSource": "https://impeccable.style/neo-mirai/",
     "previewEvidence": "author-published-case-screenshot",
     "addedAt": "2026-10-22",
-    "verifiedAt": "2026-10-22"
+    "verifiedAt": "2026-10-23",
+    "aliases": [
+      "Impact-Cable"
+    ]
   },
   {
     "id": "skill-awesome-design-md",
