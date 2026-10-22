@@ -1,5 +1,306 @@
 [
   {
+    "id": "like-burst",
+    "kind": "prompt",
+    "title": "点赞爆粒子",
+    "category": "动画动效",
+    "tags": "按钮交互 / 点赞 / 粒子爆发 / 计数滚动",
+    "description": "爱心弹跳变红，8 个粒子向外飞散，点赞数向上滚动。",
+    "prompt": "做一个点赞按钮（Like Burst）：点击后爱心先缩小到0.8倍再弹到1.2倍，最后回到1倍，同时由灰色变成红色；爱心周围炸开8个彩色小圆点，向外飞散并淡出；右边的点赞数向上滚动+1。总时长约600ms，弹跳使用带回弹的曲线。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/like-burst/preview.html",
+      "alt": "点赞爆粒子：可交互网页演示"
+    },
+    "sourceImage": "assets/like-burst/source.png",
+    "previewNote": "根据用户原文手工制作的网页交互演示，非原作者视频或模型实测输出；预览中的红绿状态色按提示词保留，工具箱界面仍为黑黄白。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/like-burst/card-preview.png",
+      "alt": "点赞爆粒子：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "submit-morph-reset",
+    "kind": "prompt",
+    "title": "提交按钮三连变",
+    "category": "动画动效",
+    "tags": "按钮交互 / 按钮形变 / 加载 / 成功后复原",
+    "description": "按钮变圆进入加载，显示成功对勾后自动恢复，保留原文规定的时序。",
+    "prompt": "做一个提交按钮三段变化（Submit Morph）：点击后文字淡出，按钮宽度收缩成圆形，圆形中间出现旋转的加载圆环；1.2秒后按钮变成绿色并画出对勾；再过1秒恢复原状。收缩约300ms，使用ease-in-out。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/submit-morph-reset/preview.html",
+      "alt": "提交按钮三连变：可交互网页演示"
+    },
+    "sourceImage": "assets/submit-morph-reset/source.png",
+    "previewNote": "根据用户原文手工制作的网页交互演示，非原作者视频或模型实测输出；预览中的红绿状态色按提示词保留，工具箱界面仍为黑黄白。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/submit-morph-reset/card-preview.png",
+      "alt": "提交按钮三连变：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "jelly-toggle",
+    "kind": "prompt",
+    "title": "果冻开关",
+    "category": "动画动效",
+    "tags": "按钮交互 / 开关 / 胶囊拉伸 / 弹簧回弹",
+    "description": "圆点滑动中拉长，到达终点弹回圆形，底色同步渐变。",
+    "prompt": "做一个果冻开关（Jelly Toggle）：点击后圆点滑向另一端，滑动途中先横向拉长成胶囊形，到达终点回弹恢复圆形；底色从灰色渐变为绿色。时长约350ms，使用带回弹的弹簧曲线。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/jelly-toggle/preview.html",
+      "alt": "果冻开关：可交互网页演示"
+    },
+    "sourceImage": "assets/jelly-toggle/source.png",
+    "previewNote": "根据用户原文手工制作的网页交互演示，非原作者视频或模型实测输出；预览中的红绿状态色按提示词保留，工具箱界面仍为黑黄白。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/jelly-toggle/card-preview.png",
+      "alt": "果冻开关：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "hold-to-confirm",
+    "kind": "prompt",
+    "title": "长按确认",
+    "category": "动画动效",
+    "tags": "按钮交互 / 长按 / 进度环 / 松手撤回",
+    "description": "按住 1.5 秒确认，松手回退；演示只改变状态，不删除任何数据。",
+    "prompt": "做一个长按确认按钮（Hold to Confirm）：圆形删除按钮，按住时外围进度环顺时针走满，用时1.5秒；中途松手进度环倒退归零；走满后按钮左右轻震一下，变成对勾和“已删除”。适合删除等危险操作。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/hold-to-confirm/preview.html",
+      "alt": "长按确认：可交互网页演示"
+    },
+    "sourceImage": "assets/hold-to-confirm/source.png",
+    "previewNote": "根据用户原文手工制作的网页交互演示，非原作者视频或模型实测输出；预览中的红绿状态色按提示词保留，工具箱界面仍为黑黄白。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/hold-to-confirm/card-preview.png",
+      "alt": "长按确认：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "shared-element-transition",
+    "kind": "prompt",
+    "title": "共享元素无缝展开",
+    "category": "动画动效",
+    "tags": "App 交互 / 共享元素 / 详情转场 / 连续缩放",
+    "description": "同一张卡片连续展开为详情，再平滑返回列表。",
+    "prompt": "实现Card到详情页的共享元素转场（Shared Element Transition），背景与Card容器做连续平滑缩放。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/shared-element-transition/preview.html",
+      "alt": "共享元素无缝展开：可交互网页演示"
+    },
+    "sourceImage": "assets/shared-element-transition/source.jpg",
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/shared-element-transition/card-preview.png",
+      "alt": "共享元素无缝展开：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "tilt-glare-card",
+    "kind": "prompt",
+    "title": "3D 倾斜光影面板",
+    "category": "动画动效",
+    "tags": "App 交互 / 3D 倾斜 / 反射流光 / Spring",
+    "description": "倾斜角度与高光跟随指针，松手后弹簧回正。",
+    "prompt": "为Card添加跟随触摸位置的3D透视倾斜与径向反射流光，松手带Spring阻尼回正。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/tilt-glare-card/preview.html",
+      "alt": "3D 倾斜光影面板：可交互网页演示"
+    },
+    "sourceImage": "assets/tilt-glare-card/source.jpg",
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/tilt-glare-card/card-preview.png",
+      "alt": "3D 倾斜光影面板：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "fluid-capsule-morph",
+    "kind": "prompt",
+    "title": "流体胶囊形变",
+    "category": "动画动效",
+    "tags": "App 交互 / 流体形变 / 胶囊按钮 / 弹窗",
+    "description": "胶囊与面板共用一个容器，宽高和圆角连续变化。",
+    "prompt": "实现胶囊按钮向弹窗面板的流体形态变换，尺寸与圆角采用高阻尼流体曲线（Fluid Morph）无缝过渡。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/fluid-capsule-morph/preview.html",
+      "alt": "流体胶囊形变：可交互网页演示"
+    },
+    "sourceImage": "assets/fluid-capsule-morph/source.jpg",
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/fluid-capsule-morph/card-preview.png",
+      "alt": "流体胶囊形变：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "snap-odometer-chart",
+    "kind": "prompt",
+    "title": "磁吸游标与滚动码表",
+    "category": "动画动效",
+    "tags": "App 交互 / 折线图 / 磁吸吸附 / 滚动计数器",
+    "description": "拖动游标吸附到最近数据点，数字滚动更新。",
+    "prompt": "折线图横向滑动带数据点磁吸吸附，顶部数值使用滚动计数器（Odometer / Ticker）实时平滑联动。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/snap-odometer-chart/preview.html",
+      "alt": "磁吸游标与滚动码表：可交互网页演示"
+    },
+    "sourceImage": "assets/snap-odometer-chart/source.jpg",
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/snap-odometer-chart/card-preview.png",
+      "alt": "磁吸游标与滚动码表：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "damped-bottom-sheet",
+    "kind": "prompt",
+    "title": "阻尼弹性抽屉",
+    "category": "动画动效",
+    "tags": "App 交互 / 底部抽屉 / 阻尼回弹 / 手势速度",
+    "description": "拖动抽屉带边界阻尼，释放后按速度选择吸附位置。",
+    "prompt": "实现支持阻尼橡皮筋回弹的底部抽屉（Bottom Sheet），松手根据手势滑动速度（Velocity）自动计算吸附锚点。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/damped-bottom-sheet/preview.html",
+      "alt": "阻尼弹性抽屉：可交互网页演示"
+    },
+    "sourceImage": "assets/damped-bottom-sheet/source.jpg",
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/damped-bottom-sheet/card-preview.png",
+      "alt": "阻尼弹性抽屉：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 671,
+      "height": 562
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "conic-glow-border",
+    "kind": "prompt",
+    "title": "动态弥散光晕边框",
+    "category": "动画动效",
+    "tags": "App 交互 / 锥形渐变 / 旋转描边 / 呼吸背光",
+    "description": "渐变高光沿卡片边缘旋转，背光柔和呼吸。",
+    "prompt": "为Card添加旋转渐变描边（Conic Gradient Border），底部附带动态模糊的呼吸弥散背光。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/conic-glow-border/preview.html",
+      "alt": "动态弥散光晕边框：可交互网页演示"
+    },
+    "sourceImage": "assets/conic-glow-border/source.jpg",
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/conic-glow-border/card-preview.png",
+      "alt": "动态弥散光晕边框：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 671,
+      "height": 562
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "spring-stagger-cascade",
+    "kind": "prompt",
+    "title": "物理弹簧交错瀑布",
+    "category": "动画动效",
+    "tags": "App 交互 / 交错动画 / 弹性入场 / 列表瀑布",
+    "description": "列表卡片依次弹性入场，可重播并调整交错间隔。",
+    "prompt": "列表元素入场使用交错动画（Stagger Delay），每个子项带微弱弹性向\n\n【截图末尾截断，以上为可见原文。】\n补充实现建议（非截图原文）：各子项按 0.10 秒错峰淡入并轻微上移，落定时带一次小幅弹性回弹，支持重播与减少动态效果偏好。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/spring-stagger-cascade/preview.html",
+      "alt": "物理弹簧交错瀑布：可交互网页演示"
+    },
+    "sourceImage": "assets/spring-stagger-cascade/source.jpg",
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "sourceNote": "截图原文在“微弱弹性向”处被遮挡截断；已将补充实现建议与原文分开标记。",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/spring-stagger-cascade/card-preview.png",
+      "alt": "物理弹簧交错瀑布：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 671,
+      "height": 562
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
+    "id": "press-scale-feedback",
+    "kind": "prompt",
+    "title": "弹性微缩触觉反馈",
+    "category": "动画动效",
+    "tags": "App 交互 / 按压反馈 / scale(0.96) / 超调回弹",
+    "description": "按下时缩小并加内阴影，释放时轻微超调恢复。",
+    "prompt": "按钮按压添加scale(0.96)物理弹性压缩与深度内阴影，释放时触发轻微超调回弹（Spring Overshoot）。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/press-scale-feedback/preview.html",
+      "alt": "弹性微缩触觉反馈：可交互网页演示"
+    },
+    "sourceImage": "assets/press-scale-feedback/source.jpg",
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/press-scale-feedback/card-preview.png",
+      "alt": "弹性微缩触觉反馈：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 671,
+      "height": 562
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+  },
+  {
     "id": "website-scrolltide",
     "kind": "website",
     "title": "Scrolltide",
