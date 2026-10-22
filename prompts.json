@@ -1067,9 +1067,9 @@
     "topics": [
       "App 交互"
     ],
-    "tags": "App 交互 / 交错动画 / 弹性入场 / 列表瀑布",
-    "description": "列表卡片依次弹性入场，可重播并调整交错间隔。",
-    "prompt": "列表元素入场使用交错动画（Stagger Delay），每个子项带微弱弹性向\n\n【截图末尾截断，以上为可见原文。】\n补充实现建议（非截图原文）：各子项按 0.10 秒错峰淡入并轻微上移，落定时带一次小幅弹性回弹，支持重播与减少动态效果偏好。",
+    "tags": "App 交互 / 交错动画 / 弹性上滑 / 列表入场",
+    "description": "列表子项按交错延迟依次入场，每项带微弱弹性向上滑入；可重播并调整交错间隔。",
+    "prompt": "列表元素入场使用交错动画（Stagger Delay），每个子项带微弱弹性向上滑入（Spring Cascade）。",
     "preview": {
       "type": "animation",
       "src": "assets/spring-stagger-cascade/preview.html",
@@ -1078,7 +1078,7 @@
     "sourceImage": "assets/spring-stagger-cascade/source.jpg",
     "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
     "addedAt": "2026-10-23",
-    "sourceNote": "截图原文在“微弱弹性向”处被遮挡截断；已将补充实现建议与原文分开标记。",
+    "sourceNote": "截图原文在“微弱弹性向”处被遮挡；用户于 2026-10-23 补全原文，已替换为完整提示词。",
     "cardPreview": {
       "type": "image",
       "src": "assets/spring-stagger-cascade/card-preview.png",
@@ -1089,9 +1089,10 @@
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
       "title": "Spring Stagger Cascade",
-      "description": "List cards spring in one after another; replay it and tune the stagger interval.",
-      "tags": "App interaction / Stagger / Elastic entrance / List cascade"
-    }
+      "description": "List items enter one after another with a stagger delay, each sliding up with a subtle spring; replay it and tune the stagger interval.",
+      "tags": "App interaction / Stagger delay / Spring cascade / List entrance"
+    },
+    "updatedAt": "2026-10-23"
   },
   {
     "id": "press-scale-feedback",
