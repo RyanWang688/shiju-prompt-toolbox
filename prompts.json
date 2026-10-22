@@ -1,5 +1,137 @@
 [
   {
+    "id": "dashboard-transparent-nav",
+    "kind": "prompt",
+    "title": "透明顶栏",
+    "category": "界面设计",
+    "tags": "Dashboard / 后台导航 / Transparent Nav / 透明导航 / 渐变背景",
+    "description": "导航直接融入页面背景，选中项以半透明白色圆角底突出。",
+    "prompt": "导航改为透明顶栏（Transparent Nav），去掉背景色和分隔线，文字直接落在页面背景上，当前项加半透明白色圆角底。",
+    "collection": "Dashboard 导航设计 · 六种模式",
+    "sequence": 1,
+    "source": "用户提供的 Dashboard 导航设计截图（1/6）",
+    "sourceImage": "assets/dashboard-transparent-nav/source.jpg",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-transparent-nav/preview.html",
+      "alt": "透明顶栏：可点击交互演示"
+    },
+    "demo": "assets/dashboard-transparent-nav/preview.html",
+    "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-right-rail",
+    "kind": "prompt",
+    "title": "右侧竖轨菜单",
+    "category": "界面设计",
+    "tags": "Dashboard / 后台导航 / Right Rail / 右侧导航 / 亮色图标轨",
+    "description": "亮色图标轨固定在右侧，深色底强调当前项，顶部提供新建入口。",
+    "prompt": "主导航放到页面右侧，做成竖向图标轨（Right Rail），通高、整条用亮色，当前项用深色圆角底，新建按钮固定在顶部。",
+    "collection": "Dashboard 导航设计 · 六种模式",
+    "sequence": 2,
+    "source": "用户提供的 Dashboard 导航设计截图（2/6）",
+    "sourceImage": "assets/dashboard-right-rail/source.jpg",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-right-rail/preview.html",
+      "alt": "右侧竖轨菜单：可点击交互演示"
+    },
+    "demo": "assets/dashboard-right-rail/preview.html",
+    "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-expanding-tab",
+    "kind": "prompt",
+    "title": "当前项展开文字",
+    "category": "界面设计",
+    "tags": "Dashboard / 后台导航 / Expanding Tab / 弹性缓动 / 图标标签",
+    "description": "顶部图标导航仅展开当前项文字，宽度随切换弹性过渡。",
+    "prompt": "顶部导航做成图标组，当前项展开显示文字（Expanding Tab），其余只留图标，切换时宽度用弹性缓动过渡。",
+    "collection": "Dashboard 导航设计 · 六种模式",
+    "sequence": 3,
+    "source": "用户提供的 Dashboard 导航设计截图（3/6）",
+    "sourceImage": "assets/dashboard-expanding-tab/source.jpg",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-expanding-tab/preview.html",
+      "alt": "当前项展开文字：可点击交互演示"
+    },
+    "demo": "assets/dashboard-expanding-tab/preview.html",
+    "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-page-title-nav",
+    "kind": "prompt",
+    "title": "图标菜单配大标题",
+    "category": "界面设计",
+    "tags": "Dashboard / 后台导航 / Page Title / Icon Rail / 范围选择",
+    "description": "用大标题承接当前导航状态，图标轨保持简洁，并提供范围选择。",
+    "prompt": "侧边栏收成纯图标轨，当前页面名放大作为页面大标题（Page Title），标题旁接范围选择，切换图标时标题同步更换。",
+    "collection": "Dashboard 导航设计 · 六种模式",
+    "sequence": 4,
+    "source": "用户提供的 Dashboard 导航设计截图（4/6）",
+    "sourceImage": "assets/dashboard-page-title-nav/source.jpg",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-page-title-nav/preview.html",
+      "alt": "图标菜单配大标题：可点击交互演示"
+    },
+    "demo": "assets/dashboard-page-title-nav/preview.html",
+    "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-icon-rail-tooltip",
+    "kind": "prompt",
+    "title": "图标轨加悬停提示",
+    "category": "界面设计",
+    "tags": "Dashboard / 后台导航 / Icon Rail / Tooltip / 分组分隔线",
+    "description": "纯图标侧栏以分隔线分组，悬停或聚焦时显示名称提示。",
+    "prompt": "侧边栏做成纯图标轨（Icon Rail），悬停时在右侧弹出文字提示（Tooltip），图标之间用分隔线分组。",
+    "collection": "Dashboard 导航设计 · 六种模式",
+    "sequence": 5,
+    "source": "用户提供的 Dashboard 导航设计截图（5/6）",
+    "sourceImage": "assets/dashboard-icon-rail-tooltip/source.jpg",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-icon-rail-tooltip/preview.html",
+      "alt": "图标轨加悬停提示：可点击交互演示"
+    },
+    "demo": "assets/dashboard-icon-rail-tooltip/preview.html",
+    "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
+    "id": "dashboard-quick-actions",
+    "kind": "prompt",
+    "title": "快捷操作",
+    "category": "界面设计",
+    "tags": "Dashboard / 后台导航 / Quick Actions / 即时操作 / 圆形按钮",
+    "description": "菜单旁增加纵向圆形快捷按钮，常用操作突出，执行后留在当前页。",
+    "prompt": "菜单旁边加一列快捷操作（Quick Actions），圆形按钮纵向排列，最常用的一个用主色，点击直接执行，不跳转页面。",
+    "collection": "Dashboard 导航设计 · 六种模式",
+    "sequence": 6,
+    "source": "用户提供的 Dashboard 导航设计截图（6/6）",
+    "sourceImage": "assets/dashboard-quick-actions/source.jpg",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dashboard-quick-actions/preview.html",
+      "alt": "快捷操作：可点击交互演示"
+    },
+    "demo": "assets/dashboard-quick-actions/preview.html",
+    "previewNote": "按截图提示词手工制作的可交互网页演示，使用示例数据；非源视频、非模型实测输出。支持减少动态效果偏好。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "addedAt": "2026-10-23"
+  },
+  {
     "id": "skill-grill-me",
     "kind": "skill",
     "title": "grill-me",

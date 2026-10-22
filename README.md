@@ -8,7 +8,7 @@ GitHub Pages 从 main 分支根目录自动发布。
 
 采用 Dashboard 布局：左侧为固定纯图标导航轨，按内容类型、收藏和主题分类用分隔线分组；悬停或键盘聚焦显示名称与数量提示，Escape 可关闭。保留浅紫、奶白与黄色配色，小屏内容自动改为单列。
 
-已收录 4 条动效提示词和 20 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
+已收录 10 条提示词（含动效与 Dashboard 导航）和 20 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
 
 新增 Impeccable（前端设计与界面打磨），配作者 Neo Mirai 真实案例截图；Awesome DESIGN.md 为设计规范参考库，配作者 getdesign.md 的 Apple 风格 / Lumora 实际交互预览截图，按用户要求归入 Skills。两者均注明来源，非本次生成。
 
@@ -53,3 +53,5 @@ python build.py
 2026-10-23 新增 Taste-Skill，附作者 coffee-storefront 真实作品截图及素材署名；MotionSites.org 是网站与 Skills 资源目录，归入“实用网站”，附实际目录截图。用户确认 Impact-Cable 指已有 Impeccable，已合并搜索别名，未重复收录。
 
 2026-10-23 收录 Matt Pocock 的 grill-me（需求与决策访谈）和 diagnose（官方现名 diagnosing-bugs，复现驱动的 Bug 诊断）。两者真实会话/诊断输出预览待补，不以说明图充当实际结果。
+
+2026-10-23 收录用户提供的 6 条 Dashboard 导航提示词原文：透明顶栏、右侧竖轨菜单、当前项展开文字、图标菜单配大标题、图标轨加悬停提示、快捷操作。均归入“界面设计”，支持搜索 Dashboard；每条保留原始截图，并附独立可点击的手工交互演示（示例数据，非模型实测输出）。
