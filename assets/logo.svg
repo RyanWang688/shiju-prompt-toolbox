@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 拾句: a quote pair on a line of text; the second quote is picked up off the line. -->
+  <rect width="64" height="64" rx="16" fill="#191919"/>
+  <g transform="translate(8 8)" fill="#ffd43b" stroke="#ffd43b" stroke-linecap="round">
+    <g>
+      <circle cx="16.2" cy="27" r="5.6"/>
+      <path d="M11 26.2c0-6.8 3.2-11.2 9.2-13.4" fill="none" stroke-width="4.4"/>
+    </g>
+    <g transform="translate(0 -4.4) rotate(-14 34 32.6)">
+      <circle cx="34" cy="27" r="5.6"/>
+      <path d="M28.8 26.2c0-6.8 3.2-11.2 9.2-13.4" fill="none" stroke-width="4.4"/>
+    </g>
+    <path d="M8.4 40.4h15.4" fill="none" stroke-width="4"/>
+    <path d="M33.6 40.4h.02" fill="none" stroke-width="4"/>
+  </g>
+</svg>

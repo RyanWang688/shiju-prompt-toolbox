@@ -164,16 +164,26 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 @media(max-width:720px){.dashboard .empty.start{padding:40px 18px 34px}.dashboard .empty.start h2{font-size:22px}}
 @media(prefers-reduced-motion:reduce){.empty-art span{animation:none}}
 
-/* Logo = all content: yellow with an outline bookmark elsewhere, black with a filled yellow bookmark when active. */
-.dashboard .icon-rail .rail-brand{position:relative;padding:0;color:#191919;cursor:pointer;transition:background-color .35s ease,border-color .35s ease,color .35s ease,box-shadow .3s ease,translate .28s cubic-bezier(.2,.9,.22,1),scale .24s cubic-bezier(.2,.9,.22,1)}
+/* Sidebar hover: a quiet white tint only — no yellow fill, black border, lift or press. */
+.dashboard .icon-rail .rail-group .rail-button:is(:hover,:focus-visible,:active){background-color:#f8f8f8!important;border-color:transparent!important;color:var(--muted)!important;box-shadow:none!important;translate:none!important;scale:none!important}
+.dashboard .icon-rail .rail-group .rail-button.active:is(:hover,:focus-visible,:active){background-color:#fff!important;border-color:#dedede!important;box-shadow:0 2px 5px #19191909!important}
+.dashboard .icon-rail .rail-group .rail-button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* Logo (拾句): a quote pair on a line of text, the second quote picked up off the line.
+   Yellow tile elsewhere; black tile with a yellow mark while all content is shown. */
+.dashboard .icon-rail .rail-brand{position:relative;padding:0;border:1px solid transparent;background:#ffd43b;color:#191919;box-shadow:inset 0 0 0 1px #d9a60059;cursor:pointer;transition:background-color .35s ease,color .35s ease,box-shadow .3s ease}
 .brand-mark{display:block;overflow:visible}
-.brand-line{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:0}
-.brand-fill{fill:currentColor;transform-box:fill-box;transform-origin:50% 0;transform:scaleY(0);transition:transform .45s cubic-bezier(.2,.9,.22,1)}
+.brand-mark circle{fill:currentColor}
+.brand-mark path{fill:none;stroke:currentColor;stroke-width:4.4;stroke-linecap:round}
+.brand-mark .brand-line,.brand-mark .brand-dot{stroke-width:4}
+.brand-line{stroke-dasharray:1;stroke-dashoffset:0}
+.brand-q2{transform-box:fill-box;transform-origin:50% 100%;transform:translateY(-4.4px) rotate(-14deg);transition:transform .45s cubic-bezier(.2,.9,.22,1)}
 .brand-ring{position:absolute;inset:-1px;border:2px solid #ffd43b;border-radius:14px;opacity:0;pointer-events:none}
-.dashboard .icon-rail .rail-brand.is-home{background:#191919;border-color:#191919;color:#ffd43b;box-shadow:0 6px 16px #19191926}
-.rail-brand.is-home .brand-fill{transform:scaleY(1)}
-.dashboard .icon-rail .rail-brand.is-home:is(:hover,:focus-visible){background-color:#191919!important;border-color:#191919!important;color:#ffd43b!important}
-@media(prefers-reduced-motion:reduce){.dashboard .icon-rail .rail-brand,.brand-fill{transition:none}}
+.dashboard .icon-rail .rail-brand.rail-brand:is(:hover,:focus-visible,:active){background-color:#ffd43b!important;border-color:transparent!important;color:#191919!important;box-shadow:inset 0 0 0 1px #d9a60059!important;translate:none!important;scale:none!important}
+.dashboard .icon-rail .rail-brand.rail-brand.is-home,.dashboard .icon-rail .rail-brand.rail-brand.is-home:is(:hover,:focus-visible,:active){background-color:#191919!important;color:#ffd43b!important;box-shadow:0 6px 16px #19191926!important}
+.dashboard .icon-rail .rail-brand:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+@media(hover:hover) and (pointer:fine){.rail-brand:hover .brand-q2{transform:translateY(-7px) rotate(-22deg)}}
+@media(prefers-reduced-motion:reduce){.dashboard .icon-rail .rail-brand,.brand-q2{transition:none}}
 
 /* Categories board: one card per topic, built from that topic's own covers, titles and share. */
 .dashboard .grid.category-board{grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));grid-auto-rows:auto;gap:18px;align-items:stretch}
