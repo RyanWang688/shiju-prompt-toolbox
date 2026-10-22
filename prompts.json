@@ -1,5 +1,63 @@
 [
   {
+    "id": "skill-cloud-doodle-animal",
+    "kind": "skill",
+    "title": "cloud-doodle-animal",
+    "resourceType": "照片涂鸦 Skill",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作"
+    ],
+    "tags": "云朵动物 / 极简黑线 / 照片涂鸦 / 天空 / 图像创作",
+    "description": "把天空照片中自然成形的云朵，用极简黑色手绘线条点化成动物，强调保留原有云形、天空和实景背景，适合云朵涂鸦与治愈系照片创作。",
+    "source": "https://github.com/haomiaomou-cmd/cloud-doodle-animal",
+    "officialUrl": "https://github.com/haomiaomou-cmd/cloud-doodle-animal",
+    "repository": "https://github.com/haomiaomou-cmd/cloud-doodle-animal",
+    "documentation": "https://github.com/haomiaomou-cmd/cloud-doodle-animal/blob/main/SKILL.md",
+    "prompt": "cloud-doodle-animal\n\n用途：把天空照片中自然成形的云朵，用极简黑色手绘线条点化成动物，强调保留原有云形、天空和实景背景，适合云朵涂鸦与治愈系照片创作。\n\n使用输入：需要真实照片作为底图；按 Skill 说明与可用的图像编辑工具执行。保留实景特征，并让新增线条或涂鸦与照片内容产生关联。\n\n真实预览：作者官方 examples 目录公开的实际作品，原始文件保留，非本次运行成果。\n\n官方仓库：https://github.com/haomiaomou-cmd/cloud-doodle-animal\nSkill 说明：https://github.com/haomiaomou-cmd/cloud-doodle-animal/blob/main/SKILL.md\n\n本次仅收录，未安装或执行 Skill。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-cloud-doodle-animal/author-example.png",
+      "alt": "cloud-doodle-animal 作者公开的真实照片涂鸦作品",
+      "width": 1024,
+      "height": 1536
+    },
+    "previewSource": "https://github.com/haomiaomou-cmd/cloud-doodle-animal/blob/main/examples/sleeping-cloud-cat.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方 examples 目录中的真实作品，保留原始文件；非本次生成。",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "skill-giant-doodle-street-collage",
+    "kind": "skill",
+    "title": "giant-doodle-street-collage",
+    "resourceType": "照片涂鸦 Skill",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作"
+    ],
+    "tags": "巨型涂鸦 / 街景拼贴 / 超现实 / 扁平插画 / 图像创作",
+    "description": "在真实街景或室内照片上叠加巨型扁平涂鸦角色，让它与建筑、道具发生接触，用粗黑描边与高饱和色块制造超现实反差。适合街景拼贴、创意海报与怪诞插画。",
+    "source": "https://github.com/haomiaomou-cmd/giant-doodle-street-collage",
+    "officialUrl": "https://github.com/haomiaomou-cmd/giant-doodle-street-collage",
+    "repository": "https://github.com/haomiaomou-cmd/giant-doodle-street-collage",
+    "documentation": "https://github.com/haomiaomou-cmd/giant-doodle-street-collage/blob/master/SKILL.md",
+    "prompt": "giant-doodle-street-collage\n\n用途：在真实街景或室内照片上叠加巨型扁平涂鸦角色，让它与建筑、道具发生接触，用粗黑描边与高饱和色块制造超现实反差。适合街景拼贴、创意海报与怪诞插画。\n\n使用输入：需要真实照片作为底图；按 Skill 说明与可用的图像编辑工具执行。保留实景特征，并让新增线条或涂鸦与照片内容产生关联。\n\n真实预览：作者官方 examples 目录公开的实际作品，原始文件保留，非本次运行成果。\n\n官方仓库：https://github.com/haomiaomou-cmd/giant-doodle-street-collage\nSkill 说明：https://github.com/haomiaomou-cmd/giant-doodle-street-collage/blob/master/SKILL.md\n\n本次仅收录，未安装或执行 Skill。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-giant-doodle-street-collage/author-example.jpg",
+      "alt": "giant-doodle-street-collage 作者公开的真实照片涂鸦作品",
+      "width": 1024,
+      "height": 1536
+    },
+    "previewSource": "https://github.com/haomiaomou-cmd/giant-doodle-street-collage/blob/master/examples/01-coffee-cup.jpg",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方 examples 目录中的真实作品，保留原始文件；非本次生成。",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
     "id": "skill-video-shotcraft",
     "kind": "skill",
     "title": "video-shotcraft",
@@ -23,7 +81,10 @@
     "previewEvidence": "author-repository-animated-example",
     "previewNote": "作者官方 README 的 Camera 类真实动态样片，保留原始 animated WebP；非本次运行成果。更多镜头见官方图库。",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "skillTopics": [
+      "动画视频"
+    ]
   },
   {
     "id": "website-metalforge",
@@ -186,7 +247,10 @@
     "previewStatus": "pending",
     "previewEvidence": "pending-real-output",
     "previewSource": "https://github.com/ai-job-search-dev/ai-job-search/blob/master/.claude/skills/job-application-assistant/SKILL.md",
-    "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。"
+    "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。",
+    "skillTopics": [
+      "求职效率"
+    ]
   },
   {
     "id": "skill-context-mode",
@@ -206,7 +270,10 @@
     "previewStatus": "pending",
     "previewEvidence": "pending-real-output",
     "previewSource": "https://github.com/mksglu/context-mode/blob/main/skills/context-mode/SKILL.md",
-    "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。"
+    "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。",
+    "skillTopics": [
+      "开发工具"
+    ]
   },
   {
     "id": "skill-diagram-design",
@@ -232,7 +299,10 @@
     },
     "previewSource": "https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/docs/screenshots/architecture.png",
     "previewEvidence": "author-repository-example",
-    "previewNote": "官方架构图示例，来自官方仓库，保留原始素材；非本次运行成果。"
+    "previewNote": "官方架构图示例，来自官方仓库，保留原始素材；非本次运行成果。",
+    "skillTopics": [
+      "视觉设计"
+    ]
   },
   {
     "id": "skill-artcraft",
@@ -258,7 +328,11 @@
     },
     "previewSource": "https://raw.githubusercontent.com/storytold/artcraft/main/frontend/apps/artcraft/app/public/resources/gifs/2D_CANVAS_DEMO.webp",
     "previewEvidence": "author-repository-example",
-    "previewNote": "官方 2D 画布演示，来自官方仓库，保留原始素材；非本次运行成果。"
+    "previewNote": "官方 2D 画布演示，来自官方仓库，保留原始素材；非本次运行成果。",
+    "skillTopics": [
+      "图像创作",
+      "动画视频"
+    ]
   },
   {
     "id": "skill-rea",
@@ -284,7 +358,10 @@
     },
     "previewSource": "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/rea-hopper-analysis.png",
     "previewEvidence": "author-repository-example",
-    "previewNote": "官方 Hopper 分析截图，来自官方仓库，保留原始素材；非本次运行成果。"
+    "previewNote": "官方 Hopper 分析截图，来自官方仓库，保留原始素材；非本次运行成果。",
+    "skillTopics": [
+      "开发工具"
+    ]
   },
   {
     "id": "dashboard-hero-module",
@@ -671,7 +748,10 @@
     "verifiedAt": "2026-10-23",
     "prompt": "grill-me（Matt Pocock）\n\n用途：通过分轮追问梳理想法、需求和设计决策，暴露未说明的假设与边界，帮助动手前形成共同理解。\n\n说明：当前 grill-me 是调用 grilling 的入口。真正的访谈逻辑在 productivity/grilling 中；当前版本按已明确前提组织问题轮次，不一定每轮只问一个问题。适合需求澄清，不负责自动实现，也不把访谈当作已完成设计。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/productivity/grill-me.md\n依赖说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md",
     "officialUrl": "https://github.com/mattpocock/skills",
-    "repository": "https://github.com/mattpocock/skills"
+    "repository": "https://github.com/mattpocock/skills",
+    "skillTopics": [
+      "开发工具"
+    ]
   },
   {
     "id": "skill-diagnose",
@@ -692,7 +772,10 @@
     "verifiedAt": "2026-10-23",
     "prompt": "diagnose（现名 diagnosing-bugs）（Matt Pocock）\n\n用途：先为 Bug 建立可重复的失败信号，再缩小范围、验证假设并修复根因，最后用回归检查确认问题解决。\n\n说明：Matt Pocock 官方 CHANGELOG 明确将 diagnose 改名为 diagnosing-bugs，当前调用名为 /diagnosing-bugs。保留截图中的旧名便于搜索。适合已有明确症状的疑难 Bug 或性能回归；单纯查看代码不能替代复现证据。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/engineering/diagnosing-bugs.md\n改名记录：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/CHANGELOG.md",
     "officialUrl": "https://github.com/mattpocock/skills",
-    "repository": "https://github.com/mattpocock/skills"
+    "repository": "https://github.com/mattpocock/skills",
+    "skillTopics": [
+      "开发工具"
+    ]
   },
   {
     "id": "skill-taste-skill",
@@ -717,7 +800,10 @@
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
     "officialUrl": "https://github.com/Leonxlnx/taste-skill",
-    "repository": "https://github.com/Leonxlnx/taste-skill"
+    "repository": "https://github.com/Leonxlnx/taste-skill",
+    "skillTopics": [
+      "视觉设计"
+    ]
   },
   {
     "id": "website-motionsites",
@@ -762,7 +848,10 @@
     "previewEvidence": "pending",
     "prompt": "story-long-scan\n\n用途：分析多个网文平台的排行榜与新书样本，提炼热门题材、人设和切入点，并结合作者条件评估选题。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-scan/SKILL.md",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
-    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-story-long-analyze",
@@ -789,7 +878,10 @@
     "previewNote": "作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/拆文库/盘龙/拆文报告.md",
     "prompt": "story-long-analyze\n\n用途：拆解长篇小说的章节、角色、因果、情绪与节奏，生成可回读的拆文报告和参考档案。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/拆文库/盘龙/拆文报告.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-analyze/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/拆文库/盘龙/拆文报告.md",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
-    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-chinese-novelist-skill",
@@ -815,7 +907,10 @@
     "previewNote": "作者真实示例：官方仓库 assets/phase2-plan.png；保留原图，非本次生成。",
     "prompt": "chinese-novelist-skill\n\n用途：通过递进问答确定小说方向，建立大纲并分章创作，支持中断续写和章节质量检查。\n\n仓库名为 chinese-novelist-skill；实际 Skill 名称为 chinese-novelist。\n\n预览：作者真实示例：官方仓库 assets/phase2-plan.png；保留原图，非本次生成。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/PenglongHuang/chinese-novelist-skill\n说明文档：https://github.com/PenglongHuang/chinese-novelist-skill/blob/7017828a0052e2e030d90d630446401a812e50e6/SKILL.md\n真实示例出处：https://github.com/PenglongHuang/chinese-novelist-skill/blob/7017828a0052e2e030d90d630446401a812e50e6/assets/phase2-plan.png",
     "officialUrl": "https://github.com/PenglongHuang/chinese-novelist-skill",
-    "repository": "https://github.com/PenglongHuang/chinese-novelist-skill"
+    "repository": "https://github.com/PenglongHuang/chinese-novelist-skill",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-novel-creator-skill",
@@ -834,7 +929,10 @@
     "previewEvidence": "pending",
     "prompt": "novel-creator-skill\n\n用途：以文件记忆、知识图谱和大纲锚点组织长篇创作，连接规划、分章写作、一致性检查与修稿流程。\n\n仓库名为 novel-creator-skill；实际 Skill 名称为 novel-claude-ai。作者的规模宣传不视作稳定性保证。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/leenbj/novel-creator-skill\n说明文档：https://github.com/leenbj/novel-creator-skill/blob/a327428ea26962163f823ad74001243f91bc7738/SKILL.md",
     "officialUrl": "https://github.com/leenbj/novel-creator-skill",
-    "repository": "https://github.com/leenbj/novel-creator-skill"
+    "repository": "https://github.com/leenbj/novel-creator-skill",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-character-designer",
@@ -862,7 +960,10 @@
     "previewNote": "作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md",
     "prompt": "character-designer\n\n用途：设计角色档案、动机链、人物弧线、关系与语言风格。此条是 Oh Story 内置角色设计 Agent，按用户要求收进 Skills。\n\n这是 Oh Story 的内置 Agent 模板，不是同名独立 Skill；仅凭截图无法确定作者指向，本条选取与截图中其他 story-* 同仓库的版本，并明确记录来源。预览是作者公开的角色档案，不能证明由此 Agent 单独产出。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-setup/references/templates/agents/character-designer.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
-    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-story-long-write",
@@ -889,7 +990,10 @@
     "previewNote": "作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md",
     "prompt": "story-long-write\n\n用途：从设定、卷纲和细纲推进长篇网文，按明确的正文请求写章，并维护角色、伏笔与续写状态。\n\n预览：作者真实文档节选，保留原文并排版为阅读预览；非本次生成。来源：demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-write/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
-    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-webnovel-writer",
@@ -917,7 +1021,10 @@
     "previewNote": "作者功能演示：归档 Dashboard HTML 的实际运行截图，使用内置演示数据；不是用户项目或小说生成结果。",
     "prompt": "webnovel-writer\n\n用途：将开书、规划、写章、审稿、记忆沉淀与状态查询串成流程，帮助长篇连载维持设定和伏笔的一致性。\n\n这是技能与 Agent 合集。此条文档对应 master 分支 v6 Claude Code 插件；另有 v8 DeepSeek Harness 工作台，使用时需核对版本和宿主，不能混用安装说明。\n\n预览：作者功能演示：归档 Dashboard HTML 的实际运行截图，使用内置演示数据；不是用户项目或小说生成结果。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/lingfengQAQ/webnovel-writer\n说明文档：https://github.com/lingfengQAQ/webnovel-writer/blob/b38056ec3ae288af613c0af162d648e4a4e8825c/README.md\n真实示例出处：https://github.com/lingfengQAQ/webnovel-writer/blob/b38056ec3ae288af613c0af162d648e4a4e8825c/docs/archive/architecture/dashboard-demo.html",
     "officialUrl": "https://github.com/lingfengQAQ/webnovel-writer",
-    "repository": "https://github.com/lingfengQAQ/webnovel-writer"
+    "repository": "https://github.com/lingfengQAQ/webnovel-writer",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-story-deslop",
@@ -944,7 +1051,10 @@
     "previewNote": "作者真实检查记录：对人工构造测试文本进行扫描。非本次改写，不是独立 AI 检测结论。",
     "prompt": "story-deslop\n\n用途：检查模板化表达、叙事笔墨与故事因果，保留作者文风和既定剧情，给出具体的修稿方向。\n\n去 AI 味指改善读感、表达和叙事，不保证通过 AI 检测。作者对照中“改前”为人工构造测试样例，“改后”为真实续写正文；预览展示作者发布的检查记录，不冒充本次改写。\n\n预览：作者真实检查记录：对人工构造测试文本进行扫描。非本次改写，不是独立 AI 检测结论。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-deslop/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/去AI味对照/README.md",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
-    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-story-review",
@@ -963,7 +1073,10 @@
     "previewEvidence": "pending",
     "prompt": "story-review\n\n用途：从结构、角色、文字与设定等角度审查稿件，引用原文指出问题并提出修改建议，支持单人回退模式。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-review/SKILL.md",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
-    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-story-cover",
@@ -989,7 +1102,10 @@
     "previewNote": "作者真实示例：官方仓库 demo/封面-剑道独尊.png；保留原图，非本次生成。",
     "prompt": "story-cover\n\n用途：根据书名、作者名与题材制作含标题和署名的小说封面，实际生成依赖可用的图像工具。\n\n预览：作者真实示例：官方仓库 demo/封面-剑道独尊.png；保留原图，非本次生成。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-cover/SKILL.md\n真实示例出处：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/demo/封面-剑道独尊.png",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
-    "repository": "https://github.com/zenstory-ai/oh-story-claudecode"
+    "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "skillTopics": [
+      "写作创作"
+    ]
   },
   {
     "id": "skill-moss-image",
@@ -1015,7 +1131,10 @@
     "addedAt": "2026-10-22",
     "verifiedAt": "2026-10-22",
     "officialUrl": "https://github.com/OpenMOSS/MOSS-Image",
-    "repository": "https://github.com/OpenMOSS/MOSS-Image"
+    "repository": "https://github.com/OpenMOSS/MOSS-Image",
+    "skillTopics": [
+      "图像创作"
+    ]
   },
   {
     "id": "skill-impeccable",
@@ -1043,7 +1162,10 @@
       "Impact-Cable"
     ],
     "officialUrl": "https://github.com/pbakaus/impeccable",
-    "repository": "https://github.com/pbakaus/impeccable"
+    "repository": "https://github.com/pbakaus/impeccable",
+    "skillTopics": [
+      "视觉设计"
+    ]
   },
   {
     "id": "skill-awesome-design-md",
@@ -1069,7 +1191,10 @@
     "addedAt": "2026-10-22",
     "verifiedAt": "2026-10-22",
     "officialUrl": "https://github.com/VoltAgent/awesome-design-md",
-    "repository": "https://github.com/VoltAgent/awesome-design-md"
+    "repository": "https://github.com/VoltAgent/awesome-design-md",
+    "skillTopics": [
+      "视觉设计"
+    ]
   },
   {
     "id": "website-opencut",
@@ -1119,7 +1244,10 @@
     "addedAt": "2026-10-22",
     "verifiedAt": "2026-10-22",
     "officialUrl": "https://github.com/nolangz/pixel2motion",
-    "repository": "https://github.com/nolangz/pixel2motion"
+    "repository": "https://github.com/nolangz/pixel2motion",
+    "skillTopics": [
+      "动画视频"
+    ]
   },
   {
     "id": "skill-child-photo-doodle-collage",
@@ -1144,7 +1272,10 @@
     "previewSource": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage/blob/main/showcase/comparisons/showcase-overview.jpg",
     "previewEvidence": "author-published-output",
     "officialUrl": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage",
-    "repository": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage"
+    "repository": "https://github.com/haomiaomou-cmd/child-photo-doodle-collage",
+    "skillTopics": [
+      "图像创作"
+    ]
   },
   {
     "id": "skill-gsap-skills",
@@ -1170,7 +1301,11 @@
     "previewEvidence": "locally-executed-gsap",
     "demo": "assets/skill-gsap-skills/live-demo.html",
     "officialUrl": "https://github.com/greensock/gsap-skills",
-    "repository": "https://github.com/greensock/gsap-skills"
+    "repository": "https://github.com/greensock/gsap-skills",
+    "skillTopics": [
+      "动画视频",
+      "视觉设计"
+    ]
   },
   {
     "id": "skill-ruic-card-skill",
@@ -1196,7 +1331,11 @@
     "previewEvidence": "author-published-demo",
     "demo": "assets/skill-ruic-card-skill/author-demo.mp4",
     "officialUrl": "https://github.com/HRuiCcc/RuiC-card-skill",
-    "repository": "https://github.com/HRuiCcc/RuiC-card-skill"
+    "repository": "https://github.com/HRuiCcc/RuiC-card-skill",
+    "skillTopics": [
+      "视觉设计",
+      "动画视频"
+    ]
   },
   {
     "id": "fab-to-sheet",

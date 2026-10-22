@@ -8,7 +8,7 @@ GitHub Pages 从 main 分支根目录自动发布。
 
 采用 Dashboard 布局：左侧为固定纯图标导航轨，按内容类型、收藏和主题分类用分隔线分组；悬停或键盘聚焦显示名称与数量提示，Escape 可关闭。保留浅紫、奶白与黄色配色，小屏内容自动改为单列。
 
-已收录 15 条提示词（含动效、Dashboard 导航与布局）和 26 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
+已收录 15 条提示词（含动效、Dashboard 导航与布局）和 28 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
 
 新增 Impeccable（前端设计与界面打磨），配作者 Neo Mirai 真实案例截图；Awesome DESIGN.md 为设计规范参考库，配作者 getdesign.md 的 Apple 风格 / Lumora 实际交互预览截图，按用户要求归入 Skills。两者均注明来源，非本次生成。
 
@@ -67,3 +67,5 @@ python build.py
 2026-10-23：实用网站新增 MetalForge，记录跨 SwiftUI / React Native / Web 的着色器与交互动效用途，附真实官网截图、官网及帮助入口。
 
 2026-10-23：新增 video-shotcraft（真实页面截图 + Remotion 产品宣传片 / 单镜头制作），附作者官方 Camera 类动态样片、官方图库、仓库与 Skill 说明；仅收录未安装或执行。
+
+2026-10-23：新增 cloud-doodle-animal 与 giant-doodle-street-collage，均附作者原始真实作品及官方仓库。Skills 内新增按主题的标签筛选与数量，支持图像创作、视觉设计、动画视频、写作创作、开发工具和求职效率，切换带轻量过渡并尊重减少动态效果设置。

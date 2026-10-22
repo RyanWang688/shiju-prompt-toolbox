@@ -55,3 +55,12 @@ body.dashboard{--bg:#f5f4f9;--panel:#fffefa;--ink:#292538;--muted:#6b657a;--line
 @media(max-width:1100px){.dashboard .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){.dashboard .grid{grid-template-columns:minmax(0,1fr);gap:16px}.dashboard .card-body{padding:16px}.dashboard #detail{width:calc(100vw - 24px);padding:18px;border-radius:18px}.dashboard #detail .actions{bottom:-18px}.dashboard .card .preview img{max-height:none}.dashboard #detailPreview .preview{height:340px}.dashboard .card .visit-site{min-height:44px}}
 @media(prefers-reduced-motion:reduce){.dashboard .card{transition:none}.dashboard .card:hover,.dashboard .card[data-kind=skill]:hover{transform:none}}
+
+/* Skills themes live with the collection and wrap without nested scrolling. */
+.skill-topics{margin:0 0 22px;padding:19px 20px 17px;border:1px solid #ded9e5;border-radius:16px;background:#fffefa}
+.skill-topics[hidden]{display:none}.topic-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:13px}.topic-heading>span{font-size:13px;font-weight:600;color:#4b4258}.topic-heading small{font-size:11px;color:#81758b}
+.topic-list{display:flex;gap:8px;flex-wrap:wrap}.dashboard .topic-chip{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:8px 13px;min-height:44px;border:1px solid #e0dce7;border-radius:24px;color:#685f76;background:#f7f5fa;font-size:12px;transition:background-color .18s,border-color .18s,color .18s,transform .18s}
+.topic-chip small{font-size:10px;min-width:20px;padding:2px 5px;border-radius:12px;background:#e9e3ef;color:#74657f;line-height:16px}.dashboard .topic-chip.active{background:#dceee3;border-color:#a2c4b0;color:#254b38}.topic-chip.active small{background:#bfdcca;color:#254b38}.dashboard .topic-chip:hover{background:#eaf3ed;border-color:#a2c4b0;transform:translateY(-1px)}
+.dashboard .topic-chip:focus-visible{outline:3px solid #38785e;outline-offset:3px}
+@media(max-width:720px){.skill-topics{padding:15px 12px;margin-bottom:18px}.topic-heading{align-items:flex-start;flex-direction:column;gap:4px;margin-bottom:11px}.topic-list{gap:7px}.dashboard .topic-chip{padding:7px 10px;gap:6px;flex:0 1 auto}.topic-chip small{min-width:18px}}
+@media(prefers-reduced-motion:reduce){.dashboard .topic-chip{transition:none}.dashboard .topic-chip:hover{transform:none}}
