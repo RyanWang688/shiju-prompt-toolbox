@@ -1,5 +1,135 @@
 [
   {
+    "id": "perspective-card-flip",
+    "kind": "prompt",
+    "title": "立体翻面",
+    "category": "动画动效",
+    "tags": "卡片交互 / 3D 翻转 / 透视 / 指针高光",
+    "description": "点击卡片，它会像翻书一样绕竖轴进行3D翻转，切换正反面，带有透视和高光效果，模拟真实卡片质感。",
+    "prompt": "给卡片添加带透视的3D翻转交互，点击切换正反面，并加入随指针位置变化的柔和高光，让每一步都有回应。",
+    "source": "用户提供的动效提示词（2026-10-23）",
+    "preview": {
+      "type": "animation",
+      "src": "assets/perspective-card-flip/preview.html",
+      "alt": "立体翻面：可交互网页演示"
+    },
+    "previewNote": "根据用户原文手工实现的可交互网页演示，非原作者作品或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "collection": "卡片交互动效",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/perspective-card-flip/card-preview.png",
+      "alt": "立体翻面：本次实际网页演示截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+  },
+  {
+    "id": "horizontal-snap-cards",
+    "kind": "prompt",
+    "title": "横滑吸附",
+    "category": "动画动效",
+    "tags": "卡片交互 / 横向卡片 / Scroll Snap / 相邻预览",
+    "description": "卡片横向排列，滑动浏览时，松手后会自动对齐到一张完整的卡片，提供流畅的翻页体验。",
+    "prompt": "创建横向滑动卡片列表，保留相邻卡片的部分预览，设置滚动吸附和统一间距，让每次滑动都能自然停在完整卡片上。",
+    "source": "用户提供的动效提示词（2026-10-23）",
+    "preview": {
+      "type": "animation",
+      "src": "assets/horizontal-snap-cards/preview.html",
+      "alt": "横滑吸附：可交互网页演示"
+    },
+    "previewNote": "根据用户原文手工实现的可交互网页演示，非原作者作品或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "collection": "卡片交互动效",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/horizontal-snap-cards/card-preview.png",
+      "alt": "横滑吸附：本次实际网页演示截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+  },
+  {
+    "id": "drag-card-expand",
+    "kind": "prompt",
+    "title": "拖拽展开",
+    "category": "动画动效",
+    "tags": "卡片交互 / 拖拽 / 封面联动 / 阈值吸附",
+    "description": "按住卡片底部的“把手”向上拖动，可逐步显示更多内容（如下方的播放列表），松手后会自动吸附到展开或收起状态。",
+    "prompt": "给卡片添加底部拖拽展开交互，让手势距离同步控制内容高度和封面尺寸。松手后根据阈值吸附到展开或收起状态。",
+    "source": "用户提供的动效提示词（2026-10-23）",
+    "preview": {
+      "type": "animation",
+      "src": "assets/drag-card-expand/preview.html",
+      "alt": "拖拽展开：可交互网页演示"
+    },
+    "previewNote": "根据用户原文手工实现的可交互网页演示，非原作者作品或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "collection": "卡片交互动效",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/drag-card-expand/card-preview.png",
+      "alt": "拖拽展开：本次实际网页演示截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+  },
+  {
+    "id": "depth-stack-expand",
+    "kind": "prompt",
+    "title": "堆叠展开",
+    "category": "动画动效",
+    "tags": "卡片交互 / 纵深堆叠 / 错位排开 / 弹性收起",
+    "description": "多张卡片堆叠，点击后会按顺序错位排开，展示隐藏内容，收起时带有弹性动画。",
+    "prompt": "创建多张纵深堆叠的卡片，通过缩放和位移表现前后关系。展开时按顺序错位排开，收起时使用弹性动画恢复堆叠。",
+    "source": "用户提供的动效提示词（2026-10-23）",
+    "preview": {
+      "type": "animation",
+      "src": "assets/depth-stack-expand/preview.html",
+      "alt": "堆叠展开：可交互网页演示"
+    },
+    "previewNote": "根据用户原文手工实现的可交互网页演示，非原作者作品或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "collection": "卡片交互动效",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/depth-stack-expand/card-preview.png",
+      "alt": "堆叠展开：本次实际网页演示截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+  },
+  {
+    "id": "fullscreen-card-detail",
+    "kind": "prompt",
+    "title": "全屏详情",
+    "category": "动画动效",
+    "tags": "卡片交互 / 全屏 / 封面过渡 / 错层入场",
+    "description": "点击卡片，它会放大并平滑过渡为一个完整的详情页面，信息自然展开。",
+    "prompt": "让内容卡片点击后展开为全屏详情，协调封面尺寸、卡片圆角和背景变化，让新增内容错层入场，关闭后恢复原来的卡片状态。",
+    "source": "用户提供的动效提示词（2026-10-23）",
+    "preview": {
+      "type": "animation",
+      "src": "assets/fullscreen-card-detail/preview.html",
+      "alt": "全屏详情：可交互网页演示"
+    },
+    "previewNote": "根据用户原文手工实现的可交互网页演示，非原作者作品或模型实测输出。",
+    "addedAt": "2026-10-23",
+    "collection": "卡片交互动效",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/fullscreen-card-detail/card-preview.png",
+      "alt": "全屏详情：本次实际网页演示截图，点开可交互",
+      "width": 1280,
+      "height": 720
+    },
+    "cardPreviewNote": "实际运行本次网页演示后保存的浏览器截图；卡片本身不嵌入 iframe。"
+  },
+  {
     "id": "skill-archify",
     "kind": "skill",
     "title": "Archify",
@@ -261,9 +391,9 @@
     "kind": "prompt",
     "title": "共享元素无缝展开",
     "category": "动画动效",
-    "tags": "App 交互 / 共享元素 / 详情转场 / 连续缩放",
+    "tags": "App 交互 / 共享元素 / 详情转场 / 连续缩放 / 连续展开 / 卡片交互",
     "description": "同一张卡片连续展开为详情，再平滑返回列表。",
-    "prompt": "实现Card到详情页的共享元素转场（Shared Element Transition），背景与Card容器做连续平滑缩放。",
+    "prompt": "实现Card到详情页的共享元素转场（Shared Element Transition），背景与Card容器做连续平滑缩放。\n\n连续展开（用户补充原文）：\n给卡片添加共享元素转场，连续过渡卡片的位置、尺寸和圆角，让核心信息移动到详情中的对应位置，关闭时反向恢复。",
     "preview": {
       "type": "animation",
       "src": "assets/shared-element-transition/preview.html",
@@ -279,7 +409,9 @@
       "width": 1280,
       "height": 720
     },
-    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。"
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "collection": "卡片交互动效",
+    "updatedAt": "2026-10-23"
   },
   {
     "id": "tilt-glare-card",
