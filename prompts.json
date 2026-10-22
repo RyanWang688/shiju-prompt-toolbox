@@ -1,5 +1,35 @@
 [
   {
+    "id": "skill-archify",
+    "kind": "skill",
+    "title": "Archify",
+    "resourceType": "交互图表与单页讲解 Skill",
+    "category": "界面设计",
+    "skillTopics": [
+      "视觉设计",
+      "开发工具"
+    ],
+    "tags": "架构图 / 流程图 / 时序图 / 代码库可视化 / 交互 HTML / 开源",
+    "description": "把想法、流程或代码库转成可交互的独立 HTML 图表，也能制作单页讲解。适合梳理系统架构、API 调用、数据关系与项目计划。",
+    "source": "https://github.com/tt-a1i/archify",
+    "officialUrl": "https://archify.si/",
+    "repository": "https://github.com/tt-a1i/archify",
+    "documentation": "https://github.com/tt-a1i/archify/blob/main/archify/SKILL.md",
+    "prompt": "Archify\n\n用途：把自然语言描述、计划或代码库整理为可探索的独立 HTML 图表，支持架构、工作流、时序、数据流、生命周期、ERD、类图、树图、时间线与瀑布图。也可按要求制作结论在前、带图表与来源的单页讲解。\n\n适合：系统架构沟通、API 调用链、数据关系、项目流程和计划梳理。查看图表时可聚焦节点、追踪路径、切换主题并导出；具体能力以官方文档为准。\n\n使用条件：作为 AI 编程代理的 Skill 使用，完整渲染与校验流程需要可执行 Node.js 的环境；生成的 HTML 可独立查看。\n\n官网：https://archify.si/\n源码：https://github.com/tt-a1i/archify\n说明：https://github.com/tt-a1i/archify/blob/main/archify/SKILL.md\n作者示例：https://archify.si/gallery.html\n\n开源许可：MIT。预览使用作者仓库公开的实际架构图示例，非本次生成。本次仅收录，未安装或执行 Skill。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-archify/author-architecture.png",
+      "alt": "Archify 作者公开的实际架构图示例，包含 CDN、API、缓存、数据库与消息队列",
+      "width": 2752,
+      "height": 1544
+    },
+    "previewSource": "https://github.com/tt-a1i/archify/blob/main/docs/assets/archify-architecture.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库公开的真实架构图示例，原图未修改；非本次运行生成。来源与 MIT 许可保存在素材目录。",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
     "id": "website-motionsites",
     "kind": "website",
     "title": "MotionSites.org",
