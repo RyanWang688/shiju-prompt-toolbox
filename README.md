@@ -8,7 +8,7 @@ GitHub Pages 从 main 分支根目录自动发布。
 
 采用 Dashboard 布局：左侧为固定纯图标导航轨，按内容类型、收藏和主题分类用分隔线分组；悬停或键盘聚焦显示名称与数量提示，Escape 可关闭。保留浅紫、奶白与黄色配色，小屏内容自动改为单列。
 
-已收录 15 条提示词（含动效、Dashboard 导航与布局）和 25 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
+已收录 15 条提示词（含动效、Dashboard 导航与布局）和 26 个 Skills / 设计资源：RuiC-card-skill、gsap-skills、child-photo-doodle-collage、pixel2motion、Impeccable、Awesome DESIGN.md、MOSS-Image，以及 10 条小说创作 Skills / Agent / 工具合集。
 
 新增 Impeccable（前端设计与界面打磨），配作者 Neo Mirai 真实案例截图；Awesome DESIGN.md 为设计规范参考库，配作者 getdesign.md 的 Apple 风格 / Lumora 实际交互预览截图，按用户要求归入 Skills。两者均注明来源，非本次生成。
 
@@ -65,3 +65,5 @@ python build.py
 2026-10-23：新增 60fps.design、React Bits、Uiverse、Anime.js、Aceternity UI，更新已有 Motion Sites，不重复收录；均附真实官网截图。卡片改为瀑布流、整卡打开、薄荷色悬停反馈和官网按钮，详情支持点击外部关闭；移除编辑与删除入口。动画卡封面采用实际网页截图，详情保留完整交互。
 
 2026-10-23：实用网站新增 MetalForge，记录跨 SwiftUI / React Native / Web 的着色器与交互动效用途，附真实官网截图、官网及帮助入口。
+
+2026-10-23：新增 video-shotcraft（真实页面截图 + Remotion 产品宣传片 / 单镜头制作），附作者官方 Camera 类动态样片、官方图库、仓库与 Skill 说明；仅收录未安装或执行。

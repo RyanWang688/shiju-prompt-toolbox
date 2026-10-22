@@ -1,5 +1,31 @@
 [
   {
+    "id": "skill-video-shotcraft",
+    "kind": "skill",
+    "title": "video-shotcraft",
+    "resourceType": "产品视频制作 Skill",
+    "category": "动画动效",
+    "tags": "产品宣传片 / Remotion / 视频制作 / 分镜 / 运镜 / 卡点 / Claude Code / Codex",
+    "description": "用真实页面截图与 Remotion 制作产品宣传片，编排分镜、2.5D 运镜、节奏剪辑和声音设计，输出 MP4 与可继续编辑的工程；也适合单独制作某个镜头动效。",
+    "source": "https://github.com/Vincentwei1021/video-shotcraft",
+    "repository": "https://github.com/Vincentwei1021/video-shotcraft",
+    "officialUrl": "https://vincentwei1021.github.io/video-shotcraft/",
+    "documentation": "https://github.com/Vincentwei1021/video-shotcraft/blob/main/SKILL.md",
+    "prompt": "video-shotcraft · 产品宣传片与镜头动效\n\n用途：用真实页面截图与 Remotion 制作产品宣传片，编排分镜、2.5D 运镜、节奏剪辑和声音设计，输出 MP4 与可继续编辑的工程；也适合单独制作某个镜头动效。\n\n官方说明：面向 Claude Code 与 Codex，以镜头配方卡、模板、代码和音频资产组织视频制作。页面展示使用真实截图，画面与运动由代码编排，并非把提示词直接交给文生视频模型。\n\n支持的使用方式：套用 Ink Press 模板制作整片；自主自由创作；分阶段共同创作；按名称选择单个镜头卡制作或参考动效。\n\n适合：网页与桌面产品的功能演示、发布宣传片、UI 运镜及短镜头。实际制作需要目标产品素材与相应的 Remotion / 渲染环境。\n\n预览：作者在官方 README 公开的 Camera 类动态样片，原始 animated WebP，保留其完整动画；不是本次运行产物。\n\n官方动态图库：https://vincentwei1021.github.io/video-shotcraft/\nGitHub：https://github.com/Vincentwei1021/video-shotcraft\nSkill 说明：https://github.com/Vincentwei1021/video-shotcraft/blob/main/SKILL.md\n\n本次仅收录，未安装 Skill、执行制作或渲染视频。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-video-shotcraft/author-camera.webp",
+      "alt": "video-shotcraft 作者公开的 Camera 类动态运镜样片",
+      "width": 384,
+      "height": 216
+    },
+    "previewSource": "https://github.com/Vincentwei1021/video-shotcraft/blob/main/assets/readme/examples/camera.webp",
+    "previewEvidence": "author-repository-animated-example",
+    "previewNote": "作者官方 README 的 Camera 类真实动态样片，保留原始 animated WebP；非本次运行成果。更多镜头见官方图库。",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
     "id": "website-metalforge",
     "kind": "website",
     "title": "MetalForge",
