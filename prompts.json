@@ -1,5 +1,27 @@
 [
   {
+    "id": "skill-moss-image",
+    "kind": "skill",
+    "title": "MOSS-Image",
+    "resourceType": "image-model-with-prompt-enhancer",
+    "category": "其他",
+    "tags": "AI 生图 / 提示词增强 / 文字渲染 / 布局控制 / 海报插画",
+    "description": "OpenMOSS 的图像生成项目，支持文字渲染与布局控制；附带的 moss-image-prompt-enhancer Skill 可把创意整理为详细描述或布局 JSON。适合海报、插画及文字位置规划。",
+    "source": "https://github.com/OpenMOSS/MOSS-Image",
+    "documentation": "https://github.com/OpenMOSS/MOSS-Image/blob/main/skills/moss-image-prompt-enhancer/SKILL.md",
+    "prompt": "MOSS-Image（OpenMOSS）\n\n项目用途：文生图模型系列，包含 Base 和 SFT，支持自然语言描述、文字渲染，以及通过 JSON 指定物体、文字与空间位置的布局控制。\n\n仓库内 Skill：moss-image-prompt-enhancer。将创意扩展为详细 caption，或为海报、多面板与精确文字位置编写 Layout；配套 Python 脚本负责坐标转换和提示词序列化，不调用图像生成服务。\n\n适合：海报和图文排版、插画或摄影风格图像的提示词整理、多个元素之间的位置规划。\n\n使用区别：Skill 输出可粘贴的提示词；真正出图仍需要 MOSS-Image 模型或相应生成服务。使用 Layout 时，生成尺寸需与布局尺寸一致。\n\n预览：作者官方仓库公开的模型输出合集，展示摄影、插画及文字渲染等效果。它是相关 MOSS-Image 模型的作者示例，不是 Prompt Enhancer Skill 单独生成的图，也不是本次生成。\n\n收录状态：收藏模型项目及其配套 Skill 的用途、来源和真实示例；本次未安装 Skill、下载模型权重或调用生图。\n\n官方仓库：https://github.com/OpenMOSS/MOSS-Image\n官方项目页：https://openmoss.ai/MOSS-Image/\nSkill 说明：https://github.com/OpenMOSS/MOSS-Image/blob/main/skills/moss-image-prompt-enhancer/SKILL.md\n官方在线演示：https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-moss-image/author-showcase.webp",
+      "alt": "OpenMOSS 官方发布的 MOSS-Image 模型真实输出合集，非 Prompt Enhancer 单独输出"
+    },
+    "previewNote": "作者真实模型示例：官方 assets/showcase/overview.webp 原图。展示 MOSS-Image 模型效果；配套 Skill 只增强提示词，本图非本次生成。",
+    "previewSource": "https://github.com/OpenMOSS/MOSS-Image/blob/52b87fca23acedc399d062d593bec388aee9926a/assets/showcase/overview.webp",
+    "previewEvidence": "author-published-model-output",
+    "addedAt": "2026-10-22",
+    "verifiedAt": "2026-10-22"
+  },
+  {
     "id": "skill-impeccable",
     "kind": "skill",
     "title": "Impeccable",
