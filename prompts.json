@@ -1,5 +1,29 @@
 [
   {
+    "id": "website-metalforge",
+    "kind": "website",
+    "title": "MetalForge",
+    "category": "其他",
+    "tags": "着色器 / Shader / 动画动效 / SwiftUI / React Native / Web / MCP",
+    "description": "提供面向 SwiftUI、React Native 和 Web 的着色器与交互动效，涵盖玻璃、液体、文字、卡片和按钮等效果，适合浏览灵感并按平台获取实现代码。",
+    "source": "https://metalforge.xyz/",
+    "officialUrl": "https://metalforge.xyz/",
+    "documentation": "https://metalforge.xyz/help",
+    "prompt": "MetalForge · 着色器与交互动效资源\n\n用途：浏览并筛选适用于 SwiftUI、React Native 与 Web 的着色器和动画，包括玻璃、液体、背景、文字、卡片、按钮和加载效果。\n\n使用方式：选择目标平台与效果，阅读具体示例和代码说明，再按项目环境集成。官网另提供 MCP Beta 入口，接入要求以官网为准。\n\nSwiftUI 帮助页介绍将 .metal 着色器与 SwiftUI 调用片段加入 Xcode 项目的流程。\n\n访问说明：网站有 Free 分类与订阅入口，具体效果的平台支持、可访问代码和授权以当前页面及订阅条款为准。官方 Licenses 页列出其依赖的开源许可，并明确 MetalForge 自身代码不属于开源。\n\n官网：https://metalforge.xyz/\n使用说明：https://metalforge.xyz/help\n价格：https://metalforge.xyz/pricing\n依赖许可说明：https://metalforge.xyz/licenses\n\n本次仅收录网站及真实网页截图，未登录、订阅、安装或连接 MCP。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-metalforge/official-site.png",
+      "alt": "MetalForge 官网实际截图：跨平台筛选与着色器、卡片、文字等动效图库",
+      "width": 1265,
+      "height": 712
+    },
+    "previewNote": "2026-10-23 实际打开 MetalForge 官网后的网页截图，展示原站动效图库；不是本次生成的效果或已购买内容。",
+    "previewSource": "https://metalforge.xyz/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23"
+  },
+  {
     "id": "website-60fps",
     "kind": "website",
     "title": "60fps.design",

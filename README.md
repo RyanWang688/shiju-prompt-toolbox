@@ -4,7 +4,7 @@
 
 GitHub Pages 从 main 分支根目录自动发布。
 
-新增“实用网站”栏目：目前收录 60fps.design、React Bits、Uiverse、Anime.js、Aceternity UI、OpenCut、MotionSites.org 和 Easel，附实际官网截图、用途介绍和访问入口，同样支持收藏、个人评分与备份。网站截图按记录日期展示，不是实时抓取。
+新增“实用网站”栏目：目前收录 60fps.design、React Bits、Uiverse、Anime.js、Aceternity UI、MetalForge、OpenCut、MotionSites.org 和 Easel，附实际官网截图、用途介绍和访问入口，同样支持收藏、个人评分与备份。网站截图按记录日期展示，不是实时抓取。
 
 采用 Dashboard 布局：左侧为固定纯图标导航轨，按内容类型、收藏和主题分类用分隔线分组；悬停或键盘聚焦显示名称与数量提示，Escape 可关闭。保留浅紫、奶白与黄色配色，小屏内容自动改为单列。
 
@@ -63,3 +63,5 @@ python build.py
 2026-10-23：收录 AI Job Search、Context Mode、Diagram Design、ArtCraft、REA。ArtCraft 标注为创作软件，Context Mode / REA 标注 MCP 类型。Diagram Design、ArtCraft、REA 使用官方仓库真实预览；AI Job Search 与 Context Mode 实际运行预览待补。所有 Skills / 实用网站增加官方项目入口，详情同时展示已有 GitHub 与使用说明链接。
 
 2026-10-23：新增 60fps.design、React Bits、Uiverse、Anime.js、Aceternity UI，更新已有 Motion Sites，不重复收录；均附真实官网截图。卡片改为瀑布流、整卡打开、薄荷色悬停反馈和官网按钮，详情支持点击外部关闭；移除编辑与删除入口。动画卡封面采用实际网页截图，详情保留完整交互。
+
+2026-10-23：实用网站新增 MetalForge，记录跨 SwiftUI / React Native / Web 的着色器与交互动效用途，附真实官网截图、官网及帮助入口。
