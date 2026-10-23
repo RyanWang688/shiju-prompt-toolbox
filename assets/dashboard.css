@@ -37,7 +37,7 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 
 .dashboard .card-foot{display:flex;align-items:center;justify-content:flex-end;gap:12px;border-top:1px solid #dedede;padding-top:13px}
 .dashboard .card-foot>span{font-size:11px;line-height:1.7}.dashboard .visit-site{min-height:40px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;padding:8px 13px;background:#f5f5f5;color:#191919;border:1px solid #dedede;border-radius:10px}
-.dashboard .card .visit-site:hover{background:#fff;border-color:#191919}.dashboard .source-unavailable{font-size:11px;color:#595959}
+.dashboard .card .visit-site:hover{background:#fff;border-color:#191919}
 .dashboard .card .card-open{position:absolute;inset:0;z-index:1;width:100%;height:100%;min-height:0;margin:0;padding:0;border:0;border-radius:18px;background:transparent;box-shadow:none;cursor:pointer}
 .dashboard .card .card-open:hover{background:transparent;border:0;box-shadow:none}.dashboard .card .card-open:focus-visible{outline:3px solid #191919;outline-offset:4px}
 .dashboard .card :is(.star,.visit-site){position:relative;z-index:2}
