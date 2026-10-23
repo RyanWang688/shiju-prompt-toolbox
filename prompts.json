@@ -1,5 +1,39 @@
 [
   {
+    "id": "skill-fredtalk",
+    "title": "FredTalk",
+    "kind": "skill",
+    "resourceType": "口播视频制作 Skill",
+    "category": "动画动效",
+    "repository": "https://github.com/njrhts2kvv-star/FredTalk",
+    "officialUrl": "https://www.fred-fu.com/visual-library",
+    "documentation": "https://github.com/njrhts2kvv-star/FredTalk/blob/main/skills/fred-remotion-output/SKILL.md",
+    "tags": "口播视频 / 自动剪辑 / 字幕粗剪 / Remotion / 动效组件库 / Codex",
+    "description": "把口播稿、录音和素材做成动态视频：逐句从动效组件库选画面，先出真实关键帧确认，再用 Remotion 合成输出；配套粗剪 Skill 可识别字幕、删除口误和重说。适合知识类口播与教程视频。",
+    "source": "https://github.com/njrhts2kvv-star/FredTalk",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "prompt": "FredTalk\n\n类型：口播视频制作 Skill\n\n用途：把口播稿、录音和素材做成动态视频：逐句从动效组件库选画面，先出真实关键帧确认，再用 Remotion 合成输出；配套粗剪 Skill 可识别字幕、删除口误和重说。适合知识类口播与教程视频。\n\n说明：主入口 fred-remotion-output 按“准备内容 → 确认画面 → 输出视频”推进，每段画面只复用或改编组件库里已认可的组件，并记录前三个候选的取舍理由；可检索的在线视觉库提供组件预览。粗剪入口 audio-subtitle-roughcut 对原声做人声处理和 1.1 倍速后调用千问 Audio 获取词级字幕，按逐字稿纠错、只删失败重说与口误，最后 +8dB 并交付可手调的审片台与 WAV / SRT；保留语气词和自然停顿。使用前提：需要 Python 3.11+、Node.js 22+ 和 GitHub CLI；字幕识别需使用者自己的千问 API Key 并授权上传录音（付费），作者的人声处理环境不随公开版提供。最新一批组件有 14 天会员抢先下载期，之前公开的组件仍按 MIT 使用。主要为 Codex 编写，也可交给其他编程 Agent。预览使用作者仓库中的组件画面。\n\n在线视觉库：https://www.fred-fu.com/visual-library\nGitHub：https://github.com/njrhts2kvv-star/FredTalk\n使用说明：https://github.com/njrhts2kvv-star/FredTalk/blob/main/skills/fred-remotion-output/SKILL.md\n字幕粗剪：https://github.com/njrhts2kvv-star/FredTalk/blob/main/skills/audio-subtitle-roughcut/SKILL.md\n\n收录状态：仅收藏资源，未安装或执行。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-fredtalk/author-t14c-price.jpg",
+      "alt": "FredTalk 组件 T14c「价格落定」画面：GPT-6.1 Sol 输出价 $10.00 / 百万 token",
+      "width": 960,
+      "height": 540
+    },
+    "previewSource": "https://raw.githubusercontent.com/njrhts2kvv-star/FredTalk/main/docs/assets/T14c.jpg",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库中的组件画面 T14c「价格落定」（数字逐位滚动、旧价划掉、差额亮出）的静帧，保留原始水印；非本次运行成果。",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "en": {
+      "title": "FredTalk",
+      "description": "Turns a talking-head script, recording and assets into a motion video: picks visuals line by line from an animation component library, shows real keyframes for approval, then renders with Remotion; a companion rough-cut Skill transcribes subtitles and removes flubs and retakes. Great for explainer and tutorial videos.",
+      "tags": "Talking-head video / Auto editing / Subtitle rough cut / Remotion / Motion component library / Codex"
+    }
+  },
+  {
     "id": "skill-collage-design",
     "title": "collage-design",
     "kind": "skill",
