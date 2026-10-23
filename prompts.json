@@ -1,5 +1,212 @@
 [
   {
+    "id": "website-howtolivebetter",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "高性价比人生指南 · HowToLiveBetter",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "生活指南 / 循证建议 / 健康急救 / 理财法律 / 社保 / AI Skill",
+    "description": "767 条循证生活建议，涵盖健康急救、省钱理财、法律红线、社保医保、婚育与创业等，每条注明成本、收益、证据等级和出处；附让 AI 助手照书回答的 Skill，并提供网页版、PDF 与 EPUB。",
+    "source": "https://eternity4719.github.io/HowToLiveBetter/",
+    "officialUrl": "https://eternity4719.github.io/HowToLiveBetter/",
+    "repository": "https://github.com/eternity4719/HowToLiveBetter",
+    "en": {
+      "title": "The Evidence-Based Life · HowToLiveBetter",
+      "description": "767 evidence-based life tips on health and first aid, money, legal pitfalls, social insurance, family and starting a business, each with cost, benefit, evidence level and source — plus a Skill that lets AI assistants answer from the book.",
+      "tags": "Life guide / Evidence-based / Health & first aid / Money & law / Social insurance / AI Skill"
+    },
+    "prompt": "高性价比人生指南 · HowToLiveBetter\n类型：GitHub 项目\n\n用途：767 条循证生活建议，涵盖健康急救、省钱理财、法律红线、社保医保、婚育与创业等，每条注明成本、收益、证据等级和出处；附让 AI 助手照书回答的 Skill，并提供网页版、PDF 与 EPUB。\n\n说明：只引期刊论文和官方文件；制度类内容按中国大陆现行规定撰写，作者提醒以当地部门、医生和律师的意见为准。\n\n许可：CC-BY-4.0\n\n官网：https://eternity4719.github.io/HowToLiveBetter/\nGitHub：https://github.com/eternity4719/HowToLiveBetter\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 2 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
+    "collection": "GitHub AI 开源周榜",
+    "userProvidedRank": 2,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-howtolivebetter/official-site.png",
+      "alt": "高性价比人生指南 · HowToLiveBetter 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://eternity4719.github.io/HowToLiveBetter/",
+    "previewNote": "2026-10-24 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewEvidence": "live-website-screenshot"
+  },
+  {
+    "id": "skill-moli",
+    "kind": "skill",
+    "resourceType": "Agent 无头浏览器",
+    "title": "moli",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "无头浏览器 / AI Agent / 网页抓取 / 浏览器自动化 / Rust",
+    "description": "专为 AI Agent 设计的轻量无头浏览器，用 Rust 编写，按需排版和渲染，兼顾完整浏览器能力与低资源占用；可抓取和提取网页、搜索、自动化操作，支持 CLI、CDP 与 WebDriver，并附 Agent Skills。",
+    "source": "https://github.com/lexmount/moli",
+    "officialUrl": "https://browser.lexmount.com",
+    "repository": "https://github.com/lexmount/moli",
+    "documentation": "https://github.com/lexmount/moli#readme",
+    "en": {
+      "title": "moli",
+      "description": "A lightweight headless browser for AI agents, written in Rust with on-demand layout and rendering — a full browser runtime with a small footprint for fetching, searching and automating pages via CLI, CDP or WebDriver, with Agent Skills included.",
+      "tags": "Headless browser / AI agents / Web fetching / Browser automation / Rust"
+    },
+    "prompt": "moli\n类型：Agent 无头浏览器\n\n用途：专为 AI Agent 设计的轻量无头浏览器，用 Rust 编写，按需排版和渲染，兼顾完整浏览器能力与低资源占用；可抓取和提取网页、搜索、自动化操作，支持 CLI、CDP 与 WebDriver，并附 Agent Skills。\n\n说明：支持 Linux、macOS 和 Windows；可把官方提供的提示词交给 Agent，让它自行安装 Skills 与预编译版本。\n\n许可：Apache-2.0 或 MIT（双许可，任选其一）\n\n官网：https://browser.lexmount.com\nGitHub：https://github.com/lexmount/moli\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 4 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
+    "collection": "GitHub AI 开源周榜",
+    "userProvidedRank": 4,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-moli/author-devtools.jpg",
+      "alt": "moli 作者真实示例",
+      "width": 1800,
+      "height": 1038
+    },
+    "previewSource": "https://raw.githubusercontent.com/lexmount/moli/HEAD/assets/moli-devtools-rust-lang.jpg",
+    "previewNote": "作者仓库中的真实截图：moli 打开 rust-lang.org 并连接开发者工具；非本次运行成果。",
+    "previewEvidence": "author-repository-example"
+  },
+  {
+    "id": "website-compositor",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Compositor",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "tags": "图像编辑 / Mac / Photoshop 替代 / 图层 / AI Agent",
+    "description": "免费开源的 Mac 图像编辑器，按 Photoshop 的合成与后期流程设计，支持图层、文件夹和完整的混合模式；项目文件就是一组 PNG 图层加清单，AI Agent 和脚本可以直接创建、编辑图层，打开的项目会实时更新。",
+    "source": "https://robbietilton.com/compositor",
+    "officialUrl": "https://robbietilton.com/compositor",
+    "repository": "https://github.com/robbietilton/Compositor",
+    "en": {
+      "title": "Compositor",
+      "description": "A free, open-source Mac image editor built around the Photoshop compositing workflow — layers, folders and the full set of blend modes. Projects are folders of PNG layers plus a manifest, so AI agents and scripts can build and edit layers directly while the open project updates live.",
+      "tags": "Image editing / Mac / Photoshop alternative / Layers / AI agents"
+    },
+    "prompt": "Compositor\n类型：GitHub 项目\n\n用途：免费开源的 Mac 图像编辑器，按 Photoshop 的合成与后期流程设计，支持图层、文件夹和完整的混合模式；项目文件就是一组 PNG 图层加清单，AI Agent 和脚本可以直接创建、编辑图层，打开的项目会实时更新。\n\n说明：可从官网、GitHub Releases 或 Homebrew 安装；也可下载 Xcode 工程自行修改。\n\n许可：MIT\n\n官网：https://robbietilton.com/compositor\nGitHub：https://github.com/robbietilton/Compositor\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 6 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
+    "collection": "GitHub AI 开源周榜",
+    "userProvidedRank": 6,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-compositor/official-site.png",
+      "alt": "Compositor 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://robbietilton.com/compositor",
+    "previewNote": "2026-10-24 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewEvidence": "live-website-screenshot"
+  },
+  {
+    "id": "skill-orca",
+    "kind": "skill",
+    "resourceType": "Coding Agent 编排工具",
+    "title": "Orca",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "多 Agent / 并行开发 / Git Worktree / 终端分屏 / 移动端",
+    "description": "并行管理多个 Coding Agent 的桌面工具：Codex、Claude Code、OpenCode 等各自在独立 git worktree 中运行并集中追踪，可把同一提示交给多个 Agent 比较后合并；另有终端分屏、设计模式、GitHub 与 Linear 集成和手机端。",
+    "source": "https://github.com/stablyai/orca",
+    "officialUrl": "https://orca.dev",
+    "repository": "https://github.com/stablyai/orca",
+    "documentation": "https://github.com/stablyai/orca#readme",
+    "en": {
+      "title": "Orca",
+      "description": "A desktop app for running a fleet of coding agents — Codex, Claude Code, OpenCode and more — each in its own git worktree and tracked in one place, so you can fan out one prompt, compare and merge; with terminal splits, a design mode, GitHub & Linear and a mobile companion.",
+      "tags": "Multi-agent / Parallel development / Git worktrees / Terminal splits / Mobile"
+    },
+    "prompt": "Orca\n类型：Coding Agent 编排工具\n\n用途：并行管理多个 Coding Agent 的桌面工具：Codex、Claude Code、OpenCode 等各自在独立 git worktree 中运行并集中追踪，可把同一提示交给多个 Agent 比较后合并；另有终端分屏、设计模式、GitHub 与 Linear 集成和手机端。\n\n许可：MIT\n\n官网：https://orca.dev\nGitHub：https://github.com/stablyai/orca\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 8 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
+    "collection": "GitHub AI 开源周榜",
+    "userProvidedRank": 8,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-orca/author-app.jpg",
+      "alt": "Orca 作者真实示例",
+      "width": 1800,
+      "height": 1126
+    },
+    "previewSource": "https://raw.githubusercontent.com/stablyai/orca/HEAD/docs/assets/readme-hero.jpg",
+    "previewNote": "作者仓库中的真实应用截图：多个 Agent 会话与手机端界面；非本次运行成果。",
+    "previewEvidence": "author-repository-example"
+  },
+  {
+    "id": "skill-deepseek-harness",
+    "kind": "skill",
+    "resourceType": "Agent 框架",
+    "title": "DeepSeek Harness",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "Agent 框架 / 插件化 / DeepSeek / 本地 Web 界面",
+    "description": "DeepSeek 开源的 Agent 框架（dsh），「一切皆插件」，方便扩展工具与能力；用 npx 即可在本机启动 Web 界面。目前为开发者预览版，会有不兼容的更新。",
+    "source": "https://github.com/deepseek-ai/deepseek-harness",
+    "officialUrl": "https://deepseek.com/harness",
+    "repository": "https://github.com/deepseek-ai/deepseek-harness",
+    "documentation": "https://deepseek-harness.github.io/deepseek-harness/",
+    "en": {
+      "title": "DeepSeek Harness",
+      "description": "DeepSeek's open-source agent harness (dsh): everything is a plugin, so tools and capabilities are easy to extend, and npx starts a local web UI. Currently a developer preview with breaking changes expected.",
+      "tags": "Agent framework / Plugins / DeepSeek / Local web UI"
+    },
+    "prompt": "DeepSeek Harness\n类型：Agent 框架\n\n用途：DeepSeek 开源的 Agent 框架（dsh），「一切皆插件」，方便扩展工具与能力；用 npx 即可在本机启动 Web 界面。目前为开发者预览版，会有不兼容的更新。\n\n说明：官方提醒运行前先阅读安全须知。\n\n许可：MIT\n\n官网：https://deepseek.com/harness\nGitHub：https://github.com/deepseek-ai/deepseek-harness\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 9 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
+    "collection": "GitHub AI 开源周榜",
+    "userProvidedRank": 9,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewSource": "https://github.com/deepseek-ai/deepseek-harness",
+    "previewNote": "官方仓库 README 未提供真实效果图，未用概念图替代；真实预览待补。"
+  },
+  {
+    "id": "website-voicestudio",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "VoiceStudio（原 OmniVoice-Studio）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "tags": "AI 语音 / 声音克隆 / 视频配音 / 有声书 / 本地运行 / MCP",
+    "description": "开源、完全本地运行的 AI 语音创作工具，支持声音克隆、声音设计、视频配音、听写、转写和有声书制作，覆盖 646 种语言，并提供本地 API 与 MCP 供 Agent 调用。",
+    "source": "https://voicestudio.sh",
+    "officialUrl": "https://voicestudio.sh",
+    "repository": "https://github.com/debpalash/VoiceStudio",
+    "en": {
+      "title": "VoiceStudio (formerly OmniVoice-Studio)",
+      "description": "An open-source, fully local AI voice studio for voice cloning, voice design, video dubbing, dictation, transcription and audiobooks in 646 languages, with a local API and MCP for agents.",
+      "tags": "AI voice / Voice cloning / Video dubbing / Audiobooks / Local / MCP"
+    },
+    "prompt": "VoiceStudio（原 OmniVoice-Studio）\n类型：GitHub 项目\n\n用途：开源、完全本地运行的 AI 语音创作工具，支持声音克隆、声音设计、视频配音、听写、转写和有声书制作，覆盖 646 种语言，并提供本地 API 与 MCP 供 Agent 调用。\n\n说明：榜单名称为 OmniVoice-Studio，仓库已更名为 VoiceStudio（原地址自动跳转）。默认引擎基于 k2-fsa/OmniVoice。\n\n许可：AGPL-3.0\n\n官网：https://voicestudio.sh\nGitHub：https://github.com/debpalash/VoiceStudio\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 10 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
+    "collection": "GitHub AI 开源周榜",
+    "userProvidedRank": 10,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-voicestudio/official-site.png",
+      "alt": "VoiceStudio（原 OmniVoice-Studio） 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://voicestudio.sh",
+    "previewNote": "2026-10-24 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewEvidence": "live-website-screenshot"
+  },
+  {
     "id": "cloisonne-enamel",
     "kind": "prompt",
     "title": "珐琅彩质感",
