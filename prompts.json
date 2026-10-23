@@ -1,5 +1,139 @@
 [
   {
+    "id": "checkin-confetti",
+    "kind": "prompt",
+    "title": "撒花庆祝",
+    "category": "动画动效",
+    "topics": [
+      "按钮交互",
+      "App 交互"
+    ],
+    "tags": "App 交互 / 撒花 / Canvas 粒子 / 重力与空气阻力 / 打卡反馈",
+    "description": "打卡后约 100 片彩纸从按钮喷出，冲高、翻面、受空气阻力飘落，再各自淡出。",
+    "prompt": "做一个打卡成功的撒花庆祝：点\"打卡\"按钮后，从按钮位置向上喷出约 100 片彩纸，有长条、圆片、小方块 3 种形状、5 种主题色；每片先快速冲上去，再被重力拉回来（发射角度在正上方左右 35° 内，速度随机）；下落时左右飘、绕自身翻面（翻〔…〕到背面颜色变暗），越落越慢像有空气阻力；约 2.5 秒后各自逐渐淡出，不要同〔时消〕失；按钮先压一下再弹起，变成\"已打卡✓\"；用 canvas 画，保持 60 帧。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/checkin-confetti/preview.html",
+      "alt": "撒花庆祝：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AI「删掉的消息，会碎成沙子飘走」粒子效果系列（3 条）中「提示词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/checkin-confetti/card-preview.png",
+      "alt": "撒花庆祝：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 530,
+      "height": 380
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Check-in Confetti",
+      "description": "About 100 pieces of confetti burst from the check-in button, rise, flip and drift down against air drag, then fade out one by one.",
+      "tags": "App interaction / Confetti / Canvas particles / Gravity & drag / Check-in feedback"
+    }
+  },
+  {
+    "id": "sand-disintegrate-delete",
+    "kind": "prompt",
+    "title": "碎沙删除",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 消息删除 / 像素采样 / 粒子消散 / 补位动画",
+    "description": "删除的气泡按像素碎成约 1500 粒沙，像被风从左到右吹散，下面的消息上移补位。",
+    "prompt": "做一个聊天消息删除时碎成沙子消失：长按消息选\"删除\"后，把这条气泡按像素〔采样成〕约 1500 粒小沙，每粒用气泡原来那个位置的颜色；从左往右依次散开（像一阵风扫过，约 0.8 秒扫完），每粒往右上方飘走，带一点随机抖动，边飘边变小、变淡，〔约 1〕秒消失；散开的同时，原气泡从左往右被一点点擦掉，不要整条一起消失；删完后〔下〕面的消息平滑上移补位（约 300ms）。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/sand-disintegrate-delete/preview.html",
+      "alt": "碎沙删除：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AI「删掉的消息，会碎成沙子飘走」粒子效果系列（3 条）中「提示词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/sand-disintegrate-delete/card-preview.png",
+      "alt": "碎沙删除：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 530,
+      "height": 380
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Sand Disintegrate Delete",
+      "description": "A deleted chat bubble breaks into about 1,500 grains of sand in its own colours, blown away left to right while the messages below slide up.",
+      "tags": "App interaction / Message delete / Pixel sampling / Particle dissolve / Reflow"
+    }
+  },
+  {
+    "id": "particle-logo",
+    "kind": "prompt",
+    "title": "粒子 Logo",
+    "category": "动画动效",
+    "topics": [
+      "网页特效"
+    ],
+    "tags": "官网首页 / 粒子 Logo / Canvas / 鼠标交互 / 弹簧回弹",
+    "description": "约 2000 颗粒子从四周飞来聚成 Logo，轻轻呼吸；鼠标推开附近粒子，离开后弹簧拉回。",
+    "prompt": "做一个官网首页的粒子 Logo：用 canvas 把 Logo 文字采样成约 2000 个小圆点；〔页〕面打开时粒子从屏幕四周飞进来聚成 Logo（约 1.5 秒，先快后慢，每粒出发时间错开一点）；聚好后每粒轻轻呼吸浮动；鼠标划过时，附近的粒子被推开（半径〔约〕 80px，越近推得越远），鼠标离开后像被弹簧拉回原位，带一点点回弹；粒子用〔品牌〕渐变色。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/particle-logo/preview.html",
+      "alt": "粒子 Logo：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AI「删掉的消息，会碎成沙子飘走」粒子效果系列（3 条）中「提示词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/particle-logo/card-preview.png",
+      "alt": "粒子 Logo：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 530,
+      "height": 380
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Particle Logo",
+      "description": "About 2,000 particles fly in from the edges to form the logo and breathe gently; the cursor pushes nearby ones away and a spring pulls them back.",
+      "tags": "Landing page / Particle logo / Canvas / Mouse interaction / Spring return"
+    }
+  },
+  {
+    "id": "webgl-metal-card",
+    "kind": "prompt",
+    "title": "反射金属卡片",
+    "category": "动画动效",
+    "topics": [
+      "卡片交互",
+      "网页特效"
+    ],
+    "tags": "卡片交互 / WebGL2 / 金属反射 / 弹簧倾斜 / 着色器",
+    "description": "用 WebGL2 做磨砂金属卡片：动态环境经两次模糊后反射在表面，弹簧倾斜同步 CSS 与法线。",
+    "prompt": "做可运行的 React + WebGL2 金属卡片。\n320×500px，圆角 24px。\n卡号：0001 2345 6789\n\n1. 环境：Canvas 画蓝色板、暖色球、白色灯条，逐帧上传纹理；横纵两次模糊，取样后去色。\n2. 反射：倒角＋微噪声法线 N；I 为相机→表面，R=reflect(I,N)，q=R.xy/max(R.z,0.2)，UV=vUv+0.12*q。用平面贴图，不用全景或渐变冒充。\n3. 交互：弹簧 120/16，倾斜目标 ±12°；同一角度同步 CSS 与法线，移出回正。\n4. 图层：画布＋HTML 标题「反射通行证」和卡号＋高光边框；不要人物、摄像头或外部图片。\n5. 交付：组件、完整 GLSL/CSS、运行命令；逐帧检查 DPR/尺寸，变化才重设；无 WebGL 降级，卸载清理资源。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/webgl-metal-card/preview.html",
+      "alt": "反射金属卡片：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。提示词要求 React，演示用原生 JS + WebGL2 实现同一渲染流程。",
+    "sourceNote": "抖音 @费纸张「截图保存，交给你的 Agent」，原理参考 React Bits / Reflective Card；用户提供截图。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/webgl-metal-card/card-preview.png",
+      "alt": "反射金属卡片：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 960
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Reflective Metal Card",
+      "description": "A brushed-metal card in WebGL2: a live environment, blurred in two passes, reflects off the surface while a spring tilt keeps CSS and normals in sync.",
+      "tags": "Card interaction / WebGL2 / Metal reflection / Spring tilt / Shaders"
+    }
+  },
+  {
     "id": "skill-superpowers",
     "kind": "skill",
     "title": "superpowers",
