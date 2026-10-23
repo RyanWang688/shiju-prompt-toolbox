@@ -1,5 +1,584 @@
 [
   {
+    "id": "skill-superpowers",
+    "kind": "skill",
+    "title": "superpowers",
+    "resourceType": "开发流程 Skills",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "开发流程 / 需求澄清 / 实施计划 / 测试驱动 / 代码审查",
+    "description": "一套给编程 Agent 的完整开发方法：先追问真正的需求，分段确认设计，再写清实施计划，按红绿测试驱动推进并审查结果。适合想让 Agent 按工程纪律做事的项目。",
+    "source": "https://github.com/obra/superpowers",
+    "repository": "https://github.com/obra/superpowers",
+    "officialUrl": "https://github.com/obra/superpowers",
+    "documentation": "https://github.com/obra/superpowers#readme",
+    "prompt": "superpowers\n\n类型：开发流程 Skills\n\n用途：一套给编程 Agent 的完整开发方法：先追问真正的需求，分段确认设计，再写清实施计划，按红绿测试驱动推进并审查结果。适合想让 Agent 按工程纪律做事的项目。\n\n说明：支持 Claude Code、Codex、Cursor、Gemini CLI 等多种编程 Agent。\n\n许可：MIT\n\nGitHub：https://github.com/obra/superpowers\n使用说明：https://github.com/obra/superpowers#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 1 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 1,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/obra/superpowers",
+    "en": {
+      "title": "superpowers",
+      "description": "A complete development method for coding agents: it draws out the real requirements, confirms the design in digestible chunks, writes a clear plan, then builds with red/green TDD and review.",
+      "tags": "Dev workflow / Requirement clarification / Implementation plan / TDD / Code review"
+    }
+  },
+  {
+    "id": "skill-mattpocock-skills",
+    "kind": "skill",
+    "title": "skills",
+    "resourceType": "工程实践 Skills 集合",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "工程实践 / 需求澄清 / 代码架构 / 可组合 / Matt Pocock",
+    "description": "Matt Pocock 日常做真实工程用的一组小型 Skills，包括追问澄清需求、改善代码架构等，彼此可组合、易于修改，不接管整个开发流程。",
+    "source": "https://github.com/mattpocock/skills",
+    "repository": "https://github.com/mattpocock/skills",
+    "officialUrl": "https://aihero.dev/skills",
+    "documentation": "https://github.com/mattpocock/skills#readme",
+    "prompt": "skills\n\n类型：工程实践 Skills 集合\n\n用途：Matt Pocock 日常做真实工程用的一组小型 Skills，包括追问澄清需求、改善代码架构等，彼此可组合、易于修改，不接管整个开发流程。\n\n说明：作者强调这些 Skill 不像大型框架那样接管流程，保留开发者的控制权。其中的 grill-me 与 diagnose 已在本工具箱单独收录。\n\n许可：MIT\n\n官网：https://aihero.dev/skills\nGitHub：https://github.com/mattpocock/skills\n使用说明：https://github.com/mattpocock/skills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 2 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 2,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/mattpocock/skills",
+    "en": {
+      "title": "skills",
+      "description": "Matt Pocock's small, composable everyday engineering Skills — clarifying requirements, improving architecture and more — easy to adapt and never taking over your whole process.",
+      "tags": "Engineering practice / Requirement clarification / Code architecture / Composable / Matt Pocock"
+    }
+  },
+  {
+    "id": "skill-andrej-karpathy-skills",
+    "kind": "skill",
+    "title": "andrej-karpathy-skills",
+    "resourceType": "Agent 行为准则",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "CLAUDE.md / 编码准则 / 简单优先 / 精准修改 / Karpathy",
+    "description": "一份 CLAUDE.md 准则，源自 Andrej Karpathy 对大模型写代码常见问题的观察：编码前先想清楚、简单优先、只做精准修改、以可验证的目标推进，减少乱假设和过度设计。",
+    "source": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "repository": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "officialUrl": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "documentation": "https://github.com/multica-ai/andrej-karpathy-skills#readme",
+    "prompt": "andrej-karpathy-skills\n\n类型：Agent 行为准则\n\n用途：一份 CLAUDE.md 准则，源自 Andrej Karpathy 对大模型写代码常见问题的观察：编码前先想清楚、简单优先、只做精准修改、以可验证的目标推进，减少乱假设和过度设计。\n\n说明：仓库未声明开源许可。\n\n许可：未声明\n\nGitHub：https://github.com/multica-ai/andrej-karpathy-skills\n使用说明：https://github.com/multica-ai/andrej-karpathy-skills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 3 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 3,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "en": {
+      "title": "andrej-karpathy-skills",
+      "description": "A single CLAUDE.md distilled from Andrej Karpathy's notes on LLM coding pitfalls: think before coding, keep it simple, make surgical changes and work toward verifiable goals.",
+      "tags": "CLAUDE.md / Coding guidelines / Simplicity first / Surgical changes / Karpathy"
+    }
+  },
+  {
+    "id": "skill-anthropic-skills",
+    "kind": "skill",
+    "title": "skills",
+    "resourceType": "官方 Skills 示例库",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具",
+      "写作创作"
+    ],
+    "tags": "官方示例 / 文档处理 / 创意设计 / 网页测试 / Anthropic",
+    "description": "Anthropic 官方的 Skills 示例仓库，涵盖 Word、PDF、PPT、Excel 文档处理，艺术与设计创作，网页应用测试和 MCP 服务生成等，可作为编写自己 Skill 的参考范例。",
+    "source": "https://github.com/anthropics/skills",
+    "repository": "https://github.com/anthropics/skills",
+    "officialUrl": "https://github.com/anthropics/skills",
+    "documentation": "https://github.com/anthropics/skills#readme",
+    "prompt": "skills\n\n类型：官方 Skills 示例库\n\n用途：Anthropic 官方的 Skills 示例仓库，涵盖 Word、PDF、PPT、Excel 文档处理，艺术与设计创作，网页应用测试和 MCP 服务生成等，可作为编写自己 Skill 的参考范例。\n\n说明：多数 Skill 为 Apache-2.0；文档处理类为源码可见，按各自许可使用。\n\n许可：按各 Skill 目录（多数 Apache-2.0，文档类为源码可见）\n\nGitHub：https://github.com/anthropics/skills\n使用说明：https://github.com/anthropics/skills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 4 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 4,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/anthropics/skills",
+    "en": {
+      "title": "skills",
+      "description": "Anthropic's official Skills examples — Word, PDF, PowerPoint and Excel handling, art and design, web-app testing, MCP server generation and more — a reference for writing your own.",
+      "tags": "Official examples / Document handling / Creative design / Web testing / Anthropic"
+    }
+  },
+  {
+    "id": "skill-ponytail",
+    "kind": "skill",
+    "title": "ponytail",
+    "resourceType": "精简编码 Skill",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "精简代码 / 反过度设计 / 技术债 / 资深工程师 / 基准测试",
+    "description": "让 Agent 像只写一行就解决问题的资深工程师那样工作：只写任务必需的代码，不删校验、错误处理和安全。作者基准测试中代码量减少约一半，高风险逻辑仍配测试。",
+    "source": "https://github.com/DietrichGebert/ponytail",
+    "repository": "https://github.com/DietrichGebert/ponytail",
+    "officialUrl": "https://ponytail.dev",
+    "documentation": "https://github.com/DietrichGebert/ponytail#readme",
+    "prompt": "ponytail\n\n类型：精简编码 Skill\n\n用途：让 Agent 像只写一行就解决问题的资深工程师那样工作：只写任务必需的代码，不删校验、错误处理和安全。作者基准测试中代码量减少约一半，高风险逻辑仍配测试。\n\n说明：基准数据来自作者在 Claude Code 中的对照测试。\n\n许可：MIT\n\n官网：https://ponytail.dev\nGitHub：https://github.com/DietrichGebert/ponytail\n使用说明：https://github.com/DietrichGebert/ponytail#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 5 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 5,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ponytail/author-before-after.png",
+      "alt": "ponytail 作者真实示例",
+      "width": 1760,
+      "height": 1408
+    },
+    "previewSource": "https://raw.githubusercontent.com/DietrichGebert/ponytail/main/assets/v5/beforeafter.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库中的真实前后对比：同一个日期选择器任务，不用 Skill 时 335 行，用 Ponytail 后 10 行；非本次运行成果。",
+    "en": {
+      "title": "ponytail",
+      "description": "Makes the agent work like the senior dev who replaces fifty lines with one: only the code the task needs, never cutting validation, error handling or security. The author's benchmark shows roughly half the code.",
+      "tags": "Lean code / Anti over-engineering / Tech debt / Senior engineer / Benchmarks"
+    }
+  },
+  {
+    "id": "skill-ui-ux-pro-max-skill",
+    "kind": "skill",
+    "title": "ui-ux-pro-max-skill",
+    "resourceType": "UI / UX 设计 Skill",
+    "category": "界面设计",
+    "skillTopics": [
+      "视觉设计"
+    ],
+    "tags": "UI 设计 / UX 规范 / 设计系统 / 配色字体 / 多平台",
+    "description": "为 AI 提供 UI/UX 设计知识：按项目需求生成完整设计系统，并提供界面风格、配色、字体搭配、图表类型与 UX 规范等可检索资料，适合让 AI 做出更专业的界面。",
+    "source": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "officialUrl": "https://www.uupm.cc/",
+    "documentation": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill#readme",
+    "prompt": "ui-ux-pro-max-skill\n\n类型：UI / UX 设计 Skill\n\n用途：为 AI 提供 UI/UX 设计知识：按项目需求生成完整设计系统，并提供界面风格、配色、字体搭配、图表类型与 UX 规范等可检索资料，适合让 AI 做出更专业的界面。\n\n说明：支持多种前端框架与平台。\n\n许可：MIT\n\n官网：https://www.uupm.cc/\nGitHub：https://github.com/nextlevelbuilder/ui-ux-pro-max-skill\n使用说明：https://github.com/nextlevelbuilder/ui-ux-pro-max-skill#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 6 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 6,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "en": {
+      "title": "ui-ux-pro-max-skill",
+      "description": "Gives AI design intelligence for professional UI/UX: it generates a tailored design system from your requirements and offers searchable styles, palettes, font pairings, chart types and UX guidelines.",
+      "tags": "UI design / UX guidelines / Design system / Colour & type / Multi-platform"
+    }
+  },
+  {
+    "id": "skill-graphify",
+    "kind": "skill",
+    "title": "graphify",
+    "resourceType": "代码知识图谱 Skill",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "知识图谱 / 代码理解 / AST 解析 / 本地运行 / 依赖关系",
+    "description": "输入 /graphify 即可把代码、文档、PDF 等映射成可查询的知识图谱，用来提问和追踪关系，而不是在文件里反复搜索。代码在本地用 AST 解析，每条关系都标明是直接读取还是推断。",
+    "source": "https://github.com/Graphify-Labs/graphify",
+    "repository": "https://github.com/Graphify-Labs/graphify",
+    "officialUrl": "https://www.graphify.com",
+    "documentation": "https://github.com/Graphify-Labs/graphify#readme",
+    "prompt": "graphify\n\n类型：代码知识图谱 Skill\n\n用途：输入 /graphify 即可把代码、文档、PDF 等映射成可查询的知识图谱，用来提问和追踪关系，而不是在文件里反复搜索。代码在本地用 AST 解析，每条关系都标明是直接读取还是推断。\n\n说明：代码解析完全本地进行；文档、PDF 等语义处理使用所配置的模型。\n\n许可：Apache-2.0\n\n官网：https://www.graphify.com\nGitHub：https://github.com/Graphify-Labs/graphify\n使用说明：https://github.com/Graphify-Labs/graphify#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 7 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 7,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-graphify/author-graph.png",
+      "alt": "graphify 作者真实示例",
+      "width": 1400,
+      "height": 692
+    },
+    "previewSource": "https://raw.githubusercontent.com/Graphify-Labs/graphify/v8/docs/graph-hero.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库中的真实知识图谱截图，展示按社区分组的节点与关系；非本次运行成果。",
+    "en": {
+      "title": "graphify",
+      "description": "Type /graphify to map your code, docs and PDFs into a queryable knowledge graph instead of grepping. Code is parsed locally with tree-sitter, and every edge says whether it was read directly or inferred.",
+      "tags": "Knowledge graph / Code understanding / AST parsing / Local / Dependencies"
+    }
+  },
+  {
+    "id": "skill-caveman",
+    "kind": "skill",
+    "title": "caveman",
+    "resourceType": "省 Token Skill",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "省 Token / 精简输出 / 上下文压缩 / 编程 Agent",
+    "description": "让编程 Agent「说少、读少」：回答更精炼、读取更少上下文，代码保持精确，从而节省 Token 和费用。作者测试中输入 Token 减少约三分之一且答案全部正确。",
+    "source": "https://github.com/JuliusBrussee/caveman",
+    "repository": "https://github.com/JuliusBrussee/caveman",
+    "officialUrl": "https://docs.caveman.so/caveman",
+    "documentation": "https://github.com/JuliusBrussee/caveman#readme",
+    "prompt": "caveman\n\n类型：省 Token Skill\n\n用途：让编程 Agent「说少、读少」：回答更精炼、读取更少上下文，代码保持精确，从而节省 Token 和费用。作者测试中输入 Token 减少约三分之一且答案全部正确。\n\n说明：同时提供代理模式与会话报告（Caveman Learn）。\n\n许可：Apache-2.0\n\n官网：https://docs.caveman.so/caveman\nGitHub：https://github.com/JuliusBrussee/caveman\n使用说明：https://github.com/JuliusBrussee/caveman#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 8 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 8,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-caveman/author-learn-report.png",
+      "alt": "caveman 作者真实示例",
+      "width": 1254,
+      "height": 806
+    },
+    "previewSource": "https://raw.githubusercontent.com/JuliusBrussee/caveman/main/docs/assets/learn-report.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库中的真实 Caveman Learn 会话报告截图，展示节省的 Token 与上下文分析；非本次运行成果。",
+    "en": {
+      "title": "caveman",
+      "description": "Makes coding agents say less and read less — terser answers, less context read, exact code — to save tokens and cost. In the author's tests input tokens dropped by about a third with every answer still right.",
+      "tags": "Token saving / Terse output / Context compression / Coding agents"
+    }
+  },
+  {
+    "id": "skill-agent-skills",
+    "kind": "skill",
+    "title": "agent-skills",
+    "resourceType": "工程流程 Skills",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "工程流程 / 规格说明 / 计划构建 / 测试审查 / 上线",
+    "description": "Addy Osmani 把资深工程师的流程封装成 Skills：从需求规格、计划、增量构建、测试、审查到上线，用 /spec、/plan、/build 等命令让 Agent 按质量门槛一步步推进。",
+    "source": "https://github.com/addyosmani/agent-skills",
+    "repository": "https://github.com/addyosmani/agent-skills",
+    "officialUrl": "https://skills.addy.ie",
+    "documentation": "https://github.com/addyosmani/agent-skills#readme",
+    "prompt": "agent-skills\n\n类型：工程流程 Skills\n\n用途：Addy Osmani 把资深工程师的流程封装成 Skills：从需求规格、计划、增量构建、测试、审查到上线，用 /spec、/plan、/build 等命令让 Agent 按质量门槛一步步推进。\n\n许可：MIT\n\n官网：https://skills.addy.ie\nGitHub：https://github.com/addyosmani/agent-skills\n使用说明：https://github.com/addyosmani/agent-skills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 9 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 9,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/addyosmani/agent-skills",
+    "en": {
+      "title": "agent-skills",
+      "description": "Addy Osmani packages a senior engineer's workflow as Skills — spec, plan, incremental build, test, review and ship — driven by commands like /spec, /plan and /build with quality gates at each step.",
+      "tags": "Engineering workflow / Specs / Plan & build / Test & review / Ship"
+    }
+  },
+  {
+    "id": "skill-understand-anything",
+    "kind": "skill",
+    "title": "Understand-Anything",
+    "resourceType": "代码理解插件",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "代码理解 / 知识图谱 / 交互仪表盘 / 新人上手",
+    "description": "用多 Agent 流程分析整个项目，为文件、函数、类和依赖建立知识图谱，并生成可平移、搜索、提问的交互式仪表盘，适合快速读懂陌生代码库。",
+    "source": "https://github.com/Egonex-AI/Understand-Anything",
+    "repository": "https://github.com/Egonex-AI/Understand-Anything",
+    "officialUrl": "https://understand-anything.com/",
+    "documentation": "https://github.com/Egonex-AI/Understand-Anything#readme",
+    "prompt": "Understand-Anything\n\n类型：代码理解插件\n\n用途：用多 Agent 流程分析整个项目，为文件、函数、类和依赖建立知识图谱，并生成可平移、搜索、提问的交互式仪表盘，适合快速读懂陌生代码库。\n\n说明：官网提供可交互的在线演示。\n\n许可：MIT\n\n官网：https://understand-anything.com/\nGitHub：https://github.com/Egonex-AI/Understand-Anything\n使用说明：https://github.com/Egonex-AI/Understand-Anything#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 11 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 11,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/Egonex-AI/Understand-Anything",
+    "en": {
+      "title": "Understand-Anything",
+      "description": "A multi-agent pipeline that builds a knowledge graph of every file, function, class and dependency, then gives you an interactive dashboard to pan, search and question — for getting up to speed on unfamiliar code.",
+      "tags": "Code understanding / Knowledge graph / Interactive dashboard / Onboarding"
+    }
+  },
+  {
+    "id": "skill-awesome-claude-skills",
+    "kind": "skill",
+    "title": "awesome-claude-skills",
+    "resourceType": "Skills 合集清单",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "Skills 清单 / 插件合集 / 应用集成 / Composio",
+    "description": "收集上千个实用的 Claude Skills 与插件，按用途分类，适用于 Claude、Claude Code、Codex、Cursor 等；并提供连接上千个应用的插件，让 Agent 能发邮件、建任务等。",
+    "source": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "officialUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "documentation": "https://github.com/ComposioHQ/awesome-claude-skills#readme",
+    "prompt": "awesome-claude-skills\n\n类型：Skills 合集清单\n\n用途：收集上千个实用的 Claude Skills 与插件，按用途分类，适用于 Claude、Claude Code、Codex、Cursor 等；并提供连接上千个应用的插件，让 Agent 能发邮件、建任务等。\n\n说明：图中名称写作 awesome-cloud-skills，实为 ComposioHQ/awesome-claude-skills。\n\n许可：未声明\n\nGitHub：https://github.com/ComposioHQ/awesome-claude-skills\n使用说明：https://github.com/ComposioHQ/awesome-claude-skills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 13 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 13,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "en": {
+      "title": "awesome-claude-skills",
+      "description": "A curated list of 1,000+ practical Claude Skills and plugins by use case, for Claude, Claude Code, Codex, Cursor and more, plus a plugin that connects agents to 1,000+ apps.",
+      "tags": "Skills list / Plugin collection / App integrations / Composio"
+    }
+  },
+  {
+    "id": "skill-last30days-skill",
+    "kind": "skill",
+    "title": "last30days-skill",
+    "resourceType": "热点调研 Skill",
+    "category": "其他",
+    "skillTopics": [
+      "其他"
+    ],
+    "tags": "热点调研 / 社媒检索 / Reddit / X / YouTube / 汇总",
+    "description": "并行搜索 Reddit、X、YouTube、Hacker News、Polymarket 与网页上近 30 天的讨论，按点赞、互动和真实下注打分，再汇总成有依据的结论，适合追热点和做选题调研。",
+    "source": "https://github.com/mvanhorn/last30days-skill",
+    "repository": "https://github.com/mvanhorn/last30days-skill",
+    "officialUrl": "https://github.com/mvanhorn/last30days-skill",
+    "documentation": "https://github.com/mvanhorn/last30days-skill#readme",
+    "prompt": "last30days-skill\n\n类型：热点调研 Skill\n\n用途：并行搜索 Reddit、X、YouTube、Hacker News、Polymarket 与网页上近 30 天的讨论，按点赞、互动和真实下注打分，再汇总成有依据的结论，适合追热点和做选题调研。\n\n说明：Reddit、HN 等无需配置；X、YouTube 等需按引导开启。\n\n许可：MIT\n\nGitHub：https://github.com/mvanhorn/last30days-skill\n使用说明：https://github.com/mvanhorn/last30days-skill#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 14 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 14,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-last30days-skill/author-report-frame.png",
+      "alt": "last30days-skill 作者真实示例",
+      "width": 640,
+      "height": 360
+    },
+    "previewSource": "https://raw.githubusercontent.com/mvanhorn/last30days-skill/main/media/pr-assets/last30days-ad.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库演示动图中的一帧：/last30days 实际生成的「What I learned」调研报告；非本次运行成果。",
+    "en": {
+      "title": "last30days-skill",
+      "description": "Searches the last 30 days of Reddit, X, YouTube, Hacker News, Polymarket and the web in parallel, scores results by real engagement and money, then writes a grounded summary — for trend tracking and topic research.",
+      "tags": "Trend research / Social search / Reddit / X / YouTube / Summary"
+    }
+  },
+  {
+    "id": "skill-humanizer",
+    "kind": "skill",
+    "title": "humanizer",
+    "resourceType": "文案去 AI 味 Skill",
+    "category": "写作表达",
+    "skillTopics": [
+      "写作创作"
+    ],
+    "tags": "去 AI 味 / 文案润色 / 套话识别 / 写作风格",
+    "description": "依据维基百科编辑识别 AI 写作的规则改写文本，去掉「不是 X 而是 Y」、一句话金句收尾等套话与机械表达，让文字像真人写的，同时不改变原意。",
+    "source": "https://github.com/blader/humanizer",
+    "repository": "https://github.com/blader/humanizer",
+    "officialUrl": "https://github.com/blader/humanizer",
+    "documentation": "https://github.com/blader/humanizer#readme",
+    "prompt": "humanizer\n\n类型：文案去 AI 味 Skill\n\n用途：依据维基百科编辑识别 AI 写作的规则改写文本，去掉「不是 X 而是 Y」、一句话金句收尾等套话与机械表达，让文字像真人写的，同时不改变原意。\n\n说明：作者说明：为读者改写，不以绕过 AI 检测为目标。\n\n许可：MIT\n\nGitHub：https://github.com/blader/humanizer\n使用说明：https://github.com/blader/humanizer#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 15 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 15,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-humanizer/author-preview.png",
+      "alt": "humanizer 作者真实示例",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://github.com/blader/humanizer#readme",
+    "previewEvidence": "author-published-text-output",
+    "previewNote": "作者 README 中公开的改写前后对照，只做阅读排版、未改写原文；非本次运行成果。",
+    "demo": "assets/skill-humanizer/author-excerpt.html",
+    "en": {
+      "title": "humanizer",
+      "description": "Rewrites text using Wikipedia's 'Signs of AI writing' guide — cutting tells like 'not X but Y' and one-line closers — so it reads like a person wrote it without changing what it says.",
+      "tags": "De-AI writing / Copy polishing / Cliché detection / Writing style"
+    }
+  },
+  {
+    "id": "skill-i-have-adhd",
+    "kind": "skill",
+    "title": "i-have-adhd",
+    "resourceType": "输出风格 Skill",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "输出风格 / 先给行动 / 步骤编号 / 去掉铺垫",
+    "description": "让编程助手不再把答案埋在长段文字里：先给下一步行动，多步任务编号，以一个具体下一步收尾，去掉开场白、客套和题外话。无需诊断，谁都可以用。",
+    "source": "https://github.com/ayghri/i-have-adhd",
+    "repository": "https://github.com/ayghri/i-have-adhd",
+    "officialUrl": "https://github.com/ayghri/i-have-adhd",
+    "documentation": "https://github.com/ayghri/i-have-adhd#readme",
+    "prompt": "i-have-adhd\n\n类型：输出风格 Skill\n\n用途：让编程助手不再把答案埋在长段文字里：先给下一步行动，多步任务编号，以一个具体下一步收尾，去掉开场白、客套和题外话。无需诊断，谁都可以用。\n\n说明：图中写作 ayrhi/i-have-ad-hd，实为 ayghri/i-have-adhd。\n\n许可：MIT\n\nGitHub：https://github.com/ayghri/i-have-adhd\n使用说明：https://github.com/ayghri/i-have-adhd#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 16 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 16,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-i-have-adhd/author-preview.png",
+      "alt": "i-have-adhd 作者真实示例",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://github.com/ayghri/i-have-adhd#readme",
+    "previewEvidence": "author-published-text-output",
+    "previewNote": "作者 README 中公开的改写前后对照，只做阅读排版、未改写原文；非本次运行成果。",
+    "demo": "assets/skill-i-have-adhd/author-excerpt.html",
+    "en": {
+      "title": "i-have-adhd",
+      "description": "Stops your coding assistant from burying the answer: next action first, numbered steps, one concrete next step at the end, and no preamble, pleasantries or tangents.",
+      "tags": "Output style / Action first / Numbered steps / No preamble"
+    }
+  },
+  {
+    "id": "skill-marketingskills",
+    "kind": "skill",
+    "title": "marketingskills",
+    "resourceType": "营销 Skills 集合",
+    "category": "写作表达",
+    "skillTopics": [
+      "写作创作"
+    ],
+    "tags": "营销增长 / 转化优化 / 文案 / SEO / 数据分析",
+    "description": "面向技术型营销人和创业者的营销 Skills，覆盖转化率优化、文案写作、SEO、数据分析与增长工程，让编程 Agent 也能帮你做营销工作。",
+    "source": "https://github.com/coreyhaines31/marketingskills",
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "officialUrl": "https://marketing-skills.com",
+    "documentation": "https://github.com/coreyhaines31/marketingskills#readme",
+    "prompt": "marketingskills\n\n类型：营销 Skills 集合\n\n用途：面向技术型营销人和创业者的营销 Skills，覆盖转化率优化、文案写作、SEO、数据分析与增长工程，让编程 Agent 也能帮你做营销工作。\n\n许可：MIT\n\n官网：https://marketing-skills.com\nGitHub：https://github.com/coreyhaines31/marketingskills\n使用说明：https://github.com/coreyhaines31/marketingskills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 17 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 17,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/coreyhaines31/marketingskills",
+    "en": {
+      "title": "marketingskills",
+      "description": "Marketing Skills for technical marketers and founders — conversion optimisation, copywriting, SEO, analytics and growth engineering — so your coding agent can help with marketing too.",
+      "tags": "Growth marketing / CRO / Copywriting / SEO / Analytics"
+    }
+  },
+  {
+    "id": "skill-academic-research-skills",
+    "kind": "skill",
+    "title": "academic-research-skills",
+    "resourceType": "学术研究 Skills 集合",
+    "category": "写作表达",
+    "skillTopics": [
+      "写作创作"
+    ],
+    "tags": "学术写作 / 论文流程 / 文献引用 / 数据核查 / 审阅",
+    "description": "覆盖从研究到发表的完整学术流程：苏格拉底式梳理论文结构、查找文献、格式化引用、核查数据与逻辑、检查写作质量，每个阶段都停下来等你确认，决定权留给作者。",
+    "source": "https://github.com/Imbad0202/academic-research-skills",
+    "repository": "https://github.com/Imbad0202/academic-research-skills",
+    "officialUrl": "https://github.com/Imbad0202/academic-research-skills",
+    "documentation": "https://github.com/Imbad0202/academic-research-skills#readme",
+    "prompt": "academic-research-skills\n\n类型：学术研究 Skills 集合\n\n用途：覆盖从研究到发表的完整学术流程：苏格拉底式梳理论文结构、查找文献、格式化引用、核查数据与逻辑、检查写作质量，每个阶段都停下来等你确认，决定权留给作者。\n\n说明：图中写作 lmbad0202，实为 Imbad0202。作者强调它不是用来隐藏 AI 使用痕迹的工具。\n\n许可：Creative Commons（见仓库 LICENSE）\n\nGitHub：https://github.com/Imbad0202/academic-research-skills\n使用说明：https://github.com/Imbad0202/academic-research-skills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 18 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 18,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/Imbad0202/academic-research-skills",
+    "en": {
+      "title": "academic-research-skills",
+      "description": "Covers the full academic pipeline from research to publication — Socratic paper planning, references, citation formatting, data and logic checks, writing-quality review — pausing for your confirmation at every stage.",
+      "tags": "Academic writing / Paper pipeline / Citations / Data checks / Review"
+    }
+  },
+  {
+    "id": "skill-obsidian-skills",
+    "kind": "skill",
+    "title": "obsidian-skills",
+    "resourceType": "Obsidian Skills",
+    "category": "其他",
+    "skillTopics": [
+      "其他"
+    ],
+    "tags": "Obsidian / 笔记管理 / Markdown / JSON Canvas / Bases",
+    "description": "教 Agent 使用 Obsidian CLI 以及 Markdown、Bases、JSON Canvas 等开放格式，让它能直接读写和整理你的 Obsidian 笔记库。",
+    "source": "https://github.com/kepano/obsidian-skills",
+    "repository": "https://github.com/kepano/obsidian-skills",
+    "officialUrl": "https://github.com/kepano/obsidian-skills",
+    "documentation": "https://github.com/kepano/obsidian-skills#readme",
+    "prompt": "obsidian-skills\n\n类型：Obsidian Skills\n\n用途：教 Agent 使用 Obsidian CLI 以及 Markdown、Bases、JSON Canvas 等开放格式，让它能直接读写和整理你的 Obsidian 笔记库。\n\n说明：作者 kepano 为 Obsidian 的负责人。\n\n许可：MIT\n\nGitHub：https://github.com/kepano/obsidian-skills\n使用说明：https://github.com/kepano/obsidian-skills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 19 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 19,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/kepano/obsidian-skills",
+    "en": {
+      "title": "obsidian-skills",
+      "description": "Teaches agents to use the Obsidian CLI and open formats such as Markdown, Bases and JSON Canvas, so they can read, write and organise your Obsidian vault.",
+      "tags": "Obsidian / Note management / Markdown / JSON Canvas / Bases"
+    }
+  },
+  {
+    "id": "skill-scientific-agent-skills",
+    "kind": "skill",
+    "title": "scientific-agent-skills",
+    "resourceType": "科研 Skills 集合",
+    "category": "其他",
+    "skillTopics": [
+      "其他"
+    ],
+    "tags": "科研 / 生物化学 / 医学 / 药物发现 / 科学数据库",
+    "description": "177 个经过验证的科研 Skills 与 100 多个科学数据库，覆盖生物、化学、医学与药物发现，可让支持 Agent Skills 标准的 AI 助手胜任科研工作。",
+    "source": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "officialUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "documentation": "https://github.com/K-Dense-AI/scientific-agent-skills#readme",
+    "prompt": "scientific-agent-skills\n\n类型：科研 Skills 集合\n\n用途：177 个经过验证的科研 Skills 与 100 多个科学数据库，覆盖生物、化学、医学与药物发现，可让支持 Agent Skills 标准的 AI 助手胜任科研工作。\n\n说明：原名 Claude Scientific Skills；相关论文见 arXiv。\n\n许可：MIT\n\nGitHub：https://github.com/K-Dense-AI/scientific-agent-skills\n使用说明：https://github.com/K-Dense-AI/scientific-agent-skills#readme\n\n收录来源：「全球高星 Skill TOP 20」榜单第 20 名（2026-10-05 数据快照）；GitHub 仓库已核实。\n\n收录状态：仅收藏资源，未安装或执行。",
+    "collection": "全球高星 Skill TOP 20",
+    "userProvidedRank": 20,
+    "addedAt": "2026-10-24",
+    "verifiedAt": "2026-10-24",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
+    "previewSource": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "en": {
+      "title": "scientific-agent-skills",
+      "description": "177 validated research Skills plus 100+ scientific databases across biology, chemistry, medicine and drug discovery, turning any Agent Skills–compatible assistant into a research aide.",
+      "tags": "Science / Biology & chemistry / Medicine / Drug discovery / Scientific databases"
+    }
+  },
+  {
     "id": "website-allan-xin",
     "kind": "website",
     "title": "优设美地 Yosemite",
