@@ -1,5 +1,590 @@
 [
   {
+    "id": "website-refero-styles",
+    "kind": "website",
+    "title": "Refero Styles",
+    "category": "界面设计",
+    "topics": [
+      "设计素材"
+    ],
+    "tags": "网站风格 / DESIGN.md / 配色字体 / 设计参考 / AI 编程",
+    "description": "收录数千个真实网站的视觉风格，可对比截图、配色、字体与间距，并提供可交给 AI 编程工具读取的 DESIGN.md，适合为新项目确定设计方向。",
+    "source": "https://styles.refero.design/",
+    "officialUrl": "https://styles.refero.design/",
+    "prompt": "Refero Styles\n\n用途：收录数千个真实网站的视觉风格，可对比截图、配色、字体与间距，并提供可交给 AI 编程工具读取的 DESIGN.md，适合为新项目确定设计方向。\n\n收录来源：优设美地「网站灵感」栏目的 1,342 个网站均来自这里。\n\n官网：https://styles.refero.design/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-refero-styles/official-site.png",
+      "alt": "Refero Styles 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://styles.refero.design/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "Refero Styles",
+      "description": "Thousands of real website styles to compare by screenshot, colour, type and spacing, each with an AI-readable DESIGN.md — handy for picking a design direction for a new project.",
+      "tags": "Website styles / DESIGN.md / Colour & type / Design reference / AI coding"
+    }
+  },
+  {
+    "id": "website-promptmotion",
+    "kind": "website",
+    "title": "PromptMotion",
+    "category": "动画动效",
+    "topics": [
+      "动效灵感"
+    ],
+    "tags": "动效视频 / 提示词 / Claude / 动效灵感 / 原帖出处",
+    "description": "收集用 AI 生成的动效视频，并附上背后的提示词与 Skill，可按类型筛选、查看原帖出处，适合寻找动效灵感和可复用的提示词写法。",
+    "source": "https://prompt-motion.com/",
+    "officialUrl": "https://prompt-motion.com/",
+    "prompt": "PromptMotion\n\n用途：收集用 AI 生成的动效视频，并附上背后的提示词与 Skill，可按类型筛选、查看原帖出处，适合寻找动效灵感和可复用的提示词写法。\n\n收录来源：优设美地「精美动画」栏目的动效多数经由这里整理；效果版权归各原作者。\n\n许可：各动效版权归原作者，公开预览不代表可转载或商用。\n\n官网：https://prompt-motion.com/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-promptmotion/official-site.png",
+      "alt": "PromptMotion 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://prompt-motion.com/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "PromptMotion",
+      "description": "A collection of AI-made motion videos together with the prompts and Skills behind them, filterable by type and linked to the original posts — good for motion ideas and reusable prompt patterns.",
+      "tags": "Motion videos / Prompts / Claude / Motion inspiration / Original posts"
+    }
+  },
+  {
+    "id": "website-unicorn-studio",
+    "kind": "website",
+    "title": "Unicorn Studio",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "tags": "着色器 / 交互图形 / 可视化编辑 / 网页嵌入 / 3D",
+    "description": "在可视化画布里用着色器、媒体、3D 与交互动效制作网页图形，并导出为可嵌入的组件，适合做首屏背景和品牌视觉。",
+    "source": "https://www.unicorn.studio/",
+    "officialUrl": "https://www.unicorn.studio/",
+    "prompt": "Unicorn Studio\n\n用途：在可视化画布里用着色器、媒体、3D 与交互动效制作网页图形，并导出为可嵌入的组件，适合做首屏背景和品牌视觉。\n\n许可：托管场景按 Unicorn Studio 服务条款使用。\n\n官网：https://www.unicorn.studio/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-unicorn-studio/official-site.jpg",
+      "alt": "Unicorn Studio 官方网页实际截图",
+      "width": 800,
+      "height": 844
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://www.unicorn.studio/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "Unicorn Studio",
+      "description": "Build web graphics with shaders, media, 3D and interactive motion on a visual canvas, then embed them as components — great for hero backgrounds and brand visuals.",
+      "tags": "Shaders / Interactive graphics / Visual editor / Web embeds / 3D"
+    }
+  },
+  {
+    "id": "website-cult-ui",
+    "kind": "website",
+    "title": "Cult UI",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "shadcn/ui / React / Tailwind / Motion / 开源组件",
+    "description": "面向 shadcn/ui 项目的动效组件库，提供 150 多个用 Tailwind CSS 与 Motion 制作的组件，开源免费，可直接复制进项目。",
+    "source": "https://www.cult-ui.com/",
+    "officialUrl": "https://www.cult-ui.com/",
+    "prompt": "Cult UI\n\n用途：面向 shadcn/ui 项目的动效组件库，提供 150 多个用 Tailwind CSS 与 Motion 制作的组件，开源免费，可直接复制进项目。\n\n许可：MIT。\n\n官网：https://www.cult-ui.com/\nGitHub：https://github.com/nolly-studio/cult-ui\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-cult-ui/official-site.png",
+      "alt": "Cult UI 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://www.cult-ui.com/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "repository": "https://github.com/nolly-studio/cult-ui",
+    "en": {
+      "title": "Cult UI",
+      "description": "A motion-rich component library for shadcn/ui projects: 150+ free, open-source components built with Tailwind CSS and Motion, ready to copy into your app.",
+      "tags": "shadcn/ui / React / Tailwind / Motion / Open-source components"
+    }
+  },
+  {
+    "id": "website-amicro",
+    "kind": "website",
+    "title": "Amicro",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "React / 微交互 / 转场 / 复制粘贴 / Tailwind",
+    "description": "可复制粘贴的 React 动效组件合集，覆盖微交互、转场和界面特效，适合给已有页面补上细腻的动态反馈。",
+    "source": "https://amicro.vercel.app/",
+    "officialUrl": "https://amicro.vercel.app/",
+    "prompt": "Amicro\n\n用途：可复制粘贴的 React 动效组件合集，覆盖微交互、转场和界面特效，适合给已有页面补上细腻的动态反馈。\n\n许可：MIT。\n\n官网：https://amicro.vercel.app/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-amicro/official-site.png",
+      "alt": "Amicro 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://amicro.vercel.app/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "Amicro",
+      "description": "A copy-paste set of React motion components covering micro-interactions, transitions and UI effects — good for adding polished feedback to an existing page.",
+      "tags": "React / Micro-interactions / Transitions / Copy-paste / Tailwind"
+    }
+  },
+  {
+    "id": "website-skiper-ui",
+    "kind": "website",
+    "title": "Skiper UI",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "shadcn/ui / Next.js / 创意组件 / CLI 安装",
+    "description": "为 Next.js 项目提供风格少见的创意组件，可通过 shadcn CLI 安装后直接修改，适合想让界面更有记忆点的页面。",
+    "source": "https://skiper-ui.com/",
+    "officialUrl": "https://skiper-ui.com/",
+    "prompt": "Skiper UI\n\n用途：为 Next.js 项目提供风格少见的创意组件，可通过 shadcn CLI 安装后直接修改，适合想让界面更有记忆点的页面。\n\n许可：使用其自定条款：免费组件需署名，Pro 组件需购买。\n\n官网：https://skiper-ui.com/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-skiper-ui/official-site.png",
+      "alt": "Skiper UI 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://skiper-ui.com/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "Skiper UI",
+      "description": "Uncommon, creative components for Next.js that install through the shadcn CLI and stay easy to edit — for pages that need a more memorable look.",
+      "tags": "shadcn/ui / Next.js / Creative components / CLI install"
+    }
+  },
+  {
+    "id": "website-bundui",
+    "kind": "website",
+    "title": "Bundui",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "Tailwind CSS / shadcn/ui / UI 区块 / React / 示例",
+    "description": "基于 Tailwind CSS、React 与 shadcn/ui 的组件和页面区块合集，包含 200 多个手工制作的组件与示例，适合快速拼出完整页面。",
+    "source": "https://bundui.io/",
+    "officialUrl": "https://bundui.io/",
+    "prompt": "Bundui\n\n用途：基于 Tailwind CSS、React 与 shadcn/ui 的组件和页面区块合集，包含 200 多个手工制作的组件与示例，适合快速拼出完整页面。\n\n许可：官方仓库核心实现为 MIT；单个组件以官网说明为准。\n\n官网：https://bundui.io/\nGitHub：https://github.com/bundui/components\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-bundui/official-site.png",
+      "alt": "Bundui 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://bundui.io/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "repository": "https://github.com/bundui/components",
+    "en": {
+      "title": "Bundui",
+      "description": "Components and page blocks built on Tailwind CSS, React and shadcn/ui — 200+ handcrafted pieces and examples for assembling full pages quickly.",
+      "tags": "Tailwind CSS / shadcn/ui / UI blocks / React / Examples"
+    }
+  },
+  {
+    "id": "website-animata",
+    "kind": "website",
+    "title": "Animata",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "React / Tailwind / 动效组件 / Next.js / 开源",
+    "description": "数百个可复制粘贴的 React 动画与交互组件，基于 Tailwind CSS，适配深浅主题，开源免费，适合 Next.js 项目快速加入动效。",
+    "source": "https://animata.design/",
+    "officialUrl": "https://animata.design/",
+    "prompt": "Animata\n\n用途：数百个可复制粘贴的 React 动画与交互组件，基于 Tailwind CSS，适配深浅主题，开源免费，适合 Next.js 项目快速加入动效。\n\n许可：MIT。\n\n官网：https://animata.design/\nGitHub：https://github.com/codse/animata\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-animata/official-site.png",
+      "alt": "Animata 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://animata.design/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "repository": "https://github.com/codse/animata",
+    "en": {
+      "title": "Animata",
+      "description": "Hundreds of copy-paste React animation and interaction components built with Tailwind CSS, theme-aware and open source — a quick way to add motion to Next.js projects.",
+      "tags": "React / Tailwind / Motion components / Next.js / Open source"
+    }
+  },
+  {
+    "id": "website-beautiful-ui",
+    "kind": "website",
+    "title": "Beautiful UI",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "AI 界面 / 对话组件 / 思考状态 / 人工确认 / React",
+    "description": "专为 AI 产品打造的精致组件，涵盖对话、思考中状态、人工确认审批等场景，适合搭建 Agent 和聊天类界面。",
+    "source": "https://www.beautifului.dev/",
+    "officialUrl": "https://www.beautifului.dev/",
+    "prompt": "Beautiful UI\n\n用途：专为 AI 产品打造的精致组件，涵盖对话、思考中状态、人工确认审批等场景，适合搭建 Agent 和聊天类界面。\n\n许可：MIT。\n\n官网：https://www.beautifului.dev/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-beautiful-ui/official-site.png",
+      "alt": "Beautiful UI 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://www.beautifului.dev/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "Beautiful UI",
+      "description": "Finely crafted components for AI products — chat, thinking states, human-in-the-loop approvals and more — for building agent and chat interfaces.",
+      "tags": "AI interfaces / Chat components / Thinking states / Approvals / React"
+    }
+  },
+  {
+    "id": "website-rare-ui",
+    "kind": "website",
+    "title": "Rare UI",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "React / Motion / Tailwind / shadcn CLI / 动效组件",
+    "description": "收集少见的 React 动效组件，基于 Tailwind CSS 与 Motion，可通过 shadcn CLI 或 MCP 安装，适合给界面增加有辨识度的动画。",
+    "source": "https://www.rareui.com/",
+    "officialUrl": "https://www.rareui.com/",
+    "prompt": "Rare UI\n\n用途：收集少见的 React 动效组件，基于 Tailwind CSS 与 Motion，可通过 shadcn CLI 或 MCP 安装，适合给界面增加有辨识度的动画。\n\n许可：MIT + Commons Clause + 署名要求：可用于自己的项目，不得再分发或出售组件本身。\n\n官网：https://www.rareui.com/\nGitHub：https://github.com/swamimalode07/rare-ui\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-rare-ui/official-site.png",
+      "alt": "Rare UI 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://www.rareui.com/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "repository": "https://github.com/swamimalode07/rare-ui",
+    "en": {
+      "title": "Rare UI",
+      "description": "Rare animated React components built with Tailwind CSS and Motion, installable through the shadcn CLI or MCP — for adding distinctive animation to an interface.",
+      "tags": "React / Motion / Tailwind / shadcn CLI / Motion components"
+    }
+  },
+  {
+    "id": "website-bencho",
+    "kind": "website",
+    "title": "Bencho",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "React / 微交互 / 交互区块 / 实时演示",
+    "description": "可在线操作的 React 交互区块与微交互库，所有效果都是真实运行而非录屏，可调整参数后带进项目。",
+    "source": "https://bencho.dev/",
+    "officialUrl": "https://bencho.dev/",
+    "prompt": "Bencho\n\n用途：可在线操作的 React 交互区块与微交互库，所有效果都是真实运行而非录屏，可调整参数后带进项目。\n\n许可：组件代码为 MIT，网站与照片除外。\n\n官网：https://bencho.dev/\nGitHub：https://github.com/cabralorenzo/bencho\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-bencho/official-site.png",
+      "alt": "Bencho 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://bencho.dev/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "repository": "https://github.com/cabralorenzo/bencho",
+    "en": {
+      "title": "Bencho",
+      "description": "A library of live React interaction blocks and micro-interactions — everything runs for real rather than as recordings — that you can tweak and take into your project.",
+      "tags": "React / Micro-interactions / Interactive blocks / Live demos"
+    }
+  },
+  {
+    "id": "website-dot-matrix",
+    "kind": "website",
+    "title": "Dot Matrix",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "加载动画 / 点阵 / React / shadcn registry",
+    "description": "点阵风格的加载动画组件库，用 React 与 TypeScript 实现，通过 shadcn registry 安装成本地代码，适合给加载状态加一点个性。",
+    "source": "https://dotmatrix.zzzzshawn.cloud/",
+    "officialUrl": "https://dotmatrix.zzzzshawn.cloud/",
+    "prompt": "Dot Matrix\n\n用途：点阵风格的加载动画组件库，用 React 与 TypeScript 实现，通过 shadcn registry 安装成本地代码，适合给加载状态加一点个性。\n\n许可：自定专有许可：可用于个人和商业产品，但不得把组件单独或作为合集重新发布、分发或出售。\n\n官网：https://dotmatrix.zzzzshawn.cloud/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-dot-matrix/official-site.png",
+      "alt": "Dot Matrix 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://dotmatrix.zzzzshawn.cloud/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "Dot Matrix",
+      "description": "Dot-matrix loading animations as React and TypeScript components, installed as local code through the shadcn registry — adds character to loading states.",
+      "tags": "Loaders / Dot matrix / React / shadcn registry"
+    }
+  },
+  {
+    "id": "website-stringtune",
+    "kind": "website",
+    "title": "StringTune",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "JavaScript / 网页特效 / 滚动动效 / 模块化 / Fiddle.Digital",
+    "description": "Fiddle.Digital 出品的高性能 JavaScript 网页特效库，以模块方式提供滚动、光标与文字等效果，并附教程示例，适合做有表现力的网站。",
+    "source": "https://string-tune.fiddle.digital/",
+    "officialUrl": "https://string-tune.fiddle.digital/",
+    "prompt": "StringTune\n\n用途：Fiddle.Digital 出品的高性能 JavaScript 网页特效库，以模块方式提供滚动、光标与文字等效果，并附教程示例，适合做有表现力的网站。\n\n许可：库本身为 MIT；官网教程文件未另附许可。\n\n官网：https://string-tune.fiddle.digital/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-stringtune/official-site.jpg",
+      "alt": "StringTune 官方网页实际截图",
+      "width": 800,
+      "height": 844
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://string-tune.fiddle.digital/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "StringTune",
+      "description": "A high-performance JavaScript web-effects library from Fiddle.Digital, offering scroll, cursor, text and other effects as modules, with tutorials — for expressive websites.",
+      "tags": "JavaScript / Web effects / Scroll motion / Modular / Fiddle.Digital"
+    }
+  },
+  {
+    "id": "website-libraries-dev",
+    "kind": "website",
+    "title": "Libraries.dev",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "AI 界面 / React / 动态边框 / 语音可视化 / npm",
+    "description": "为 AI 界面准备的开源 React 特效，包括动态边框、思考指示、语音可视化、机器人头像和液态金属等，可从 npm 安装。",
+    "source": "https://libraries.dev/",
+    "officialUrl": "https://libraries.dev/",
+    "prompt": "Libraries.dev\n\n用途：为 AI 界面准备的开源 React 特效，包括动态边框、思考指示、语音可视化、机器人头像和液态金属等，可从 npm 安装。\n\n许可：MIT；部分着色器依赖为 Apache-2.0。\n\n官网：https://libraries.dev/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-libraries-dev/official-site.png",
+      "alt": "Libraries.dev 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://libraries.dev/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "Libraries.dev",
+      "description": "Open-source React effects for AI interfaces — animated borders, thinking indicators, voice visualisers, bot avatars, liquid metal and more — installable from npm.",
+      "tags": "AI interfaces / React / Animated borders / Voice visualiser / npm"
+    }
+  },
+  {
+    "id": "website-liquid-orb-editor",
+    "kind": "website",
+    "title": "Liquid Orb Editor",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "tags": "WebGPU / 液态玻璃 / 球体 / SwiftUI / Metal",
+    "description": "实时调节液态玻璃球的折射、色散与光泽，并可导出为网页或 SwiftUI / Metal 代码，适合制作 AI 助手、语音状态等发光球体。",
+    "source": "https://lersent001.github.io/orb/",
+    "officialUrl": "https://lersent001.github.io/orb/",
+    "prompt": "Liquid Orb Editor\n\n用途：实时调节液态玻璃球的折射、色散与光泽，并可导出为网页或 SwiftUI / Metal 代码，适合制作 AI 助手、语音状态等发光球体。\n\n许可：MIT。\n\n官网：https://lersent001.github.io/orb/\nGitHub：https://github.com/LerSent001/orb\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-liquid-orb-editor/official-site.png",
+      "alt": "Liquid Orb Editor 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://lersent001.github.io/orb/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "repository": "https://github.com/LerSent001/orb",
+    "en": {
+      "title": "Liquid Orb Editor",
+      "description": "Tune a real-time WebGPU liquid-glass orb — refraction, dispersion, sheen — and export it for the web or SwiftUI / Metal; great for AI-assistant and voice-state orbs.",
+      "tags": "WebGPU / Liquid glass / Orb / SwiftUI / Metal"
+    }
+  },
+  {
+    "id": "website-avatar-lab",
+    "kind": "website",
+    "title": "Avatar Lab",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "tags": "程序化头像 / 2D 角色 / 表情动画 / React / SVG",
+    "description": "在浏览器里程序化生成 2D 头像，调整表情与动画后导出 React、JavaScript、SVG 或 PNG，适合做产品吉祥物和用户头像。",
+    "source": "https://avatars.bible-strong.app/",
+    "officialUrl": "https://avatars.bible-strong.app/",
+    "prompt": "Avatar Lab\n\n用途：在浏览器里程序化生成 2D 头像，调整表情与动画后导出 React、JavaScript、SVG 或 PNG，适合做产品吉祥物和用户头像。\n\n许可：AGPL-3.0：在网络服务中使用修改版需公开对应源码。\n\n官网：https://avatars.bible-strong.app/\nGitHub：https://github.com/smontlouis/bible-strong-avatar-lab\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-avatar-lab/official-site.png",
+      "alt": "Avatar Lab 官方网页实际截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://avatars.bible-strong.app/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "repository": "https://github.com/smontlouis/bible-strong-avatar-lab",
+    "en": {
+      "title": "Avatar Lab",
+      "description": "Generate procedural 2D avatars in the browser, adjust expressions and animation, then export React, JavaScript, SVG or PNG — for product mascots and user avatars.",
+      "tags": "Procedural avatars / 2D characters / Expression animation / React / SVG"
+    }
+  },
+  {
+    "id": "website-liquid-glass-studio",
+    "kind": "website",
+    "title": "Liquid Glass Studio",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "tags": "液态玻璃 / WebGL2 / WebGPU / 苹果风格 / 参数调节",
+    "description": "在网页上重现苹果 Liquid Glass 效果，可用 WebGL2 或 WebGPU 渲染，并逐项调节折射、色散、菲涅尔反射与高光，适合研究玻璃质感界面。",
+    "source": "https://liquid-glass-studio.vercel.app/",
+    "officialUrl": "https://liquid-glass-studio.vercel.app/",
+    "prompt": "Liquid Glass Studio\n\n用途：在网页上重现苹果 Liquid Glass 效果，可用 WebGL2 或 WebGPU 渲染，并逐项调节折射、色散、菲涅尔反射与高光，适合研究玻璃质感界面。\n\n许可：MIT。\n\n官网：https://liquid-glass-studio.vercel.app/\nGitHub：https://github.com/iyinchao/liquid-glass-studio\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-liquid-glass-studio/official-site.jpg",
+      "alt": "Liquid Glass Studio 官方网页实际截图",
+      "width": 800,
+      "height": 844
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://liquid-glass-studio.vercel.app/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "repository": "https://github.com/iyinchao/liquid-glass-studio",
+    "en": {
+      "title": "Liquid Glass Studio",
+      "description": "Recreates Apple's Liquid Glass look on the web with WebGL2 or WebGPU, with controls for refraction, dispersion, Fresnel reflection and highlights — for studying glassy UI.",
+      "tags": "Liquid glass / WebGL2 / WebGPU / Apple style / Parameter tuning"
+    }
+  },
+  {
+    "id": "website-codepen",
+    "kind": "website",
+    "title": "CodePen",
+    "category": "其他",
+    "topics": [
+      "动效灵感",
+      "创作工具"
+    ],
+    "tags": "在线编辑器 / 前端社区 / 代码示例 / CSS 动画",
+    "description": "在线前端代码编辑器与社区，可直接编写和预览 HTML、CSS、JavaScript，并浏览大量公开示例，适合找动效写法和快速做原型。",
+    "source": "https://codepen.io/",
+    "officialUrl": "https://codepen.io/",
+    "prompt": "CodePen\n\n用途：在线前端代码编辑器与社区，可直接编写和预览 HTML、CSS、JavaScript，并浏览大量公开示例，适合找动效写法和快速做原型。\n\n许可：公开示例的许可以各作者标注为准。\n\n官网：https://codepen.io/\n\n发现途径：优设美地（allan.xin）收录的来源；介绍为本工具箱自写。\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-codepen/official-site.jpg",
+      "alt": "CodePen 官方网页实际截图",
+      "width": 800,
+      "height": 844
+    },
+    "previewNote": "2026-10-23 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "previewSource": "https://codepen.io/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-23",
+    "verifiedAt": "2026-10-23",
+    "collection": "优设美地来源",
+    "en": {
+      "title": "CodePen",
+      "description": "An online front-end editor and community for writing and previewing HTML, CSS and JavaScript, with a huge library of public demos — for finding motion techniques and quick prototypes.",
+      "tags": "Online editor / Front-end community / Code demos / CSS animation"
+    }
+  },
+  {
     "id": "skill-fredtalk",
     "title": "FredTalk",
     "kind": "skill",
