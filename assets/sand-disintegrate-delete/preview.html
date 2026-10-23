@@ -7,12 +7,12 @@
 .bubble.photo{width:128px;height:84px;padding:0;border-radius:12px;background:linear-gradient(180deg,#f6b26b 0%,#f4cfa0 38%,#7cc0d6 40%,#3b8ea8 70%,#e9d9b5 71%,#d8c49a 100%)}
 .menu{position:absolute;z-index:3;display:none;padding:4px;border-radius:10px;background:#f2f2f2;box-shadow:0 6px 20px #0008}.menu button{min-height:0;padding:5px 12px;border:0;border-radius:7px;background:transparent;color:#e5484d;font-size:10px;font-weight:700}.menu button:hover{background:#e6e6e6}
 canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
-</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / MOTION STUDY</div><h1>碎沙删除</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone" id="phone"><div class="head">阿杰<small>在线</small></div><div class="chat" id="chat"></div><div class="menu" id="menu" role="menu"><button type="button" role="menuitem" id="del">删除</button></div><canvas id="fx" aria-hidden="true"></canvas></div></section><aside class="side"><div class="metric"><small>GRAINS</small><strong id="grains">0</strong></div><div class="metric"><small>SWEEP</small><strong id="sweep">0%</strong></div><p class="note">长按任意一条消息（或用键盘聚焦后按 Delete），选「删除」：气泡按像素碎成约 1500 粒沙，从左到右约 0.8 秒扫完，往右上方飘走；原气泡同步被擦掉，下面的消息上移补位。</p><button id="replay">恢复全部消息</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script>
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / MOTION STUDY</div><h1>碎沙删除</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone" id="phone"><div class="head">阿杰<small>在线</small></div><div class="chat" id="chat"></div><div class="menu" id="menu" role="menu"><button type="button" role="menuitem" id="del">删除</button></div><canvas id="fx" aria-hidden="true"></canvas></div></section><aside class="side"><div class="metric"><small>GRAINS</small><strong id="grains">0</strong></div><div class="metric"><small>SWEEP</small><strong id="sweep">0%</strong></div><p class="note">点击或长按任意一条消息，选「删除」（键盘聚焦后按 Delete 也可）：气泡按像素碎成约 1500 粒沙，从左到右约 0.8 秒扫完，往右上方飘走；原气泡同步被擦掉，下面的消息上移补位。</p><button id="demo">删除一条消息</button> <button id="replay">恢复全部消息</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script>
 const $=id=>document.getElementById(id),reduced=matchMedia('(prefers-reduced-motion:reduce)');
 function fit(){$('stage').style.transform=`translate(-50%,-50%) scale(${Math.min(innerWidth/900,innerHeight/590)})`}new ResizeObserver(fit).observe(document.body);fit();
 const PHOTO=[[0,'#f6b26b'],[.38,'#f4cfa0'],[.4,'#7cc0d6'],[.7,'#3b8ea8'],[.71,'#e9d9b5'],[1,'#d8c49a']];
 const DATA=[['', '海边那几张照片发我呗'],['me','等我挑一下'],['me','发错了，是这张'],['me',null],['', '这张绝了！']];
-function load(){$('chat').innerHTML=DATA.map(([who,t])=>`<div class="msg ${who}"><button type="button" class="bubble${t?'':' photo'}" aria-label="${t||'图片消息'}，长按或按 Delete 删除">${t||''}</button></div>`).join('')}
+function load(){$('chat').innerHTML=DATA.map(([who,t])=>`<div class="msg ${who}"><button type="button" class="bubble${t?'':' photo'}" aria-label="${t||'图片消息'}，点击、长按或按 Delete 删除">${t||''}</button></div>`).join('')}
 const cv=$('fx'),ctx=cv.getContext('2d');let W=0,H=0,dpr=0,grains=[],raf=0,last=0,target=null;
 function size(){const w=cv.offsetWidth,h=cv.offsetHeight,d=devicePixelRatio||1;if(w===W&&h===H&&d===dpr)return;W=w;H=h;dpr=d;cv.width=w*d;cv.height=h*d;ctx.setTransform(d,0,0,d,0,0)}
 // Layout-space rectangle of an element inside the phone (the stage itself is CSS-scaled).
@@ -35,9 +35,15 @@ grains=grains.filter(g=>now<g.start||g.age<g.life);if(grains.length)raf=requestA
 // Long-press opens the menu; Delete / Backspace on a focused bubble deletes directly.
 let pressTimer;$('chat').addEventListener('pointerdown',e=>{const b=e.target.closest('.bubble');if(!b)return;clearTimeout(pressTimer);pressTimer=setTimeout(()=>showMenu(b),450)});['pointerup','pointerleave','pointercancel'].forEach(n=>$('chat').addEventListener(n,()=>clearTimeout(pressTimer)));
 $('chat').addEventListener('contextmenu',e=>{const b=e.target.closest('.bubble');if(b){e.preventDefault();showMenu(b)}});
+// A plain click also opens the menu, so the effect is discoverable without knowing about long-press.
+$('chat').addEventListener('click',e=>{const b=e.target.closest('.bubble');if(b&&!b.closest('.msg').dataset.gone)showMenu(b)});
 $('chat').addEventListener('keydown',e=>{const b=e.target.closest('.bubble');if(b&&(e.key==='Delete'||e.key==='Backspace')){e.preventDefault();disintegrate(b)}});
 function showMenu(b){target=b;const r=rectIn(b),m=$('menu');m.style.display='block';m.style.left=Math.min(r.x,228-12-64)+'px';m.style.top=Math.max(40,r.y-34)+'px';$('del').focus({preventScroll:true})}function hideMenu(){$('menu').style.display='none'}
 $('del').onclick=()=>{if(target)disintegrate(target)};document.addEventListener('pointerdown',e=>{if(!e.target.closest('#menu')&&!e.target.closest('.bubble'))hideMenu()});
 $('replay').onclick=()=>{grains=[];hideMenu();load();$('grains').textContent='0';$('sweep').textContent='0%'};
-load();size();new ResizeObserver(size).observe(cv);if(location.hash==='#cover')setTimeout(()=>disintegrate(document.querySelector('.bubble.photo')),200);
+const nextBubble=()=>[...$('chat').querySelectorAll('.msg:not([data-gone]) .bubble')].find(b=>b.classList.contains('photo'))||$('chat').querySelector('.msg:not([data-gone]) .bubble');
+$('demo').onclick=()=>{const b=nextBubble();if(b)disintegrate(b);else $('replay').click()};
+load();size();new ResizeObserver(size).observe(cv);
+// Play once on open so the effect is visible right away.
+if(!reduced.matches)setTimeout(()=>{const b=nextBubble();if(b)disintegrate(b)},location.hash==='#cover'?200:900);
 </script></body></html>
