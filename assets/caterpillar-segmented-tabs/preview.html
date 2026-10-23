@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>分段标签 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><style>
+#stage{height:590px;grid-template-columns:600px 220px}.screen{height:430px;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,#3b3b3b,#151515)}
+.phone{position:relative;width:228px;height:410px;border:6px solid #2b2b2b;border-radius:34px;background:#121214;color:#f2f2f2;overflow:hidden;box-shadow:0 22px 50px #0009}
+.tabs{position:relative;display:flex;justify-content:center;gap:4px;padding:28px 0 0;height:66px}.tab{min-height:0;height:36px;padding:0 12px;border:0;border-radius:10px;background:transparent;color:#8a8a8a;font-size:13px;font-weight:600}.tab:hover{background:transparent}.tab:focus-visible{outline:2px solid #ffd43b;outline-offset:0}
+.line{position:absolute;bottom:2px;height:3px;border-radius:3px;background:#ffd43b;will-change:left,width}
+.viewport{position:absolute;left:0;right:0;top:66px;bottom:0;overflow:hidden;touch-action:none;cursor:grab}.viewport:active{cursor:grabbing}.track{display:flex;height:100%;will-change:transform}
+.pg{flex:0 0 100%;display:grid;grid-template-columns:1fr 1fr;align-content:start;gap:8px;padding:10px}.pg div{border-radius:12px;background:#1f1f24;overflow:hidden;font-size:9px;color:#cfcfcf}.pg i{display:block;height:74px}.pg span{display:block;padding:6px 7px 8px}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / MOTION STUDY</div><h1>分段标签</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="tabs" id="tabs" role="tablist" aria-label="内容分区"><span class="line" id="line" aria-hidden="true"></span></div><div class="viewport" id="viewport"><div class="track" id="track"></div></div></div></section><aside class="side"><div class="metric"><small>PAGE</small><strong id="pos">0.00</strong></div><div class="metric"><small>LINE WIDTH</small><strong id="width">0 px</strong></div><p class="note">左右拖动下方内容：下划线实时跟手，途中像毛毛虫先伸长再收尾，文字颜色和粗细跟着渐变；松手按距离和速度吸附并轻微回弹。点标签时下划线和内容一起滑过去。</p><button id="replay">自动演示一遍</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script>
+const $=id=>document.getElementById(id),reduced=matchMedia('(prefers-reduced-motion:reduce)');
+function fit(){$('stage').style.transform=`translate(-50%,-50%) scale(${Math.min(innerWidth/900,innerHeight/590)})`}new ResizeObserver(fit).observe(document.body);fit();
+const names=['关注','发现','附近'],hues=[[168,72],[28,80],[205,70]],captions=[['爱妮岛 C 线，比 A 线人少一半','推开窗就是海的民宿','五渔村拍照机位合集','海边凉亭看日落'],['本周热门：潟湖皮划艇','清迈夜市吃什么','冰岛自驾 7 日','京都红叶季'],['1.2 km · 海边咖啡','800 m · 椰子冰','2 km · 浮潜点','3 km · 日落码头']];
+$('tabs').insertAdjacentHTML('beforeend',names.map((n,i)=>`<button class="tab" type="button" role="tab" aria-selected="${i===0}" data-i="${i}">${n}</button>`).join(''));
+$('track').innerHTML=names.map((n,i)=>`<section class="pg" role="tabpanel" aria-label="${n}">${captions[i].map((c,k)=>`<div><i style="background:linear-gradient(${140+k*30}deg,hsl(${hues[i][0]+k*12} ${hues[i][1]}% 55%),hsl(${hues[i][0]+k*12+30} 45% 22%))"></i><span>${c}</span></div>`).join('')}</section>`).join('');
+const tabs=[...$('tabs').querySelectorAll('.tab')];const span=i=>{const t=tabs[i],pad=14;return {l:t.offsetLeft+pad,r:t.offsetLeft+t.offsetWidth-pad}};
+let pos=0,target=0,v=0,raf=0,last=0;const W=()=>$('viewport').clientWidth,clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+// Caterpillar: between tab i and i+1 the leading edge covers its distance in the first half, the trailing edge in the second.
+function draw(){const p=clamp(pos,0,2),i=Math.min(1,Math.floor(p)),f=p-i,a=span(i),b=span(i+1),lerp=(x,y,t)=>x+(y-x)*t;let l=lerp(a.l,b.l,clamp(2*f-1,0,1)),r=lerp(a.r,b.r,clamp(2*f,0,1));if(pos<0||pos>2){const s=span(pos<0?0:2),o=(pos<0?pos:pos-2)*40;l=s.l+o;r=s.r+o}$('line').style.left=l+'px';$('line').style.width=(r-l)+'px';
+tabs.forEach((t,k)=>{const w=Math.max(0,1-Math.abs(p-k)),c=Math.round(138+117*w);t.style.color=`rgb(${c},${c},${c})`;t.style.webkitTextStroke=`${(w*.5).toFixed(2)}px currentColor`;t.setAttribute('aria-selected',String(Math.round(p)===k))});
+$('track').style.transform=`translateX(${-pos*W()}px)`;$('pos').textContent=pos.toFixed(2);$('width').textContent=Math.round(r-l)+' px'}
+function frame(t){const dt=Math.min(.032,((t-(last||t))/1000)||.016);last=t;v+=((target-pos)*230-v*22)*dt;pos+=v*dt;draw();if(Math.abs(target-pos)+Math.abs(v)>.002)raf=requestAnimationFrame(frame);else{pos=target;draw();raf=0;last=0}}
+function go(i,speed=0){target=i;v=speed;if(reduced.matches){pos=i;draw();return}if(!raf){last=0;raf=requestAnimationFrame(frame)}}
+let drag=false,sx=0,sp0=0,px=0,pt=0,vel=0;const vp=$('viewport');
+vp.onpointerdown=e=>{drag=true;cancelAnimationFrame(raf);raf=0;sx=px=e.clientX;pt=e.timeStamp;sp0=pos;vel=0;vp.setPointerCapture(e.pointerId)};
+vp.onpointermove=e=>{if(!drag)return;const k=$('stage').getBoundingClientRect().width/900,raw=sp0-(e.clientX-sx)/k/W();pos=raw<0?raw*.3:raw>2?2+(raw-2)*.3:raw;const dt=e.timeStamp-pt;if(dt>0)vel=-(e.clientX-px)/k/W()/dt*1000;px=e.clientX;pt=e.timeStamp;draw()};
+// Release: distance and velocity together pick the nearest page; the spring overshoots slightly before settling.
+vp.onpointerup=e=>{if(!drag)return;drag=false;if(e.timeStamp-pt>90)vel=0;go(clamp(Math.round(pos+vel*.25),0,2),vel)};vp.onpointercancel=()=>{drag=false;go(clamp(Math.round(pos),0,2))};
+$('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)go(Number(t.dataset.i))});
+$('tabs').addEventListener('keydown',e=>{if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;e.preventDefault();const n=clamp(Math.round(target)+(e.key==='ArrowRight'?1:-1),0,2);go(n);tabs[n].focus()});
+$('replay').onclick=()=>{go(1);setTimeout(()=>go(2),700);setTimeout(()=>go(0),1500)};
+new ResizeObserver(draw).observe(vp);requestAnimationFrame(draw);
+</script></body></html>
