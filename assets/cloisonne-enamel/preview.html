@@ -1,0 +1,76 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>珐琅彩质感 · 交互演示</title><style>
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{display:flex;align-items:center;justify-content:center;padding:clamp(10px,2.5vh,22px);background:radial-gradient(circle at 50% 35%,#2a2420,#0e0c0b 75%);color:#efe6d8;font:clamp(13px,3.8vh,17px)/1.3 "Segoe UI","Microsoft YaHei",sans-serif;overflow:hidden}
+.row{display:flex;gap:clamp(10px,2.5vw,28px);align-items:flex-end;justify-content:center;width:100%;height:100%}
+.tile{flex:0 1 auto;display:flex;flex-direction:column;align-items:center;gap:.4em;height:100%;justify-content:center}
+.stage{position:relative;aspect-ratio:1;height:calc(100% - 2em);max-height:calc((100vw - 80px)/3);perspective:700px}
+.obj{width:100%;height:100%;will-change:transform;cursor:grab;touch-action:none}
+canvas{display:block;width:100%;height:100%;filter:drop-shadow(0 14px 18px #000a)}
+.tile b{font-weight:600;letter-spacing:.15em;color:#d9c9a8}
+</style></head><body><div class="row" id="row"></div><script>
+const reduced=matchMedia('(prefers-reduced-motion:reduce)'),S=512;
+// ---- Map painting: albedo, material weights (R gold · G enamel · B gem · rest silver), height and coverage. ----
+function paintMaps(draw){const mk=()=>{const c=document.createElement('canvas');c.width=c.height=S;return c},col=mk(),mat=mk(),hgt=mk(),cov=mk(),all=[col,mat,hgt,cov].map(c=>c.getContext('2d'));
+all.forEach(g=>{g.fillStyle='#000';g.fillRect(0,0,S,S);g.lineJoin=g.lineCap='round'});
+const M={gold:'#ff0000',enamel:'#00ff00',gem:'#0000ff',silver:'#000000'},style=(o)=>[o.color,M[o.type],`rgb(${o.height*255|0},${o.height*255|0},${o.height*255|0})`,'#fff'];
+const api={fill(p,o){style(o).forEach((s,i)=>{all[i].fillStyle=s;all[i].fill(p)})},stroke(p,w,o){style(o).forEach((s,i)=>{all[i].strokeStyle=s;all[i].lineWidth=w;all[i].stroke(p)})},
+transform(f){all.forEach(g=>{g.save();f(g)})},restore(){all.forEach(g=>g.restore())},clip(p){all.forEach(g=>{g.save();g.clip(p)})}};
+draw(api);
+// Blur the raw heights so wires bulge and enamel cells dome instead of stepping.
+const hb=mk(),hg=hb.getContext('2d');hg.filter='blur(3.5px)';hg.drawImage(hgt,0,0);const h=hg.getImageData(0,0,S,S).data,c=all[3].getImageData(0,0,S,S).data,dat=new ImageData(S,S);
+for(let i=0;i<h.length;i+=4){dat.data[i]=h[i];dat.data[i+1]=c[i];dat.data[i+3]=255}return {col,mat,dat}}
+const circle=(x,y,r)=>{const p=new Path2D();p.arc(x,y,r,0,6.2832);return p},star=(x,y,R,r,n)=>{const p=new Path2D();for(let i=0;i<n*2;i++){const a=-Math.PI/2+i*Math.PI/n,d=i%2?r:R;p[i?'lineTo':'moveTo'](x+Math.cos(a)*d,y+Math.sin(a)*d)}p.closePath();return p},
+line=(x1,y1,x2,y2)=>{const p=new Path2D();p.moveTo(x1,y1);p.lineTo(x2,y2);return p},sector=(cx,cy,r1,r2,a1,a2)=>{const p=new Path2D();p.arc(cx,cy,r2,a1,a2);p.arc(cx,cy,r1,a2,a1,true);p.closePath();return p};
+const G='#d6a843',gold=h=>({type:'gold',color:G,height:h}),en=(color,h=.42)=>({type:'enamel',color,height:h}),gem=color=>({type:'gem',color,height:.97});
+const ITEMS=[
+['游戏勋章',a=>{const rb=new Path2D();rb.rect(196,14,120,160);a.fill(rb,en('#b3202a'));const st=new Path2D();st.rect(238,14,36,160);a.fill(st,en('#1d3f8f'));a.stroke(rb,6,gold(.75));a.stroke(line(238,14,238,174),4,gold(.72));a.stroke(line(274,14,274,174),4,gold(.72));
+a.fill(circle(256,300,176),gold(.62));a.fill(circle(256,300,160),en('#1a3a86',.44));for(let i=0;i<16;i++){const t=i/16*6.283;a.fill(circle(256+Math.cos(t)*144,300+Math.sin(t)*144,5),gold(.75))}
+a.stroke(circle(256,300,129),7,gold(.8));a.fill(circle(256,300,125),en('#139585',.4));for(let i=0;i<16;i++){const t=i/16*6.283;a.stroke(line(256+Math.cos(t)*44,300+Math.sin(t)*44,256+Math.cos(t)*122,300+Math.sin(t)*122),3,gold(.68))}
+const s=star(256,300,100,44,5);a.fill(s,en('#c81f2e',.5));a.stroke(s,6,gold(.8));a.stroke(circle(256,300,22),6,gold(.85));a.fill(circle(256,300,19),gem('#2f7dff'));a.stroke(circle(256,300,173),9,gold(.85))}],
+['头像框',a=>{for(let i=0;i<8;i++){a.transform(g=>{g.translate(256,256);g.rotate(i/8*6.283);g.translate(0,-200)});const p=new Path2D();p.ellipse(0,0,30,40,0,0,6.283);a.fill(p,en('#b31b29',.46));a.stroke(p,5,gold(.76));a.restore()}
+a.fill(circle(256,256,190),gold(.6));for(let i=0;i<12;i++){const s=sector(256,256,136,180,i/12*6.283+.03,(i+1)/12*6.283-.03);a.fill(s,en(i%2?'#16408f':'#1d8a5c',.42));a.stroke(s,4,gold(.74))}
+a.stroke(circle(256,256,186),8,gold(.84));a.stroke(circle(256,256,132),8,gold(.84));a.fill(circle(256,256,127),en('#262b3f',.3));a.fill(circle(256,236,40),en('#cfd3dd',.36));const sh=new Path2D();sh.ellipse(256,330,74,52,0,Math.PI,0);sh.closePath();a.fill(sh,en('#cfd3dd',.34));
+[0,1,2,3].forEach(i=>{const t=i/4*6.283-Math.PI/2,x=256+Math.cos(t)*158,y=256+Math.sin(t)*158;a.stroke(circle(x,y,19),6,gold(.88));a.fill(circle(x,y,16),gem(i%2?'#1e5bff':'#d0103a'))})}],
+['武器',a=>{a.transform(g=>{g.translate(256,256);g.rotate(-.62);g.scale(1.12,1.12);g.translate(-256,-262)});const bl=new Path2D();bl.moveTo(230,330);bl.lineTo(230,100);bl.lineTo(256,36);bl.lineTo(282,100);bl.lineTo(282,330);bl.closePath();a.fill(bl,{type:'silver',color:'#ccd2db',height:.55});a.stroke(line(256,60,256,330),9,{type:'silver',color:'#e3e7ee',height:.85});
+const fu=new Path2D();fu.rect(249,150,14,170);a.fill(fu,en('#1d4fd6',.5));a.stroke(fu,3,gold(.72));
+const gd=new Path2D();gd.roundRect(164,328,184,32,16);a.fill(gd,en('#b31b29',.5));a.stroke(gd,6,gold(.8));[176,336].forEach(x=>{a.fill(circle(x,344,20),en('#b31b29',.5));a.stroke(circle(x,344,20),6,gold(.8))});a.stroke(circle(256,344,17),6,gold(.88));a.fill(circle(256,344,14),gem('#14b86a'));
+const gp=new Path2D();gp.rect(238,362,36,84);a.fill(gp,en('#16224a',.45));a.clip(gp);for(let y=350;y<460;y+=13)a.stroke(line(232,y,280,y+14),3,gold(.72));a.restore();a.stroke(gp,4,gold(.76));
+a.fill(circle(256,466,24),gold(.7));a.fill(circle(256,466,12),gem('#c8102e'));a.restore()}]];
+// ---- WebGL2 shading ----
+const VS=`#version 300 es
+in vec2 p;out vec2 vUv;void main(){vUv=p*.5+.5;gl_Position=vec4(p,0.,1.);}`;
+const FS=`#version 300 es
+precision highp float;in vec2 vUv;uniform sampler2D colT,matT,datT;uniform vec2 tilt;uniform vec3 L;uniform float time;out vec4 o;
+float H(vec2 u){return texture(datT,u).r;}
+vec3 studio(vec3 R){float sky=.06+.5*smoothstep(-.3,.9,R.y);vec2 a=R.xy-vec2(.45*sin(time*.35),.38),b=R.xy-vec2(-.6,-.15);return vec3(sky+1.25*exp(-dot(a,a)*8.)+.55*exp(-dot(b,b)*12.));}
+void main(){vec4 d=texture(datT,vUv);float cov=d.g;if(cov<.02)discard;float t=1./512.;
+vec3 N=normalize(vec3(-(H(vUv+vec2(t,0))-H(vUv-vec2(t,0)))*22.,-(H(vUv+vec2(0,t))-H(vUv-vec2(0,t)))*22.,1.));
+float cx=cos(tilt.x),sx=sin(tilt.x),cy=cos(tilt.y),sy=sin(tilt.y);N=vec3(N.x,N.y*cx-N.z*sx,N.y*sx+N.z*cx);N=vec3(N.x*cy+N.z*sy,N.y,-N.x*sy+N.z*cy);
+vec3 V=vec3(0,0,1),R=reflect(-V,N),Ld=normalize(L),Hh=normalize(Ld+V);float ndl=max(dot(N,Ld),0.),ndh=max(dot(N,Hh),0.),fr=pow(1.-max(N.z,0.),3.),e=studio(R).r;
+vec3 base=texture(colT,vUv).rgb,w=texture(matT,vUv).rgb;float ws=max(cov-w.r-w.g-w.b,0.);
+vec3 au=vec3(1.,.76,.32),cGold=au*(.12+1.05*e)+au*pow(ndh,40.)*1.2+vec3(1)*pow(ndh,220.)*.7;
+vec3 cSil=vec3(.9,.92,.96)*(.1+1.*e)+vec3(1)*pow(ndh,80.)*.8;
+// Enamel: coloured glass over a dome — diffuse colour, deeper tone in the cells, a sharp clearcoat glint and a little studio reflection.
+vec3 cEn=base*(.3+.8*ndl)*(.78+.4*d.r)+vec3(1)*pow(ndh,120.)*.95+vec3(e)*(.05+.4*fr);
+vec3 cGem=base*(.25+.55*ndl)+base*base*.6+vec3(1)*pow(ndh,180.)*1.6+vec3(e)*(.2+.5*fr);
+vec3 c=(cGold*w.r+cEn*w.g+cGem*w.b+cSil*ws)/max(cov,.001);o=vec4(min(c,1.),cov);}`;
+const tiles=[];
+function setup(name,draw){const tile=document.createElement('div');tile.className='tile';tile.innerHTML=`<div class="stage"><div class="obj" role="img" aria-label="珐琅彩质感${name}，鼠标移动可转动并改变光源"><canvas></canvas></div></div><b>${name}</b>`;document.getElementById('row').append(tile);
+const obj=tile.querySelector('.obj'),cv=tile.querySelector('canvas'),maps=paintMaps(draw),gl=cv.getContext('webgl2',{alpha:true,premultipliedAlpha:false,antialias:true}),T={obj,cv,gl,ang:{x:0,y:0,vx:0,vy:0,tx:0,ty:0},light:null,w:0,h:0};
+if(!gl){cv.replaceWith(maps.col);return}
+const sh=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s},pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,VS));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,FS));gl.bindAttribLocation(pr,0,'p');gl.linkProgram(pr);if(!gl.getProgramParameter(pr,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(pr));
+const vao=gl.createVertexArray(),buf=gl.createBuffer();gl.bindVertexArray(vao);gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);
+gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);const texs=[maps.col,maps.mat,maps.dat].map((src,i)=>{const t=gl.createTexture();gl.activeTexture(gl.TEXTURE0+i);gl.bindTexture(gl.TEXTURE_2D,t);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,src);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);return t});
+gl.useProgram(pr);['colT','matT','datT'].forEach((n,i)=>gl.uniform1i(gl.getUniformLocation(pr,n),i));Object.assign(T,{pr,vao,buf,texs,u:{tilt:gl.getUniformLocation(pr,'tilt'),L:gl.getUniformLocation(pr,'L'),time:gl.getUniformLocation(pr,'time')}});
+obj.addEventListener('pointermove',e=>{const r=obj.getBoundingClientRect(),u=(e.clientX-r.left)/r.width-.5,v=(e.clientY-r.top)/r.height-.5;T.ang.ty=u*28;T.ang.tx=-v*28;T.light=[u*1.6,-v*1.6,.75]});obj.addEventListener('pointerleave',()=>{T.ang.tx=T.ang.ty=0;T.light=null});tiles.push(T)}
+ITEMS.forEach(([n,d])=>setup(n,d));
+let last=0,raf=0;function frame(ms){const t=ms/1000,dt=Math.min(.033,((ms-(last||ms))/1000)||1/60);last=ms;
+for(const [i,T] of tiles.entries()){const a=T.ang;for(const k of ['x','y']){const v='v'+k;if(reduced.matches){a[k]=a['t'+k];a[v]=0}else{a[v]+=((a['t'+k]-a[k])*120-a[v]*16)*dt;a[k]+=a[v]*dt}}T.obj.style.transform=`rotateX(${a.x.toFixed(2)}deg) rotateY(${a.y.toFixed(2)}deg)`;
+const gl=T.gl,d=devicePixelRatio||1,w=Math.round(T.cv.clientWidth*d),h=Math.round(T.cv.clientHeight*d);if(w!==T.w||h!==T.h){T.w=w;T.h=h;T.cv.width=w;T.cv.height=h}
+// Idle light slowly orbits so the gold and glaze keep catching highlights.
+const ph=reduced.matches?0:t*.6+i*2.1,L=T.light||[Math.cos(ph)*.9,.45+Math.sin(ph)*.45,.8];gl.viewport(0,0,w,h);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.useProgram(T.pr);gl.bindVertexArray(T.vao);T.texs.forEach((tx,j)=>{gl.activeTexture(gl.TEXTURE0+j);gl.bindTexture(gl.TEXTURE_2D,tx)});
+gl.uniform2f(T.u.tilt,a.x*Math.PI/180,a.y*Math.PI/180);gl.uniform3f(T.u.L,...L);gl.uniform1f(T.u.time,reduced.matches?0:t);gl.drawArrays(gl.TRIANGLE_STRIP,0,4)}
+raf=requestAnimationFrame(frame)}
+raf=requestAnimationFrame(frame);
+addEventListener('pagehide',()=>{cancelAnimationFrame(raf);for(const T of tiles){const gl=T.gl;T.texs.forEach(t=>gl.deleteTexture(t));gl.deleteProgram(T.pr);gl.deleteBuffer(T.buf);gl.deleteVertexArray(T.vao)}tiles.length=0});
+</script></body></html>

@@ -1,5 +1,38 @@
 [
   {
+    "id": "cloisonne-enamel",
+    "kind": "prompt",
+    "title": "珐琅彩质感",
+    "category": "动画动效",
+    "topics": [
+      "网页特效"
+    ],
+    "tags": "网页特效 / 掐丝珐琅 / WebGL2 / 游戏道具 / 立体材质",
+    "description": "金色掐丝线勾边、填色珐琅釉与宝石镶嵌的游戏勋章、头像框和武器，随鼠标倾斜、光源流动，立体感十足。",
+    "prompt": "做一组珐琅彩（掐丝珐琅）质感的游戏道具：游戏勋章、头像框、武器各一个，用 WebGL2 渲染，每件都要有立体感。\n1. 结构：金色掐丝线勾出每块色区并凸起，色区里填红、蓝、绿等珐琅釉；宝石用金色包边镶嵌；武器刀身为银色金属，带中脊。\n2. 立体：用高度图生成法线，金线和包边最高，釉面在格子里略微鼓起，边缘模糊过渡成圆润倒角。\n3. 材质：金和银反射柔和的影棚灯光并带锐利高光；珐琅釉保留自身颜色，格子深处色调更深，表面有一层清漆般的细小反光；宝石更饱和、闪光更强。\n4. 交互：鼠标在物件上移动时弹簧倾斜（±14°），光源跟随指针，移出回正；不操作时光源缓慢环绕，让高光持续流动。\n5. 细节：逐帧检查 DPR，变化才重设画布；不支持 WebGL2 时显示平面贴图；减少动态效果时停止光源动画；卸载时释放 GPU 资源。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/cloisonne-enamel/preview.html",
+      "alt": "珐琅彩质感：可交互网页演示"
+    },
+    "previewNote": "按自拟提示词手工制作的 WebGL2 可交互演示，非外部作者作品或模型实测输出。",
+    "sourceNote": "本工具箱按用户要求自拟的提示词与演示（2026-10-24），参考掐丝珐琅工艺，非来自外部作者。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/cloisonne-enamel/card-preview.png",
+      "alt": "珐琅彩质感：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 740,
+      "height": 310
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Cloisonné Enamel",
+      "description": "A game medal, avatar frame and sword in raised gold wire, coloured enamel and set gems, tilting with the cursor under a moving light for real depth.",
+      "tags": "Web effects / Cloisonné / WebGL2 / Game items / 3D material"
+    }
+  },
+  {
     "id": "checkin-confetti",
     "kind": "prompt",
     "title": "撒花庆祝",
@@ -56,8 +89,8 @@
       "type": "image",
       "src": "assets/sand-disintegrate-delete/card-preview.png",
       "alt": "碎沙删除：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 530,
-      "height": 380
+      "width": 560,
+      "height": 572
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -123,8 +156,8 @@
       "type": "image",
       "src": "assets/webgl-metal-card/card-preview.png",
       "alt": "反射金属卡片：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 960
+      "width": 530,
+      "height": 420
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
