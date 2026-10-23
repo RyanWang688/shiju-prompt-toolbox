@@ -28,4 +28,4 @@ $('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)go(
 $('tabs').addEventListener('keydown',e=>{if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;e.preventDefault();const n=clamp(Math.round(target)+(e.key==='ArrowRight'?1:-1),0,2);go(n);tabs[n].focus()});
 $('replay').onclick=()=>{go(1);setTimeout(()=>go(2),700);setTimeout(()=>go(0),1500)};
 new ResizeObserver(draw).observe(vp);requestAnimationFrame(draw);
-</script></body></html>
+</script><script src="../demo-i18n.js"></script></body></html>

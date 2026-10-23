@@ -26,4 +26,4 @@ function release(e){if(!drag)return;drag=false;if(e.timeStamp-prevT>90)speed=0;(
 $('grab').onpointerup=release;$('grab').onpointercancel=()=>{drag=false;go(0)};
 document.addEventListener('keydown',e=>{if(target===0&&(e.key==='Escape'||(e.key==='ArrowDown'&&document.activeElement===$('grab')))){e.preventDefault();go(H);$('open').focus({preventScroll:true})}});
 draw();setTimeout(()=>go(0),500);
-</script></body></html>
+</script><script src="../demo-i18n.js"></script></body></html>

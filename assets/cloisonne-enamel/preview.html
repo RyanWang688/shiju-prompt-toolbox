@@ -73,4 +73,4 @@ gl.uniform2f(T.u.tilt,a.x*Math.PI/180,a.y*Math.PI/180);gl.uniform3f(T.u.L,...L);
 raf=requestAnimationFrame(frame)}
 raf=requestAnimationFrame(frame);
 addEventListener('pagehide',()=>{cancelAnimationFrame(raf);for(const T of tiles){const gl=T.gl;T.texs.forEach(t=>gl.deleteTexture(t));gl.deleteProgram(T.pr);gl.deleteBuffer(T.buf);gl.deleteVertexArray(T.vao)}tiles.length=0});
-</script></body></html>
+</script><script src="../demo-i18n.js"></script></body></html>

@@ -2,4 +2,4 @@
 const $=id=>document.getElementById(id),reduced=matchMedia('(prefers-reduced-motion:reduce)');
 function fit(){ $('stage').style.transform=`translate(-50%,-50%) scale(${Math.min(innerWidth/900,innerHeight/500)})` }new ResizeObserver(fit).observe(document.body);fit();
 function anim(el,frames,options){if(reduced.matches){el.getAnimations().forEach(a=>a.cancel());return null}return el.animate(frames,options)}
-$('replay').onclick=()=>{const paused=$('glow').classList.toggle('paused');$('replay').textContent=paused?'继续播放':'暂停动效';$('state').textContent=reduced.matches?'REDUCED':paused?'PAUSED':'RUNNING'};if(reduced.matches){$('state').textContent='REDUCED';$('replay').disabled=true;$('replay').textContent='已启用减少动态效果'}</script></body></html>
+$('replay').onclick=()=>{const paused=$('glow').classList.toggle('paused');$('replay').textContent=paused?'继续播放':'暂停动效';$('state').textContent=reduced.matches?'REDUCED':paused?'PAUSED':'RUNNING'};if(reduced.matches){$('state').textContent='REDUCED';$('replay').disabled=true;$('replay').textContent='已启用减少动态效果'}</script><script src="../demo-i18n.js"></script></body></html>

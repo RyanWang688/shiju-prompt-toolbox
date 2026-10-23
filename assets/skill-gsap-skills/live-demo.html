@@ -7,4 +7,4 @@ const tl=gsap.timeline({paused:true,defaults:{duration:.6,ease:'power2.out'},onU
 tl.fromTo('#single',{x:0,rotation:0,autoAlpha:.35},{x:210,rotation:90,autoAlpha:1,duration:1.1}).fromTo('.item',{y:18,autoAlpha:.12},{y:0,autoAlpha:1,stagger:.16},.5).fromTo('.progress',{scaleX:0},{scaleX:1,ease:'none',duration:1.58},0);
 document.getElementById('play').onclick=()=>{if(reduced.matches){tl.progress(1);status.textContent='COMPLETE · 减少动态效果'}else tl.restart()};document.getElementById('pause').onclick=()=>{tl.pause();status.textContent='PAUSED · '+Math.round(tl.progress()*100)+' %'};
 if(reduced.matches)tl.progress(1);else tl.play();
-</script></body></html>
+</script><script src="../demo-i18n.js"></script></body></html>

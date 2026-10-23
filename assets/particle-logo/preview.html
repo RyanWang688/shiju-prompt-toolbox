@@ -25,4 +25,4 @@ function draw(){ctx.clearRect(0,0,W,H);for(const p of ps){ctx.fillStyle=p.c;ctx.
 function local(e){const r=cv.getBoundingClientRect();return {x:(e.clientX-r.left)*W/r.width,y:(e.clientY-r.top)*H/r.height}}
 cv.addEventListener('pointermove',e=>{mouse=local(e)});cv.addEventListener('pointerleave',()=>{mouse=null});cv.addEventListener('pointerdown',e=>{mouse=local(e)});cv.addEventListener('pointerup',e=>{if(e.pointerType!=='mouse')mouse=null});
 $('replay').onclick=start;start();
-</script></body></html>
+</script><script src="../demo-i18n.js"></script></body></html>

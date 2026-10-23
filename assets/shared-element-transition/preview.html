@@ -2,4 +2,4 @@
 const $=id=>document.getElementById(id),reduced=matchMedia('(prefers-reduced-motion:reduce)');
 function fit(){ $('stage').style.transform=`translate(-50%,-50%) scale(${Math.min(innerWidth/900,innerHeight/500)})` }new ResizeObserver(fit).observe(document.body);fit();
 function anim(el,frames,options){if(reduced.matches){el.getAnimations().forEach(a=>a.cancel());return null}return el.animate(frames,options)}
-let open=false;function toggle(){open=!open;$('trail').classList.toggle('open',open);$('trail').setAttribute('aria-expanded',open);$('state').textContent=open?'DETAIL':'LIST';$('scale').textContent=open?'× 2.22':'× 1.00'}$('trail').onclick=toggle;$('replay').onclick=toggle;</script></body></html>
+let open=false;function toggle(){open=!open;$('trail').classList.toggle('open',open);$('trail').setAttribute('aria-expanded',open);$('state').textContent=open?'DETAIL':'LIST';$('scale').textContent=open?'× 2.22':'× 1.00'}$('trail').onclick=toggle;$('replay').onclick=toggle;</script><script src="../demo-i18n.js"></script></body></html>

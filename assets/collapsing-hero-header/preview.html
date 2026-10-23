@@ -26,4 +26,4 @@ let wheelTimer,lastDir=0;ph.addEventListener('wheel',e=>{e.preventDefault();canc
 ph.addEventListener('keydown',e=>{const step={ArrowDown:60,ArrowUp:-60,PageDown:200,PageUp:-200,Home:-1e4,End:1e4}[e.key];if(step===undefined)return;e.preventDefault();cancelAnimationFrame(raf);raf=0;const to=Math.max(0,Math.min(max,o+step));(to>0&&to<C)?settle(step>0?C:0):settle(to)});
 $('replay').onclick=()=>{settle(0);setTimeout(()=>settle(C,0),500);setTimeout(()=>settle(max),1200);setTimeout(()=>settle(0),2100)};
 measure();new ResizeObserver(measure).observe($('body'));draw();
-</script></body></html>
+</script><script src="../demo-i18n.js"></script></body></html>

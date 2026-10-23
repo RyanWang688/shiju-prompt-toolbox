@@ -133,10 +133,10 @@ console.log('Elastic indicator delay, stretch, reverse direction, reduced motion
 // Clipboard feedback must follow the write result, survive repeated clicks, and ignore stale writes.
 const copyHandler=source.split('\n').find(line=>line.startsWith("$('copy').onclick="));
 const copyReset=source.split('\n').filter(line=>/^function (resetCopy|copyLabel)\(/.test(line)).join('\n');
-function copyHarness(writeText){
+function copyHarness(writeText,lang='zh'){
   const classes=new Set(),messages=[],timers=new Map();let sequence=0;
   const button={textContent:'复制提示词',disabled:false,classList:{add:x=>classes.add(x),remove:x=>classes.delete(x)},getAnimations:()=>[],animate:()=>{}};
-  const reset=new Function('$','navigator','selected','toast','matchMedia','setTimeout','clearTimeout','tr',`let copyRevision=0,copyTimer;${copyReset}\n${copyHandler};return resetCopy`)(()=>button,{clipboard:{writeText}},{kind:'prompt',prompt:'保留原文。'},msg=>messages.push(msg),()=>({matches:true}),fn=>{timers.set(++sequence,fn);return sequence},id=>timers.delete(id),x=>x);
+  const reset=new Function('$','navigator','selected','toast','matchMedia','setTimeout','clearTimeout','tr','lang','englishBody',`let copyRevision=0,copyTimer;${copyReset}\n${copyHandler};return resetCopy`)(()=>button,{clipboard:{writeText}},{kind:'prompt',prompt:'保留原文。'},msg=>messages.push(msg),()=>({matches:true}),fn=>{timers.set(++sequence,fn);return sequence},id=>timers.delete(id),x=>x,lang,()=>'English translation.');
   return {button,classes,messages,reset,finish:()=>{for(const fn of timers.values())fn();timers.clear()}};
 }
 let copied='';const successfulCopy=copyHarness(async text=>{copied=text});
@@ -149,4 +149,11 @@ assert.ok(!failedCopy.classes.has('copy-success'));assert.match(failedCopy.messa
 let resolveWrite;const staleCopy=copyHarness(()=>new Promise(resolve=>{resolveWrite=resolve}));
 const pendingCopy=staleCopy.button.onclick();staleCopy.reset();resolveWrite();await pendingCopy;
 assert.equal(staleCopy.messages.length,0);assert.ok(!staleCopy.classes.has('copy-success'));
-console.log('Copy success, failure, repeated clicks and stale feedback checks passed.');
+// English mode copies the English body that the detail shows.
+let copiedEn='';await copyHarness(async text=>{copiedEn=text},'en').button.onclick();assert.equal(copiedEn,'English translation.');
+// Every item has an English detail: prompts carry a translation; Skills and sites have English fields to build one from.
+for(const item of seedItems){
+  if((item.kind||'prompt')==='prompt')assert.ok(item.en?.prompt,`Missing English prompt for ${item.id}`);
+  if(/[一-鿿]/.test(item.previewNote||''))assert.ok(item.en?.previewNote,`Missing English preview note for ${item.id}`);
+}
+console.log('Copy success, failure, repeated clicks, stale feedback and English copy checks passed.');

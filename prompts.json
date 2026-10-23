@@ -16,7 +16,10 @@
     "en": {
       "title": "The Evidence-Based Life · HowToLiveBetter",
       "description": "767 evidence-based life tips on health and first aid, money, legal pitfalls, social insurance, family and starting a business, each with cost, benefit, evidence level and source — plus a Skill that lets AI assistants answer from the book.",
-      "tags": "Life guide / Evidence-based / Health & first aid / Money & law / Social insurance / AI Skill"
+      "tags": "Life guide / Evidence-based / Health & first aid / Money & law / Social insurance / AI Skill",
+      "notes": "Cites only journal papers and official documents; rules on institutions follow current mainland-China regulations, and the author reminds readers to defer to local authorities, doctors and lawyers.",
+      "license": "CC-BY-4.0",
+      "previewNote": "Screenshot of the official site taken on 2026-10-24; saved for reference only — no sign-in, install or purchase."
     },
     "prompt": "高性价比人生指南 · HowToLiveBetter\n类型：GitHub 项目\n\n用途：767 条循证生活建议，涵盖健康急救、省钱理财、法律红线、社保医保、婚育与创业等，每条注明成本、收益、证据等级和出处；附让 AI 助手照书回答的 Skill，并提供网页版、PDF 与 EPUB。\n\n说明：只引期刊论文和官方文件；制度类内容按中国大陆现行规定撰写，作者提醒以当地部门、医生和律师的意见为准。\n\n许可：CC-BY-4.0\n\n官网：https://eternity4719.github.io/HowToLiveBetter/\nGitHub：https://github.com/eternity4719/HowToLiveBetter\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 2 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
     "collection": "GitHub AI 开源周榜",
@@ -52,7 +55,10 @@
     "en": {
       "title": "moli",
       "description": "A lightweight headless browser for AI agents, written in Rust with on-demand layout and rendering — a full browser runtime with a small footprint for fetching, searching and automating pages via CLI, CDP or WebDriver, with Agent Skills included.",
-      "tags": "Headless browser / AI agents / Web fetching / Browser automation / Rust"
+      "tags": "Headless browser / AI agents / Web fetching / Browser automation / Rust",
+      "notes": "Runs on Linux, macOS and Windows; you can hand the official prompt to your agent and let it install the Skills and prebuilt binary itself.",
+      "license": "Apache-2.0 or MIT (dual-licensed, your choice)",
+      "previewNote": "Real screenshot from the author's repository: moli opening rust-lang.org with developer tools attached; not produced here."
     },
     "prompt": "moli\n类型：Agent 无头浏览器\n\n用途：专为 AI Agent 设计的轻量无头浏览器，用 Rust 编写，按需排版和渲染，兼顾完整浏览器能力与低资源占用；可抓取和提取网页、搜索、自动化操作，支持 CLI、CDP 与 WebDriver，并附 Agent Skills。\n\n说明：支持 Linux、macOS 和 Windows；可把官方提供的提示词交给 Agent，让它自行安装 Skills 与预编译版本。\n\n许可：Apache-2.0 或 MIT（双许可，任选其一）\n\n官网：https://browser.lexmount.com\nGitHub：https://github.com/lexmount/moli\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 4 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
     "collection": "GitHub AI 开源周榜",
@@ -87,7 +93,10 @@
     "en": {
       "title": "Compositor",
       "description": "A free, open-source Mac image editor built around the Photoshop compositing workflow — layers, folders and the full set of blend modes. Projects are folders of PNG layers plus a manifest, so AI agents and scripts can build and edit layers directly while the open project updates live.",
-      "tags": "Image editing / Mac / Photoshop alternative / Layers / AI agents"
+      "tags": "Image editing / Mac / Photoshop alternative / Layers / AI agents",
+      "notes": "Install from the official site, GitHub Releases or Homebrew, or download the Xcode project and modify it yourself.",
+      "license": "MIT",
+      "previewNote": "Screenshot of the official site taken on 2026-10-24; saved for reference only — no sign-in, install or purchase."
     },
     "prompt": "Compositor\n类型：GitHub 项目\n\n用途：免费开源的 Mac 图像编辑器，按 Photoshop 的合成与后期流程设计，支持图层、文件夹和完整的混合模式；项目文件就是一组 PNG 图层加清单，AI Agent 和脚本可以直接创建、编辑图层，打开的项目会实时更新。\n\n说明：可从官网、GitHub Releases 或 Homebrew 安装；也可下载 Xcode 工程自行修改。\n\n许可：MIT\n\n官网：https://robbietilton.com/compositor\nGitHub：https://github.com/robbietilton/Compositor\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 6 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
     "collection": "GitHub AI 开源周榜",
@@ -123,7 +132,9 @@
     "en": {
       "title": "Orca",
       "description": "A desktop app for running a fleet of coding agents — Codex, Claude Code, OpenCode and more — each in its own git worktree and tracked in one place, so you can fan out one prompt, compare and merge; with terminal splits, a design mode, GitHub & Linear and a mobile companion.",
-      "tags": "Multi-agent / Parallel development / Git worktrees / Terminal splits / Mobile"
+      "tags": "Multi-agent / Parallel development / Git worktrees / Terminal splits / Mobile",
+      "license": "MIT",
+      "previewNote": "Real app screenshot from the author's repository: several agent sessions and the mobile app; not produced here."
     },
     "prompt": "Orca\n类型：Coding Agent 编排工具\n\n用途：并行管理多个 Coding Agent 的桌面工具：Codex、Claude Code、OpenCode 等各自在独立 git worktree 中运行并集中追踪，可把同一提示交给多个 Agent 比较后合并；另有终端分屏、设计模式、GitHub 与 Linear 集成和手机端。\n\n许可：MIT\n\n官网：https://orca.dev\nGitHub：https://github.com/stablyai/orca\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 8 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
     "collection": "GitHub AI 开源周榜",
@@ -159,7 +170,10 @@
     "en": {
       "title": "DeepSeek Harness",
       "description": "DeepSeek's open-source agent harness (dsh): everything is a plugin, so tools and capabilities are easy to extend, and npx starts a local web UI. Currently a developer preview with breaking changes expected.",
-      "tags": "Agent framework / Plugins / DeepSeek / Local web UI"
+      "tags": "Agent framework / Plugins / DeepSeek / Local web UI",
+      "notes": "The project asks you to read its safety notice before running it.",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image, and no concept art was substituted; real preview pending."
     },
     "prompt": "DeepSeek Harness\n类型：Agent 框架\n\n用途：DeepSeek 开源的 Agent 框架（dsh），「一切皆插件」，方便扩展工具与能力；用 npx 即可在本机启动 Web 界面。目前为开发者预览版，会有不兼容的更新。\n\n说明：官方提醒运行前先阅读安全须知。\n\n许可：MIT\n\n官网：https://deepseek.com/harness\nGitHub：https://github.com/deepseek-ai/deepseek-harness\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 9 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
     "collection": "GitHub AI 开源周榜",
@@ -188,7 +202,10 @@
     "en": {
       "title": "VoiceStudio (formerly OmniVoice-Studio)",
       "description": "An open-source, fully local AI voice studio for voice cloning, voice design, video dubbing, dictation, transcription and audiobooks in 646 languages, with a local API and MCP for agents.",
-      "tags": "AI voice / Voice cloning / Video dubbing / Audiobooks / Local / MCP"
+      "tags": "AI voice / Voice cloning / Video dubbing / Audiobooks / Local / MCP",
+      "notes": "Listed as OmniVoice-Studio on the leaderboard; the repository has been renamed VoiceStudio (the old address redirects). The default engine is based on k2-fsa/OmniVoice.",
+      "license": "AGPL-3.0",
+      "previewNote": "Screenshot of the official site taken on 2026-10-24; saved for reference only — no sign-in, install or purchase."
     },
     "prompt": "VoiceStudio（原 OmniVoice-Studio）\n类型：GitHub 项目\n\n用途：开源、完全本地运行的 AI 语音创作工具，支持声音克隆、声音设计、视频配音、听写、转写和有声书制作，覆盖 646 种语言，并提供本地 API 与 MCP 供 Agent 调用。\n\n说明：榜单名称为 OmniVoice-Studio，仓库已更名为 VoiceStudio（原地址自动跳转）。默认引擎基于 k2-fsa/OmniVoice。\n\n许可：AGPL-3.0\n\n官网：https://voicestudio.sh\nGitHub：https://github.com/debpalash/VoiceStudio\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 10 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
     "collection": "GitHub AI 开源周榜",
@@ -236,7 +253,9 @@
     "en": {
       "title": "Cloisonné Enamel",
       "description": "A game medal, avatar frame and sword in raised gold wire, coloured enamel and set gems, tilting with the cursor under a moving light for real depth.",
-      "tags": "Web effects / Cloisonné / WebGL2 / Game items / 3D material"
+      "tags": "Web effects / Cloisonné / WebGL2 / Game items / 3D material",
+      "prompt": "Build a set of cloisonné-enamel game items — a game medal, an avatar frame and a weapon — rendered in WebGL2, each with a strong sense of depth.\n1. Structure: raised gold wire outlines every colour field, filled with red, blue, green and other enamel glazes; gems sit in gold bezels; the weapon blade is silver metal with a central ridge.\n2. Depth: derive normals from a height map — gold wires and bezels highest, glaze slightly domed inside each cell, edges blurred into rounded bevels.\n3. Materials: gold and silver reflect soft studio light with sharp highlights; enamel keeps its own colour, deeper in the cells, with a fine clear-coat glint; gems are more saturated and sparkle more.\n4. Interaction: when the pointer moves over an item it tilts on a spring (±14°) and the light follows the pointer, returning when it leaves; when idle the light slowly orbits so highlights keep moving.\n5. Details: check DPR every frame and resize the canvas only when it changes; without WebGL2 show the flat texture; stop the light animation under reduced motion; release GPU resources on unload.",
+      "previewNote": "Interactive WebGL2 demo hand-built from a prompt written for this toolbox — not an external author's work or model output."
     }
   },
   {
@@ -270,7 +289,9 @@
     "en": {
       "title": "Check-in Confetti",
       "description": "About 100 pieces of confetti burst from the check-in button, rise, flip and drift down against air drag, then fade out one by one.",
-      "tags": "App interaction / Confetti / Canvas particles / Gravity & drag / Check-in feedback"
+      "tags": "App interaction / Confetti / Canvas particles / Gravity & drag / Check-in feedback",
+      "prompt": "Build a check-in success confetti celebration: after tapping the \"Check in\" button, about 100 pieces of confetti burst upward from the button, in 3 shapes (strips, discs and small squares) and 5 theme colours. Each piece shoots up fast, then gravity pulls it back (launch angle within 35° either side of straight up, random speed). As they fall they drift side to side and flip over (turning [to] the back, which looks darker), slowing as if there were air resistance. After about 2.5 seconds each one fades out on its own — they must not all [disappear at the same time]. The button presses in, springs back and becomes \"Checked in ✓\". Draw it with canvas and keep 60 fps.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -303,7 +324,9 @@
     "en": {
       "title": "Sand Disintegrate Delete",
       "description": "A deleted chat bubble breaks into about 1,500 grains of sand in its own colours, blown away left to right while the messages below slide up.",
-      "tags": "App interaction / Message delete / Pixel sampling / Particle dissolve / Reflow"
+      "tags": "App interaction / Message delete / Pixel sampling / Particle dissolve / Reflow",
+      "prompt": "Build a chat-message delete that crumbles into sand: after long-pressing a message and choosing \"Delete\", [sample] the bubble pixel by pixel into about 1,500 grains of sand, each using the colour of its original spot. They scatter from left to right (like a gust sweeping across, finishing in about 0.8 s); each grain drifts up and to the right with a little random jitter, shrinking and fading as it goes, and disappears in [about 1] second. While it scatters, the original bubble is erased bit by bit from left to right — not all at once. Afterwards the messages [below] slide up smoothly to fill the gap (about 300ms).",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -336,7 +359,9 @@
     "en": {
       "title": "Particle Logo",
       "description": "About 2,000 particles fly in from the edges to form the logo and breathe gently; the cursor pushes nearby ones away and a spring pulls them back.",
-      "tags": "Landing page / Particle logo / Canvas / Mouse interaction / Spring return"
+      "tags": "Landing page / Particle logo / Canvas / Mouse interaction / Spring return",
+      "prompt": "Build a particle logo for a landing page: use canvas to sample the logo text into about 2,000 small dots. When the [page] opens, the particles fly in from all edges of the screen and assemble into the logo (about 1.5 s, fast then slow, each particle starting slightly staggered). Once assembled, each one breathes gently. When the mouse passes over, nearby particles are pushed away (radius [about] 80px, the closer the further), and when the mouse leaves they are pulled back by a spring with a slight bounce. Colour the particles with the [brand] gradient.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -370,7 +395,9 @@
     "en": {
       "title": "Reflective Metal Card",
       "description": "A brushed-metal card in WebGL2: a live environment, blurred in two passes, reflects off the surface while a spring tilt keeps CSS and normals in sync.",
-      "tags": "Card interaction / WebGL2 / Metal reflection / Spring tilt / Shaders"
+      "tags": "Card interaction / WebGL2 / Metal reflection / Spring tilt / Shaders",
+      "prompt": "Build a working React + WebGL2 metal card.\n320×500px, 24px corner radius.\nCard number: 0001 2345 6789\n\n1. Environment: draw a blue panel, a warm sphere and a white light bar on a Canvas and upload it as a texture every frame; blur horizontally then vertically, and desaturate after sampling.\n2. Reflection: bevel + micro-noise normal N; I is camera→surface, R=reflect(I,N), q=R.xy/max(R.z,0.2), UV=vUv+0.12*q. Use a flat texture — don't fake it with a panorama or gradient.\n3. Interaction: spring 120/16, tilt target ±12°; drive CSS and the normals with the same angle, and return to rest when the pointer leaves.\n4. Layers: canvas + HTML title \"Reflective Pass\", the card number and a highlight border; no people, camera or external images.\n5. Deliverables: component, full GLSL/CSS, run commands; check DPR/size every frame and reset only on change; fall back gracefully without WebGL; clean up resources on unmount.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output. The prompt asks for React; the demo implements the same rendering pipeline in plain JS + WebGL2."
     }
   },
   {
@@ -400,7 +427,10 @@
     "en": {
       "title": "superpowers",
       "description": "A complete development method for coding agents: it draws out the real requirements, confirms the design in digestible chunks, writes a clear plan, then builds with red/green TDD and review.",
-      "tags": "Dev workflow / Requirement clarification / Implementation plan / TDD / Code review"
+      "tags": "Dev workflow / Requirement clarification / Implementation plan / TDD / Code review",
+      "notes": "Works with Claude Code, Codex, Cursor, Gemini CLI and many other coding agents.",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -430,7 +460,10 @@
     "en": {
       "title": "skills",
       "description": "Matt Pocock's small, composable everyday engineering Skills — clarifying requirements, improving architecture and more — easy to adapt and never taking over your whole process.",
-      "tags": "Engineering practice / Requirement clarification / Code architecture / Composable / Matt Pocock"
+      "tags": "Engineering practice / Requirement clarification / Code architecture / Composable / Matt Pocock",
+      "notes": "The author stresses that these Skills don't take over your process the way large frameworks do, so developers stay in control. Its grill-me and diagnose Skills are also collected separately here.",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -460,7 +493,10 @@
     "en": {
       "title": "andrej-karpathy-skills",
       "description": "A single CLAUDE.md distilled from Andrej Karpathy's notes on LLM coding pitfalls: think before coding, keep it simple, make surgical changes and work toward verifiable goals.",
-      "tags": "CLAUDE.md / Coding guidelines / Simplicity first / Surgical changes / Karpathy"
+      "tags": "CLAUDE.md / Coding guidelines / Simplicity first / Surgical changes / Karpathy",
+      "notes": "The repository does not declare an open-source licence.",
+      "license": "Not declared",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -491,7 +527,10 @@
     "en": {
       "title": "skills",
       "description": "Anthropic's official Skills examples — Word, PDF, PowerPoint and Excel handling, art and design, web-app testing, MCP server generation and more — a reference for writing your own.",
-      "tags": "Official examples / Document handling / Creative design / Web testing / Anthropic"
+      "tags": "Official examples / Document handling / Creative design / Web testing / Anthropic",
+      "notes": "Most Skills are Apache-2.0; the document-handling ones are source-available and follow their own terms.",
+      "license": "Per Skill folder (mostly Apache-2.0; document Skills are source-available)",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -527,7 +566,10 @@
     "en": {
       "title": "ponytail",
       "description": "Makes the agent work like the senior dev who replaces fifty lines with one: only the code the task needs, never cutting validation, error handling or security. The author's benchmark shows roughly half the code.",
-      "tags": "Lean code / Anti over-engineering / Tech debt / Senior engineer / Benchmarks"
+      "tags": "Lean code / Anti over-engineering / Tech debt / Senior engineer / Benchmarks",
+      "notes": "The benchmark figures come from the author's controlled tests in Claude Code.",
+      "license": "MIT",
+      "previewNote": "Real before/after from the author's repository: the same date-picker task takes 335 lines without the Skill and 10 lines with Ponytail; not produced here."
     }
   },
   {
@@ -557,7 +599,10 @@
     "en": {
       "title": "ui-ux-pro-max-skill",
       "description": "Gives AI design intelligence for professional UI/UX: it generates a tailored design system from your requirements and offers searchable styles, palettes, font pairings, chart types and UX guidelines.",
-      "tags": "UI design / UX guidelines / Design system / Colour & type / Multi-platform"
+      "tags": "UI design / UX guidelines / Design system / Colour & type / Multi-platform",
+      "notes": "Supports many front-end frameworks and platforms.",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -593,7 +638,10 @@
     "en": {
       "title": "graphify",
       "description": "Type /graphify to map your code, docs and PDFs into a queryable knowledge graph instead of grepping. Code is parsed locally with tree-sitter, and every edge says whether it was read directly or inferred.",
-      "tags": "Knowledge graph / Code understanding / AST parsing / Local / Dependencies"
+      "tags": "Knowledge graph / Code understanding / AST parsing / Local / Dependencies",
+      "notes": "Code parsing runs entirely locally; semantic processing of docs, PDFs and similar uses your configured model.",
+      "license": "Apache-2.0",
+      "previewNote": "Real knowledge-graph screenshot from the author's repository, showing nodes and relationships grouped by community; not produced here."
     }
   },
   {
@@ -629,7 +677,10 @@
     "en": {
       "title": "caveman",
       "description": "Makes coding agents say less and read less — terser answers, less context read, exact code — to save tokens and cost. In the author's tests input tokens dropped by about a third with every answer still right.",
-      "tags": "Token saving / Terse output / Context compression / Coding agents"
+      "tags": "Token saving / Terse output / Context compression / Coding agents",
+      "notes": "Also offers a proxy mode and session reports (Caveman Learn).",
+      "license": "Apache-2.0",
+      "previewNote": "Real Caveman Learn session report from the author's repository, showing token savings and context analysis; not produced here."
     }
   },
   {
@@ -659,7 +710,9 @@
     "en": {
       "title": "agent-skills",
       "description": "Addy Osmani packages a senior engineer's workflow as Skills — spec, plan, incremental build, test, review and ship — driven by commands like /spec, /plan and /build with quality gates at each step.",
-      "tags": "Engineering workflow / Specs / Plan & build / Test & review / Ship"
+      "tags": "Engineering workflow / Specs / Plan & build / Test & review / Ship",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -689,7 +742,10 @@
     "en": {
       "title": "Understand-Anything",
       "description": "A multi-agent pipeline that builds a knowledge graph of every file, function, class and dependency, then gives you an interactive dashboard to pan, search and question — for getting up to speed on unfamiliar code.",
-      "tags": "Code understanding / Knowledge graph / Interactive dashboard / Onboarding"
+      "tags": "Code understanding / Knowledge graph / Interactive dashboard / Onboarding",
+      "notes": "The official site has an interactive live demo.",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -719,7 +775,10 @@
     "en": {
       "title": "awesome-claude-skills",
       "description": "A curated list of 1,000+ practical Claude Skills and plugins by use case, for Claude, Claude Code, Codex, Cursor and more, plus a plugin that connects agents to 1,000+ apps.",
-      "tags": "Skills list / Plugin collection / App integrations / Composio"
+      "tags": "Skills list / Plugin collection / App integrations / Composio",
+      "notes": "The source image spelled it awesome-cloud-skills; it is actually ComposioHQ/awesome-claude-skills.",
+      "license": "Not declared",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -755,7 +814,10 @@
     "en": {
       "title": "last30days-skill",
       "description": "Searches the last 30 days of Reddit, X, YouTube, Hacker News, Polymarket and the web in parallel, scores results by real engagement and money, then writes a grounded summary — for trend tracking and topic research.",
-      "tags": "Trend research / Social search / Reddit / X / YouTube / Summary"
+      "tags": "Trend research / Social search / Reddit / X / YouTube / Summary",
+      "notes": "Reddit, HN and others need no setup; X, YouTube and others are enabled through a guided setup.",
+      "license": "MIT",
+      "previewNote": "A frame from the demo GIF in the author's repository: a real \"What I learned\" research report produced by /last30days; not produced here."
     }
   },
   {
@@ -792,7 +854,10 @@
     "en": {
       "title": "humanizer",
       "description": "Rewrites text using Wikipedia's 'Signs of AI writing' guide — cutting tells like 'not X but Y' and one-line closers — so it reads like a person wrote it without changing what it says.",
-      "tags": "De-AI writing / Copy polishing / Cliché detection / Writing style"
+      "tags": "De-AI writing / Copy polishing / Cliché detection / Writing style",
+      "notes": "Author's note: it rewrites for readers, not to get past AI detectors.",
+      "license": "MIT",
+      "previewNote": "Before/after comparison published in the author's README, re-typeset for reading with the text unchanged; not produced here."
     }
   },
   {
@@ -829,7 +894,10 @@
     "en": {
       "title": "i-have-adhd",
       "description": "Stops your coding assistant from burying the answer: next action first, numbered steps, one concrete next step at the end, and no preamble, pleasantries or tangents.",
-      "tags": "Output style / Action first / Numbered steps / No preamble"
+      "tags": "Output style / Action first / Numbered steps / No preamble",
+      "notes": "The source image spelled it ayrhi/i-have-ad-hd; it is actually ayghri/i-have-adhd.",
+      "license": "MIT",
+      "previewNote": "Before/after comparison published in the author's README, re-typeset for reading with the text unchanged; not produced here."
     }
   },
   {
@@ -859,7 +927,9 @@
     "en": {
       "title": "marketingskills",
       "description": "Marketing Skills for technical marketers and founders — conversion optimisation, copywriting, SEO, analytics and growth engineering — so your coding agent can help with marketing too.",
-      "tags": "Growth marketing / CRO / Copywriting / SEO / Analytics"
+      "tags": "Growth marketing / CRO / Copywriting / SEO / Analytics",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -889,7 +959,10 @@
     "en": {
       "title": "academic-research-skills",
       "description": "Covers the full academic pipeline from research to publication — Socratic paper planning, references, citation formatting, data and logic checks, writing-quality review — pausing for your confirmation at every stage.",
-      "tags": "Academic writing / Paper pipeline / Citations / Data checks / Review"
+      "tags": "Academic writing / Paper pipeline / Citations / Data checks / Review",
+      "notes": "The source image spelled the owner lmbad0202; it is actually Imbad0202. The author stresses it is not a tool for hiding AI use.",
+      "license": "Creative Commons (see the repository LICENSE)",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -919,7 +992,10 @@
     "en": {
       "title": "obsidian-skills",
       "description": "Teaches agents to use the Obsidian CLI and open formats such as Markdown, Bases and JSON Canvas, so they can read, write and organise your Obsidian vault.",
-      "tags": "Obsidian / Note management / Markdown / JSON Canvas / Bases"
+      "tags": "Obsidian / Note management / Markdown / JSON Canvas / Bases",
+      "notes": "The author, kepano, is the CEO of Obsidian.",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -949,7 +1025,10 @@
     "en": {
       "title": "scientific-agent-skills",
       "description": "177 validated research Skills plus 100+ scientific databases across biology, chemistry, medicine and drug discovery, turning any Agent Skills–compatible assistant into a research aide.",
-      "tags": "Science / Biology & chemistry / Medicine / Drug discovery / Scientific databases"
+      "tags": "Science / Biology & chemistry / Medicine / Drug discovery / Scientific databases",
+      "notes": "Formerly Claude Scientific Skills; the related paper is on arXiv.",
+      "license": "MIT",
+      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
     }
   },
   {
@@ -983,7 +1062,9 @@
     "en": {
       "title": "Yosemite (优设美地)",
       "description": "A Chinese design-inspiration hub organised into site inspiration, motion, interactive components and icons, filterable by style and light/dark, with each item credited and licensed — one place for web, motion and component references.",
-      "tags": "Design inspiration / Site references / Motion / Interactive components / Icons / Chinese"
+      "tags": "Design inspiration / Site references / Motion / Interactive components / Icons / Chinese",
+      "notes": "Most of its content comes from elsewhere — site inspiration from Refero Styles, motion mostly curated via PromptMotion (copyright stays with the original authors), and components from 18 libraries, each with its licence noted; those sources are collected separately here. Sign in to sync favourites.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1017,7 +1098,9 @@
     "en": {
       "title": "Liquid Tab Bar",
       "description": "The selected-tab capsule flows like a droplet: leading edge first, trailing edge half a beat later, stretching and flattening before a springy stop.",
-      "tags": "App interaction / Bottom tab bar / Capsule indicator / Droplet stretch / Spring settle"
+      "tags": "App interaction / Bottom tab bar / Capsule indicator / Droplet stretch / Spring settle",
+      "prompt": "Build a bottom navigation bar (4 tabs): a capsule-shaped highlight sits behind the selected tab. When another tab is tapped, the capsule flows over like a droplet — the leading edge arrives first and the trailing edge follows half a beat later, stretching and flattening slightly on the way, then settling with a lightly bouncy spring. The newly selected icon shrinks then pops back, and the label colour fades across; the [page] content slides in gently from the tap direction. The whole thing takes about 400ms.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -1050,7 +1133,9 @@
     "en": {
       "title": "Scale-back Bottom Sheet",
       "description": "The sheet springs up while the page behind shrinks to 0.92 and steps back; drag down past a third or flick to dismiss.",
-      "tags": "App interaction / Bottom sheet / Background scale / Drag to dismiss / Spring curve"
+      "tags": "App interaction / Bottom sheet / Background scale / Drag to dismiss / Spring curve",
+      "prompt": "Build a bottom sheet: when the button is tapped, the sheet springs up from the bottom while the page behind shrinks to 0.92, rounds its corners and dims, as if stepping back. The sheet can be dragged up and down — dragging up meets resistance; dragging down past a third, or a quick flick, closes it, otherwise it springs back into place. When it closes, the page behind restores in sync. Use spring curves, about 400ms.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -1083,7 +1168,9 @@
     "en": {
       "title": "Collapsing Hero Header",
       "description": "The hero image parallaxes at half speed and darkens while the large title shrinks into a frosted nav bar; release mid-way and it snaps by velocity.",
-      "tags": "App interaction / Collapsing title / Parallax hero / Frosted nav / Pull to zoom"
+      "tags": "App interaction / Collapsing title / Parallax hero / Frosted nav / Pull to zoom",
+      "prompt": "Build a detail page with a collapsing large title: as you scroll up, the hero image moves at half speed (parallax) and slowly darkens, the large title shrinks while flying into the top navigation bar, and the bar's background fades into frosted glass. Pulling down at the top zooms the hero image. If you let go half-way, it uses the velocity to finish collapsing or spring back open — never stopping in between.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -1117,7 +1204,9 @@
     "en": {
       "title": "Caterpillar Segmented Tabs",
       "description": "The underline follows your finger and inches like a caterpillar — stretching, then catching up — and snaps to the nearest page by distance and velocity.",
-      "tags": "App interaction / Segmented tabs / Caterpillar underline / Follow-finger swipe / Snap bounce"
+      "tags": "App interaction / Segmented tabs / Caterpillar underline / Follow-finger swipe / Snap bounce",
+      "prompt": "Build segmented tabs (Following / Discover / Nearby) with content pages that swipe left and right: the underline follows the finger in real time, and while switching it first stretches then pulls its tail in like a caterpillar; label colour and weight [change] along with it. On release it snaps to the nearest page by distance and velocity with a slight bounce; tapping a tab slides the underline and content [together].",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -1150,7 +1239,10 @@
     "en": {
       "title": "morphicons",
       "description": "Morphs any SVG icon into any other with spring physics — Lucide, Tabler, Heroicons and more, stroked or filled — with zero dependencies for React, Vue, Svelte and others; great for menu, play and favourite state changes.",
-      "tags": "SVG icons / Icon morphing / Spring animation / React / Vue / Svelte"
+      "tags": "SVG icons / Icon morphing / Spring animation / React / Vue / Svelte",
+      "notes": "Pass new icon data and it morphs automatically, or drive the progress yourself; snappy / smooth / bouncy spring presets, and it can follow the system's reduced-motion setting. The homepage is a live playground for switching icon sets, springs, speed and stroke width.",
+      "license": "MIT。",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1182,7 +1274,8 @@
     "en": {
       "title": "Refero Styles",
       "description": "Thousands of real website styles to compare by screenshot, colour, type and spacing, each with an AI-readable DESIGN.md — handy for picking a design direction for a new project.",
-      "tags": "Website styles / DESIGN.md / Colour & type / Design reference / AI coding"
+      "tags": "Website styles / DESIGN.md / Colour & type / Design reference / AI coding",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1214,7 +1307,9 @@
     "en": {
       "title": "PromptMotion",
       "description": "A collection of AI-made motion videos together with the prompts and Skills behind them, filterable by type and linked to the original posts — good for motion ideas and reusable prompt patterns.",
-      "tags": "Motion videos / Prompts / Claude / Motion inspiration / Original posts"
+      "tags": "Motion videos / Prompts / Claude / Motion inspiration / Original posts",
+      "license": "Each motion piece belongs to its original author; a public preview does not mean it may be reposted or used commercially.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1246,7 +1341,9 @@
     "en": {
       "title": "Unicorn Studio",
       "description": "Build web graphics with shaders, media, 3D and interactive motion on a visual canvas, then embed them as components — great for hero backgrounds and brand visuals.",
-      "tags": "Shaders / Interactive graphics / Visual editor / Web embeds / 3D"
+      "tags": "Shaders / Interactive graphics / Visual editor / Web embeds / 3D",
+      "license": "Hosted scenes are used under Unicorn Studio's terms of service.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1279,7 +1376,9 @@
     "en": {
       "title": "Cult UI",
       "description": "A motion-rich component library for shadcn/ui projects: 150+ free, open-source components built with Tailwind CSS and Motion, ready to copy into your app.",
-      "tags": "shadcn/ui / React / Tailwind / Motion / Open-source components"
+      "tags": "shadcn/ui / React / Tailwind / Motion / Open-source components",
+      "license": "MIT。",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1311,7 +1410,9 @@
     "en": {
       "title": "Amicro",
       "description": "A copy-paste set of React motion components covering micro-interactions, transitions and UI effects — good for adding polished feedback to an existing page.",
-      "tags": "React / Micro-interactions / Transitions / Copy-paste / Tailwind"
+      "tags": "React / Micro-interactions / Transitions / Copy-paste / Tailwind",
+      "license": "MIT。",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1343,7 +1444,9 @@
     "en": {
       "title": "Skiper UI",
       "description": "Uncommon, creative components for Next.js that install through the shadcn CLI and stay easy to edit — for pages that need a more memorable look.",
-      "tags": "shadcn/ui / Next.js / Creative components / CLI install"
+      "tags": "shadcn/ui / Next.js / Creative components / CLI install",
+      "license": "Custom terms: free components require attribution; Pro components must be purchased.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1376,7 +1479,9 @@
     "en": {
       "title": "Bundui",
       "description": "Components and page blocks built on Tailwind CSS, React and shadcn/ui — 200+ handcrafted pieces and examples for assembling full pages quickly.",
-      "tags": "Tailwind CSS / shadcn/ui / UI blocks / React / Examples"
+      "tags": "Tailwind CSS / shadcn/ui / UI blocks / React / Examples",
+      "license": "The core implementation in the official repository is MIT; individual components follow the site's notes.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1409,7 +1514,9 @@
     "en": {
       "title": "Animata",
       "description": "Hundreds of copy-paste React animation and interaction components built with Tailwind CSS, theme-aware and open source — a quick way to add motion to Next.js projects.",
-      "tags": "React / Tailwind / Motion components / Next.js / Open source"
+      "tags": "React / Tailwind / Motion components / Next.js / Open source",
+      "license": "MIT。",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1441,7 +1548,9 @@
     "en": {
       "title": "Beautiful UI",
       "description": "Finely crafted components for AI products — chat, thinking states, human-in-the-loop approvals and more — for building agent and chat interfaces.",
-      "tags": "AI interfaces / Chat components / Thinking states / Approvals / React"
+      "tags": "AI interfaces / Chat components / Thinking states / Approvals / React",
+      "license": "MIT。",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1474,7 +1583,9 @@
     "en": {
       "title": "Rare UI",
       "description": "Rare animated React components built with Tailwind CSS and Motion, installable through the shadcn CLI or MCP — for adding distinctive animation to an interface.",
-      "tags": "React / Motion / Tailwind / shadcn CLI / Motion components"
+      "tags": "React / Motion / Tailwind / shadcn CLI / Motion components",
+      "license": "MIT + Commons Clause + attribution: use in your own projects, but don't redistribute or sell the components themselves.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1507,7 +1618,9 @@
     "en": {
       "title": "Bencho",
       "description": "A library of live React interaction blocks and micro-interactions — everything runs for real rather than as recordings — that you can tweak and take into your project.",
-      "tags": "React / Micro-interactions / Interactive blocks / Live demos"
+      "tags": "React / Micro-interactions / Interactive blocks / Live demos",
+      "license": "Component code is MIT; the website and photos are excluded.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1539,7 +1652,9 @@
     "en": {
       "title": "Dot Matrix",
       "description": "Dot-matrix loading animations as React and TypeScript components, installed as local code through the shadcn registry — adds character to loading states.",
-      "tags": "Loaders / Dot matrix / React / shadcn registry"
+      "tags": "Loaders / Dot matrix / React / shadcn registry",
+      "license": "Custom proprietary licence: usable in personal and commercial products, but the components may not be republished, redistributed or sold on their own or as a collection.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1571,7 +1686,9 @@
     "en": {
       "title": "StringTune",
       "description": "A high-performance JavaScript web-effects library from Fiddle.Digital, offering scroll, cursor, text and other effects as modules, with tutorials — for expressive websites.",
-      "tags": "JavaScript / Web effects / Scroll motion / Modular / Fiddle.Digital"
+      "tags": "JavaScript / Web effects / Scroll motion / Modular / Fiddle.Digital",
+      "license": "The library is MIT; the tutorial files on the site carry no separate licence.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1603,7 +1720,9 @@
     "en": {
       "title": "Libraries.dev",
       "description": "Open-source React effects for AI interfaces — animated borders, thinking indicators, voice visualisers, bot avatars, liquid metal and more — installable from npm.",
-      "tags": "AI interfaces / React / Animated borders / Voice visualiser / npm"
+      "tags": "AI interfaces / React / Animated borders / Voice visualiser / npm",
+      "license": "MIT; some shader dependencies are Apache-2.0.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1636,7 +1755,9 @@
     "en": {
       "title": "Liquid Orb Editor",
       "description": "Tune a real-time WebGPU liquid-glass orb — refraction, dispersion, sheen — and export it for the web or SwiftUI / Metal; great for AI-assistant and voice-state orbs.",
-      "tags": "WebGPU / Liquid glass / Orb / SwiftUI / Metal"
+      "tags": "WebGPU / Liquid glass / Orb / SwiftUI / Metal",
+      "license": "MIT。",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1669,7 +1790,9 @@
     "en": {
       "title": "Avatar Lab",
       "description": "Generate procedural 2D avatars in the browser, adjust expressions and animation, then export React, JavaScript, SVG or PNG — for product mascots and user avatars.",
-      "tags": "Procedural avatars / 2D characters / Expression animation / React / SVG"
+      "tags": "Procedural avatars / 2D characters / Expression animation / React / SVG",
+      "license": "AGPL-3.0: if you run a modified version as a network service, you must publish its source.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1702,7 +1825,9 @@
     "en": {
       "title": "Liquid Glass Studio",
       "description": "Recreates Apple's Liquid Glass look on the web with WebGL2 or WebGPU, with controls for refraction, dispersion, Fresnel reflection and highlights — for studying glassy UI.",
-      "tags": "Liquid glass / WebGL2 / WebGPU / Apple style / Parameter tuning"
+      "tags": "Liquid glass / WebGL2 / WebGPU / Apple style / Parameter tuning",
+      "license": "MIT。",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1735,7 +1860,9 @@
     "en": {
       "title": "CodePen",
       "description": "An online front-end editor and community for writing and previewing HTML, CSS and JavaScript, with a huge library of public demos — for finding motion techniques and quick prototypes.",
-      "tags": "Online editor / Front-end community / Code demos / CSS animation"
+      "tags": "Online editor / Front-end community / Code demos / CSS animation",
+      "license": "Public examples follow the licence each author states.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -1769,7 +1896,9 @@
     "en": {
       "title": "FredTalk",
       "description": "Turns a talking-head script, recording and assets into a motion video: picks visuals line by line from an animation component library, shows real keyframes for approval, then renders with Remotion; a companion rough-cut Skill transcribes subtitles and removes flubs and retakes. Great for explainer and tutorial videos.",
-      "tags": "Talking-head video / Auto editing / Subtitle rough cut / Remotion / Motion component library / Codex"
+      "tags": "Talking-head video / Auto editing / Subtitle rough cut / Remotion / Motion component library / Codex",
+      "notes": "The main entry, fred-remotion-output, moves through \"prepare content → confirm visuals → render video\"; each shot only reuses or adapts approved components from the library and records why the top three candidates were kept or dropped, with a searchable online visual library for previews. The rough-cut entry, audio-subtitle-roughcut, cleans the voice, speeds it to 1.1×, gets word-level subtitles from Qwen Audio, corrects them against the script, removes only failed retakes and slips, then adds +8 dB and delivers an adjustable review page plus WAV / SRT, keeping fillers and natural pauses. Requirements: Python 3.11+, Node.js 22+ and the GitHub CLI; subtitle recognition needs your own Qwen API key and consent to upload the recording (paid), and the author's voice-processing setup isn't included in the public release. The newest components have a 14-day members-first window; earlier public components remain MIT. Written mainly for Codex but usable with other coding agents. The preview uses a component frame from the author's repository.",
+      "previewNote": "Still from component T14c \"price settles\" in the author's repository (digits roll, the old price is struck through, the difference appears), original watermark kept; not produced here."
     }
   },
   {
@@ -1804,7 +1933,9 @@
     "en": {
       "title": "collage-design",
       "description": "Sources real photos and printed matter from open-licensed archives, then cuts, unifies and layers them into a finished collage, exporting SVG / PNG plus an editable build script and logging every source's licence. Great for posters, covers and wall art.",
-      "tags": "Collage / Cut-and-paste / Open-licensed sources / SVG / Posters & covers / polgarp"
+      "tags": "Collage / Cut-and-paste / Open-licensed sources / SVG / Posters & covers / polgarp",
+      "notes": "Works in four movements: write a collage philosophy for the piece, work out the subtle reference, source real material only from open-licensed archives (or a local folder you name), then cut, treat and compose on SVG before a critique and polish. No generated imagery and no copying living artists' compositions; every asset's source and licence go into attributions.md, with warnings about how licences such as CC BY-SA affect the result. Claude Code only; needs ImageMagick, Inkscape, librsvg, fontconfig and Python (Pillow, NumPy); one piece takes about 20–40 minutes. The preview uses an example piece from the author's repository.",
+      "previewNote": "The author's example piece Strike Anywhere — 244 fragments cut from 179 public-domain matchbox labels — from the official repository, original kept; not produced here."
     }
   },
   {
@@ -1840,7 +1971,8 @@
     "en": {
       "title": "HowToCook · A Programmer's Cooking Guide",
       "description": "Structured recipes with exact ingredient amounts, prep notes and step-by-step instructions for home cooking, plus kitchen basics.",
-      "tags": "GitHub picks / Recipes / Cooking / Everyday tools"
+      "tags": "GitHub picks / Recipes / Cooking / Everyday tools",
+      "previewNote": "Browser screenshot of the official page taken on 2026-10-23; a web preview only, not a screenshot of an installed or running client."
     }
   },
   {
@@ -1876,7 +2008,8 @@
     "en": {
       "title": "MusicFree",
       "description": "A free, ad-free, plugin-based music player that supports local files and extends sources via plugins; the desktop app has its own official repo.",
-      "tags": "GitHub picks / Music / Player / Plugins"
+      "tags": "GitHub picks / Music / Player / Plugins",
+      "previewNote": "Browser screenshot of the official page taken on 2026-10-23; a web preview only, not a screenshot of an installed or running client."
     }
   },
   {
@@ -1912,7 +2045,8 @@
     "en": {
       "title": "YunX",
       "description": "An Android tool for parsing and downloading cloud-drive share links, with auto access codes, parallel Range chunks, resumable downloads and media preview.",
-      "tags": "GitHub picks / Android / Cloud drive / Downloads"
+      "tags": "GitHub picks / Android / Cloud drive / Downloads",
+      "previewNote": "Browser screenshot of the official page taken on 2026-10-23; a web preview only, not a screenshot of an installed or running client."
     }
   },
   {
@@ -1948,7 +2082,8 @@
     "en": {
       "title": "optimizerDuck",
       "description": "A Windows 10 / 11 optimizer that manages telemetry, ad suggestions and system settings by category, with backups and undo before changes.",
-      "tags": "GitHub picks / Windows / System tuning / Privacy"
+      "tags": "GitHub picks / Windows / System tuning / Privacy",
+      "previewNote": "Browser screenshot of the official page taken on 2026-10-23; a web preview only, not a screenshot of an installed or running client."
     }
   },
   {
@@ -1979,7 +2114,8 @@
     "en": {
       "title": "PhotoSuite",
       "description": "A desktop photo editor the author describes as modeled on classic Photoshop workflows, with PSD / PSB support. The repo currently returns HTTP 451; status unconfirmed.",
-      "tags": "GitHub picks / Photo editing / PSD / Desktop / Restricted"
+      "tags": "GitHub picks / Photo editing / PSD / Desktop / Restricted",
+      "previewNote": "The official repository currently returns HTTP 451, so no real preview could be obtained; no concept art was substituted."
     }
   },
   {
@@ -2015,7 +2151,8 @@
     "en": {
       "title": "FluxDown",
       "description": "A Rust-powered download manager with dynamic segmentation, resumable downloads, browser integration and HTTP, FTP, BT and HLS / DASH support.",
-      "tags": "GitHub picks / Download manager / Rust / Multi-protocol"
+      "tags": "GitHub picks / Download manager / Rust / Multi-protocol",
+      "previewNote": "Browser screenshot of the official page taken on 2026-10-23; a web preview only, not a screenshot of an installed or running client."
     }
   },
   {
@@ -2051,7 +2188,8 @@
     "en": {
       "title": "Kazumi",
       "description": "A cross-platform anime aggregator and player built on custom rules, with danmaku, Anime4K real-time upscaling and SyncPlay watch-together.",
-      "tags": "GitHub picks / Anime / Custom rules / Danmaku / Upscaling"
+      "tags": "GitHub picks / Anime / Custom rules / Danmaku / Upscaling",
+      "previewNote": "Browser screenshot of the official page taken on 2026-10-23; a web preview only, not a screenshot of an installed or running client."
     }
   },
   {
@@ -2087,7 +2225,8 @@
     "en": {
       "title": "Vorssaint",
       "description": "A modular macOS menu-bar toolbox with per-app volume, system monitoring, window management, clipboard history and snippets — enable only what you need.",
-      "tags": "GitHub picks / macOS / Menu bar / Clipboard / Productivity"
+      "tags": "GitHub picks / macOS / Menu bar / Clipboard / Productivity",
+      "previewNote": "Browser screenshot of the official page taken on 2026-10-23; a web preview only, not a screenshot of an installed or running client."
     }
   },
   {
@@ -2123,7 +2262,8 @@
     "en": {
       "title": "OpenCut",
       "description": "An open-source video editor; the site currently offers the classic web version while the project is rewritten on a Rust core for web, desktop and mobile.",
-      "tags": "Video editing / Online tool / Open source / Creation / GitHub picks"
+      "tags": "Video editing / Online tool / Open source / Creation / GitHub picks",
+      "previewNote": "Real web screenshot: saved after opening https://opencut.app/ on 2026-10-22, showing the homepage."
     }
   },
   {
@@ -2159,7 +2299,8 @@
     "en": {
       "title": "openGym",
       "description": "A self-hosted fitness and weight tracker for planning workouts and logging sets, with exercise demos, muscle heatmaps, progress stats and a browser demo.",
-      "tags": "GitHub picks / Fitness / Self-hosted / Workout log / Muscle heatmap"
+      "tags": "GitHub picks / Fitness / Self-hosted / Workout log / Muscle heatmap",
+      "previewNote": "Browser screenshot of the official page taken on 2026-10-23; a web preview only, not a screenshot of an installed or running client."
     }
   },
   {
@@ -2193,7 +2334,9 @@
     "en": {
       "title": "3D Card Flip",
       "description": "Tap the card and it flips around its vertical axis like a page turning, with perspective and a glossy highlight for a tactile feel.",
-      "tags": "Card interaction / 3D flip / Perspective / Pointer glare"
+      "tags": "Card interaction / 3D flip / Perspective / Pointer glare",
+      "prompt": "Add a 3D flip interaction with perspective to the card: tap to switch between front and back, and add a soft highlight that follows the pointer, so every step responds.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the original author's work or model output."
     }
   },
   {
@@ -2227,7 +2370,9 @@
     "en": {
       "title": "Horizontal Snap Cards",
       "description": "Cards scroll sideways and snap to a full card on release for a smooth paging feel.",
-      "tags": "Card interaction / Horizontal cards / Scroll snap / Peek neighbors"
+      "tags": "Card interaction / Horizontal cards / Scroll snap / Peek neighbors",
+      "prompt": "Create a horizontally scrolling card list that shows part of the neighbouring cards, with scroll snapping and even spacing, so every swipe comes to rest naturally on a whole card.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the original author's work or model output."
     }
   },
   {
@@ -2261,7 +2406,9 @@
     "en": {
       "title": "Drag to Expand",
       "description": "Drag the handle at the bottom of the card upward to reveal more (like a playlist); on release it snaps open or closed.",
-      "tags": "Card interaction / Drag / Linked cover / Threshold snap"
+      "tags": "Card interaction / Drag / Linked cover / Threshold snap",
+      "prompt": "Add a drag-to-expand interaction at the bottom of the card, so the gesture distance controls the content height and the cover size together. On release, snap to the expanded or collapsed state based on a threshold.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the original author's work or model output."
     }
   },
   {
@@ -2295,7 +2442,9 @@
     "en": {
       "title": "Stack Expand",
       "description": "Stacked cards fan out in sequence on tap to reveal hidden content, then collapse back with a springy motion.",
-      "tags": "Card interaction / Depth stack / Staggered fan-out / Elastic collapse"
+      "tags": "Card interaction / Depth stack / Staggered fan-out / Elastic collapse",
+      "prompt": "Create several cards stacked in depth, using scale and offset to show front and back. When expanded they fan out one after another; when collapsed they spring back into the stack.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the original author's work or model output."
     }
   },
   {
@@ -2329,7 +2478,9 @@
     "en": {
       "title": "Full-screen Detail",
       "description": "Tap a card and it grows smoothly into a full detail page, with the content unfolding naturally.",
-      "tags": "Card interaction / Full screen / Cover transition / Layered entrance"
+      "tags": "Card interaction / Full screen / Cover transition / Layered entrance",
+      "prompt": "When a content card is tapped, expand it into a full-screen detail view, coordinating the cover size, card corner radius and background, with new content entering in staggered layers; closing restores the original card.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the original author's work or model output."
     }
   },
   {
@@ -2364,7 +2515,8 @@
     "en": {
       "title": "Archify",
       "description": "Turns ideas, workflows or codebases into standalone interactive HTML diagrams and one-page explainers. Great for architecture, API calls, data relationships and project plans.",
-      "tags": "Architecture / Flowcharts / Sequence diagrams / Codebase visualization / Interactive HTML / Open source"
+      "tags": "Architecture / Flowcharts / Sequence diagrams / Codebase visualization / Interactive HTML / Open source",
+      "previewNote": "A real architecture-diagram example published in the author's repository, unmodified; not generated here. Source and MIT licence are kept in the asset folder."
     }
   },
   {
@@ -2399,7 +2551,8 @@
     "en": {
       "title": "MotionSites.org",
       "description": "Motion website examples, page sections and AI design prompts — useful for choosing a landing-page direction and structure before building it with AI.",
-      "tags": "Motion inspiration / AI prompts / Site templates / Skills directory / Motion Sites / Inspiration sites / Pick a direction / Landing-page skeletons"
+      "tags": "Motion inspiration / AI prompts / Site templates / Skills directory / Motion Sites / Inspiration sites / Pick a direction / Landing-page skeletons",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23. The site has free and paid content; prices and licences follow the official site."
     }
   },
   {
@@ -2432,7 +2585,9 @@
     "en": {
       "title": "React Bits",
       "description": "React motion components, animated backgrounds and micro-interactions you can copy or install, then adapt to your project's framework and dependencies.",
-      "tags": "React / Motion components / Backgrounds / TypeScript / Open source / Inspiration sites / Faster interactions / React interactions"
+      "tags": "React / Motion components / Backgrounds / TypeScript / Open source / Inspiration sites / Faster interactions / React interactions",
+      "notes": "Check each component's demo, code and install notes first to confirm the dependencies and versions you need. Free components and Pro products are offered separately, each under its own terms.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -2465,7 +2620,9 @@
     "en": {
       "title": "Uiverse",
       "description": "A community UI element library of buttons, cards, inputs and loaders, handy for refining components with reference code.",
-      "tags": "UI elements / CSS / Tailwind / Buttons / Components / Inspiration sites / Polish details / Component details"
+      "tags": "UI elements / CSS / Tailwind / Buttons / Components / Inspiration sites / Polish details / Component details",
+      "notes": "Pick an element to see its code, credit and licence before copying it into a project; an inspiration showcase isn't the same as plug-and-play for every framework.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -2499,7 +2656,9 @@
     "en": {
       "title": "GSAP",
       "description": "The official site of the JavaScript animation library: scroll-linked motion, timelines, SVG and UI transitions, plus docs, demos and showcases.",
-      "tags": "Inspiration sites / Silky motion / GSAP / Timeline / Parallax / ScrollTrigger / Transitions"
+      "tags": "Inspiration sites / Silky motion / GSAP / Timeline / Parallax / ScrollTrigger / Transitions",
+      "notes": "GSAP is an animation development tool; the result depends on your design and implementation. This entry is the website; the existing gsap-skills entry stays under Skills. Only the official site info and a public page screenshot were saved — nothing was installed or run.",
+      "previewNote": "Browser screenshot of GSAP's official public page taken on 2026-10-23, with the site's original design and branding."
     }
   },
   {
@@ -2531,7 +2690,9 @@
     "en": {
       "title": "Skillry",
       "description": "Creative Skills for AI coding tools with real example previews across web design, video motion, slides and images — find the look first, then pick the workflow.",
-      "tags": "Motion inspiration / Agent Skills / Web design / Video / Slides / Image creation"
+      "tags": "Motion inspiration / Agent Skills / Web design / Video / Slides / Image creation",
+      "notes": "Has free and Premium content; features, pricing and usage licences follow the official terms. Only the site and a public page screenshot were saved — no sign-in, purchase, install or Skills run.",
+      "previewNote": "Browser screenshot of the official public page taken on 2026-10-23, with the site's original branding and showcase."
     }
   },
   {
@@ -2564,7 +2725,9 @@
     "en": {
       "title": "Like Burst",
       "description": "The heart bounces and turns red, eight particles burst outward, and the like count rolls up.",
-      "tags": "Button interaction / Like / Particle burst / Rolling counter"
+      "tags": "Button interaction / Like / Particle burst / Rolling counter",
+      "prompt": "Build a like button (Like Burst): on tap the heart first shrinks to 0.8×, then pops to 1.2× and settles back at 1×, turning from grey to red; 8 small coloured dots burst out around the heart, flying outward and fading; the like count to the right rolls up by +1. About 600ms in total, with a bouncy curve for the pop.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the author's video or model output; the red/green status colours follow the prompt, while the toolbox itself stays black, yellow and white."
     }
   },
   {
@@ -2597,7 +2760,9 @@
     "en": {
       "title": "Submit Button Morph",
       "description": "The button rounds into a loader, shows a success check, then resets automatically — keeping the original timing.",
-      "tags": "Button interaction / Button morph / Loading / Reset after success"
+      "tags": "Button interaction / Button morph / Loading / Reset after success",
+      "prompt": "Build a three-stage submit button (Submit Morph): on tap the label fades out, the button shrinks into a circle, and a spinning loading ring appears in the middle; after 1.2 seconds it turns green and draws a check mark; one second later it returns to its original state. The shrink takes about 300ms with ease-in-out.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the author's video or model output; the red/green status colours follow the prompt, while the toolbox itself stays black, yellow and white."
     }
   },
   {
@@ -2630,7 +2795,9 @@
     "en": {
       "title": "Jelly Toggle",
       "description": "The knob stretches as it slides, springs back to a circle at the end, and the track color blends along.",
-      "tags": "Button interaction / Toggle / Capsule stretch / Spring bounce"
+      "tags": "Button interaction / Toggle / Capsule stretch / Spring bounce",
+      "prompt": "Build a jelly toggle: on tap the knob slides to the other end, stretching horizontally into a capsule on the way and springing back to a circle at the end; the track colour fades from grey to green. About 350ms, with a bouncy spring curve.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the author's video or model output; the red/green status colours follow the prompt, while the toolbox itself stays black, yellow and white."
     }
   },
   {
@@ -2663,7 +2830,9 @@
     "en": {
       "title": "Hold to Confirm",
       "description": "Hold for 1.5 seconds to confirm; release early to roll back. The demo only changes state and deletes nothing.",
-      "tags": "Button interaction / Long press / Progress ring / Release to cancel"
+      "tags": "Button interaction / Long press / Progress ring / Release to cancel",
+      "prompt": "Build a hold-to-confirm button: a round delete button whose outer progress ring fills clockwise while held, taking 1.5 seconds; letting go early rolls the ring back to zero; when full, the button gives a little side-to-side shake and turns into a check mark and \"Deleted\". Good for dangerous actions such as deleting.",
+      "previewNote": "Interactive web demo hand-built from the user's original prompt — not the author's video or model output; the red/green status colours follow the prompt, while the toolbox itself stays black, yellow and white."
     }
   },
   {
@@ -2699,7 +2868,9 @@
     "en": {
       "title": "Shared Element Expand",
       "description": "The same card expands seamlessly into a detail view and glides back into the list.",
-      "tags": "App interaction / Shared element / Detail transition / Continuous scale / Continuous expand / Card interaction"
+      "tags": "App interaction / Shared element / Detail transition / Continuous scale / Continuous expand / Card interaction",
+      "prompt": "Implement a shared element transition from a card to its detail page, with the background and the card container scaling continuously and smoothly.\n\nContinuous expand (the user's additional original prompt):\nAdd a shared element transition to the card that continuously animates its position, size and corner radius, moving the key information to its matching place in the detail view, and reverses on close.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -2732,7 +2903,9 @@
     "en": {
       "title": "3D Tilt Glare Panel",
       "description": "Tilt and highlight follow the pointer, then spring back to rest on release.",
-      "tags": "App interaction / 3D tilt / Reflective sheen / Spring"
+      "tags": "App interaction / 3D tilt / Reflective sheen / Spring",
+      "prompt": "Add a 3D perspective tilt that follows the touch position, plus a radial reflective sheen, to the card; on release it springs back with damping.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -2765,7 +2938,9 @@
     "en": {
       "title": "Fluid Capsule Morph",
       "description": "A capsule and a panel share one container, morphing width, height and radius continuously.",
-      "tags": "App interaction / Fluid morph / Capsule button / Popover"
+      "tags": "App interaction / Fluid morph / Capsule button / Popover",
+      "prompt": "Implement a fluid morph from a capsule button into a popover panel, with size and corner radius transitioning seamlessly on a high-damping fluid curve (Fluid Morph).",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -2798,7 +2973,9 @@
     "en": {
       "title": "Snapping Cursor & Odometer",
       "description": "Drag the cursor and it snaps to the nearest data point while the number rolls to update.",
-      "tags": "App interaction / Line chart / Magnetic snap / Rolling counter"
+      "tags": "App interaction / Line chart / Magnetic snap / Rolling counter",
+      "prompt": "Make a line chart that scrolls horizontally with the cursor magnetically snapping to data points, while the value at the top updates smoothly in real time with a rolling counter (Odometer / Ticker).",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -2831,7 +3008,9 @@
     "en": {
       "title": "Damped Bottom Sheet",
       "description": "The sheet resists at its edges while dragged and picks a snap point from release velocity.",
-      "tags": "App interaction / Bottom sheet / Damped bounce / Gesture velocity"
+      "tags": "App interaction / Bottom sheet / Damped bounce / Gesture velocity",
+      "prompt": "Implement a bottom sheet with damped rubber-band bounce; on release, compute the snap anchor automatically from the gesture velocity.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -2864,7 +3043,9 @@
     "en": {
       "title": "Conic Glow Border",
       "description": "A gradient highlight orbits the card edge while a soft backlight breathes.",
-      "tags": "App interaction / Conic gradient / Rotating stroke / Breathing glow"
+      "tags": "App interaction / Conic gradient / Rotating stroke / Breathing glow",
+      "prompt": "Add a rotating conic-gradient border to the card, with a dynamically blurred, breathing glow beneath it.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -2898,7 +3079,9 @@
     "en": {
       "title": "Spring Stagger Cascade",
       "description": "List items enter one after another with a stagger delay, each sliding up with a subtle spring; replay it and tune the stagger interval.",
-      "tags": "App interaction / Stagger delay / Spring cascade / List entrance"
+      "tags": "App interaction / Stagger delay / Spring cascade / List entrance",
+      "prompt": "Animate list items in with a stagger delay, each sliding up with a subtle spring (Spring Cascade).",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     },
     "updatedAt": "2026-10-23"
   },
@@ -2933,7 +3116,9 @@
     "en": {
       "title": "Press Scale Feedback",
       "description": "Shrinks with an inner shadow on press and recovers with a slight overshoot on release.",
-      "tags": "App interaction / Press feedback / scale(0.96) / Overshoot"
+      "tags": "App interaction / Press feedback / scale(0.96) / Overshoot",
+      "prompt": "On press, give the button a physical spring compression to scale(0.96) with a deep inner shadow; on release, trigger a slight spring overshoot.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
     }
   },
   {
@@ -2964,7 +3149,9 @@
     "en": {
       "title": "Scrolltide",
       "description": "Scroll-animation web templates, components, shaders and AI prompts — find an effect and hand the reference to your AI coding tool.",
-      "tags": "Web motion / AI prompts / Templates / Scroll animation"
+      "tags": "Web motion / AI prompts / Templates / Scroll animation",
+      "notes": "Some resources are free; the full set and its usage rights follow the site's plans and licences.",
+      "previewNote": "Browser screenshot taken on 2026-10-23 of the official public page, with the site's original design and branding."
     }
   },
   {
@@ -2995,7 +3182,9 @@
     "en": {
       "title": "Mobbin",
       "description": "A library of real app and website screens and user flows for design research, comparing interactions and finding product UI references.",
-      "tags": "UI inspiration / UX / Apps / Web / User flows"
+      "tags": "UI inspiration / UX / Apps / Web / User flows",
+      "notes": "Some libraries and features need an account or a paid plan.",
+      "previewNote": "Browser screenshot taken on 2026-10-23 of the official public page, with the site's original design and branding."
     }
   },
   {
@@ -3026,7 +3215,9 @@
     "en": {
       "title": "Fontshare",
       "description": "A font platform by Indian Type Foundry to preview, pair and download typefaces for brands, websites and posters.",
-      "tags": "Fonts / Typography / Font pairing / Font preview"
+      "tags": "Fonts / Typography / Font pairing / Font preview",
+      "notes": "Font usage rights follow each typeface's licence on the site.",
+      "previewNote": "Browser screenshot taken on 2026-10-23 of the official public page, with the site's original design and branding."
     }
   },
   {
@@ -3057,7 +3248,9 @@
     "en": {
       "title": "Coolors",
       "description": "Generate and explore color palettes with tools like a color picker — great for UI, brand and illustration palettes.",
-      "tags": "Color / Swatches / Palettes / Color inspiration"
+      "tags": "Color / Swatches / Palettes / Color inspiration",
+      "notes": "Some advanced features are Pro; features and limits follow the official site.",
+      "previewNote": "Browser screenshot taken on 2026-10-23 of the official public page, with the site's original design and branding."
     }
   },
   {
@@ -3088,7 +3281,9 @@
     "en": {
       "title": "Spline",
       "description": "Create and co-edit 3D scenes, materials and interactive animations in the browser for web 3D, product demos and prototypes.",
-      "tags": "3D design / Interaction / Browser / Modeling"
+      "tags": "3D design / Interaction / Browser / Modeling",
+      "notes": "Editing, export and collaboration features depend on your plan.",
+      "previewNote": "Browser screenshot taken on 2026-10-23 of the official public page, with the site's original design and branding."
     }
   },
   {
@@ -3119,7 +3314,9 @@
     "en": {
       "title": "LottieFiles",
       "description": "Lightweight animation assets plus tools to create, edit, manage and embed them in websites, apps, decks and social content.",
-      "tags": "Lottie / Motion assets / Animation / Interactive animation"
+      "tags": "Lottie / Motion assets / Animation / Interactive animation",
+      "notes": "Assets and tools include free and paid content; check the licence before downloading and using anything.",
+      "previewNote": "Browser screenshot taken on 2026-10-23 of the official public page, with the site's original design and branding."
     }
   },
   {
@@ -3150,7 +3347,9 @@
     "en": {
       "title": "Three.js Journey",
       "description": "Bruno Simon's 3D web development course covering Three.js, WebGL and WebGPU / TSL — a structured path to interactive 3D sites.",
-      "tags": "Three.js / WebGL / WebGPU / 3D development / Course"
+      "tags": "Three.js / WebGL / WebGPU / 3D development / Course",
+      "notes": "This is a course site — the main full course is paid; it is not a free component library.",
+      "previewNote": "Browser screenshot taken on 2026-10-23 of the official public page, with the site's original design and branding."
     }
   },
   {
@@ -3181,7 +3380,9 @@
     "en": {
       "title": "3dicons",
       "description": "Collections of 3D icons and assets in many styles to add 3D visuals to websites, apps and presentations.",
-      "tags": "3D icons / Design assets / 3D graphics / Icon library"
+      "tags": "3D icons / Design assets / 3D graphics / Icon library",
+      "notes": "Includes open-source free and Premium content; check the download and usage licence of each collection.",
+      "previewNote": "Browser screenshot taken on 2026-10-23 of the official public page, with the site's original design and branding."
     }
   },
   {
@@ -3210,7 +3411,8 @@
     "en": {
       "title": "Agent-Reach",
       "description": "Gives AI agents search and reading access to the web, social platforms, video and RSS — useful for gathering trending discussions, user questions and topic research. Some platforms need extra setup; it does not auto-generate trend rankings.",
-      "tags": "Social media / Trending topics / Research / Multi-platform"
+      "tags": "Social media / Trending topics / Research / Multi-platform",
+      "previewNote": "Real preview pending: the official documentation was checked, but no confirmed real output image was found; promotional art or logos are not used instead. See the official README for features and usage examples."
     }
   },
   {
@@ -3245,7 +3447,8 @@
     "en": {
       "title": "Auto-Redbook",
       "description": "Writes Xiaohongshu titles, body copy and tags from your material, then renders covers and multi-page image cards. Multiple themes and paging modes for quick image posts.",
-      "tags": "Social media / Xiaohongshu / Copywriting / Image cards"
+      "tags": "Social media / Xiaohongshu / Copywriting / Image cards",
+      "previewNote": "The author's officially published real card work, original file kept; not run or generated here."
     }
   },
   {
@@ -3273,7 +3476,8 @@
     "en": {
       "title": "nuwa-skill · Nüwa",
       "description": "Researches a person, distills their thinking frameworks, voice and boundaries, and produces a reusable persona Skill — a reference for perspective and style; keeping your own voice still needs your own corpus and guidelines.",
-      "tags": "Social media / Voice & style / Thinking frameworks / Persona"
+      "tags": "Social media / Voice & style / Thinking frameworks / Persona",
+      "previewNote": "Real preview pending: the official documentation was checked, but no confirmed real output image was found; promotional art or logos are not used instead. See the official README for features and example conversations."
     }
   },
   {
@@ -3308,7 +3512,8 @@
     "en": {
       "title": "guizang · Social Card",
       "description": "Turns articles, screenshots, photos or videos into Xiaohongshu carousels, WeChat cover pairs and Live Photo cards, in magazine or Swiss-style layouts.",
-      "tags": "Social media / Guizang / Xiaohongshu carousel / WeChat cover / Live Photo"
+      "tags": "Social media / Guizang / Xiaohongshu carousel / WeChat cover / Live Photo",
+      "previewNote": "The author's officially published real card work, original file kept; not run or generated here."
     }
   },
   {
@@ -3342,7 +3547,8 @@
     "en": {
       "title": "social-auto-upload",
       "description": "Publishes videos, articles and image posts through one CLI and per-platform Skills to distribute finished content across platforms. Content types, scheduling and login needs vary by platform.",
-      "tags": "Social media / Multi-platform publishing / Video upload / Post distribution"
+      "tags": "Social media / Multi-platform publishing / Video upload / Post distribution",
+      "previewNote": "The author's officially published upload demo GIF (an older version), original file kept; not run or generated here."
     }
   },
   {
@@ -3376,7 +3582,8 @@
     "en": {
       "title": "cloud-doodle-animal",
       "description": "Turns naturally formed clouds in sky photos into animals with minimal black hand-drawn lines, keeping the original cloud shapes, sky and scenery — for cloud doodles and feel-good photo art.",
-      "tags": "Cloud animals / Minimal line art / Photo doodle / Sky / Image creation"
+      "tags": "Cloud animals / Minimal line art / Photo doodle / Sky / Image creation",
+      "previewNote": "A real piece from the author's official examples folder, original file kept; not generated here."
     }
   },
   {
@@ -3410,7 +3617,8 @@
     "en": {
       "title": "giant-doodle-street-collage",
       "description": "Overlays giant flat doodle characters onto real street or interior photos, touching buildings and props, using bold outlines and saturated color for surreal contrast.",
-      "tags": "Giant doodles / Street collage / Surreal / Flat illustration / Image creation"
+      "tags": "Giant doodles / Street collage / Surreal / Flat illustration / Image creation",
+      "previewNote": "A real piece from the author's official examples folder, original file kept; not generated here."
     }
   },
   {
@@ -3444,7 +3652,8 @@
     "en": {
       "title": "video-shotcraft",
       "description": "Builds product promo videos from real page screenshots with Remotion — storyboards, 2.5D camera moves, rhythmic cuts and sound design — exporting MP4 plus an editable project; also good for single shots.",
-      "tags": "Product promo / Remotion / Video production / Storyboard / Camera moves / Beat sync / Claude Code / Codex"
+      "tags": "Product promo / Remotion / Video production / Storyboard / Camera moves / Beat sync / Claude Code / Codex",
+      "previewNote": "A real animated Camera sample from the author's official README, original animated WebP kept; not produced here. More shots are in the official gallery."
     }
   },
   {
@@ -3476,7 +3685,8 @@
     "en": {
       "title": "MetalForge",
       "description": "Shaders and interactive effects for SwiftUI, React Native and the web — glass, liquid, text, cards and buttons — with code per platform.",
-      "tags": "Shaders / Shader / Motion / SwiftUI / React Native / Web / MCP"
+      "tags": "Shaders / Shader / Motion / SwiftUI / React Native / Web / MCP",
+      "previewNote": "Screenshot of the MetalForge site taken on 2026-10-23, showing its motion gallery; not effects generated here or purchased content."
     }
   },
   {
@@ -3507,7 +3717,9 @@
     "en": {
       "title": "60fps.design",
       "description": "A collection of interaction details and motion examples from real apps and websites for studying transitions, micro-interactions and product feel.",
-      "tags": "Interaction inspiration / Motion examples / Apps / Web / Design reference"
+      "tags": "Interaction inspiration / Motion examples / Apps / Web / Design reference",
+      "notes": "An inspiration and case-study site — its case videos don't come with copyable implementation code.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -3539,7 +3751,9 @@
     "en": {
       "title": "Anime.js",
       "description": "A JavaScript animation engine with timelines, staggering, springs, dragging, scroll observers and SVG animation for web interactions.",
-      "tags": "JavaScript / Animation library / Springs / Dragging / Scroll-linked / Anime / Enemies"
+      "tags": "JavaScript / Animation library / Springs / Dragging / Scroll-linked / Anime / Enemies",
+      "notes": "The official name is Anime.js; \"Enemies\" in the source video was a mistake. Check the API version, dependencies and licence in the docs before integrating examples.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -3570,7 +3784,9 @@
     "en": {
       "title": "Aceternity UI",
       "description": "Components, blocks and templates built with React, Tailwind CSS and Motion for animated landing pages and product showcases.",
-      "tags": "React / Tailwind / Motion / Motion components / Astonity UI"
+      "tags": "React / Tailwind / Motion / Motion components / Astonity UI",
+      "notes": "The official name is Aceternity UI; \"Astonity UI\" was a typo. Has free and paid content; check each component's dependencies, usage and licence before copying code.",
+      "previewNote": "Screenshot of the official site taken on 2026-10-23; saved for reference only — no sign-in, install or purchase."
     }
   },
   {
@@ -3599,7 +3815,9 @@
     "en": {
       "title": "AI Job Search",
       "description": "Organizes your job materials, role-fit evaluation, tailored résumés and cover letters, and interview prep into one local workflow for managing applications.",
-      "tags": "Job search / Résumé / CV / Cover letter / Interview prep / MadsLorentzen"
+      "tags": "Job search / Résumé / CV / Cover letter / Interview prep / MadsLorentzen",
+      "notes": "The core application workflow is built on Claude Code, and the repository also offers job-search Skills usable by other agents. Some job-site adapters focus on the Danish market. The old repository MadsLorentzen/ai-job-search now redirects to ai-job-search-dev/ai-job-search.",
+      "previewNote": "Real preview pending: the official documentation was checked, but no suitable real-run screenshot is available yet; icons or concept art are not used in its place."
     }
   },
   {
@@ -3627,7 +3845,9 @@
     "en": {
       "title": "Context Mode",
       "description": "Processes large tool outputs in a sandbox and returns only what's relevant, using indexing and retrieval to carry session state. Good for log analysis, code search and long coding sessions.",
-      "tags": "MCP / Context optimization / Session memory / Tool output / mksglu"
+      "tags": "MCP / Context optimization / Session memory / Tool output / mksglu",
+      "notes": "This entry covers the open-source Context Mode engine and its Skills; the official site also describes other products, which shouldn't be confused with the open-source plugin. Actual savings depend on the task and how it's wired in.",
+      "previewNote": "Real preview pending: the official documentation was checked, but no suitable real-run screenshot is available yet; icons or concept art are not used in its place."
     }
   },
   {
@@ -3661,7 +3881,9 @@
     "en": {
       "title": "Diagram Design",
       "description": "Draws architecture, flows, sequences and data relationships as standalone HTML + SVG diagrams, with brand fonts and colors. For technical docs, product explainers and decks.",
-      "tags": "Diagrams / Architecture / HTML / SVG / Brand design / cathrynlavery"
+      "tags": "Diagrams / Architecture / HTML / SVG / Brand design / cathrynlavery",
+      "notes": "Offers many diagram types, style variants and a gallery of examples. The preview uses an architecture-diagram screenshot from the official repository, unchanged.",
+      "previewNote": "Official architecture-diagram example from the official repository, original kept; not produced here."
     }
   },
   {
@@ -3696,7 +3918,9 @@
     "en": {
       "title": "ArtCraft",
       "description": "An AI creation tool for artists and designers that combines image and video generation, 2D layer compositing, 3D scene blocking and character posing for precise control.",
-      "tags": "AI creation / Image / Video / 2D canvas / 3D scenes / storytold"
+      "tags": "AI creation / Image / Video / 2D canvas / 3D scenes / storytold",
+      "notes": "This is a creative software project rather than a standalone agent Skill; it is filed under Skills / design resources at the user's request, with its type noted. The official site offers desktop and web versions. No sign-in, install or paid model was used.",
+      "previewNote": "Official 2D canvas demo from the official repository, original kept; not produced here."
     }
   },
   {
@@ -3730,7 +3954,9 @@
     "en": {
       "title": "REA · Reverse Engineer Anything",
       "description": "Connects coding agents to program-analysis tools to inspect app behavior, JavaScript / Electron and native binaries, with evidence-backed explanations of how things work.",
-      "tags": "Reverse engineering / MCP / Binary analysis / JavaScript / Electron / morluto"
+      "tags": "Reverse engineering / MCP / Binary analysis / JavaScript / Electron / morluto",
+      "notes": "REA includes an MCP server, a CLI and the reverse-engineer-anything workflow guide. Native analysis needs a matching analysis engine and configuration; the project was only saved here, not installed or run.",
+      "previewNote": "Official Hopper analysis screenshot from the official repository, original kept; not produced here."
     }
   },
   {
@@ -3770,7 +3996,9 @@
     "en": {
       "title": "Hero Module",
       "description": "An 8-column hero module spanning two rows anchors the layout, with 4-column secondary modules around it.",
-      "tags": "Dashboard / Layout / Hero Module"
+      "tags": "Dashboard / Layout / Hero Module",
+      "prompt": "Use a hero-module layout for the first screen: the main module spans 8 columns across two rows, secondary metrics sit in 4-column modules to the right and below, and the whole page has a single focal point.",
+      "previewNote": "Interactive demo hand-built from the prompt, using sample data — not the source video or model output."
     }
   },
   {
@@ -3811,7 +4039,9 @@
     "en": {
       "title": "Stacked Bands",
       "description": "Overview, trends and details run full width, organized by 48px spacing.",
-      "tags": "Dashboard / Layout / Stacked Bands"
+      "tags": "Dashboard / Layout / Stacked Bands",
+      "prompt": "Use a stacked-bands layout: from top to bottom, three layers — overview, trends and details — each spanning the full width, with 48px between layers.",
+      "previewNote": "Interactive demo hand-built from the prompt, using sample data — not the source video or model output."
     }
   },
   {
@@ -3851,7 +4081,9 @@
     "en": {
       "title": "Full-bleed Canvas",
       "description": "A full-bleed canvas holds the main content, with metrics and lists in floating corner panels.",
-      "tags": "Dashboard / Layout / Full-bleed Canvas / Floating Panels"
+      "tags": "Dashboard / Layout / Full-bleed Canvas / Floating Panels",
+      "prompt": "Use a full-bleed canvas as the base of the main area, with metrics and lists as floating panels layered on top, placed in the four corners with a 16px margin.",
+      "previewNote": "Interactive demo hand-built from the prompt, using sample data — not the source video or model output. The full-bleed canvas uses an original route map to show the layered layout."
     }
   },
   {
@@ -3891,7 +4123,9 @@
     "en": {
       "title": "Kanban Columns",
       "description": "Tasks are sorted into equal-width status columns with counts in the headers and horizontal scrolling.",
-      "tags": "Dashboard / Layout / Kanban Columns"
+      "tags": "Dashboard / Layout / Kanban Columns",
+      "prompt": "Use a kanban-columns layout: equal-width columns by status, each header showing the name and count, items stacked vertically in each column, and the whole board scrolling horizontally.",
+      "previewNote": "Interactive demo hand-built from the prompt, using sample data — not the source video or model output."
     }
   },
   {
@@ -3931,7 +4165,9 @@
     "en": {
       "title": "Timeline Swimlanes",
       "description": "Horizontal bars show task start and end per swimlane, with a vertical line marking now.",
-      "tags": "Dashboard / Layout / Timeline Swimlanes"
+      "tags": "Dashboard / Layout / Timeline Swimlanes",
+      "prompt": "Use a timeline-swimlanes layout: a time scale along the top, one swimlane per row, items drawn as bars from start to end time, and a vertical reference line marking the current time.",
+      "previewNote": "Interactive demo hand-built from the prompt, using sample data — not the source video or model output."
     }
   },
   {
@@ -3966,7 +4202,8 @@
     "en": {
       "title": "Easel",
       "description": "An open-source AI workbench for social creators covering trend discovery, topic planning, image / audio / video production, platform-ready publishing and performance reviews, with account profiles that remember preferences.",
-      "tags": "Social media / End-to-end workbench / Zhejiang University / Peking University / REAL Lab / OpenDCAI / Content creation / Multi-platform publishing"
+      "tags": "Social media / End-to-end workbench / Zhejiang University / Peking University / REAL Lab / OpenDCAI / Content creation / Multi-platform publishing",
+      "previewNote": "Real web screenshot of Easel's official project page taken on 2026-10-23. Not a deployment made here and not results produced here."
     }
   },
   {
@@ -4004,7 +4241,9 @@
     "en": {
       "title": "Transparent Top Bar",
       "description": "Navigation blends into the page background, with the active item on a translucent white rounded pill.",
-      "tags": "Dashboard / Admin nav / Transparent Nav / Transparent navigation / Gradient background"
+      "tags": "Dashboard / Admin nav / Transparent Nav / Transparent navigation / Gradient background",
+      "prompt": "Change the navigation to a transparent top bar: remove the background colour and dividers so the text sits directly on the page background, and give the current item a translucent white rounded background.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot, using sample data — not the source video or model output. Respects reduced-motion preferences."
     }
   },
   {
@@ -4042,7 +4281,9 @@
     "en": {
       "title": "Right Rail Menu",
       "description": "A light icon rail pinned to the right, a dark fill for the active item, and a create button at the top.",
-      "tags": "Dashboard / Admin nav / Right Rail / Right-side nav / Light icon rail"
+      "tags": "Dashboard / Admin nav / Right Rail / Right-side nav / Light icon rail",
+      "prompt": "Move the main navigation to the right side of the page as a vertical icon rail (Right Rail): full height, the whole rail in a light colour, the current item on a dark rounded background, and a create button fixed at the top.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot, using sample data — not the source video or model output. Respects reduced-motion preferences."
     }
   },
   {
@@ -4080,7 +4321,9 @@
     "en": {
       "title": "Expanding Active Tab",
       "description": "Top icon navigation expands only the active item's label, with an elastic width transition.",
-      "tags": "Dashboard / Admin nav / Expanding Tab / Elastic easing / Icon tabs"
+      "tags": "Dashboard / Admin nav / Expanding Tab / Elastic easing / Icon tabs",
+      "prompt": "Make the top navigation a group of icons where only the current item expands to show its label (Expanding Tab); the rest show icons only, and the width transitions with elastic easing when switching.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot, using sample data — not the source video or model output. Respects reduced-motion preferences."
     }
   },
   {
@@ -4118,7 +4361,9 @@
     "en": {
       "title": "Icon Menu with Page Title",
       "description": "A large title reflects the current nav state while a minimal icon rail stays put, plus a range picker.",
-      "tags": "Dashboard / Admin nav / Page Title / Icon Rail / Range picker"
+      "tags": "Dashboard / Admin nav / Page Title / Icon Rail / Range picker",
+      "prompt": "Collapse the sidebar into an icon-only rail and enlarge the current page name into a large page title, with a range picker next to the title; the title changes along with the selected icon.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot, using sample data — not the source video or model output. Respects reduced-motion preferences."
     }
   },
   {
@@ -4156,7 +4401,9 @@
     "en": {
       "title": "Icon Rail with Tooltips",
       "description": "An icon-only sidebar grouped by dividers, showing name tooltips on hover or focus.",
-      "tags": "Dashboard / Admin nav / Icon Rail / Tooltip / Group dividers"
+      "tags": "Dashboard / Admin nav / Icon Rail / Tooltip / Group dividers",
+      "prompt": "Make the sidebar an icon-only rail (Icon Rail) that shows a text tooltip to the right on hover, with dividers grouping the icons.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot, using sample data — not the source video or model output. Respects reduced-motion preferences."
     }
   },
   {
@@ -4194,7 +4441,9 @@
     "en": {
       "title": "Quick Actions",
       "description": "Vertical round shortcut buttons beside the menu highlight common actions and keep you on the current page.",
-      "tags": "Dashboard / Admin nav / Quick Actions / Instant actions / Round buttons"
+      "tags": "Dashboard / Admin nav / Quick Actions / Instant actions / Round buttons",
+      "prompt": "Add a column of quick actions next to the menu: round buttons stacked vertically, the most-used one in the primary colour, each running its action directly without leaving the page.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot, using sample data — not the source video or model output. Respects reduced-motion preferences."
     }
   },
   {
@@ -4221,7 +4470,9 @@
     "en": {
       "title": "grill-me",
       "description": "Clarifies ideas, requirements and design decisions through rounds of questions, surfacing unstated assumptions and edge cases before you build.",
-      "tags": "Dev workflow / Requirement clarification / Design scrutiny / Product decisions / Pre-build prep"
+      "tags": "Dev workflow / Requirement clarification / Design scrutiny / Product decisions / Pre-build prep",
+      "notes": "grill-me is now an entry point that calls grilling; the actual interview logic lives in productivity/grilling. The current version organises question rounds around established premises and may ask more than one question per round. It is for clarifying requirements — it doesn't implement anything, and the interview isn't a finished design.",
+      "previewNote": "Real preview pending: no confirmed real session or diagnosis from the author was found; saved only, the Skill was not run here."
     }
   },
   {
@@ -4250,7 +4501,9 @@
     "en": {
       "title": "diagnose (now diagnosing-bugs)",
       "description": "Builds a reproducible failure signal for a bug, narrows the scope, tests hypotheses, fixes the root cause and confirms with regression checks.",
-      "tags": "Dev workflow / Bug diagnosis / Reproduction / Performance regression / Regression tests"
+      "tags": "Dev workflow / Bug diagnosis / Reproduction / Performance regression / Regression tests",
+      "notes": "Matt Pocock's official CHANGELOG renames diagnose to diagnosing-bugs, now invoked as /diagnosing-bugs; the old name from the screenshot is kept for search. Best for hard bugs or performance regressions with clear symptoms; reading code alone is no substitute for reproduction evidence.",
+      "previewNote": "Real preview pending: no confirmed real session or diagnosis from the author was found; saved only, the Skill was not run here."
     }
   },
   {
@@ -4283,7 +4536,8 @@
     "en": {
       "title": "Taste-Skill",
       "description": "Gives design direction to AI-built websites and apps — layout, typography, color and imagery — and checks and fixes results in a real browser. For new UIs, reviews and redesigns.",
-      "tags": "Taste review / Frontend design / Typography / Color / Visual QA / design-taste-frontend"
+      "tags": "Taste review / Frontend design / Typography / Color / Visual QA / design-taste-frontend",
+      "previewNote": "The author's real work: the coffee-storefront page screenshot shown in the official README, original kept, not generated here; credits for quotes and assets are in AUTHOR-CREDITS.md."
     }
   },
   {
@@ -4310,7 +4564,8 @@
     "en": {
       "title": "story-long-scan",
       "description": "Analyzes rankings and new-release samples across web-novel platforms to surface hot genres, characters and hooks, then scores topics against the author's strengths.",
-      "tags": "Fiction writing / Topic picking / Market trends / Ranking scan"
+      "tags": "Fiction writing / Topic picking / Market trends / Ranking scan",
+      "previewNote": "Real preview pending: the documentation was checked, but no output with confirmed provenance was found; the Skill was not run here."
     }
   },
   {
@@ -4345,7 +4600,8 @@
     "en": {
       "title": "story-long-analyze",
       "description": "Breaks down a long novel's chapters, characters, causality, emotion and pacing into a revisitable analysis report and reference file.",
-      "tags": "Fiction writing / Book breakdown / Golden first three chapters / Plot structure"
+      "tags": "Fiction writing / Book breakdown / Golden first three chapters / Plot structure",
+      "previewNote": "Excerpt from the author's real documents (original Chinese), typeset as a reading preview; not generated here. Source: demo/拆文库/盘龙/拆文报告.md"
     }
   },
   {
@@ -4379,7 +4635,8 @@
     "en": {
       "title": "chinese-novelist-skill",
       "description": "Sets a novel's direction through progressive Q&A, builds an outline and writes chapter by chapter, with resume support and chapter quality checks.",
-      "tags": "Fiction writing / Starting a book / Chinese fiction / Resume writing"
+      "tags": "Fiction writing / Starting a book / Chinese fiction / Resume writing",
+      "previewNote": "The author's real example: assets/phase2-plan.png in the official repository; original kept, not generated here."
     }
   },
   {
@@ -4406,7 +4663,8 @@
     "en": {
       "title": "novel-creator-skill",
       "description": "Organizes long-form writing with file memory, a knowledge graph and outline anchors, linking planning, chapter drafting, consistency checks and revision.",
-      "tags": "Fiction writing / Outline / Long-term memory / Foreshadowing"
+      "tags": "Fiction writing / Outline / Long-term memory / Foreshadowing",
+      "previewNote": "Real preview pending: the documentation was checked, but no output with confirmed provenance was found; the Skill was not run here."
     }
   },
   {
@@ -4442,7 +4700,8 @@
     "en": {
       "title": "character-designer",
       "description": "Designs character profiles, motivation chains, arcs, relationships and speech styles. This is Oh Story's built-in character-design agent, added to Skills at your request.",
-      "tags": "Fiction writing / Characters / Character arcs / Dialogue style"
+      "tags": "Fiction writing / Characters / Character arcs / Dialogue style",
+      "previewNote": "Excerpt from the author's real documents (original Chinese), typeset as a reading preview; not generated here. Source: demo/长篇/让你管账号，你高燃混剪炸全网/设定/角色/谭守义.md"
     }
   },
   {
@@ -4477,7 +4736,8 @@
     "en": {
       "title": "story-long-write",
       "description": "Advances a long web novel from settings, volume and chapter outlines, writes chapters on explicit request, and tracks characters, foreshadowing and continuation state.",
-      "tags": "Fiction writing / Drafting / Long-form continuation / Chapter planning"
+      "tags": "Fiction writing / Drafting / Long-form continuation / Chapter planning",
+      "previewNote": "Excerpt from the author's real documents (original Chinese), typeset as a reading preview; not generated here. Source: demo/长篇/让你管账号，你高燃混剪炸全网/正文/第021章_离别怎么会开花.md"
     }
   },
   {
@@ -4513,7 +4773,8 @@
     "en": {
       "title": "webnovel-writer",
       "description": "Chains book setup, planning, chapter writing, review, memory and status queries into one flow to keep long serials consistent in setting and foreshadowing.",
-      "tags": "Fiction writing / Memory / Web serials / Status queries"
+      "tags": "Fiction writing / Memory / Web serials / Status queries",
+      "previewNote": "The author's feature demo: a real screenshot of the archived dashboard HTML using built-in demo data; not a user project or generated novel."
     }
   },
   {
@@ -4548,7 +4809,8 @@
     "en": {
       "title": "story-deslop",
       "description": "Checks for templated phrasing, narrative padding and story causality while preserving the author's voice and plot, with concrete revision directions.",
-      "tags": "Fiction writing / De-slop / Fiction polishing / Prose check"
+      "tags": "Fiction writing / De-slop / Fiction polishing / Prose check",
+      "previewNote": "The author's real check log: a scan of hand-made test text (original Chinese). Not a rewrite made here, and not an independent AI-detection verdict."
     }
   },
   {
@@ -4575,7 +4837,8 @@
     "en": {
       "title": "story-review",
       "description": "Reviews drafts for structure, characters, prose and setting, quoting the text to pinpoint issues and suggest fixes, with a single-reviewer fallback mode.",
-      "tags": "Fiction writing / Review / Consistency / Revision notes"
+      "tags": "Fiction writing / Review / Consistency / Revision notes",
+      "previewNote": "Real preview pending: the documentation was checked, but no output with confirmed provenance was found; the Skill was not run here."
     }
   },
   {
@@ -4609,7 +4872,8 @@
     "en": {
       "title": "story-cover",
       "description": "Creates novel covers with title and byline from the book title, author name and genre; actual rendering depends on an available image tool.",
-      "tags": "Fiction writing / Covers / Title typography / Book visuals"
+      "tags": "Fiction writing / Covers / Title typography / Book visuals",
+      "previewNote": "The author's real example: demo/封面-剑道独尊.png in the official repository; original kept, not generated here."
     }
   },
   {
@@ -4643,7 +4907,8 @@
     "en": {
       "title": "MOSS-Image",
       "description": "OpenMOSS's image generation project with text rendering and layout control; its moss-image-prompt-enhancer Skill turns ideas into detailed descriptions or layout JSON. For posters, illustrations and text placement.",
-      "tags": "AI image generation / Prompt enhancement / Text rendering / Layout control / Posters & illustration"
+      "tags": "AI image generation / Prompt enhancement / Text rendering / Layout control / Posters & illustration",
+      "previewNote": "The author's real model example: the original assets/showcase/overview.webp, showing the MOSS-Image model; the companion Skill only enhances prompts, and this image was not generated here."
     }
   },
   {
@@ -4679,7 +4944,8 @@
     "en": {
       "title": "Impeccable",
       "description": "Helps AI design and polish frontends — typography, color, layout and interaction — and checks responsiveness and accessibility. For landing pages, product UIs and redesigns.",
-      "tags": "Frontend design / UI review / Type & color / Responsive / Design systems"
+      "tags": "Frontend design / UI review / Type & color / Responsive / Design systems",
+      "previewNote": "The author's real case: the Neo Mirai responsive site, screenshotted on 2026-10-22. Not generated here; see the official notes for the workflow."
     }
   },
   {
@@ -4713,7 +4979,8 @@
     "en": {
       "title": "Awesome DESIGN.md",
       "description": "Captures real websites' colors, fonts, spacing and component rules as DESIGN.md files for AI to follow when building UIs — a style reference library for finding a direction and staying consistent.",
-      "tags": "DESIGN.md / Design reference library / Design tokens / Brand style / UI guidelines"
+      "tags": "DESIGN.md / Design reference library / Design tokens / Brand style / UI guidelines",
+      "previewNote": "The author's real example: the public Apple-style / Lumora interactive preview on getdesign.md, screenshotted on 2026-10-22. Not Apple's site, not generated here."
     }
   },
   {
@@ -4747,7 +5014,8 @@
     "en": {
       "title": "pixel2motion",
       "description": "Converts bitmap logos into smooth, editable SVGs, then choreographs brand animations as standalone HTML. For logo intros, loaders and hovers, with vector-fit and animation QA.",
-      "tags": "Logo animation / Bitmap to SVG / Brand intro / Vector fitting"
+      "tags": "Logo animation / Bitmap to SVG / Brand intro / Vector fitting",
+      "previewNote": "The author's real example: docs/gifs/claude-horizon.gif in the official repository; not generated here. The CueRecord animation and the author's full interactive showcase are also included."
     }
   },
   {
@@ -4780,7 +5048,8 @@
     "en": {
       "title": "child-photo-doodle-collage",
       "description": "Blends real photos with crayon doodles while keeping faces, poses and clothing intact, letting little animals and props genuinely interact with people. For playful portraits of kids or adults.",
-      "tags": "Photo doodle / Crayon illustration / Creative portraits / Portrait compositing"
+      "tags": "Photo doodle / Crayon illustration / Creative portraits / Portrait compositing",
+      "previewNote": "The author's real example: showcase-overview.jpg from the public repository, original work and watermark kept; not generated here."
     }
   },
   {
@@ -4815,7 +5084,8 @@
     "en": {
       "title": "gsap-skills",
       "description": "GreenSock's official GSAP Skills collection, helping AI write correct timelines, scroll-linked, staggered and SVG animations, plus framework integration and performance tuning.",
-      "tags": "GSAP / Timeline / Scroll-linked / SVG / Animation development"
+      "tags": "GSAP / Timeline / Scroll-linked / SVG / Animation development",
+      "previewNote": "Screenshot of a real run made here with GSAP 3.15.0 following the official core / timeline patterns. Use “Open live demo” to play, pause or replay."
     }
   },
   {
@@ -4850,7 +5120,8 @@
     "en": {
       "title": "RuiC-card-skill",
       "description": "Turns a one-line description or reference image into a draggable, rotatable 3D holographic card web page with sheen and layered parallax, plus an editable Blender project.",
-      "tags": "Holo cards / 3D cards / Blender / Three.js"
+      "tags": "Holo cards / 3D cards / Blender / Three.js",
+      "previewNote": "The author's real demo GIF: demo-after.gif from the official repository (the adjusted result), not generated here."
     }
   },
   {
@@ -4882,7 +5153,9 @@
     "en": {
       "title": "FAB to Sheet",
       "description": "The container expands continuously from the floating button, with options fading in staggered.",
-      "tags": "Container morph / Panel / 480ms"
+      "tags": "Container morph / Panel / 480ms",
+      "prompt": "Floating action button morphs into a bottom sheet (FAB to Sheet): the same container's size goes continuously from 64 to 470×300 and its corner radius from 32 to 28, on cubic-bezier(.2,.9,.22,1) over about 480ms; once the container settles, the options inside fade in staggered by 4 frames each, and closing retraces the same curve back to the start.",
+      "previewNote": "Interactive demo hand-built from the prompt — not model output."
     }
   },
   {
@@ -4914,7 +5187,9 @@
     "en": {
       "title": "Submit State Feedback",
       "description": "Button, progress ring and success result all play out in a single container.",
-      "tags": "Button / Loading / State feedback"
+      "tags": "Button / Loading / State feedback",
+      "prompt": "Button state morph chain (Button to Loader to Success): on tap the width shrinks from 470 to 76 into a circle and a ring of progress is drawn along its edge; when full, the ring closes, a check mark is drawn with a strokeDasharray stroke, then it expands sideways into a result bar. All three states share one container whose position never changes.",
+      "previewNote": "Interactive demo hand-built from the prompt — not model output."
     }
   },
   {
@@ -4946,7 +5221,9 @@
     "en": {
       "title": "Tab Indicator",
       "description": "The indicator's leading edge goes first and the trailing edge catches up, stretching with one slight overshoot.",
-      "tags": "Tab navigation / Elastic / left-width"
+      "tags": "Tab navigation / Elastic / left-width",
+      "prompt": "Elastic Tab Indicator: when switching, the leading edge heads for the target first on cubic-bezier(.2,.9,.22,1), the trailing edge starts 6 frames later to catch up, the width stretches to more than double mid-way then contracts, with one slight overshoot at the end; drive it with left and width, not scaleX, or the rounded corners get squashed.",
+      "previewNote": "Interactive demo hand-built from the prompt — not model output."
     }
   },
   {
@@ -4978,7 +5255,9 @@
     "en": {
       "title": "List to Grid",
       "description": "Six cards arc from a list into a grid while images keep their aspect ratio.",
-      "tags": "FLIP / List & grid / Arc path"
+      "tags": "FLIP / List & grid / Arc path",
+      "prompt": "List-to-grid layout morph (FLIP Layout Morph): record each item's rectangle before and after the switch, compensate in reverse with translate and scale, and ease each one along a curved path to its new cell, staggering neighbours by 3 frames; images are cropped to keep their aspect ratio, and no nodes are destroyed, rebuilt or reloaded along the way.",
+      "previewNote": "Interactive demo hand-built from the prompt — not model output."
     }
   }
 ]

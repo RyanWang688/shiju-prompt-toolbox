@@ -22,4 +22,4 @@ let raf=0;function move(to){if(to===current)return;const from=slot(current),goal
 $('bar').addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)move(Number(t.dataset.i))});
 $('replay').onclick=()=>{[3,1,2,0].forEach((i,k)=>setTimeout(()=>move(i),k*700))};
 renderPage(0,0);requestAnimationFrame(()=>{const s=slot(0);paint(s.l,s.r)});
-</script></body></html>
+</script><script src="../demo-i18n.js"></script></body></html>

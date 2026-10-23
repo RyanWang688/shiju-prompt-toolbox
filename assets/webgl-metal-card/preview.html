@@ -68,4 +68,4 @@ let demo=[];$('replay').onclick=()=>{demo.forEach(clearTimeout);demo=[[12,-8],[-
 // Release GPU resources when the page goes away.
 addEventListener('pagehide',()=>{cancelAnimationFrame(raf);if(!state)return;const s=state;[s.envT,s.a,s.b].forEach(t=>gl.deleteTexture(t));[s.fa,s.fb].forEach(f=>gl.deleteFramebuffer(f));gl.deleteProgram(s.blur);gl.deleteProgram(s.card);gl.deleteBuffer(s.buf);gl.deleteVertexArray(s.vao);state=null});
 raf=requestAnimationFrame(frame);if(location.hash==='#cover'){ang.ty=-8;ang.tx=5}
-</script></body></html>
+</script><script src="../demo-i18n.js"></script></body></html>
