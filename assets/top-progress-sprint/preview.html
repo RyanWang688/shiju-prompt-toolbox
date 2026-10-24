@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>顶部进度条 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#fbfaf7}
+.bar{position:absolute;left:0;top:0;z-index:9;height:3px;width:100%;background:#ff6a1a;box-shadow:0 0 8px #ff6a1a99;transform-origin:0 50%;transform:scaleX(0);opacity:0}
+.page{position:absolute;inset:48px 0 0;padding:4px 22px 0}
+.feed h2{margin:6px 0 14px;font-size:26px}.chips{display:flex;gap:8px;margin-bottom:16px}.chips span{padding:6px 12px;border-radius:14px;background:#efede8;font-size:12px;color:#6b665e}.chips .on{background:#191919;color:#fff}
+.app .post{display:flex;gap:12px;width:100%;margin-bottom:12px;padding:12px;border-radius:16px;background:#fff;text-align:left;box-shadow:0 2px 10px #00000008;cursor:pointer}.app .post{--b:#fff}
+.post i{flex:0 0 92px;height:72px;border-radius:12px}.post b{display:block;font-size:15px;line-height:1.4}.post small{display:block;margin-top:6px;font-size:11px;color:#9a948b}
+.post:active{transform:scale(.98)}
+.tea{background:radial-gradient(circle at 40% 60%,#d9b382 0 18px,transparent 19px),linear-gradient(135deg,#e7dccb,#b9a58a)}
+.article{display:none}.article.show{display:block}.back{font-size:22px;margin-bottom:8px;width:32px;height:32px}
+.kick{font-size:11px;color:#ff6a1a;font-weight:700}.article h1{margin:6px 0 10px;font-size:22px;line-height:1.4}.by{display:flex;gap:8px;align-items:center;font-size:11px;color:#9a948b}.by i{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#d08b5b,#6b3f2a)}
+.photo{height:190px;margin:16px 0;border-radius:16px}
+.article p{margin:0 0 12px;font-size:14px;line-height:1.8;color:#3d3a35}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / LOADING STUDY 02</div><h1>顶部进度条</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="bar" id="bar"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="page feed" id="feed"><h2>深度</h2><div class="chips"><span class="on">推荐</span><span>旅行</span><span>城市</span><span>生活</span></div>
+<button class="post" type="button" data-open><i class="scene-lake"></i><div><b>冰川湖边的 72 小时：一个人的川西自驾</b><small>林小满 · 8 分钟读完</small></div></button>
+<button class="post" type="button" data-open><i class="scene-dusk"></i><div><b>在老城区走完一整个黄昏</b><small>阿哲 · 6 分钟读完</small></div></button>
+<button class="post" type="button" data-open><i class="tea"></i><div><b>一杯手冲背后的四十道工序</b><small>周末编辑部 · 5 分钟读完</small></div></button>
+</div>
+<div class="page article" id="article"><button class="back" id="back" type="button" aria-label="返回列表">‹</button>
+<div data-in><div class="kick">旅行 · 深度</div><h1>冰川湖边的 72 小时：一个人的川西自驾</h1><div class="by"><i></i>林小满 · 10月14日 · 8 分钟读完</div></div>
+<div class="photo scene-lake" data-in></div>
+<p data-in>出发前我只做了一件事：把手机里的工作群全部静音。</p>
+<p data-in>从成都往西开了六个小时，第一眼看到冰川湖的时候，水是一种说不出的青色，像有人把天空调淡了一点倒进去。</p>
+<p data-in>第二天早上五点爬上观景台，云海就在脚下慢慢翻涌。</p>
+</div>
+</div></div></section><aside class="side"><div class="metric"><small>PROGRESS</small><strong id="pct">0%</strong></div><div class="metric"><small>STATE</small><strong id="state">等待点击</strong></div><p class="note">点任意文章：顶部 3px 细条先冲到 30%，再越走越慢、最多停在 90%；模拟的 2 秒数据回来后冲到 100% 淡出，文章标题、图片、正文依次淡入。等待时列表保持不动。</p><button id="replay" type="button">模拟 2 秒网络延迟</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+let p=0,raf=0,run=0;const bar=$('bar');
+function paint(){bar.style.transform=`scaleX(${p})`;$('pct').textContent=Math.round(p*100)+'%'}
+async function open(){const me=++run;cancelAnimationFrame(raf);showFeed();$('state').textContent='加载中';bar.getAnimations().forEach(a=>a.cancel());p=0;bar.style.opacity=1;paint();
+ if(!reduced){const t0=performance.now();let last=t0;
+  // Sprint to ~30% in 300ms, then creep towards (never past) 90%.
+  const step=t=>{if(me!==run)return;const e=t-t0,dt=(t-last)/1000;last=t;p=e<300?.3*(1-Math.pow(1-e/300,3)):p+(.9-p)*dt*.9;paint();raf=requestAnimationFrame(step)};raf=requestAnimationFrame(step)}
+ await new Promise(r=>setTimeout(r,2000));if(me!==run)return;cancelAnimationFrame(raf);
+ $('state').textContent='数据返回';const from=p;p=1;paint();$('pct').textContent='100%';
+ if(!reduced){bar.animate([{transform:`scaleX(${from})`},{transform:'scaleX(1)'}],{duration:200,easing:'ease-out'});await wait(200)}
+ A(bar,[{opacity:1},{opacity:0}],{duration:300,fill:'forwards'});bar.style.opacity=0;
+ $('feed').style.display='none';$('article').classList.add('show');
+ [...document.querySelectorAll('[data-in]')].forEach((el,i)=>A(el,[{opacity:0,translate:'0 22px'},{opacity:1,translate:'0 0'}],{duration:420,delay:i*80,easing:easeOut}));
+ $('state').textContent='已打开'}
+function showFeed(){$('article').classList.remove('show');$('feed').style.display=''}
+document.querySelectorAll('[data-open]').forEach(b=>b.onclick=open);
+$('back').onclick=()=>{run++;cancelAnimationFrame(raf);bar.style.opacity=0;showFeed();$('state').textContent='等待点击';p=0;$('pct').textContent='0%'};
+$('replay').onclick=open;setTimeout(open,reduced?0:700);
+</script><script src="../demo-i18n.js"></script></body></html>

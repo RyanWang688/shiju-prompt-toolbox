@@ -1,5 +1,320 @@
 [
   {
+    "id": "splash-curtain-reveal",
+    "kind": "prompt",
+    "title": "启动页进首页",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 启动页 / 圆形遮罩 / 拉开幕布 / 交错浮现",
+    "description": "Logo 呼吸一次后，以它为圆心的圆形遮罩像拉开幕布一样打开首页，内容依次浮上来。",
+    "prompt": "做一个美食 App 的启动页，Logo 放大变成进首页的门，像拉开幕布：打开时深〔色背〕景中间是圆形 Logo，先轻轻呼吸缩放一次（约 600ms）；然后以 Logo 为圆心做圆形遮罩从中间放大到铺满屏幕（约 700ms，先慢后快），首页从圆里露出来；首页〔内容〕从下往上依次浮上来（每块间隔约 60ms，带淡入）；全程不出现白屏、不硬切，〔按〕 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/splash-curtain-reveal/preview.html",
+      "alt": "启动页进首页：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「AI做的加载只会转圈？5招治好！」系列（5 条）中「AI 描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/splash-curtain-reveal/card-preview.png",
+      "alt": "启动页进首页：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Splash to Home",
+      "description": "The logo breathes once, then a circle grows from it like a curtain opening onto the home screen, whose blocks float up one by one.",
+      "tags": "App interaction / Splash screen / Circular mask / Curtain reveal / Staggered rise",
+      "prompt": "Build a food-delivery app splash screen where the logo grows into the door to the home page, like a curtain opening: on launch, a round logo sits in the middle of a dark [back]ground and breathes once (about 600ms); then a circular mask centred on the logo expands from the middle until it fills the screen (about 700ms, slow then fast), revealing the home page through the circle; the home [content] floats up from below block by block (about 60ms apart, with a fade); no white flash and no hard cut anywhere; [use] a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "top-progress-sprint",
+    "kind": "prompt",
+    "title": "顶部进度条",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 加载反馈 / 顶部进度条 / 渐近等待 / 内容淡入",
+    "description": "点开文章后顶部细条先冲到 30%，再越走越慢停在 90% 等数据，回来后冲满淡出，正文依次淡入。",
+    "prompt": "做一个资讯 App 点开文章时的顶部进度条，像跑步冲刺：点文章后屏幕最顶上出现一条 3px 强调色细条，先快速冲到约 30%，然后越走越慢，最多停在 90% 等数据；数据回来时一下冲到 100% 再淡出；等待时原页面保留不动，不要整页白屏转〔圈；文〕章页加载好后标题、图片、正文从下往上依次淡入；用一个按钮模拟 2 秒的网络延〔迟〕；按 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/top-progress-sprint/preview.html",
+      "alt": "顶部进度条：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「AI做的加载只会转圈？5招治好！」系列（5 条）中「AI 描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/top-progress-sprint/card-preview.png",
+      "alt": "顶部进度条：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Top Progress Sprint",
+      "description": "A thin top bar sprints to 30%, slows to wait at 90%, then dashes to 100% and fades as the article fades in piece by piece.",
+      "tags": "App interaction / Loading feedback / Top progress bar / Asymptotic wait / Content fade-in",
+      "prompt": "Build the top progress bar for opening an article in a news app, like a running sprint: after tapping an article, a 3px accent-colour line appears at the very top of the screen, sprints to about 30%, then moves slower and slower, stopping at 90% at most while it waits for data; when the data arrives it dashes to 100% and fades out; while waiting the original page stays put — no full-page white screen with a spin[ner; the ar]ticle page then fades in its title, image and body from bottom to top in turn; use a button to simulate a 2-second network del[ay]; use a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "photo-upload-reveal",
+    "kind": "prompt",
+    "title": "照片上传进度",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 上传进度 / 蒙层退去 / 圆环进度 / 对勾反馈",
+    "description": "3 张缩略图先盖深色蒙层，上传时蒙层从下往上退去、圆环转满，传完对勾一弹，全部完成后可发布。",
+    "prompt": "做一个发帖页的照片上传进度，照片像被一点点刷亮：选好 3 张照片后立刻显示〔缩略〕图，每张先盖一层半透明深色蒙层；上传时蒙层从下往上退去，退到哪照片就亮到哪，缩略图中间有一个细圆环跟着转满；3 张错开开始（间隔约 300ms），各走〔各的〕进度；某张传完时圆环变成对勾弹一下再淡出；全部完成后\"发布\"按钮从灰色变〔成可〕点；上传时页面能继续打字，不要弹窗挡住；按 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/photo-upload-reveal/preview.html",
+      "alt": "照片上传进度：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「AI做的加载只会转圈？5招治好！」系列（5 条）中「AI 描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/photo-upload-reveal/card-preview.png",
+      "alt": "照片上传进度：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Photo Upload Reveal",
+      "description": "Three thumbnails start under a dark shade that recedes upward as each uploads, with a ring filling and a check popping when done; then Post unlocks.",
+      "tags": "App interaction / Upload progress / Receding shade / Ring progress / Check feedback",
+      "prompt": "Build photo upload progress on a compose page, where photos light up bit by bit: once 3 photos are picked, show the [thumb]nails immediately, each under a translucent dark shade; while uploading the shade recedes from bottom to top and the photo brightens wherever it has cleared, with a thin ring in the middle of each thumbnail filling up as it goes; the 3 start staggered (about 300ms apart), each at [its own] pace; when one finishes, its ring turns into a check that pops once then fades; when all are done the \"Post\" button turns from grey [to] tappable; the page stays typeable during upload — no blocking dialog; use a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "optimistic-message-send",
+    "kind": "prompt",
+    "title": "消息秒发",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 乐观更新 / 消息发送 / 回弹 / 失败重试",
+    "description": "点发送后气泡立刻从输入框滑进对话并回弹，不等服务器；时钟换成双对勾，失败时变浅红可重试。",
+    "prompt": "做一个聊天页的消息秒发，像先上菜后结账：点发送后消息气泡立刻出现在对话〔里〕，从输入框位置滑上去并带一点回弹（约 250ms），不等服务器返回；输入框马上清空，可以接着打字；气泡旁先显示一个小时钟图标，发送成功后换成两个对勾；〔模拟〕网络延迟 1.2 秒；如果发送失败，气泡变浅红色并出现\"点击重试\"小红圈，不要〔弹〕窗；按 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/optimistic-message-send/preview.html",
+      "alt": "消息秒发：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「AI做的加载只会转圈？5招治好！」系列（5 条）中「AI 描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/optimistic-message-send/card-preview.png",
+      "alt": "消息秒发：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Optimistic Message Send",
+      "description": "A sent bubble slides up from the input into the chat at once, without waiting for the server; a clock turns into double ticks, or a light-red retry on failure.",
+      "tags": "App interaction / Optimistic UI / Message send / Bounce / Retry on failure",
+      "prompt": "Build instant message sending on a chat page, like serving the dish before taking payment: after tapping send, the bubble appears in the conversation immediately, sliding up from the input field with a slight bounce (about 250ms), without waiting for the server; the input clears at once so you can keep typing; a small clock icon shows beside the bubble first and turns into two ticks once sending succeeds; [simulate] a 1.2-second network delay; if sending fails, the bubble turns light red with a small red \"tap to retry\" circle — no [pop-up] dialog; use a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "ride-matching-ripple",
+    "kind": "prompt",
+    "title": "叫车等待",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 等待状态 / 水波扩散 / 地图 / 卡片翻转",
+    "description": "定位点向外一圈圈扩出波纹、小车慢慢靠近；接单时波纹收回，车沿路线开来，卡片翻出司机信息。",
+    "prompt": "做一个打车 App 呼叫后等司机接单的页面，像水波一圈圈往外找人：地图上自〔己的〕定位点往外扩出一圈圈波纹（每圈约 1.6 秒，越扩越淡，3 圈错开）；周围几辆小车图标慢慢往你这边开；底部卡片显示\"正在为你呼叫附近司机\"和已等待的秒数在〔走；找〕到司机时波纹收回成一个点，其中一辆车沿路线开过来，底部卡片向上翻出司机〔信息〕（头像、车牌、几分钟到达）；用一个按钮模拟 4 秒后接单；按 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/ride-matching-ripple/preview.html",
+      "alt": "叫车等待：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「AI做的加载只会转圈？5招治好！」系列（5 条）中「AI 描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/ride-matching-ripple/card-preview.png",
+      "alt": "叫车等待：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Ride Matching Ripple",
+      "description": "Ripples spread from your location while nearby cars creep closer; on a match the ripples fold back, a car drives the route and the card flips to the driver.",
+      "tags": "App interaction / Waiting state / Ripple / Map / Card flip",
+      "prompt": "Build the page in a ride-hailing app where you wait for a driver after calling, like ripples spreading outward to find someone: on the map, [your] location dot sends out ring after ring of ripples (about 1.6 seconds each, fading as they spread, 3 rings staggered); a few small car icons nearby slowly drive toward you; the bottom card shows \"Calling nearby drivers for you\" and a ticking count of seconds waited; [when a] driver is found the ripples fold back into a single dot, one of the cars drives over along the route, and the bottom card flips up to show the driver [details] (avatar, plate, minutes away); use a button to simulate a match after 4 seconds; use a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "spotlight-onboarding",
+    "kind": "prompt",
+    "title": "聚光灯功能引导",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 新手引导 / 聚光灯遮罩 / 镂空变形 / 气泡提示",
+    "description": "黑色遮罩只在该点的按钮处挖出呼吸描边的镂空；点下一步镂空滑到下一个控件并变形，气泡跟着走。",
+    "prompt": "做一个记账 App 首次打开的聚光灯功能引导，像舞台上一束追光照着你该点的地方：整个页面盖一层约 70% 的黑色遮罩，只在\"记一笔\"按钮那里挖一个圆角镂空，镂空边缘一圈慢慢呼吸的细白描边；旁边弹出白色说明气泡（标题 + 一句说明 + \"1/3\" + \"下一步\"按钮），气泡带小三角指向按钮，从小弹到正常大小；点\"下一步\"〔时〕镂空平滑滑到下一个按钮，并变成它的形状和大小（约 400ms，不要先消失再出现），气泡跟着换位置和文字；共 3 步，最后一步按钮变\"知道了\"，点后遮罩淡出；右上角有\"跳过\"；按 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/spotlight-onboarding/preview.html",
+      "alt": "聚光灯功能引导：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「4个新手引导，让用户一眼知道点哪」系列（4 条）中「AI描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/spotlight-onboarding/card-preview.png",
+      "alt": "聚光灯功能引导：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Spotlight Onboarding",
+      "description": "A dark overlay cuts a breathing spotlight around the control to tap; Next slides and reshapes the cut-out onto the next control, with the tip following.",
+      "tags": "App interaction / Onboarding / Spotlight mask / Morphing cut-out / Tooltip",
+      "prompt": "Build a spotlight feature tour for the first launch of a bookkeeping app, like a stage follow-spot lighting the place you should tap: cover the whole page with a roughly 70% black overlay and cut a rounded hole only around the \"Add entry\" button, with a thin white outline around the hole that slowly breathes; a white explanation bubble pops up beside it (title + one line of explanation + \"1/3\" + a \"Next\" button), with a small triangle pointing at the button, springing from small to full size; [when] \"Next\" is tapped, the hole glides smoothly to the next button and takes on its shape and size (about 400ms — don't disappear and reappear), and the bubble moves and changes text with it; 3 steps in total, the last step's button becomes \"Got it\", which fades the overlay out; put \"Skip\" in the top-right corner; use a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "welcome-parallax-pager",
+    "kind": "prompt",
+    "title": "欢迎页滑动引导",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 新手引导 / 视差翻页 / 跟手拖动 / 胶囊指示器",
+    "description": "3 页欢迎页跟手翻页，插画慢、标题快形成层次；圆点拉长成胶囊随手伸缩，最后一页按钮弹上来。",
+    "prompt": "做一个 App 的 3 页欢迎引导页，像翻一本有层次的立体绘本：左右滑动切换，手指拖到哪页面就跟到哪，松手超过三分之一或甩得快就翻到下一页，否则弹回；每页的插画和文字移动速度不同（插画慢、标题快，有前后层次感），插画同时有一点缩放和淡入；底部小圆点指示器，当前页的圆点被拉长成胶囊，滑动时跟着手指一起伸缩〔过〕渡；最后一页底部的\"开始使用\"按钮从下面弹上来，前两页右上角显示\"跳过\"；按 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/welcome-parallax-pager/preview.html",
+      "alt": "欢迎页滑动引导：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「4个新手引导，让用户一眼知道点哪」系列（4 条）中「AI描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/welcome-parallax-pager/card-preview.png",
+      "alt": "欢迎页滑动引导：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Welcome Parallax Pager",
+      "description": "Three welcome pages follow your finger with layered parallax — slow art, fast titles — while the dot stretches into a capsule and the last page springs up its button.",
+      "tags": "App interaction / Onboarding / Parallax pager / Follow-finger drag / Capsule indicator",
+      "prompt": "Build a 3-page welcome tour for an app, like leafing through a layered pop-up book: swipe left and right to switch, the page follows wherever the finger drags; on release, past one third or a fast flick turns to the next page, otherwise it springs back; on each page the illustration and text move at different speeds (illustration slow, title fast, for a sense of depth), and the illustration also scales and fades in slightly; small dots at the bottom act as the indicator, the current page's dot stretches into a capsule and stretches and shrinks with the finger while swiping [as a] transition; on the last page a \"Get started\" button springs up from below, and the first two pages show \"Skip\" in the top-right corner; use a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "empty-state-guide",
+    "kind": "prompt",
+    "title": "空状态引导",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 空状态 / 虚线箭头 / 按钮提醒 / 飞入列表",
+    "description": "空列表时插画浮动、虚线箭头指向「+」并定时轻弹；添加后待办从「+」飞进列表，空状态缩小淡出。",
+    "prompt": "做一个待办 App 的空状态引导，像空桌子上有人指着说\"从这开始\"：列表没东西时，中间一张插画轻轻上下浮动 + 标题\"还没有待办\" + 一句说明，下面一条弯曲的虚线箭头指向右下角的\"+\"按钮，\"+\"按钮每隔几秒轻轻弹一下提醒点击；点\"+\"后底部弹出一行输入框，点\"添加\"后，这条待办从\"+\"按钮的位置飞出来落进列表（带一〔点〕回弹），空状态插画和箭头缩小淡出，列表顶部出现\"第一条已添加\"的小提示；按 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/empty-state-guide/preview.html",
+      "alt": "空状态引导：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「4个新手引导，让用户一眼知道点哪」系列（4 条）中「AI描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/empty-state-guide/card-preview.png",
+      "alt": "空状态引导：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Empty State Guide",
+      "description": "An empty to-do list floats its illustration and points a dashed arrow at a gently nudging +; a new to-do flies out of + into the list as the empty state fades away.",
+      "tags": "App interaction / Empty state / Dashed arrow / Button nudge / Fly into list",
+      "prompt": "Build an empty-state guide for a to-do app, like someone at an empty desk pointing and saying \"start here\": when the list is empty, an illustration in the middle gently floats up and down + the title \"No to-dos yet\" + one line of explanation, with a curved dashed arrow below pointing to the \"+\" button in the bottom-right corner, and the \"+\" button gives a light bounce every few seconds as a reminder to tap; tapping \"+\" slides up an input row at the bottom, and after tapping \"Add\" the to-do flies out from the \"+\" button's position and lands in the list (with a [little] bounce), the empty-state illustration and arrow shrink and fade out, and a small \"First one added\" tip appears at the top of the list; use a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "permission-primer",
+    "kind": "prompt",
+    "title": "权限请求前说明",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 权限引导 / 说明卡 / 通知预览 / 系统弹框",
+    "description": "首次打卡后先弹出带晃动铃铛和通知预览的说明卡，同意后才出系统权限框，拒绝只收起卡片。",
+    "prompt": "做一个打卡 App 开启通知前的说明卡，像先敲门打个招呼再进屋：用户第一次打卡成功后，从底部弹起一张圆角说明卡（带回弹），上面一个轻轻晃动的铃铛图标 + 标题\"每天 8 点提醒你打卡\" + 一句好处说明 + 一条锁屏通知的小预览（像真的通知一样滑进来）；两个按钮\"好的，提醒我\"和\"以后再说\"；点\"好的\"后说明卡收下去，再〔弹〕出系统的通知权限请求（演示时用一个仿 iOS 的系统弹框代替，淡入并轻微放大）；点\"以后再说\"只收起卡片，不弹系统框；按 390×844 手机尺寸。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/permission-primer/preview.html",
+      "alt": "权限请求前说明：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「4个新手引导，让用户一眼知道点哪」系列（4 条）中「AI描述词 · 复制给 AI 就能用」字幕，用户提供截图。截图右侧的点赞、评论图标遮住了少量文字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-24",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/permission-primer/card-preview.png",
+      "alt": "权限请求前说明：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1200,
+      "height": 920
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Permission Primer",
+      "description": "After the first check-in, a card with a swinging bell and a notification preview asks first; only \"Yes\" brings up the system permission prompt.",
+      "tags": "App interaction / Permission priming / Explainer card / Notification preview / System dialog",
+      "prompt": "Build an explainer card shown before turning on notifications in a check-in app, like knocking and saying hello before walking in: after the user's first successful check-in, a rounded explainer card springs up from the bottom (with a bounce), showing a gently swinging bell icon + the title \"Remind you to check in at 8 every day\" + one line on the benefit + a small preview of a lock-screen notification (sliding in like a real notification); two buttons, \"OK, remind me\" and \"Maybe later\"; tapping \"OK\" tucks the card away and then [brings up] the system notification permission request (in the demo, use an iOS-style system dialog instead, fading in with a slight scale); tapping \"Maybe later\" only tucks the card away without the system dialog; use a 390×844 phone size.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
     "id": "website-howtolivebetter",
     "kind": "website",
     "resourceType": "GitHub 项目",

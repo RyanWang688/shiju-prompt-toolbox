@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>照片上传进度 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#fbfaf7}.top{display:flex;justify-content:space-between;align-items:center;padding:6px 20px 14px;font-size:15px;color:#6b665e}
+.app .pub{--b:#e6e3dd;padding:8px 18px;border-radius:18px;color:#aaa49b;font-weight:700;transition:background-color .3s,color .3s}.app .pub.on{--b:#ffd43b;color:#191919}
+.thumbs{display:flex;gap:10px;padding:0 20px}.thumb{position:relative;flex:1;height:112px;border-radius:14px;overflow:hidden}
+
+.shade{position:absolute;left:0;right:0;top:0;height:100%;background:#0d1117a6}
+.ring,.tick{position:absolute;left:50%;top:50%;width:40px;height:40px;margin:-20px 0 0 -20px}.ring circle{fill:none;stroke-width:3}.ring .track{stroke:#ffffff40}.ring .fill{stroke:#fff;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%}
+.tick{display:grid;place-items:center;border-radius:50%;background:#ffd43b;opacity:0}.tick svg{width:22px;height:22px}
+.form{padding:18px 20px 0}.form input,.form textarea{display:block;width:100%;border:0;background:transparent;color:#191919;font:inherit;outline:none;resize:none}.form input{font-size:18px;font-weight:700;margin-bottom:10px}.form textarea{height:96px;font-size:14px;line-height:1.7;color:#3d3a35}
+.tags{display:flex;gap:8px;margin:12px 0 18px}.tags span{padding:5px 10px;border-radius:12px;background:#efede8;font-size:12px;color:#6b665e}
+.rowi{display:flex;justify-content:space-between;padding:14px 0;border-top:1px solid #eeebe5;font-size:13px;color:#4a463f}.rowi:after{content:'›';color:#bbb}
+.toast{position:absolute;left:50%;bottom:60px;padding:10px 18px;border-radius:20px;background:#191919;color:#fff;font-size:13px;transform:translateX(-50%);opacity:0}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / LOADING STUDY 03</div><h1>照片上传进度</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="top"><span>取消</span><button class="pub" id="pub" type="button" disabled>发布</button></div>
+<div class="thumbs" id="thumbs"></div>
+<div class="form"><input id="title" value="川西 72 小时 · 冰川湖和云海" aria-label="标题"><textarea id="body" aria-label="正文">冰川湖的水真的是这个颜色，一点没调色。第二天早上五点爬上观景台，云海就在脚下。</textarea>
+<div class="tags"><span># 川西自驾</span><span># 冰川湖</span><span># 云海</span></div><div class="rowi">添加地点 · 稻城亚丁</div><div class="rowi">谁可以看 · 公开</div></div>
+<div class="toast" id="toast">已发布</div>
+</div></div></section><aside class="side"><div class="metric"><small>UPLOADED</small><strong id="done">0 / 3</strong></div><div class="metric"><small>PUBLISH</small><strong id="pubState">不可点</strong></div><p class="note">选好 3 张后立刻出缩略图并盖上深色蒙层；上传时蒙层从下往上退去，中间细圆环跟着转满；3 张间隔 300ms 错开，各走各的进度，传完圆环变对勾弹一下再淡出，全部完成后「发布」由灰变可点。上传期间可以继续编辑文字。</p><button id="replay" type="button">重新选择 3 张照片</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const C=2*Math.PI*16,DUR=[2200,2900,2500];let run=0;
+const tickSvg='<svg viewBox="0 0 24 24" fill="none" stroke="#191919" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+function pick(){const me=++run;let finished=0;$('done').textContent='0 / 3';$('pub').disabled=true;$('pub').classList.remove('on');$('pubState').textContent='不可点';
+ // Thumbnails show immediately, each under a dark shade with a progress ring.
+ $('thumbs').innerHTML=[1,2,3].map(n=>`<div class="thumb ${['scene-lake','scene-dusk','scene-snow'][n-1]}"><div class="shade"></div><svg class="ring" viewBox="0 0 40 40"><circle class="track" cx="20" cy="20" r="16"/><circle class="fill" cx="20" cy="20" r="16" stroke-dasharray="${C}" stroke-dashoffset="${C}"/></svg><div class="tick">${tickSvg}</div></div>`).join('');
+ [...$('thumbs').children].forEach((el,i)=>{A(el,[{opacity:0,scale:.9},{opacity:1,scale:1}],{duration:260,delay:i*40,easing:easeOut});
+  const shade=el.querySelector('.shade'),fill=el.querySelector('.fill'),ring=el.querySelector('.ring'),tick=el.querySelector('.tick');
+  const set=p=>{shade.style.height=(1-p)*100+'%';fill.style.strokeDashoffset=C*(1-p)};
+  const done=()=>{if(me!==run)return;set(1);ring.style.opacity=0;
+   A(tick,[{opacity:0,scale:.4},{opacity:1,scale:1.18,offset:.55},{opacity:1,scale:1}],{duration:420,easing:spring});
+   setTimeout(()=>{if(me===run)A(tick,[{opacity:1},{opacity:0}],{duration:300})},reduced?0:900);
+   if(++finished===3){$('pub').disabled=false;$('pub').classList.add('on');$('pubState').textContent='可发布';A($('pub'),[{scale:1},{scale:1.12,offset:.5},{scale:1}],{duration:360,easing:spring,fill:'none'})}
+   $('done').textContent=finished+' / 3'};
+  if(reduced){done();return}
+  // Staggered starts, each at its own uneven pace.
+  setTimeout(()=>{const t0=performance.now();const step=t=>{if(me!==run)return;const x=Math.min(1,(t-t0)/DUR[i]),p=x<1?1-Math.pow(1-x,1.5)-.03*Math.sin(x*Math.PI*4)*(1-x):1;set(Math.max(0,Math.min(1,p)));x<1?requestAnimationFrame(step):done()};requestAnimationFrame(step)},300+i*300)})}
+$('pub').onclick=()=>{A($('toast'),[{opacity:0,translate:'0 10px'},{opacity:1,translate:'0 0',offset:.2},{opacity:1,offset:.8},{opacity:0}],{duration:1600})};
+$('replay').onclick=pick;pick();
+</script><script src="../demo-i18n.js"></script></body></html>

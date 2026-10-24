@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>启动页进首页 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#140d09}.splash{position:absolute;inset:0;z-index:3;display:grid;place-items:center;background:radial-gradient(circle at 50% 46%,#3a2418,#140d09 70%);color:#fff}
+.splash-mark{display:grid;justify-items:center;gap:18px}.logo{display:grid;place-items:center;width:96px;height:96px;border-radius:50%;background:linear-gradient(145deg,#ff8a3d,#e8471f);box-shadow:0 0 0 10px #ff8a3d22,0 18px 40px #e8471f55}
+.logo svg{width:52px;height:52px}.splash b{font-size:22px;letter-spacing:6px}.splash small{font-size:12px;letter-spacing:3px;color:#ffffff80}
+.home{position:absolute;inset:0;z-index:4;background:#fbf8f3;clip-path:circle(0 at 50% 50%)}
+.home .sb{color:#191919}.wrap{padding:6px 20px 0}
+.loc{font-size:12px;color:#8a8278}.loc:before{content:'';display:inline-block;width:7px;height:7px;margin-right:6px;border-radius:50%;background:#e8471f}
+.home h2{margin:4px 0 12px;font-size:22px}.search{height:40px;border-radius:20px;background:#fff;box-shadow:0 1px 0 #0000000d;display:flex;align-items:center;padding:0 16px;color:#a39b91;font-size:13px}.search:before{content:'';width:12px;height:12px;margin-right:8px;border:2px solid #3b6fe0;border-radius:50%}
+.hero{position:relative;height:150px;margin:14px 0;border-radius:18px;overflow:hidden;background:radial-gradient(circle at 70% 40%,#f4e3c8 0 34px,#e9cfa6 35px 44px,transparent 45px),radial-gradient(circle at 70% 40%,#d9792f 0 52px,transparent 53px),radial-gradient(circle at 26% 58%,#e9c48b 0 26px,transparent 27px),linear-gradient(120deg,#5b3a26,#2b1b12)}
+.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,#000a)}.hero p{position:absolute;left:16px;bottom:12px;z-index:1;margin:0;color:#fff;font-size:11px}.hero p b{display:block;font-size:18px;margin-top:3px}
+.cats{display:flex;justify-content:space-between;margin:4px 0 14px}.cats span{display:grid;justify-items:center;gap:6px;font-size:11px;color:#6b645b}.cats i{display:grid;place-items:center;width:46px;height:46px;border-radius:15px;background:#fff;font-style:normal;font-size:22px;box-shadow:0 2px 8px #0000000d}
+.shop{display:flex;gap:12px;align-items:center;margin-bottom:10px;padding:10px;border-radius:16px;background:#fff;box-shadow:0 2px 10px #00000008}.shop i{display:grid;place-items:center;width:64px;height:56px;border-radius:12px;background:#f3e7d6;font-size:28px;font-style:normal}.shop b{display:block;font-size:14px}.shop small{display:block;margin:3px 0;font-size:11px;color:#8a8278}.shop em{font-style:normal;font-size:14px;font-weight:700;color:#e8471f}
+.tabs{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-around;height:76px;padding-top:12px;background:#fff;border-top:1px solid #eee;font-size:11px;color:#9a938a}.tabs .on{color:#e8471f;font-weight:700}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / LOADING STUDY 01</div><h1>启动页进首页</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div>
+<div class="splash" id="splash"><div class="splash-mark"><div class="logo" id="logo"><svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M8 24h32a16 16 0 0 1-32 0z" fill="#fff3" /><path d="M17 8c-2 3 2 5 0 9M24 6c-2 3 2 5 0 9M31 8c-2 3 2 5 0 9"/></svg></div><b id="brand">饭点</b><small id="tag">好好吃饭</small></div></div>
+<div class="home" id="home"><div class="sb"><span>9:41</span><i></i></div><div class="wrap">
+<div data-rise><div class="loc">静安区 · 南京西路</div><h2>下午好，想吃点什么？</h2></div>
+<div class="search" data-rise>搜索 拉面 / 轻食 / 奶茶</div>
+<div class="hero" data-rise><p>今日推荐 · 满 30 减 12<b>深夜治愈系拉面</b></p></div>
+<div class="cats" data-rise><span><i>🍜</i>面食</span><span><i>🥗</i>轻食</span><span><i>🍣</i>日料</span><span><i>🧋</i>奶茶</span><span><i>🍰</i>甜品</span></div>
+<div class="shop" data-rise><i>🍜</i><div><b>一兰风味豚骨拉面</b><small>★ 4.9 · 月售 3200 · 25 分钟</small><em>¥38</em></div></div>
+<div class="shop" data-rise><i>🥟</i><div><b>煎饺研究所 · 现包现煎</b><small>★ 4.8 · 月售 1800 · 20 分钟</small><em>¥22</em></div></div>
+<div class="shop" data-rise><i>🍳</i><div><b>小满轻食 · 溏心蛋饭</b><small>★ 4.7 · 月售 960 · 30 分钟</small><em>¥32</em></div></div>
+</div><nav class="tabs"><span class="on">首页</span><span>点餐</span><span>购物车</span><span>我的</span></nav></div>
+</div></div></section><aside class="side"><div class="metric"><small>PHASE</small><strong id="phase">呼吸</strong></div><div class="metric"><small>ELAPSED</small><strong id="ms">0 ms</strong></div><p class="note">Logo 先呼吸一次（600ms），再以 Logo 为圆心用圆形遮罩打开首页（700ms，先慢后快），首页各块以 60ms 间隔从下往上浮现。全程深色底，不闪白、不硬切。</p><button id="replay" type="button">重播启动</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const rises=[...document.querySelectorAll('[data-rise]')];let t0=0,tick=0;
+function clock(){$('ms').textContent=Math.round(performance.now()-t0)+' ms';tick=requestAnimationFrame(clock)}
+async function play(){document.getAnimations().forEach(a=>a.cancel());cancelAnimationFrame(tick);$('home').style.clipPath='circle(0px at 50% 50%)';$('phase').textContent='呼吸';t0=performance.now();clock();
+ await wait(250);
+ // 1. One breath on the logo.
+ A($('logo'),[{scale:1},{scale:1.1,offset:.45},{scale:.97,offset:.8},{scale:1}],{duration:600,easing:'ease-in-out',fill:'none'});await wait(600);
+ $('phase').textContent='开幕';
+ // 2. A circle grows from the logo's centre (slow then fast) and reveals home.
+ A($('logo'),[{scale:1,opacity:1},{scale:2.6,opacity:0}],{duration:700,easing:'cubic-bezier(.6,0,.9,.4)'});
+ A($('brand'),[{opacity:1},{opacity:0}],{duration:300});A($('tag'),[{opacity:1},{opacity:0}],{duration:300});
+ A($('home'),[{clipPath:'circle(48px at 50% 50%)'},{clipPath:'circle(470px at 50% 50%)'}],{duration:700,easing:'cubic-bezier(.6,0,.9,.4)'});
+ // 3. Home blocks float up one after another while the curtain opens.
+ rises.forEach((el,i)=>A(el,[{opacity:0,translate:'0 26px'},{opacity:1,translate:'0 0'}],{duration:520,delay:300+i*60,easing:easeOut}));
+ await wait(700);$('phase').textContent='浮现';await wait(300+rises.length*60);$('phase').textContent='完成';cancelAnimationFrame(tick)}
+$('replay').onclick=play;play();
+</script><script src="../demo-i18n.js"></script></body></html>

@@ -1,0 +1,44 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>权限请求前说明 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#f3f7f8}.hd{padding:6px 22px 12px}.hd h2{margin:0;font-size:26px}.hd small{font-size:12px;color:#8a979b}
+.cal{margin:0 18px;padding:16px;border-radius:20px;background:#fff}.cal header{display:flex;justify-content:space-between;height:auto;margin-bottom:12px;font-size:14px;font-weight:700}.cal header small{font-weight:400;color:#2a9fb3}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:9px;justify-items:center}.grid span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;font-size:12px;color:#9aa6a9}.grid .ok{background:#2a9fb3;color:#fff;font-weight:700}.grid .today{outline:2px dashed #2a9fb3;outline-offset:2px;color:#2a9fb3;font-weight:700}
+.app .checkin{--b:#191919;display:block;width:calc(100% - 36px);height:54px;margin:18px;border-radius:27px;color:#fff;font-size:16px;font-weight:700}.app .checkin.done{--b:#2a9fb3}
+.dim{position:absolute;inset:0;z-index:5;background:#000;opacity:0;pointer-events:none}
+.card{position:absolute;left:12px;right:12px;bottom:14px;z-index:6;padding:26px 22px 18px;border-radius:28px;background:#fff;text-align:center;transform:translateY(120%)}
+.bell{display:inline-grid;place-items:center;width:58px;height:58px;border-radius:18px;background:#e6f5f8;transform-origin:50% 10%;animation:ring 2.4s ease-in-out infinite}@keyframes ring{0%,60%,100%{rotate:0deg}66%{rotate:14deg}72%{rotate:-12deg}78%{rotate:8deg}84%{rotate:-5deg}90%{rotate:2deg}}
+.bell svg{width:30px;height:30px}.card h3{margin:14px 0 6px;font-size:20px}.card p{margin:0 0 16px;font-size:13px;color:#7b878a}
+.noti{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:16px;background:#f2f4f5;text-align:left;font-size:12px;opacity:0}.noti i{flex:0 0 32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#2a9fb3,#1f6f86);color:#fff;font-style:normal;display:grid;place-items:center;font-size:16px}.noti b{display:block;font-size:12px}.noti small{color:#7b878a}.noti em{margin-left:auto;font-style:normal;color:#9aa6a9;font-size:11px;align-self:flex-start}
+.app .ok-b{--b:#191919;display:block;width:100%;height:50px;margin-top:18px;border-radius:25px;color:#fff;font-size:15px;font-weight:700}.app .later{display:block;width:100%;height:42px;margin-top:4px;color:#7b878a;font-size:14px}
+.sys{position:absolute;left:50%;top:50%;z-index:8;width:270px;margin:-90px 0 0 -135px;border-radius:14px;background:#f1f1f3f2;text-align:center;overflow:hidden;opacity:0;pointer-events:none;box-shadow:0 20px 40px #0004}.sys.on{pointer-events:auto}
+.sys h4{margin:18px 16px 4px;font-size:16px}.sys p{margin:0 16px 16px;font-size:12.5px;line-height:1.45;color:#333}.sys footer{display:flex;height:auto;border-top:1px solid #c8c8cc}.app .sys button{flex:1;height:44px;color:#0a7aff;font-size:16px}.app .sys button+button{border-left:1px solid #c8c8cc;font-weight:700}
+.toast{position:absolute;left:50%;top:60px;z-index:9;padding:9px 16px;border-radius:18px;background:#191919;color:#fff;font-size:13px;white-space:nowrap;transform:translateX(-50%);opacity:0}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / ONBOARDING STUDY 04</div><h1>权限请求前说明</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="hd"><h2>早起打卡</h2><small>和 1,266 位早起的人一起</small></div>
+<div class="cal"><header><span>10月</span><small id="streak">连续 6 天</small></header><div class="grid" id="grid"></div></div>
+<button class="checkin" id="checkin" type="button">今日打卡 · 06:42</button>
+<div class="dim" id="dim"></div>
+<div class="card" id="card" role="dialog" aria-label="开启提醒说明"><div class="bell"><svg viewBox="0 0 24 24" fill="#2a9fb3"><path d="M12 3a6 6 0 0 0-6 6v4l-1.6 2.6A1 1 0 0 0 5.3 17h13.4a1 1 0 0 0 .9-1.4L18 13V9a6 6 0 0 0-6-6zm-2.5 15.5a2.5 2.5 0 0 0 5 0z"/></svg></div>
+<h3>每天 8 点提醒你打卡</h3><p>开启提醒的人，平均能多坚持一倍的天数</p>
+<div class="noti" id="noti"><i>☀</i><div><b>早起打卡</b><small>该打卡啦，今天也要早起 ☀️</small></div><em>08:00</em></div>
+<button class="ok-b" id="yes" type="button">好的，提醒我</button><button class="later" id="later" type="button">以后再说</button></div>
+<div class="sys" id="sys" role="alertdialog" aria-label="系统通知权限"><h4>“早起打卡”想给你发送通知</h4><p>通知可能包括提醒、声音和图标标记。你可以在“设置”中进行配置。</p><footer><button type="button" data-sys="no">不允许</button><button type="button" data-sys="yes">允许</button></footer></div>
+<div class="toast" id="toast"></div>
+</div></div></section><aside class="side"><div class="metric"><small>STATE</small><strong id="state">未打卡</strong></div><p class="note">第一次打卡成功后，说明卡带回弹从底部弹起：铃铛轻轻晃动，下面一条锁屏通知预览像真通知一样滑进来。点「好的，提醒我」先收起卡片，再淡入并轻微放大一个仿 iOS 的系统权限框；点「以后再说」只收起卡片，不弹系统框。</p><button id="replay" type="button">重新打卡</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+$('grid').innerHTML=Array.from({length:21},(_,k)=>{const d=k+1;return`<span class="${d<=14&&d!==5&&d!==10?'ok':d===15?'today':''}" ${d===15?'id="today"':''}>${d}</span>`}).join('');
+function toast(t){$('toast').textContent=t;A($('toast'),[{opacity:0,translate:'0 -12px'},{opacity:1,translate:'0 0',offset:.15},{opacity:1,offset:.85},{opacity:0}],{duration:2000})}
+function showCard(){$('dim').style.pointerEvents='auto';A($('dim'),[{opacity:0},{opacity:.4}],{duration:300});
+ A($('card'),[{transform:'translateY(120%)'},{transform:'translateY(0)'}],{duration:560,easing:'cubic-bezier(.3,1.35,.5,1)'});
+ A($('noti'),[{opacity:0,transform:'translateY(-18px) scale(.96)'},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:420,delay:520,easing:spring});$('state').textContent='说明卡'}
+function hideCard(){A($('card'),[{transform:'translateY(0)'},{transform:'translateY(120%)'}],{duration:300,easing:'ease-in'})}
+function hideDim(){$('dim').style.pointerEvents='none';A($('dim'),[{opacity:.4},{opacity:0}],{duration:260})}
+$('checkin').onclick=()=>{if($('checkin').classList.contains('done'))return;$('checkin').classList.add('done');$('checkin').textContent='已打卡 ✓ 连续 7 天';$('streak').textContent='连续 7 天';
+ const t=$('today');t.className='ok';A(t,[{scale:.5},{scale:1.2,offset:.6},{scale:1}],{duration:420,easing:spring});A($('checkin'),[{scale:1},{scale:.95,offset:.3},{scale:1}],{duration:300,fill:'none'});
+ $('state').textContent='已打卡';setTimeout(showCard,reduced?0:600)};
+$('yes').onclick=()=>{hideCard();$('state').textContent='系统权限框';setTimeout(()=>{const s=$('sys');s.classList.add('on');A(s,[{opacity:0,scale:1.12},{opacity:1,scale:1}],{duration:260,easing:'ease-out'})},reduced?0:340)};
+$('later').onclick=()=>{hideCard();hideDim();$('state').textContent='稍后再说';toast('可以稍后在「我的」里开启提醒')};
+document.querySelectorAll('[data-sys]').forEach(b=>b.onclick=()=>{const s=$('sys');s.classList.remove('on');A(s,[{opacity:1,scale:1},{opacity:0,scale:.96}],{duration:200});hideDim();
+ const yes=b.dataset.sys==='yes';$('state').textContent=yes?'已开启提醒':'未允许';toast(yes?'已开启每天 8:00 打卡提醒':'可以稍后在系统设置中开启')});
+$('replay').onclick=()=>location.reload();
+setTimeout(()=>$('checkin').click(),reduced?0:900);
+</script><script src="../demo-i18n.js"></script></body></html>

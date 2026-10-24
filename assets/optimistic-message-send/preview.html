@@ -1,0 +1,37 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>消息秒发 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#f2f3f5;display:flex;flex-direction:column}.head{display:flex;gap:10px;align-items:center;padding:4px 18px 12px;background:#fff;border-bottom:1px solid #e8e8e8}.head b{display:block;font-size:15px}.head small{font-size:11px;color:#22b35e}.ava{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#f3b07c,#b5644a)}
+.chat{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:14px 16px;overflow:hidden}
+.msg{position:relative;max-width:72%;padding:10px 13px;border-radius:16px;font-size:14px;line-height:1.5;transition:background-color .3s}.in{align-self:flex-start;background:#fff;border-top-left-radius:4px}.out{align-self:flex-end;background:#3ccf73;color:#fff;border-top-right-radius:4px}
+.out.fail{background:#ffd9d9;color:#8a2d2d}.pic{width:170px;height:110px;padding:0;overflow:hidden;border:4px solid #fff}
+.meta{display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:-6px;font-size:10px;color:#8c939d}.meta svg{width:14px;height:14px}
+.retry{display:flex;align-items:center;gap:5px;color:#e5484d}.retry i{display:grid;place-items:center;width:16px;height:16px;border-radius:50%;background:#e5484d;color:#fff;font-style:normal;font-weight:700;font-size:11px}
+.bar{display:flex;gap:8px;align-items:center;padding:10px 14px 30px;background:#fff;border-top:1px solid #e8e8e8}.bar input{flex:1;height:40px;padding:0 14px;border:1px solid #e3e3e3;border-radius:20px;background:#f7f7f8;font:inherit;font-size:14px;outline:none}
+.app .send{--b:#22b35e;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;color:#fff}.send svg{width:18px;height:18px}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / LOADING STUDY 04</div><h1>消息秒发</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb" style="background:#fff"><span>9:41</span><i></i></div>
+<div class="head"><span style="font-size:22px;color:#555">‹</span><div class="ava"></div><div><b>Mia</b><small>● 在线</small></div></div>
+<div class="chat" id="chat">
+<div class="msg out">订好啦，一辆 SUV，后备箱够放三个箱子</div>
+<div class="msg in pic scene-lake" aria-label="冰川湖照片"></div>
+<div class="msg in">我想先去这个湖！照片里的颜色是真的吗</div>
+<div class="msg out">真的，我去年去过，比照片还青</div>
+<div class="msg in">那周六早上几点出发？</div>
+</div>
+<form class="bar" id="form"><input id="text" autocomplete="off" aria-label="输入消息" placeholder="发消息…" value="好呀！周六早上 8 点楼下见 🚗"><button class="send" id="send" type="submit" aria-label="发送"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 11.5L21 3l-6.5 18-3.2-7.3z"/></svg></button></form>
+</div></div></section><aside class="side"><div class="metric"><small>NETWORK</small><strong>1.2 s</strong></div><div class="metric"><small>LAST MESSAGE</small><strong id="state">—</strong></div><label class="check"><input type="checkbox" id="fail"> 模拟发送失败</label><p class="note">点发送：气泡立刻从输入框位置滑上对话并轻微回弹（250ms），输入框马上清空可继续打字；时钟图标在 1.2 秒后换成两个对勾。勾选「模拟发送失败」后气泡变浅红并出现「点击重试」。</p><button id="replay" type="button">再发一条</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const clock='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>';
+const ticks='<svg viewBox="0 0 24 24" fill="none" stroke="#22b35e" stroke-width="2.2" stroke-linecap="round"><path d="M2 13l4 4 8-9M10 16l1 1 9-10"/></svg>';
+const samples=['我带咖啡','记得带外套，山上冷','到了给你发定位'];let n=0;
+function deliver(msg,meta){meta.innerHTML=clock+'<span>发送中</span>';$('state').textContent='发送中';msg.classList.remove('fail');
+ setTimeout(()=>{if($('fail').checked){msg.classList.add('fail');meta.innerHTML='<button class="retry" type="button"><i>!</i>点击重试</button>';meta.querySelector('button').onclick=()=>deliver(msg,meta);$('state').textContent='发送失败'}
+  else{meta.innerHTML=ticks+'<span>已送达</span>';A(meta.firstChild,[{scale:.4,opacity:0},{scale:1,opacity:1}],{duration:260,easing:spring});$('state').textContent='已送达'}},1200)}
+function send(text){if(!text.trim())return;const input=$('text'),from=appRect(input);
+ // The bubble lands in the list at once; the field clears before the network replies.
+ input.value='';const msg=document.createElement('div');msg.className='msg out';msg.textContent=text;const meta=document.createElement('div');meta.className='meta';
+ $('chat').append(msg,meta);while($('chat').children.length>12)$('chat').firstElementChild.remove();
+ const to=appRect(msg);A(msg,[{translate:`${from.left+16-to.left}px ${from.top-to.top}px`,scale:.92,opacity:.6},{translate:'0 0',scale:1,opacity:1}],{duration:250,easing:spring});
+ A(meta,[{opacity:0},{opacity:1}],{duration:200,delay:120});deliver(msg,meta);input.focus({preventScroll:true})}
+$('form').onsubmit=e=>{e.preventDefault();send($('text').value)};
+$('replay').onclick=()=>send(samples[n++%samples.length]);
+setTimeout(()=>send($('text').value),reduced?0:800);
+</script><script src="../demo-i18n.js"></script></body></html>

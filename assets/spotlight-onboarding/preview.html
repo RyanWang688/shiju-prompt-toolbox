@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>聚光灯功能引导 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#f5f4f0}.hd{display:flex;justify-content:space-between;align-items:flex-start;padding:4px 20px 10px}.hd h2{margin:0;font-size:24px}.hd small{color:#8c877e;font-size:12px}
+.app .stats{--b:#fff;display:grid;place-items:center;width:42px;height:42px;border-radius:14px;box-shadow:0 2px 8px #0000000f}.stats svg{width:22px;height:22px}
+.sum{display:flex;justify-content:space-between;padding:0 20px 12px;font-size:11px;color:#8c877e}.sum b{display:block;font-size:14px;color:#191919}
+.budget{margin:0 20px 16px;padding:18px;border-radius:22px;background:#1d1d22;color:#fff}.budget small{font-size:12px;color:#ffffff99}.budget strong{display:block;margin:6px 0 12px;font-size:30px}.prog{height:8px;border-radius:4px;background:#ffffff22}.prog i{display:block;width:66%;height:100%;border-radius:4px;background:linear-gradient(90deg,#9b7bff,#c3b1ff)}.budget p{display:flex;justify-content:space-between;margin:8px 0 0;font-size:11px;color:#ffffff99}
+.list{margin:0 20px;padding:4px 14px;border-radius:18px;background:#fff}.tx{display:flex;align-items:center;gap:12px;padding:12px 0;font-size:14px}.tx+.tx{border-top:1px solid #f1efea}.tx i{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;font-style:normal}.tx span{flex:1}.tx small{display:block;font-size:11px;color:#a29d94}.tx b{font-size:14px}.tx .plus{color:#22a35a}
+.nav{position:absolute;left:0;right:0;bottom:0;height:88px;display:flex;justify-content:space-around;align-items:flex-start;padding-top:16px;background:#fff;border-top:1px solid #eee;font-size:11px;color:#a29d94}
+.app .add{--b:#191919;position:absolute;left:50%;bottom:44px;width:62px;height:62px;margin-left:-31px;border-radius:50%;color:#fff;font-size:32px;line-height:1;box-shadow:0 8px 20px #0003}
+.addlbl{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-size:11px;color:#191919;font-weight:700}
+.mask{position:absolute;inset:0;z-index:20;opacity:0;pointer-events:none}.mask.on{pointer-events:auto}
+.hole{position:absolute;box-shadow:0 0 0 2000px #000000b3;transition:left .4s cubic-bezier(.2,.9,.22,1),top .4s cubic-bezier(.2,.9,.22,1),width .4s cubic-bezier(.2,.9,.22,1),height .4s cubic-bezier(.2,.9,.22,1),border-radius .4s cubic-bezier(.2,.9,.22,1)}
+.hole:after{content:'';position:absolute;inset:-5px;border:2px solid #fff;border-radius:inherit;animation:breathe 1.8s ease-in-out infinite}@keyframes breathe{50%{opacity:.25;transform:scale(1.04)}}
+.app .skip{--b:#ffffff26;position:absolute;right:18px;top:58px;padding:7px 14px;transition:top .4s cubic-bezier(.2,.9,.22,1);border-radius:16px;color:#fff;font-size:13px}
+.tip{position:absolute;width:258px;padding:16px;border-radius:18px;background:#fff;box-shadow:0 12px 30px #0005;transition:left .4s cubic-bezier(.2,.9,.22,1),top .4s cubic-bezier(.2,.9,.22,1)}
+.tip h4{margin:0 0 4px;font-size:16px}.tip p{margin:0 0 14px;font-size:13px;line-height:1.6;color:#5f5a52}.tip footer{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#a29d94}
+.app .next{--b:#191919;padding:8px 16px;border-radius:16px;color:#fff;font-size:13px;font-weight:700}
+.arrow{position:absolute;width:16px;height:16px;background:#fff;transform:rotate(45deg);transition:left .4s cubic-bezier(.2,.9,.22,1)}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / ONBOARDING STUDY 01</div><h1>聚光灯功能引导</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="hd"><div><h2>小鹿记账</h2><small>10月 · 第 3 周</small></div><button class="stats" id="stats" type="button" aria-label="统计图表"><svg viewBox="0 0 24 24" fill="none" stroke="#191919" stroke-width="2.2" stroke-linecap="round"><path d="M5 20V11M12 20V5M19 20v-6"/></svg></button></div>
+<div class="sum"><span>今日支出<b>¥12.50</b></span><span>本周<b>¥216.30</b></span><span>已记账<b>21 天</b></span></div>
+<div class="budget" id="budget"><small>本月预算剩余</small><strong>¥1,713.50</strong><div class="prog"><i></i></div><p><span>已花 ¥3,286.50 / ¥5,000</span><span>66%</span></p></div>
+<div class="list"><div class="tx"><i style="background:#fff1e6">🍳</i><span>早餐<small>今天 08:12</small></span><b>-8.50</b></div><div class="tx"><i style="background:#eef3ff">🚕</i><span>打车<small>昨天 22:40</small></span><b>-24.00</b></div><div class="tx"><i style="background:#eaf7ef">🛒</i><span>超市采购<small>10月18日</small></span><b>-126.80</b></div><div class="tx"><i style="background:#fff8db">💼</i><span>工资到账<small>10月15日</small></span><b class="plus">+8,600.00</b></div></div>
+<nav class="nav"><span>明细</span><span>报表</span><span style="width:62px"></span><span>发现</span><span>我的</span></nav><button class="add" id="add" type="button" aria-label="记一笔">+</button><div class="addlbl">记一笔</div>
+<div class="mask" id="mask"><div class="hole" id="hole"></div><button class="skip" id="skip" type="button">跳过</button><div class="tip" id="tip"><div class="arrow" id="arrow"></div><div id="tipBody"><h4 id="tt"></h4><p id="tp"></p></div><footer><span id="tn"></span><button class="next" id="next" type="button">下一步</button></footer></div></div>
+</div></div></section><aside class="side"><div class="metric"><small>STEP</small><strong id="step">1 / 3</strong></div><p class="note">70% 黑色遮罩只在目标处挖出圆角镂空，边缘细白描边慢慢呼吸；说明气泡带小三角从小弹到正常。点「下一步」镂空用 400ms 平滑滑到下一个控件并变成它的形状，气泡跟着换位置和文字；第 3 步按钮变「知道了」，点后遮罩淡出。</p><button id="replay" type="button">重新开始引导</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const steps=[{el:'add',r:'50%',t:'记一笔',p:'每花一笔钱，点这里 3 秒就能记下来。'},{el:'budget',r:'26px',t:'本月预算',p:'这个月还剩多少一眼就知道，快超支时会提前提醒你。'},{el:'stats',r:'18px',t:'统计图表',p:'每周自动生成消费报告，钱花在哪里一目了然。'}];
+let i=0;const hole=$('hole'),tip=$('tip');
+function place(animateText){const s=steps[i],r=appRect($(s.el)),pad=8;
+ Object.assign(hole.style,{left:r.left-pad+'px',top:r.top-pad+'px',width:r.width+pad*2+'px',height:r.height+pad*2+'px',borderRadius:s.r});
+ // Bubble sits above targets in the lower half, below the rest; the arrow points at the target's centre.
+ const below=r.top<422,cx=r.left+r.width/2,left=Math.max(16,Math.min(390-16-258,cx-129)),th=tip.offsetHeight||128;
+ tip.style.left=left+'px';tip.style.top=(below?r.top+r.height+pad+16:r.top-pad-16-th)+'px';
+ const ar=$('arrow');ar.style.left=cx-left-8+'px';ar.style.top=below?'-7px':'';ar.style.bottom=below?'':'-7px';tip.style.transformOrigin=(cx-left)+'px '+(below?'0':'100%');
+ $('tt').textContent=s.t;$('tp').textContent=s.p;$('tn').textContent=`${i+1}/3`;$('next').textContent=i===2?'知道了':'下一步';$('step').textContent=`${i+1} / 3`;$('skip').style.top=i===2?'124px':'58px';
+ if(animateText)A($('tipBody'),[{opacity:0,translate:'0 6px'},{opacity:1,translate:'0 0'}],{duration:260,delay:140})}
+function start(){i=0;const m=$('mask');m.getAnimations().forEach(a=>a.cancel());m.classList.add('on');hole.style.transition='none';place(false);hole.offsetWidth;hole.style.transition='';place(false);
+ A(m,[{opacity:0},{opacity:1}],{duration:300});A(tip,[{scale:.6,opacity:0},{scale:1,opacity:1}],{duration:420,delay:180,easing:spring});}
+function end(){const m=$('mask');m.classList.remove('on');A(m,[{opacity:1},{opacity:0}],{duration:320});$('step').textContent='完成'}
+$('next').onclick=()=>{if(i===2)return end();i++;place(true)};$('skip').onclick=end;$('replay').onclick=start;
+setTimeout(start,reduced?0:500);
+</script><script src="../demo-i18n.js"></script></body></html>
