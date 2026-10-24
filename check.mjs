@@ -124,6 +124,9 @@ const elasticSamples=runIndicator(origin,destination);
 assert.ok(elasticSamples.slice(0,6).every(r=>r.left===origin.left),'Trailing edge starts only after six frames');
 assert.ok(Math.max(...elasticSamples.map(r=>r.width))>200,'Indicator must stretch beyond twice its width');
 assert.deepEqual(elasticSamples.at(-1),destination);
+// Smooth landing: the indicator slows into its final position instead of stopping at full speed.
+const landing=elasticSamples.slice(-4,-1).map((r,i,a)=>i?Math.abs(r.left-a[i-1].left):0).slice(1);
+assert.ok(landing.every(step=>step<2),`Indicator must ease into place, last steps were ${landing}`);
 assert.deepEqual(runIndicator(destination,origin).at(-1),origin);
 assert.deepEqual(runIndicator(origin,destination,true),[destination]);
 assert.ok(!source.includes('data-rate=')&&!source.includes('function rating(')&&!source.includes('value="rating"'));
