@@ -144,6 +144,16 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 .dashboard .skill-topics .topic-list .topic-chip small{background:transparent!important;color:var(--muted)!important}
 .dashboard .skill-topics .topic-list .topic-chip.active small{color:var(--ink)!important}
 @media(max-width:720px){.dashboard .skill-topics .topic-list .topic-chip{padding:8px 10px 12px}}
+/* Tab labels blend colour and weight with --w (0 → 1): animated on tap, set directly while dragging. */
+@property --w{syntax:'<number>';inherits:true;initial-value:0}
+.dashboard .skill-topics .topic-list .topic-chip:is(.topic-chip,.active,:focus-visible,:active){color:color-mix(in srgb,var(--ink) calc(var(--w)*100%),var(--muted))!important;-webkit-text-stroke:calc(var(--w)*.45px) currentColor;transition:--w .38s cubic-bezier(.2,.9,.22,1)}
+.dashboard .skill-topics .topic-list .topic-chip:is(.topic-chip,.active) small{color:color-mix(in srgb,var(--ink) calc(var(--w)*100%),var(--muted))!important;-webkit-text-stroke:0}
+.dashboard .skill-topics .topic-list .topic-chip:hover{color:var(--ink)!important}
+.dashboard .skill-topics .topic-list.tracking .topic-chip{transition:none!important}
+/* The card grid takes horizontal drags (vertical scrolling stays with the browser). */
+.dashboard .grid{touch-action:pan-y pinch-zoom}
+body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
+@media(prefers-reduced-motion:reduce){.dashboard .skill-topics .topic-list .topic-chip{transition:none!important}}
 
 /* Empty states: the masonry grid's 8px rows would let them overflow onto the footer, so rows go auto. */
 .dashboard .grid.is-empty{grid-auto-rows:auto}
