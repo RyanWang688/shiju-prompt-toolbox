@@ -102,19 +102,18 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 @media(prefers-reduced-motion:reduce){.copy-success .copy-check path{animation:none}.topic-indicator{will-change:auto}}
 
 /* Shared control feedback; the invisible card opener retains the body-only wipe. */
-.dashboard :is(button:not(.card-open):not(.like),a.visit-site,.rail-brand,select){transition:background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .24s ease,translate .28s cubic-bezier(.2,.9,.22,1),scale .24s cubic-bezier(.2,.9,.22,1)}
+.dashboard :is(button:not(.card-open,.like),a.visit-site,.rail-brand,select){transition:background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .24s ease,translate .28s cubic-bezier(.2,.9,.22,1),scale .24s cubic-bezier(.2,.9,.22,1)}
 .dashboard .rail-button img{transition:translate .28s cubic-bezier(.2,.9,.22,1),rotate .28s cubic-bezier(.2,.9,.22,1),opacity .18s}
 .dashboard .card .card-body :is(.star,.visit-site):is(:hover,:focus-visible){mix-blend-mode:normal}
-.dashboard :is(button:not(.card-open):not(.like):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;box-shadow:0 0 0 4px #ffd43b35}
+.dashboard :is(button:not(.card-open,.like):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;box-shadow:0 0 0 4px #ffd43b35}
 @media(hover:hover) and (pointer:fine){
- .dashboard :is(button:not(.card-open):not(.like):not(:disabled),a.visit-site,.rail-brand,select):hover{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;filter:none;translate:0 -2px;box-shadow:0 5px 0 #19191912,0 8px 18px #ffd43b26}
+ .dashboard :is(button:not(.card-open,.like):not(:disabled),a.visit-site,.rail-brand,select):hover{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;filter:none;translate:0 -2px;box-shadow:0 5px 0 #19191912,0 8px 18px #ffd43b26}
  .dashboard .rail-button:hover img{translate:1px -1px;rotate:-6deg;opacity:1}
- .dashboard .topic-chip:hover small{color:var(--ink)}
 }
-.dashboard :is(button:not(.card-open):not(.like):not(:disabled),a.visit-site,.rail-brand,select):active{translate:0 0;scale:.97;box-shadow:inset 0 2px 4px #19191920}
+.dashboard :is(button:not(.card-open,.like):not(:disabled),a.visit-site,.rail-brand,select):active{translate:0 0;scale:.97;box-shadow:inset 0 2px 4px #19191920}
 @media(prefers-reduced-motion:reduce){
- .dashboard :is(button:not(.card-open):not(.like),a.visit-site,.rail-brand,select),.dashboard .rail-button img{transition:none}
- .dashboard :is(button:not(.card-open):not(.like),a.visit-site,.rail-brand,select):is(:hover,:active){translate:none;scale:none}
+ .dashboard :is(button:not(.card-open,.like),a.visit-site,.rail-brand,select),.dashboard .rail-button img{transition:none}
+ .dashboard :is(button:not(.card-open,.like),a.visit-site,.rail-brand,select):is(:hover,:active){translate:none;scale:none}
  .dashboard .rail-button:hover img{translate:none;rotate:none}
 }
 
@@ -139,7 +138,7 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 .topic-list::-webkit-scrollbar{display:none}
 .topic-indicator{border:0;border-radius:3px;background:var(--ink);box-shadow:none}
 .dashboard .skill-topics .topic-list .topic-chip,.dashboard .skill-topics .topic-list .topic-chip:is(.active,:hover,:focus-visible,:active){flex-shrink:0;min-height:44px;padding:8px 14px 12px;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;translate:none!important;scale:none!important;font-size:13px;font-weight:600;color:var(--muted)!important}
-.dashboard .skill-topics .topic-list .topic-chip:is(.active,:hover){color:var(--ink)!important}
+.dashboard .skill-topics .topic-list .topic-chip.active{color:var(--ink)!important}
 .dashboard .skill-topics .topic-list .topic-chip:focus-visible{outline:3px solid var(--ink);outline-offset:-3px}
 .dashboard .skill-topics .topic-list .topic-chip small{background:transparent!important;color:var(--muted)!important}
 .dashboard .skill-topics .topic-list .topic-chip.active small{color:var(--ink)!important}
@@ -148,7 +147,8 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 @property --w{syntax:'<number>';inherits:true;initial-value:0}
 .dashboard .skill-topics .topic-list .topic-chip:is(.topic-chip,.active,:focus-visible,:active){color:color-mix(in srgb,var(--ink) calc(var(--w)*100%),var(--muted))!important;-webkit-text-stroke:calc(var(--w)*.45px) currentColor;transition:--w .38s cubic-bezier(.2,.9,.22,1)}
 .dashboard .skill-topics .topic-list .topic-chip:is(.topic-chip,.active) small{color:color-mix(in srgb,var(--ink) calc(var(--w)*100%),var(--muted))!important;-webkit-text-stroke:0}
-.dashboard .skill-topics .topic-list .topic-chip:hover{color:var(--ink)!important}
+/* Hover only thickens the label; colour and count stay put. */
+@media(hover:hover) and (pointer:fine){.dashboard .skill-topics .topic-list .topic-chip.topic-chip:hover{-webkit-text-stroke:max(calc(var(--w)*.45px),.45px) currentColor}}
 .dashboard .skill-topics .topic-list.tracking .topic-chip{transition:none!important}
 /* The card grid takes horizontal drags (vertical scrolling stays with the browser). */
 .dashboard .grid{touch-action:pan-y pinch-zoom}
