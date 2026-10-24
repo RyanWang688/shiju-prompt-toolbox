@@ -1,0 +1,41 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>滑动分拣 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#0c0c0e;color:#f4f2ee}.sb{color:#fff}
+.app h2{margin:10px 22px 2px;font:600 32px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.sub{margin:0 22px;font-size:11px;color:#9a978f;line-height:1.6}
+.deck{position:absolute;left:35px;top:178px;width:320px;height:430px}
+.tk{position:absolute;inset:0;padding:12px;border-radius:18px;background:#f4f2ee;color:#111;touch-action:none;cursor:grab;will-change:transform,filter}
+.tk .ph{position:relative;height:310px;border-radius:12px}.tk .n{position:absolute;right:10px;top:10px;padding:3px 8px;border-radius:10px;background:#111;color:#fff;font-size:11px;font-weight:700}
+.tk b{display:block;margin:10px 4px 6px;font:600 22px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.meta{display:flex;justify-content:space-between;margin:0 4px;font-size:12px;font-weight:700}.meta small{display:block;font-size:9px;font-weight:400;color:#8a877f;letter-spacing:1px}
+.stamp{position:absolute;top:28px;padding:6px 14px;border:3px solid;border-radius:10px;font-size:20px;font-weight:800;opacity:0}.stamp.bin{right:24px;color:#e5484d;rotate:12deg}.stamp.keep{left:24px;color:#22b35e;rotate:-12deg}
+.btns{position:absolute;left:0;right:0;top:632px;display:flex;justify-content:center;gap:14px}.app .btns button{--b:#1d1d21;height:52px;border-radius:26px;font-size:18px;color:#ddd}.app .btns .no{--b:#f4f2ee;width:52px;color:#111}.app .btns .ok{width:120px}.app .btns .ed{width:52px}
+.nav{position:absolute;left:14px;right:14px;bottom:24px;display:flex;justify-content:space-around;align-items:center;height:56px;border-radius:28px;background:#f4f2ee;color:#222;font-size:13px;font-weight:600}.nav i{width:40px;height:40px;border-radius:50%}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / APP MOTION 05</div><h1>滑动分拣</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<h2>2 组相似照片</h2><p class="sub">左滑删除副本 · 右滑全部保留<br>手机可腾出 25.9 MB</p>
+<div class="deck" id="deck"></div>
+<div class="btns"><button class="no" id="bin" type="button" aria-label="删除副本">✕</button><button class="ok" id="keep" type="button" aria-label="全部保留">✓</button><button class="ed" type="button" aria-label="编辑">✎</button></div>
+<nav class="nav"><span>相册</span><span>整理</span><span>年份</span><i class="scene-aurora"></i></nav>
+</div></div></section><aside class="side"><div class="metric"><small>DRAG X</small><strong id="dx">0px</strong></div><div class="metric"><small>ACTION</small><strong id="act">—</strong></div><div class="metric"><small>NEXT SCALE</small><strong id="ns">0.92</strong></div><p class="note">在手机里左右拖照片卡：卡片跟手平移并微微倾斜，向左是删除、向右是保留；超过阈值或甩得快就飞出屏幕，下一张从缩小压暗的状态用弹簧恢复正常，否则弹回原位。</p><button id="replay" type="button">重新整理</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const items=[['scene-aurora','湖面微光','挪威','3.9 MB'],['scene-ice','冰洞深处','冰岛','4.6 MB'],['scene-dune','沙丘日落','纳米比亚','5.2 MB'],['scene-ridge','粉色山脊','新西兰','3.1 MB'],['scene-lake','冰川湖','川西','4.0 MB']];
+let next=0,busy=false;const TH=110;
+function make(){const [s,t,p,m]=items[next++%items.length];const el=document.createElement('div');el.className='tk';
+ el.innerHTML=`<div class="ph ${s}"><span class="n">×2</span></div><b>${t}</b><div class="meta"><span><small>年份</small>2026</span><span><small>地点</small>${p}</span><span><small>大小</small>${m}</span></div><i class="stamp bin">删除</i><i class="stamp keep">保留</i>`;return el}
+// The card below waits shrunk and dimmed; p (0–1) is how far the top card has travelled toward the threshold.
+function under(p){const u=$('deck').firstElementChild;if(!u||u===topCard())return;const s=.92+.08*p;u.style.transform=`translateY(${16*(1-p)}px) scale(${s})`;u.style.filter=`brightness(${.6+.4*p})`;$('ns').textContent=s.toFixed(2)}
+const topCard=()=>$('deck').lastElementChild;
+function paint(x){const t=topCard();t.style.transform=`translateX(${x}px) rotate(${x/22}deg)`;t.querySelector('.bin').style.opacity=Math.max(0,-x/TH);t.querySelector('.keep').style.opacity=Math.max(0,x/TH);
+ under(Math.min(1,Math.abs(x)/TH));$('dx').textContent=Math.round(x)+'px';$('act').textContent=x<-20?'删除':x>20?'保留':'—'}
+function reset(){$('deck').innerHTML='';next=0;$('deck').append(make(),make());$('deck').append($('deck').firstElementChild);under(0);paint(0);bind()}
+function fly(dir,from=0){if(busy)return;busy=true;const t=topCard(),u=$('deck').firstElementChild;$('act').textContent=dir<0?'删除':'保留';
+ A(t,[{transform:`translateX(${from}px) rotate(${from/22}deg)`},{transform:`translateX(${dir*560}px) rotate(${dir*28}deg)`}],{duration:340,easing:'cubic-bezier(.4,0,1,1)'});
+ const s0=.92+.08*Math.min(1,Math.abs(from)/TH);
+ A(u,[{transform:`translateY(${16*(1-(s0-.92)/.08)}px) scale(${s0})`,filter:`brightness(${.6+.4*(s0-.92)/.08})`},{transform:'none',filter:'brightness(1)'}],{duration:560,delay:60,easing:spring});
+ setTimeout(()=>{t.remove();u.getAnimations().forEach(a=>a.cancel());u.style.transform='none';u.style.filter='none';const nx=make();$('deck').prepend(nx);under(0);bind();$('dx').textContent='0px';$('ns').textContent='0.92';busy=false},reduced?0:620)}
+function bind(){const t=topCard();let sx=0,x=0,lx=0,lt=0,v=0,drag=false;
+ t.onpointerdown=e=>{if(busy)return;drag=true;sx=e.clientX;lx=e.clientX;lt=e.timeStamp;v=0;t.getAnimations().forEach(a=>a.cancel());t.setPointerCapture(e.pointerId)};
+ t.onpointermove=e=>{if(!drag)return;const k=appScale();x=(e.clientX-sx)/k;const dt=e.timeStamp-lt;if(dt>0)v=(e.clientX-lx)/k/dt;lx=e.clientX;lt=e.timeStamp;paint(x)};
+ t.onpointerup=t.onpointercancel=e=>{if(!drag)return;drag=false;if(e.timeStamp-lt>90)v=0;
+  if(Math.abs(x)>TH||Math.abs(v)>.7)fly(Math.sign(Math.abs(x)>TH?x:v),x);
+  else{const from=x;A(t,[{transform:`translateX(${from}px) rotate(${from/22}deg)`},{transform:'none'}],{duration:480,easing:spring,fill:'none'});paint(0)}x=0}}
+$('bin').onclick=()=>fly(-1);$('keep').onclick=()=>fly(1);$('replay').onclick=reset;
+reset();setTimeout(()=>fly(-1),reduced?0:1100);
+</script><script src="../demo-i18n.js"></script></body></html>

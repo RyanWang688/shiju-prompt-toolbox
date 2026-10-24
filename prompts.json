@@ -1,5 +1,279 @@
 [
   {
+    "id": "drop-gather-intro",
+    "kind": "prompt",
+    "title": "开场落下收拢",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 开场动画 / 重力下落 / Spring 收拢 / 扇形",
+    "description": "照片带重力一张张落下错开堆叠，停顿后四张用弹簧收拢成扇形，其余落出屏幕，标题和面板升起。",
+    "prompt": "开场落下收拢（Drop and Gather Intro）：照片带重力依次落下并随机〔错〕开堆叠，停顿后四张用Spring收拢成扇形，其余继续下落出屏，标题和面板随后从下方升起。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/drop-gather-intro/preview.html",
+      "alt": "开场落下收拢：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @西瓜同…（截图中账号名被截断）合集「App和小程序的高级交互」第 15 集「术语Skill提升AI审美：8种App和小程序高级交互」（10月15日）中「AI描述词」字幕，用户提供截图；第 02 个未在截图中。截图右侧的点赞、评论图标遮住了个别字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/drop-gather-intro/card-preview.png",
+      "alt": "开场落下收拢：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Drop and Gather Intro",
+      "description": "Photos drop one by one under gravity into a loose pile; four spring into a fan, the rest fall away, and the title and panel rise.",
+      "tags": "App interaction / Intro animation / Gravity drop / Spring gather / Fan",
+      "prompt": "Drop and Gather Intro: photos fall one after another with gravity and pile up with random [off]sets; after a pause, four of them gather into a fan with a spring while the rest keep falling off screen, then the title and panel rise from below.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "dismissible-sheet",
+    "kind": "prompt",
+    "title": "可收起面板",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 让出舞台 / 底部面板 / 位移放大 / 原路返回",
+    "description": "关闭后面板下滑淡出，上方舞台下移放大填满空位，只留一个圆角按钮，点它面板原路升回。",
+    "prompt": "可收起面板（Dismissible Sheet）：点击关闭后面板下滑淡出，上方舞〔台〕位移放大填满空位，底部保留一个圆角按钮，点击后面板原路升回。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dismissible-sheet/preview.html",
+      "alt": "可收起面板：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @西瓜同…（截图中账号名被截断）合集「App和小程序的高级交互」第 15 集「术语Skill提升AI审美：8种App和小程序高级交互」（10月15日）中「AI描述词」字幕，用户提供截图；第 02 个未在截图中。截图右侧的点赞、评论图标遮住了个别字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dismissible-sheet/card-preview.png",
+      "alt": "可收起面板：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Dismissible Sheet",
+      "description": "Closing slides the sheet down and away while the stage above shifts and scales up to fill the space; a pill button brings the sheet back the same way.",
+      "tags": "App interaction / Make room / Bottom sheet / Shift and scale / Same-path return",
+      "prompt": "Dismissible Sheet: after tapping close, the sheet slides down and fades out, the stage above shifts and scales up to fill the empty space, and a rounded button stays at the bottom; tapping it brings the sheet back up along the same path.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "shared-element-expand",
+    "kind": "prompt",
+    "title": "共享元素放大",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 共享元素过渡 / 4:5 / 等比缩放 / 延迟弹入",
+    "description": "缩略图和大图同为 4:5，以左上角为原点位移加等比缩放成大图，操作按钮延迟 0.18 秒弹入。",
+    "prompt": "共享元素放大（Shared Element Expand）：缩略图与大图同为4:5比例，以缩略图左上角为原点做位移加等比缩放过渡，操作按钮延迟0.18秒从下方弹入。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/shared-element-expand/preview.html",
+      "alt": "共享元素放大：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @西瓜同…（截图中账号名被截断）合集「App和小程序的高级交互」第 15 集「术语Skill提升AI审美：8种App和小程序高级交互」（10月15日）中「AI描述词」字幕，用户提供截图；第 02 个未在截图中。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/shared-element-expand/card-preview.png",
+      "alt": "共享元素放大：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Shared Element Expand",
+      "description": "A 4:5 thumbnail grows into the 4:5 full view with a translate-and-uniform-scale from its top-left corner; action buttons spring in 0.18 s later.",
+      "tags": "App interaction / Shared element transition / 4:5 / Uniform scale / Delayed entrance",
+      "prompt": "Shared Element Expand: the thumbnail and the full image are both 4:5, transition with a translate plus uniform scale using the thumbnail's top-left corner as the origin, and the action buttons pop in from below after a 0.18-second delay.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "swipe-to-triage",
+    "kind": "prompt",
+    "title": "滑动分拣",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 卡片滑动 / 阈值飞出 / Spring 补位 / 左右两操作",
+    "description": "当前卡片跟手平移，超过阈值飞出屏幕，下一张从缩小压暗用弹簧恢复；左滑删除、右滑保留。",
+    "prompt": "滑动分拣（Swipe to Triage）：当前项跟随手指平移，超过阈值飞出屏幕，下一项从缩小压暗的状态用Spring过渡到正常，左右两个方向对应两种操作。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/swipe-to-triage/preview.html",
+      "alt": "滑动分拣：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @西瓜同…（截图中账号名被截断）合集「App和小程序的高级交互」第 15 集「术语Skill提升AI审美：8种App和小程序高级交互」（10月15日）中「AI描述词」字幕，用户提供截图；第 02 个未在截图中。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/swipe-to-triage/card-preview.png",
+      "alt": "滑动分拣：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Swipe to Triage",
+      "description": "The current card follows your finger and flies off past a threshold; the next springs up from shrunk and dimmed — left and right mean two different actions.",
+      "tags": "App interaction / Card swipe / Threshold fling / Spring promote / Two-way actions",
+      "prompt": "Swipe to Triage: the current item moves with the finger and flies off screen once past a threshold; the next item springs from a shrunk, dimmed state to normal; left and right map to two different actions.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "staggered-title-swap",
+    "kind": "prompt",
+    "title": "逐行标题切换",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 逐行切换 / 行遮罩 / 60ms 交错 / Spring 回弹",
+    "description": "大标题每行单独遮罩，切换时各行间隔 60 毫秒沉下，新标题逐行升起，主视觉缩小淡出后弹回。",
+    "prompt": "逐行标题切换（Staggered Title Swap）：大标题每行单独做遮罩，切换时各行间隔60毫秒向下退出，新标题逐行上升进入，主视觉缩小淡出后用Spring弹回。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/staggered-title-swap/preview.html",
+      "alt": "逐行标题切换：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @西瓜同…（截图中账号名被截断）合集「App和小程序的高级交互」第 15 集「术语Skill提升AI审美：8种App和小程序高级交互」（10月15日）中「AI描述词」字幕，用户提供截图；第 02 个未在截图中。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/staggered-title-swap/card-preview.png",
+      "alt": "逐行标题切换：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Staggered Title Swap",
+      "description": "Each line of the big title has its own mask: lines sink out 60 ms apart, the new title rises line by line, and the hero shrinks away then springs back.",
+      "tags": "App interaction / Line-by-line swap / Line masks / 60 ms stagger / Spring return",
+      "prompt": "Staggered Title Swap: mask each line of the big title separately; when switching, the lines exit downward 60 milliseconds apart, the new title rises in line by line, and the hero visual shrinks and fades out, then springs back.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "waveform-scrubber",
+    "kind": "prompt",
+    "title": "波形进度条",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 进度条 / 波形 / 拖动调进度 / 播放器",
+    "description": "一排竖条表示整段进度，已播部分高亮；按住拖动实时更新，松手从该位置继续播放。",
+    "prompt": "波形进度条（Waveform Scrubber）：用一排竖条表示整段内容的进度，已经过的部分高亮，按住拖动时实时更新进度，松手后从该位置继续。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/waveform-scrubber/preview.html",
+      "alt": "波形进度条：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @西瓜同…（截图中账号名被截断）合集「App和小程序的高级交互」第 15 集「术语Skill提升AI审美：8种App和小程序高级交互」（10月15日）中「AI描述词」字幕，用户提供截图；第 02 个未在截图中。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/waveform-scrubber/card-preview.png",
+      "alt": "波形进度条：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Waveform Scrubber",
+      "description": "A row of bars stands for the whole track with the played part lit; press and drag to scrub live, and playback continues from where you let go.",
+      "tags": "App interaction / Progress bar / Waveform / Drag to seek / Player",
+      "prompt": "Waveform Scrubber: use a row of vertical bars to show progress through the whole piece, highlight the part already played, update the progress live while pressing and dragging, and continue from that position on release.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "floating-dock-disc",
+    "kind": "prompt",
+    "title": "底栏常驻入口",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 常驻入口 / 底部导航 / 浮动圆碟 / 弹出面板",
+    "description": "底部导航右端一个圆形封面按钮，播放中上下轻轻浮动、暂停时静止，点击从底部弹出当前面板。",
+    "prompt": "底栏常驻入口（Floating Dock Disc）：底部导航右端放一个圆形封面按钮，进行中时上下轻微浮动，暂停时静止，点击后从底部弹出当前面板。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/floating-dock-disc/preview.html",
+      "alt": "底栏常驻入口：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @西瓜同…（截图中账号名被截断）合集「App和小程序的高级交互」第 15 集「术语Skill提升AI审美：8种App和小程序高级交互」（10月15日）中「AI描述词」字幕，用户提供截图；第 02 个未在截图中。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/floating-dock-disc/card-preview.png",
+      "alt": "底栏常驻入口：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Floating Dock Disc",
+      "description": "A round cover button at the right end of the bottom bar floats gently while something plays, rests when paused, and opens the current panel from the bottom.",
+      "tags": "App interaction / Persistent entry / Bottom navigation / Floating disc / Pop-up panel",
+      "prompt": "Floating Dock Disc: put a round cover button at the right end of the bottom navigation; it floats up and down slightly while in progress, stays still when paused, and tapping it pops the current panel up from the bottom.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "skill-final-review-slides",
+    "kind": "skill",
+    "resourceType": "Codex Skill",
+    "title": "final-review-slides",
+    "category": "其他",
+    "skillTopics": [
+      "求职效率"
+    ],
+    "tags": "期末复习 / 课件总结 / 模拟题 / LaTeX / 中英双语",
+    "description": "把 PDF / PPTX 课件整理成带页码引用的期末复习包和模拟题：按原讲义顺序逐章讲解，保留英文术语与公式，生成速查表、易错点、课程结构图，模拟题附独立答案册，并设覆盖率、公式、渲染等质量门槛。",
+    "source": "https://github.com/chowkayee11/final-review-slides",
+    "repository": "https://github.com/chowkayee11/final-review-slides",
+    "en": {
+      "title": "final-review-slides",
+      "description": "Turns PDF / PPTX lecture decks into page-cited final-exam review packs and mock exams: lecture-order explanations that keep English terms and formulas, a quick-reference sheet, a misconceptions guide, a course map, and mock exams with a separate solution booklet — all behind coverage, formula and rendering quality gates.",
+      "tags": "Final review / Lecture summaries / Mock exams / LaTeX / Bilingual",
+      "notes": "Written for Codex (install into ~/.codex/skills); outputs LaTeX sources plus compiled PDFs. Remote Mermaid rendering is used only with explicit consent.",
+      "license": "No license file in the repository",
+      "previewNote": "The repository README has no real output image, and no concept art was substituted; real preview pending."
+    },
+    "prompt": "final-review-slides\n类型：Codex Skill\n\n用途：把 PDF / PPTX 课件整理成带页码引用的期末复习包和模拟题：按原讲义顺序逐章讲解，保留英文术语与公式，生成速查表、易错点、课程结构图，模拟题附独立答案册，并设覆盖率、公式、渲染等质量门槛。\n\n输入：一个或多个 .pdf / .pptx 讲义；可选 Revision/Review 课件、syllabus、作业、Quiz、期中、往年题及答案。\n\n输出：final-review、quick-reference、mistakes-and-distinctions（均含 .tex 与 .pdf）、coverage-report.md、course-map.json / .mmd；有考核依据或用户要求时另出 mock-exam、mock-exam-solutions 与 mock-exam-blueprint.md。\n\n选项：language = auto | zh | en | bilingual（默认中文讲解并保留英文术语）；depth = concise | comprehensive | deep（默认 comprehensive）。\n\n安装：git clone https://github.com/chowkayee11/final-review-slides.git ~/.codex/skills/final-review-slides\n\n说明：远程 Mermaid 渲染只在用户明确同意时使用；仓库未附许可证文件。\n\nGitHub：https://github.com/chowkayee11/final-review-slides\n\n收录来源：用户提供的 GitHub 仓库截图；README 与 SKILL.md 已核实。\n\n收录状态：仅收藏，未安装或执行。",
+    "addedAt": "2026-10-25",
+    "verifiedAt": "2026-10-25",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewSource": "https://github.com/chowkayee11/final-review-slides",
+    "previewNote": "仓库 README 未提供真实效果图，未用概念图替代；真实预览待补。"
+  },
+  {
     "id": "splash-curtain-reveal",
     "kind": "prompt",
     "title": "启动页进首页",
@@ -22,8 +296,8 @@
       "type": "image",
       "src": "assets/splash-curtain-reveal/card-preview.png",
       "alt": "启动页进首页：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -57,8 +331,8 @@
       "type": "image",
       "src": "assets/top-progress-sprint/card-preview.png",
       "alt": "顶部进度条：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -92,8 +366,8 @@
       "type": "image",
       "src": "assets/photo-upload-reveal/card-preview.png",
       "alt": "照片上传进度：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -127,8 +401,8 @@
       "type": "image",
       "src": "assets/optimistic-message-send/card-preview.png",
       "alt": "消息秒发：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -162,8 +436,8 @@
       "type": "image",
       "src": "assets/ride-matching-ripple/card-preview.png",
       "alt": "叫车等待：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -197,8 +471,8 @@
       "type": "image",
       "src": "assets/spotlight-onboarding/card-preview.png",
       "alt": "聚光灯功能引导：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -232,8 +506,8 @@
       "type": "image",
       "src": "assets/welcome-parallax-pager/card-preview.png",
       "alt": "欢迎页滑动引导：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -267,8 +541,8 @@
       "type": "image",
       "src": "assets/empty-state-guide/card-preview.png",
       "alt": "空状态引导：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {
@@ -302,8 +576,8 @@
       "type": "image",
       "src": "assets/permission-primer/card-preview.png",
       "alt": "权限请求前说明：本次实际网页演示的浏览器截图，点开可交互",
-      "width": 1200,
-      "height": 920
+      "width": 1380,
+      "height": 900
     },
     "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
     "en": {

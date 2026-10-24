@@ -1,0 +1,36 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>逐行标题切换 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#fbfaff;color:#17151f;border:3px solid #cfc6ff;border-radius:0}
+.top{display:flex;justify-content:space-between;align-items:center;padding:0 20px}.top i{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;font-style:normal;font-size:14px}.top i:not(.me){background:#f0edfb}.top .me{width:46px;height:46px;border-radius:50%}
+.kick{margin-top:8px;text-align:center;font-size:11px;color:#8a85a0}
+.ttl{position:absolute;left:0;right:0;top:118px;z-index:2;text-align:center;font:800 46px/1.02 Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif;letter-spacing:-.5px}
+.ln{display:block;overflow:hidden;height:1.06em}.ln span{display:inline-block}
+.hero{position:absolute;left:50%;top:250px;width:230px;height:230px;margin-left:-115px;border-radius:50%;box-shadow:0 20px 40px #6b5cff33}
+.sheet{position:absolute;left:10px;right:10px;bottom:90px;padding:16px 14px 6px;border-radius:22px;background:#f2f0f8}
+.sheet h3{margin:0 4px;font:700 20px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.chips{display:flex;gap:6px;margin:10px 4px}.chips span{padding:4px 10px;border-radius:12px;background:#fff;font-size:11px;color:#6d6884}.chips .on{background:#17151f;color:#fff}
+.app .song{--b:#fff;display:flex;gap:10px;align-items:center;width:100%;margin-bottom:7px;padding:8px;border-radius:14px;text-align:left}.song i{width:36px;height:36px;border-radius:50%}.song b{display:block;font:700 13px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.song small{font-size:10px;color:#8a85a0}.app .song.on{--b:#e3dcff}
+#list{max-height:198px;overflow:hidden}.nav{position:absolute;left:12px;right:12px;bottom:22px;display:flex;justify-content:space-around;align-items:center;height:54px;border-radius:27px;background:#17151f;color:#fff;font-size:12px;font-weight:600}.nav i{width:40px;height:40px;border-radius:50%}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / APP MOTION 06</div><h1>逐行标题切换</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="top"><i>⤨</i><i class="me art-1"></i><i>▦</i></div><div class="kick">今晚第 <span id="no">1</span> 首 · Ines Okafor</div>
+<div class="ttl" id="ttl"><span class="ln"><span></span></span><span class="ln"><span></span></span><span class="ln"><span></span></span></div>
+<div class="hero" id="hero"></div>
+<div class="sheet"><h3>今晚六首</h3><div class="chips"><span class="on">全部 6</span><span>诗歌 2</span><span>散文 2</span><span>环境音 2</span></div><div id="list"></div></div>
+<nav class="nav"><span>今晚</span><span>歌架</span><span>队列</span><i class="art-1"></i></nav>
+</div></div></section><aside class="side"><div class="metric"><small>LINE DELAY</small><strong>60ms</strong></div><div class="metric"><small>LINES IN</small><strong id="lines">3 / 3</strong></div><div class="metric"><small>HERO SCALE</small><strong id="hs">1.00</strong></div><p class="note">点下方任意一首：大标题每行单独一个遮罩，旧标题各行间隔 60 毫秒向下沉出，新标题再逐行从下方升起；中间的主视觉先缩小淡出，再用弹簧弹回。</p><button id="replay" type="button">切到下一首</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const songs=[[['写给','无人的','那首歌'],'art-1','诗歌 · 4:11'],[['绕着','土星','转圈'],'art-3','环境音 · 6:52'],[['一只猫','穿着','黄昏'],'art-2','散文 · 5:34'],[['装满','天气的','头发'],'art-4','诗歌 · 4:40']];
+let cur=0,busy=false;const spans=[...document.querySelectorAll('.ln>span')];
+$('list').innerHTML=songs.map(([t,a,m],i)=>`<button class="song" type="button" data-i="${i}"><i class="${a}"></i><div><b>${t.join('')}</b><small>${m}</small></div></button>`).join('');
+function show(i){songs[i][0].forEach((t,k)=>spans[k].textContent=t);$('hero').className='hero '+songs[i][1];$('no').textContent=i+1;
+ document.querySelectorAll('.song').forEach(b=>b.classList.toggle('on',+b.dataset.i===i))}
+async function swap(i){if(busy||i===cur)return;busy=true;cur=i;
+ // Old lines sink out of their masks one by one; the hero shrinks away.
+ spans.forEach((s,k)=>A(s,[{translate:'0 0'},{translate:'0 110%'}],{duration:280,delay:k*60,easing:'cubic-bezier(.5,0,.9,.5)'}));
+ A($('hero'),[{scale:1,opacity:1},{scale:.8,opacity:0}],{duration:300,easing:'ease-in'});$('hs').textContent='0.80';$('lines').textContent='0 / 3';
+ await wait(280+2*60);show(i);
+ // New lines rise in from below, 60ms apart; the hero springs back.
+ spans.forEach((s,k)=>{A(s,[{translate:'0 110%'},{translate:'0 0'}],{duration:460,delay:k*60,easing:easeOut});setTimeout(()=>{$('lines').textContent=`${k+1} / 3`},reduced?0:k*60+200)});
+ A($('hero'),[{scale:.8,opacity:0},{scale:1,opacity:1}],{duration:620,delay:80,easing:spring});setTimeout(()=>{$('hs').textContent='1.00'},reduced?0:400);
+ await wait(620);busy=false}
+$('list').onclick=e=>{const b=e.target.closest('.song');if(b)swap(+b.dataset.i)};$('replay').onclick=()=>swap((cur+1)%songs.length);
+show(0);setTimeout(()=>swap(1),reduced?0:1200);
+</script><script src="../demo-i18n.js"></script></body></html>

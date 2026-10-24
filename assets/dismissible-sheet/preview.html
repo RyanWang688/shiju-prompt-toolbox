@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>可收起面板 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#0c0c0e;color:#f4f2ee}.sb{color:#fff}
+.top{display:flex;justify-content:space-between;align-items:center;padding:0 20px}.top i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;font-style:normal;font-size:15px;color:#ddd}.top i:not(.me){background:#1d1d21}.top .me{width:46px;height:46px;border:2px solid #fff}
+.kick{margin-top:8px;text-align:center;font-size:12px;color:#bdbab3}
+.stagebox{position:absolute;left:0;right:0;top:120px;height:330px;transform-origin:50% 0}
+.title{text-align:center;font:600 46px/1.08 Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif;letter-spacing:-.5px}
+.card{position:absolute;top:0;width:116px;height:146px;border:4px solid #f4f2ee;border-radius:12px;box-shadow:0 10px 24px #0008}
+.panel{position:absolute;left:12px;right:12px;bottom:96px;padding:16px 16px 6px;border-radius:22px;background:#1a1a1e}
+.panel header{display:flex;justify-content:space-between;align-items:center;height:auto;grid-column:auto}.panel h3{margin:0;font:600 22px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.panel small{color:#9a978f;font-size:11px}
+.app .x{--b:#2a2a30;width:30px;height:30px;border-radius:50%;font-size:15px;color:#ddd}
+.chips{display:flex;gap:6px;margin:12px 0}.chips span{padding:5px 10px;border-radius:12px;background:#2a2a30;font-size:11px;color:#cfccc5}.chips .on{background:#f4f2ee;color:#111}
+.al{display:flex;gap:10px;align-items:center;margin-bottom:8px;padding:8px;border-radius:14px;background:#232328}.al i{width:40px;height:40px;border-radius:9px}.al b{display:block;font:600 14px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.al small{font-size:10px}
+.app .pill{--b:#232328;position:absolute;left:50%;bottom:98px;margin-left:-74px;width:148px;height:42px;border-radius:21px;color:#f4f2ee;font-size:13px;font-weight:600;opacity:0;pointer-events:none;box-shadow:0 0 0 1px #ffffff1f}.pill.on{pointer-events:auto}
+.nav{position:absolute;left:14px;right:14px;bottom:24px;display:flex;justify-content:space-around;align-items:center;height:56px;border-radius:28px;background:#f4f2ee;color:#222;font-size:13px;font-weight:600}.nav i{width:40px;height:40px;border-radius:50%}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / APP MOTION 03</div><h1>可收起面板</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="top"><i>☼</i><i class="me scene-aurora"></i><i>⌕</i></div><div class="kick">相册 1 / 6 · 2026 五个地方</div>
+<div class="stagebox" id="stagebox"><div class="title">五段旅程里<br>最好的那些</div><div id="fan" style="position:absolute;left:0;right:0;top:126px"></div></div>
+<div class="panel" id="panel"><header><h3>六个相册</h3><button class="x" id="close" type="button" aria-label="收起面板">✕</button></header><div class="chips"><span class="on">全部 6</span><span>2026 · 2</span><span>2025 · 2</span><span>2024 · 2</span></div>
+<div class="al"><i class="scene-aurora"></i><div><b>五段旅程精选</b><small>4 张 · 五个地方 · 2026</small></div></div><div class="al"><i class="scene-ice"></i><div><b>北极光</b><small>4 张 · 挪威 · 2026</small></div></div></div>
+<button class="pill" id="pill" type="button">六个相册 ⌃</button>
+<nav class="nav"><span>相册</span><span>整理</span><span>年份</span><i class="scene-lake"></i></nav>
+</div></div></section><aside class="side"><div class="metric"><small>PANEL Y</small><strong id="py">0px</strong></div><div class="metric"><small>STAGE</small><strong id="sc">×1.00</strong></div><div class="metric"><small>BUTTON</small><strong id="bt">隐藏</strong></div><p class="note">点面板右上角 ✕：面板下滑淡出，上方舞台下移并放大到 1.26 倍填满空位，底部只留一个圆角按钮；点按钮，面板沿原路升回，舞台复位。</p><button id="replay" type="button">收起 / 展开</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const fx=[-118,-40,40,118],fr=[-13,-4.5,4.5,13];
+$('fan').innerHTML=['scene-aurora','scene-ice','scene-dune','scene-ridge'].map((s,k)=>`<div class="card ${s}" style="left:${195+fx[k]-58}px;top:${Math.abs(k-1.5)*14}px;rotate:${fr[k]}deg"></div>`).join('');
+let open=true;
+function setOpen(next){if(next===open)return;open=next;
+ if(!open){A($('panel'),[{translate:'0 0',opacity:1},{translate:'0 110%',opacity:0}],{duration:340,easing:'cubic-bezier(.4,0,1,1)'});
+  A($('stagebox'),[{translate:'0 0',scale:1},{translate:'0 80px',scale:1.26}],{duration:620,delay:60,easing:spring});
+  A($('pill'),[{opacity:0,scale:.7},{opacity:1,scale:1}],{duration:420,delay:260,easing:spring});$('pill').classList.add('on');
+  $('py').textContent='80px';$('sc').textContent='×1.26';$('bt').textContent='显示'}
+ else{$('pill').classList.remove('on');A($('pill'),[{opacity:1,scale:1},{opacity:0,scale:.7}],{duration:180});
+  // Same path back: the panel rises from where it left, the stage settles to its original size.
+  A($('panel'),[{translate:'0 110%',opacity:0},{translate:'0 0',opacity:1}],{duration:560,delay:60,easing:spring});
+  A($('stagebox'),[{translate:'0 80px',scale:1.26},{translate:'0 0',scale:1}],{duration:560,easing:spring});
+  $('py').textContent='0px';$('sc').textContent='×1.00';$('bt').textContent='隐藏'}}
+$('close').onclick=()=>setOpen(false);$('pill').onclick=()=>setOpen(true);$('replay').onclick=()=>setOpen(!open);
+setTimeout(()=>setOpen(false),reduced?0:1000);
+</script><script src="../demo-i18n.js"></script></body></html>

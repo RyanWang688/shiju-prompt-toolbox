@@ -1,0 +1,37 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>底栏常驻入口 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#fbfaff;color:#17151f}
+.top{display:flex;justify-content:space-between;align-items:center;padding:0 20px}.top i{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;font-style:normal;font-size:14px}.top i:not(.me){background:#f0edfb}.top .me{width:46px;height:46px;border-radius:50%}
+.app h2{margin:18px 22px 2px;font:800 38px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.sub{margin:0 22px 16px;font-size:12px;color:#8a85a0}
+.row{display:flex;gap:12px;align-items:center;margin:0 16px 10px;padding:10px 12px;border-radius:16px;background:#f2f0f8}.row i{width:42px;height:42px;border-radius:50%}.row b{display:block;font:700 15px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.row small{font-size:11px;color:#8a85a0}.row.on{background:#e3dcff}
+.dock{position:absolute;left:14px;right:14px;bottom:24px;z-index:3;display:flex;align-items:center;gap:6px;height:60px;padding:0 8px 0 18px;border-radius:30px;background:#17151f;color:#fff;font-size:13px;font-weight:600}.dock span{flex:1;text-align:center;color:#bdb8d0}.dock span:first-child{color:#fff}
+.app .disc{--b:transparent;position:relative;flex:0 0 52px;height:52px;border-radius:50%;box-shadow:0 0 0 3px #17151f,0 0 0 5px #c9bcff}.disc i{position:absolute;inset:0;border-radius:50%}.disc i:after{content:'';position:absolute;left:50%;top:50%;width:10px;height:10px;margin:-5px;border-radius:50%;background:#17151f}
+.disc.float i{animation:bob 2.4s ease-in-out infinite}@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.dim{position:absolute;inset:0;z-index:4;background:#17151f;opacity:0;pointer-events:none}.dim.on{pointer-events:auto}
+.panel{position:absolute;left:10px;right:10px;bottom:16px;z-index:5;height:360px;padding:12px 18px 20px;border-radius:28px;background:#17151f;color:#fff;transform:translateY(110%)}
+.grab{width:40px;height:5px;margin:0 auto 16px;border-radius:3px;background:#4a4560}.app .hide{--b:transparent;display:block;margin:0 auto;color:#a7a2bb;font-size:12px}
+.who{display:flex;gap:12px;align-items:center}.who i{width:50px;height:50px;border-radius:50%}.who b{display:block;font:700 18px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.who small{font-size:11px;color:#a7a2bb}
+.wave{display:flex;align-items:center;gap:2px;height:60px;margin:22px 0 6px}.wave i{flex:1;border-radius:2px;background:#4a4560}.wave i.lit{background:#c9bcff}
+.times{display:flex;justify-content:space-between;font-size:11px;color:#a7a2bb}.ctl{display:flex;justify-content:center;align-items:center;gap:44px;margin:16px 0 12px}.ctl span{font-size:20px;color:#cfcbe0}.app .pp{--b:#c9bcff;width:62px;height:62px;border-radius:50%;color:#17151f;font-size:22px;font-weight:800}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / APP MOTION 08</div><h1>底栏常驻入口</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="top"><i>⤨</i><i class="me art-1"></i><i>▦</i></div>
+<h2>你的歌架</h2><p class="sub">六首 · 三种声音</p>
+<div class="row"><i class="art-4"></i><div><b>装满天气的头发</b><small>诗歌 · 4:40</small></div></div>
+<div class="row on"><i class="art-2"></i><div><b>一只猫穿着黄昏</b><small>散文 · 5:34</small></div></div>
+<div class="row"><i class="art-3"></i><div><b>绕着土星转圈</b><small>环境音 · 6:52</small></div></div>
+<div class="row"><i class="art-1"></i><div><b>写给无人的那首歌</b><small>诗歌 · 4:11</small></div></div>
+<nav class="dock"><span>今晚</span><span>歌架</span><span>队列</span><button class="disc float" id="disc" type="button" aria-label="打开正在播放"><i class="art-2"></i></button></nav>
+<div class="dim" id="dim"></div>
+<div class="panel" id="panel" role="dialog" aria-label="正在播放"><div class="grab"></div><div class="who"><i class="art-2"></i><div><b>一只猫穿着黄昏</b><small>Ines Okafor</small></div></div><div class="wave" id="wave"></div><div class="times"><span>2:17</span><span>5:34</span></div><div class="ctl"><span>⏮</span><button class="pp" id="pp" type="button" aria-label="暂停">❚❚</button><span>⏭</span></div><button class="hide" id="hide" type="button">收起</button></div>
+</div></div></section><aside class="side"><div class="metric"><small>DISC Y</small><strong id="dy">0.0px</strong></div><div class="metric"><small>STATE</small><strong id="st">播放中</strong></div><div class="metric"><small>PAGE</small><strong id="pg">当前页</strong></div><p class="note">底部导航右端放一个圆形封面按钮：播放中时上下轻轻浮动，暂停时静止。点它，当前播放面板从底部弹出，不用一层层返回；在面板里暂停，收起后圆碟就停下来。</p><button id="replay" type="button">打开 / 收起面板</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+$('wave').innerHTML=Array.from({length:44},(_,i)=>`<i class="${i<18?'lit':''}" style="height:${16+Math.round(Math.abs(Math.sin(i*1.7)*Math.cos(i*.53))*40)}px"></i>`).join('');
+let playing=true,open=false;
+function setPlaying(p){playing=p;$('disc').classList.toggle('float',p);$('st').textContent=p?'播放中':'已暂停';$('pp').textContent=p?'❚❚':'▶';$('pp').setAttribute('aria-label',p?'暂停':'播放')}
+function setOpen(o){if(o===open)return;open=o;$('dim').classList.toggle('on',o);$('pg').textContent=o?'面板':'当前页';
+ A($('panel'),o?[{transform:'translateY(110%)'},{transform:'translateY(0)'}]:[{transform:'translateY(0)'},{transform:'translateY(110%)'}],{duration:o?520:300,easing:o?spring:'ease-in'});
+ A($('dim'),[{opacity:o?0:.35},{opacity:o?.35:0}],{duration:300})}
+// Live readout of the disc's float offset.
+(function read(){const m=new DOMMatrix(getComputedStyle($('disc').firstElementChild).transform);$('dy').textContent=(m.m42<-.05?'+':'')+(-m.m42).toFixed(1)+'px';requestAnimationFrame(read)})();
+$('disc').onclick=()=>setOpen(true);$('hide').onclick=$('dim').onclick=()=>setOpen(false);$('pp').onclick=()=>setPlaying(!playing);$('replay').onclick=()=>setOpen(!open);
+setTimeout(()=>setOpen(true),reduced?0:1600);
+</script><script src="../demo-i18n.js"></script></body></html>

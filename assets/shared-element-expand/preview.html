@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>共享元素放大 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#0c0c0e;color:#f4f2ee}.sb{color:#fff}
+.top{display:flex;justify-content:space-between;align-items:center;padding:2px 20px 0}.top i{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#1d1d21;font-style:normal;color:#ddd}.top span{padding:7px 14px;border-radius:16px;background:#1d1d21;font-size:12px;font-weight:600}
+.app h2{margin:14px 20px 2px;font:600 34px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.sub{margin:0 20px 16px;font-size:11px;color:#9a978f}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 20px}.app .th{--b:#222;aspect-ratio:4/5;border-radius:8px;cursor:pointer}
+.dim{position:absolute;inset:0;z-index:4;background:#0c0c0e;opacity:0;pointer-events:none}.dim.on{pointer-events:auto}
+.big{position:absolute;left:20px;top:110px;z-index:6;width:350px;height:437.5px;border-radius:14px;transform-origin:0 0;visibility:hidden;cursor:pointer}
+.cap{position:absolute;left:20px;right:20px;top:560px;z-index:6;opacity:0}.cap b{display:block;font:600 22px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.cap small{color:#9a978f;font-size:12px}
+.acts{position:absolute;left:20px;right:20px;top:640px;z-index:6;display:flex;gap:10px;opacity:0}.app .acts button{--b:#1d1d21;flex:1;height:48px;border-radius:16px;font-size:14px;font-weight:600}.app .acts button:first-child{--b:#f4f2ee;color:#111}
+.app .back{--b:#1d1d21;position:absolute;left:20px;top:56px;z-index:7;width:36px;height:36px;border-radius:50%;opacity:0;pointer-events:none}.back.on{pointer-events:auto}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / APP MOTION 04</div><h1>共享元素放大</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="top"><i>←</i><span>选择</span></div><h2>二十张照片</h2><p class="sub">五个地方 · 2024–2026 · 82.4 MB</p>
+<div class="grid" id="grid"></div>
+<div class="dim" id="dim"></div><div class="big" id="big" role="img" aria-label="大图"></div>
+<div class="cap" id="cap"><b id="capT"></b><small id="capM"></small></div>
+<div class="acts" id="acts"><button type="button">分享</button><button type="button">收藏</button><button type="button">删除</button></div>
+<button class="back" id="back" type="button" aria-label="返回网格">←</button>
+</div></div></section><aside class="side"><div class="metric"><small>RATIO</small><strong>4 : 5</strong></div><div class="metric"><small>SCALE</small><strong id="scale">×0.31</strong></div><div class="metric"><small>BUTTONS</small><strong id="btn">—</strong></div><p class="note">缩略图和大图都是 4:5，点任意一张：以缩略图左上角为原点，位移加等比缩放过渡成大图，视线不用重新找焦点；操作按钮延迟 0.18 秒从下方弹入。点大图或返回按原路缩回网格。</p><button id="replay" type="button">打开 / 关闭</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const photos=[['scene-aurora','北极光','挪威 · 2026'],['scene-ice','冰洞','冰岛 · 2025'],['scene-dune','沙丘日落','纳米比亚 · 2025'],['scene-ridge','粉色山脊','新西兰 · 2024'],['scene-lake','冰川湖','川西 · 2026'],['scene-aurora','极光第二夜','挪威 · 2026'],['scene-snow','雪线','新西兰 · 2024'],['scene-dune','红沙','纳米比亚 · 2025'],['scene-dusk','湖边黄昏','川西 · 2026']];
+$('grid').innerHTML=photos.map(([s,t],i)=>`<button class="th ${s}" type="button" data-i="${i}" aria-label="${t}"></button>`).join('');
+let cur=null;const big=$('big');
+// FLIP from the thumbnail: translate + uniform scale with the top-left corner as origin (both are 4:5).
+function from(th){const t=appRect(th),k=t.width/350;return{transform:`translate(${t.left-20}px,${t.top-110}px) scale(${k})`,k}}
+function openAt(th){if(cur)return;cur=th;const p=photos[th.dataset.i],f=from(th);big.className='big '+p[0];big.style.visibility='visible';th.style.visibility='hidden';
+ $('capT').textContent=p[1];$('capM').textContent=p[2]+' · 4:5';$('dim').classList.add('on');$('back').classList.add('on');
+ A(big,[{transform:f.transform},{transform:'none'}],{duration:460,easing:easeOut});A($('dim'),[{opacity:0},{opacity:1}],{duration:300});
+ A($('cap'),[{opacity:0,translate:'0 16px'},{opacity:1,translate:'0 0'}],{duration:360,delay:120,easing:easeOut});
+ A($('acts'),[{opacity:0,translate:'0 50px'},{opacity:1,translate:'0 0'}],{duration:520,delay:180,easing:spring});A($('back'),[{opacity:0},{opacity:1}],{duration:200,delay:200});
+ $('scale').textContent='×1.00';$('btn').textContent='显示'}
+function close(){if(!cur)return;const th=cur,f=from(th);cur=null;$('dim').classList.remove('on');$('back').classList.remove('on');
+ A($('acts'),[{opacity:1,translate:'0 0'},{opacity:0,translate:'0 40px'}],{duration:180});A($('cap'),[{opacity:1},{opacity:0}],{duration:150});A($('back'),[{opacity:1},{opacity:0}],{duration:150});
+ A(big,[{transform:'none'},{transform:f.transform}],{duration:380,delay:60,easing:'cubic-bezier(.4,0,.2,1)'});A($('dim'),[{opacity:1},{opacity:0}],{duration:320,delay:60});
+ setTimeout(()=>{th.style.visibility='';big.style.visibility='hidden'},reduced?0:440);$('scale').textContent='×'+f.k.toFixed(2);$('btn').textContent='—'}
+$('grid').onclick=e=>{const th=e.target.closest('.th');if(th)openAt(th)};big.onclick=close;$('back').onclick=close;
+$('replay').onclick=()=>cur?close():openAt($('grid').children[0]);
+$('scale').textContent='×'+from($('grid').children[0]).k.toFixed(2);setTimeout(()=>openAt($('grid').children[0]),reduced?0:1000);
+</script><script src="../demo-i18n.js"></script></body></html>

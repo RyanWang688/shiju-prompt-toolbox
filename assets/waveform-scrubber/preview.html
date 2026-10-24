@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>波形进度条 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#fbfaff;color:#17151f}
+.top{display:flex;justify-content:space-between;align-items:center;padding:0 20px}.top i{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;font-style:normal;font-size:14px}.top i:not(.me){background:#f0edfb}.top .me{width:46px;height:46px;border-radius:50%}
+.kick{margin-top:8px;text-align:center;font-size:11px;color:#8a85a0}
+.ttl{position:relative;z-index:2;margin-top:12px;text-align:center;font:800 46px/1.02 Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}
+.hero{position:absolute;left:50%;top:236px;width:240px;height:240px;margin-left:-120px;border-radius:50%}
+.player{position:absolute;left:10px;right:10px;bottom:16px;height:330px;padding:20px 18px;border-radius:28px;background:#17151f;color:#fff}
+.who{display:flex;gap:12px;align-items:center}.who i{width:46px;height:46px;border-radius:50%}.who b{display:block;font:700 17px Georgia,"Noto Serif SC","Source Han Serif SC","Songti SC","Microsoft YaHei",serif}.who small{font-size:11px;color:#a7a2bb}
+.wave{position:relative;display:flex;align-items:center;gap:2px;height:72px;margin:26px 0 6px;touch-action:none;cursor:pointer}.wave i{flex:1;border-radius:2px;background:#4a4560;transition:background-color .12s}.wave i.lit{background:#c9bcff}
+.head{position:absolute;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:#fff;box-shadow:0 0 0 6px #ffffff2a;pointer-events:none}
+.times{display:flex;justify-content:space-between;font-size:11px;color:#a7a2bb;font-variant-numeric:tabular-nums}
+.ctl{display:flex;justify-content:center;align-items:center;gap:44px;margin-top:20px}.ctl span{font-size:20px;color:#cfcbe0}.app .pp{--b:#c9bcff;width:64px;height:64px;border-radius:50%;color:#17151f;font-size:22px;font-weight:800}
+.full{margin-top:14px;text-align:center;font-size:11px;color:#a7a2bb}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / APP MOTION 07</div><h1>波形进度条</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="top"><i>⤨</i><i class="me art-2"></i><i>▦</i></div><div class="kick">今晚第 2 首 · Ines Okafor</div>
+<div class="ttl">一只猫<br>穿着黄昏</div><div class="hero art-2"></div>
+<div class="player"><div class="who"><i class="art-2"></i><div><b>一只猫穿着黄昏</b><small>Ines Okafor</small></div></div>
+<div class="wave" id="wave" role="slider" aria-label="播放进度" tabindex="0"><span class="head" id="head"></span></div>
+<div class="times"><span id="cur">2:14</span><span>5:34</span></div>
+<div class="ctl"><span>⏮</span><button class="pp" id="pp" type="button" aria-label="暂停">❚❚</button><span>⏭</span></div><div class="full">打开完整视图</div></div>
+</div></div></section><aside class="side"><div class="metric"><small>TIME</small><strong id="t">2:14</strong></div><div class="metric"><small>LIT BARS</small><strong id="lit">18 / 44</strong></div><div class="metric"><small>STATE</small><strong id="st">播放</strong></div><p class="note">一排 44 根竖条代表整首内容，已经播过的部分高亮。在波形上按住拖动，进度和时间实时跟着手指走；松手后从该位置继续播放。也可以用左右方向键调整。</p><button id="replay" type="button">播放 / 暂停</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const N=44,TOTAL=334;let pos=134,playing=true,scrub=false;
+const hs=Array.from({length:N},(_,i)=>18+Math.round(Math.abs(Math.sin(i*1.7)*Math.cos(i*.53))*50+(i%5===0?8:0)));
+$('wave').insertAdjacentHTML('afterbegin',hs.map(h=>`<i style="height:${h}px"></i>`).join(''));const bars=[...$('wave').querySelectorAll('i')];
+const fmt=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+function paint(){const f=pos/TOTAL,n=Math.round(f*N);bars.forEach((b,i)=>b.classList.toggle('lit',i<n));$('head').style.left=f*100+'%';
+ $('cur').textContent=$('t').textContent=fmt(pos);$('lit').textContent=`${n} / ${N}`;$('wave').setAttribute('aria-valuenow',Math.round(pos));
+ $('st').textContent=scrub?'拖动中':playing?'播放':'暂停';$('pp').textContent=playing?'❚❚':'▶';$('pp').setAttribute('aria-label',playing?'暂停':'播放')}
+setInterval(()=>{if(playing&&!scrub){pos=Math.min(TOTAL,pos+.25);if(pos>=TOTAL)playing=false;paint()}},250);
+// Scrub: the position follows the finger live; playback resumes from there on release.
+function at(e){const r=$('wave').getBoundingClientRect();pos=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width))*TOTAL;paint()}
+$('wave').onpointerdown=e=>{scrub=true;$('wave').setPointerCapture(e.pointerId);at(e)};$('wave').onpointermove=e=>{if(scrub)at(e)};
+$('wave').onpointerup=$('wave').onpointercancel=()=>{scrub=false;paint()};
+$('wave').onkeydown=e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();pos=Math.max(0,Math.min(TOTAL,pos+(e.key==='ArrowRight'?5:-5)));paint()}};
+$('pp').onclick=$('replay').onclick=()=>{playing=!playing;if(playing&&pos>=TOTAL)pos=0;paint()};
+paint();
+</script><script src="../demo-i18n.js"></script></body></html>
