@@ -1,5 +1,38 @@
 [
   {
+    "id": "website-mindset-11xy",
+    "kind": "website",
+    "title": "MindSet 慢思",
+    "category": "界面设计",
+    "topics": [
+      "动效灵感"
+    ],
+    "tags": "AI 提示词 / 产品概念知识库 / 互动演示 / 前端与交互 / 入门路线",
+    "description": "「做产品需要懂的 488 个概念」知识库：从按钮、API 到 AI Agent，每个词条有通俗解释、互动演示、练习，并附一段可直接复制给 AI Agent 的提示词；另有效果案例、按方向的入门路线，以及作者的博客、课程和开源软件。",
+    "source": "https://www.11xy.cn/",
+    "officialUrl": "https://www.11xy.cn/",
+    "prompt": "MindSet 慢思\n\n用途：「做产品需要懂的 488 个概念」知识库：从按钮、API 到 AI Agent，每个词条有通俗解释、互动演示、练习，并附一段可直接复制给 AI Agent 的提示词；另有效果案例、按方向的入门路线，以及作者的博客、课程和开源软件。\n\n说明：知识库按产品与设计、界面与交互、前端开发、后端与数据、AI 开发、工程与上线等方向浏览，也可按「我要做网站 / 小程序 / App / 用 AI 写代码」路线学习；词条页底部的「让 AI 帮你做」给出可复制的提示词（例如共享元素过渡、页面转场等交互的实现要求）。部分功能需登录。作者：拾壹。\n\n官网：https://www.11xy.cn/\n知识库：https://www.11xy.cn/knowledge\n\n收录状态：仅收藏网站，未登录或注册。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-mindset-11xy/official-site.png",
+      "alt": "MindSet 慢思首页实际截图",
+      "width": 1440,
+      "height": 900
+    },
+    "previewNote": "2026-10-25 实际打开网站首页后的截图；仅收藏，未登录或注册。",
+    "previewSource": "https://www.11xy.cn/",
+    "previewEvidence": "live-website-screenshot",
+    "addedAt": "2026-10-25",
+    "verifiedAt": "2026-10-25",
+    "en": {
+      "title": "MindSet",
+      "description": "A knowledge base of \"488 concepts you need to build products\" — from buttons and APIs to AI agents — where every entry has a plain explanation, an interactive demo, exercises and a prompt you can copy straight into an AI agent; plus effect showcases, starter paths, and the author's blog, courses and open-source software.",
+      "tags": "AI prompts / Product concept wiki / Interactive demos / Frontend & interaction / Starter paths",
+      "notes": "Browse by area (product & design, UI & interaction, frontend, backend & data, AI development, shipping) or follow a path such as \"build a website / mini program / app / code with AI\"; each entry ends with a \"let AI do it\" prompt to copy. Some features need an account. Site in Chinese with an English toggle; by Shiyi.",
+      "previewNote": "Screenshot of the homepage taken on 2026-10-25; saved for reference only — no sign-in or registration."
+    }
+  },
+  {
     "id": "dropdown-select",
     "kind": "prompt",
     "title": "单选下拉",
