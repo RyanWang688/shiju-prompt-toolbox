@@ -49,9 +49,14 @@ jobs:
           fi
           # The connection string is passed via the environment and never echoed; ON_ERROR_STOP makes any SQL
           # error (including the mass-deactivation guard) fail this step.
-          psql "$SUPABASE_SYNC_DB_URL" -X -q -v ON_ERROR_STOP=1 \
+          # psql's own message (host/user/reason, never the password) is surfaced as an annotation on failure.
+          if ! psql "$SUPABASE_SYNC_DB_URL" -X -q -v ON_ERROR_STOP=1 \
             -c "set shiju.allow_mass_deactivate = '$ALLOW_MASS_DEACTIVATE'" \
-            -f supabase/sync-content.sql
+            -f supabase/sync-content.sql 2>/tmp/psql.err; then
+            cat /tmp/psql.err >&2
+            echo "::error::Supabase sync failed: $(head -c 500 /tmp/psql.err | tr '\n' ' ')"
+            exit 1
+          fi
 
       - name: Verify ids are live
         env:
