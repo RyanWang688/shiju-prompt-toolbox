@@ -102,18 +102,18 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 @media(prefers-reduced-motion:reduce){.copy-success .copy-check path{animation:none}.topic-indicator{will-change:auto}}
 
 /* Shared control feedback; the invisible card opener retains the body-only wipe. */
-.dashboard :is(button:not(.card-open,.like),a.visit-site,.rail-brand,select){transition:background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .24s ease,translate .28s cubic-bezier(.2,.9,.22,1),scale .24s cubic-bezier(.2,.9,.22,1)}
+.dashboard :is(button:not(.card-open,.like,.bookmark),a.visit-site,.rail-brand,select){transition:background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .24s ease,translate .28s cubic-bezier(.2,.9,.22,1),scale .24s cubic-bezier(.2,.9,.22,1)}
 .dashboard .rail-button img{transition:translate .28s cubic-bezier(.2,.9,.22,1),rotate .28s cubic-bezier(.2,.9,.22,1),opacity .18s}
 .dashboard .card .card-body :is(.star,.visit-site):is(:hover,:focus-visible){mix-blend-mode:normal}
-.dashboard :is(button:not(.card-open,.like):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;box-shadow:0 0 0 4px #ffd43b35}
+.dashboard :is(button:not(.card-open,.like,.bookmark):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;box-shadow:0 0 0 4px #ffd43b35}
 @media(hover:hover) and (pointer:fine){
- .dashboard :is(button:not(.card-open,.like):not(:disabled),a.visit-site,.rail-brand,select):hover{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;filter:none;translate:0 -2px;box-shadow:0 5px 0 #19191912,0 8px 18px #ffd43b26}
+ .dashboard :is(button:not(.card-open,.like,.bookmark):not(:disabled),a.visit-site,.rail-brand,select):hover{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;filter:none;translate:0 -2px;box-shadow:0 5px 0 #19191912,0 8px 18px #ffd43b26}
  .dashboard .rail-button:hover img{translate:1px -1px;rotate:-6deg;opacity:1}
 }
-.dashboard :is(button:not(.card-open,.like):not(:disabled),a.visit-site,.rail-brand,select):active{translate:0 0;scale:.97;box-shadow:inset 0 2px 4px #19191920}
+.dashboard :is(button:not(.card-open,.like,.bookmark):not(:disabled),a.visit-site,.rail-brand,select):active{translate:0 0;scale:.97;box-shadow:inset 0 2px 4px #19191920}
 @media(prefers-reduced-motion:reduce){
- .dashboard :is(button:not(.card-open,.like),a.visit-site,.rail-brand,select),.dashboard .rail-button img{transition:none}
- .dashboard :is(button:not(.card-open,.like),a.visit-site,.rail-brand,select):is(:hover,:active){translate:none;scale:none}
+ .dashboard :is(button:not(.card-open,.like,.bookmark),a.visit-site,.rail-brand,select),.dashboard .rail-button img{transition:none}
+ .dashboard :is(button:not(.card-open,.like,.bookmark),a.visit-site,.rail-brand,select):is(:hover,:active){translate:none;scale:none}
  .dashboard .rail-button:hover img{translate:none;rotate:none}
 }
 
@@ -257,3 +257,12 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 /* Interactive demos get a tall stage in the detail view so phone prototypes and their notes stay readable. */
 .dashboard #detailPreview .preview:has(iframe){height:min(72dvh,640px)}
 @media(max-width:720px){.dashboard #detailPreview .preview:has(iframe){height:min(70dvh,560px)}}
+
+/* Card actions: a local bookmark (favourite) beside the shared cloud like. */
+.dashboard .card .meta>span{max-width:calc(100% - 104px)}
+.dashboard .card .card-acts{position:relative;z-index:2;display:flex;align-items:center;gap:2px;flex-shrink:0}
+.dashboard .card .card-body .bookmark{display:grid;place-items:center;min-width:32px;min-height:36px;padding:0;border:0;border-radius:8px;background:transparent;color:#9a9a9a;mix-blend-mode:normal;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.dashboard .card .card-body .bookmark svg{width:18px;height:18px;fill:transparent;stroke:currentColor;stroke-width:1.9;stroke-linejoin:round;transition:fill .25s ease}
+.dashboard .card .card-body .bookmark[aria-pressed=true]{color:#f2b705}.dashboard .card .card-body .bookmark[aria-pressed=true] svg{fill:#f2b705}
+.dashboard .card .card-body .bookmark:focus-visible{outline:2px solid #f2b705;outline-offset:2px}
+.dashboard .card .card-body .like[aria-disabled=true]{opacity:.55;cursor:default}

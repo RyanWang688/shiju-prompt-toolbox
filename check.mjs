@@ -160,3 +160,44 @@ for(const item of seedItems){
   if(/[一-鿿]/.test(item.previewNote||''))assert.ok(item.en?.previewNote,`Missing English preview note for ${item.id}`);
 }
 console.log('Copy success, failure, repeated clicks, stale feedback and English copy checks passed.');
+
+// Cloud likes: ranking is by real totals with a stable tie-break, and the request loop settles on the last click.
+const sortList=pageFunction('sortList');
+const rows=[{id:'a',t:'Beta'},{id:'b',t:'alpha'},{id:'c',t:'Gamma'},{id:'d',t:'Delta'}];
+const ids=list=>list.map(i=>i.id).join('');
+assert.equal(ids(sortList(rows,'likes',new Map([['c',120],['a',85],['d',43],['b',12]]))),'cadb','Most liked first');
+assert.equal(ids(sortList(rows,'likes',new Map())),'abcd','All zero keeps recently-added order');
+assert.equal(ids(sortList(rows,'likes',new Map([['d',5],['b',5]]))),'bdac','Equal likes keep their recently-added order');
+assert.equal(ids(sortList(rows,'likes',new Map([['d',5],['b',6]]))),'bdac');
+assert.equal(ids(sortList(rows,'likes',new Map([['d',7],['b',6]]))),'dbac','A new like re-ranks');
+assert.equal(ids(sortList(rows,'old',new Map([['d',9]]))),'dcba','Oldest first ignores likes');
+assert.equal(ids(sortList(rows,'new',new Map([['d',9]]))),'abcd');
+assert.equal(ids(sortList(rows,'title',new Map(),i=>i.t,'en')),'badc');
+assert.equal(ids(sortList(rows.filter(r=>r.id!=='c'),'likes',new Map([['c',120],['d',3]]))),'dab','Filtered lists rank by the same totals');
+const lines=source.split('\n'),runStart=lines.findIndex(l=>l.startsWith('async function runLike(')),runEnd=lines.findIndex((l,k)=>k>runStart&&!l.startsWith(' '));
+const runLikeSrc=lines.slice(runStart,runEnd).join('\n');
+const setLikedSrc=lines.find(l=>l.startsWith('function setLiked('));
+async function likeHarness(script){
+  const calls=[],reports=[],pending=[];let fail=null;
+  const reply=result=>new Promise(r=>pending.push(()=>r(result)));
+  const db={from:()=>({insert:()=>{calls.push('insert');return reply(fail?{error:fail}:{error:null})},delete:()=>({eq:()=>({eq:()=>{calls.push('delete');return reply({error:null})}})})})};
+  const env=new Function('likeJobs','myLikes','likeCounts','reports','db',`const within=p=>p,likeClient=async()=>db,likeUser=async()=>'u1',localStorage={setItem(){}},likePingKey='p',scheduleResort=()=>{},paintLikes=()=>{},reportLikeError=(e,w)=>reports.push(e.code);${setLikedSrc}\n${runLikeSrc}\nreturn {runLike,setLiked}`);
+  const likeJobs=new Map(),myLikes=new Set(),likeCounts=new Map([['x',4]]),api=env(likeJobs,myLikes,likeCounts,reports,db);
+  const click=()=>{const want=!myLikes.has('x'),job=likeJobs.get('x');api.setLiked('x',want);if(job){job.want=want;return null}likeJobs.set('x',{want,sent:!want});return api.runLike('x')};
+  const flush=async()=>{for(let k=0;k<20;k++){await new Promise(r=>setTimeout(r,0));while(pending.length)pending.shift()()}};
+  await script({click,flush,setFail:e=>fail=e});await flush();
+  return {calls:calls.join(','),liked:myLikes.has('x'),count:likeCounts.get('x'),reports,jobs:likeJobs.size};
+}
+let r=await likeHarness(async({click})=>{click()});
+assert.deepEqual([r.calls,r.liked,r.count],['insert',true,5],'One like inserts once and counts once');
+r=await likeHarness(async({click,flush})=>{click();await new Promise(r=>setTimeout(r,0));click();click()});
+assert.deepEqual([r.calls,r.liked,r.count,r.jobs],['insert',true,5,0],'Rapid like/unlike/like settles on liked with one request');
+r=await likeHarness(async({click})=>{click();click()});
+assert.deepEqual([r.calls,r.liked,r.count],['',false,4],'Like then unlike before any request sends nothing');
+r=await likeHarness(async({click})=>{click();await new Promise(r=>setTimeout(r,0));click()});
+assert.deepEqual([r.calls,r.liked,r.count],['insert,delete',false,4],'Unlike while the like is in flight ends unliked');
+r=await likeHarness(async({click,setFail})=>{setFail({code:'500'});click()});
+assert.deepEqual([r.liked,r.count,r.reports],[false,4,['500']],'A failed like rolls back and is reported');
+r=await likeHarness(async({click,setFail})=>{setFail({code:'23505'});click()});
+assert.deepEqual([r.liked,r.count,r.reports],[true,5,[]],'A duplicate like counts as already liked');
+console.log('Like ranking, ties, filtered ranking, rapid clicks, rollback and duplicate likes passed.');
