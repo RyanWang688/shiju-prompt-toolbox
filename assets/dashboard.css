@@ -102,18 +102,18 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 @media(prefers-reduced-motion:reduce){.copy-success .copy-check path{animation:none}.topic-indicator{will-change:auto}}
 
 /* Shared control feedback; the invisible card opener retains the body-only wipe. */
-.dashboard :is(button:not(.card-open,.like,.bookmark),a.visit-site,.rail-brand,select){transition:background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .24s ease,translate .28s cubic-bezier(.2,.9,.22,1),scale .24s cubic-bezier(.2,.9,.22,1)}
+.dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger),a.visit-site,.rail-brand,select){transition:background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .24s ease,translate .28s cubic-bezier(.2,.9,.22,1),scale .24s cubic-bezier(.2,.9,.22,1)}
 .dashboard .rail-button img{transition:translate .28s cubic-bezier(.2,.9,.22,1),rotate .28s cubic-bezier(.2,.9,.22,1),opacity .18s}
 .dashboard .card .card-body :is(.star,.visit-site):is(:hover,:focus-visible){mix-blend-mode:normal}
-.dashboard :is(button:not(.card-open,.like,.bookmark):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;box-shadow:0 0 0 4px #ffd43b35}
+.dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;box-shadow:0 0 0 4px #ffd43b35}
 @media(hover:hover) and (pointer:fine){
- .dashboard :is(button:not(.card-open,.like,.bookmark):not(:disabled),a.visit-site,.rail-brand,select):hover{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;filter:none;translate:0 -2px;box-shadow:0 5px 0 #19191912,0 8px 18px #ffd43b26}
+ .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger):not(:disabled),a.visit-site,.rail-brand,select):hover{background-color:var(--accent)!important;color:var(--ink)!important;border-color:var(--ink)!important;filter:none;translate:0 -2px;box-shadow:0 5px 0 #19191912,0 8px 18px #ffd43b26}
  .dashboard .rail-button:hover img{translate:1px -1px;rotate:-6deg;opacity:1}
 }
-.dashboard :is(button:not(.card-open,.like,.bookmark):not(:disabled),a.visit-site,.rail-brand,select):active{translate:0 0;scale:.97;box-shadow:inset 0 2px 4px #19191920}
+.dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger):not(:disabled),a.visit-site,.rail-brand,select):active{translate:0 0;scale:.97;box-shadow:inset 0 2px 4px #19191920}
 @media(prefers-reduced-motion:reduce){
- .dashboard :is(button:not(.card-open,.like,.bookmark),a.visit-site,.rail-brand,select),.dashboard .rail-button img{transition:none}
- .dashboard :is(button:not(.card-open,.like,.bookmark),a.visit-site,.rail-brand,select):is(:hover,:active){translate:none;scale:none}
+ .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger),a.visit-site,.rail-brand,select),.dashboard .rail-button img{transition:none}
+ .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger),a.visit-site,.rail-brand,select):is(:hover,:active){translate:none;scale:none}
  .dashboard .rail-button:hover img{translate:none;rotate:none}
 }
 
@@ -266,3 +266,22 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 .dashboard .card .card-body .bookmark[aria-pressed=true]{color:#f2b705}.dashboard .card .card-body .bookmark[aria-pressed=true] svg{fill:#f2b705}
 .dashboard .card .card-body .bookmark:focus-visible{outline:2px solid #f2b705;outline-offset:2px}
 .dashboard .card .card-body .like[aria-disabled=true]{opacity:.55;cursor:default}
+/* Sort menu: a quiet field matching the search box, with a soft ring instead of the black frame and yellow fill. */
+.dashboard .sort-menu{position:relative;flex:0 0 auto}
+.dashboard .toolbar .sort-trigger{display:flex;align-items:center;gap:9px;min-width:150px;min-height:46px;padding:0 13px 0 15px;border:1px solid #dedede;border-radius:9px;background:#fff;color:var(--ink);font-size:13px;font-weight:600;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease}
+.dashboard .toolbar .sort-trigger #sortLabel{flex:1;text-align:left;white-space:nowrap}
+.dashboard .toolbar .sort-trigger svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.dashboard .toolbar .sort-trigger .sort-icon{color:#8a8a8a}
+.dashboard .toolbar .sort-trigger .sort-chevron{color:#8a8a8a;transition:rotate .22s cubic-bezier(.2,.9,.22,1)}
+.dashboard .toolbar .sort-trigger:hover{border-color:#bdbdbd}
+.dashboard .toolbar .sort-trigger:focus-visible,.dashboard .toolbar .sort-trigger[aria-expanded=true]{outline:none;border-color:#d9a600;box-shadow:0 0 0 3px #ffd43b59}
+.dashboard .toolbar .sort-trigger[aria-expanded=true] .sort-chevron{rotate:180deg}
+.dashboard .sort-list{position:absolute;right:0;top:calc(100% + 6px);z-index:40;min-width:100%;margin:0;padding:6px;list-style:none;border:1px solid #ececec;border-radius:12px;background:#fff;box-shadow:0 14px 34px #1919191a,0 2px 6px #1919190d;transform-origin:top right}
+.dashboard .sort-list:focus{outline:none}
+.dashboard .sort-list [role=option]{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 12px;border-radius:8px;color:#4a4a4a;font-size:13px;white-space:nowrap;cursor:pointer}
+.dashboard .sort-list [role=option] svg{width:15px;height:15px;fill:none;stroke:#191919;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;visibility:hidden}
+.dashboard .sort-list [role=option].active{background:#f4f4f2;color:var(--ink)}
+.dashboard .sort-list [aria-selected=true]{color:var(--ink);font-weight:700}
+.dashboard .sort-list [aria-selected=true] svg{visibility:visible}
+@media(max-width:720px){.dashboard .sort-menu{flex:1;min-width:0}.dashboard .toolbar .sort-trigger{width:100%;min-width:0}.dashboard .sort-list{left:0;right:auto}}
+@media(prefers-reduced-motion:reduce){.dashboard .toolbar .sort-trigger,.dashboard .toolbar .sort-trigger .sort-chevron{transition:none}}
