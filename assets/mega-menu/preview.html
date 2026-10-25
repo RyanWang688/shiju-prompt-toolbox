@@ -1,0 +1,51 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>大型下拉导航 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../ui-flow-20261025.css"><style>
+.canvas{padding:0}.site{position:absolute;inset:0;border-radius:21px;overflow:hidden;background:#fbfbf9}
+.topnav{position:relative;z-index:5;display:flex;align-items:center;gap:6px;height:58px;padding:0 18px;border-bottom:1px solid #ececec;background:#fff}
+.logo{margin-right:12px;font-weight:800;font-size:15px}.logo i{display:inline-block;width:10px;height:10px;margin-right:6px;border-radius:3px;background:#ffd43b}
+.canvas .ni{--b:transparent;display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 10px;border-radius:9px;font-size:13px;font-weight:600;color:#3d3d3d;cursor:pointer;transition:background-color .15s ease}
+.canvas .ni:hover,.canvas .ni[aria-expanded=true]{--b:#f3f3f1;color:#191919}.ni .chev{width:14px;height:14px}
+.panel{position:absolute;left:0;right:0;top:58px;z-index:4;display:grid;grid-template-columns:1fr 1fr 150px;gap:18px;padding:18px;border-bottom:1px solid #ececec;background:#fff;box-shadow:0 18px 30px #19191914}
+.panel h5{margin:0 0 8px;font-size:11px;letter-spacing:1px;color:#9a9a9a}
+.it{display:flex;gap:10px;align-items:flex-start;padding:8px;border-radius:10px;color:#191919;text-decoration:none;transition:background-color .15s ease}.it:hover{background:#f6f6f3}
+.it svg{flex:0 0 18px;width:18px;height:18px;margin-top:1px;fill:none;stroke:#191919;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:translate .2s cubic-bezier(.2,.9,.22,1)}.it:hover svg{translate:3px 0}
+.it b{display:block;font-size:13px}.it small{font-size:11px;color:#8a8a8a}
+.feat{padding:12px;border-radius:12px;background:#191919;color:#fff}.feat .ph{height:62px;margin-bottom:10px;border-radius:8px;background:linear-gradient(135deg,#ffd43b,#ff9f43)}.feat b{display:block;font-size:13px}.feat small{font-size:11px;color:#ffffffa6}
+.hero{padding:40px 24px 0}.hero h2{margin:0 0 6px;font-size:22px}.hero p{margin:0;font-size:12px;color:#8a8a8a}.hero .blocks{display:flex;gap:10px;margin-top:20px}.hero .blocks i{flex:1;height:90px;border-radius:12px;background:#efefec}
+/* Mobile: hamburger + accordion */
+.canvas .burger{--b:#f3f3f1;display:none;width:36px;height:36px;margin-left:auto;border-radius:9px;cursor:pointer}
+.mobile .ni,.mobile .panel{display:none}.mobile .burger{display:grid;place-items:center}
+.acc{position:absolute;left:0;right:0;top:58px;z-index:4;padding:8px 14px 14px;background:#fff;border-bottom:1px solid #ececec;box-shadow:0 18px 30px #19191914}
+.canvas .acc-h{--b:transparent;display:flex;width:100%;align-items:center;justify-content:space-between;height:44px;padding:0 6px;font-weight:700;font-size:14px;cursor:pointer;border-bottom:1px solid #f1f1f1}
+.acc-b{overflow:hidden}.acc-b .it{padding:8px 6px}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / DROPDOWN 08</div><h1>大型下拉导航</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="canvas" id="canvas"><div class="site" id="site">
+<nav class="topnav" aria-label="主导航"><span class="logo"><i></i>拾光学堂</span><button type="button" class="ni" data-m="0" aria-expanded="false" aria-controls="panel">课程中心</button><button type="button" class="ni" data-m="1" aria-expanded="false" aria-controls="panel">学习路径</button><button type="button" class="ni" data-m="2" aria-expanded="false" aria-controls="panel">资源</button><button type="button" class="burger" id="burger" aria-expanded="false" aria-label="打开导航">☰</button></nav>
+<div class="panel" id="panel" hidden></div><div class="acc" id="acc" hidden></div>
+<div class="hero"><h2>这学期，从一门好课开始</h2><p>按学科、年级和学习目标找到合适的课程</p><div class="blocks"><i></i><i></i><i></i></div></div>
+</div></div></section><aside class="side"><div class="metric"><small>OPEN</small><strong id="openM">—</strong></div><div class="metric"><small>STAGGER</small><strong>30ms</strong></div><label class="check"><input type="checkbox" id="mobile"> 手机视图（手风琴）</label><p class="note">桌面端悬停（带 120ms 意图延迟）或点击展开多列面板：250ms 淡入并从上方 12px 落下，内部内容以 30ms 依次出现；导航项悬停时图标右移 3px。Esc 或点外部关闭。手机视图变成手风琴，展开 200ms。</p><button id="replay" type="button">展开「课程中心」</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../ui-flow-20261025.js"></script><script>
+const I={book:'<path d="M5 5h9a4 4 0 0 1 4 4v10H9a4 4 0 0 1-4-4z"/>',calc:'<rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 8h8M8 12h2M12 12h2M8 16h2M12 16h2"/>',flask:'<path d="M9 4h6M10 4v6l-5 8a1 1 0 0 0 1 2h12a1 1 0 0 0 1-2l-5-8V4"/>',globe:'<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4a12 12 0 0 1 0 16M12 4a12 12 0 0 0 0 16"/>',path:'<path d="M5 19c4 0 4-6 7-6s3-6 7-6"/><circle cx="5" cy="19" r="1.5"/><circle cx="19" cy="7" r="1.5"/>',star:'<path d="M12 4l2.4 5 5.4.6-4 3.7 1.1 5.4L12 16l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/>',file:'<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/>',play:'<rect x="4" y="5" width="16" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/>'};
+const menus=[{name:'课程中心',cols:[['按学科',[['calc','数学','函数、几何与统计'],['flask','理化生','实验与原理'],['globe','语言','语文、英语与日语']]],['按阶段',[['book','高一 · 打基础','新课同步讲解'],['path','高三 · 冲刺','专题与真题训练']]]],feat:['本周精选','导数的几何意义 · 12 讲']},
+ {name:'学习路径',cols:[['目标',[['star','强基计划','竞赛与拔尖培养'],['path','稳步提分','薄弱点专项']]],['节奏',[['book','每日 20 分钟','碎片时间学习'],['play','周末集训','直播 + 作业']]]],feat:['路径测评','5 分钟找到起点']},
+ {name:'资源',cols:[['资料',[['file','讲义下载','PDF 与课件'],['file','错题本模板','可打印']]],['工具',[['calc','公式速查','理科常用公式'],['play','实验视频','高清实拍']]]],feat:['资源包','期中复习全套']}];
+let cur=-1,hoverT=0,leaveT=0;
+const item=([ic,t,s])=>`<a class="it" href="#" onclick="return false"><svg viewBox="0 0 24 24" aria-hidden="true">${I[ic]}</svg><span><b>${t}</b><small>${s}</small></span></a>`;
+document.querySelectorAll('.ni').forEach(b=>b.insertAdjacentHTML('beforeend',chev));
+function show(i){if(i===cur)return;const m=menus[i],p=$('panel'),first=cur<0;cur=i;document.querySelectorAll('.ni').forEach(b=>b.setAttribute('aria-expanded',String(+b.dataset.m===i)));
+ p.innerHTML=m.cols.map(([h,list])=>`<div><h5>${h}</h5>${list.map(item).join('')}</div>`).join('')+`<div class="feat"><div class="ph"></div><b>${m.feat[0]}</b><small>${m.feat[1]}</small></div>`;p.hidden=false;
+ // The panel drops in once; switching tabs only re-staggers the contents.
+ if(first)A(p,[{opacity:0,transform:'translateY(-12px)'},{opacity:1,transform:'none'}],{duration:250,easing:easeOut});
+ [...p.querySelectorAll('h5,.it,.feat')].forEach((el,k)=>A(el,[{opacity:0,transform:'translateY(-6px)'},{opacity:1,transform:'none'}],{duration:220,delay:k*30,easing:easeOut,fill:'backwards'}));$('openM').textContent=m.name}
+function hide(){if(cur<0)return;cur=-1;document.querySelectorAll('.ni').forEach(b=>b.setAttribute('aria-expanded','false'));A($('panel'),[{opacity:1},{opacity:0,transform:'translateY(-6px)'}],{duration:160,fill:'forwards'});setTimeout(()=>{if(cur<0){$('panel').hidden=true;$('panel').getAnimations().forEach(a=>a.cancel())}},reduced?0:160);$('openM').textContent='—'}
+document.querySelectorAll('.ni').forEach(b=>{b.onmouseenter=()=>{clearTimeout(leaveT);clearTimeout(hoverT);hoverT=setTimeout(()=>show(+b.dataset.m),cur<0?120:60)};b.onmouseleave=()=>{clearTimeout(hoverT);leaveT=setTimeout(hide,220)};b.onclick=()=>{clearTimeout(hoverT);cur===+b.dataset.m?hide():show(+b.dataset.m)}});
+$('panel').onmouseenter=()=>clearTimeout(leaveT);$('panel').onmouseleave=()=>{leaveT=setTimeout(hide,220)};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){hide();closeAcc()}});
+document.addEventListener('pointerdown',e=>{if(!e.target.closest('.topnav,.panel,.acc')){hide();closeAcc()}});
+// Mobile: accordion sections, 200ms height animation.
+function closeAcc(){if($('acc').hidden)return;$('acc').hidden=true;$('burger').setAttribute('aria-expanded','false')}
+function buildAcc(){$('acc').innerHTML=menus.map((m,i)=>`<button type="button" class="acc-h" data-a="${i}" aria-expanded="false">${m.name}<span>+</span></button><div class="acc-b" id="ab${i}" hidden>${m.cols.flatMap(([,l])=>l).map(item).join('')}</div>`).join('')}
+$('burger').onclick=()=>{const o=$('acc').hidden;buildAcc();$('acc').hidden=!o;$('burger').setAttribute('aria-expanded',String(o));if(o)A($('acc'),[{opacity:0,transform:'translateY(-8px)'},{opacity:1,transform:'none'}],{duration:200,easing:easeOut})};
+$('acc').onclick=e=>{const h=e.target.closest('.acc-h');if(!h)return;const b=$('ab'+h.dataset.a),o=b.hidden;h.setAttribute('aria-expanded',String(o));h.lastChild.textContent=o?'−':'+';
+ if(o){b.hidden=false;const H=b.scrollHeight;A(b,[{height:'0px',opacity:0},{height:H+'px',opacity:1}],{duration:200,easing:easeOut})}else{const H=b.scrollHeight;A(b,[{height:H+'px',opacity:1},{height:'0px',opacity:0}],{duration:200,easing:easeOut,fill:'forwards'});setTimeout(()=>{b.hidden=true;b.getAnimations().forEach(a=>a.cancel())},reduced?0:200)}};
+$('mobile').onchange=()=>{hide();closeAcc();$('site').classList.toggle('mobile',$('mobile').checked)};
+$('replay').onclick=()=>{if($('mobile').checked){$('mobile').checked=false;$('mobile').onchange()}hide();setTimeout(()=>show(0),reduced?0:200)};
+setTimeout(()=>show(0),reduced?0:700);
+</script><script src="../demo-i18n.js"></script></body></html>

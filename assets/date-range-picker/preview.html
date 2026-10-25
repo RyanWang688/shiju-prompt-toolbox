@@ -1,0 +1,50 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>日期范围选择 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../ui-flow-20261025.css"><style>
+.wrap{width:300px}.field .cal{width:16px;height:16px;fill:none;stroke:#8a8a8a;stroke-width:1.8;stroke-linecap:round}
+.pop{position:absolute;z-index:20;width:476px;padding:14px;border:1px solid #ececec;border-radius:14px;background:#fff;box-shadow:0 16px 38px #1919191f,0 2px 6px #1919190d;transform-origin:top left}
+.presets{display:flex;gap:6px;margin-bottom:12px}.canvas .presets button{--b:#f3f3f1;padding:6px 11px;border-radius:999px;font-size:12px;cursor:pointer}.canvas .presets button:hover{--b:#e9e9e6}.canvas .presets button.on{--b:#191919;color:#fff}
+.months{display:flex;gap:16px;overflow:hidden}.month{flex:1}.mh{display:flex;align-items:center;justify-content:space-between;height:28px;margin-bottom:6px;font-size:13px;font-weight:700}
+.canvas .nav{--b:transparent;width:26px;height:26px;border-radius:8px;color:#666;cursor:pointer}.canvas .nav:hover{--b:#f3f3f1}.nav.hide{visibility:hidden}
+.wk,.days{display:grid;grid-template-columns:repeat(7,1fr)}.wk span{height:22px;font-size:11px;color:#a3a3a3;text-align:center}
+.canvas .d{--b:transparent;position:relative;height:30px;font-size:12px;cursor:pointer;color:#2b2b2b}.canvas .d:hover:not(.in):not(.edge){--b:#f3f3f1;border-radius:8px}
+.canvas .d.out{visibility:hidden}.canvas .d.today{font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.canvas .d.in{--b:#fff3c4}.canvas .d.edge{--b:#191919;color:#fff;border-radius:8px;z-index:1}.canvas .d.preview{--b:#fffae6}
+.foot{display:flex;align-items:center;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid #f0f0f0;font-size:12px;color:#7a7a7a}.foot .sp{flex:1}
+.canvas .foot .ghost-btn,.canvas .foot .primary-btn{min-height:32px;padding:0 12px;font-size:12px}.canvas .foot .primary-btn:disabled{--b:#bdbdbd;cursor:not-allowed}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / DROPDOWN 05</div><h1>日期范围选择</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="canvas" id="canvas">
+<h3>考勤报表</h3><p class="sub">选择统计周期</p>
+<p class="cap" id="lab">日期范围</p><div class="wrap"><button type="button" class="field" id="btn" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="lab val"><svg class="cal" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span class="val" id="val"><span class="ph">开始日期 – 结束日期</span></span></button></div>
+<div class="pop" id="pop" role="dialog" aria-label="选择日期范围" hidden><div class="presets"><button type="button" data-p="0">今天</button><button type="button" data-p="6">最近 7 天</button><button type="button" data-p="29">最近 30 天</button></div><div class="months" id="months"></div>
+<div class="foot"><span id="draft">先点开始日期</span><span class="sp"></span><button type="button" class="ghost-btn" id="clear">清除</button><button type="button" class="ghost-btn" id="cancel">取消</button><button type="button" class="primary-btn" id="apply" disabled>应用</button></div></div>
+</div></section><aside class="side"><div class="metric"><small>RANGE</small><strong id="range">—</strong></div><div class="metric"><small>DAYS</small><strong id="days">0</strong></div><p class="note">点开以 220ms 淡入加缩放展开双月日历。第一次点选开始日期、第二次点选结束日期；悬停时预览范围，区间以连续底色高亮。支持今天、最近 7 天、最近 30 天和应用、取消、清除；切换月份带轻微横向滑动。</p><button id="replay" type="button">重新演示</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../ui-flow-20261025.js"></script><script>
+const EN=new URLSearchParams(location.search).get('lang')==='en';
+const TODAY=new Date(2026,9,25),DAY=864e5,WEEK=EN?['Mo','Tu','We','Th','Fr','Sa','Su']:['一','二','三','四','五','六','日'],MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+let view=new Date(2026,9,1),start=null,end=null,hover=null,applied=null,isOpen=false;
+const key=d=>d.getFullYear()*10000+d.getMonth()*100+d.getDate(),fmt=d=>`${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
+const span=(a,b)=>Math.round((b-a)/DAY)+1;
+function month(base,first,last){const y=base.getFullYear(),m=base.getMonth(),pad=(new Date(y,m,1).getDay()+6)%7,n=new Date(y,m+1,0).getDate();
+ const lo=start&&(end||hover)?Math.min(key(start),key(end||hover)):null,hi=start&&(end||hover)?Math.max(key(start),key(end||hover)):null;
+ let cells='';for(let i=0;i<pad;i++)cells+='<span class="d out"></span>';
+ for(let d=1;d<=n;d++){const date=new Date(y,m,d),k=key(date),edge=(start&&k===key(start))||(end&&k===key(end)),inR=lo!==null&&k>lo&&k<hi;
+  cells+=`<button type="button" class="d${edge?' edge':''}${inR?(end?' in':' preview'):''}${k===key(TODAY)?' today':''}" data-t="${+date}" aria-label="${EN?`${MON[m]} ${d}, ${y}`:`${y}年${m+1}月${d}日`}"${edge?' aria-pressed="true"':''}>${d}</button>`}
+ return `<div class="month"><div class="mh"><button type="button" class="nav${first?'':' hide'}" data-step="-1" aria-label="上个月">‹</button><span>${EN?`${MON[m]} ${y}`:`${y} 年 ${m+1} 月`}</span><button type="button" class="nav${last?'':' hide'}" data-step="1" aria-label="下个月">›</button></div><div class="wk">${WEEK.map(w=>`<span>${w}</span>`).join('')}</div><div class="days">${cells}</div></div>`}
+function paint(slide=0){$('months').innerHTML=month(view,true,false)+month(new Date(view.getFullYear(),view.getMonth()+1,1),false,true);
+ if(slide)$('months').querySelectorAll('.month').forEach(m=>A(m,[{opacity:0,transform:`translateX(${slide*14}px)`},{opacity:1,transform:'none'}],{duration:200,easing:easeOut}));
+ const s=start&&end?[start,end]:null;$('draft').textContent=s?`${fmt(s[0])} – ${fmt(s[1])} · ${span(...s)} ${EN?'days':'天'}`:start?(EN?`Start ${fmt(start)} — now pick the end date`:`开始 ${fmt(start)}，再点结束日期`):(EN?'Pick a start date':'先点开始日期');$('apply').disabled=!s;
+ $('range').textContent=s?`${s[0].getMonth()+1}/${s[0].getDate()} – ${s[1].getMonth()+1}/${s[1].getDate()}`:start?`${start.getMonth()+1}/${start.getDate()} – ?`:'—';$('days').textContent=s?span(...s):0}
+function pick(t){const d=new Date(+t);if(!start||end){start=d;end=null}else{if(d<start){end=start;start=d}else end=d}hover=null;paint()}
+function open(){if(isOpen)return;isOpen=true;$('btn').setAttribute('aria-expanded','true');const p=$('pop');p.hidden=false;if(applied){[start,end]=applied;view=new Date(start.getFullYear(),start.getMonth(),1)}paint();placeMenu(p,$('btn'),{gap:8});
+ A(p,[{opacity:0,transform:'scale(.96)'},{opacity:1,transform:'none'}],{duration:220,easing:easeOut})}
+function close(){if(!isOpen)return;isOpen=false;$('btn').setAttribute('aria-expanded','false');A($('pop'),[{opacity:1},{opacity:0,transform:'scale(.98)'}],{duration:140,fill:'forwards'});setTimeout(()=>{if(!isOpen){$('pop').hidden=true;$('pop').getAnimations().forEach(a=>a.cancel())}},reduced?0:140);$('btn').focus({preventScroll:true})}
+$('btn').onclick=()=>isOpen?close():open();
+$('months').onclick=e=>{const n=e.target.closest('[data-step]');if(n){view=new Date(view.getFullYear(),view.getMonth()+ +n.dataset.step,1);paint(+n.dataset.step);return}const d=e.target.closest('.d[data-t]');if(d)pick(d.dataset.t)};
+$('months').onpointerover=e=>{const d=e.target.closest('.d[data-t]');if(d&&start&&!end&&+hover!==+d.dataset.t){hover=new Date(+d.dataset.t);paint()}};
+document.querySelector('.presets').onclick=e=>{const b=e.target.closest('[data-p]');if(!b)return;end=new Date(TODAY);start=new Date(+TODAY-b.dataset.p*DAY);view=new Date(start.getFullYear(),start.getMonth(),1);paint();document.querySelectorAll('.presets button').forEach(x=>x.classList.toggle('on',x===b))};
+$('clear').onclick=()=>{start=end=hover=null;document.querySelectorAll('.presets button').forEach(x=>x.classList.remove('on'));paint()};
+$('cancel').onclick=()=>{start=applied?.[0]||null;end=applied?.[1]||null;close()};
+$('apply').onclick=()=>{applied=[start,end];$('val').textContent=`${fmt(start)} – ${fmt(end)}`;close()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&isOpen){start=applied?.[0]||null;end=applied?.[1]||null;close()}});
+document.addEventListener('pointerdown',e=>{if(isOpen&&!$('pop').contains(e.target)&&!$('btn').contains(e.target))close()});
+async function demo(){applied=null;start=end=null;$('val').innerHTML='<span class="ph">开始日期 – 结束日期</span>';open();await wait(500);pick(+new Date(2026,9,27));await wait(450);
+ for(const d of [1,3,5,6]){hover=new Date(2026,10,d);paint();await wait(160)}pick(+new Date(2026,10,6))}
+$('replay').onclick=()=>{if(isOpen){isOpen=false;$('pop').hidden=true}demo()};setTimeout(demo,reduced?0:700);
+</script><script src="../demo-i18n.js"></script></body></html>

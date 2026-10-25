@@ -1,0 +1,44 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>可搜索下拉 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../ui-flow-20261025.css"><style>
+.wrap{width:360px}.field input{flex:1;min-width:0;height:40px;border:0;outline:none;background:transparent;font:inherit;color:#191919}
+.field .lens{width:16px;height:16px;fill:none;stroke:#8a8a8a;stroke-width:1.8;stroke-linecap:round}
+.menu{max-height:300px;overflow-y:auto}.opt .av{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#efeee9;font-size:12px;font-weight:700;color:#555}
+.opt .who{display:flex;flex-direction:column;line-height:1.3}.opt .who small{font-size:11px;color:#9a9a9a;font-weight:400}
+.opt mark{background:#ffe58a;color:inherit;border-radius:3px;padding:0 1px}
+.state{display:flex;align-items:center;gap:10px;padding:14px 12px;font-size:13px;color:#7a7a7a}.state .spin{border-color:#19191922;border-top-color:#191919}
+.state.err{color:#b42318}.state.err button{--b:#fff;margin-left:auto;padding:4px 10px;border:1px solid #f1c4c0;border-radius:8px;color:#b42318;cursor:pointer}
+.rows{transition:opacity .15s ease}.rows.dim{opacity:.55}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / DROPDOWN 03</div><h1>可搜索下拉</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="canvas" id="canvas">
+<h3>添加成员</h3><p class="sub">按姓名、学号或班级搜索学生与教师</p>
+<p class="cap" id="lab">搜索学生或教师</p>
+<div class="wrap"><label class="field" id="box"><svg class="lens" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg><input id="q" role="combobox" aria-expanded="false" aria-controls="menu" aria-autocomplete="list" aria-labelledby="lab" autocomplete="off" placeholder="输入姓名、学号或班级…"></label></div>
+<ul class="menu" id="menu" role="listbox" aria-labelledby="lab" hidden></ul>
+</div></section><aside class="side"><div class="metric"><small>RESULTS</small><strong id="count">—</strong></div><div class="metric"><small>STATE</small><strong id="st">空闲</strong></div><label class="check"><input type="checkbox" id="fail"> 模拟网络错误</label><p class="note">本地结果随输入即时过滤并高亮关键词；远程搜索 250ms 防抖，期间显示加载中，没有结果或出错时有对应状态。菜单只在首次展开时播放 160ms 淡入下滑，输入时只更新内容。</p><button id="replay" type="button">示例：输入「数学」</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../ui-flow-20261025.js"></script><script>
+const EN=new URLSearchParams(location.search).get('lang')==='en';
+const people=EN?[['Lin Xiaoman','2024013 · Grade 10 Class 3','Student'],['Zhou Zimo','2024021 · Grade 10 Class 3','Student'],['Chen Kexin','2023108 · Grade 11 Class 1','Student'],['Wang Haoran','2023114 · Grade 11 Class 1','Student'],['Li Siyuan','2022045 · Grade 12 Class 5','Student'],['Zhao Yinuo','2022052 · Grade 12 Class 5','Student'],['Ms Huang','Math · Head of department','Teacher'],['Mr Liu','Physics · Grade 11','Teacher'],['Ms Sun','English · Grade 10','Teacher'],['Mr Zheng','Math · Grade 12','Teacher'],['He Jianing','2024030 · Grade 10 Class 4','Student'],['Wu Yutong','2023099 · Grade 11 Class 2','Student']]:[['林小满','2024013 · 高一（3）班','学生'],['周子墨','2024021 · 高一（3）班','学生'],['陈可欣','2023108 · 高二（1）班','学生'],['王浩然','2023114 · 高二（1）班','学生'],['李思远','2022045 · 高三（5）班','学生'],['赵一诺','2022052 · 高三（5）班','学生'],['黄老师','数学 · 教研组长','教师'],['刘老师','物理 · 高二年级','教师'],['孙老师','英语 · 高一年级','教师'],['郑老师','数学 · 高三年级','教师'],['何嘉宁','2024030 · 高一（4）班','学生'],['吴雨桐','2023099 · 高二（2）班','学生']];
+let isOpen=false,active=0,shown=[],timer=0,seq=0;const q=$('q');
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const hi=(text,k)=>{if(!k)return esc(text);const i=text.toLowerCase().indexOf(k.toLowerCase());return i<0?esc(text):esc(text.slice(0,i))+`<mark>${esc(text.slice(i,i+k.length))}</mark>`+esc(text.slice(i+k.length))};
+function open(){if(isOpen)return;isOpen=true;q.setAttribute('aria-expanded','true');const m=$('menu');m.hidden=false;m.style.width=$('box').offsetWidth+'px';placeMenu(m,$('box'),{gap:8});
+ // The entrance plays once per opening; typing afterwards only swaps the rows.
+ A(m,[{opacity:0,transform:'translateY(-8px)'},{opacity:1,transform:'none'}],{duration:160,easing:easeOut})}
+function close(){if(!isOpen)return;isOpen=false;q.setAttribute('aria-expanded','false');q.removeAttribute('aria-activedescendant');A($('menu'),[{opacity:1},{opacity:0}],{duration:110,fill:'forwards'});setTimeout(()=>{if(!isOpen){$('menu').hidden=true;$('menu').getAnimations().forEach(a=>a.cancel())}},reduced?0:110);$('st').textContent='空闲'}
+function rows(list,k,{loading=false}={}){shown=list;active=0;const m=$('menu');
+ m.innerHTML=(list.length?`<div class="rows${loading?' dim':''}">${list.map(([n,meta,role],i)=>`<li class="opt${i?'':' active'}" role="option" id="p${i}" data-i="${i}"><span class="av">${n[0]}</span><span class="who"><span>${hi(n,k)}</span><small>${hi(meta,k)} · ${role}</small></span>${tick}</li>`).join('')}</div>`:'')+
+  (loading?'<li class="state" role="presentation"><span class="spin"></span>正在搜索全校名单…</li>':'')+(!list.length&&!loading?`<li class="state" role="presentation">没有找到「${esc(k)}」</li>`:'');
+ if(list.length)q.setAttribute('aria-activedescendant','p0');$('count').textContent=list.length+' 条'}
+function search(){const k=q.value.trim(),local=k?people.filter(p=>p.join(' ').toLowerCase().includes(k.toLowerCase())):people.slice(0,6);open();clearTimeout(timer);
+ if(!k){rows(local,'');$('st').textContent='最近联系';return}
+ rows(local,k,{loading:true});$('st').textContent='加载中';const my=++seq;
+ // Remote search waits 250ms after the last keystroke; stale replies are ignored.
+ timer=setTimeout(()=>{setTimeout(()=>{if(my!==seq||!isOpen)return;if($('fail').checked){$('menu').innerHTML='<li class="state err" role="presentation">搜索服务暂时不可用<button type="button" id="retry">重试</button></li>';$('st').textContent='出错';$('count').textContent='—';return}
+  rows(local,k);$('st').textContent=local.length?'已更新':'无结果'},reduced?0:420)},reduced?0:250)}
+function activate(i){active=i;$('menu').querySelectorAll('.opt').forEach((o,k)=>o.classList.toggle('active',k===i));q.setAttribute('aria-activedescendant','p'+i);$('menu').querySelector('#p'+i)?.scrollIntoView({block:'nearest'})}
+function choose(i){const p=shown[i];if(!p)return;q.value=p[0];$('st').textContent=(EN?'Picked ':'已选择 ')+p[0];close()}
+q.addEventListener('input',search);q.addEventListener('focus',search);
+q.addEventListener('keydown',e=>{const n=shown.length;if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!isOpen)search();else if(n)activate((active+(e.key==='ArrowDown'?1:n-1))%n)}else if(e.key==='Enter'){e.preventDefault();if(isOpen&&n)choose(active)}else if(e.key==='Escape'){e.preventDefault();close()}});
+$('menu').onpointermove=e=>{const o=e.target.closest('.opt');if(o)activate(+o.dataset.i)};$('menu').onpointerdown=e=>e.preventDefault();
+$('menu').onclick=e=>{if(e.target.id==='retry'){search();return}const o=e.target.closest('.opt');if(o)choose(+o.dataset.i)};
+document.addEventListener('pointerdown',e=>{if(isOpen&&!$('box').contains(e.target)&&!$('menu').contains(e.target))close()});
+async function demo(){q.focus();q.value='';for(const ch of EN?'Math':'数学'){await wait(260);q.value+=ch;search()}}
+$('replay').onclick=demo;setTimeout(demo,reduced?0:700);
+</script><script src="../demo-i18n.js"></script></body></html>

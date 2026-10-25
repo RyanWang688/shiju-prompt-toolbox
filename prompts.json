@@ -1,5 +1,323 @@
 [
   {
+    "id": "dropdown-select",
+    "kind": "prompt",
+    "title": "单选下拉",
+    "category": "动画动效",
+    "topics": [
+      "下拉菜单"
+    ],
+    "tags": "下拉菜单 / 状态 / 角色 / 排序 / Fade + Slide，180ms",
+    "description": "菜单从上方 8px 滑入淡入、箭头翻转，选中打勾并自动收起；支持键盘与视口边缘自动避让。",
+    "prompt": "实现单选 Dropdown。点击时菜单从上方 8px 滑入并淡入，箭头旋转 180°。Hover 背景平滑高亮，选中显示 Check 图标并自动收起。支持 Escape、键盘上下导航、外部点击关闭和视口边缘自动避让。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dropdown-select/preview.html",
+      "alt": "单选下拉：可交互网页演示"
+    },
+    "previewNote": "根据提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "用户在对话中直接提供的提示词表格（交互类型 / 适用场景 / 动效设计 / Codex 开发提示词），原始出处未注明。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dropdown-select/card-preview.png",
+      "alt": "单选下拉：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Dropdown Select",
+      "description": "The menu slides in 8px from above with a fade and the arrow flips; picking shows a check and closes, with keyboard support and viewport-edge flipping.",
+      "tags": "Dropdowns / Status / role / sort / Fade + Slide, 180ms",
+      "prompt": "Implement a single-select Dropdown. On click the menu slides in from 8px above and fades in, and the arrow rotates 180°. Hovered rows highlight smoothly; the selected option shows a check icon and the menu closes automatically. Support Escape, up/down keyboard navigation, closing on outside click, and automatic flipping away from viewport edges.",
+      "previewNote": "Interactive web demo hand-built from the prompt — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "dropdown-option-groups",
+    "kind": "prompt",
+    "title": "分组下拉",
+    "category": "动画动效",
+    "topics": [
+      "下拉菜单"
+    ],
+    "tags": "下拉菜单 / 学科 / 部门 / 课程分类 / Fade + Slide，200ms",
+    "description": "选项按类别分组、组标题吸顶且不可选，长列表内部滚动，键盘导航会跳过标题。",
+    "prompt": "实现分组下拉菜单。选项按类别分组，组标题不可选，组间使用分隔线。展开时使用 200ms Fade + Slide 动画。Hover 时选项柔和高亮，选中后显示勾选状态并关闭。长列表内部滚动，组标题支持 Sticky，键盘导航跳过标题。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dropdown-option-groups/preview.html",
+      "alt": "分组下拉：可交互网页演示"
+    },
+    "previewNote": "根据提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "用户在对话中直接提供的提示词表格（交互类型 / 适用场景 / 动效设计 / Codex 开发提示词），原始出处未注明。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dropdown-option-groups/card-preview.png",
+      "alt": "分组下拉：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Option Groups",
+      "description": "Options are grouped by category with sticky, non-selectable headers and dividers; long lists scroll inside and keyboard navigation skips the headers.",
+      "tags": "Dropdowns / Subjects / departments / course categories / Fade + Slide, 200ms",
+      "prompt": "Implement a grouped dropdown. Options are grouped by category, group titles are not selectable, and groups are separated by dividers. Opening uses a 200ms Fade + Slide animation. Options highlight softly on hover and show a checked state when picked, then the menu closes. Long lists scroll internally, group titles are sticky, and keyboard navigation skips the titles.",
+      "previewNote": "Interactive web demo hand-built from the prompt — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "dropdown-typeahead",
+    "kind": "prompt",
+    "title": "可搜索下拉",
+    "category": "动画动效",
+    "topics": [
+      "下拉菜单"
+    ],
+    "tags": "下拉菜单 / 学生 / 教师 / 课程搜索 / Fade + Slide，160ms",
+    "description": "输入即时过滤并高亮关键词，远程搜索 250ms 防抖，带加载、无结果和出错状态，输入时不重播入场动画。",
+    "prompt": "实现可搜索 Typeahead Combobox。输入时即时过滤选项，关键词高亮，搜索结果平滑更新。展开使用 160ms Fade + Slide，远程搜索使用 250ms Debounce。支持键盘上下选择、Enter 确认、Escape 关闭，以及 Loading、Empty、Error 状态。避免输入时整个菜单反复播放进入动画。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/dropdown-typeahead/preview.html",
+      "alt": "可搜索下拉：可交互网页演示"
+    },
+    "previewNote": "根据提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "用户在对话中直接提供的提示词表格（交互类型 / 适用场景 / 动效设计 / Codex 开发提示词），原始出处未注明。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dropdown-typeahead/card-preview.png",
+      "alt": "可搜索下拉：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Typeahead Combobox",
+      "description": "Filters as you type with highlighted matches, debounces remote search by 250ms, and has loading, empty and error states — without replaying the entrance on every keystroke.",
+      "tags": "Dropdowns / Student / teacher and course search / Fade + Slide, 160ms",
+      "prompt": "Implement a searchable Typeahead Combobox. Options filter instantly as you type, keywords are highlighted, and results update smoothly. Opening uses a 160ms Fade + Slide, and remote search uses a 250ms debounce. Support up/down keyboard selection, Enter to confirm, Escape to close, and Loading, Empty and Error states. Avoid replaying the whole menu's entrance animation while typing.",
+      "previewNote": "Interactive web demo hand-built from the prompt — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "split-action-button",
+    "kind": "prompt",
+    "title": "拆分按钮",
+    "category": "动画动效",
+    "topics": [
+      "下拉菜单",
+      "按钮交互"
+    ],
+    "tags": "下拉菜单 / 保存 / 导出 / 创建 / Scale + Fade，170ms",
+    "description": "左侧主按钮直接执行，右侧箭头以 0.97→1 缩放淡入展开相关操作；带加载与防重复提交。",
+    "prompt": "实现 Split Action Button。左侧主按钮直接执行操作，右侧箭头展开其他相关操作。菜单以 Scale(0.97→1) + Fade 在 170ms 内出现。按钮 Hover 独立高亮，点击微缩放。支持 Loading、防止重复提交、Escape 和外部点击关闭。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/split-action-button/preview.html",
+      "alt": "拆分按钮：可交互网页演示"
+    },
+    "previewNote": "根据提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "用户在对话中直接提供的提示词表格（交互类型 / 适用场景 / 动效设计 / Codex 开发提示词），原始出处未注明。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/split-action-button/card-preview.png",
+      "alt": "拆分按钮：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Split Action Button",
+      "description": "The main half runs the action directly while the arrow opens related actions with a 0.97→1 scale and fade; includes loading and duplicate-submit protection.",
+      "tags": "Dropdowns / Save / export / create / Scale + Fade, 170ms",
+      "prompt": "Implement a Split Action Button. The left main button performs the action directly, and the right arrow opens other related actions. The menu appears with Scale(0.97→1) + Fade within 170ms. Each half highlights independently on hover and scales down slightly on click. Support Loading, preventing duplicate submits, Escape, and closing on outside click.",
+      "previewNote": "Interactive web demo hand-built from the prompt — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "date-range-picker",
+    "kind": "prompt",
+    "title": "日期范围选择",
+    "category": "动画动效",
+    "topics": [
+      "下拉菜单"
+    ],
+    "tags": "下拉菜单 / 考勤 / 报表 / 课程周期 / Fade + Scale，220ms",
+    "description": "双月日历 220ms 淡入缩放展开，两次点击选定区间、悬停预览、连续高亮，带快捷范围和应用 / 取消 / 清除。",
+    "prompt": "实现 Date Range Picker。点击展开双月份日历，使用 220ms Fade + Scale 动画。首次点击选择开始日期，第二次选择结束日期。Hover 时预览范围，日期区间以连续背景高亮。支持 Today、Last 7 Days、Last 30 Days、Apply、Cancel、Clear，切换月份使用轻微横向滑动动画。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/date-range-picker/preview.html",
+      "alt": "日期范围选择：可交互网页演示"
+    },
+    "previewNote": "根据提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "用户在对话中直接提供的提示词表格（交互类型 / 适用场景 / 动效设计 / Codex 开发提示词），原始出处未注明。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/date-range-picker/card-preview.png",
+      "alt": "日期范围选择：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Date Range Picker",
+      "description": "A two-month calendar opens with a 220ms fade and scale; two clicks set the range with hover preview and continuous highlighting, plus presets and Apply / Cancel / Clear.",
+      "tags": "Dropdowns / Attendance / reports / course periods / Fade + Scale, 220ms",
+      "prompt": "Implement a Date Range Picker. Clicking opens a two-month calendar with a 220ms Fade + Scale animation. The first click picks the start date and the second picks the end date. Hovering previews the range, and the date span is highlighted with a continuous background. Support Today, Last 7 Days, Last 30 Days, Apply, Cancel and Clear; switching months uses a slight horizontal slide.",
+      "previewNote": "Interactive web demo hand-built from the prompt — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "cascade-select",
+    "kind": "prompt",
+    "title": "级联选择",
+    "category": "动画动效",
+    "topics": [
+      "下拉菜单"
+    ],
+    "tags": "下拉菜单 / 年级 / 课程层级 / 地区 / Slide Right + Fade，200ms",
+    "description": "选父级后子级面板从左 10px 滑入淡入，父级保持高亮，切换父级清掉无效子级，手机上逐级展示。",
+    "prompt": "实现 Cascade Cascader。选择父级后，右侧子级面板以 translateX(-10px)→0 + Fade 展开，时长 200ms。父级保持高亮并显示箭头，最终选择后显示完整路径。切换父级时清除无效子级。支持多级数据、键盘导航、内部滚动和移动端逐级展示。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/cascade-select/preview.html",
+      "alt": "级联选择：可交互网页演示"
+    },
+    "previewNote": "根据提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "用户在对话中直接提供的提示词表格（交互类型 / 适用场景 / 动效设计 / Codex 开发提示词），原始出处未注明。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/cascade-select/card-preview.png",
+      "alt": "级联选择：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Cascader",
+      "description": "Picking a parent slides the child panel in from 10px left with a fade; the parent stays highlighted, invalid children clear on switch, and mobile shows one level at a time.",
+      "tags": "Dropdowns / Grade / course hierarchy / region / Slide Right + Fade, 200ms",
+      "prompt": "Implement a Cascade Cascader. After a parent is picked, the child panel on the right opens with translateX(-10px)→0 + Fade over 200ms. The parent stays highlighted with an arrow, and the full path is shown after the final pick. Switching the parent clears invalid children. Support multi-level data, keyboard navigation, internal scrolling and level-by-level display on mobile.",
+      "previewNote": "Interactive web demo hand-built from the prompt — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "tag-picker",
+    "kind": "prompt",
+    "title": "多选标签",
+    "category": "动画动效",
+    "topics": [
+      "下拉菜单"
+    ],
+    "tags": "下拉菜单 / 多学科筛选 / 标签 / 权限 / Chip Fade + Scale，160ms",
+    "description": "选中项以圆角标签显示，新增 0.9→1 淡入、删除缩小淡出，其余标签平滑补位；支持上限、去重和 +N 折叠。",
+    "prompt": "实现 Multi-select Tag Picker。支持搜索、多选、删除标签。选中项以圆角 Chip 显示在输入框中，新增标签采用 160ms Fade + Scale(0.9→1)，删除采用 120ms 缩小淡出。其他标签平滑重新排列。支持 Backspace 删除、Clear All、重复项去重、最大数量限制和 +N 折叠。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/tag-picker/preview.html",
+      "alt": "多选标签：可交互网页演示"
+    },
+    "previewNote": "根据提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "用户在对话中直接提供的提示词表格（交互类型 / 适用场景 / 动效设计 / Codex 开发提示词），原始出处未注明。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/tag-picker/card-preview.png",
+      "alt": "多选标签：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Tag Picker",
+      "description": "Selections become rounded chips that pop in from 0.9 and shrink out on removal while the rest reflow smoothly; with a limit, de-duplication and +N collapsing.",
+      "tags": "Dropdowns / Multi-subject filters / tags / permissions / Chip Fade + Scale, 160ms",
+      "prompt": "Implement a Multi-select Tag Picker. Support search, multiple selection and removing tags. Selected items appear as rounded Chips in the input; new tags use a 160ms Fade + Scale(0.9→1), and removal uses a 120ms shrink and fade. Other tags reflow smoothly. Support Backspace to delete, Clear All, de-duplication, a maximum count and +N collapsing.",
+      "previewNote": "Interactive web demo hand-built from the prompt — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "mega-menu",
+    "kind": "prompt",
+    "title": "大型下拉导航",
+    "category": "动画动效",
+    "topics": [
+      "下拉菜单",
+      "导航设计"
+    ],
+    "tags": "下拉菜单 / 网站顶部导航 / 课程中心 / Fade + Slide + Stagger，250–350ms",
+    "description": "桌面端悬停或点击展开多列面板，内容 30ms 交错出现、图标悬停右移 3px；手机上变成手风琴。",
+    "prompt": "实现响应式 Mega Menu。桌面端 Hover 或点击展开多列导航，面板使用 250ms Fade + translateY(-12px) 动画，内部内容以 30ms Stagger 依次出现。导航项 Hover 时图标轻微移动 3px。支持 Hover Delay、Escape、外部点击关闭。移动端转换为 Accordion，展开动画 200ms。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/mega-menu/preview.html",
+      "alt": "大型下拉导航：可交互网页演示"
+    },
+    "previewNote": "根据提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "用户在对话中直接提供的提示词表格（交互类型 / 适用场景 / 动效设计 / Codex 开发提示词），原始出处未注明。",
+    "addedAt": "2026-10-25",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/mega-menu/card-preview.png",
+      "alt": "大型下拉导航：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Mega Menu",
+      "description": "On desktop, hover or click opens a multi-column panel whose contents stagger in 30ms apart, with a 3px icon nudge on hover; on mobile it becomes an accordion.",
+      "tags": "Dropdowns / Site header navigation / course hub / Fade + Slide + Stagger, 250–350ms",
+      "prompt": "Implement a responsive Mega Menu. On desktop, hover or click opens multi-column navigation; the panel uses a 250ms Fade + translateY(-12px) animation and its contents appear with a 30ms stagger. Nav item icons shift slightly by 3px on hover. Support hover delay, Escape and closing on outside click. On mobile it turns into an Accordion with a 200ms expand animation.",
+      "previewNote": "Interactive web demo hand-built from the prompt — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "skill-lemo-opuscar",
+    "kind": "skill",
+    "resourceType": "Claude Code 插件 / Skill",
+    "title": "Lemo-Opuscar",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "repository": "https://github.com/lemomo-ai/lemo-opuscar",
+    "officialUrl": "https://lemomo-ai.github.io/lemo-opuscar/",
+    "source": "https://github.com/lemomo-ai/lemo-opuscar",
+    "tags": "代码做片 / 风格提示词 / Claude Code / 逐帧渲染 / 配乐配音",
+    "description": "Claude Code 用的「用代码做片」风格工具箱：59 种现成风格（每种是风格提示词加一支纯代码做的样片），也能改出你自己的风格；agent 读导演和技术指南，逐帧渲染画面、写配乐、配音并混音，不用视频生成模型。",
+    "prompt": "Lemo-Opuscar\n类型：Claude Code 插件 / Skill\n\n用途：Claude Code 用的「用代码做片」风格工具箱：59 种现成风格（每种是风格提示词加一支纯代码做的样片），也能改出你自己的风格；agent 读导演和技术指南，逐帧渲染画面、写配乐、配音并混音，不用视频生成模型。\n\n用法：claude plugin marketplace add lemomo-ai/lemo-opuscar，再 claude plugin install lemo-opuscar@lemolab；之后直接说「用某某风格做一支 30 秒的片子，讲……」，或输入 /lemo-opuscar:lemo-opuscar 从入口选择。也可 clone 仓库后在仓库里运行 claude。\n\n说明：作者注明风格按 Claude Opus 5.5 调校，其他模型适配度不高；开工前只问一次主题细节、是否有自己的配音或素材、要不要先看分镜。代码和文档为 MIT，样片视频及静帧为 CC BY 4.0（须署名 LemoLab），少数配音不在该授权内。预览为作者仓库中的 OPUSCAR 98 风格总览图。\n\n风格图鉴：https://lemomo-ai.github.io/lemo-opuscar/\nGitHub：https://github.com/lemomo-ai/lemo-opuscar\n\n收录状态：仅收藏，未安装或执行。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-lemo-opuscar/author-opuscar98-styles.jpg",
+      "alt": "Lemo-Opuscar 作者仓库中的 OPUSCAR 98「98 种风格全部公开」总览图",
+      "width": 1920,
+      "height": 1080
+    },
+    "previewSource": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/main/docs/opuscar98-styles.jpg",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库中的 OPUSCAR 98 风格总览图（98 种风格、风格提示词与镜头设计示例），按 CC BY 4.0 署名 LemoLab；非本次运行成果。",
+    "addedAt": "2026-10-25",
+    "verifiedAt": "2026-10-25",
+    "en": {
+      "title": "Lemo-Opuscar",
+      "description": "A \"films made in code\" style toolbox for Claude Code: 59 ready-made styles (each a style prompt plus a demo film made purely in code), and you can remix your own; the agent reads director and technique guides, renders frames, writes the score, voices and mixes — no video model.",
+      "tags": "Films in code / Style prompts / Claude Code / Frame-by-frame rendering / Score and voice-over",
+      "notes": "Install with claude plugin marketplace add lemomo-ai/lemo-opuscar, then claude plugin install lemo-opuscar@lemolab. The author tuned the styles for Claude Opus 5.5 and warns other models fit poorly.",
+      "license": "Code and docs MIT; sample films and stills CC BY 4.0 (credit LemoLab)",
+      "previewNote": "The OPUSCAR 98 style overview from the author's repository, credited to LemoLab under CC BY 4.0 — not output from this site."
+    }
+  },
+  {
     "id": "drop-gather-intro",
     "kind": "prompt",
     "title": "开场落下收拢",

@@ -1,0 +1,37 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拆分按钮 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../ui-flow-20261025.css"><style>
+.doc{padding:20px 22px;border:1px solid #e6e6e6;border-radius:14px;background:#fff}.doc h4{margin:0 0 6px;font-size:16px}.doc p{margin:0;font-size:12px;line-height:1.7;color:#777}.doc .lines i{display:block;height:8px;margin:10px 0;border-radius:4px;background:#efefec}
+.bar{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin-top:18px}.bar .msg{font-size:12px;color:#22a35a;opacity:0}
+.split{position:relative;display:inline-flex;border-radius:10px;box-shadow:0 1px 0 #0000000d}
+.canvas .split button{--b:#191919;display:inline-flex;align-items:center;gap:8px;min-height:42px;color:#fff;font-weight:600;cursor:pointer;transition:background-color .15s ease,scale .12s ease}
+.canvas .split .main{padding:0 18px;border-radius:10px 0 0 10px}.canvas .split .more{width:42px;justify-content:center;border-radius:0 10px 10px 0;border-left:1px solid #ffffff2e}
+.canvas .split button:hover:not(:disabled){--b:#3a3a3a}.canvas .split button:active:not(:disabled){scale:.96}.canvas .split button:disabled{--b:#5a5a5a;cursor:progress}
+.split .more svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:rotate .2s cubic-bezier(.2,.9,.22,1)}.split .more[aria-expanded=true] svg{rotate:180deg}
+.menu{width:230px;transform-origin:top right}.opt svg.ic{width:16px;height:16px;fill:none;stroke:#555;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.opt kbd{margin-left:auto;font:11px "Segoe UI",sans-serif;color:#a3a3a3}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / DROPDOWN 04</div><h1>拆分按钮</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="canvas" id="canvas">
+<h3>期中复习计划</h3><p class="sub">编辑中 · 2 分钟前自动保存</p>
+<div class="doc"><h4>第三单元：函数与导数</h4><p>本周完成导数的几何意义与单调性练习，周五前提交错题整理。</p><div class="lines"><i style="width:92%"></i><i style="width:78%"></i><i style="width:85%"></i><i style="width:60%"></i></div></div>
+<div class="bar"><span class="msg" id="msg">已保存 ✓</span><div class="split" id="split"><button type="button" class="main" id="main">保存</button><button type="button" class="more" id="more" aria-haspopup="menu" aria-expanded="false" aria-label="更多保存选项"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></div></div>
+<ul class="menu" id="menu" role="menu" tabindex="-1" hidden>
+<li class="opt" role="menuitem" data-a="草稿"><svg class="ic" viewBox="0 0 24 24"><path d="M5 19h14M7 15l9-9 3 3-9 9H7z"/></svg>保存为草稿<kbd>Ctrl D</kbd></li>
+<li class="opt" role="menuitem" data-a="发布"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>保存并发布</li>
+<li class="opt" role="menuitem" data-a="模板"><svg class="ic" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16"/></svg>另存为模板</li>
+<li class="opt" role="menuitem" data-a="PDF"><svg class="ic" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>导出 PDF</li></ul>
+</div></section><aside class="side"><div class="metric"><small>ACTION</small><strong id="act">—</strong></div><div class="metric"><small>REQUESTS</small><strong id="req">0</strong></div><p class="note">左侧主按钮直接保存，右侧箭头展开相关操作；菜单以 0.97→1 缩放加淡入在 170ms 内出现。两半各自悬停高亮、按下微缩。保存期间显示加载并禁用，连点也只发一次请求；Esc 或点外部关闭菜单。</p><div class="row"><button id="spam" type="button">连点保存 5 次</button><button id="replay" type="button">展开菜单</button></div></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../ui-flow-20261025.js"></script><script>
+let busy=false,requests=0,isOpen=false,active=0;const items=[...$('menu').children];
+async function save(label){if(busy)return;busy=true;requests++;$('req').textContent=requests;$('act').textContent=label;
+ [$('main'),$('more')].forEach(b=>b.disabled=true);$('main').innerHTML='<span class="spin"></span>保存中…';await wait(1100);
+ $('main').textContent='保存';[$('main'),$('more')].forEach(b=>b.disabled=false);busy=false;$('msg').textContent=label==='保存'?'已保存 ✓':label+' ✓';
+ A($('msg'),[{opacity:0,transform:'translateX(6px)'},{opacity:1,transform:'none',offset:.2},{opacity:1,offset:.8},{opacity:0}],{duration:1800})}
+function activate(i){active=i;items.forEach((o,k)=>o.classList.toggle('active',k===i))}
+function open(){if(isOpen||busy)return;isOpen=true;const m=$('menu');$('more').setAttribute('aria-expanded','true');m.hidden=false;
+ const c=$('canvas').getBoundingClientRect(),r=$('split').getBoundingClientRect(),k=c.width/$('canvas').offsetWidth;m.style.left=(r.right-c.left)/k-m.offsetWidth+'px';m.style.top=(r.bottom-c.top)/k+8+'px';
+ activate(0);m.focus({preventScroll:true});A(m,[{opacity:0,transform:'scale(.97)'},{opacity:1,transform:'none'}],{duration:170,easing:easeOut})}
+function close(focus){if(!isOpen)return;isOpen=false;$('more').setAttribute('aria-expanded','false');A($('menu'),[{opacity:1,transform:'none'},{opacity:0,transform:'scale(.97)'}],{duration:120,fill:'forwards'});setTimeout(()=>{if(!isOpen){$('menu').hidden=true;$('menu').getAnimations().forEach(a=>a.cancel())}},reduced?0:120);if(focus)$('more').focus({preventScroll:true})}
+$('main').onclick=()=>save('保存');$('more').onclick=()=>isOpen?close():open();
+$('menu').onpointermove=e=>{const o=e.target.closest('.opt');if(o)activate(items.indexOf(o))};$('menu').onclick=e=>{const o=e.target.closest('.opt');if(o){close(true);save(o.dataset.a==='PDF'?'导出 PDF':o.textContent.replace(/Ctrl D/,'').trim())}};
+$('menu').onkeydown=e=>{const n=items.length;if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();activate((active+(e.key==='ArrowDown'?1:n-1))%n)}else if(e.key==='Enter'||e.key===' '){e.preventDefault();items[active].click()}else if(e.key==='Escape'){e.preventDefault();close(true)}else if(e.key==='Tab')close()};
+$('more').onkeydown=e=>{if(e.key==='ArrowDown'){e.preventDefault();open()}};
+document.addEventListener('pointerdown',e=>{if(isOpen&&!$('split').contains(e.target)&&!$('menu').contains(e.target))close()});
+$('spam').onclick=()=>{for(let i=0;i<5;i++)$('main').click()};$('replay').onclick=open;
+setTimeout(open,reduced?0:800);
+</script><script src="../demo-i18n.js"></script></body></html>

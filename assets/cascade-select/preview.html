@@ -1,0 +1,43 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>级联选择 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../ui-flow-20261025.css"><style>
+.wrap{width:340px}.pop{position:absolute;z-index:20;display:flex;padding:6px;border:1px solid #ececec;border-radius:14px;background:#fff;box-shadow:0 16px 38px #1919191f,0 2px 6px #1919190d}
+.pop:focus{outline:none}.col{width:148px;max-height:240px;overflow-y:auto;margin:0;padding:0 4px;list-style:none}.col+.col{border-left:1px solid #f0f0f0;padding-left:8px}
+.col .opt .arr{margin-left:auto;color:#a3a3a3}.col .opt.on{background:#fff3c4;color:#191919;font-weight:700}.col .opt.on .arr{color:#191919}
+.mobile .col{width:300px}.mobile .col:not(:last-of-type){display:none}.mobile .col+.col{border:0;padding-left:4px}
+.crumb{display:none;align-items:center;gap:6px;padding:6px 8px 10px;font-size:12px;color:#7a7a7a;border-bottom:1px solid #f0f0f0;margin-bottom:6px}.mobile{flex-direction:column}.mobile .crumb{display:flex}
+.canvas .crumb button{--b:#f3f3f1;width:26px;height:26px;border-radius:8px;cursor:pointer}
+.path{margin-top:14px;font-size:12px;color:#7a7a7a}.path b{color:#191919}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / DROPDOWN 06</div><h1>级联选择</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="canvas" id="canvas">
+<h3>布置作业</h3><p class="sub">年级 → 学科 → 单元</p>
+<p class="cap" id="lab">适用范围</p><div class="wrap"><button type="button" class="field" id="btn" aria-haspopup="tree" aria-expanded="false" aria-labelledby="lab val"><span class="val" id="val"><span class="ph">选择年级 / 学科 / 单元</span></span></button></div>
+<p class="path" id="path">尚未选择</p>
+<div class="pop" id="pop" tabindex="-1" role="tree" aria-labelledby="lab" hidden></div>
+</div></section><aside class="side"><div class="metric"><small>LEVEL</small><strong id="lvl">—</strong></div><div class="metric"><small>PATH</small><strong id="pathM" style="font-size:22px">—</strong></div><label class="check"><input type="checkbox" id="mobile"> 手机逐级展示</label><p class="note">选中父级后，右侧子级面板从左 10px 滑入并淡入（200ms）；父级保持高亮并带箭头，最终选择后显示完整路径。切换父级会清掉无效的子级。支持多级数据、上下左右键导航和面板内滚动；手机视图逐级展示并可返回上一级。</p><button id="replay" type="button">重新演示</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../ui-flow-20261025.js"></script><script>
+const tree=[['高一',[['数学',[['函数与导数'],['三角函数'],['数列']]],['物理',[['运动学'],['牛顿运动定律']]],['英语',[['阅读理解'],['书面表达']]]]],
+ ['高二',[['数学',[['立体几何'],['概率与统计']]],['化学',[['化学反应原理'],['有机化学基础']]],['生物',[['遗传与进化'],['稳态与调节']]]]],
+ ['高三',[['数学',[['一轮复习'],['二轮专题']]],['语文',[['现代文阅读'],['写作']]],['物理',[['力学综合'],['电磁综合']]]]]];
+let path=[],chosen=null,focusCol=0,focusRow=[0,0,0],isOpen=false;
+const levelName=['年级','学科','单元'];
+function columns(){const cols=[tree];let node=tree;for(const i of path){const next=node[i][1];if(!next)break;cols.push(next);node=next}return cols}
+function render(animateFrom){const cols=columns(),mobile=$('mobile').checked;$('pop').classList.toggle('mobile',mobile);
+ $('pop').innerHTML=`<div class="crumb">${path.length?'<button type="button" id="back" aria-label="返回上一级">‹</button>':''}<span>${path.length?path.map((i,k)=>columns()[k][i][0]).join(' / '):'选择年级'}</span></div>`+
+  cols.map((list,c)=>`<ul class="col" role="group" data-c="${c}">${list.map(([name,kids],r)=>`<li class="opt${path[c]===r?' on':''}${focusCol===c&&focusRow[c]===r?' active':''}" role="treeitem" data-c="${c}" data-r="${r}" aria-selected="${path[c]===r}"${kids?' aria-expanded="'+(path[c]===r)+'"':''}><span>${name}</span>${kids?'<span class="arr">›</span>':(chosen&&path.length===c+1&&path[c]===r?tick:'')}</li>`).join('')}</ul>`).join('');
+ // Only the newly revealed child panel slides in.
+ if(animateFrom!==undefined){const col=$('pop').querySelector(`.col[data-c="${animateFrom}"]`);if(col)A(col,[{opacity:0,transform:'translateX(-10px)'},{opacity:1,transform:'none'}],{duration:200,easing:easeOut})}
+ $('lvl').textContent=levelName[Math.min(cols.length-1,2)];if(!$('pop').hidden)placeMenu($('pop'),$('btn'),{gap:8})}
+function pickAt(c,r){const list=columns()[c],kids=list[r][1];path=path.slice(0,c);path[c]=r;focusCol=c;focusRow[c]=r;
+ // Switching a parent clears any deeper, now-invalid choice.
+ chosen=null;if(kids){focusRow[c+1]=0;render(c+1)}else{chosen=path.map((i,k)=>columns()[k][i][0]);$('val').textContent=chosen.join(' / ');$('path').innerHTML='完整路径：<b>'+chosen.join(' › ')+'</b>';$('pathM').textContent=chosen.join(' / ');render();setTimeout(()=>close(true),reduced?0:260)}}
+function open(){if(isOpen)return;isOpen=true;$('btn').setAttribute('aria-expanded','true');$('pop').hidden=false;focusCol=Math.max(0,path.length-1);render();$('pop').focus({preventScroll:true});A($('pop'),[{opacity:0,transform:'translateY(-6px)'},{opacity:1,transform:'none'}],{duration:200,easing:easeOut})}
+function close(focus){if(!isOpen)return;isOpen=false;$('btn').setAttribute('aria-expanded','false');A($('pop'),[{opacity:1},{opacity:0}],{duration:120,fill:'forwards'});setTimeout(()=>{if(!isOpen){$('pop').hidden=true;$('pop').getAnimations().forEach(a=>a.cancel())}},reduced?0:120);if(focus)$('btn').focus({preventScroll:true})}
+$('btn').onclick=()=>isOpen?close():open();
+$('pop').onclick=e=>{if(e.target.closest('#back')){path=path.slice(0,-1);chosen=null;focusCol=Math.max(0,path.length);render();return}const o=e.target.closest('.opt');if(o)pickAt(+o.dataset.c,+o.dataset.r)};
+$('pop').onkeydown=e=>{const cols=columns(),list=cols[focusCol];
+ if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();focusRow[focusCol]=(focusRow[focusCol]+(e.key==='ArrowDown'?1:list.length-1))%list.length;render()}
+ else if(e.key==='ArrowRight'||e.key==='Enter'){e.preventDefault();const r=focusRow[focusCol];pickAt(focusCol,r);if(list[r][1]){focusCol++;render()}}
+ else if(e.key==='ArrowLeft'){e.preventDefault();if(focusCol>0){focusCol--;path=path.slice(0,focusCol+1);render()}}
+ else if(e.key==='Escape'){e.preventDefault();close(true)}};
+$('mobile').onchange=()=>{if(isOpen)render()};
+document.addEventListener('pointerdown',e=>{if(isOpen&&!$('pop').contains(e.target)&&!$('btn').contains(e.target))close()});
+async function demo(){path=[];chosen=null;open();await wait(500);pickAt(0,0);await wait(450);pickAt(1,0);await wait(450);pickAt(1,1);if(reduced)return;await wait(450);pickAt(2,0)}
+$('replay').onclick=()=>{close();setTimeout(demo,reduced?0:200)};setTimeout(demo,reduced?0:700);
+</script><script src="../demo-i18n.js"></script></body></html>

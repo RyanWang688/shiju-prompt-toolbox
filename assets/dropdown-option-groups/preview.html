@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>分组下拉 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../ui-flow-20261025.css"><style>
+.wrap{width:320px}.menu{max-height:286px;overflow-y:auto;padding:0 6px 6px;overscroll-behavior:contain}
+.grp{position:sticky;top:0;z-index:1;margin:0 -6px;padding:10px 16px 6px;background:#fffffff2;backdrop-filter:blur(4px);font-size:11px;font-weight:700;letter-spacing:1px;color:#8a8a8a;cursor:default}
+.sep{height:1px;margin:6px 4px;background:#efefef}
+.opt small{margin-left:auto;font-size:11px;color:#a3a3a3}.opt small+.tick{margin-left:8px}.opt[aria-selected=true] small{display:none}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / DROPDOWN 02</div><h1>分组下拉</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="canvas" id="canvas">
+<h3>选课</h3><p class="sub">按学科分组的课程列表</p>
+<p class="cap" id="lab">课程</p><div class="wrap" id="wrap"><button type="button" class="field" id="btn" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="lab val"><span class="val" id="val"><span class="ph">选择一门课程</span></span></button></div>
+<ul class="menu" id="menu" role="listbox" tabindex="-1" aria-labelledby="lab" hidden></ul>
+</div></section><aside class="side"><div class="metric"><small>GROUPS</small><strong id="groups">4 组</strong></div><div class="metric"><small>PICKED</small><strong id="pick">—</strong></div><p class="note">选项按学科分组，组标题不可选、滚动时吸顶，组间用细分隔线隔开。展开 200ms 淡入加下滑；长列表在菜单内部滚动；上下键导航会跳过组标题，选中后显示对勾并收起。</p><button id="replay" type="button">打开课程列表</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../ui-flow-20261025.js"></script><script>
+const groups=[['数学',['高等数学','线性代数','概率论与数理统计','离散数学']],['物理',['大学物理','电磁学','量子力学导论']],['计算机',['数据结构','操作系统','计算机网络','数据库系统']],['语言',['学术英语写作','日语入门','法语入门']]];
+$('btn').insertAdjacentHTML('beforeend',chev);
+const flat=[];$('menu').innerHTML=groups.map(([g,list],gi)=>`${gi?'<li class="sep" role="presentation"></li>':''}<li role="group" aria-labelledby="g${gi}"><div class="grp" id="g${gi}">${g}</div><ul style="list-style:none;margin:0;padding:0">${list.map(c=>{flat.push([g,c]);const i=flat.length-1;return `<li class="opt" role="option" id="o${i}" data-i="${i}"><span>${c}</span><small>${g}</small>${tick}</li>`}).join('')}</ul></li>`).join('');
+let value=-1,active=0,isOpen=false;const opts=[...$('menu').querySelectorAll('.opt')];
+function activate(i,scroll){active=i;opts.forEach((o,k)=>o.classList.toggle('active',k===i));$('menu').setAttribute('aria-activedescendant','o'+i);
+ // Keep the active row clear of the sticky group header while scrolling with the keyboard.
+ if(scroll){const m=$('menu'),o=opts[i],top=o.offsetTop-34,bottom=o.offsetTop+o.offsetHeight+6;if(top<m.scrollTop)m.scrollTop=top;else if(bottom>m.scrollTop+m.clientHeight)m.scrollTop=bottom-m.clientHeight}}
+function open(){if(isOpen)return;isOpen=true;const m=$('menu');$('btn').setAttribute('aria-expanded','true');m.hidden=false;m.style.width=$('btn').offsetWidth+'px';placeMenu(m,$('btn'),{gap:8});activate(Math.max(0,value),true);m.focus({preventScroll:true});
+ A(m,[{opacity:0,transform:'translateY(-8px)'},{opacity:1,transform:'none'}],{duration:200,easing:easeOut})}
+function close(focus){if(!isOpen)return;isOpen=false;$('btn').setAttribute('aria-expanded','false');A($('menu'),[{opacity:1},{opacity:0}],{duration:120,fill:'forwards'});setTimeout(()=>{if(!isOpen){$('menu').hidden=true;$('menu').getAnimations().forEach(a=>a.cancel())}},reduced?0:120);if(focus)$('btn').focus({preventScroll:true})}
+function choose(i){value=i;opts.forEach((o,k)=>o.setAttribute('aria-selected',String(k===i)));$('val').textContent=flat[i][1];$('pick').textContent=flat[i][1];setTimeout(()=>close(true),reduced?0:90)}
+$('btn').onclick=()=>isOpen?close():open();$('btn').onkeydown=e=>{if(['ArrowDown','ArrowUp','Enter',' '].includes(e.key)){e.preventDefault();open()}};
+$('menu').onpointermove=e=>{const o=e.target.closest('.opt');if(o)activate(+o.dataset.i)};$('menu').onclick=e=>{const o=e.target.closest('.opt');if(o)choose(+o.dataset.i)};
+$('menu').onkeydown=e=>{const n=opts.length;if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();activate((active+(e.key==='ArrowDown'?1:n-1))%n,true)}else if(e.key==='Home'||e.key==='End'){e.preventDefault();activate(e.key==='Home'?0:n-1,true)}else if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(active)}else if(e.key==='Escape'){e.preventDefault();close(true)}else if(e.key==='Tab')close()};
+document.addEventListener('pointerdown',e=>{if(isOpen&&!$('wrap').contains(e.target)&&!$('menu').contains(e.target))close()});
+$('replay').onclick=open;setTimeout(()=>{open();if(!reduced)setTimeout(()=>{$('menu').scrollTo({top:150,behavior:'smooth'})},700)},reduced?0:700);
+</script><script src="../demo-i18n.js"></script></body></html>

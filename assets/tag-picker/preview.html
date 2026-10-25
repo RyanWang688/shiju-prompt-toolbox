@@ -1,0 +1,48 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>多选标签 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../ui-flow-20261025.css"><style>
+.wrap{width:420px}.canvas .tagbox{flex-wrap:wrap;gap:6px;min-height:46px;padding:6px 40px 6px 8px;cursor:text}
+.chip{display:inline-flex;align-items:center;gap:4px;height:28px;padding:0 4px 0 10px;border-radius:999px;background:#191919;color:#fff;font-size:12px;font-weight:600;white-space:nowrap}
+.canvas .chip button{--b:transparent;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;color:#ffffffb3;cursor:pointer}.canvas .chip button:hover{--b:#ffffff26;color:#fff}
+.chip.more{padding:0 10px;background:#ececea;color:#555}.chip.flash{outline:2px solid #ffd43b;outline-offset:1px}
+.tagbox input{flex:1;min-width:90px;height:28px;border:0;outline:none;background:transparent;font:inherit;color:#191919}
+.canvas .clear{--b:transparent;position:absolute;right:8px;top:50%;width:26px;height:26px;margin-top:-13px;border-radius:50%;color:#8a8a8a;cursor:pointer}.canvas .clear:hover{--b:#f3f3f1;color:#191919}
+.menu{max-height:250px;overflow-y:auto}.lim{padding:8px 10px 4px;font-size:11px;color:#b45309}
+.opt .box{width:16px;height:16px;border:1.5px solid #c9c9c9;border-radius:5px;display:grid;place-items:center}.opt[aria-selected=true] .box{background:#191919;border-color:#191919}
+.opt[aria-selected=true] .box::after{content:'';width:8px;height:4px;border:2px solid #fff;border-top:0;border-right:0;rotate:-45deg;margin-top:-2px}.opt .tick{display:none}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / DROPDOWN 07</div><h1>多选标签</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="canvas" id="canvas">
+<h3>筛选课程</h3><p class="sub">按学科多选，最多 6 个</p>
+<p class="cap" id="lab">学科</p><div class="wrap"><div class="field tagbox" id="box"><span id="chips" style="display:contents"></span><input id="q" role="combobox" aria-expanded="false" aria-controls="menu" aria-labelledby="lab" autocomplete="off" placeholder="搜索或输入新标签…"><button type="button" class="clear" id="clear" aria-label="清除全部" hidden>✕</button></div></div>
+<ul class="menu" id="menu" role="listbox" aria-multiselectable="true" aria-labelledby="lab" hidden></ul>
+</div></section><aside class="side"><div class="metric"><small>SELECTED</small><strong id="n">0 / 6</strong></div><div class="metric"><small>LAST</small><strong id="last">—</strong></div><p class="note">支持搜索、多选和删除。选中项以圆角标签显示在输入框里：新增 160ms 淡入并从 0.9 放大，删除 120ms 缩小淡出，其余标签平滑补位。Backspace 删除最后一个、一键清除、重复项去重、最多 6 个，超过 4 个显示 +N 折叠。</p><button id="replay" type="button">重新演示</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../ui-flow-20261025.js"></script><script>
+const EN=new URLSearchParams(location.search).get('lang')==='en';
+const ALL=EN?['Math','Physics','Chemistry','Biology','History','Geography','Politics','Chinese','English','Computing','Art','Music']:['数学','物理','化学','生物','历史','地理','政治','语文','英语','计算机','美术','音乐'],MAX=6,SHOW=4;
+let tags=[],isOpen=false,active=0,list=[],expanded=false;const q=$('q');
+// FLIP: remember chip positions, change the DOM, then glide each chip from its old spot.
+function flip(change){const before=new Map([...$('chips').children].map(c=>[c.dataset.t,c.getBoundingClientRect()]));change();
+ if(reduced)return;for(const c of $('chips').children){const r=before.get(c.dataset.t);if(!r)continue;const n=c.getBoundingClientRect(),k=$('canvas').getBoundingClientRect().width/$('canvas').offsetWidth,dx=(r.left-n.left)/k,dy=(r.top-n.top)/k;if(dx||dy)c.animate([{transform:`translate(${dx}px,${dy}px)`},{transform:'none'}],{duration:200,easing:easeOut})}}
+function chips(){const vis=expanded?tags:tags.slice(0,SHOW),more=tags.length-vis.length;
+ $('chips').innerHTML=vis.map(t=>`<span class="chip" data-t="${t}">${t}<button type="button" data-rm="${t}" aria-label="移除 ${t}">✕</button></span>`).join('')+(more?`<span class="chip more" data-t="+more" role="button" tabindex="0" title="展开全部">+${more}</span>`:'');
+ $('clear').hidden=!tags.length;$('n').textContent=`${tags.length} / ${MAX}`}
+function add(t){t=t.trim();if(!t)return;const dup=tags.find(x=>x.toLowerCase()===t.toLowerCase());
+ if(dup){const el=$('chips').querySelector(`[data-t="${dup}"]`);if(el){el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),500)}$('last').textContent='已存在：'+dup;return}
+ if(tags.length>=MAX){$('last').textContent='已达上限';return}
+ flip(()=>{tags.push(t);chips()});const el=$('chips').querySelector(`[data-t="${t}"]`);if(el)A(el,[{opacity:0,transform:'scale(.9)'},{opacity:1,transform:'none'}],{duration:160,easing:easeOut});$('last').textContent='+ '+t;menu()}
+function remove(t){const el=$('chips').querySelector(`[data-t="${t}"]`);$('last').textContent='− '+t;
+ const done=()=>flip(()=>{tags=tags.filter(x=>x!==t);chips()});if(!el||reduced){done();menu();return}
+ A(el,[{opacity:1,transform:'none'},{opacity:0,transform:'scale(.85)'}],{duration:120,fill:'forwards'});setTimeout(()=>{done();menu()},120)}
+function menu(){const k=q.value.trim();list=ALL.filter(x=>x.toLowerCase().includes(k.toLowerCase()));const full=tags.length>=MAX;
+ $('menu').innerHTML=(full?'<li class="lim" role="presentation">最多选择 6 个，先移除一些再添加</li>':'')+list.map((x,i)=>{const on=tags.includes(x);return `<li class="opt${i===active?' active':''}" role="option" id="t${i}" data-x="${x}" aria-selected="${on}"${full&&!on?' aria-disabled="true"':''}><span class="box"></span>${x}</li>`}).join('')+
+  (k&&!ALL.some(x=>x.toLowerCase()===k.toLowerCase())?`<li class="opt" role="option" data-x="${k.replace(/"/g,'')}" data-new="1">新建标签「${k.replace(/</g,'')}」</li>`:'');
+ if(isOpen)placeMenu($('menu'),$('box'),{gap:8})}
+function open(){if(isOpen)return;isOpen=true;q.setAttribute('aria-expanded','true');const m=$('menu');m.hidden=false;m.style.width=$('box').offsetWidth+'px';active=0;menu();A(m,[{opacity:0,transform:'translateY(-8px)'},{opacity:1,transform:'none'}],{duration:160,easing:easeOut})}
+function close(){if(!isOpen)return;isOpen=false;q.setAttribute('aria-expanded','false');A($('menu'),[{opacity:1},{opacity:0}],{duration:110,fill:'forwards'});setTimeout(()=>{if(!isOpen){$('menu').hidden=true;$('menu').getAnimations().forEach(a=>a.cancel())}},reduced?0:110)}
+function toggle(x){if(tags.includes(x))remove(x);else add(x)}
+$('box').onclick=e=>{const rm=e.target.closest('[data-rm]');if(rm){remove(rm.dataset.rm);return}if(e.target.closest('.more')){flip(()=>{expanded=true;chips()});return}if(e.target.closest('#clear')){flip(()=>{tags=[];expanded=false;chips()});menu();return}q.focus();open()};
+q.oninput=()=>{active=0;open();menu()};q.onfocus=open;
+q.onkeydown=e=>{const opts=[...$('menu').querySelectorAll('.opt')];if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();open();active=(active+(e.key==='ArrowDown'?1:opts.length-1))%Math.max(1,opts.length);menu()}
+ else if(e.key==='Enter'){e.preventDefault();const o=opts[active];if(o&&o.getAttribute('aria-disabled')!=='true')toggle(o.dataset.x);else if(q.value.trim())add(q.value);q.value='';menu()}
+ else if(e.key==='Backspace'&&!q.value&&tags.length){remove(tags[tags.length-1])}else if(e.key==='Escape'){close()}};
+$('menu').onpointerdown=e=>e.preventDefault();$('menu').onclick=e=>{const o=e.target.closest('.opt');if(o&&o.getAttribute('aria-disabled')!=='true'){toggle(o.dataset.x);q.value=''}};
+document.addEventListener('pointerdown',e=>{if(isOpen&&!$('box').contains(e.target)&&!$('menu').contains(e.target))close()});
+async function demo(){tags=[];expanded=false;chips();q.focus();open();const seq=EN?['Math','Physics','Chemistry','Computing','English']:['数学','物理','化学','计算机','英语'];for(const t of seq){await wait(330);add(t)}await wait(400);add(seq[0]);if(reduced)return;await wait(500);remove(seq[1])}
+$('replay').onclick=demo;chips();setTimeout(demo,reduced?0:700);
+</script><script src="../demo-i18n.js"></script></body></html>
