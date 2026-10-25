@@ -1,0 +1,47 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>双头价格滑块 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#121216;color:#eceaf4}.sb{color:#fff}.app h2{margin:6px 20px 10px;font-size:20px}
+.shoes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 20px}.shoes i{height:70px;border-radius:10px;opacity:.5}
+.panel{position:absolute;left:0;right:0;bottom:0;height:520px;padding:10px 22px 28px;border-radius:24px 24px 0 0;background:#1d1d24}
+.grab{width:40px;height:5px;margin:0 auto 14px;border-radius:3px;background:#3a3a46}.ph{display:flex;justify-content:space-between;font-size:15px;font-weight:800}.ph span{font-size:12px;color:#8d8aa0;font-weight:400}
+.hist{display:flex;align-items:flex-end;gap:3px;height:80px;margin:34px 6px 12px}.hist i{flex:1;border-radius:2px 2px 0 0;background:#34324a;transition:background-color .15s}.hist i.on{background:#8b7bff}
+.track{position:relative;height:6px;margin:0 6px;border-radius:3px;background:#34324a;touch-action:none}.fill{position:absolute;top:0;bottom:0;border-radius:3px;background:#8b7bff}
+.th{position:absolute;top:50%;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:#fff;box-shadow:0 0 0 6px #8b7bff33,0 6px 14px #0008;cursor:grab;touch-action:none}.th:focus-visible{outline:3px solid #ffd43b}
+.bub{position:absolute;bottom:26px;padding:5px 9px;border-radius:9px;background:#8b7bff;color:#fff;font-size:13px;font-weight:800;white-space:nowrap;transform:translateX(-50%);pointer-events:none}.bub::after{content:'';position:absolute;left:50%;bottom:-5px;margin-left:-5px;border:5px solid transparent;border-bottom:0;border-top-color:#8b7bff}
+.vals{display:flex;gap:10px;align-items:center;margin-top:30px}.vals div{flex:1;padding:10px 12px;border-radius:12px;background:#26262f;font-size:11px;color:#8d8aa0}.vals b{display:block;font-size:17px;color:#fff}
+.chips{display:flex;gap:8px;margin-top:18px}.chips span{padding:6px 12px;border-radius:999px;background:#26262f;font-size:12px;color:#c9c6d8}.chips .on{background:#8b7bff33;color:#cfc8ff}
+.app .go{--b:#8b7bff;display:block;width:100%;height:50px;margin-top:22px;border-radius:25px;color:#fff;font-size:15px;font-weight:800}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / PICKER 03</div><h1>双头价格滑块</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div><h2>运动鞋</h2><div class="shoes"><i class="scene-snow"></i><i class="scene-dusk"></i><i class="scene-ridge"></i><i class="scene-lake"></i></div>
+<div class="panel"><div class="grab"></div><div class="ph">价格区间<span>重置</span></div><div class="hist" id="hist"></div>
+<div class="track" id="track"><div class="fill" id="fill"></div><div class="bub" id="b0"></div><div class="bub" id="b1"></div><div class="th" id="t0" role="slider" tabindex="0" aria-label="最低价"></div><div class="th" id="t1" role="slider" tabindex="0" aria-label="最高价"></div></div>
+<div class="vals"><div>最低价<b id="lo">—</b></div>—<div>最高价<b id="hi">—</b></div></div>
+<div class="chips"><span class="on">经典复古</span><span>跑步</span><span>板鞋</span><span>篮球</span></div><button class="go" id="go" type="button">查看商品</button></div>
+</div></div></section><aside class="side"><div class="metric"><small>RANGE</small><strong id="rng">—</strong></div><div class="metric"><small>THUMB SCALE</small><strong id="sc">1.0</strong></div><p class="note">两个圆形把手分别拖动：拖动时放大到 1.2 倍并跟手，中间轨道用强调色填充、实时变长变短；把手上方的价格气泡实时变化，靠近时自动错开不重叠；两把手不能交叉、至少相隔 ¥100；松手时弹回正常大小，并吸附到最近的 ¥50 刻度。</p><button id="replay" type="button">重新演示</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const MAX=2000,GAP=100,SNAP=50,BARS=40;
+const counts=Array.from({length:BARS},(_,i)=>Math.round(4+70*Math.exp(-(((i-17)/7)**2))+(i*7%5)));
+$('hist').innerHTML=counts.map(c=>`<i style="height:${c}%"></i>`).join('');const bars=[...$('hist').children];
+const val=[300,1500];
+const W=()=>$('track').offsetWidth,pct=v=>v/MAX*100;
+function paint(){const [a,b]=val;$('t0').style.left=pct(a)+'%';$('t1').style.left=pct(b)+'%';$('fill').style.left=pct(a)+'%';$('fill').style.width=pct(b-a)+'%';
+ $('b0').textContent='¥'+Math.round(a);$('b1').textContent='¥'+Math.round(b);
+ // Bubbles that would overlap are pushed apart around their midpoint.
+ const w0=$('b0').offsetWidth,w1=$('b1').offsetWidth,x0=pct(a)/100*W(),x1=pct(b)/100*W(),need=(w0+w1)/2+6,gap=x1-x0;
+ const push=gap<need?(need-gap)/2:0;$('b0').style.left=x0-push+'px';$('b1').style.left=x1+push+'px';
+ bars.forEach((bar,i)=>{const v=(i+.5)/BARS*MAX;bar.classList.toggle('on',v>=a&&v<=b)});
+ const n=counts.reduce((s,c,i)=>{const v=(i+.5)/BARS*MAX;return s+(v>=a&&v<=b?c:0)},0);
+ $('lo').textContent='¥'+Math.round(a);$('hi').textContent='¥'+Math.round(b);$('rng').textContent=`¥${Math.round(a)} – ¥${Math.round(b)}`;$('go').textContent=`查看 ${n} 件商品`;
+ [$('t0'),$('t1')].forEach((t,k)=>t.setAttribute('aria-valuenow',Math.round(val[k])))}
+function setVal(k,v){val[k]=k===0?Math.max(0,Math.min(v,val[1]-GAP)):Math.min(MAX,Math.max(v,val[0]+GAP));paint()}
+function grow(t,on){A(t,[{scale:on?1:1.2},{scale:on?1.2:1}],{duration:on?160:420,easing:on?easeOut:spring,fill:'forwards'});$('sc').textContent=on?'1.2':'1.0'}
+// Release: spring back to size and glide to the nearest ¥50 step.
+function settle(k){const from=val[k],to=Math.round(from/SNAP)*SNAP;if(reduced||from===to){setVal(k,to);return}const t0=performance.now();
+ const f=t=>{const x=Math.min(1,(t-t0)/260),e=1-Math.pow(1-x,3);setVal(k,from+(to-from)*e);if(x<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+[$('t0'),$('t1')].forEach((t,k)=>{let drag=false;
+ t.onpointerdown=e=>{drag=true;t.setPointerCapture(e.pointerId);t.style.zIndex=3;grow(t,true)};
+ t.onpointermove=e=>{if(!drag)return;const r=$('track').getBoundingClientRect();setVal(k,(e.clientX-r.left)/r.width*MAX)};
+ t.onpointerup=t.onpointercancel=()=>{if(!drag)return;drag=false;t.style.zIndex='';grow(t,false);settle(k)};
+ t.onkeydown=e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();setVal(k,val[k]+(e.key==='ArrowRight'?SNAP:-SNAP))}}});
+async function glide(k,to,ms){const t=[$('t0'),$('t1')][k],from=val[k];grow(t,true);if(!reduced){const t0=performance.now();await new Promise(res=>{const f=n=>{const x=Math.min(1,(n-t0)/ms);setVal(k,from+(to-from)*(.5-Math.cos(x*Math.PI)/2));x<1?requestAnimationFrame(f):res()};requestAnimationFrame(f)})}else setVal(k,to);grow(t,false);settle(k)}
+async function demo(){val[0]=300;val[1]=1500;paint();await wait(600);await glide(0,780,700);await wait(250);await glide(1,860,900)}
+$('replay').onclick=demo;paint();demo();
+</script><script src="../demo-i18n.js"></script></body></html>

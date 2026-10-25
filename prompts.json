@@ -1,5 +1,181 @@
 [
   {
+    "id": "wheel-date-picker",
+    "kind": "prompt",
+    "title": "滚轮选择器",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 滚轮选择器 / 惯性滚动 / 吸附 / 3D 圆柱",
+    "description": "年月日三列滚轮跟手滚动，松手带惯性再吸附到格，中间最大最亮、上下渐小渐淡成 3D 圆柱；天数随月份更新。",
+    "prompt": "做一个生日滚轮选择器：年、月、日三列滚轮，手指上下拖动时跟手滚动，松手后带惯性继续滚，再减速并吸附到最近的一格停稳，有咔哒感；中间选中行文字最大最亮，越往上下越小越透明，带3D圆柱弯曲效果；月份变了以后日期列的天数自动〔更〕新（如2月只有28或29天）。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/wheel-date-picker/preview.html",
+      "alt": "滚轮选择器：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「4个选择器动效，第1名太顺了」系列（选择器排行 TOP 4）中「AI 描述词 · 选好这 4 项」字幕，用户提供截图。截图右侧的收藏图标遮住了个别字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-26",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/wheel-date-picker/card-preview.png",
+      "alt": "滚轮选择器：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Wheel Date Picker",
+      "description": "Year, month and day wheels follow your finger, coast with inertia and snap to a row, the centre largest and brightest on a 3D cylinder; day counts follow the month.",
+      "tags": "App interaction / Wheel picker / Inertial scroll / Snap / 3D cylinder",
+      "prompt": "Build a birthday wheel picker: three wheels for year, month and day that scroll with the finger while dragging up and down, keep rolling with inertia after release, then slow down and snap to the nearest row with a click-like feel; the selected middle row has the largest, brightest text, rows get smaller and more transparent towards the top and bottom with a 3D cylinder curve; when the month changes the day column's count [updates] automatically (e.g. February has only 28 or 29 days).",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "hotel-range-calendar",
+    "kind": "prompt",
+    "title": "日历选区间",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 日历 / 区间选择 / 荧光笔底带 / 数字滚动",
+    "description": "点一天为入住，按住往后滑像荧光笔依次涂出圆角底带，松手定离店日，「共 N 晚」数字滚动；选更早的日期则重新开始。",
+    "prompt": "做一个订酒店用的日历区间选择：点第一天作为入住，日期变成实心圆；手指按住往后滑动时，从入住日到手指所在日期之间的格子像荧光笔一样依次涂上浅色底带，〔带〕子两端是圆角；松手确定离店日，底部实时显示「共 N 晚」，数字滚动变化；如〔果〕选的日期早于入住日，就自动当成新的入住日重新开始。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/hotel-range-calendar/preview.html",
+      "alt": "日历选区间：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「4个选择器动效，第1名太顺了」系列（选择器排行 TOP 4）中「AI 描述词 · 选好这 4 项」字幕，用户提供截图。截图右侧的收藏图标遮住了个别字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-26",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/hotel-range-calendar/card-preview.png",
+      "alt": "日历选区间：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Hotel Range Calendar",
+      "description": "Tap a check-in day, then press and slide to paint a rounded highlighter band day by day; release to set check-out while \"N nights\" rolls — an earlier day restarts the range.",
+      "tags": "App interaction / Calendar / Range selection / Highlighter band / Rolling number",
+      "prompt": "Build a date-range calendar for hotel booking: tap the first day as check-in and the date becomes a solid circle; while the finger presses and slides forward, the cells between check-in and the day under the finger get a light band painted on one after another like a highlighter, [the] band with rounded ends; release to set check-out, the bottom shows \"N nights\" live with a rolling number; [if] the chosen day is earlier than check-in, treat it as the new check-in and start over.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "price-range-slider",
+    "kind": "prompt",
+    "title": "双头价格滑块",
+    "category": "动画动效",
+    "topics": [
+      "App 交互"
+    ],
+    "tags": "App 交互 / 双头滑块 / 价格区间 / 气泡避让 / 刻度吸附",
+    "description": "两个把手拖动时放大跟手，中间轨道实时填色；价格气泡靠近时自动错开，把手不交叉、至少隔 ¥100，松手弹回并吸附到 ¥50 刻度。",
+    "prompt": "做一个商品价格区间双头滑块：两个圆形把手可以分别拖动，拖动时把手放大到1.2倍并跟手移动，两个把手之间的轨道用强调色填充、实时跟着变长变短；把手上方〔浮〕出价格气泡，数字实时变化，两个气泡靠近时自动错开不重叠；两个把手不能交〔叉〕，至少保持100元间隔；松手时把手弹性回到正常大小，并吸附到最近的50元刻度。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/price-range-slider/preview.html",
+      "alt": "双头价格滑块：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「4个选择器动效，第1名太顺了」系列（选择器排行 TOP 4）中「AI 描述词 · 选好这 4 项」字幕，用户提供截图。截图右侧的收藏图标遮住了个别字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-26",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/price-range-slider/card-preview.png",
+      "alt": "双头价格滑块：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Price Range Slider",
+      "description": "Two thumbs grow and follow your finger while the track between them fills live; price bubbles move apart instead of overlapping, thumbs keep ¥100 apart, and release springs back to a ¥50 step.",
+      "tags": "App interaction / Dual-thumb slider / Price range / Bubble avoidance / Step snapping",
+      "prompt": "Build a dual-thumb product price range slider: two round thumbs can each be dragged, growing to 1.2× and following the finger while dragged, and the track between them is filled with the accent colour, lengthening and shortening live; price bubbles [pop up] above the thumbs with live numbers, and when the two bubbles get close they automatically move apart without overlapping; the thumbs can't [cross] and keep at least ¥100 apart; on release they spring back to normal size and snap to the nearest ¥50 step.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "cart-quantity-stepper",
+    "kind": "prompt",
+    "title": "数量加减",
+    "category": "动画动效",
+    "topics": [
+      "App 交互",
+      "按钮交互"
+    ],
+    "tags": "App 交互 / 数量加减 / 翻页计数器 / 长按加速 / 按压反馈",
+    "description": "按钮按下缩到 0.9 再弹回，数字像翻页计数器上下翻动约 220ms；数量到 1 时减号变灰，长按加号 0.5 秒后越加越快。",
+    "prompt": "做一个购物车数量加减器：点＋或－时，按钮按下缩小到0.9再弹回；数字像翻页计数器一样，加的时候旧数字向上滑出、新数字从下方滑入，减的时候方向相反，〔用〕时约220ms；数量到1时－按钮变灰；长按＋超过0.5秒后越加越快连续增加。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/cart-quantity-stepper/preview.html",
+      "alt": "数量加减：可交互网页演示"
+    },
+    "previewNote": "根据截图提示词手工制作的可交互网页演示，非原作者视频或模型实测输出。",
+    "sourceNote": "抖音 @林逸AIGC「4个选择器动效，第1名太顺了」系列（选择器排行 TOP 4）中「AI 描述词 · 选好这 4 项」字幕，用户提供截图。截图右侧的收藏图标遮住了个别字，以〔〕标出；括号内为据上下文的推测，非可见原文。",
+    "addedAt": "2026-10-26",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/cart-quantity-stepper/card-preview.png",
+      "alt": "数量加减：本次实际网页演示的浏览器截图，点开可交互",
+      "width": 1380,
+      "height": 900
+    },
+    "cardPreviewNote": "从本次实际运行的网页演示截图；卡片不嵌入可滚动 iframe，详情保留完整交互。",
+    "en": {
+      "title": "Cart Quantity Stepper",
+      "description": "Buttons squeeze to 0.9 and spring back while the number flips like a page counter in about 220ms; minus greys out at 1, and holding plus for 0.5 s speeds up.",
+      "tags": "App interaction / Quantity stepper / Flip counter / Long-press acceleration / Press feedback",
+      "prompt": "Build a cart quantity stepper: tapping + or − shrinks the button to 0.9 and springs it back; the number behaves like a flip counter — when adding, the old number slides up and out and the new one slides in from below, and when subtracting the direction is reversed, taking about 220ms; at a quantity of 1 the − button turns grey; holding + for more than 0.5 seconds keeps adding, faster and faster.",
+      "previewNote": "Interactive web demo hand-built from the prompt in the screenshot — not the original author's video or model output."
+    }
+  },
+  {
+    "id": "skill-kouyu",
+    "kind": "skill",
+    "resourceType": "英语口语陪练 Skill",
+    "title": "口语练习台（Kouyu）",
+    "category": "写作表达",
+    "skillTopics": [
+      "求职效率"
+    ],
+    "tags": "英语口语 / 场景对话 / 渐进提示 / 纠错 / 本地复习台",
+    "description": "面向 Codex / ChatGPT 的英语口语陪练 Skill：在对话里选主题做场景角色扮演，先预习单词和句型，过程中给渐进式中文提示和轻量纠错，结束后把真实表现、纠正和下一步整理到本地可视化复习台。",
+    "source": "https://github.com/maverickgao8848/kouyu",
+    "repository": "https://github.com/maverickgao8848/kouyu",
+    "prompt": "口语练习台（Kouyu）\n类型：英语口语陪练 Skill\n\n用途：面向 Codex / ChatGPT 的英语口语陪练 Skill：在对话里选主题做场景角色扮演，先预习单词和句型，过程中给渐进式中文提示和轻量纠错，结束后把真实表现、纠正和下一步整理到本地可视化复习台。\n\n说明：覆盖超市、健身房、咖啡店、餐厅、酒店、机场、理发、面试等场景，也可自定义主题；有 5 / 10 / 20 / 40 分钟四种节奏、入门 / 中级 / 进阶难度，以及沉浸式、引导式、学习式三种中文辅助；帮助按「中文意图提示 → 英文关键词 → 完整示范」逐级给出，只纠正影响理解或与本课目标相关的问题。说「I'm ready.」开始、「Let's wrap up.」结束并出报告。复习台用 Python 3.10+ 标准库运行（python scripts/workbench.py serve，默认 http://127.0.0.1:8765/），数据只存本机。仓库未附许可证文件。\n\n安装：git clone https://github.com/maverickgao8848/kouyu.git ~/.codex/skills/kouyu\n\nGitHub：https://github.com/maverickgao8848/kouyu\n\n收录状态：仅收藏，未安装或执行。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-kouyu/author-practice.jpg",
+      "alt": "口语练习台作者提供的英语复习台截图",
+      "width": 1417,
+      "height": 760
+    },
+    "previewSource": "https://raw.githubusercontent.com/maverickgao8848/kouyu/main/docs/screenshots/practice.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库中的本地复习台截图；非本次运行成果。",
+    "addedAt": "2026-10-26",
+    "verifiedAt": "2026-10-26",
+    "en": {
+      "title": "Kouyu (English speaking practice)",
+      "description": "An English speaking practice Skill for Codex / ChatGPT: pick a topic and role-play a real scenario after previewing words and sentence patterns, with step-by-step Chinese hints and light correction, then a local review workbench that saves what you actually said, corrections and next steps.",
+      "tags": "English speaking / Scenario dialogue / Graded hints / Correction / Local review workbench",
+      "notes": "Scenarios such as supermarket, gym, café, restaurant, hotel, airport, haircut and job interview, or your own; 5 / 10 / 20 / 40-minute sessions, beginner to advanced, and immersive / guided / learning hint modes. Say \"I'm ready.\" to start and \"Let's wrap up.\" for the report. The workbench runs on the Python 3.10+ standard library and keeps data on your machine.",
+      "license": "No license file in the repository",
+      "previewNote": "The author's screenshot of the local review workbench — not output from this site."
+    }
+  },
+  {
     "id": "skill-appshot",
     "kind": "skill",
     "resourceType": "App 宣传视频 Skill",

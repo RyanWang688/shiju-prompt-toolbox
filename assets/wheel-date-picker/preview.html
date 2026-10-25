@@ -1,0 +1,58 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>滚轮选择器 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#0f1113;color:#eef1f2}.sb{color:#fff}
+.hd{display:flex;align-items:center;justify-content:center;position:relative;height:44px;font-size:15px;font-weight:700}.hd span{position:absolute;left:20px;font-size:22px;color:#9aa3a6}
+.ava{display:grid;place-items:center;width:84px;height:84px;margin:18px auto 22px;border-radius:50%;background:#1f6f6a;font-size:30px;font-weight:800;border:3px solid #2c8f88}
+.row{display:flex;justify-content:space-between;margin:0 22px;padding:16px 0;border-bottom:1px solid #22272a;font-size:14px;color:#8e989b}.row b{color:#eef1f2;font-weight:600}
+.sheet{position:absolute;left:0;right:0;bottom:0;height:420px;padding-top:6px;border-radius:24px 24px 0 0;background:#1a1d20;box-shadow:0 -10px 30px #0008}
+.sh{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;font-size:14px;color:#9aa3a6}.sh b{color:#fff;font-size:15px}.sh i{font-style:normal;color:#34c6b8;font-weight:700}
+.wheels{position:relative;display:flex;height:250px;margin:6px 14px 0;perspective:500px;touch-action:none;user-select:none}
+.band{position:absolute;left:0;right:0;top:50%;height:44px;margin-top:-22px;border-radius:12px;background:#ffffff12;pointer-events:none}
+.col{position:relative;flex:1;cursor:grab;transform-style:preserve-3d}.col.k1{flex:.8}.col.k2{flex:.8}
+.it{position:absolute;left:0;right:0;top:50%;height:44px;margin-top:-22px;display:grid;place-items:center;font-size:17px;color:#eef1f2;backface-visibility:hidden;will-change:transform,opacity}
+.tip{margin:16px 0 0;text-align:center;font-size:12px;color:#7d878a}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / PICKER 01</div><h1>滚轮选择器</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="hd"><span>‹</span>编辑资料</div><div class="ava" id="ava">鹿</div>
+<div class="row">昵称<b>小鹿同学</b></div><div class="row">性别<b id="sex">女</b></div><div class="row">生日<b id="birth">—</b></div>
+<div class="sheet"><div class="sh"><span>取消</span><b>选择生日</b><i>确定</i></div>
+<div class="wheels" id="wheels"><div class="band" id="band"></div><div class="col k0" data-k="0"></div><div class="col k1" data-k="1"></div><div class="col k2" data-k="2"></div></div>
+<p class="tip">🎁 生日当天可领专属优惠券</p></div>
+</div></div></section><aside class="side"><div class="metric"><small>VALUE</small><strong id="val">—</strong></div><div class="metric"><small>VELOCITY</small><strong id="vel">0</strong></div><div class="metric"><small>DAYS IN MONTH</small><strong id="dim">—</strong></div><p class="note">年、月、日三列滚轮：上下拖动跟手滚动，松手后带惯性继续滚、减速并吸附到最近一格，每过一格咔哒一下；中间行最大最亮，越往上下越小越透明，带 3D 圆柱弯曲。月份变了，日期列的天数自动更新（2 月 28 或 29 天）。</p><button id="replay" type="button">随机甩一下</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const EN=new URLSearchParams(location.search).get('lang')==='en',MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const ROW=44,STEP=20,Y0=1950,Y1=2026,daysIn=(y,m)=>new Date(y,m,0).getDate();
+const cols=[...document.querySelectorAll('.col')];
+// pos is a float index into the column's values; v is in rows per second.
+const wheel=[{vals:[],pos:0,v:0},{vals:[],pos:0,v:0},{vals:[],pos:0,v:0}];
+const label=(k,x)=>EN?(k===1?MON[x-1]:String(x)):k===0?`${x}年`:k===1?`${x}月`:`${x}日`;
+function fill(k,vals){wheel[k].vals=vals;cols[k].innerHTML=vals.map(x=>`<div class="it">${label(k,x)}</div>`).join('')}
+function value(k){const w=wheel[k];return w.vals[Math.max(0,Math.min(w.vals.length-1,Math.round(w.pos)))]}
+// Items sit on a cylinder: offset rows rotate back and shrink/fade the further they are from the centre.
+function paint(k){const w=wheel[k];[...cols[k].children].forEach((el,i)=>{const d=i-w.pos,ad=Math.abs(d);if(ad>5){el.style.opacity=0;return}
+ el.style.transform=`translateY(${Math.sin(d*STEP*Math.PI/180)*ROW*2.9}px) rotateX(${-d*STEP}deg) scale(${1-Math.min(ad,4)*.06})`;el.style.opacity=Math.max(0,1-ad*.28);el.style.fontWeight=ad<.5?800:400;el.style.color=ad<.5?'#fff':'#c9cfd1'})}
+function readout(){const y=value(0),m=value(1),d=value(2);$('val').textContent=`${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;$('birth').textContent=EN?`${MON[m-1]} ${d}, ${y}`:`${y}年${m}月${d}日`;$('dim').textContent=daysIn(y,m)}
+// Changing year or month rebuilds the day column (28/29/30/31) and keeps the day in range.
+function syncDays(){const n=daysIn(value(0),value(1)),w=wheel[2];if(w.vals.length===n)return;const keep=value(2);fill(2,Array.from({length:n},(_,i)=>i+1));if(keep>n)target(2,n-1);paint(2)}
+let last=[0,0,0];
+function tick(k){const i=Math.round(wheel[k].pos);if(i===last[k])return;last[k]=i;if(!reduced)$('band').animate([{background:'#ffffff26'},{background:'#ffffff12'}],{duration:120});navigator.vibrate?.(4)}
+const anim=[0,0,0],tgt=[null,null,null];
+function target(k,i){tgt[k]=i;run(k)}
+function run(k){if(anim[k])return;let prev=0;const w=wheel[k];
+ const f=t=>{const dt=Math.min(.032,prev?(t-prev)/1000:.016);prev=t;const n=w.vals.length-1;
+  if(tgt[k]===null){w.v*=Math.pow(.06,dt);w.pos+=w.v*dt;if(w.pos<0||w.pos>n){w.pos=Math.max(0,Math.min(n,w.pos));w.v=0}if(Math.abs(w.v)<3)tgt[k]=Math.round(w.pos)}
+  else{const a=(tgt[k]-w.pos)*220-w.v*24;w.v+=a*dt;w.pos+=w.v*dt;if(Math.abs(tgt[k]-w.pos)<.002&&Math.abs(w.v)<.05){w.pos=tgt[k];w.v=0;tgt[k]=null;paint(k);tick(k);done(k);anim[k]=0;return}}
+  paint(k);tick(k);$('vel').textContent=Math.abs(w.v).toFixed(1);if(k<2)syncDays();readout();anim[k]=requestAnimationFrame(f)};
+ if(reduced){w.pos=tgt[k]??Math.round(w.pos);w.v=0;tgt[k]=null;paint(k);done(k);return}anim[k]=requestAnimationFrame(f)}
+function done(k){if(k<2)syncDays();readout();$('vel').textContent='0'}
+function fling(k,v){cancelAnimationFrame(anim[k]);anim[k]=0;tgt[k]=null;wheel[k].v=v;run(k)}
+cols.forEach((col,k)=>{let drag=null;
+ col.onpointerdown=e=>{cancelAnimationFrame(anim[k]);anim[k]=0;tgt[k]=null;drag={y:e.clientY,pos:wheel[k].pos,ly:e.clientY,lt:e.timeStamp,v:0};col.setPointerCapture(e.pointerId)};
+ col.onpointermove=e=>{if(!drag)return;const s=appScale(),n=wheel[k].vals.length-1;let p=drag.pos-(e.clientY-drag.y)/s/ROW;if(p<0)p*=.35;if(p>n)p=n+(p-n)*.35;wheel[k].pos=p;
+  const dt=e.timeStamp-drag.lt;if(dt>0)drag.v=-(e.clientY-drag.ly)/s/ROW/dt*1000;drag.ly=e.clientY;drag.lt=e.timeStamp;paint(k);tick(k);if(k<2)syncDays();readout()};
+ col.onpointerup=col.onpointercancel=e=>{if(!drag)return;const v=e.timeStamp-drag.lt>90?0:drag.v;drag=null;fling(k,Math.max(-40,Math.min(40,v)))}});
+if(EN){$('ava').textContent='F';$('sex').textContent='Female'}
+fill(0,Array.from({length:Y1-Y0+1},(_,i)=>Y0+i));fill(1,Array.from({length:12},(_,i)=>i+1));fill(2,Array.from({length:31},(_,i)=>i+1));
+wheel[0].pos=2001-Y0;wheel[1].pos=0;wheel[2].pos=30;last=wheel.map(w=>Math.round(w.pos));[0,1,2].forEach(paint);readout();
+// Demo: January 31 → flick the month to February and the day settles on the 28th.
+setTimeout(()=>target(1,1),reduced?0:900);
+$('replay').onclick=()=>fling(0,(Math.random()<.5?-1:1)*(14+Math.random()*16));
+</script><script src="../demo-i18n.js"></script></body></html>

@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>日历选区间 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#f6f7f6}.hd{display:flex;align-items:center;justify-content:center;position:relative;height:44px;font-size:15px;font-weight:700}.hd span{position:absolute;left:20px;font-size:22px;color:#777}
+.hotel{display:flex;gap:12px;align-items:center;margin:8px 18px 16px;padding:12px;border-radius:16px;background:#fff;box-shadow:0 2px 10px #0000000a}.hotel i{width:60px;height:48px;border-radius:10px}.hotel b{display:block;font-size:14px}.hotel small{font-size:11px;color:#8a8a8a}.hotel em{font-style:normal;color:#16a36a;font-weight:700}
+.mh{margin:0 22px 8px;font-size:16px;font-weight:800}.wk,.grid{display:grid;grid-template-columns:repeat(7,1fr);margin:0 14px}.wk span{height:30px;display:grid;place-items:center;font-size:12px;color:#9a9a9a}.wk span:first-child,.wk span:last-child{color:#16a36a}
+.grid{row-gap:6px;touch-action:none;user-select:none}.d{position:relative;height:44px;display:grid;place-items:center;font-size:15px;font-weight:600;color:#222;cursor:pointer}.d.past{color:#c6c6c6;pointer-events:none}
+.d::before{content:'';position:absolute;left:0;right:0;top:4px;bottom:4px;background:#d7f3e5;transform:scaleX(0);transform-origin:left;transition:transform .16s cubic-bezier(.2,.9,.22,1);z-index:0}
+.d.in::before{transform:scaleX(1)}.d.in.rs::before{border-radius:18px 0 0 18px}.d.in.re::before{border-radius:0 18px 18px 0}.d.in.rs.re::before{border-radius:18px}
+.d span{position:relative;z-index:1;display:grid;place-items:center;width:36px;height:36px;border-radius:50%}.d.edge span{background:#16a36a;color:#fff;box-shadow:0 4px 10px #16a36a55}
+.bar{position:absolute;left:0;right:0;bottom:0;padding:14px 18px 30px;background:#fff;border-radius:22px 22px 0 0;box-shadow:0 -8px 24px #0000000f}
+.dates{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#9a9a9a}.dates b{display:block;font-size:16px;color:#191919}.dates .r{text-align:right}
+.nights{display:inline-flex;align-items:center;gap:4px;padding:5px 12px;border-radius:999px;background:#e8f7ef;color:#16a36a;font-weight:700;font-size:13px}.roll{position:relative;display:inline-grid;height:1.3em;overflow:hidden}.roll>span{grid-area:1/1}
+.app .ok{--b:#16a36a;display:block;width:100%;height:50px;margin-top:14px;border-radius:25px;color:#fff;font-weight:800;font-size:15px;transition:opacity .2s}.app .ok:disabled{opacity:.45}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / PICKER 02</div><h1>日历选区间</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div>
+<div class="hd"><span>‹</span>选择入住日期</div>
+<div class="hotel"><i class="scene-lake"></i><div><b>山野 · 观湖精品酒店</b><small>豪华湖景大床房 · <em>¥468</em>/晚</small></div></div>
+<div class="mh">2026年11月</div><div class="wk" id="wk"></div><div class="grid" id="grid"></div>
+<div class="bar"><div class="dates"><div>入住<b id="in">—</b></div><span class="nights"><span id="nPre">共</span> <span class="roll" id="roll"><span>0</span></span> <span id="nPost">晚</span></span><div class="r">离店<b id="out">—</b></div></div><button class="ok" id="ok" type="button" disabled>请选择离店日期</button></div>
+</div></div></section><aside class="side"><div class="metric"><small>RANGE</small><strong id="rng">—</strong></div><div class="metric"><small>NIGHTS</small><strong id="n">0</strong></div><p class="note">点一天作为入住，日期变成实心圆；按住往后滑，入住日到手指所在日期之间的格子像荧光笔一样依次涂上浅色底带，两端圆角；松手确定离店日，底部「共 N 晚」数字滚动变化。选了早于入住日的日期，就自动当成新的入住日重新开始。</p><button id="replay" type="button">重新演示</button></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const EN=new URLSearchParams(location.search).get('lang')==='en',MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const Y=2026,M=10,PRICE=468,TODAY=3,WD=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:'日一二三四五六';
+let start=null,end=null,hover=null,dragging=false,moved=false,nights=0;
+const first=new Date(Y,M,1).getDay(),N=new Date(Y,M+1,0).getDate();
+$('grid').innerHTML=Array.from({length:first},()=>'<div></div>').join('')+Array.from({length:N},(_,i)=>`<div class="d${i+1<TODAY?' past':''}" data-d="${i+1}"><span>${i+1}</span></div>`).join('');
+const cells=[...document.querySelectorAll('.d')];
+const fmt=d=>EN?`${WD[new Date(Y,M,d).getDay()]}, Nov ${d}`:`11月${d}日 周${WD[new Date(Y,M,d).getDay()]}`;
+$('wk').innerHTML=[...WD].map(w=>`<span>${EN?w.slice(0,2):w}</span>`).join('');if(EN){$('nPre').textContent='';$('nPost').textContent='nights'}
+// Cells between check-in and the finger fill in one after another, like a highlighter stroke.
+function paint(){const lo=start,hi=end??hover;cells.forEach((c,i)=>{const d=i+1,inR=lo&&hi&&hi>lo&&d>=lo&&d<=hi,wasIn=c.classList.contains('in');
+  c.classList.toggle('edge',d===lo||(!!hi&&hi>lo&&d===hi));
+  c.classList.toggle('rs',inR&&(d===lo||new Date(Y,M,d).getDay()===0));c.classList.toggle('re',inR&&(d===hi||new Date(Y,M,d).getDay()===6));
+  if(inR&&!wasIn){c.style.setProperty('transition-delay',reduced?'0ms':Math.min(6,Math.max(0,d-(lastHi||lo)))*28+'ms');c.classList.add('in')}else if(!inR&&wasIn){c.style.removeProperty('transition-delay');c.classList.remove('in')}});
+ lastHi=hi;setNights(lo&&hi&&hi>lo?hi-lo:0);$('in').textContent=lo?fmt(lo):'—';$('out').textContent=lo&&hi&&hi>lo?fmt(hi):'—';
+ $('ok').disabled=!(start&&end);$('ok').textContent=start&&end?(EN?`Confirm · ${end-start} nights ¥${(end-start)*PRICE}`:`确定 · 共${end-start}晚 ¥${(end-start)*PRICE}`):(EN?'Choose a check-out date':'请选择离店日期');$('rng').textContent=lo&&hi&&hi>lo?`11/${lo} – 11/${hi}`:lo?`11/${lo} – ?`:'—'}
+let lastHi=null;
+// "共 N 晚" rolls like an odometer: up when it grows, down when it shrinks.
+function setNights(n){if(n===nights)return;const dir=n>nights?1:-1,box=$('roll'),old=box.lastElementChild,neu=document.createElement('span');neu.textContent=n;box.querySelectorAll('span:not(:last-child)').forEach(x=>x.remove());box.append(neu);nights=n;$('n').textContent=n;
+ if(reduced){old.remove();return}old.animate([{transform:'translateY(0)',opacity:1},{transform:`translateY(${-100*dir}%)`,opacity:0}],{duration:220,fill:'forwards'});neu.animate([{transform:`translateY(${100*dir}%)`,opacity:0},{transform:'none',opacity:1}],{duration:220,easing:easeOut});setTimeout(()=>old.remove(),230)}
+function dayAt(e){const el=document.elementFromPoint(e.clientX,e.clientY)?.closest('.d:not(.past)');return el?+el.dataset.d:null}
+function pick(d){if(!start||end||d<=start){start=d;end=null;hover=null;const c=cells[d-1];if(!reduced)c.querySelector('span').animate([{transform:'scale(.6)'},{transform:'scale(1.12)',offset:.6},{transform:'none'}],{duration:320,easing:spring})}else{end=d;hover=null}paint()}
+$('grid').onpointerdown=e=>{const d=dayAt(e);if(!d)return;moved=false;dragging=true;$('grid').setPointerCapture(e.pointerId);if(!start||end||d<=start)pick(d);else{hover=d;paint()}};
+$('grid').onpointermove=e=>{if(!dragging||!start||end)return;const d=dayAt(e);if(d&&d!==hover){moved=true;hover=d;paint()}};
+$('grid').onpointerup=e=>{if(!dragging)return;dragging=false;const d=dayAt(e)??hover;if(start&&!end&&d&&d>start)pick(d);else{hover=null;paint()}};
+async function demo(){start=end=hover=null;lastHi=null;paint();await wait(500);pick(10);await wait(400);for(let d=11;d<=17;d++){hover=d;paint();await wait(120)}pick(17)}
+$('replay').onclick=demo;demo();
+</script><script src="../demo-i18n.js"></script></body></html>

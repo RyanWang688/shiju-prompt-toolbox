@@ -1,0 +1,35 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数量加减 · 交互演示</title><link rel="stylesheet" href="../motion-set-20261023.css"><link rel="stylesheet" href="../app-flow-20261024.css"><style>
+.app{background:#f6f5f2}.hd{display:flex;justify-content:space-between;align-items:baseline;padding:4px 20px 12px;font-size:20px;font-weight:800}.hd small{font-size:12px;color:#9a948b;font-weight:400}
+.item{display:flex;gap:12px;align-items:center;margin:0 16px 12px;padding:14px 12px;border-radius:18px;background:#fff;box-shadow:0 2px 10px #00000008}
+.ck{width:20px;height:20px;border-radius:50%;background:#ff8a1f;display:grid;place-items:center;color:#fff;font-size:12px}.pic{width:82px;height:82px;border-radius:14px}
+.info{flex:1}.info b{display:block;font-size:14px}.info small{display:inline-block;margin:4px 0 8px;padding:2px 8px;border-radius:6px;background:#f3f1ec;font-size:11px;color:#8a857c}
+.line{display:flex;justify-content:space-between;align-items:center}.price{font-size:17px;font-weight:800}.price::before{content:'¥';font-size:12px}
+.step{display:flex;align-items:center;gap:6px}.app .sbtn{--b:#f1efea;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;font-size:18px;font-weight:800;color:#3d3a35;touch-action:none;user-select:none}
+.app .sbtn.plus{--b:#ff8a1f;color:#fff}.app .sbtn:disabled{--b:#f4f3f0;color:#cfcbc4;cursor:not-allowed}
+.num{position:relative;display:inline-grid;min-width:34px;height:24px;overflow:hidden;text-align:center;font-size:16px;font-weight:800;font-variant-numeric:tabular-nums}.num>span{grid-area:1/1}
+.like{margin:6px 20px 8px;font-size:14px;font-weight:800}.recs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 16px}.recs div{border-radius:14px;background:#fff;overflow:hidden;font-size:12px;font-weight:700}.recs i{display:block;height:110px}.recs p{margin:6px 10px 10px}.recs em{display:block;font-style:normal;color:#ff6a1a}
+.foot{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:14px 20px 30px;background:#fff;border-top:1px solid #eee}.foot span{font-size:13px;color:#8a857c}.foot b{font-size:20px;color:#191919}
+.app .pay{--b:#ff8a1f;padding:12px 26px;border-radius:24px;color:#fff;font-weight:800}
+</style></head><body><main id="stage"><header><div><div class="kicker">SHIJU / PICKER 04</div><h1>数量加减</h1></div><span class="badge">交互演示</span></header><section class="screen"><div class="phone"><div class="app" id="app">
+<div class="island"></div><div class="sb"><span>9:41</span><i></i></div><div class="hd">购物车 <small>2 件商品 · 管理</small></div><div id="list"></div>
+<div class="like">猜你喜欢</div><div class="recs"><div><i class="scene-dusk"></i><p>冷萃咖啡壶<em>¥89</em></p></div><div><i class="scene-snow"></i><p>帆布休闲鞋<em>¥199</em></p></div></div>
+<div class="foot"><span>合计 <b id="total">¥0</b></span><button class="pay" type="button">结算</button></div>
+</div></div></section><aside class="side"><div class="metric"><small>QUANTITY</small><strong id="q">—</strong></div><div class="metric"><small>REPEAT RATE</small><strong id="rate">—</strong></div><p class="note">点 ＋ 或 －：按钮按下缩到 0.9 再弹回；数字像翻页计数器，加时旧数字向上滑出、新数字从下方滑入，减时方向相反，约 220ms。数量到 1 时 － 变灰；长按 ＋ 超过 0.5 秒后越加越快地连续增加。</p><div class="row"><button id="hold" type="button">长按 ＋ 演示</button><button id="replay" type="button">重置</button></div></aside><div class="hint">根据用户提示词手工制作的网页演示 · 非原作者视频或模型实测输出</div></main><script src="../app-flow-20261024.js"></script><script>
+const goods=[{name:'复古白色运动鞋',spec:'白色 · 42码',price:389,n:9,art:'scene-snow'},{name:'手冲咖啡杯套装',spec:'陶瓷 · 350ml',price:129,n:1,art:'scene-dusk'}];
+$('list').innerHTML=goods.map((g,i)=>`<div class="item"><span class="ck">✓</span><i class="pic ${g.art}"></i><div class="info"><b>${g.name}</b><small>${g.spec}</small><div class="line"><span class="price">${g.price}</span><div class="step"><button class="sbtn" type="button" data-i="${i}" data-d="-1" aria-label="减少">−</button><span class="num" id="n${i}"><span>${g.n}</span></span><button class="sbtn plus" type="button" data-i="${i}" data-d="1" aria-label="增加">+</button></div></div></div></div>`).join('');
+const total=()=>{$('total').textContent='¥'+goods.reduce((s,g)=>s+g.price*g.n,0);$('q').textContent=goods.map(g=>g.n).join(' · ');document.querySelectorAll('[data-d="-1"]').forEach(b=>b.disabled=goods[b.dataset.i].n<=1)};
+// Flip-counter: going up the old number slides up and out while the new one rises from below; down is the reverse.
+function flip(i,dir){const box=$('n'+i),old=box.lastElementChild,neu=document.createElement('span');neu.textContent=goods[i].n;box.querySelectorAll('span:not(:last-child)').forEach(x=>x.remove());box.append(neu);
+ if(reduced){old.remove();return}old.animate([{transform:'translateY(0)',opacity:1},{transform:`translateY(${-100*dir}%)`,opacity:0}],{duration:220,easing:'cubic-bezier(.4,0,.2,1)',fill:'forwards'});
+ neu.animate([{transform:`translateY(${100*dir}%)`,opacity:0},{transform:'none',opacity:1}],{duration:220,easing:'cubic-bezier(.2,.9,.22,1)'});setTimeout(()=>old.remove(),230)}
+function change(i,d){const g=goods[i];if(d<0&&g.n<=1)return false;if(d>0&&g.n>=99)return false;g.n+=d;flip(i,d);total();return true}
+function press(b){A(b,[{scale:1},{scale:.9,offset:.35},{scale:1.04,offset:.7},{scale:1}],{duration:300,easing:'ease-out'})}
+// Long-press +: after 0.5s it repeats, faster and faster (180ms → 40ms between steps).
+let timer=0,rep=0;function stop(){clearTimeout(timer);timer=0;$('rate').textContent='—'}
+document.querySelectorAll('.sbtn').forEach(b=>{const i=+b.dataset.i,d=+b.dataset.d;
+ b.onpointerdown=e=>{if(b.disabled)return;press(b);change(i,d);if(d<0)return;rep=180;b.setPointerCapture?.(e.pointerId);timer=setTimeout(function go(){if(!change(i,1)){stop();return}press(b);$('rate').textContent=Math.round(1000/rep)+'/s';rep=Math.max(40,rep*.82);timer=setTimeout(go,rep)},500)};
+ b.onpointerup=b.onpointercancel=b.onpointerleave=stop;b.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();press(b);change(i,d)}}});
+async function hold(){const b=document.querySelector('.sbtn.plus[data-i="1"]');press(b);change(1,1);rep=180;await wait(500);for(let k=0;k<12;k++){if(!change(1,1))break;press(b);$('rate').textContent=Math.round(1000/rep)+'/s';await wait(rep);rep=Math.max(40,rep*.82)}stop()}
+async function demo(){goods[0].n=9;goods[1].n=1;goods.forEach((g,i)=>{$('n'+i).innerHTML=`<span>${g.n}</span>`});total();await wait(700);for(const d of [1,1,-1]){const b=document.querySelector(`.sbtn[data-i="0"][data-d="${d}"]`);press(b);change(0,d);await wait(450)}}
+$('hold').onclick=hold;$('replay').onclick=demo;total();demo();
+</script><script src="../demo-i18n.js"></script></body></html>
