@@ -47,14 +47,21 @@ jobs:
             echo "::error::Secret SUPABASE_SYNC_DB_URL is not set (Settings → Secrets and variables → Actions)."
             exit 1
           fi
+          python3 - <<'PY'
+          import os
+          import sys
+          url = os.environ['SUPABASE_SYNC_DB_URL']
+          if '\r' in url or '\n' in url or url != url.strip():
+              print('::error::Invalid SUPABASE_SYNC_DB_URL format. Reset the GitHub Secret to one line without leading or trailing whitespace.')
+              sys.exit(1)
+          PY
           # The connection string is passed via the environment and never echoed; ON_ERROR_STOP makes any SQL
           # error (including the mass-deactivation guard) fail this step.
-          # psql's own message (host/user/reason, never the password) is surfaced as an annotation on failure.
+          # Keep raw connection and server errors out of logs and annotations.
           if ! psql "$SUPABASE_SYNC_DB_URL" -X -q -v ON_ERROR_STOP=1 \
             -c "set shiju.allow_mass_deactivate = '$ALLOW_MASS_DEACTIVATE'" \
-            -f supabase/sync-content.sql 2>/tmp/psql.err; then
-            cat /tmp/psql.err >&2
-            echo "::error::Supabase sync failed: $(head -c 500 /tmp/psql.err | tr '\n' ' ')"
+            -f supabase/sync-content.sql 2>/dev/null; then
+            echo "::error::Supabase sync failed. Check the GitHub Secret, database connection, and sync SQL."
             exit 1
           fi
 
@@ -72,8 +79,8 @@ jobs:
           open('/tmp/expected', 'w').write(str(len(ids)))
           PY
           expected=$(cat /tmp/expected)
-          missing=$(psql "$SUPABASE_SYNC_DB_URL" -X -A -t -v ON_ERROR_STOP=1 -f /tmp/verify.sql)
-          active=$(psql "$SUPABASE_SYNC_DB_URL" -X -A -t -v ON_ERROR_STOP=1 -c "select count(*) from public.content_items where active")
+          missing=$(psql "$SUPABASE_SYNC_DB_URL" -X -A -t -v ON_ERROR_STOP=1 -f /tmp/verify.sql 2>/dev/null) || { echo "::error::Supabase verification failed. Check the database connection and sync configuration."; exit 1; }
+          active=$(psql "$SUPABASE_SYNC_DB_URL" -X -A -t -v ON_ERROR_STOP=1 -c "select count(*) from public.content_items where active" 2>/dev/null) || { echo "::error::Supabase verification failed. Check the database connection and sync configuration."; exit 1; }
           echo "prompts.json ids: $expected · active in Supabase: $active · missing or inactive: $missing"
           if [ "$missing" != "0" ]; then
             echo "::error::$missing content ids are not active in Supabase after the sync."
