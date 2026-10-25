@@ -1,5 +1,136 @@
 [
   {
+    "id": "skill-appshot",
+    "kind": "skill",
+    "resourceType": "App 宣传视频 Skill",
+    "title": "Appshot",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "tags": "App 宣传视频 / App Store 预览 / Remotion / Codex / 推荐：首选",
+    "description": "扫描你的项目代码，自动生成 App Store / Google Play 预览视频、商店截图和网站演示视频：AI Skill 像创意总监一样读取应用名、品牌色、图标和功能，为每个项目写专属的 Remotion 场景。",
+    "prompt": "Appshot\n类型：App 宣传视频 Skill\n\n用途：扫描你的项目代码，自动生成 App Store / Google Play 预览视频、商店截图和网站演示视频：AI Skill 像创意总监一样读取应用名、品牌色、图标和功能，为每个项目写专属的 Remotion 场景。\n\n说明：基于 Remotion + React 的原语库加 AI Skill，支持 Claude Code、Cursor、Windsurf、Codex 等支持 Agent Skills 规范的工具；移动端支持 React Native / Expo、Flutter、Swift、Kotlin，网页端支持 Next.js、SvelteKit、Nuxt、Astro、Remix、Vite，网页项目输出 1920×1080 带浏览器外框的演示视频。预览为作者用 Appshot 为 BookStreak 生成的商店预览视频。\n\n推荐程度（收录者）：首选\n\n许可：MIT\n\nGitHub：https://github.com/trunghaiy/appshot\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/trunghaiy/appshot",
+    "repository": "https://github.com/trunghaiy/appshot",
+    "addedAt": "2026-10-25",
+    "verifiedAt": "2026-10-25",
+    "en": {
+      "title": "Appshot",
+      "description": "Scans your codebase to generate App Store / Google Play preview videos, store screenshots and website demo videos: an AI skill acts as creative director, reading your app name, brand colours, icon and features to write custom Remotion scenes per project.",
+      "tags": "App promo videos / App Store previews / Remotion / Codex / Pick: first choice",
+      "notes": "A Remotion + React primitives library plus an AI skill for Claude Code, Cursor, Windsurf, Codex and other Agent Skills tools; mobile: React Native / Expo, Flutter, Swift, Kotlin; web: Next.js, SvelteKit, Nuxt, Astro, Remix, Vite (1920×1080 browser-framed demos). Curator rating: first choice.",
+      "license": "MIT",
+      "previewNote": "The App Store preview video the author generated with Appshot for BookStreak (GIF) — not output from this site."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-appshot/author-app-preview.gif",
+      "alt": "Appshot 为 BookStreak 生成的 App Store 预览视频（动图）",
+      "width": 360,
+      "height": 780
+    },
+    "previewSource": "https://raw.githubusercontent.com/trunghaiy/appshot/main/examples/bookstreak/app-preview.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库中用 Appshot 为 BookStreak 生成的 App Store 预览视频（动图）；非本次运行成果。"
+  },
+  {
+    "id": "skill-create-onboarding-video",
+    "kind": "skill",
+    "resourceType": "Claude Code Skill",
+    "title": "create-onboarding-video",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "tags": "引导视频 / 手机 UI 组件动画 / Remotion / 功能短视频 / 推荐：很推荐",
+    "description": "用 Remotion 做简短有力的 iOS App 引导视频：不放整屏，而是裁出按钮、开关、卡片、底部弹层等单个组件，用弹簧、滑动、缩放、遮罩揭示等 UI 式转场展示功能正在起作用。",
+    "prompt": "create-onboarding-video\n类型：Claude Code Skill\n\n用途：用 Remotion 做简短有力的 iOS App 引导视频：不放整屏，而是裁出按钮、开关、卡片、底部弹层等单个组件，用弹簧、滑动、缩放、遮罩揭示等 UI 式转场展示功能正在起作用。\n\n说明：每个引导屏 3–8 秒、整片通常不超过约 30 秒，默认 1080×1920 竖屏；开工前先向你要每屏 2–4 张截图（静止、操作中、结果）和一句功能说明，再规划镜头并渲染 MP4。位于作者的 Claude Code skill 合集 skill-set 中。仓库未附许可证文件。\n\n推荐程度（收录者）：很推荐\n\n许可：仓库未附许可证文件\n\nGitHub：https://github.com/bidah/skill-set\n文档：https://github.com/bidah/skill-set/blob/main/skills/create-onboarding-video/SKILL.md\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/bidah/skill-set",
+    "repository": "https://github.com/bidah/skill-set",
+    "addedAt": "2026-10-25",
+    "verifiedAt": "2026-10-25",
+    "en": {
+      "title": "create-onboarding-video",
+      "description": "Makes short, punchy iOS app onboarding videos in Remotion: instead of whole screens it crops single components — a button, toggle, card or sheet — and animates them with UI-style springs, slides, scales and masked reveals to show the feature working.",
+      "tags": "Onboarding videos / Mobile UI component motion / Remotion / Feature clips / Pick: highly recommended",
+      "notes": "3–8 s per onboarding screen, usually under ~30 s overall, 1080×1920 portrait by default; it first asks for 2–4 stills per screen (resting, mid-interaction, result) plus a one-line feature intent, then plans shots and renders MP4. Part of the author's skill-set collection. Curator rating: highly recommended.",
+      "license": "No license file in the repository",
+      "previewNote": "The repository has no real output image, and no concept art was substituted; real preview pending."
+    },
+    "documentation": "https://github.com/bidah/skill-set/blob/main/skills/create-onboarding-video/SKILL.md",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewSource": "https://github.com/bidah/skill-set",
+    "previewNote": "仓库未提供真实效果图，未用概念图替代；真实预览待补。"
+  },
+  {
+    "id": "skill-remotion-3d",
+    "kind": "skill",
+    "resourceType": "Remotion 官方模板",
+    "title": "Remotion 3D（template-three）",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "tags": "3D 手机模型 / React Three Fiber / Remotion / 屏幕视频替换 / 推荐：很推荐",
+    "description": "Remotion 官方的 React Three Fiber 模板，自带一部 3D 手机模型：屏幕里的视频可直接替换，手机的尺寸、颜色、长宽比、圆角等都能调，适合做 App 宣传片里的立体手机镜头。",
+    "prompt": "Remotion 3D（template-three）\n类型：Remotion 官方模板\n\n用途：Remotion 官方的 React Three Fiber 模板，自带一部 3D 手机模型：屏幕里的视频可直接替换，手机的尺寸、颜色、长宽比、圆角等都能调，适合做 App 宣传片里的立体手机镜头。\n\n说明：预装 @remotion/three 与 React Three Fiber；npm run dev 预览，npx remotion render 导出 MP4；也可以清空画布从零做自己的 3D 场景。模板内容为 MIT，Remotion 本身对部分公司需要商业许可。\n\n推荐程度（收录者）：很推荐\n\n许可：模板 MIT；Remotion 对部分公司需商业许可\n\nGitHub：https://github.com/remotion-dev/template-three\n官网：https://www.remotion.dev/templates/three\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/remotion-dev/template-three",
+    "repository": "https://github.com/remotion-dev/template-three",
+    "addedAt": "2026-10-25",
+    "verifiedAt": "2026-10-25",
+    "en": {
+      "title": "Remotion 3D (template-three)",
+      "description": "Remotion's official React Three Fiber template with a ready-made 3D phone: swap the video on its screen and tune size, colour, aspect ratio and corner radius — ideal for 3D phone shots in app promo videos.",
+      "tags": "3D phone model / React Three Fiber / Remotion / Screen video swap / Pick: highly recommended",
+      "notes": "Ships with @remotion/three and React Three Fiber; npm run dev to preview, npx remotion render to export MP4; or clear the canvas to build your own 3D scene. Template content is MIT; Remotion itself needs a company licence for some organisations. Curator rating: highly recommended.",
+      "license": "Template MIT; Remotion company licence for some organisations",
+      "previewNote": "The demo GIF from Remotion's official template repository (a 3D phone in the Remotion Player) — not output from this site."
+    },
+    "officialUrl": "https://www.remotion.dev/templates/three",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-remotion-3d/author-demo.gif",
+      "alt": "Remotion template-three 官方演示：Remotion Player 中的 3D 手机模型（动图）",
+      "width": 800,
+      "height": 620
+    },
+    "previewSource": "https://raw.githubusercontent.com/remotion-dev/template-three/main/demo.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "Remotion 官方模板仓库中的演示动图（3D 手机模型在 Remotion Player 中播放）；非本次运行成果。"
+  },
+  {
+    "id": "skill-remotion-skills",
+    "kind": "skill",
+    "resourceType": "Remotion 官方 Agent Skills",
+    "title": "Remotion Skills",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "tags": "Remotion / 视频制作规范 / Agent Skills / Codex / 推荐：必备基础",
+    "description": "Remotion 官方维护的 Agent Skills：教 AI 按最佳实践写 Remotion 视频——新建项目与合成、动画与排版标记、字幕、地图动画、Studio 可编辑交互，以及调用渲染导出视频或静帧。",
+    "prompt": "Remotion Skills\n类型：Remotion 官方 Agent Skills\n\n用途：Remotion 官方维护的 Agent Skills：教 AI 按最佳实践写 Remotion 视频——新建项目与合成、动画与排版标记、字幕、地图动画、Studio 可编辑交互，以及调用渲染导出视频或静帧。\n\n说明：用 npx skills add remotion-dev/skills 安装，或新建 Remotion 项目时勾选；适用于 Claude Code、Codex、Kimi Code、Cursor 等。包含 /remotion-best-practices（总入口）、/remotion-create、/remotion-markup、/remotion-studio、/remotion-render、/remotion-maps、/remotion-captions、/remotion-saas、/remotion-interactivity 等。仓库未附许可证文件。\n\n推荐程度（收录者）：必备基础\n\n许可：仓库未附许可证文件\n\nGitHub：https://github.com/remotion-dev/skills\n文档：https://www.remotion.dev/docs/ai/skills\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/remotion-dev/skills",
+    "repository": "https://github.com/remotion-dev/skills",
+    "addedAt": "2026-10-25",
+    "verifiedAt": "2026-10-25",
+    "en": {
+      "title": "Remotion Skills",
+      "description": "Remotion's official Agent Skills that teach an AI to write Remotion videos the right way — new projects and compositions, animation and layout markup, captions, map animations, editable Studio interactivity, and rendering to video or stills.",
+      "tags": "Remotion / Video production rules / Agent Skills / Codex / Pick: essential foundation",
+      "notes": "Install with npx skills add remotion-dev/skills or when creating a Remotion project; works with Claude Code, Codex, Kimi Code, Cursor and others. Includes /remotion-best-practices (umbrella), /remotion-create, /remotion-markup, /remotion-studio, /remotion-render, /remotion-maps, /remotion-captions, /remotion-saas and /remotion-interactivity. Curator rating: essential foundation.",
+      "license": "No license file in the repository",
+      "previewNote": "The repository has no real output image, and no concept art was substituted; real preview pending."
+    },
+    "documentation": "https://www.remotion.dev/docs/ai/skills",
+    "previewStatus": "pending",
+    "previewEvidence": "none-in-official-repository",
+    "previewSource": "https://github.com/remotion-dev/skills",
+    "previewNote": "仓库未提供真实效果图，未用概念图替代；真实预览待补。"
+  },
+  {
     "id": "website-mindset-11xy",
     "kind": "website",
     "title": "MindSet 慢思",
