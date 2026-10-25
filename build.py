@@ -33,6 +33,12 @@ assert template.count('__PROMPTS__') == 1
 (root / 'index.html').write_text(template.replace('__PROMPTS__', data), encoding='utf-8')
 print(f'Built index.html with {len(items)} prompts.')
 
+# Night mode: regenerate the dark stylesheet from the light one so the two never drift apart.
+import sys
+sys.path.insert(0, str(root))
+import dark_theme
+print(f'Wrote assets/dashboard-dark.css with {dark_theme.build(root)} dark selectors.')
+
 # Cloud likes only accept ids listed in public.content_items. The sync-content-ids workflow applies this file on
 # every push to main; it can also be run by hand in the Supabase SQL editor.
 assert len(items) >= 20, 'Refusing to generate a content sync from an almost empty prompts.json'

@@ -290,3 +290,20 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 .dashboard .search input:hover{border-color:#bdbdbd}
 .dashboard .search input:is(:focus,:focus-visible){outline:none;border-color:#d9a600;box-shadow:0 0 0 3px #ffd43b59}
 @media(prefers-reduced-motion:reduce){.dashboard .search input{transition:none}}
+
+/* Night-mode toggle: the sun's rays turn away and a crescent cut slides in. */
+.dashboard .top-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.dashboard .top .theme-toggle{display:grid;place-items:center;width:40px;height:40px;min-height:40px;padding:0;border:1px solid var(--ink);border-radius:50%;background:var(--panel);color:var(--ink);cursor:pointer;view-transition-name:theme-toggle}
+.dashboard .top .theme-toggle svg{width:20px;height:20px;overflow:visible}
+.theme-toggle .sun-core{fill:currentColor;transition:r .55s cubic-bezier(.34,1.56,.64,1)}
+.theme-toggle .moon-cut{transition:transform .55s cubic-bezier(.2,.9,.22,1)}
+.theme-toggle .sun-rays{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;transform-origin:12px 12px;transition:transform .55s cubic-bezier(.2,.9,.22,1),opacity .3s ease}
+.theme-toggle[aria-pressed=true] .sun-core{r:8.5px}
+.theme-toggle[aria-pressed=true] .moon-cut{transform:translate(-7px,5px)}
+.theme-toggle[aria-pressed=true] .sun-rays{transform:rotate(-90deg) scale(.3);opacity:0}
+:root.theme-vt::view-transition-old(root),:root.theme-vt::view-transition-new(root){animation:none;mix-blend-mode:normal}
+:root.theme-vt .lang-switch{view-transition-name:none}
+::view-transition-old(theme-toggle){display:none}::view-transition-new(theme-toggle){animation:none}
+html.theme-fade *,html.theme-fade *::before,html.theme-fade *::after{transition:background-color .45s ease,color .45s ease,border-color .45s ease,fill .45s ease,stroke .45s ease!important}
+@media(max-width:720px){.dashboard .top .theme-toggle{width:36px;height:36px;min-height:36px}.dashboard .top-actions{gap:8px}}
+@media(prefers-reduced-motion:reduce){.theme-toggle :is(.sun-core,.moon-cut,.sun-rays){transition:none}}
