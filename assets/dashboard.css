@@ -285,3 +285,8 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 .dashboard .sort-list [aria-selected=true] svg{visibility:visible}
 @media(max-width:720px){.dashboard .sort-menu{flex:1;min-width:0}.dashboard .toolbar .sort-trigger{width:100%;min-width:0}.dashboard .sort-list{left:0;right:auto}}
 @media(prefers-reduced-motion:reduce){.dashboard .toolbar .sort-trigger,.dashboard .toolbar .sort-trigger .sort-chevron{transition:none}}
+/* Search field: the same soft focus ring as the sort menu instead of the global 3px black outline. */
+.dashboard .search input{transition:border-color .18s ease,box-shadow .18s ease}
+.dashboard .search input:hover{border-color:#bdbdbd}
+.dashboard .search input:is(:focus,:focus-visible){outline:none;border-color:#d9a600;box-shadow:0 0 0 3px #ffd43b59}
+@media(prefers-reduced-motion:reduce){.dashboard .search input{transition:none}}
