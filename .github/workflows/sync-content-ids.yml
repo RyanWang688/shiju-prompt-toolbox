@@ -1,0 +1,78 @@
+# Mirrors prompts.json ids into Supabase public.content_items so new items can be liked right away.
+# Runs only for pushes to main (never for pull requests, so untrusted code never sees the database secret).
+name: Sync content ids to Supabase
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - prompts.json
+      - build.py
+      - supabase/sync-content.sql
+      - .github/workflows/sync-content-ids.yml
+  workflow_dispatch:
+    inputs:
+      allow_mass_deactivate:
+        description: Allow a sync that deactivates more than 10 items and over 20% of active ones
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-content-ids
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'RyanWang688/shiju-prompt-toolbox'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      # Regenerate the SQL from prompts.json so the sync never depends on a stale committed copy.
+      - name: Build and generate sync SQL
+        run: python3 build.py
+
+      - name: Apply sync to Supabase
+        env:
+          SUPABASE_SYNC_DB_URL: ${{ secrets.SUPABASE_SYNC_DB_URL }}
+          ALLOW_MASS_DEACTIVATE: ${{ inputs.allow_mass_deactivate && 'on' || 'off' }}
+        run: |
+          if [ -z "$SUPABASE_SYNC_DB_URL" ]; then
+            echo "::error::Secret SUPABASE_SYNC_DB_URL is not set (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+          # The connection string is passed via the environment and never echoed; ON_ERROR_STOP makes any SQL
+          # error (including the mass-deactivation guard) fail this step.
+          psql "$SUPABASE_SYNC_DB_URL" -X -q -v ON_ERROR_STOP=1 \
+            -c "set shiju.allow_mass_deactivate = '$ALLOW_MASS_DEACTIVATE'" \
+            -f supabase/sync-content.sql
+
+      - name: Verify ids are live
+        env:
+          SUPABASE_SYNC_DB_URL: ${{ secrets.SUPABASE_SYNC_DB_URL }}
+        run: |
+          python3 - <<'PY'
+          import json
+          ids = [i['id'].replace("'", "''") for i in json.load(open('prompts.json', encoding='utf-8'))]
+          values = ', '.join(f"('{i}')" for i in ids)
+          open('/tmp/verify.sql', 'w').write(
+              f"select count(*) from (values {values}) as want(id) "
+              "where not exists (select 1 from public.content_items c where c.id = want.id and c.active);\n")
+          open('/tmp/expected', 'w').write(str(len(ids)))
+          PY
+          expected=$(cat /tmp/expected)
+          missing=$(psql "$SUPABASE_SYNC_DB_URL" -X -A -t -v ON_ERROR_STOP=1 -f /tmp/verify.sql)
+          active=$(psql "$SUPABASE_SYNC_DB_URL" -X -A -t -v ON_ERROR_STOP=1 -c "select count(*) from public.content_items where active")
+          echo "prompts.json ids: $expected · active in Supabase: $active · missing or inactive: $missing"
+          if [ "$missing" != "0" ]; then
+            echo "::error::$missing content ids are not active in Supabase after the sync."
+            exit 1
+          fi
+          echo "### Content ids synced" >> "$GITHUB_STEP_SUMMARY"
+          echo "$expected ids in prompts.json, all active in Supabase ($active active rows in total)." >> "$GITHUB_STEP_SUMMARY"
