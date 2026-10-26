@@ -10,12 +10,13 @@ COLOR_PROPS = {'color', 'background', 'background-color', 'background-image', 'b
                'border-right', 'border-bottom', 'border-left', 'border-top-color', 'border-bottom-color', 'border-left-color',
                'border-right-color', 'outline', 'outline-color', 'box-shadow', 'fill', 'stroke', 'text-decoration-color',
                'caret-color', '-webkit-text-fill-color', 'column-rule'}
-# Light value → dark value for the neutrals the site actually uses; anything else falls back to an inverted grey.
-TABLE = {'ffffff': '1c1c1f', 'fafafa': '19191c', 'f9f9f7': '19191c', 'f7f7f5': '17171a', 'f5f5f5': '111113', 'f4f4f2': '26262a',
-         'f3f3f1': '26262a', 'f2f2f2': '232327', 'f0f0f0': '2a2a2e', 'eeeeee': '2c2c30', 'ececec': '2e2e33', 'e6e6e6': '34343a',
-         'e3e3e3': '36363c', 'dedede': '3a3a40', 'dcdcdc': '3c3c42', 'd7d7d7': '414147', 'c4c4c4': '4e4e55', 'bdbdbd': '56565c',
-         'a3a3a3': '76767c', '9a9a9a': '7e7e84', '8a8a8a': '8e8e94', '6b6b6b': '9e9ea4', '595959': 'a8a8ae', '3d3d3d': 'c6c6cb',
-         '333333': 'cfcfd4', '2b2b2b': 'd8d8dc', '191919': 'ececee', '111111': 'f2f2f4', '000000': 'f4f4f6'}
+# Light value → dark value. Layered near-black surfaces in the spirit of Linear / Vercel / GitHub dark:
+# page #09090b, cards and panels #111113, raised fills #18181b–#1f1f23, hairline borders #232327, off-white ink.
+TABLE = {'ffffff': '111113', 'fafafa': '0e0e10', 'f9f9f7': '0e0e10', 'f7f7f5': '0e0e10', 'f5f5f5': '09090b', 'f4f4f2': '1a1a1d',
+         'f3f3f1': '1a1a1d', 'f2f2f2': '1a1a1d', 'f0f0f0': '1c1c1f', 'eeeeee': '18181b', 'ececec': '1f1f23', 'e6e6e6': '232327',
+         'e3e3e3': '232327', 'dedede': '232327', 'dcdcdc': '26262b', 'd7d7d7': '2a2a30', 'c4c4c4': '3a3a41', 'bdbdbd': '3f3f46',
+         'a3a3a3': '3f3f46', '9a9a9a': '71717a', '8a8a8a': '7c7c85', '6b6b6b': '8e8e96', '595959': 'a1a1aa', '3d3d3d': 'c4c4cc',
+         '333333': 'd4d4d8', '2b2b2b': 'e4e4e7', '191919': 'ededef', '111111': 'f4f4f5', '000000': 'fafafa'}
 HEX = re.compile(r'#([0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F]{4}|[0-9a-fA-F]{3})\b')
 
 def expand(h):
@@ -111,16 +112,49 @@ def convert(css):
     return ''.join(out)
 
 HAND = """
-/* Hand-tuned dark rules (appended by dark_theme.py). */
-html[data-theme=dark]{color-scheme:dark}
-html[data-theme=dark] body.dashboard{--bg:#111113;--panel:#1c1c1f;--ink:#ececee;--muted:#a8a8ae;--line:#34343a;--accent:#ffd43b;--on:#191919;--card-hover:#d9a600}
+/* Hand-tuned dark rules (appended by dark_theme.py): layered near-black surfaces, hairline borders, a faint top glow,
+   a frosted header and raised menus — the vocabulary of Linear / Vercel / GitHub dark. */
+html[data-theme=dark]{color-scheme:dark;scrollbar-color:#3f3f46 transparent}
+html[data-theme=dark] body.dashboard{--bg:#09090b;--panel:#111113;--ink:#ededef;--muted:#a1a1aa;--line:#232327;--accent:#ffd43b;--on:#191919;--card-hover:#d9a600;
+ background:radial-gradient(1100px 520px at 62% -200px,#ffd43b12,transparent 70%),radial-gradient(900px 460px at -10% -160px,#7c6cff10,transparent 70%),#09090b;background-attachment:fixed}
+/* Frosted, translucent header and a quieter rail. */
+html[data-theme=dark] .dashboard .top{background:#09090bb8;-webkit-backdrop-filter:saturate(1.5) blur(16px);backdrop-filter:saturate(1.5) blur(16px);border-bottom-color:#ffffff10}
+html[data-theme=dark] .icon-rail{background:#0b0b0d;border-right-color:#ffffff0d}
+html[data-theme=dark] .rail-button.active{background:#ffffff0f}
+/* Cards: hairline border, a 1px top highlight, and a soft lift on hover. */
+html[data-theme=dark] .dashboard .card{background:#111113;border-color:#ffffff12;box-shadow:inset 0 1px 0 #ffffff0a,0 1px 2px #00000080}
+@media(hover:hover){html[data-theme=dark] .dashboard .card:hover{border-color:#ffffff26;box-shadow:inset 0 1px 0 #ffffff12,0 18px 40px -18px #000000f0}}
+html[data-theme=dark] .dashboard .card .preview{background:#18181b}
+html[data-theme=dark] .dashboard .card-body .card-foot{border-top-color:#ffffff10}
+html[data-theme=dark] .dashboard .card .card-body .like:not([aria-pressed=true]),html[data-theme=dark] .dashboard .card .card-body .bookmark:not([aria-pressed=true]){color:#71717a}
+/* Card text: no difference-blend in dark; a clear title → body → tag hierarchy, and the hover sweep is a faint raise, not a white flood. */
+html[data-theme=dark] .dashboard .card .card-body{background-image:linear-gradient(#17171a,#17171a)}
+html[data-theme=dark] .dashboard .card .card-body :is(h2,.description,.preview-credit,.meta>span,.card-foot>span,.visit-site){mix-blend-mode:normal}
+html[data-theme=dark] .dashboard .card .card-body h2,html[data-theme=dark] .dashboard .card .card-body .visit-site{color:#ededef}
+html[data-theme=dark] .dashboard .card .card-body .description{color:#a1a1aa}
+html[data-theme=dark] .dashboard .card .card-body .meta>span{color:#8e8e96}
+html[data-theme=dark] .dashboard .card .card-body :is(.card-foot>span,.preview-credit){color:#71717a}
+html[data-theme=dark] .dashboard .card .card-body .visit-site{border-color:#ffffff26}
+/* Rail icons are black images: invert them so they read as soft grey, full white when active or hovered. */
+html[data-theme=dark] .rail-button img{filter:invert(1)}
+html[data-theme=dark] .cat-card,html[data-theme=dark] .skill-topics,html[data-theme=dark] .dashboard .empty.start{background:#111113;border-color:#ffffff12}
+/* Inputs sit flush with the page; borders brighten on hover, the yellow focus ring stays. */
+html[data-theme=dark] .dashboard .search input,html[data-theme=dark] .dashboard .toolbar .sort-trigger{background:#111113;border-color:#ffffff14}
+html[data-theme=dark] .dashboard .search input:hover,html[data-theme=dark] .dashboard .toolbar .sort-trigger:hover{border-color:#ffffff2e}
+html[data-theme=dark] .dashboard .search input::placeholder{color:#71717a}
+/* Raised layers: menus, dialog, tooltip, toast. */
+html[data-theme=dark] .dashboard .sort-list{background:#18181b;border-color:#ffffff14;box-shadow:0 24px 60px -16px #000000f2,0 0 0 1px #00000066}
+html[data-theme=dark] .dashboard .sort-list [role=option].active{background:#ffffff0d}
+html[data-theme=dark] .dashboard .sort-list [role=option] svg{stroke:#ededef}
+html[data-theme=dark] .dashboard #detail{background:#111113;color:#ededef;border:1px solid #ffffff14;box-shadow:0 40px 100px -30px #000}
+html[data-theme=dark] dialog::backdrop{background:#000000b3;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+html[data-theme=dark] .rail-tooltip{background:#ededef;color:#09090b;box-shadow:0 8px 24px #000000b3}
+/* Header controls. */
+html[data-theme=dark] .lang-switch,html[data-theme=dark] .dashboard .top .theme-toggle{background:#111113;border-color:#ffffff1f}
 /* Text that sits on the yellow accent stays dark. */
 @media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger):not(:disabled),a.visit-site,.rail-brand,select):hover{color:#191919!important}}
 html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{color:#191919!important}
 html[data-theme=dark] .dashboard .top .lang-switch .lang-option[aria-pressed=true],html[data-theme=dark] .dashboard .top .theme-toggle:hover{color:#191919}
-html[data-theme=dark] .lang-switch{background:#1c1c1f;border-color:#4a4a50}
-html[data-theme=dark] .dashboard .card .card-body .like:not([aria-pressed=true]),html[data-theme=dark] .dashboard .card .card-body .bookmark:not([aria-pressed=true]){color:#8e8e94}
-html[data-theme=dark] .dashboard .card .preview{background:#232327}
 html[data-theme=dark] ::selection{background:#ffd43b;color:#191919}
 """
 
