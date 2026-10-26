@@ -135,6 +135,24 @@ html[data-theme=dark] .dashboard .card .card-body .description{color:#a1a1aa}
 html[data-theme=dark] .dashboard .card .card-body .meta>span{color:#8e8e96}
 html[data-theme=dark] .dashboard .card .card-body :is(.card-foot>span,.preview-credit){color:#71717a}
 html[data-theme=dark] .dashboard .card .card-body .visit-site{border-color:#ffffff26}
+/* Empty favorites in dark: same layers as cards; the warm accents stay, mini cards dim a little. */
+html[data-theme=dark] .dashboard .empty.empty-favorites{background:#111113;border-color:#ffffff12}
+html[data-theme=dark] .fav-eyebrow,html[data-theme=dark] .fav-inline{background:#ffffff08;border-color:#ffffff17}
+html[data-theme=dark] .fav-glow{background:radial-gradient(closest-side,#ffd43b26,transparent)}
+html[data-theme=dark] .fav-mini{background:#18181b;border-color:#ffffff14;box-shadow:0 18px 40px -14px #000000e6}
+html[data-theme=dark] .fav-mini i{filter:saturate(.85) brightness(.9)}
+html[data-theme=dark] .fav-mini b{background:#ffffff14}html[data-theme=dark] .fav-mini b+b{background:#ffffff0b}
+html[data-theme=dark] .fav-toast{background:#ededef;color:#09090b;box-shadow:0 10px 24px -8px #000}
+html[data-theme=dark] .fav-steps,html[data-theme=dark] .fav-steps li+li,html[data-theme=dark] .fav-picks,html[data-theme=dark] .dashboard .empty.start.empty-favorites .empty-note{border-color:#ffffff10}
+html[data-theme=dark] .fav-steps span{background:#ffffff0d}
+html[data-theme=dark] .fav-steps li:nth-child(2) span{background:#ffd43b;color:#191919}
+html[data-theme=dark] .fav-picks{background:#0e0e10}
+html[data-theme=dark] .fav-pick{background:#111113;border-color:#ffffff12}
+html[data-theme=dark] .fav-pick:hover{border-color:#ffffff26;box-shadow:0 12px 28px -12px #000}
+html[data-theme=dark] .fav-pick img{border-color:#ffffff10}
+html[data-theme=dark] .dashboard .fav-pick-save{color:#8e8e96}
+html[data-theme=dark] .dashboard .fav-pick-save:hover,html[data-theme=dark] .fav-mini-c .fav-mini-mark{background:#ffd43b1f}
+html[data-theme=dark] .dashboard .fav-pick-save:is(:hover,[aria-pressed=true]){color:#ffd43b}
 /* Rail icons are black images: invert them so they read as soft grey, full white when active or hovered. */
 html[data-theme=dark] .rail-button img{filter:invert(1);opacity:.78}
 html[data-theme=dark] .rail-button:hover img,html[data-theme=dark] .rail-button.active img{opacity:1}
@@ -158,8 +176,8 @@ html[data-theme=dark] .rail-tooltip{background:#ededef;color:#09090b;box-shadow:
 /* Header controls. */
 html[data-theme=dark] .lang-switch,html[data-theme=dark] .dashboard .top .theme-toggle{background:#111113;border-color:#ffffff1f}
 /* Text that sits on the yellow accent stays dark. */
-@media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger):not(:disabled),a.visit-site,.rail-brand,select):hover{color:#191919!important}}
-html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{color:#191919!important}
+@media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open):not(:disabled),a.visit-site,.rail-brand,select):hover{color:#191919!important}}
+html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{color:#191919!important}
 html[data-theme=dark] .dashboard .top .lang-switch .lang-option[aria-pressed=true],html[data-theme=dark] .dashboard .top .theme-toggle:hover{color:#191919}
 html[data-theme=dark] ::selection{background:#ffd43b;color:#191919}
 """
