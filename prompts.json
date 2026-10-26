@@ -1,5 +1,41 @@
 [
   {
+    "id": "skill-dify",
+    "kind": "skill",
+    "resourceType": "开源 AI 应用开发平台",
+    "title": "Dify",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "Agent 工作流 / RAG 知识库 / 可视化编排 / 自托管 / 低代码 / LangGenius",
+    "description": "开源的生产级 Agent 工作流开发平台：把可视化工作流编排、RAG 知识库和 Agent 配置放进同一个工作台，拖拽节点串起模型调用、条件分支和外部工具，原型到上线不用重建技术栈。",
+    "prompt": "Dify\n类型：开源 AI 应用开发平台\n\n用途：开源的生产级 Agent 工作流开发平台：把可视化工作流编排、RAG 知识库和 Agent 配置放进同一个工作台，拖拽节点串起模型调用、条件分支和外部工具，原型到上线不用重建技术栈。\n\n说明：三件事在同一个工作台里完成——可视化工作流（拖拽节点串起 LLM 调用、条件分支、代码和外部工具）、RAG 知识库（让模型接上你自己的文档和数据）、Agent（负责多步推理和工具调用的复杂任务）。支持众多模型和工具集成；可用官方云服务，也可在 VPC 或自己的服务器上用 Docker Compose 自托管。非技术人员能上手，开发者把时间留给业务逻辑。GitHub 约 15.9 万星（2026-10-26），后端主要是 Python，前端是 TypeScript。\n\n许可：Dify Open Source License（在 Apache 2.0 基础上附加条件：未经书面授权不得用源码运营多租户服务；使用其前端时不得移除或修改控制台和应用里的 LOGO 与版权信息）\n\nGitHub：https://github.com/langgenius/dify\n官网：https://dify.ai\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/langgenius/dify",
+    "repository": "https://github.com/langgenius/dify",
+    "officialUrl": "https://dify.ai",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-dify/official-site.png",
+      "alt": "Dify 官网首屏的实际浏览器截图：构建生产级 Agentic 工作流平台",
+      "width": 1440,
+      "height": 810
+    },
+    "previewSource": "https://dify.ai/zh",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "Dify 官网首屏，2026-10-26 实际打开后截图；非本次运行成果。",
+    "addedAt": "2026-10-26",
+    "verifiedAt": "2026-10-26",
+    "en": {
+      "title": "Dify",
+      "description": "An open-source, production-grade platform for building agentic workflows: visual workflow orchestration, RAG knowledge bases and agent setup in one workspace — drag nodes to chain model calls, branches and external tools, and go from prototype to production without rebuilding the stack.",
+      "tags": "Agent workflows / RAG knowledge base / Visual orchestration / Self-hosting / Low-code / LangGenius",
+      "notes": "Visual workflows (drag nodes for LLM calls, branches, code and external tools), RAG knowledge bases that connect models to your own documents and data, and agents for multi-step reasoning and tool use. Broad model and tool integrations; use the hosted cloud or self-host in a VPC or on your own servers with Docker Compose. About 159k GitHub stars (2026-10-26); Python backend, TypeScript frontend.",
+      "license": "Dify Open Source License (Apache 2.0 with extra conditions: no multi-tenant service from the source without written permission; keep the logo and copyright in the console and apps when using its frontend)",
+      "previewNote": "The Dify website hero, screenshotted on 2026-10-26 — not output from this site."
+    }
+  },
+  {
     "id": "wheel-date-picker",
     "kind": "prompt",
     "title": "滚轮选择器",
