@@ -125,16 +125,16 @@ html[data-theme=dark] .rail-button.active{background:#ffffff0f}
 html[data-theme=dark] .dashboard .card{background:#111113;border-color:#ffffff12;box-shadow:inset 0 1px 0 #ffffff0a,0 1px 2px #00000080}
 @media(hover:hover){html[data-theme=dark] .dashboard .card:hover{border-color:#ffffff26;box-shadow:inset 0 1px 0 #ffffff12,0 18px 40px -18px #000000f0}}
 html[data-theme=dark] .dashboard .card .preview{background:#18181b}
-html[data-theme=dark] .dashboard .card-body .card-foot{border-top-color:#ffffff10}
 html[data-theme=dark] .dashboard .card .card-body .like:not([aria-pressed=true]),html[data-theme=dark] .dashboard .card .card-body .bookmark:not([aria-pressed=true]){color:#71717a}
-/* Card text: no difference-blend in dark; a clear title → body → tag hierarchy, and the hover sweep is a faint raise, not a white flood. */
-html[data-theme=dark] .dashboard .card .card-body{background-image:linear-gradient(#17171a,#17171a)}
-html[data-theme=dark] .dashboard .card .card-body :is(h2,.description,.preview-credit,.meta>span,.card-foot>span,.visit-site){mix-blend-mode:normal}
-html[data-theme=dark] .dashboard .card .card-body h2,html[data-theme=dark] .dashboard .card .card-body .visit-site{color:#ededef}
-html[data-theme=dark] .dashboard .card .card-body .description{color:#a1a1aa}
-html[data-theme=dark] .dashboard .card .card-body .meta>span{color:#8e8e96}
-html[data-theme=dark] .dashboard .card .card-body :is(.card-foot>span,.preview-credit){color:#71717a}
-html[data-theme=dark] .dashboard .card .card-body .visit-site{border-color:#ffffff26}
+/* Card text keeps the difference-blend so the hover sweep inverts it like light mode; each colour is its target plus the #111113 card fill, giving a title → body → tag hierarchy at rest that flips to dark text under the light sweep. */
+html[data-theme=dark] .dashboard .card .card-body{background-image:linear-gradient(#ededef,#ededef)}
+html[data-theme=dark] .dashboard .card .card-body :is(h2,.description,.preview-credit,.meta>span,.card-foot>span,.visit-site){mix-blend-mode:difference}
+html[data-theme=dark] .dashboard .card .card-body h2,html[data-theme=dark] .dashboard .card .card-body .visit-site{color:#fefeff}
+html[data-theme=dark] .dashboard .card .card-body .description{color:#b2b2bd}
+html[data-theme=dark] .dashboard .card .card-body .meta>span{color:#9f9fa9}
+html[data-theme=dark] .dashboard .card .card-body :is(.card-foot>span,.preview-credit){color:#82828d}
+html[data-theme=dark] .dashboard .card .card-body .visit-site{border-color:#fefeff59}
+html[data-theme=dark] .dashboard .card .card-body .card-foot{border-top-color:#8080803d}
 /* Empty favorites in dark: same layers as cards; the warm accents stay, mini cards dim a little. */
 html[data-theme=dark] .dashboard .empty.empty-favorites{background:#111113;border-color:#ffffff12}
 html[data-theme=dark] .fav-eyebrow,html[data-theme=dark] .fav-inline{background:#ffffff08;border-color:#ffffff17}
