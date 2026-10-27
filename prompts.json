@@ -1,5 +1,120 @@
 [
   {
+    "id": "skill-openscreen",
+    "kind": "skill",
+    "resourceType": "开源录屏演示工具 / 配套 Skill",
+    "title": "OpenScreen",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "tags": "录屏 / 产品演示 / 自动缩放 / 自动字幕 / AI 剪辑 / Screen Studio 替代 / Codex",
+    "description": "免费开源的录屏做演示工具（Screen Studio 的开源替代）：录屏后自动跟随光标缩放、加摄像头小窗和本地自动字幕，用对话让 AI 帮你剪辑，GPU 加速导出 MP4 / GIF，无水印、无订阅，商用也免费。",
+    "prompt": "OpenScreen\n类型：开源录屏演示工具 / 配套 Skill\n\n用途：免费开源的录屏做演示工具（Screen Studio 的开源替代）：录屏后自动跟随光标缩放、加摄像头小窗和本地自动字幕，用对话让 AI 帮你剪辑，GPU 加速导出 MP4 / GIF，无水印、无订阅，商用也免费。\n\n说明：录指定窗口或整个屏幕，同时录麦克风和系统声音；摄像头画中画有 8 个吸附位置；缩放可自动跟随光标也可手动设置深度、时长和缓动；光标可调大小、平滑轨迹并加点击特效；配音字幕在本机转写、不上传，删掉文字稿里的一句就能剪掉对应片段；AI 剪辑助手用自带的 Key（Claude、OpenAI、Gemini 等）把对话里的要求直接改到时间线上（剪切、缩放、变速、标注、镜头取景），默认不开启。另有壁纸背景、运动模糊、文字 / 箭头标注、多比例导出，界面支持简体中文。附带命令行和 MCP，可用 openscreen-demo Skill 让 Claude Code、Codex 等 Agent 自动录制并剪好功能演示视频。支持 Windows、macOS、Linux；项目仍在快速迭代，可能有不兼容的改动。\n\n来历：原作者 Siddharth Vaddem 在 v1.5.0 后归档了原仓库（siddharthvaddem/openscreen），经他同意由社区在 getopenscreen/openscreen 继续开发，名称和 MIT 许可不变。\n\n安装 Skill：npx skills add getopenscreen/openscreen --skill openscreen-demo -y\n\n许可：MIT\n\nGitHub：https://github.com/getopenscreen/openscreen\n官网：https://getopenscreen.com/\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/getopenscreen/openscreen",
+    "repository": "https://github.com/getopenscreen/openscreen",
+    "officialUrl": "https://getopenscreen.com/",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-openscreen/author-demo.gif",
+      "alt": "OpenScreen 官方演示动图：一键换整片风格、删文字稿即剪视频、编辑器里的 AI 给每次点击加缩放",
+      "width": 960,
+      "height": 540
+    },
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/skill-openscreen/author-demo-frame.png",
+      "alt": "OpenScreen 官方演示动图中的一帧：用对话让 AI 剪辑录屏",
+      "width": 960,
+      "height": 540
+    },
+    "previewSource": "https://raw.githubusercontent.com/getopenscreen/openscreen/main/docs/assets/demo.gif",
+    "previewEvidence": "author-repository-animated-example",
+    "previewNote": "官方仓库 README 中的编辑演示动图；卡片封面是其中一帧。非本次运行成果。",
+    "addedAt": "2026-10-28",
+    "verifiedAt": "2026-10-28",
+    "en": {
+      "title": "OpenScreen",
+      "description": "A free, open-source screen recorder for product demos (an open alternative to Screen Studio): cursor-following auto zoom, webcam overlay and on-device captions, AI editing by chat, and GPU-accelerated MP4 / GIF export — no watermarks, no subscriptions, free for commercial use.",
+      "tags": "Screen recording / Product demos / Auto zoom / Auto captions / AI editing / Screen Studio alternative / Codex",
+      "notes": "Record a window or the whole screen with mic and system audio; webcam picture-in-picture with eight snap positions; auto zoom that follows the cursor or manual zooms with depth, duration and easing; cursor size, smoothing and click effects; captions transcribed on-device (no upload), and deleting a sentence from the transcript cuts it from the video; a bring-your-own-key AI assistant (Claude, OpenAI, Gemini and more, off by default) applies chat requests to the timeline. Also wallpapers, motion blur, annotations and multi-ratio export, with a Simplified Chinese UI. A CLI, MCP server and the openscreen-demo skill let Claude Code, Codex and other agents record and edit feature demos. Windows, macOS and Linux; still evolving fast. The original author archived siddharthvaddem/openscreen after v1.5.0 and, with his approval, development continues at getopenscreen/openscreen under the same name and MIT licence.",
+      "license": "MIT",
+      "previewNote": "The editing demo GIF from the official README; the card cover is one of its frames — not output from this site."
+    }
+  },
+  {
+    "id": "skill-ego-lite",
+    "kind": "skill",
+    "resourceType": "AI Agent 浏览器 / 配套 Skill",
+    "title": "ego (lite)",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "AI 浏览器 / 浏览器自动化 / Agent 并行 / 登录态共享 / Claude Code / Codex",
+    "description": "给 AI Agent 用的浏览器：Agent 在各自隔离的 Space 里后台跑网页任务，你照常上网互不抢控制权；首次启动可一键导入 Chrome 的登录态、Cookie、扩展和书签，Claude Code、Codex 等 Agent 通过 ego-browser Skill 直接操控，免费、无需登录。",
+    "prompt": "ego (lite)\n类型：AI Agent 浏览器 / 配套 Skill\n\n用途：给 AI Agent 用的浏览器：Agent 在各自隔离的 Space 里后台跑网页任务，你照常上网互不抢控制权；首次启动可一键导入 Chrome 的登录态、Cookie、扩展和书签，Claude Code、Codex 等 Agent 通过 ego-browser Skill 直接操控，免费、无需登录。\n\n说明：和 browser-use 这类「另找一个浏览器来驱动」的桥接工具不同，它本身就是你和 Agent 共用的浏览器：每个 Agent 一个隔离 Space，可以同时开很多个并行任务，你随时能看到、接管或停止。能力以页内 JavaScript 函数开放（snapshot、fill、click、wait、navigate、capture），Agent 写一段代码一次执行多步操作，比来回调用命令更快、更省 Token。浏览数据留在本机。目前支持 macOS 和 Windows，Linux 在路线图上。用法：在 Agent 里输入 /ego-browser 加一句大白话的任务。\n\n安装 Skill：npx skills add citrolabs/ego-lite（也可直接下载应用，安装时会把 ego-browser Skill 写进本机各 Agent 的 Skill 目录）\n\n许可：MIT\n\nGitHub：https://github.com/citrolabs/ego-lite\n官网：https://lite.ego.app\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/citrolabs/ego-lite",
+    "repository": "https://github.com/citrolabs/ego-lite",
+    "officialUrl": "https://lite.ego.app",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ego-lite/official-site.png",
+      "alt": "ego (lite) 官网首屏的实际浏览器截图",
+      "width": 1440,
+      "height": 810
+    },
+    "previewSource": "https://lite.ego.app/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "ego (lite) 官网首屏，2026-10-28 实际打开后截图；非本次运行成果。",
+    "addedAt": "2026-10-28",
+    "verifiedAt": "2026-10-28",
+    "en": {
+      "title": "ego (lite)",
+      "description": "A browser built for AI agents: agents run web tasks in their own isolated Spaces in the background while you keep browsing, so nobody fights over control. On first launch it can import your Chrome sign-ins, cookies, extensions and bookmarks, and Claude Code, Codex and other agents drive it through the ego-browser skill. Free, no account needed.",
+      "tags": "AI browser / Browser automation / Parallel agents / Shared sign-in state / Claude Code / Codex",
+      "notes": "Unlike bridge tools such as browser-use that drive some other browser, it is one browser shared by you and your agents: one isolated Space per agent, many running in parallel, and you can watch, take over or stop any of them. Capabilities are exposed as in-page JavaScript functions (snapshot, fill, click, wait, navigate, capture), so an agent runs several steps in one script — faster and cheaper in tokens than command-by-command loops. Browsing data stays on your machine. macOS and Windows today, Linux on the roadmap. Type /ego-browser plus a plain-language task in your agent. Install the skill with npx skills add citrolabs/ego-lite, or download the app, which writes the skill into each local agent.",
+      "license": "MIT",
+      "previewNote": "The ego (lite) website hero, screenshotted on 2026-10-28 — not output from this site."
+    }
+  },
+  {
+    "id": "website-ticket-monitoring",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "ticket-monitoring 机票监控",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "机票监控 / 比价 / 价格走势 / K 线 / 钉钉推送 / 自托管 / 开源",
+    "description": "自托管的机票价格监控：从去哪儿、飞猪、携程、同程、途牛五个渠道采集航班明细，按你设的心理价判断是否达标，用钉钉推送图文和价格走势，达标时还能加电话 / 短信等强提醒；国内和国际航线都支持，数据留在本机，配置全在网页。",
+    "prompt": "ticket-monitoring 机票监控\n类型：GitHub 项目\n\n用途：自托管的机票价格监控：从去哪儿、飞猪、携程、同程、途牛五个渠道采集航班明细，按你设的心理价判断是否达标，用钉钉推送图文和价格走势，达标时还能加电话 / 短信等强提醒；国内和国际航线都支持，数据留在本机，配置全在网页。\n\n说明：可设多用户、多航线、多日期，直飞和中转分别设心理线，还能按航司、行李、时段、中转衔接、最长时长等条件过滤；每轮汇总成一条钉钉图文，达标的排在最前，附 7 天趋势和操作建议，可叠加 Windows 弹窗、ntfy、Bark、阿里云电话 / 短信，并支持免打扰时段。网页控制台能看价格走势、K 线、价格日历和各渠道健康状况。去哪儿网页版已于 2026-10 停服，项目已改走其 H5 页面。需要 Python 3.9+，提供 Windows / Linux / macOS 发行包；有可直接点开的在线演示（演示数据为合成，不是真实票价）。\n\n许可：Apache-2.0\n\n在线演示：https://dengmeiluan.github.io/ticket-monitoring/site/\nGitHub：https://github.com/dengmeiluan/ticket-monitoring\n\n收录状态：仅收藏，未安装、登录或执行。",
+    "source": "https://github.com/dengmeiluan/ticket-monitoring",
+    "repository": "https://github.com/dengmeiluan/ticket-monitoring",
+    "officialUrl": "https://dengmeiluan.github.io/ticket-monitoring/site/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-ticket-monitoring/official-site.png",
+      "alt": "机票监控台在线演示的实际浏览器截图（演示模式，合成数据）",
+      "width": 1440,
+      "height": 900
+    },
+    "previewSource": "https://dengmeiluan.github.io/ticket-monitoring/site/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-10-28 实际打开作者在线演示后的截图；演示模式，票价为合成数据。仅收藏，未安装或登录。",
+    "addedAt": "2026-10-28",
+    "verifiedAt": "2026-10-28",
+    "en": {
+      "title": "ticket-monitoring (flight price monitor)",
+      "description": "A self-hosted flight price monitor: collects flight details from five Chinese booking sites (Qunar, Fliggy, Ctrip, Tongcheng, Tuniu), checks them against your target prices, and pushes DingTalk cards with price trends — plus phone-call or SMS alerts when a target is hit. Domestic and international routes; data stays on your machine and everything is configured in a web UI.",
+      "tags": "Flight prices / Price comparison / Price trends / Candlestick charts / DingTalk alerts / Self-hosted / Open source",
+      "notes": "Multiple users, routes and dates, separate targets for direct and connecting flights, and filters for airline, baggage, time window, connection, maximum duration and more. Each round becomes one DingTalk card with hits on top, a 7-day trend and advice, optionally with Windows pop-ups, ntfy, Bark or Aliyun calls / SMS and quiet hours. The web console shows trends, candlestick charts, a price calendar and channel health. Needs Python 3.9+, with Windows / Linux / macOS release packages and an online demo that uses synthetic prices.",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the author’s online demo taken on 2026-10-28; demo mode with synthetic prices. Saved for reference only — not installed or signed in."
+    }
+  },
+  {
     "id": "skill-video-editing",
     "kind": "skill",
     "resourceType": "视频剪辑 Skill",
