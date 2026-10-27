@@ -1,5 +1,36 @@
 [
   {
+    "id": "website-glassdesk",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "GlassDesk（玻璃 Dock 与启动台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "Windows 11 / 桌面美化 / Dock / 启动台 / 磨砂玻璃 / WPF / 非商用源码",
+    "description": "Windows 11 桌面美化工具 GlassDesk 1.4.0 的完整源码：磨砂玻璃 Dock、类似 macOS 的启动台和应用文件夹，加一个统一的设置中心；这是最后一个不带右上角信息栏的正式版，可自行修改、修 Bug 后编译。",
+    "prompt": "GlassDesk（玻璃 Dock 与启动台）\n类型：GitHub 项目\n\n用途：Windows 11 桌面美化工具 GlassDesk 1.4.0 的完整源码：磨砂玻璃 Dock、类似 macOS 的启动台和应用文件夹，加一个统一的设置中心；这是最后一个不带右上角信息栏的正式版，可自行修改、修 Bug 后编译。\n\n说明：功能包括玻璃 Dock、启动台、拖动整理应用；把一个图标停在另一个图标中心约半秒即可合成文件夹，文件夹为圆角磨砂玻璃外观，可重命名、排序、拖入拖出；另有外观设置、Dock 自动隐藏和登录自启动。全部功能免费，设置里有自愿赞助入口。用 C# / WPF 编写，需 Windows 11 x64（Build 22000+）和 .NET 10 SDK，用 dotnet build / dotnet run 编译运行，也可以自己打便携版或安装包。作者的正式安装包未签名，另在 everlosttime/glassdesk-updates 发布。\n\n许可：仓库名虽带 open-source，但这次新增和修改的原创内容采用 PolyForm Noncommercial 1.0.0，只允许学习、修改、Fork 和非商业分享，不能拿去卖或用于商业项目，也不属于 OSI 认可的开源许可；早期按 Apache-2.0 发布的代码和第三方组件保留原有授权。具体范围以仓库里的 LICENSE 和授权说明为准。\n\nGitHub：https://github.com/everlosttime/glassdesk-open-source\n正式安装包：https://github.com/everlosttime/glassdesk-updates/releases/tag/v1.4.0\n\n收录状态：仅收藏，未下载、编译或运行。",
+    "source": "https://github.com/everlosttime/glassdesk-open-source",
+    "repository": "https://github.com/everlosttime/glassdesk-open-source",
+    "officialUrl": "https://github.com/everlosttime/glassdesk-open-source",
+    "preview": null,
+    "cardPreview": null,
+    "previewStatus": "pending",
+    "previewEvidence": "pending",
+    "previewNote": "真实预览待补：仓库没有公开截图（README 注明不含截图，仓库里只有应用图标）；本次仅收录，未编译或运行这个程序。",
+    "addedAt": "2026-10-28",
+    "verifiedAt": "2026-10-28",
+    "en": {
+      "title": "GlassDesk (glass Dock and launcher)",
+      "description": "Full source of GlassDesk 1.4.0, a Windows 11 desktop customiser: a frosted-glass Dock, a macOS-style launcher with app folders, and one settings centre. It is the last release without the top-right info bar, so you can modify it, fix bugs and build it yourself.",
+      "tags": "Windows 11 / Desktop customisation / Dock / Launcher / Frosted glass / WPF / Noncommercial source",
+      "notes": "Glass Dock, launcher and drag-to-arrange apps; rest one icon on another for about half a second to make a frosted-glass folder you can rename, sort and drag in or out; appearance settings, Dock auto-hide and launch at sign-in. Everything is free, with an optional sponsorship page. Written in C# / WPF; needs Windows 11 x64 (build 22000+) and the .NET 10 SDK — build with dotnet build / dotnet run, or package a portable build or installer yourself. The author’s official installers are unsigned and published separately at everlosttime/glassdesk-updates.",
+      "license": "Despite the repository name, the new original changes are under PolyForm Noncommercial 1.0.0 (study, modify, fork and share noncommercially; no selling or commercial use) — not an OSI open-source licence. Code first released under Apache-2.0 and third-party components keep their original licences; see the repository’s LICENSE and licensing notes.",
+      "previewNote": "Real preview pending: the repository has no public screenshots (its README says none are included, and it only holds the app icon); saved only — not built or run here."
+    }
+  },
+  {
     "id": "skill-openscreen",
     "kind": "skill",
     "resourceType": "开源录屏演示工具 / 配套 Skill",
