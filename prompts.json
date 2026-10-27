@@ -1,5 +1,65 @@
 [
   {
+    "id": "skill-video-editing",
+    "kind": "skill",
+    "resourceType": "视频剪辑 Skill",
+    "title": "video-editing（视频剪辑技能）",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "tags": "口播剪辑 / B-roll / 镜头分析 / 字幕 / 质检 / Codex / 推荐：必装",
+    "description": "口播 / 教程 / 访谈类短视频的 AI 剪辑生产线：从素材导入、转写、清稿、分镜，到寻找和规划 B-roll、分析镜头、字幕与声音设计，再到渲染和逐项质量检查，把素材堆推进成可发布的小红书 / 抖音 / 视频号成片。",
+    "prompt": "video-editing（视频剪辑技能）\n类型：视频剪辑 Skill\n\n用途：口播 / 教程 / 访谈类短视频的 AI 剪辑生产线：从素材导入、转写、清稿、分镜，到寻找和规划 B-roll、分析镜头、字幕与声音设计，再到渲染和逐项质量检查，把素材堆推进成可发布的小红书 / 抖音 / 视频号成片。\n\n说明：每一步都落成可审计的文件——转写、清稿、分镜、B-roll / 生图 / 生成视频规划、素材清单、渲染配置、字幕、QA 报告和标题文案。可选用 YOLO 对抽样帧做物体检测来理解画面；停顿删段同时看声音和画面；渲染后检查字幕像素、音画对齐、声道、闪烁和单帧瞬态等问题。针对中文社媒口播调过参数（字幕、节奏、响度、平台违禁词），三平台导出。官方 README 写明面向 OpenClaw / Codex，配图可直接调用 Codex 内置的 imagegen。需要本机 FFmpeg 和 Python 环境。\n\n推荐程度（收录者）：必装\n\n许可：仓库未附许可证文件\n\nGitHub：https://github.com/maxazure/video-editing-skill\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/maxazure/video-editing-skill",
+    "repository": "https://github.com/maxazure/video-editing-skill",
+    "preview": null,
+    "cardPreview": null,
+    "previewStatus": "pending",
+    "previewEvidence": "pending",
+    "previewNote": "真实预览待补：作者仓库没有公开示例图或成片；本次仅收录，未运行该 Skill。",
+    "addedAt": "2026-10-27",
+    "verifiedAt": "2026-10-27",
+    "en": {
+      "title": "video-editing (video editing skill)",
+      "description": "An AI editing pipeline for talking-head, tutorial and interview shorts: from ingest, transcription, clean-up and storyboard to finding and planning B-roll, analysing shots, captions and sound design, then rendering and itemised quality checks — turning a pile of footage into a publish-ready Xiaohongshu / Douyin / WeChat Channels video.",
+      "tags": "Talking-head editing / B-roll / Shot analysis / Captions / QA / Codex / Pick: must-install",
+      "notes": "Every step leaves an auditable file — transcript, clean script, storyboard, B-roll / image / generated-video plan, asset list, render config, captions, QA report and post copy. Optional YOLO detection on sampled frames for scene understanding; dead-air cuts check both sound and picture; post-render checks cover caption pixels, A/V sync, channels, flicker and single-frame glitches. Tuned for Chinese social talking-head videos, with exports for three platforms. The official README targets OpenClaw / Codex and can use Codex’s built-in imagegen. Needs FFmpeg and Python locally. Curator rating: must-install.",
+      "license": "No license file in the repository",
+      "previewNote": "Real preview pending: the author’s repository has no public example image or finished video; saved only, the Skill was not run here."
+    }
+  },
+  {
+    "id": "skill-claude-video-skills",
+    "kind": "skill",
+    "resourceType": "Claude Code 视频剪辑 Skills",
+    "title": "claude-video-skills",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "tags": "字幕 / 配音同步 / B-roll / 配乐 / 缩放动画 / Remotion / Claude Code / 推荐：可选安装",
+    "description": "面向 Claude Code 的视频剪辑自动化，基于 Remotion：把粗剪好的片段（或旁白加想法）放进项目，用 /make-video 一路完成转写、按节拍排的图形方案、字幕、B-roll、缩放动画和完整配乐。",
+    "prompt": "claude-video-skills\n类型：Claude Code 视频剪辑 Skills\n\n用途：面向 Claude Code 的视频剪辑自动化，基于 Remotion：把粗剪好的片段（或旁白加想法）放进项目，用 /make-video 一路完成转写、按节拍排的图形方案、字幕、B-roll、缩放动画和完整配乐。\n\n说明：/make-video 先问你要做什么，再分派到对应流程——竖版口播短片（9:16）、横版长视频（16:9）、只有旁白的无人出镜动效短片（纸感风格），或只写短视频脚本。首次渲染前走一遍品牌设置（主色、强调色、字体），之后每条视频沿用。转写默认用 AssemblyAI 或 OpenAI Whisper（音频会上传到服务商），也可改用本地 WhisperX。仓库只含代码，不带音乐、音效和 Logo，缺了也能渲染。注意：它只负责成片加工，不做粗剪和去口误，需要先自己把素材剪干净。\n\n兼容性：原生面向 Claude Code（.claude/skills 结构），在 Codex 等其他工具中使用需要自行适配。\n\n推荐程度（收录者）：可选安装\n\n许可：MIT\n\nGitHub：https://github.com/imtamiliniyan/claude-video-skills\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/imtamiliniyan/claude-video-skills",
+    "repository": "https://github.com/imtamiliniyan/claude-video-skills",
+    "preview": null,
+    "cardPreview": null,
+    "previewStatus": "pending",
+    "previewEvidence": "pending",
+    "previewNote": "真实预览待补：作者仓库没有公开成片或演示截图（仓库里只有风格参考素材）；本次仅收录，未运行该 Skill。",
+    "addedAt": "2026-10-27",
+    "verifiedAt": "2026-10-27",
+    "en": {
+      "title": "claude-video-skills",
+      "description": "Video-editing automation for Claude Code, built on Remotion: drop in a pre-cut clip (or a voiceover plus an idea) and /make-video takes it end to end — transcription, a beat-timed graphics plan, captions, B-roll, zooms and a full audio score.",
+      "tags": "Captions / Voiceover sync / B-roll / Music / Zoom animation / Remotion / Claude Code / Pick: optional",
+      "notes": "/make-video asks what you are making and routes to the right pipeline: vertical talking-head shorts (9:16), long-form (16:9), faceless voiceover-only motion reels in a paper style, or a reel script only. A one-time brand setup (colours, accent, fonts) carries over to every video. Transcription uses AssemblyAI or OpenAI Whisper by default (audio is uploaded to the provider) or local WhisperX. Code only — no music, SFX or logos ship, and renders still work without them. It finishes videos but does not rough-cut or remove filler, so trim your footage first. Built natively for Claude Code (.claude/skills); other tools such as Codex need adapting. Curator rating: optional.",
+      "license": "MIT",
+      "previewNote": "Real preview pending: the author’s repository has no public finished video or demo screenshot (only style reference assets); saved only, the Skill was not run here."
+    }
+  },
+  {
     "id": "skill-dify",
     "kind": "skill",
     "resourceType": "开源 AI 应用开发平台",
@@ -321,9 +381,9 @@
     "skillTopics": [
       "动画视频"
     ],
-    "tags": "Remotion / 视频制作规范 / Agent Skills / Codex / 推荐：必备基础",
+    "tags": "Remotion / 视频制作规范 / Agent Skills / Codex / 推荐：必装",
     "description": "Remotion 官方维护的 Agent Skills：教 AI 按最佳实践写 Remotion 视频——新建项目与合成、动画与排版标记、字幕、地图动画、Studio 可编辑交互，以及调用渲染导出视频或静帧。",
-    "prompt": "Remotion Skills\n类型：Remotion 官方 Agent Skills\n\n用途：Remotion 官方维护的 Agent Skills：教 AI 按最佳实践写 Remotion 视频——新建项目与合成、动画与排版标记、字幕、地图动画、Studio 可编辑交互，以及调用渲染导出视频或静帧。\n\n说明：用 npx skills add remotion-dev/skills 安装，或新建 Remotion 项目时勾选；适用于 Claude Code、Codex、Kimi Code、Cursor 等。包含 /remotion-best-practices（总入口）、/remotion-create、/remotion-markup、/remotion-studio、/remotion-render、/remotion-maps、/remotion-captions、/remotion-saas、/remotion-interactivity 等。仓库未附许可证文件。\n\n推荐程度（收录者）：必备基础\n\n许可：仓库未附许可证文件\n\nGitHub：https://github.com/remotion-dev/skills\n文档：https://www.remotion.dev/docs/ai/skills\n\n收录状态：仅收藏，未安装或执行。",
+    "prompt": "Remotion Skills\n类型：Remotion 官方 Agent Skills\n\n用途：Remotion 官方维护的 Agent Skills：教 AI 按最佳实践写 Remotion 视频——新建项目与合成、动画与排版标记、字幕、地图动画、Studio 可编辑交互，以及调用渲染导出视频或静帧。\n\n说明：用 npx skills add remotion-dev/skills 安装，或新建 Remotion 项目时勾选；适用于 Claude Code、Codex、Kimi Code、Cursor 等。包含 /remotion-best-practices（总入口）、/remotion-create、/remotion-markup、/remotion-studio、/remotion-render、/remotion-maps、/remotion-captions、/remotion-saas、/remotion-interactivity 等。仓库未附许可证文件。\n\n推荐程度（收录者）：必装\n\n许可：仓库未附许可证文件\n\nGitHub：https://github.com/remotion-dev/skills\n文档：https://www.remotion.dev/docs/ai/skills\n\n收录状态：仅收藏，未安装或执行。",
     "source": "https://github.com/remotion-dev/skills",
     "repository": "https://github.com/remotion-dev/skills",
     "addedAt": "2026-10-25",
@@ -331,8 +391,8 @@
     "en": {
       "title": "Remotion Skills",
       "description": "Remotion's official Agent Skills that teach an AI to write Remotion videos the right way — new projects and compositions, animation and layout markup, captions, map animations, editable Studio interactivity, and rendering to video or stills.",
-      "tags": "Remotion / Video production rules / Agent Skills / Codex / Pick: essential foundation",
-      "notes": "Install with npx skills add remotion-dev/skills or when creating a Remotion project; works with Claude Code, Codex, Kimi Code, Cursor and others. Includes /remotion-best-practices (umbrella), /remotion-create, /remotion-markup, /remotion-studio, /remotion-render, /remotion-maps, /remotion-captions, /remotion-saas and /remotion-interactivity. Curator rating: essential foundation.",
+      "tags": "Remotion / Video production rules / Agent Skills / Codex / Pick: must-install",
+      "notes": "Install with npx skills add remotion-dev/skills or when creating a Remotion project; works with Claude Code, Codex, Kimi Code, Cursor and others. Includes /remotion-best-practices (umbrella), /remotion-create, /remotion-markup, /remotion-studio, /remotion-render, /remotion-maps, /remotion-captions, /remotion-saas and /remotion-interactivity. Curator rating: must-install.",
       "license": "No license file in the repository",
       "previewNote": "The repository has no real output image, and no concept art was substituted; real preview pending."
     },
@@ -4910,13 +4970,13 @@
     "title": "video-shotcraft",
     "resourceType": "产品视频制作 Skill",
     "category": "动画动效",
-    "tags": "产品宣传片 / Remotion / 视频制作 / 分镜 / 运镜 / 卡点 / Claude Code / Codex",
+    "tags": "产品宣传片 / Remotion / 视频制作 / 分镜 / 运镜 / 卡点 / Claude Code / Codex / 推荐：必装",
     "description": "用真实页面截图与 Remotion 制作产品宣传片，编排分镜、2.5D 运镜、节奏剪辑和声音设计，输出 MP4 与可继续编辑的工程；也适合单独制作某个镜头动效。",
     "source": "https://github.com/Vincentwei1021/video-shotcraft",
     "repository": "https://github.com/Vincentwei1021/video-shotcraft",
     "officialUrl": "https://vincentwei1021.github.io/video-shotcraft/",
     "documentation": "https://github.com/Vincentwei1021/video-shotcraft/blob/main/SKILL.md",
-    "prompt": "video-shotcraft · 产品宣传片与镜头动效\n\n用途：用真实页面截图与 Remotion 制作产品宣传片，编排分镜、2.5D 运镜、节奏剪辑和声音设计，输出 MP4 与可继续编辑的工程；也适合单独制作某个镜头动效。\n\n官方说明：面向 Claude Code 与 Codex，以镜头配方卡、模板、代码和音频资产组织视频制作。页面展示使用真实截图，画面与运动由代码编排，并非把提示词直接交给文生视频模型。\n\n支持的使用方式：套用 Ink Press 模板制作整片；自主自由创作；分阶段共同创作；按名称选择单个镜头卡制作或参考动效。\n\n适合：网页与桌面产品的功能演示、发布宣传片、UI 运镜及短镜头。实际制作需要目标产品素材与相应的 Remotion / 渲染环境。\n\n预览：作者在官方 README 公开的 Camera 类动态样片，原始 animated WebP，保留其完整动画；不是本次运行产物。\n\n官方动态图库：https://vincentwei1021.github.io/video-shotcraft/\nGitHub：https://github.com/Vincentwei1021/video-shotcraft\nSkill 说明：https://github.com/Vincentwei1021/video-shotcraft/blob/main/SKILL.md\n\n本次仅收录，未安装 Skill、执行制作或渲染视频。",
+    "prompt": "video-shotcraft · 产品宣传片与镜头动效\n\n用途：用真实页面截图与 Remotion 制作产品宣传片，编排分镜、2.5D 运镜、节奏剪辑和声音设计，输出 MP4 与可继续编辑的工程；也适合单独制作某个镜头动效。\n\n官方说明：面向 Claude Code 与 Codex，以镜头配方卡、模板、代码和音频资产组织视频制作。页面展示使用真实截图，画面与运动由代码编排，并非把提示词直接交给文生视频模型。\n\n支持的使用方式：套用 Ink Press 模板制作整片；自主自由创作；分阶段共同创作；按名称选择单个镜头卡制作或参考动效。\n\n适合：网页与桌面产品的功能演示、发布宣传片、UI 运镜及短镜头。实际制作需要目标产品素材与相应的 Remotion / 渲染环境。\n\n预览：作者在官方 README 公开的 Camera 类动态样片，原始 animated WebP，保留其完整动画；不是本次运行产物。\n\n官方动态图库：https://vincentwei1021.github.io/video-shotcraft/\nGitHub：https://github.com/Vincentwei1021/video-shotcraft\nSkill 说明：https://github.com/Vincentwei1021/video-shotcraft/blob/main/SKILL.md\n\n推荐程度（收录者）：必装\n\n本次仅收录，未安装 Skill、执行制作或渲染视频。",
     "preview": {
       "type": "image",
       "src": "assets/skill-video-shotcraft/author-camera.webp",
@@ -4935,7 +4995,7 @@
     "en": {
       "title": "video-shotcraft",
       "description": "Builds product promo videos from real page screenshots with Remotion — storyboards, 2.5D camera moves, rhythmic cuts and sound design — exporting MP4 plus an editable project; also good for single shots.",
-      "tags": "Product promo / Remotion / Video production / Storyboard / Camera moves / Beat sync / Claude Code / Codex",
+      "tags": "Product promo / Remotion / Video production / Storyboard / Camera moves / Beat sync / Claude Code / Codex / Pick: must-install",
       "previewNote": "A real animated Camera sample from the author's official README, original animated WebP kept; not produced here. More shots are in the official gallery."
     }
   },
