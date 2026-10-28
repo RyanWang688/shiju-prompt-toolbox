@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>Context Mode · 概念示意图</title><link rel="stylesheet" href="../concept-art-20261028.css"></head>
+<body style="--h:180"><main class="board"><section class="copy"><span class="kicker">CONCEPT · 概念示意</span><h1>Context Mode</h1><p class="sub">在沙盒里处理大型工具输出</p><ul class="facts"><li>只把相关结果送回上下文</li><li>索引与检索延续会话状态</li><li>适合日志分析与长时间编码</li></ul></section>
+<section class="stage">
+<div style="display:grid;grid-template-columns:1fr 90px 1fr 90px 1fr;align-items:center;width:100%">
+ <div class="win" style="padding:18px;height:380px;background:#15161a;color:#8b8c96;font:500 15px/1.7 Consolas,monospace;overflow:hidden;white-space:nowrap">[0001] INFO ok 7ms<br>[0002] INFO ok 14ms<br>[0003] INFO ok 21ms<br>[0004] INFO ok 28ms<br>[0005] INFO ok 35ms<br>[0006] INFO ok 42ms<br>[0007] INFO ok 49ms<br>[0008] INFO ok 56ms<br>[0009] INFO ok 63ms<br>[0010] INFO ok 70ms<br>[0011] INFO ok 77ms<br>[0012] INFO ok 84ms<br>[0013] INFO ok 91ms<br>[0014] INFO ok 1ms<br>[0015] INFO ok 8ms<br>[0016] INFO ok 15ms<br>[0017] INFO ok 22ms<br>[0018] INFO ok 29ms<br>[0019] INFO ok 36ms<br>[0020] INFO ok 43ms<br>[0021] INFO ok 50ms</div>
+ <div style="text-align:center;font-size:40px">→</div>
+ <div class="win" style="padding:22px;height:300px;display:grid;place-items:center;text-align:center;background:var(--soft)"><div><b style="font-size:26px">沙盒</b><div style="margin-top:8px;font-size:17px;color:#555">过滤 · 搜索 · 汇总</div><div style="margin-top:14px;font:600 15px/1.4 Consolas,monospace">索引 → 可检索</div></div></div>
+ <div style="text-align:center;font-size:40px">→</div>
+ <div class="win" style="padding:18px;height:200px"><b style="font-size:19px">回到上下文</b><div style="margin-top:10px;font:500 16px/1.6 Consolas,monospace;color:#c92a2a">3 条 ERROR<br>出现在 14:02–14:05</div></div>
+</div></section>
+<footer class="badge"><b>概念示意图</b><span>根据 官方 README / SKILL.md 绘制，不是真实界面或运行结果</span><span>Concept illustration — not a real screenshot</span></footer></main></body></html>

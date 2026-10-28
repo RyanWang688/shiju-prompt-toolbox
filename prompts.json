@@ -50,11 +50,16 @@
     "source": "https://github.com/everlosttime/glassdesk-open-source",
     "repository": "https://github.com/everlosttime/glassdesk-open-source",
     "officialUrl": "https://github.com/everlosttime/glassdesk-open-source",
-    "preview": null,
-    "cardPreview": null,
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实预览待补：仓库没有公开截图（README 注明不含截图，仓库里只有应用图标）；本次仅收录，未编译或运行这个程序。",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-glassdesk/concept.png",
+      "alt": "GlassDesk（玻璃 Dock 与启动台） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "addedAt": "2026-10-28",
     "verifiedAt": "2026-10-28",
     "en": {
@@ -63,7 +68,7 @@
       "tags": "Windows 11 / Desktop customisation / Dock / Launcher / Frosted glass / WPF / Noncommercial source",
       "notes": "Glass Dock, launcher and drag-to-arrange apps; rest one icon on another for about half a second to make a frosted-glass folder you can rename, sort and drag in or out; appearance settings, Dock auto-hide and launch at sign-in. Everything is free, with an optional sponsorship page. Written in C# / WPF; needs Windows 11 x64 (build 22000+) and the .NET 10 SDK — build with dotnet build / dotnet run, or package a portable build or installer yourself. The author’s official installers are unsigned and published separately at everlosttime/glassdesk-updates.",
       "license": "Despite the repository name, the new original changes are under PolyForm Noncommercial 1.0.0 (study, modify, fork and share noncommercially; no selling or commercial use) — not an OSI open-source licence. Code first released under Apache-2.0 and third-party components keep their original licences; see the repository’s LICENSE and licensing notes.",
-      "previewNote": "Real preview pending: the repository has no public screenshots (its README says none are included, and it only holds the app icon); saved only — not built or run here."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     }
   },
   {
@@ -195,11 +200,16 @@
     "prompt": "video-editing（视频剪辑技能）\n类型：视频剪辑 Skill\n\n用途：口播 / 教程 / 访谈类短视频的 AI 剪辑生产线：从素材导入、转写、清稿、分镜，到寻找和规划 B-roll、分析镜头、字幕与声音设计，再到渲染和逐项质量检查，把素材堆推进成可发布的小红书 / 抖音 / 视频号成片。\n\n说明：每一步都落成可审计的文件——转写、清稿、分镜、B-roll / 生图 / 生成视频规划、素材清单、渲染配置、字幕、QA 报告和标题文案。可选用 YOLO 对抽样帧做物体检测来理解画面；停顿删段同时看声音和画面；渲染后检查字幕像素、音画对齐、声道、闪烁和单帧瞬态等问题。针对中文社媒口播调过参数（字幕、节奏、响度、平台违禁词），三平台导出。官方 README 写明面向 OpenClaw / Codex，配图可直接调用 Codex 内置的 imagegen。需要本机 FFmpeg 和 Python 环境。\n\n推荐程度（收录者）：必装\n\n许可：仓库未附许可证文件\n\nGitHub：https://github.com/maxazure/video-editing-skill\n\n收录状态：仅收藏，未安装或执行。",
     "source": "https://github.com/maxazure/video-editing-skill",
     "repository": "https://github.com/maxazure/video-editing-skill",
-    "preview": null,
-    "cardPreview": null,
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实预览待补：作者仓库没有公开示例图或成片；本次仅收录，未运行该 Skill。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-video-editing/concept.png",
+      "alt": "video-editing（视频剪辑技能） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "addedAt": "2026-10-27",
     "verifiedAt": "2026-10-27",
     "en": {
@@ -208,7 +218,7 @@
       "tags": "Talking-head editing / B-roll / Shot analysis / Captions / QA / Codex / Pick: must-install",
       "notes": "Every step leaves an auditable file — transcript, clean script, storyboard, B-roll / image / generated-video plan, asset list, render config, captions, QA report and post copy. Optional YOLO detection on sampled frames for scene understanding; dead-air cuts check both sound and picture; post-render checks cover caption pixels, A/V sync, channels, flicker and single-frame glitches. Tuned for Chinese social talking-head videos, with exports for three platforms. The official README targets OpenClaw / Codex and can use Codex’s built-in imagegen. Needs FFmpeg and Python locally. Curator rating: must-install.",
       "license": "No license file in the repository",
-      "previewNote": "Real preview pending: the author’s repository has no public example image or finished video; saved only, the Skill was not run here."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     }
   },
   {
@@ -225,11 +235,16 @@
     "prompt": "claude-video-skills\n类型：Claude Code 视频剪辑 Skills\n\n用途：面向 Claude Code 的视频剪辑自动化，基于 Remotion：把粗剪好的片段（或旁白加想法）放进项目，用 /make-video 一路完成转写、按节拍排的图形方案、字幕、B-roll、缩放动画和完整配乐。\n\n说明：/make-video 先问你要做什么，再分派到对应流程——竖版口播短片（9:16）、横版长视频（16:9）、只有旁白的无人出镜动效短片（纸感风格），或只写短视频脚本。首次渲染前走一遍品牌设置（主色、强调色、字体），之后每条视频沿用。转写默认用 AssemblyAI 或 OpenAI Whisper（音频会上传到服务商），也可改用本地 WhisperX。仓库只含代码，不带音乐、音效和 Logo，缺了也能渲染。注意：它只负责成片加工，不做粗剪和去口误，需要先自己把素材剪干净。\n\n兼容性：原生面向 Claude Code（.claude/skills 结构），在 Codex 等其他工具中使用需要自行适配。\n\n推荐程度（收录者）：可选安装\n\n许可：MIT\n\nGitHub：https://github.com/imtamiliniyan/claude-video-skills\n\n收录状态：仅收藏，未安装或执行。",
     "source": "https://github.com/imtamiliniyan/claude-video-skills",
     "repository": "https://github.com/imtamiliniyan/claude-video-skills",
-    "preview": null,
-    "cardPreview": null,
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实预览待补：作者仓库没有公开成片或演示截图（仓库里只有风格参考素材）；本次仅收录，未运行该 Skill。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-claude-video-skills/concept.png",
+      "alt": "claude-video-skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "addedAt": "2026-10-27",
     "verifiedAt": "2026-10-27",
     "en": {
@@ -238,7 +253,7 @@
       "tags": "Captions / Voiceover sync / B-roll / Music / Zoom animation / Remotion / Claude Code / Pick: optional",
       "notes": "/make-video asks what you are making and routes to the right pipeline: vertical talking-head shorts (9:16), long-form (16:9), faceless voiceover-only motion reels in a paper style, or a reel script only. A one-time brand setup (colours, accent, fonts) carries over to every video. Transcription uses AssemblyAI or OpenAI Whisper by default (audio is uploaded to the provider) or local WhisperX. Code only — no music, SFX or logos ship, and renders still work without them. It finishes videos but does not rough-cut or remove filler, so trim your footage first. Built natively for Claude Code (.claude/skills); other tools such as Codex need adapting. Curator rating: optional.",
       "license": "MIT",
-      "previewNote": "Real preview pending: the author’s repository has no public finished video or demo screenshot (only style reference assets); saved only, the Skill was not run here."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     }
   },
   {
@@ -510,13 +525,20 @@
       "tags": "Onboarding videos / Mobile UI component motion / Remotion / Feature clips / Pick: highly recommended",
       "notes": "3–8 s per onboarding screen, usually under ~30 s overall, 1080×1920 portrait by default; it first asks for 2–4 stills per screen (resting, mid-interaction, result) plus a one-line feature intent, then plans shots and renders MP4. Part of the author's skill-set collection. Curator rating: highly recommended.",
       "license": "No license file in the repository",
-      "previewNote": "The repository has no real output image, and no concept art was substituted; real preview pending."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "documentation": "https://github.com/bidah/skill-set/blob/main/skills/create-onboarding-video/SKILL.md",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewSource": "https://github.com/bidah/skill-set",
-    "previewNote": "仓库未提供真实效果图，未用概念图替代；真实预览待补。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-create-onboarding-video/concept.png",
+      "alt": "create-onboarding-video 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/bidah/skill-set"
   },
   {
     "id": "skill-remotion-3d",
@@ -576,13 +598,20 @@
       "tags": "Remotion / Video production rules / Agent Skills / Codex / Pick: must-install",
       "notes": "Install with npx skills add remotion-dev/skills or when creating a Remotion project; works with Claude Code, Codex, Kimi Code, Cursor and others. Includes /remotion-best-practices (umbrella), /remotion-create, /remotion-markup, /remotion-studio, /remotion-render, /remotion-maps, /remotion-captions, /remotion-saas and /remotion-interactivity. Curator rating: must-install.",
       "license": "No license file in the repository",
-      "previewNote": "The repository has no real output image, and no concept art was substituted; real preview pending."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "documentation": "https://www.remotion.dev/docs/ai/skills",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewSource": "https://github.com/remotion-dev/skills",
-    "previewNote": "仓库未提供真实效果图，未用概念图替代；真实预览待补。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-remotion-skills/concept.png",
+      "alt": "Remotion Skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/remotion-dev/skills"
   },
   {
     "id": "website-mindset-11xy",
@@ -1199,15 +1228,22 @@
       "tags": "Final review / Lecture summaries / Mock exams / LaTeX / Bilingual",
       "notes": "Written for Codex (install into ~/.codex/skills); outputs LaTeX sources plus compiled PDFs. Remote Mermaid rendering is used only with explicit consent.",
       "license": "No license file in the repository",
-      "previewNote": "The repository README has no real output image, and no concept art was substituted; real preview pending."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "prompt": "final-review-slides\n类型：Codex Skill\n\n用途：把 PDF / PPTX 课件整理成带页码引用的期末复习包和模拟题：按原讲义顺序逐章讲解，保留英文术语与公式，生成速查表、易错点、课程结构图，模拟题附独立答案册，并设覆盖率、公式、渲染等质量门槛。\n\n输入：一个或多个 .pdf / .pptx 讲义；可选 Revision/Review 课件、syllabus、作业、Quiz、期中、往年题及答案。\n\n输出：final-review、quick-reference、mistakes-and-distinctions（均含 .tex 与 .pdf）、coverage-report.md、course-map.json / .mmd；有考核依据或用户要求时另出 mock-exam、mock-exam-solutions 与 mock-exam-blueprint.md。\n\n选项：language = auto | zh | en | bilingual（默认中文讲解并保留英文术语）；depth = concise | comprehensive | deep（默认 comprehensive）。\n\n安装：git clone https://github.com/chowkayee11/final-review-slides.git ~/.codex/skills/final-review-slides\n\n说明：远程 Mermaid 渲染只在用户明确同意时使用；仓库未附许可证文件。\n\nGitHub：https://github.com/chowkayee11/final-review-slides\n\n收录来源：用户提供的 GitHub 仓库截图；README 与 SKILL.md 已核实。\n\n收录状态：仅收藏，未安装或执行。",
     "addedAt": "2026-10-25",
     "verifiedAt": "2026-10-25",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewSource": "https://github.com/chowkayee11/final-review-slides",
-    "previewNote": "仓库 README 未提供真实效果图，未用概念图替代；真实预览待补。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-final-review-slides/concept.png",
+      "alt": "final-review-slides 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/chowkayee11/final-review-slides"
   },
   {
     "id": "splash-curtain-reveal",
@@ -1698,17 +1734,24 @@
       "tags": "Agent framework / Plugins / DeepSeek / Local web UI",
       "notes": "The project asks you to read its safety notice before running it.",
       "license": "MIT",
-      "previewNote": "The official README has no real output image, and no concept art was substituted; real preview pending."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "prompt": "DeepSeek Harness\n类型：Agent 框架\n\n用途：DeepSeek 开源的 Agent 框架（dsh），「一切皆插件」，方便扩展工具与能力；用 npx 即可在本机启动 Web 界面。目前为开发者预览版，会有不兼容的更新。\n\n说明：官方提醒运行前先阅读安全须知。\n\n许可：MIT\n\n官网：https://deepseek.com/harness\nGitHub：https://github.com/deepseek-ai/deepseek-harness\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 9 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
     "collection": "GitHub AI 开源周榜",
     "userProvidedRank": 9,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewSource": "https://github.com/deepseek-ai/deepseek-harness",
-    "previewNote": "官方仓库 README 未提供真实效果图，未用概念图替代；真实预览待补。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-deepseek-harness/concept.png",
+      "alt": "DeepSeek Harness 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/deepseek-ai/deepseek-harness"
   },
   {
     "id": "website-voicestudio",
@@ -1945,18 +1988,25 @@
     "userProvidedRank": 1,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/obra/superpowers",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "superpowers",
       "description": "A complete development method for coding agents: it draws out the real requirements, confirms the design in digestible chunks, writes a clear plan, then builds with red/green TDD and review.",
       "tags": "Dev workflow / Requirement clarification / Implementation plan / TDD / Code review",
       "notes": "Works with Claude Code, Codex, Cursor, Gemini CLI and many other coding agents.",
       "license": "MIT",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-superpowers/concept.png",
+      "alt": "superpowers 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/obra/superpowers"
   },
   {
     "id": "skill-mattpocock-skills",
@@ -1978,18 +2028,25 @@
     "userProvidedRank": 2,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/mattpocock/skills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "skills",
       "description": "Matt Pocock's small, composable everyday engineering Skills — clarifying requirements, improving architecture and more — easy to adapt and never taking over your whole process.",
       "tags": "Engineering practice / Requirement clarification / Code architecture / Composable / Matt Pocock",
       "notes": "The author stresses that these Skills don't take over your process the way large frameworks do, so developers stay in control. Its grill-me and diagnose Skills are also collected separately here.",
       "license": "MIT",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-mattpocock-skills/concept.png",
+      "alt": "skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/mattpocock/skills"
   },
   {
     "id": "skill-andrej-karpathy-skills",
@@ -2011,18 +2068,25 @@
     "userProvidedRank": 3,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "andrej-karpathy-skills",
       "description": "A single CLAUDE.md distilled from Andrej Karpathy's notes on LLM coding pitfalls: think before coding, keep it simple, make surgical changes and work toward verifiable goals.",
       "tags": "CLAUDE.md / Coding guidelines / Simplicity first / Surgical changes / Karpathy",
       "notes": "The repository does not declare an open-source licence.",
       "license": "Not declared",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-andrej-karpathy-skills/concept.png",
+      "alt": "andrej-karpathy-skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/multica-ai/andrej-karpathy-skills"
   },
   {
     "id": "skill-anthropic-skills",
@@ -2045,18 +2109,25 @@
     "userProvidedRank": 4,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/anthropics/skills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "skills",
       "description": "Anthropic's official Skills examples — Word, PDF, PowerPoint and Excel handling, art and design, web-app testing, MCP server generation and more — a reference for writing your own.",
       "tags": "Official examples / Document handling / Creative design / Web testing / Anthropic",
       "notes": "Most Skills are Apache-2.0; the document-handling ones are source-available and follow their own terms.",
       "license": "Per Skill folder (mostly Apache-2.0; document Skills are source-available)",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-anthropic-skills/concept.png",
+      "alt": "skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/anthropics/skills"
   },
   {
     "id": "skill-ponytail",
@@ -2117,18 +2188,25 @@
     "userProvidedRank": 6,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "ui-ux-pro-max-skill",
       "description": "Gives AI design intelligence for professional UI/UX: it generates a tailored design system from your requirements and offers searchable styles, palettes, font pairings, chart types and UX guidelines.",
       "tags": "UI design / UX guidelines / Design system / Colour & type / Multi-platform",
       "notes": "Supports many front-end frameworks and platforms.",
       "license": "MIT",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ui-ux-pro-max-skill/concept.png",
+      "alt": "ui-ux-pro-max-skill 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
   },
   {
     "id": "skill-graphify",
@@ -2228,17 +2306,24 @@
     "userProvidedRank": 9,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/addyosmani/agent-skills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "agent-skills",
       "description": "Addy Osmani packages a senior engineer's workflow as Skills — spec, plan, incremental build, test, review and ship — driven by commands like /spec, /plan and /build with quality gates at each step.",
       "tags": "Engineering workflow / Specs / Plan & build / Test & review / Ship",
       "license": "MIT",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-agent-skills/concept.png",
+      "alt": "agent-skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/addyosmani/agent-skills"
   },
   {
     "id": "skill-understand-anything",
@@ -2260,18 +2345,25 @@
     "userProvidedRank": 11,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/Egonex-AI/Understand-Anything",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "Understand-Anything",
       "description": "A multi-agent pipeline that builds a knowledge graph of every file, function, class and dependency, then gives you an interactive dashboard to pan, search and question — for getting up to speed on unfamiliar code.",
       "tags": "Code understanding / Knowledge graph / Interactive dashboard / Onboarding",
       "notes": "The official site has an interactive live demo.",
       "license": "MIT",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-understand-anything/concept.png",
+      "alt": "Understand-Anything 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/Egonex-AI/Understand-Anything"
   },
   {
     "id": "skill-awesome-claude-skills",
@@ -2293,18 +2385,25 @@
     "userProvidedRank": 13,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "awesome-claude-skills",
       "description": "A curated list of 1,000+ practical Claude Skills and plugins by use case, for Claude, Claude Code, Codex, Cursor and more, plus a plugin that connects agents to 1,000+ apps.",
       "tags": "Skills list / Plugin collection / App integrations / Composio",
       "notes": "The source image spelled it awesome-cloud-skills; it is actually ComposioHQ/awesome-claude-skills.",
       "license": "Not declared",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-awesome-claude-skills/concept.png",
+      "alt": "awesome-claude-skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/ComposioHQ/awesome-claude-skills"
   },
   {
     "id": "skill-last30days-skill",
@@ -2445,17 +2544,24 @@
     "userProvidedRank": 17,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/coreyhaines31/marketingskills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "marketingskills",
       "description": "Marketing Skills for technical marketers and founders — conversion optimisation, copywriting, SEO, analytics and growth engineering — so your coding agent can help with marketing too.",
       "tags": "Growth marketing / CRO / Copywriting / SEO / Analytics",
       "license": "MIT",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-marketingskills/concept.png",
+      "alt": "marketingskills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/coreyhaines31/marketingskills"
   },
   {
     "id": "skill-academic-research-skills",
@@ -2477,18 +2583,25 @@
     "userProvidedRank": 18,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/Imbad0202/academic-research-skills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "academic-research-skills",
       "description": "Covers the full academic pipeline from research to publication — Socratic paper planning, references, citation formatting, data and logic checks, writing-quality review — pausing for your confirmation at every stage.",
       "tags": "Academic writing / Paper pipeline / Citations / Data checks / Review",
       "notes": "The source image spelled the owner lmbad0202; it is actually Imbad0202. The author stresses it is not a tool for hiding AI use.",
       "license": "Creative Commons (see the repository LICENSE)",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-academic-research-skills/concept.png",
+      "alt": "academic-research-skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/Imbad0202/academic-research-skills"
   },
   {
     "id": "skill-obsidian-skills",
@@ -2510,18 +2623,25 @@
     "userProvidedRank": 19,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/kepano/obsidian-skills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "obsidian-skills",
       "description": "Teaches agents to use the Obsidian CLI and open formats such as Markdown, Bases and JSON Canvas, so they can read, write and organise your Obsidian vault.",
       "tags": "Obsidian / Note management / Markdown / JSON Canvas / Bases",
       "notes": "The author, kepano, is the CEO of Obsidian.",
       "license": "MIT",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-obsidian-skills/concept.png",
+      "alt": "obsidian-skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/kepano/obsidian-skills"
   },
   {
     "id": "skill-scientific-agent-skills",
@@ -2543,18 +2663,25 @@
     "userProvidedRank": 20,
     "addedAt": "2026-10-24",
     "verifiedAt": "2026-10-24",
-    "previewStatus": "pending",
-    "previewEvidence": "none-in-official-repository",
-    "previewNote": "官方仓库 README 未提供该 Skill 的真实效果图（只有标识或宣传图），未用概念图替代；真实预览待补。",
-    "previewSource": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "en": {
       "title": "scientific-agent-skills",
       "description": "177 validated research Skills plus 100+ scientific databases across biology, chemistry, medicine and drug discovery, turning any Agent Skills–compatible assistant into a research aide.",
       "tags": "Science / Biology & chemistry / Medicine / Drug discovery / Scientific databases",
       "notes": "Formerly Claude Scientific Skills; the related paper is on arXiv.",
       "license": "MIT",
-      "previewNote": "The official README has no real output image for this Skill (only logos or promotional art), and no concept art was substituted; real preview pending."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-scientific-agent-skills/concept.png",
+      "alt": "scientific-agent-skills 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/K-Dense-AI/scientific-agent-skills"
   },
   {
     "id": "website-allan-xin",
@@ -3622,7 +3749,7 @@
     ],
     "tags": "GitHub 项目清单 / 修图 / PSD / 桌面工具 / 访问受限",
     "description": "作者公开介绍为参考经典 Photoshop 操作方式的桌面修图项目，支持 PSD / PSB。仓库当前返回 HTTP 451，最新状态待确认。",
-    "prompt": "PhotoSuite\n\n用途：作者公开介绍为参考经典 Photoshop 操作方式的桌面修图项目，支持 PSD / PSB。仓库当前返回 HTTP 451，最新状态待确认。\n\n使用说明：已定位 eolix/photosuite，官方仓库及 Releases 当前均返回 HTTP 451。用途参考官方页面的公开索引摘要，未确认当前维护、下载或完整兼容性；真实预览待补。\n\n用户清单顺序：#6（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：复刻经典 Photoshop 的开源修图软件，支持 PSD 文件。\n\n官方入口：https://github.com/eolix/photosuite\nGitHub：https://github.com/eolix/photosuite\n说明：https://github.com/eolix/photosuite/blob/main/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
+    "prompt": "PhotoSuite\n\n用途：作者公开介绍为参考经典 Photoshop 操作方式的桌面修图项目，支持 PSD / PSB。仓库当前返回 HTTP 451，最新状态待确认。\n\n使用说明：已定位 eolix/photosuite，官方仓库及 Releases 当前均返回 HTTP 451。用途参考官方页面的公开索引摘要，未确认当前维护、下载或完整兼容性；预览为根据收录时说明绘制的概念示意图，真实预览待补。\n\n用户清单顺序：#6（用户提供的排列，不是 GitHub 实时排名）\n用户提供的亮点（原文）：复刻经典 Photoshop 的开源修图软件，支持 PSD 文件。\n\n官方入口：https://github.com/eolix/photosuite\nGitHub：https://github.com/eolix/photosuite\n说明：https://github.com/eolix/photosuite/blob/main/README.md\n\n仅收录项目链接与公开说明；未安装或执行项目。",
     "source": "https://github.com/eolix/photosuite",
     "officialUrl": "https://github.com/eolix/photosuite",
     "repository": "https://github.com/eolix/photosuite",
@@ -3631,17 +3758,24 @@
     "userProvidedRank": 6,
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "previewStatus": "pending",
-    "previewEvidence": "unavailable-official-repository",
-    "previewNote": "官方仓库当前返回 HTTP 451，无法取得真实预览，未用概念图替代。",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据收录时记录的项目说明（仓库当前返回 HTTP 451） 绘制，不是真实界面或运行结果；真实预览待补。",
     "verificationStatus": "official-repository-http-451",
-    "previewSource": "https://github.com/eolix/photosuite",
     "en": {
       "title": "PhotoSuite",
       "description": "A desktop photo editor the author describes as modeled on classic Photoshop workflows, with PSD / PSB support. The repo currently returns HTTP 451; status unconfirmed.",
       "tags": "GitHub picks / Photo editing / PSD / Desktop / Restricted",
-      "previewNote": "The official repository currently returns HTTP 451, so no real preview could be obtained; no concept art was substituted."
-    }
+      "previewNote": "Concept illustration drawn from the project notes recorded when it was saved (the repository currently returns HTTP 451) — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/website-photosuite/concept.png",
+      "alt": "PhotoSuite 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/eolix/photosuite"
   },
   {
     "id": "website-fluxdown",
@@ -4928,17 +5062,24 @@
     "documentation": "https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "previewStatus": "pending",
-    "previewSource": "https://github.com/Panniantong/Agent-Reach/blob/main/README.md",
-    "previewEvidence": "pending-real-output",
-    "previewNote": "真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与使用示例。",
-    "prompt": "Agent-Reach\n\n用途：为 AI Agent 提供网页、社交平台、视频和 RSS 的搜索与阅读能力，适合收集热点讨论、用户问题和选题资料。部分平台需要额外配置；它不是自动生成热点榜单的工具。\n\n定位：用于获取和整理选题资料；热点筛选与最终选题仍由用户或 Agent 判断。\n\n预览说明：真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与使用示例。\n\n官方入口：https://github.com/Panniantong/Agent-Reach\n官方仓库：https://github.com/Panniantong/Agent-Reach\n使用说明：https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "prompt": "Agent-Reach\n\n用途：为 AI Agent 提供网页、社交平台、视频和 RSS 的搜索与阅读能力，适合收集热点讨论、用户问题和选题资料。部分平台需要额外配置；它不是自动生成热点榜单的工具。\n\n定位：用于获取和整理选题资料；热点筛选与最终选题仍由用户或 Agent 判断。\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n官方入口：https://github.com/Panniantong/Agent-Reach\n官方仓库：https://github.com/Panniantong/Agent-Reach\n使用说明：https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
     "en": {
       "title": "Agent-Reach",
       "description": "Gives AI agents search and reading access to the web, social platforms, video and RSS — useful for gathering trending discussions, user questions and topic research. Some platforms need extra setup; it does not auto-generate trend rankings.",
       "tags": "Social media / Trending topics / Research / Multi-platform",
-      "previewNote": "Real preview pending: the official documentation was checked, but no confirmed real output image was found; promotional art or logos are not used instead. See the official README for features and usage examples."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-agent-reach/concept.png",
+      "alt": "Agent-Reach 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/Panniantong/Agent-Reach/blob/main/README.md"
   },
   {
     "id": "skill-auto-redbook",
@@ -4993,17 +5134,24 @@
     "documentation": "https://github.com/alchaincyf/nuwa-skill/blob/main/SKILL.md",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "previewStatus": "pending",
-    "previewSource": "https://github.com/alchaincyf/nuwa-skill/blob/main/README.md",
-    "previewEvidence": "pending-real-output",
-    "previewNote": "真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与文字对话示例。",
-    "prompt": "nuwa-skill · 女娲\n\n用途：调研人物资料，提炼思维框架、表达习惯与边界，生成可复用的人物视角 Skill。可用于写作视角与风格参考；保持账号风格仍需结合自己的语料和规范。\n\n定位：人物认知和表达提炼，不自带账号长期记忆或风格自动锁定。官方 README 提供文字对话示例。\n\n预览说明：真实效果预览待补：已核实官方说明；暂未找到可确认的实际输出图片，不使用宣传插画或标志代替。官方 README 可查看功能与文字对话示例。\n\n官方入口：https://github.com/alchaincyf/nuwa-skill\n官方仓库：https://github.com/alchaincyf/nuwa-skill\n使用说明：https://github.com/alchaincyf/nuwa-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "prompt": "nuwa-skill · 女娲\n\n用途：调研人物资料，提炼思维框架、表达习惯与边界，生成可复用的人物视角 Skill。可用于写作视角与风格参考；保持账号风格仍需结合自己的语料和规范。\n\n定位：人物认知和表达提炼，不自带账号长期记忆或风格自动锁定。官方 README 提供文字对话示例。\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n官方入口：https://github.com/alchaincyf/nuwa-skill\n官方仓库：https://github.com/alchaincyf/nuwa-skill\n使用说明：https://github.com/alchaincyf/nuwa-skill/blob/main/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
     "en": {
       "title": "nuwa-skill · Nüwa",
       "description": "Researches a person, distills their thinking frameworks, voice and boundaries, and produces a reusable persona Skill — a reference for perspective and style; keeping your own voice still needs your own corpus and guidelines.",
       "tags": "Social media / Voice & style / Thinking frameworks / Persona",
-      "previewNote": "Real preview pending: the official documentation was checked, but no confirmed real output image was found; promotional art or logos are not used instead. See the official README for features and example conversations."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-nuwa-skill/concept.png",
+      "alt": "nuwa-skill · 女娲 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/alchaincyf/nuwa-skill/blob/main/README.md"
   },
   {
     "id": "skill-guizang-social-card",
@@ -5330,10 +5478,9 @@
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
     "prompt": "AI Job Search\n\n类型：求职工作流 / Skills 集合\n\n用途：把求职资料、岗位匹配评估、定制简历与求职信、面试准备组织成一套本地工作流，适合系统管理求职申请。\n\n说明：核心申请流程基于 Claude Code，仓库也提供其他 Agent 可用的岗位搜索 Skills。部分求职站点适配以丹麦市场为主。旧仓库 MadsLorentzen/ai-job-search 现重定向到 ai-job-search-dev/ai-job-search。\n\n官方项目：https://github.com/ai-job-search-dev/ai-job-search\nGitHub：https://github.com/ai-job-search-dev/ai-job-search\n使用说明：https://github.com/ai-job-search-dev/ai-job-search/blob/master/.claude/skills/job-application-assistant/SKILL.md\n\n收录状态：仅收藏资源，未安装或执行。",
-    "previewStatus": "pending",
-    "previewEvidence": "pending-real-output",
-    "previewSource": "https://github.com/ai-job-search-dev/ai-job-search/blob/master/.claude/skills/job-application-assistant/SKILL.md",
-    "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "skillTopics": [
       "求职效率"
     ],
@@ -5342,8 +5489,16 @@
       "description": "Organizes your job materials, role-fit evaluation, tailored résumés and cover letters, and interview prep into one local workflow for managing applications.",
       "tags": "Job search / Résumé / CV / Cover letter / Interview prep / MadsLorentzen",
       "notes": "The core application workflow is built on Claude Code, and the repository also offers job-search Skills usable by other agents. Some job-site adapters focus on the Danish market. The old repository MadsLorentzen/ai-job-search now redirects to ai-job-search-dev/ai-job-search.",
-      "previewNote": "Real preview pending: the official documentation was checked, but no suitable real-run screenshot is available yet; icons or concept art are not used in its place."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ai-job-search/concept.png",
+      "alt": "AI Job Search 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/ai-job-search-dev/ai-job-search/blob/master/.claude/skills/job-application-assistant/SKILL.md"
   },
   {
     "id": "skill-context-mode",
@@ -5360,10 +5515,9 @@
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
     "prompt": "Context Mode\n\n类型：MCP 工具 / 配套 Skills\n\n用途：在沙盒中处理大型工具输出，只把相关结果送回上下文，并用索引与检索延续会话状态。适合日志分析、代码检索和长时间编码任务。\n\n说明：本条收录开源 Context Mode Engine 与配套 Skills；官网还介绍其他产品，不将整套官网服务能力等同于开源插件。实际节省效果取决于任务和接入方式。\n\n官方项目：https://context-mode.com/\nGitHub：https://github.com/mksglu/context-mode\n使用说明：https://github.com/mksglu/context-mode/blob/main/skills/context-mode/SKILL.md\n\n收录状态：仅收藏资源，未安装或执行。",
-    "previewStatus": "pending",
-    "previewEvidence": "pending-real-output",
-    "previewSource": "https://github.com/mksglu/context-mode/blob/main/skills/context-mode/SKILL.md",
-    "previewNote": "真实效果预览待补：目前已核实官方说明，尚未取得适合展示的实际运行截图；不以图标或概念图冒充效果。",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "skillTopics": [
       "开发工具"
     ],
@@ -5372,8 +5526,16 @@
       "description": "Processes large tool outputs in a sandbox and returns only what's relevant, using indexing and retrieval to carry session state. Good for log analysis, code search and long coding sessions.",
       "tags": "MCP / Context optimization / Session memory / Tool output / mksglu",
       "notes": "This entry covers the open-source Context Mode engine and its Skills; the official site also describes other products, which shouldn't be confused with the open-source plugin. Actual savings depend on the task and how it's wired in.",
-      "previewNote": "Real preview pending: the official documentation was checked, but no suitable real-run screenshot is available yet; icons or concept art are not used in its place."
-    }
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-context-mode/concept.png",
+      "alt": "Context Mode 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "conceptBasis": "https://github.com/mksglu/context-mode/blob/main/skills/context-mode/SKILL.md"
   },
   {
     "id": "skill-diagram-design",
@@ -5981,12 +6143,12 @@
     "source": "https://github.com/mattpocock/skills",
     "documentation": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md",
     "aliases": [],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "prompt": "grill-me（Matt Pocock）\n\n用途：通过分轮追问梳理想法、需求和设计决策，暴露未说明的假设与边界，帮助动手前形成共同理解。\n\n说明：当前 grill-me 是调用 grilling 的入口。真正的访谈逻辑在 productivity/grilling 中；当前版本按已明确前提组织问题轮次，不一定每轮只问一个问题。适合需求澄清，不负责自动实现，也不把访谈当作已完成设计。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/productivity/grill-me.md\n依赖说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md",
+    "prompt": "grill-me（Matt Pocock）\n\n用途：通过分轮追问梳理想法、需求和设计决策，暴露未说明的假设与边界，帮助动手前形成共同理解。\n\n说明：当前 grill-me 是调用 grilling 的入口。真正的访谈逻辑在 productivity/grilling 中；当前版本按已明确前提组织问题轮次，不一定每轮只问一个问题。适合需求澄清，不负责自动实现，也不把访谈当作已完成设计。\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grill-me/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/productivity/grill-me.md\n依赖说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md",
     "officialUrl": "https://github.com/mattpocock/skills",
     "repository": "https://github.com/mattpocock/skills",
     "skillTopics": [
@@ -5997,7 +6159,14 @@
       "description": "Clarifies ideas, requirements and design decisions through rounds of questions, surfacing unstated assumptions and edge cases before you build.",
       "tags": "Dev workflow / Requirement clarification / Design scrutiny / Product decisions / Pre-build prep",
       "notes": "grill-me is now an entry point that calls grilling; the actual interview logic lives in productivity/grilling. The current version organises question rounds around established premises and may ask more than one question per round. It is for clarifying requirements — it doesn't implement anything, and the interview isn't a finished design.",
-      "previewNote": "Real preview pending: no confirmed real session or diagnosis from the author was found; saved only, the Skill was not run here."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-grill-me/concept.png",
+      "alt": "grill-me 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
     }
   },
   {
@@ -6012,12 +6181,12 @@
     "aliases": [
       "diagnosing-bugs"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
-    "prompt": "diagnose（现名 diagnosing-bugs）（Matt Pocock）\n\n用途：先为 Bug 建立可重复的失败信号，再缩小范围、验证假设并修复根因，最后用回归检查确认问题解决。\n\n说明：Matt Pocock 官方 CHANGELOG 明确将 diagnose 改名为 diagnosing-bugs，当前调用名为 /diagnosing-bugs。保留截图中的旧名便于搜索。适合已有明确症状的疑难 Bug 或性能回归；单纯查看代码不能替代复现证据。\n\n预览：真实预览待补：尚未找到可确认的作者实际会话或诊断结果；本次仅收录，未运行该 Skill。不以流程示意或宣传图冒充实际输出。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/engineering/diagnosing-bugs.md\n改名记录：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/CHANGELOG.md",
+    "prompt": "diagnose（现名 diagnosing-bugs）（Matt Pocock）\n\n用途：先为 Bug 建立可重复的失败信号，再缩小范围、验证假设并修复根因，最后用回归检查确认问题解决。\n\n说明：Matt Pocock 官方 CHANGELOG 明确将 diagnose 改名为 diagnosing-bugs，当前调用名为 /diagnosing-bugs。保留截图中的旧名便于搜索。适合已有明确症状的疑难 Bug 或性能回归；单纯查看代码不能替代复现证据。\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n收录状态：保存来源和用途，不安装或运行，也不自动应用到当前工具箱维护。个人评分由用户决定。\n\n官方说明：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/diagnosing-bugs/SKILL.md\n官方使用文档：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/engineering/diagnosing-bugs.md\n改名记录：https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/CHANGELOG.md",
     "officialUrl": "https://github.com/mattpocock/skills",
     "repository": "https://github.com/mattpocock/skills",
     "skillTopics": [
@@ -6028,7 +6197,14 @@
       "description": "Builds a reproducible failure signal for a bug, narrows the scope, tests hypotheses, fixes the root cause and confirms with regression checks.",
       "tags": "Dev workflow / Bug diagnosis / Reproduction / Performance regression / Regression tests",
       "notes": "Matt Pocock's official CHANGELOG renames diagnose to diagnosing-bugs, now invoked as /diagnosing-bugs; the old name from the screenshot is kept for search. Best for hard bugs or performance regressions with clear symptoms; reading code alone is no substitute for reproduction evidence.",
-      "previewNote": "Real preview pending: no confirmed real session or diagnosis from the author was found; saved only, the Skill was not run here."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-diagnose/concept.png",
+      "alt": "diagnose（现名 diagnosing-bugs） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
     }
   },
   {
@@ -6077,10 +6253,10 @@
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
     "collection": "小说创作流程",
-    "previewStatus": "pending",
-    "previewNote": "真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。",
-    "previewEvidence": "pending",
-    "prompt": "story-long-scan\n\n用途：分析多个网文平台的排行榜与新书样本，提炼热门题材、人设和切入点，并结合作者条件评估选题。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-scan/SKILL.md",
+    "previewStatus": "concept",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "previewEvidence": "concept-from-readme",
+    "prompt": "story-long-scan\n\n用途：分析多个网文平台的排行榜与新书样本，提炼热门题材、人设和切入点，并结合作者条件评估选题。\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-long-scan/SKILL.md",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
@@ -6090,7 +6266,14 @@
       "title": "story-long-scan",
       "description": "Analyzes rankings and new-release samples across web-novel platforms to surface hot genres, characters and hooks, then scores topics against the author's strengths.",
       "tags": "Fiction writing / Topic picking / Market trends / Ranking scan",
-      "previewNote": "Real preview pending: the documentation was checked, but no output with confirmed provenance was found; the Skill was not run here."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-story-long-scan/concept.png",
+      "alt": "story-long-scan 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
     }
   },
   {
@@ -6176,10 +6359,10 @@
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
     "collection": "小说创作流程",
-    "previewStatus": "pending",
-    "previewNote": "真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。",
-    "previewEvidence": "pending",
-    "prompt": "novel-creator-skill\n\n用途：以文件记忆、知识图谱和大纲锚点组织长篇创作，连接规划、分章写作、一致性检查与修稿流程。\n\n仓库名为 novel-creator-skill；实际 Skill 名称为 novel-claude-ai。作者的规模宣传不视作稳定性保证。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/leenbj/novel-creator-skill\n说明文档：https://github.com/leenbj/novel-creator-skill/blob/a327428ea26962163f823ad74001243f91bc7738/SKILL.md",
+    "previewStatus": "concept",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "previewEvidence": "concept-from-readme",
+    "prompt": "novel-creator-skill\n\n用途：以文件记忆、知识图谱和大纲锚点组织长篇创作，连接规划、分章写作、一致性检查与修稿流程。\n\n仓库名为 novel-creator-skill；实际 Skill 名称为 novel-claude-ai。作者的规模宣传不视作稳定性保证。\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/leenbj/novel-creator-skill\n说明文档：https://github.com/leenbj/novel-creator-skill/blob/a327428ea26962163f823ad74001243f91bc7738/SKILL.md",
     "officialUrl": "https://github.com/leenbj/novel-creator-skill",
     "repository": "https://github.com/leenbj/novel-creator-skill",
     "skillTopics": [
@@ -6189,7 +6372,14 @@
       "title": "novel-creator-skill",
       "description": "Organizes long-form writing with file memory, a knowledge graph and outline anchors, linking planning, chapter drafting, consistency checks and revision.",
       "tags": "Fiction writing / Outline / Long-term memory / Foreshadowing",
-      "previewNote": "Real preview pending: the documentation was checked, but no output with confirmed provenance was found; the Skill was not run here."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-novel-creator-skill/concept.png",
+      "alt": "novel-creator-skill 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
     }
   },
   {
@@ -6350,10 +6540,10 @@
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-10-23",
     "collection": "小说创作流程",
-    "previewStatus": "pending",
-    "previewNote": "真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。",
-    "previewEvidence": "pending",
-    "prompt": "story-review\n\n用途：从结构、角色、文字与设定等角度审查稿件，引用原文指出问题并提出修改建议，支持单人回退模式。\n\n预览：真实预览待补：已核实说明，尚未找到可确认归属的实际输出；本次未运行该 Skill。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-review/SKILL.md",
+    "previewStatus": "concept",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "previewEvidence": "concept-from-readme",
+    "prompt": "story-review\n\n用途：从结构、角色、文字与设定等角度审查稿件，引用原文指出问题并提出修改建议，支持单人回退模式。\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n收录状态：仅收藏用途、文档和真实示例（如有），未安装或执行此 Skill，未采信截图中的 GitHub 星数，个人评分留给用户。\n\n官方来源：https://github.com/zenstory-ai/oh-story-claudecode\n说明文档：https://github.com/zenstory-ai/oh-story-claudecode/blob/74080143dd1ac9a39a930fafd99a0dbbe61b946a/skills/story-review/SKILL.md",
     "officialUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
     "repository": "https://github.com/zenstory-ai/oh-story-claudecode",
     "skillTopics": [
@@ -6363,7 +6553,14 @@
       "title": "story-review",
       "description": "Reviews drafts for structure, characters, prose and setting, quoting the text to pinpoint issues and suggest fixes, with a single-reviewer fallback mode.",
       "tags": "Fiction writing / Review / Consistency / Revision notes",
-      "previewNote": "Real preview pending: the documentation was checked, but no output with confirmed provenance was found; the Skill was not run here."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-story-review/concept.png",
+      "alt": "story-review 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
     }
   },
   {
