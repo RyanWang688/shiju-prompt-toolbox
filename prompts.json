@@ -1,5 +1,41 @@
 [
   {
+    "id": "website-filee",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Filee（拖放式文件转换器）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "格式转换 / 拖放 / 离线 / PDF / HEIC / 视频音频 / 批量转换 / 开源",
+    "description": "免费开源的离线文件格式转换器：按住 Ctrl（macOS 为 Option）拖动文件，光标旁弹出一圈格式，放上去就转好，结果存在原文件旁边。支持图片、PDF、Word、Excel、PPT、HWP、电子书、视频、音频、压缩包等 260 多种格式，不上传、不用装 Office。",
+    "prompt": "Filee（拖放式文件转换器）\n类型：GitHub 项目\n\n用途：免费开源的离线文件格式转换器：按住 Ctrl（macOS 为 Option）拖动文件，光标旁弹出一圈格式，放上去就转好，结果存在原文件旁边。支持图片、PDF、Word、Excel、PPT、HWP、电子书、视频、音频、压缩包等 260 多种格式，不上传、不用装 Office。\n\n说明：圆环只显示适合当前文件的格式，按 Tab 或滚轮可翻到背面的不常用格式和工具；能直接把浏览器里的图片、文件链接拖进来转换；每种文件类型一个可拖动排列的工具栏，质量、尺寸、DPI、PDF 页面与压缩、视频音频、保存位置和文件名都能存成预设；可以先裁剪图片再转换，多个文件并行处理，多步转换（如 HWP → HWPX → DOCX）会自动找路线；还能监视文件夹自动转换。也支持右键菜单、快捷键、拖放区和 filee 命令行。大部分格式装好即用，视频音频、部分文档和电子书需要按需下载 FFmpeg、LibreOffice、Pandoc、calibre 等可选引擎。界面支持简体中文，有浅色和深色主题。\n\n平台：Windows 10/11；Linux x64 / ARM64（Ubuntu 22.04+，拖动手势需要 X11）；macOS 13+ 为预览版且尚未公证。\n\n许可：MIT\n\n官网（含可交互演示）：https://filee.sh\nGitHub：https://github.com/KnifeLemon/Filee\n\n收录状态：仅收藏，未下载、安装或运行。",
+    "source": "https://github.com/KnifeLemon/Filee",
+    "repository": "https://github.com/KnifeLemon/Filee",
+    "officialUrl": "https://filee.sh",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-filee/author-demo.webp",
+      "alt": "Filee 官方演示动图：按住 Ctrl 拖动 trip.jpg，光标处弹出格式圆环，放到 PNG 上，进度环走完后生成 trip.png",
+      "width": 900,
+      "height": 506
+    },
+    "previewSource": "https://raw.githubusercontent.com/KnifeLemon/Filee/main/docs/media/demo-zh-CN.webp",
+    "previewEvidence": "author-repository-animated-example",
+    "previewNote": "官方仓库中文 README 里的演示动图；非本次运行成果。",
+    "addedAt": "2026-10-28",
+    "verifiedAt": "2026-10-28",
+    "en": {
+      "title": "Filee (drag-and-drop file converter)",
+      "description": "A free, open-source offline file converter: hold Ctrl (Option on macOS), drag files, and a ring of formats opens at your cursor — drop on one and the result is saved next to the original. Over 260 formats including images, PDF, Word, Excel, PowerPoint, HWP, e-books, video, audio and archives, with no upload and no Office needed.",
+      "tags": "File conversion / Drag and drop / Offline / PDF / HEIC / Video & audio / Batch / Open source",
+      "notes": "The ring shows only formats that fit the files; press Tab or scroll to flip to less common formats and tools. Drag pictures or file links straight from the browser. One drag-arranged toolbar per file type with presets for quality, size, DPI, PDF pages and compression, video, audio, output folder and names; crop images before converting; parallel batches; multi-step routes (e.g. HWP → HWPX → DOCX) found automatically; watched folders. Also a right-click menu, shortcuts, a drop zone and the filee CLI. Most formats work out of the box; video, audio and some documents and e-books use optional engines (FFmpeg, LibreOffice, Pandoc, calibre) downloaded on demand. Windows 10/11, Linux x64 / ARM64 (Ubuntu 22.04+, drag gestures need X11) and a not-yet-notarised macOS 13+ preview.",
+      "license": "MIT",
+      "previewNote": "The demo animation from the official Chinese README — not output from this site."
+    }
+  },
+  {
     "id": "website-glassdesk",
     "kind": "website",
     "resourceType": "GitHub 项目",
