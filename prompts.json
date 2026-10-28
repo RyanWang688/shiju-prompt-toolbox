@@ -1,5 +1,77 @@
 [
   {
+    "id": "website-translucenttb",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "TranslucentTB（透明任务栏）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "Windows 11 / Windows 10 / 任务栏 / 透明 / 亚克力 / 磨砂玻璃 / 桌面美化 / 开源",
+    "description": "免费开源的 Windows 任务栏美化小工具：把任务栏变成透明、半透明着色、模糊或亚克力磨砂效果，常驻托盘、几乎不占资源，可设开机启动。支持 Windows 10 和 11。",
+    "prompt": "TranslucentTB（透明任务栏）\n类型：GitHub 项目\n\n用途：免费开源的 Windows 任务栏美化小工具：把任务栏变成透明、半透明着色、模糊或亚克力磨砂效果，常驻托盘、几乎不占资源，可设开机启动。支持 Windows 10 和 11。\n\n说明：任务栏外观有 5 种：Normal（系统默认）、Opaque（不透明着色）、Clear（透明着色）、Blur（模糊，仅 Windows 10 和 Windows 11 22000 版）、Acrylic（亚克力磨砂，接近微软 Fluent Design）。颜色选择器支持透明度并实时预览。还能按场景切换外观：有窗口可见、窗口最大化、打开开始菜单、打开搜索、打开任务视图时各用一套样式，可以叠加。Windows 11 上可隐藏任务栏顶部那条线，Windows 10 上可隐藏 Aero Peek 按钮。可与 RoundedTB（圆角任务栏）和 ExplorerPatcher 一起用。\n\n推荐设置（毛玻璃效果）：装好后在右下角托盘找到它的图标 → 右键 → Desktop（桌面）→ 选 Acrylic → 颜色设成深灰半透明，例如 #20252A99 → 勾选 Open at boot（开机启动）。\n\n安装：Microsoft Store（免费，后台自动更新，推荐）；或在 GitHub Releases 下载 TranslucentTB.appinstaller 安装；另有便携版 TranslucentTB.zip（仅 Windows 11）。\n\n许可：GPL-3.0\n\nGitHub：https://github.com/TranslucentTB/TranslucentTB\n下载（GitHub Releases）：https://github.com/TranslucentTB/TranslucentTB/releases\nMicrosoft Store：https://www.microsoft.com/store/apps/9PF4KZ2VN4W9\n官网：https://translucenttb.github.io\n\n收录状态：仅收藏，未下载、安装或运行。",
+    "source": "https://github.com/TranslucentTB/TranslucentTB",
+    "repository": "https://github.com/TranslucentTB/TranslucentTB",
+    "officialUrl": "https://github.com/TranslucentTB/TranslucentTB/releases",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-translucenttb/author-demo.png",
+      "alt": "TranslucentTB 官方截图：Windows 11 任务栏开启 Acrylic 磨砂效果，透出背后的彩色水珠壁纸",
+      "width": 591,
+      "height": 552
+    },
+    "previewSource": "https://i.imgur.com/QbG7KQA.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方 README 里的 Windows 11 Acrylic 效果截图；非本次运行成果。",
+    "addedAt": "2026-10-28",
+    "verifiedAt": "2026-10-28",
+    "en": {
+      "title": "TranslucentTB (translucent taskbar)",
+      "description": "A free, open-source utility that makes the Windows taskbar transparent, tinted, blurred or frosted acrylic. It sits in the tray, uses almost no resources and can start at boot. Works on Windows 10 and 11.",
+      "tags": "Windows 11 / Windows 10 / Taskbar / Transparency / Acrylic / Frosted glass / Desktop customisation / Open source",
+      "notes": "Five taskbar states: Normal, Opaque (tinted, no transparency), Clear (tinted), Blur (Windows 10 and Windows 11 build 22000 only) and Acrylic (close to Microsoft Fluent Design), with a colour picker that supports alpha and live preview. Dynamic modes switch the look when a window is visible or maximised, or when Start, Search or Task View is open, and can be combined. Hide the taskbar line on Windows 11 or the Aero Peek button on Windows 10. Works alongside RoundedTB and ExplorerPatcher. For a frosted look: right-click the tray icon → Desktop → Acrylic, pick a translucent dark grey such as #20252A99, and enable Open at boot. Install from the Microsoft Store (free, auto-updating), the .appinstaller on GitHub Releases, or the Windows 11-only portable zip.",
+      "license": "GPL-3.0",
+      "previewNote": "The Windows 11 Acrylic screenshot from the official README — not output from this site."
+    }
+  },
+  {
+    "id": "website-windhawk",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Windhawk（Windows 定制 Mod 平台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "Windows 11 / 任务栏 / 开始菜单 / Mod / 磨砂玻璃 / Liquid Glass / 桌面美化 / 开源",
+    "description": "Windows 和各类程序的“插件市场”：装好后一键安装社区写的 Mod，改任务栏、开始菜单、窗口行为等。想要毛玻璃、圆角、悬浮 Dock、Liquid Glass 风格任务栏，就装其中的 Windows 11 Taskbar Styler，选一个主题即可。比 TranslucentTB 可自定义的地方多得多。",
+    "prompt": "Windhawk（Windows 定制 Mod 平台）\n类型：GitHub 项目\n\n用途：Windows 和各类程序的“插件市场”：装好后一键安装社区写的 Mod，改任务栏、开始菜单、窗口行为等。想要毛玻璃、圆角、悬浮 Dock、Liquid Glass 风格任务栏，就装其中的 Windows 11 Taskbar Styler，选一个主题即可。比 TranslucentTB 可自定义的地方多得多。\n\n说明：官网把它定位为常驻后台、对性能影响很小；安装 Mod 只要点几下，再用图形化选项调整；每个 Mod 都附带源码，可以自己检查它到底做了什么。热门 Mod 有：Windows 11 Start Menu Styler（开始菜单主题）、Middle click to close on the taskbar（中键关闭）、Disable grouping on the taskbar（任务栏不合并）、Taskbar on top for Windows 11（任务栏移到顶部）等。\n\n玻璃效果怎么做：安装 Windhawk → 在 Explore 里搜索并安装 Windows 11 Taskbar Styler → 在它的设置里选主题。内置主题包括 TranslucentTaskbar、DockLike（悬浮 Dock）、WindowGlass、TintedGlass、FluentGlass、FrostyGlass、FrostedAcrylic、LiquidGlass2、OS26 Liquid Glass 等；也能用 WindhawkBlur 自己写模糊、着色参数。开始菜单可配合 Windows 11 Start Menu Styler 统一风格。\n\n许可：GPL-3.0（Windhawk 本体）；各 Mod 由社区作者编写，单独看各自说明。\n\n官网：https://windhawk.net\nMod 列表：https://windhawk.net/mods\nTaskbar Styler：https://windhawk.net/mods/windows-11-taskbar-styler\nGitHub：https://github.com/ramensoftware/windhawk\n\n收录状态：仅收藏，未下载、安装或运行。",
+    "source": "https://windhawk.net",
+    "repository": "https://github.com/ramensoftware/windhawk",
+    "officialUrl": "https://windhawk.net",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-windhawk/author-screenshot.png",
+      "alt": "Windhawk 官方主界面截图：深色窗口，上方是已安装的 Mod（Windows 11 Start Menu Styler、Middle click to close on the taskbar），下方是推荐 Mod",
+      "width": 867,
+      "height": 625
+    },
+    "previewSource": "https://github.com/ramensoftware/windhawk/blob/main/screenshot.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方仓库 README 里的主界面截图；非本次运行成果。",
+    "addedAt": "2026-10-28",
+    "verifiedAt": "2026-10-28",
+    "en": {
+      "title": "Windhawk (Windows customisation mods)",
+      "description": "A customisation marketplace for Windows and its programs: install community mods in a click to change the taskbar, Start menu, window behaviour and more. For a frosted-glass, rounded, floating-dock or Liquid Glass taskbar, install the Windows 11 Taskbar Styler mod and pick a theme. Far more customisable than TranslucentTB.",
+      "tags": "Windows 11 / Taskbar / Start menu / Mods / Frosted glass / Liquid Glass / Desktop customisation / Open source",
+      "notes": "Built to run in the background with little performance impact; mods install in a couple of clicks and are tuned with friendly options, and every mod ships as reviewable source code. Popular mods include Windows 11 Start Menu Styler, Middle click to close on the taskbar, Disable grouping on the taskbar and Taskbar on top for Windows 11. For glass effects: install Windows 11 Taskbar Styler from Explore and choose a theme such as TranslucentTaskbar, DockLike, WindowGlass, TintedGlass, FluentGlass, FrostyGlass, FrostedAcrylic, LiquidGlass2 or OS26 Liquid Glass, or write your own with the WindhawkBlur brush.",
+      "license": "GPL-3.0 for Windhawk itself; each mod is written by community authors — check its own notes.",
+      "previewNote": "The main-window screenshot from the official repository README — not output from this site."
+    }
+  },
+  {
     "id": "website-filee",
     "kind": "website",
     "resourceType": "GitHub 项目",
