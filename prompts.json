@@ -1,5 +1,38 @@
 [
   {
+    "id": "website-agentusecases",
+    "kind": "website",
+    "title": "Agent Use Cases（AI Agent 真实用例库）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "AI Agent / 用例 / 灵感 / Claude Code / ChatGPT / n8n / 自动化 / 提示词",
+    "description": "收集网上真实 AI Agent 用法的案例库：每天从 Reddit、X、GitHub、博客等处扫描别人用 Claude Code、ChatGPT、Codex、n8n、Manus 等做成的事，目前约 1800 个，按主题分类、可搜索，大多附原始提示词和出处——没想好让 Agent 干什么时来“偷”个点子。",
+    "prompt": "Agent Use Cases（AI Agent 真实用例库）\n\n用途：收集网上真实 AI Agent 用法的案例库：每天从 Reddit、X、GitHub、博客等处扫描别人用 Claude Code、ChatGPT、Codex、n8n、Manus 等做成的事，目前约 1800 个，按主题分类、可搜索，大多附原始提示词和出处——没想好让 Agent 干什么时来“偷”个点子。\n\n说明：首页有当天热门和本周新增（收录时共 1793 条，本周新增 187 条），可以按 Top / New 排序，或按 Agent 筛选（Claude Code、Claude、Grok Bot、OpenClaw、n8n、Codex 等）。主题覆盖省钱理财、求职、自动化工作流、写代码建站、内容运营、日常琐事等。每条用例写明是谁用什么 Agent 做了什么，点 View prompt 看提示词，并标注来源链接。也可以提交自己的用例，或订阅每天早上 5 条的邮件。\n\n注意：用例来自网友自述，其中的收益、效果（比如炒股、加密货币赚了多少）没有经过核实，别当成投资建议照做。\n\n网站：https://agentusecases.ai\n\n收录状态：仅收藏浏览，未订阅、未提交内容。",
+    "source": "https://agentusecases.ai/",
+    "officialUrl": "https://agentusecases.ai/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-agentusecases/site.png",
+      "alt": "agentusecases.ai 首页实际浏览器截图：左侧是站点介绍和按 Agent 分类，右侧是今日热门用例卡片",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://agentusecases.ai/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-02 实际打开官网首页后的截图。",
+    "addedAt": "2026-11-02",
+    "verifiedAt": "2026-11-02",
+    "en": {
+      "title": "Agent Use Cases (real AI agent use cases)",
+      "description": "A library of real things people do with AI agents, scanned daily from Reddit, X, GitHub, blogs and more — about 1,800 cases built with Claude Code, ChatGPT, Codex, n8n, Manus and others, grouped by topic, searchable and mostly with the original prompt and source. Come here to steal an idea when you are not sure what to hand an agent.",
+      "tags": "AI agents / Use cases / Inspiration / Claude Code / ChatGPT / n8n / Automation / Prompts",
+      "notes": "The home page shows trending and new-this-week cases (1,793 in total, 187 new this week when saved), sorted by Top or New or filtered by agent. Topics range from money and bills to job hunting, automation, coding and site building, content operations and everyday chores. Each case says who used which agent for what, with a View prompt button and a source link. You can submit your own or subscribe to five cases by email each morning. Cases are self-reported: claimed profits and results (stock or crypto gains, for example) are unverified and are not investment advice.",
+      "previewNote": "Screenshot of the official home page taken on 2026-11-02."
+    }
+  },
+  {
     "id": "website-translucenttb",
     "kind": "website",
     "resourceType": "GitHub 项目",
