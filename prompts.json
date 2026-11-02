@@ -1,5 +1,41 @@
 [
   {
+    "id": "skill-minimal-logo-design",
+    "kind": "skill",
+    "resourceType": "Logo 设计 Skill",
+    "title": "Minimal Logo Design（极简 Logo 设计）",
+    "category": "界面设计",
+    "skillTopics": [
+      "视觉设计"
+    ],
+    "tags": "Logo / 品牌识别 / 字标 / 中文字形 / 极简 / 白底预览 / Codex / Skill",
+    "description": "极简 Logo 设计 Skill：给出品牌名、行业、受众和关键词，它先判断这个品牌的主角是定制字标、抽象几何标、图形系统还是趣味手绘形，再出几个差异明显、能缩小、能单色成立的 Logo 方向，白底 JPG 预览加 PNG 存档；中文字标会从笔画、留白和重心做原创字形，不是直接套现成字体。",
+    "prompt": "Minimal Logo Design（极简 Logo 设计）\n类型：Logo 设计 Skill\n\n用途：极简 Logo 设计 Skill：给出品牌名、行业、受众和关键词，它先判断这个品牌的主角是定制字标、抽象几何标、图形系统还是趣味手绘形，再出几个差异明显、能缩小、能单色成立的 Logo 方向，白底 JPG 预览加 PNG 存档；中文字标会从笔画、留白和重心做原创字形，不是直接套现成字体。\n\n说明：每个方向只留一个主记忆点，主标按 70 / 20 / 10 分配（70% 主识别、20% 必要辅助、10% 描述信息）。默认交付核心 Logo；需要时再出双语锁定版和延展系统版（用于海报、包装、导视），不和主标混在一张图里。质量底线：不复刻参考案例或现有商标，不用行业直白图标（摄影不画相机、科技不画芯片），文字必须拼写准确、中文可读，缩小后还认得出、单色也成立。适合建筑、艺术、摄影、音乐、时尚、家具、酒店与生活方式品牌。\n\n使用示例：\n$minimal-logo-design\n\n为「浮光 AFTERLIGHT」做 3 个 1:1 Logo 方向。\n它是一个摄影与视觉艺术工作室，关键词是：光、时间、瞬间、观察。\n气质要安静、诗意、国际化；不要相机图标。\n请使用白底 JPG 预览，并同步提供白底 PNG 保存文件。\n\nBrief 建议写清：品牌名、行业与受众、一句话理念、关键词、不要什么、输出数量。\n\n安装：下载仓库，把含 SKILL.md 的根目录放进技能目录并命名为 minimal-logo-design（Codex 用户级目录 ~/.agents/skills/，Windows 为 %USERPROFILE%\\.agents\\skills\\），在会话里用 $minimal-logo-design 调用。Skill 只负责设计判断和提示词，出图依赖当前环境的图像生成工具；产出是图片概念稿，不是可编辑的矢量文件。\n\n许可：仓库未附许可证文件\n\n作者：FANTASY / 梵想美学\nGitHub：https://github.com/dacnay816y62-hub/minimal-logo-design\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/dacnay816y62-hub/minimal-logo-design",
+    "repository": "https://github.com/dacnay816y62-hub/minimal-logo-design",
+    "officialUrl": "https://github.com/dacnay816y62-hub/minimal-logo-design",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-minimal-logo-design/author-examples-1400.jpg",
+      "alt": "Minimal Logo Design 作者示例总览：56 个白底 Logo 方向，包括中英文定制字标、抽象几何标和手绘小角色",
+      "width": 1400,
+      "height": 1400
+    },
+    "previewSource": "https://github.com/dacnay816y62-hub/minimal-logo-design/blob/main/assets/logo-examples-25x25cm.jpg",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者仓库里的 56 个 Logo 方向示例总览（按比例缩小）；非本次运行成果。",
+    "addedAt": "2026-11-02",
+    "verifiedAt": "2026-11-02",
+    "en": {
+      "title": "Minimal Logo Design",
+      "description": "A minimal logo design skill: give it a brand name, industry, audience and keywords, and it first decides whether the hero should be a custom wordmark, an abstract geometric mark, a pattern system or a playful hand-drawn character, then produces several clearly different logo directions that work small and in one colour — previewed as white-background JPGs with PNG copies. Chinese wordmarks are drawn from strokes, white space and balance rather than an off-the-shelf font.",
+      "tags": "Logo / Brand identity / Wordmarks / Chinese lettering / Minimal / White-background previews / Codex / Skill",
+      "notes": "Each direction keeps one memorable move, with a 70 / 20 / 10 split between the main mark, supporting elements and descriptive text. The core logo comes first; bilingual lockups and extended systems for posters, packaging and signage are separate. Ground rules: no copying references or existing trademarks, no literal industry icons (no camera for photography, no chip for tech), correct spelling and readable Chinese, and marks that still read small and in one colour. Install by putting the folder with SKILL.md in your skills directory as minimal-logo-design (for Codex, ~/.agents/skills/) and call $minimal-logo-design. Image output depends on the image tools in your environment, and the results are image concepts, not editable vector files. By FANTASY / 梵想美学.",
+      "license": "No license file in the repository",
+      "previewNote": "The author’s overview of 56 example logo directions from the repository (scaled down) — not output from this site."
+    }
+  },
+  {
     "id": "website-agentusecases",
     "kind": "website",
     "title": "Agent Use Cases（AI Agent 真实用例库）",
