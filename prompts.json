@@ -1,5 +1,178 @@
 [
   {
+    "id": "skill-img2threejs",
+    "kind": "skill",
+    "resourceType": "图生 3D 代码 Skill",
+    "title": "img2threejs（一张图重建 Three.js 模型）",
+    "category": "其他",
+    "skillTopics": [
+      "视觉设计",
+      "开发工具"
+    ],
+    "tags": "Three.js / 图生 3D / 程序化建模 / WebGL / TypeScript / Claude Code / Codex / Skill",
+    "description": "让 Agent 把一张参考图里的物体或角色，用纯代码重建成可动画的 Three.js 模型：输出 TypeScript 写的程序化模型，不用网格文件、摄影测量或下载素材，能在浏览器里旋转查看、继续修改。",
+    "prompt": "img2threejs（一张图重建 Three.js 模型）\n类型：图生 3D 代码 Skill\n\n用途：让 Agent 把一张参考图里的物体或角色，用纯代码重建成可动画的 Three.js 模型：输出 TypeScript 写的程序化模型，不用网格文件、摄影测量或下载素材，能在浏览器里旋转查看、继续修改。\n\n说明：给一张参考图，它生成一个 TypeScript 写的 THREE.Group 工厂函数，用基本几何体、程序化着色器和生成的几何形状还原物体，并带枢轴、挂点、碰撞体等层级，方便后续做动画。流程分阶段：先列出决定辨识度的小细节，再按 blockout → 结构 → 形体 → 材质 → 表面 → 灯光 → 交互 → 优化 一步步生成和视觉复核，不达标就自我修正；校验由 Python 脚本完成，模型 Token 只花在视觉判断和写代码上。物体和角色走不同流程，角色有比例、面部特征和姿势的专门规则。单张图无法保证百分百还原，它会报告各区域的置信度，必要时要求更多视角。另有室内、PixiJS 2D 等插件。\n\n官方展示站的模型都是生成的代码，可在浏览器里旋转查看并读源码，包括海岛场景、吉他、猫、星舰、游戏角色和武器。\n\n安装（需要 Node.js 18+、Git、Python 3.10+，以及 Claude Code、Codex、OpenCode 或 Hermes）：\nnpx --yes img2threejs@latest install\nnpx --yes img2threejs@latest doctor\n装好后重启 Agent。\n\n注意：它重建的是图中的单个物体或场景，不是把任意图片一键变成网页；复杂模型要跑多轮，会消耗较多额度。用它重建游戏角色、武器皮肤等时，原作的版权不会因此转移。\n\n许可：Apache-2.0\n\nGitHub：https://github.com/img2threejs/img2threejs\n在线展示：https://img2threejs.io/\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/img2threejs/img2threejs",
+    "repository": "https://github.com/img2threejs/img2threejs",
+    "officialUrl": "https://img2threejs.io/",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-img2threejs/official-site.png",
+      "alt": "img2threejs 官方展示站首页的实际浏览器截图：最新案例和“Build the mesh. Keep the source.”标题",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://img2threejs.io/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-05 实际打开官方展示站后的截图；非本次运行成果。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "img2threejs (rebuild an image as a Three.js model)",
+      "description": "Has your agent rebuild the object or character in one reference image as an animation-ready Three.js model made entirely of code: procedural TypeScript, with no mesh files, photogrammetry or downloaded assets, that you can orbit in the browser and keep editing.",
+      "tags": "Three.js / Image to 3D / Procedural modelling / WebGL / TypeScript / Claude Code / Codex / Skill",
+      "notes": "From one image it produces a TypeScript THREE.Group factory built from primitives, procedural shaders and generated geometry, with pivots, sockets and colliders for animation. A staged pipeline lists the identity-defining details, then generates and visually reviews each pass from blockout to optimisation, self-correcting until it passes; Python scripts handle validation so tokens go to visual judgement and code. Objects and characters follow separate tracks, and a single image cannot guarantee a perfect likeness, so it reports per-region confidence. Needs Node.js 18+, Git, Python 3.10+ and Claude Code, Codex, OpenCode or Hermes. Install with npx --yes img2threejs@latest install, then restart your agent. It rebuilds the subject of an image rather than turning any image into a web page, complex models take several passes, and rebuilding a game character or weapon skin does not change who owns the original.",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official showcase site taken on 2026-11-05 — not output from this site."
+    }
+  },
+  {
+    "id": "website-reactdrops",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "ReactDrops（创意 React 组件库）",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "React / 组件库 / 液态玻璃 / WebGL / shadcn / 动效 / 物理 / 折射",
+    "description": "创意 React 组件库：玻璃折射、液态玻璃 Logo、肥皂泡按钮、物理掉落、等高线背景等效果，目前 11 个组件且都标为免费，能在网页上实时预览、调参，再用 shadcn CLI 把源码装进自己的项目。",
+    "prompt": "ReactDrops（创意 React 组件库）\n类型：GitHub 项目\n\n用途：创意 React 组件库：玻璃折射、液态玻璃 Logo、肥皂泡按钮、物理掉落、等高线背景等效果，目前 11 个组件且都标为免费，能在网页上实时预览、调参，再用 shadcn CLI 把源码装进自己的项目。\n\n说明：现有组件：Bubble UI（肥皂泡按钮与表单控件）、Chromatic Button（WebGL 炫彩按钮）、Showcase Pointer（演示用的多色光标）、Refracted Text（玻璃折射文字）、Fractal Glass（条纹玻璃图片效果，可导出 PNG）、Liquid Glass Logo（水滴变玻璃片折射你的 Logo）、Liquid Glass Orb（AI 界面用的液态玻璃球）、Topographic Terrain 和 Topographic Flow（等高线背景）、Fan Gallery（扇形画廊）、Shape Physics（可抛掷的 3D 形状）。用 TypeScript 编写并遵循 prefers-reduced-motion，大多只依赖 React。\n\n安装示例：npx shadcn@latest add https://reactdrops.dev/r/refracted-text.json\n\n许可：ReactDrops Component License 1.0（不是 MIT）。可免费用于个人和商业成品项目，但不能把组件当组件库、模板或代码包再分发，无论免费还是收费。详见仓库 LICENSE。\n\n网站：https://reactdrops.dev\n组件列表：https://reactdrops.dev/components\nGitHub：https://github.com/crisjavr/reactdrops\n\n收录状态：仅收藏浏览，未安装或登录。",
+    "source": "https://reactdrops.dev/",
+    "repository": "https://github.com/crisjavr/reactdrops",
+    "officialUrl": "https://reactdrops.dev/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-reactdrops/official-site.png",
+      "alt": "ReactDrops 的 Fractal Glass 组件页面实际浏览器截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://reactdrops.dev/components/image/fractal-glass",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-05 实际打开官网 Fractal Glass 组件页后的截图。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "ReactDrops (creative React components)",
+      "description": "A creative React component library with glass refraction, liquid glass logos, soap-bubble buttons, falling physics and contour backgrounds. All 11 current components are marked free: preview and tweak them live on the site, then install the source into your project with the shadcn CLI.",
+      "tags": "React / Component library / Liquid glass / WebGL / shadcn / Motion / Physics / Refraction",
+      "notes": "Components: Bubble UI, Chromatic Button, Showcase Pointer, Refracted Text, Fractal Glass (with PNG export), Liquid Glass Logo, Liquid Glass Orb, Topographic Terrain, Topographic Flow, Fan Gallery and Shape Physics. Written in TypeScript, respects prefers-reduced-motion, and most need nothing beyond React. Example install: npx shadcn@latest add https://reactdrops.dev/r/refracted-text.json",
+      "license": "ReactDrops Component License 1.0, not MIT: free in personal and commercial end products, but no redistribution as a component library, template or code bundle, paid or free. See the LICENSE file.",
+      "previewNote": "Screenshot of the official Fractal Glass component page taken on 2026-11-05."
+    }
+  },
+  {
+    "id": "website-motion-library",
+    "kind": "website",
+    "title": "Motion Library 动态收藏",
+    "category": "动画动效",
+    "topics": [
+      "动效灵感"
+    ],
+    "tags": "网页动效 / 动画灵感 / AI 提示词 / CSS / 文字动画 / 按钮 / 背景 / 繁体中文",
+    "description": "网页动效灵感库：收录 331 种动效，涵盖文字、按钮、卡片、图形、背景、版面和游标，可以按元件、时机和情境交叉筛选，每个都有示意预览，点一下就能复制 AI 提示词，让 Agent 照着做出来。",
+    "prompt": "Motion Library 动态收藏\n\n用途：网页动效灵感库：收录 331 种动效，涵盖文字、按钮、卡片、图形、背景、版面和游标，可以按元件、时机和情境交叉筛选，每个都有示意预览，点一下就能复制 AI 提示词，让 Agent 照着做出来。\n\n说明：筛选分三组：元件（文字 106、按钮 21、表单与控制项 17、卡片与群组 41、图片与媒体 22、图形与 SVG 35、背景与氛围 36、版面与页面 37、游标 16）、时机（进场、退场、切换、循环待机、悬停与点击、卷动触发、拖曳手势）、情境（标题 Hero、强调重点、数字资讯、背景装饰、转场切换、Logo 与品牌、介面互动、卷动效果、App 介面）。可以输入自己的文字替换预览，也能按技术筛选；互动类效果可以直接用鼠标试。点效果名称看大预览和完整提示词。界面是繁体中文，也可以投稿。\n\n网站：https://kittenjam-motion-library.vercel.app\n\n收录状态：仅收藏浏览，未投稿。",
+    "source": "https://kittenjam-motion-library.vercel.app/",
+    "officialUrl": "https://kittenjam-motion-library.vercel.app/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-motion-library/official-site.png",
+      "alt": "Motion Library 动态收藏首页实际浏览器截图：331 种动效、三组筛选和文字动效卡片",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://kittenjam-motion-library.vercel.app/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-05 实际打开网站首页后的截图，隐藏了左下角的新功能引导气泡。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "Motion Library",
+      "description": "A web motion inspiration library of 331 effects across text, buttons, cards, graphics, backgrounds, layouts and cursors. Cross-filter by element, timing and context, preview each one, and copy its AI prompt in one click so an agent can build it.",
+      "tags": "Web motion / Animation inspiration / AI prompts / CSS / Text effects / Buttons / Backgrounds / Traditional Chinese",
+      "notes": "Three filter groups cover elements, timing (enter, exit, transition, idle loop, hover and click, scroll, drag) and context (hero titles, emphasis, numbers, decoration, logos, interface, scroll effects, app UI). You can type your own preview text, filter by technology and try interactive effects with the mouse. Click an effect name for a large preview and the full prompt. The interface is in Traditional Chinese, and visitors can submit effects.",
+      "previewNote": "Screenshot of the home page taken on 2026-11-05, with the bottom-left feature tour bubble hidden."
+    }
+  },
+  {
+    "id": "website-daozai",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "岛仔 Daozai（Windows 灵动岛）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "Windows / 灵动岛 / 桌面美化 / 验证码 / 日程 / AI 额度 / Rust / 开源",
+    "description": "Rust 写的 Windows 桌面信息岛：贴在屏幕顶部，收起时是一条小刘海，鼠标靠近才展开；音乐歌词、邮件验证码一键复制、日程提醒、待办、文件暂存、专注和喝水提醒，还能看 AI 额度。不依赖 Electron，各项功能可按需开关。",
+    "prompt": "岛仔 Daozai（Windows 灵动岛）\n类型：GitHub 项目\n\n用途：Rust 写的 Windows 桌面信息岛：贴在屏幕顶部，收起时是一条小刘海，鼠标靠近才展开；音乐歌词、邮件验证码一键复制、日程提醒、待办、文件暂存、专注和喝水提醒，还能看 AI 额度。不依赖 Electron，各项功能可按需开关。\n\n说明：桌面伙伴会眨眼、打盹、喝水，听歌时拿起麦克风跟唱，也可切极简模式。音乐读取 Windows 媒体会话，能控制播放并显示单行歌词。文件置物架可拖入暂存、再拖到其他应用，移除记录不删原文件。邮件支持多账号收信、识别验证码并点击复制。日程合并工作日历和邮件邀请。AI 额度支持 Codex、Claude、Kimi、Grok Bot、Gemini，多账号，收起时用圆环显示、展开看重置时间。还有电量、网络、音量、大写锁定等系统提示。\n\n可连接的服务：邮箱有 QQ、163、126、腾讯企业邮、iCloud、Gmail（IMAP，用授权码或 App 专用密码）；日历有飞书、钉钉、企业微信（CalDAV）。作者说明钉钉和企业微信尚未完成真实账号验收。\n\n安全提醒：程序未做商业代码签名，Windows 可能提示未知发布者，作者建议核对 Release 里的 SHA256SUMS.txt 后再运行。使用邮件功能要把邮箱授权码交给它（存在 Windows 凭据管理器），AI 额度会读取本机已有的 AI 客户端登录信息，请自己判断是否开启。开启相关功能后会访问服务商接口和歌词服务，不是完全离线。\n\n平台：Windows 10/11 x64，需要支持 OpenGL 的显卡驱动；作者在 Windows 11 实测过，Windows 10 和多显示器仍需更多反馈。\n\n许可：MIT（第三方图标和品牌标识另有各自权利）\n\n作者：小唐的 Token（Renly1994）\nGitHub：https://github.com/Renly1994/xiaotang-daozai\n下载：https://github.com/Renly1994/xiaotang-daozai/releases\n\n收录状态：仅收藏，未下载、安装或运行。",
+    "source": "https://github.com/Renly1994/xiaotang-daozai",
+    "repository": "https://github.com/Renly1994/xiaotang-daozai",
+    "officialUrl": "https://github.com/Renly1994/xiaotang-daozai/releases",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-daozai/author-calendar.png",
+      "alt": "岛仔官方界面截图：从屏幕顶部展开的深色日程面板，左边月历，右边当天安排和提醒倒计时",
+      "width": 920,
+      "height": 510
+    },
+    "previewSource": "https://github.com/Renly1994/xiaotang-daozai/blob/main/docs/images/calendar.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方仓库里的原始界面截图，日程是演示内容；非本次运行成果。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "Daozai (Dynamic Island for Windows)",
+      "description": "A Windows desktop info island written in Rust. It sits at the top of the screen as a small notch and expands when the cursor comes near, with music lyrics, one-click email verification codes, calendar reminders, to-dos, a file shelf, focus and water reminders, and AI usage quotas. No Electron, and every feature can be switched off.",
+      "tags": "Windows / Dynamic Island / Desktop customisation / Verification codes / Calendar / AI quota / Rust / Open source",
+      "notes": "A little desktop companion blinks, naps and sings along to music, with a minimal mode. Reads Windows media sessions for playback control and single-line lyrics; a file shelf for temporary drag-in and drag-out; multi-account email with code detection; a calendar merging work calendars and email invites; AI quotas for Codex, Claude, Kimi, Grok Bot and Gemini; and system status hints. Connects to QQ, 163, 126, Tencent Exmail, iCloud and Gmail over IMAP and Feishu, DingTalk and WeCom over CalDAV (the author notes DingTalk and WeCom have not finished real-account testing). The build is not commercially code-signed, so check SHA256SUMS.txt before running. Email needs an app password, stored in Windows Credential Manager, and AI quotas read existing local client logins, so decide whether to enable them. Windows 10/11 x64 with OpenGL drivers; tested by the author on Windows 11.",
+      "license": "MIT (third-party icons and brand marks keep their own rights)",
+      "previewNote": "An original interface screenshot from the official repository, with demo calendar entries — not output from this site."
+    }
+  },
+  {
+    "id": "frontend-stack-consistency",
+    "kind": "prompt",
+    "title": "前端技术栈统一",
+    "category": "界面设计",
+    "topics": [
+      "后台布局"
+    ],
+    "tags": "前端 / 技术栈 / shadcn/ui / Lucide / Motion / dnd-kit / Zustand",
+    "description": "让 AI 写前端前先定好规矩：优先复用成熟库、组件源码可控、统一设计语言、限制重复依赖，并指定 UI、图标、动画、布局、拖拽和状态管理各用哪个库。",
+    "prompt": "优先复用成熟库、组件源代码可控、统一设计语言、严格限制重复依赖。\n\nUI 风格统一使用：shadcn/ui Nova\n图标统一使用：Lucide\n动画统一使用：Motion\n布局库：react-resizable-panels\n拖拽使用：dnd-kit\n状态管理使用：Zustand",
+    "preview": {
+      "type": "image",
+      "src": "assets/frontend-stack-consistency/concept.png",
+      "alt": "前端技术栈统一提示词 概念示意图：列出六类库的选择（根据帖子内容绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据帖子内容绘制，不是真实界面或运行结果。",
+    "sourceNote": "X @jakevin7（卡比卡比）的分享，经小红书 @赛博青青 转发，用户提供截图。原帖用“譬如”列举这些库，并以省略号结尾，可按项目需要替换或补充。",
+    "addedAt": "2026-11-05",
+    "en": {
+      "title": "Unified Frontend Stack",
+      "description": "Set the rules before AI writes your frontend: reuse mature libraries, keep component source under control, hold one design language, limit duplicate dependencies, and name the library for UI, icons, motion, layout, drag and drop, and state.",
+      "tags": "Frontend / Tech stack / shadcn/ui / Lucide / Motion / dnd-kit / Zustand",
+      "prompt": "Prefer reusing mature libraries, keep component source code under control, use one unified design language, and strictly limit duplicate dependencies.\n\nUI style: always use shadcn/ui Nova\nIcons: always use Lucide\nAnimation: always use Motion\nLayout: react-resizable-panels\nDrag and drop: dnd-kit\nState management: Zustand",
+      "previewNote": "Concept illustration drawn from the post — not a real interface or output."
+    }
+  },
+  {
     "id": "skill-scrapling",
     "kind": "skill",
     "resourceType": "网页抓取框架 / 配套 Skill",
