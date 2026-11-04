@@ -1,5 +1,84 @@
 [
   {
+    "id": "website-mousedock",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "MouseDock（外设电量面板）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "Windows / 外设电量 / 无线鼠标 / 键盘 / 桌面小组件 / 任务栏 / C# / 开源",
+    "description": "Windows 桌面外设电量面板：自动识别 2.4G、蓝牙和有线外设，实时显示鼠标、键盘等设备的电量，可以放在任务栏、屏幕右侧、卡片面板或悬浮图标上。读不到就显示“—”，不编数字；除检查更新外不联网，也没有遥测。",
+    "prompt": "MouseDock（外设电量面板）\n类型：GitHub 项目\n\n用途：Windows 桌面外设电量面板：自动识别 2.4G、蓝牙和有线外设，实时显示鼠标、键盘等设备的电量，可以放在任务栏、屏幕右侧、卡片面板或悬浮图标上。读不到就显示“—”，不编数字；除检查更新外不联网，也没有遥测。\n\n说明：四种形态：卡片面板、迷你 2×2、悬浮图标、任务栏电量环（最多 6 台设备）；还有屏幕右侧电量环模式。悬浮图标的外壳和内容可换，内容有照片、角色动画、经典电池、极简等。电量环绿色正常、红色低电量、蓝色充电、虚线未知，悬停看具体百分比。接收器和它背后的鼠标会合并成一台，内置键盘、触摸板、摄像头自动过滤，拔出就从列表消失。默认 5 秒刷新一次（可调 5–120 秒）。电量按顺序尝试 HID 标准电池、罗技 HID++、厂商私有协议和 BLE GATT。\n\n设备支持：仓库实测列表还不长，包括狼蛛 AULA SC580、VGN Neon75 Air，README 另列 MCHOSE K87 V3、RK R98Pro V2 等键盘；部分设备标注待验证。经典蓝牙耳机是否有电量要看 Windows 是否提供，读不到就显示“—”。文档里没有列出手柄。买之前别默认自己的型号一定支持。\n\n安装：在 Releases 下载 MouseDock-v1.3.9-win-x64.zip，解压后双击 exe，约 82 MB，不用另装 .NET；首次启动要解包，约 30 秒。需要 Windows 10 1809+ 或 Windows 11。\n\n安全提醒：这是个刚起步的小项目（收录时 10 个 Star）。程序未签名，SmartScreen 可能提示未知发布者，与 HID 设备通信也可能触发杀软误报；作者提供 SHA-256 校验值和可审计的源码，运行前请先核对。自动更新可在设置里关闭。\n\n许可：MIT\n\nGitHub：https://github.com/late-autumn-gif/mousedock\n下载：https://github.com/late-autumn-gif/mousedock/releases\n\n收录状态：仅收藏，未下载、安装或运行。",
+    "source": "https://github.com/late-autumn-gif/mousedock",
+    "repository": "https://github.com/late-autumn-gif/mousedock",
+    "officialUrl": "https://github.com/late-autumn-gif/mousedock/releases",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-mousedock/author-dock.png",
+      "alt": "MouseDock 官方截图：深色卡片面板显示狼蛛 SC580 鼠标 76%、VGN Neon75 Air 键盘 82% 的电量",
+      "width": 536,
+      "height": 316
+    },
+    "previewSource": "https://github.com/late-autumn-gif/mousedock/blob/main/docs/screenshots/dock.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方 README 里的卡片面板截图；非本次运行成果。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "MouseDock (peripheral battery panel)",
+      "description": "A Windows desktop battery panel that auto-detects 2.4 GHz, Bluetooth and wired peripherals and shows live levels for mice, keyboards and more, on the taskbar, screen edge, a card panel or a floating icon. It shows a dash when a level cannot be read rather than guessing, and only goes online to check for updates, with no telemetry.",
+      "tags": "Windows / Peripheral battery / Wireless mouse / Keyboard / Desktop widget / Taskbar / C# / Open source",
+      "notes": "Card panel, mini 2×2, floating icon and taskbar rings (up to six devices), plus a screen-edge mode. Green is normal, red low, blue charging and a dashed ring unknown. Receivers merge with the mouse behind them, and built-in devices are filtered out. Reads levels through the HID battery usage, Logitech HID++, vendor protocols and BLE GATT, refreshing every 5–120 seconds. The tested device list is still short (AULA SC580, VGN Neon75 Air, MCHOSE K87 V3, RK R98Pro V2 and a few awaiting confirmation), classic Bluetooth headsets depend on Windows exposing a level, and controllers are not listed. Download the zip from Releases and run the exe (about 82 MB, no .NET needed); Windows 10 1809+ or 11. A young project with 10 stars when saved. Builds are unsigned and HID access can trigger antivirus false positives, so check the SHA-256 first.",
+      "license": "MIT",
+      "previewNote": "The card panel screenshot from the official README — not output from this site."
+    }
+  },
+  {
+    "id": "website-halobattery",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Halo Battery（托盘外设电量）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "Windows / 外设电量 / 系统托盘 / 无线鼠标 / 耳机 / 手柄 / Python / 开源",
+    "description": "把无线鼠标、键盘、耳机和手柄的电量统一放到 Windows 托盘，每台设备一个图标，不用装厂商软件。图标是一圈电量环，快到提醒线变琥珀色、到了变红，充电时绿环慢慢“呼吸”。支持 30 多个品牌，2.4G 接收器、USB 线和蓝牙都能读。",
+    "prompt": "Halo Battery（托盘外设电量）\n类型：GitHub 项目\n\n用途：把无线鼠标、键盘、耳机和手柄的电量统一放到 Windows 托盘，每台设备一个图标，不用装厂商软件。图标是一圈电量环，快到提醒线变琥珀色、到了变红，充电时绿环慢慢“呼吸”。支持 30 多个品牌，2.4G 接收器、USB 线和蓝牙都能读。\n\n说明：可以关掉 Synapse、G HUB、NGENUITY 等厂商软件，由它直接和接收器、USB 线或 Windows 蓝牙通信。品牌包括雷蛇、罗技、赛睿、HyperX、海盗船、华硕 ROG、索尼、Xbox、任天堂、8BitDo、Pulsar、Keychron 等。全屏打游戏时提醒会等到退出后再弹，并降低轮询频率。Windows 11 风格菜单，深浅色都适配，托盘里一键更新。右键图标可以改名、隐藏、设提醒线或开机启动。完整设备列表里标了连接方式和是否经过实机测试。\n\n安装：在 Releases 下载 HaloBattery-<版本>.zip，解压到单独的文件夹（如 C:\\Tools），运行 HaloBattery\\HaloBattery.exe；.exe 要和旁边的 _internal 文件夹放在一起。\n\n安全提醒：程序未做代码签名，Windows SmartScreen 可能提示未知应用。作者说明发布包由 GitHub Actions 从仓库直接构建，构建日志公开，确认下载来源是官方仓库后再选“仍要运行”。发诊断报告前，可把里面的蓝牙 MAC 地址和设备序列号替换掉。\n\n许可：MIT\n\nGitHub：https://github.com/HeyOkay/HaloBattery\n下载：https://github.com/HeyOkay/HaloBattery/releases/latest\n\n收录状态：仅收藏，未下载、安装或运行。",
+    "source": "https://github.com/HeyOkay/HaloBattery",
+    "repository": "https://github.com/HeyOkay/HaloBattery",
+    "officialUrl": "https://github.com/HeyOkay/HaloBattery/releases/latest",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-halobattery/author-icons.png",
+      "alt": "Halo Battery 官方图标总览：耳机、鼠标、键盘、手柄和蓝牙设备从 100% 到 15%、充电和休眠的电量环，分深色和浅色任务栏两组",
+      "width": 780,
+      "height": 1372
+    },
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/website-halobattery/author-icons-dark.png",
+      "alt": "Halo Battery 官方图标总览的深色任务栏部分：各类设备在不同电量下的电量环",
+      "width": 780,
+      "height": 686
+    },
+    "previewSource": "https://github.com/HeyOkay/HaloBattery/blob/main/docs/icons.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方 README 里的图标状态总览；卡片封面是其中的深色任务栏部分。非本次运行成果。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "Halo Battery (tray battery levels)",
+      "description": "Battery levels for your wireless mouse, keyboard, headset and controller in the Windows tray, one icon per device and no vendor software. Each ring fills with the level, turns amber near your alert level and red below it, and breathes green while charging. Covers 30+ brands over a 2.4 GHz receiver, USB or Bluetooth.",
+      "tags": "Windows / Peripheral battery / System tray / Wireless mouse / Headset / Controller / Python / Open source",
+      "notes": "Lets you close Synapse, G HUB, NGENUITY and the like, talking to the receiver, cable or Windows Bluetooth itself. Brands include Razer, Logitech, SteelSeries, HyperX, Corsair, ASUS ROG, Sony, Xbox, Nintendo, 8BitDo, Pulsar and Keychron. Alerts wait until your full-screen game closes, polling slows while you play, and updates install from the tray. Right-click an icon to rename, hide, set an alert level or start with Windows. Download the zip from Releases, extract it to its own folder and run HaloBattery\\HaloBattery.exe beside its _internal folder. The file is not code-signed, so SmartScreen may warn; the author says releases are built by GitHub Actions with public logs, so confirm you downloaded from the official repository first. Diagnostics reports contain Bluetooth MAC addresses and serial numbers, which you can mask.",
+      "license": "MIT",
+      "previewNote": "The icon state overview from the official README; the card cover is its dark taskbar section — not output from this site."
+    }
+  },
+  {
     "id": "skill-img2threejs",
     "kind": "skill",
     "resourceType": "图生 3D 代码 Skill",
