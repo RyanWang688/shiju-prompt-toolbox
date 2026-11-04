@@ -1,5 +1,74 @@
 [
   {
+    "id": "website-aligncanvas",
+    "kind": "website",
+    "title": "AlignCanvas（图片变 3D 动效）",
+    "category": "动画动效",
+    "topics": [
+      "创作工具"
+    ],
+    "tags": "3D 动效 / 图片动画 / 循环视频 / 液态玻璃 / 轮播 / WebGL / 社媒素材 / Beta",
+    "description": "把图片做成 3D 动效循环视频的网页工具：126 个模板，有 3D 轮播、液态玻璃、无限画廊和动态雕塑，拖进图片、调镜头和节奏，就能导出首尾无缝的循环。不用时间线和关键帧，无需安装，在浏览器本地渲染。",
+    "prompt": "AlignCanvas（图片变 3D 动效）\n\n用途：把图片做成 3D 动效循环视频的网页工具：126 个模板，有 3D 轮播、液态玻璃、无限画廊和动态雕塑，拖进图片、调镜头和节奏，就能导出首尾无缝的循环。不用时间线和关键帧，无需安装，在浏览器本地渲染。\n\n说明：模板分 Signature、转场、轮播与滑块、环绕、堆叠网格、3D 展示、液态玻璃、无限画廊、动态、雕塑等类别，比如唱片箱、魔方、滑动拼图、鱼眼墙、万花筒、龙卷风。每个模板都是实时 3D 场景，可以调镜头、缩放、环绕、速度和材质。官网称图片在本机渲染，只有主动把项目同步到云端时才会上传。官方 FAQ 写明导出内容可商用，无需署名。\n\n价格（收录时，Beta 创始价）：免费版 116 个模板、5 次导出，视频最高 1080p 30fps，图片最高 1440p；Pro 每月 4 美元，按年付 49 美元，解锁无限导出、4K、120fps、PNG 序列和 Signature 模板；Lifetime 一次性 199 美元。\n\n注意：目前还是 Beta，模板数和价格可能变动，你的截图里是 104 个，收录时官网已是 126 个。视频导出依赖 WebCodecs，建议用较新的桌面版 Chrome、Edge 或 Safari。\n\n网站：https://aligncanvas.com\n编辑器：https://aligncanvas.com/create\n\n收录状态：仅收藏浏览，未注册或导出。",
+    "source": "https://aligncanvas.com/",
+    "officialUrl": "https://aligncanvas.com/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-aligncanvas/official-site.png",
+      "alt": "AlignCanvas 官网模板库实际浏览器截图：唱片箱、拇指坞、魔方、滑动拼图等 3D 动效模板卡片",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://aligncanvas.com/#templates",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-05 实际打开官网模板区后的截图，隐藏了 Cookie 提示框。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "AlignCanvas (images to 3D motion)",
+      "description": "A browser tool that turns images into seamless 3D motion loops. Choose from 126 templates, including 3D carousels, liquid glass, infinite galleries and kinetic sculptures, drop in your images, shape the camera and pace, and export. No timeline, no keyframes and nothing to install, with rendering on your own device.",
+      "tags": "3D motion / Image animation / Looping video / Liquid glass / Carousels / WebGL / Social content / Beta",
+      "notes": "Each template is a live 3D scene with controls for camera, zoom, orbit, speed and materials. The site says images render locally and upload only if you sync a project to the cloud, and its FAQ says exports can be used commercially with no attribution. Pricing when saved (Beta founding price): Free has 116 templates, 5 exports, video up to 1080p at 30 fps and stills up to 1440p; Pro is $4 a month, billed at $49 a year, with unlimited exports, 4K, 120 fps, PNG sequences and Signature templates; Lifetime is $199 once. Still in beta, so template counts and prices may change. Video export relies on WebCodecs, so use a recent desktop Chrome, Edge or Safari.",
+      "previewNote": "Screenshot of the official template library taken on 2026-11-05, with the cookie notice hidden."
+    }
+  },
+  {
+    "id": "website-omniedu",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "OmniEdu（K-12 教育开源大模型）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "AI 教育 / K-12 / 开源模型 / 多模态 / Hugging Face / 智能辅导 / 北京大学",
+    "description": "北京大学等机构开源的 K-12 教育大模型：面向“学—教”完整流程的多模态模型，把学科知识、课程标准对齐、学情诊断和教学支持结合起来，有 4B、9B、27B 三种规模，每种都有 BF16 和 FP8 版本。权重和训练数据都已公开。",
+    "prompt": "OmniEdu（K-12 教育开源大模型）\n类型：GitHub 项目\n\n用途：北京大学等机构开源的 K-12 教育大模型：面向“学—教”完整流程的多模态模型，把学科知识、课程标准对齐、学情诊断和教学支持结合起来，有 4B、9B、27B 三种规模，每种都有 BF16 和 FP8 版本。权重和训练数据都已公开。\n\n说明：训练围绕四项能力：学科能力（解决各学科和多种输入形式的 K-12 问题）、课程基础（把题目和概念对应到课程标准与先修知识）、诊断推理（找出误解和知识缺口）、教学行动（给出针对性反馈、引导问题和讲解）。训练集含 69,999 条指令样本，来自 100 多个来源，其中 60,951 条是教育专用样本。\n\n模型下载体积（BF16 / FP8）：4B 为 8.46 / 5.14 GiB，9B 为 17.53 / 11.09 GiB，27B 为 50.96 / 28.30 GiB。这是权重文件大小，不是运行所需显存，实际还要预留更多内存。\n\n成绩：论文的 16 个模型对比里，OmniEdu-27B 在 K12-Bench、MathFish 和 LongTutor 教学分上排第一，其中 K12-Bench EM 为 63.12%。这些是作者在论文评测方案下报告的结果，作者也写明评测成绩不代表真实课堂的学习效果。\n\n使用：这是要自己部署的模型，不是打开就能用的产品，需要 GPU。适合想做 AI 辅导工具的开发者，也可用 Transformers 运行：把 MODEL_ID 设为 lhpku20010120/Omni-Edu-4B（或 9B、27B），并保持 enable_thinking=False。\n\n使用限制：作者说明模型用于研究、教育原型和教师辅助工具，可能给出错误答案或不合适的指导，重要场景要由教师审核输出。\n\n作者：梁浩等，北京大学、中国科学院大学、中关村学院\n\n许可：Apache-2.0\n\nGitHub：https://github.com/haolpku/Omni-Edu\n项目页：https://haolpku.github.io/Omni-Edu/\n论文：https://arxiv.org/abs/2609.23088\n模型：https://huggingface.co/lhpku20010120/Omni-Edu-4B\n数据集：https://huggingface.co/datasets/lhpku20010120/Omni-Edu\n\n收录状态：仅收藏，未下载或运行模型。",
+    "source": "https://github.com/haolpku/Omni-Edu",
+    "repository": "https://github.com/haolpku/Omni-Edu",
+    "officialUrl": "https://haolpku.github.io/Omni-Edu/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-omniedu/official-site.png",
+      "alt": "OmniEdu 官方项目页实际浏览器截图：标题 Know the curriculum. Teach the next step.，右侧是教学循环示意",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://haolpku.github.io/Omni-Edu/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-05 实际打开官方项目页后的截图；非模型运行成果。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "OmniEdu (open K-12 education models)",
+      "description": "Open K-12 foundation models from Peking University and partners: multimodal models for the full learning and teaching loop that combine subject knowledge, curriculum alignment, learner diagnosis and instructional support. They come in 4B, 9B and 27B scales, each in BF16 and FP8, with weights and training data published.",
+      "tags": "AI in education / K-12 / Open models / Multimodal / Hugging Face / Tutoring / Peking University",
+      "notes": "Training covers subject competence, curriculum grounding, diagnostic reasoning and pedagogical action, using 69,999 instruction examples from more than 100 sources. Download sizes (BF16 / FP8): 4B 8.46 / 5.14 GiB, 9B 17.53 / 11.09 GiB, 27B 50.96 / 28.30 GiB; these are weights, not runtime memory. In the paper’s 16-model comparison, OmniEdu-27B leads K12-Bench, MathFish and LongTutor’s teaching score under the authors’ protocol, and the authors note benchmarks do not establish classroom learning gains. You deploy it yourself on a GPU, so it suits developers building tutoring tools rather than end users. The authors intend it for research, prototypes and teacher assistance, and say educators should review outputs before consequential use. By Hao Liang and colleagues at Peking University, University of the Chinese Academy of Sciences and Zhongguancun Academy.",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official project page taken on 2026-11-05 — not model output."
+    }
+  },
+  {
     "id": "website-mousedock",
     "kind": "website",
     "resourceType": "GitHub 项目",
