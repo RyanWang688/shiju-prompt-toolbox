@@ -1,5 +1,41 @@
 [
   {
+    "id": "skill-scrapling",
+    "kind": "skill",
+    "resourceType": "网页抓取框架 / 配套 Skill",
+    "title": "Scrapling（自适应网页抓取框架）",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "tags": "爬虫 / 网页抓取 / 自适应选择器 / 隐身浏览器 / MCP / Python / Markdown / Agent Skill",
+    "description": "开源 Python 爬虫框架（GitHub 约 9.6 万 Star），把快速 HTTP 请求、隐身浏览器、解析和并发爬取放进一个库；网站改版后能自动重新定位元素，还带 MCP 服务器和官方 Agent Skill，让 Claude Code 等 Agent 能抓网页、把整站转成干净的 Markdown。",
+    "prompt": "Scrapling（自适应网页抓取框架）\n类型：网页抓取框架 / 配套 Skill\n\n用途：开源 Python 爬虫框架（GitHub 约 9.6 万 Star），把快速 HTTP 请求、隐身浏览器、解析和并发爬取放进一个库；网站改版后能自动重新定位元素，还带 MCP 服务器和官方 Agent Skill，让 Claude Code 等 Agent 能抓网页、把整站转成干净的 Markdown。\n\n说明：抓取：Fetcher 发快速 HTTP 请求并可模仿浏览器 TLS 指纹，StealthyFetcher 用浏览器渲染 JavaScript、保持登录会话，官方称能处理 Cloudflare Turnstile，还能在后台记录页面的 API 响应。解析：CSS、XPath、文本和正则搜索，查找相似元素，开启元素跟踪后网站结构变了也能重新定位，page.markdown() 一行转干净的 Markdown。爬取：写法类似 Scrapy 的 Spider，有并发、代理轮换、自动重试、AutoThrottle 自动调速、暂停续爬和 JSON / JSONL / CSV / XML 导出，可选 robots_txt_obey 遵守 robots.txt。也能在命令行或交互式 Shell 里用，不写代码就抓一个网址。\n\n给 AI 用：MCP 服务器让 Claude、Cursor 等直接抓网页；Agent Skill 名为 scrapling-official，教编程 Agent 按当前 API 写 Scrapling 代码，已在 Claude Code 和 OpenClaw 上测试。\n\n安装 Skill：npx skills add D4Vinci/Scrapling --skill scrapling-official\n安装框架（Python 3.10+）：pip install \"scrapling[all]\"，要用浏览器抓取时再运行 scrapling install；只用 HTTP 请求可 pip install scrapling。\n\n注意：绕过反爬能力是否有效要看目标网站的防护，博主和网友的效果说法未经核实。使用前请确认目标网站的服务条款、robots.txt 和当地法律允许抓取，不要抓取个人隐私或付费内容。README 里的代理、验证码服务是赞助广告，不是项目本身的一部分。\n\n许可：BSD-3-Clause\n\nGitHub：https://github.com/D4Vinci/Scrapling\n文档：https://scrapling.readthedocs.io/en/latest/\nAgent Skill 说明：https://scrapling.readthedocs.io/en/latest/ai/agent-skill.html\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/D4Vinci/Scrapling",
+    "repository": "https://github.com/D4Vinci/Scrapling",
+    "officialUrl": "https://scrapling.readthedocs.io/en/latest/",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-scrapling/official-site.png",
+      "alt": "Scrapling 官方文档首页的实际浏览器截图：深色页面，荧光绿 Scrapling 标志，下方是项目介绍和功能列表",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://scrapling.readthedocs.io/en/latest/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-05 实际打开官方文档首页后的截图，隐藏了 Cookie 提示和赞助横幅；非本次运行成果。",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "Scrapling (adaptive web scraping framework)",
+      "description": "An open-source Python web scraping framework (about 96k GitHub stars) that puts fast HTTP requests, stealth browsers, parsing and concurrent crawling in one library. It can relocate elements after a site redesign, and ships an MCP server and official Agent Skill so agents like Claude Code can scrape pages or turn whole sites into clean Markdown.",
+      "tags": "Web scraping / Crawling / Adaptive selectors / Stealth browser / MCP / Python / Markdown / Agent Skill",
+      "notes": "Fetcher sends fast HTTP requests with browser TLS impersonation; StealthyFetcher renders JavaScript, keeps sessions and, by the project’s account, handles Cloudflare Turnstile, and can record a page’s API responses. Parsing covers CSS, XPath, text and regex search, similar-element matching, element tracking across site changes, and page.markdown(). A Scrapy-like Spider API adds concurrency, proxy rotation, retries, AutoThrottle, pause/resume, JSON / JSONL / CSV / XML export and an optional robots_txt_obey flag. It also works from the CLI or an interactive shell. The MCP server lets Claude, Cursor and others scrape directly; the scrapling-official skill teaches coding agents the current API (tested on Claude Code and OpenClaw). Install the skill with npx skills add D4Vinci/Scrapling --skill scrapling-official, and the library (Python 3.10+) with pip install \"scrapling[all]\" followed by scrapling install for browser fetchers. Whether anti-bot bypassing works depends on the target, and creator or user claims are unverified. Check the site’s terms, robots.txt and local law before scraping, and avoid personal or paid content. Proxy and CAPTCHA services in the README are sponsor ads, not part of the project.",
+      "license": "BSD-3-Clause",
+      "previewNote": "Screenshot of the official documentation home page taken on 2026-11-05, with the cookie notice and sponsor banner hidden — not output from this site."
+    }
+  },
+  {
     "id": "skill-minimal-logo-design",
     "kind": "skill",
     "resourceType": "Logo 设计 Skill",
