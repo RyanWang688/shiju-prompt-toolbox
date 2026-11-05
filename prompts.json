@@ -1,5 +1,42 @@
 [
   {
+    "id": "skill-ins-editorial-layout",
+    "kind": "skill",
+    "resourceType": "Ins 风排版 Skill",
+    "title": "Ins Editorial Layout（Ins 风杂志排版）",
+    "category": "界面设计",
+    "skillTopics": [
+      "视觉设计"
+    ],
+    "tags": "Ins 风 / 杂志排版 / 照片日记 / Photo Dump / OOTD / 街拍 / 社媒 / Skill",
+    "description": "把 AI 街拍图包装成 Ins 风杂志排版的 Skill：外层套 Ins 顶底栏，配大字断行加星芒贴纸、括号画中画照片日记、暖白画廊留白或衬线注脚，让图片更像真实的社媒生活记录。默认输出 3:4（1080×1440）。",
+    "prompt": "Ins Editorial Layout（Ins 风杂志排版）\n类型：Ins 风排版 Skill\n\n用途：把 AI 街拍图包装成 Ins 风杂志排版的 Skill：外层套 Ins 顶底栏，配大字断行加星芒贴纸、括号画中画照片日记、暖白画廊留白或衬线注脚，让图片更像真实的社媒生活记录。默认输出 3:4（1080×1440）。\n\n说明：SKILL.md 把版式编成四大家族共 126 个编号：TYP（001–036，大字错落断行加星芒贴纸）、JNL（037–072，what I ( ) did ( ) in nov ( ) 括号画中画日记）、GAL（073–102，暖白底单张居中留白或四宫格，默认无字）、MAG（103–126，大画幅留白加衬线斜体注脚）。按说明，单张会默认用 GAL 无字版；要文字版或四宫格时明确说。\n\n使用示例：\n使用 ins-editorial-layout，把这些照片每张做一页，使用无字留白版。\n使用 ins-editorial-layout，制作杂志感大字和星芒贴纸排版。\n\n安装：下载仓库，把含 SKILL.md 的根目录命名为 ins-editorial-layout，放进 Agent 的技能目录。脚本依赖 Python 和 Pillow，字体文件要自己提供。\n\n实现情况：我读过 scripts/colx_ins_engine.py，里面实际只有 Ins 外框和三种渲染方式（TYP、JNL、GAL 含四宫格），没有 MAG、SVG 导出或批量逻辑；126 主要是版式编号，不是 126 套独立代码。README 也写明版式数量和导出能力以实际实现为准。其余效果要靠 Agent 按说明自己写代码或调整。\n\n来源：SKILL.md 里写的是 COLX「Ins 风视觉包装」SKU。这个仓库 2026-11-05 才建立，收录时 0 个 Star，README 称保留原始 Skill 内容，上传者不一定是原作者；与“总而言之”系列视频里的 Skill 版式一致，但不能确定是官方发布。\n\n注意：渲染出来的图片带 Ins 风格外框，属于视觉包装，别用来冒充真实账号的截图。\n\n许可：仓库未附许可证文件\n\nGitHub：https://github.com/xjsbx8/ins-editorial-layout\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/xjsbx8/ins-editorial-layout",
+    "repository": "https://github.com/xjsbx8/ins-editorial-layout",
+    "officialUrl": "https://github.com/xjsbx8/ins-editorial-layout",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ins-editorial-layout/concept.png",
+      "alt": "Ins Editorial Layout 概念示意图（根据项目说明绘制，非真实界面）：TYP、JNL、GAL、MAG 四种版式家族",
+      "width": 1380,
+      "height": 900
+    },
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/xjsbx8/ins-editorial-layout/blob/main/SKILL.md",
+    "addedAt": "2026-11-05",
+    "verifiedAt": "2026-11-05",
+    "en": {
+      "title": "Ins Editorial Layout",
+      "description": "A skill that packages AI street-style photos as Instagram-style editorial layouts: an Instagram-like frame with oversized broken-line type and star stickers, picture-in-parentheses photo diaries, warm-white gallery margins or serif footnotes. Outputs 3:4 at 1080×1440 by default.",
+      "tags": "Instagram style / Editorial layout / Photo diary / Photo dump / OOTD / Street style / Social / Skill",
+      "notes": "SKILL.md numbers 126 layouts in four families: TYP (big broken type with stars), JNL (what I ( ) did ( ) in nov ( ) diaries), GAL (warm-white margins or a four-up grid, the wordless default) and MAG (open layouts with a serif footnote). Install by placing the folder with SKILL.md in your agent’s skills directory as ins-editorial-layout; the script needs Python, Pillow and your own font files. The engine as read implements the frame and three render modes (TYP, JNL, GAL), with no MAG, SVG export or batch logic, so 126 is mostly a numbering scheme and the rest depends on your agent. SKILL.md credits a COLX SKU. The repository was created on 2026-11-05 with 0 stars when saved and says it keeps the original skill content, so the uploader may not be the original author. Do not pass off the framed images as real account screenshots.",
+      "license": "No license file in the repository",
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
+    }
+  },
+  {
     "id": "website-aligncanvas",
     "kind": "website",
     "title": "AlignCanvas（图片变 3D 动效）",
