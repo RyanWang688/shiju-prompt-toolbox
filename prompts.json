@@ -1,5 +1,144 @@
 [
   {
+    "id": "website-boardui",
+    "kind": "website",
+    "title": "BoardUI（仪表盘 React 设计系统）",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "组件库 / 设计系统 / 仪表盘 / 数据图表 / React / Tailwind / shadcn / Pro 付费",
+    "description": "在 Figma 里设计的 React 设计系统，专做仪表盘、财务界面和 AI 智能体界面：103 个组件，含 19 个数据图表，另有 10 个 Pro 模板和 400 多个设计变量，风格干净，适合后台和数据看板。",
+    "prompt": "BoardUI（仪表盘 React 设计系统）\n\n用途：在 Figma 里设计的 React 设计系统，专做仪表盘、财务界面和 AI 智能体界面：103 个组件，含 19 个数据图表，另有 10 个 Pro 模板和 400 多个设计变量，风格干净，适合后台和数据看板。\n\n说明：基于 React 19、Tailwind CSS v4、React Aria 和 TanStack Table，通过 CLI 把源码装进项目，也支持 MCP 和智能体 Skill。模板有主页仪表盘、财务、营销、项目看板、医疗档案和 AI 聊天等。\n\n价格（收录时，上线优惠）：基础部分免费；Pro 一年更新 €149，终身更新 €199，五人团队版 €349，都是一次性付款，不自动续费。\n\n注意：不少图表和模板要 Pro 才能用，下手前先看组件上有没有 PRO 标记。“苹果风”是别人的印象，官网没有这样定位。\n\n给 AI 的用法：让 AI 按项目技术栈生成可安装、可预览的组件或页面，优先复制官方示例，再换成项目的主题色、间距和响应式布局。\n\n许可：免费部分 MIT；Pro 按人授权，可用于无限个自己或客户的成品和商业项目，不得转售、公开源码，也不得做与 BoardUI 竞争的组件库。\n\n官网：https://www.boardui.com/zh-hans\nGitHub：https://github.com/BoardUI/boardui\n授权：https://www.boardui.com/license\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "source": "https://www.boardui.com/",
+    "officialUrl": "https://www.boardui.com/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-boardui/official-site.png",
+      "alt": "BoardUI 中文官网实际截图：大标题 React 设计系统，下方是步数柱状图、睡眠评分环和活动日历等仪表盘卡片",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://www.boardui.com/zh-hans",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-06 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "addedAt": "2026-11-06",
+    "verifiedAt": "2026-11-06",
+    "en": {
+      "title": "BoardUI (React dashboard design system)",
+      "description": "A React design system designed in Figma for dashboards, finance and AI agent interfaces: 103 components including 19 data charts, plus 10 Pro templates and 400+ design tokens. Clean, and well suited to admin panels and data dashboards.",
+      "tags": "Component library / Design system / Dashboards / Charts / React / Tailwind / shadcn / Paid Pro",
+      "notes": "Built on React 19, Tailwind CSS v4, React Aria and TanStack Table, installed as source through a CLI, with MCP and agent skills. Launch pricing when saved: the base is free; Pro is €149 with a year of updates, €199 with lifetime updates or €349 for five developers, all one-off. Many charts and templates need Pro, so check for the PRO badge first. With an AI agent: ask it for installable, previewable components or pages in your stack, start from the official examples, then swap in your theme colours, spacing and responsive layout.",
+      "license": "Free source is MIT. Pro is licensed per developer for unlimited end products, including client and commercial work, but may not be resold, published or used to build a competing library.",
+      "previewNote": "Screenshot of the official site taken on 2026-11-06; saved for reference only — no sign-in, install or purchase."
+    },
+    "repository": "https://github.com/BoardUI/boardui"
+  },
+  {
+    "id": "website-heroui-pro",
+    "kind": "website",
+    "title": "HeroUI Pro（React 付费组件库）",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "组件库 / React / React Native / 模板 / 产品后台 / 设计系统 / 付费",
+    "description": "HeroUI 团队的付费组件和模板，覆盖 React 与 React Native，风格精致成熟：有命令面板、看板、数据表格、议程、筛选器等真实产品常用的复杂组件，适合做产品后台和工具类应用。",
+    "prompt": "HeroUI Pro（React 付费组件库）\n\n用途：HeroUI 团队的付费组件和模板，覆盖 React 与 React Native，风格精致成熟：有命令面板、看板、数据表格、议程、筛选器等真实产品常用的复杂组件，适合做产品后台和工具类应用。\n\n说明：Pro 版包含组件、高级模板、设计系统和 AI 工具（Skills 与 MCP），并附 AI 额度。官网有 Default、Brutalism、Glass、Mouve 等主题示例。\n\n价格（收录时）：Web Hero 或 Mobile Hero 各 $299，React 加 React Native 的 Super Hero $399，都是永久授权。更新续费可选，每年 $99 或 $129；不续也能继续用当时的版本。团队按席位买，至少 2 席。\n\n注意：这是收费产品，不是开源库。HeroUI Pro v2 和现在的版本是两个产品，价格和授权分开，购买时看清楚。\n\n给 AI 的用法：让 AI 按项目技术栈生成可安装、可预览的组件或页面，优先复制官方示例，再换成项目的主题色、间距和响应式布局。\n\n许可：商业授权：个人版只限一人，团队版按席位；可用于项目，不得分享、公开或转售组件和模板源码。\n\n官网：https://heroui.pro/\n价格：https://heroui.pro/pricing\n条款：https://heroui.pro/terms\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "source": "https://heroui.pro/",
+    "officialUrl": "https://heroui.pro/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-heroui-pro/official-site.png",
+      "alt": "HeroUI Pro 官网实际截图：深色页面标题 Build products you’re proud to ship，下方是 AI 聊天、音乐播放器和地图导航的组件示例",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://heroui.pro/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-06 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "addedAt": "2026-11-06",
+    "verifiedAt": "2026-11-06",
+    "en": {
+      "title": "HeroUI Pro (paid React components)",
+      "description": "Paid components and templates from the HeroUI team for React and React Native, polished and mature, with the complex pieces real products need such as command palettes, kanban, data grids, agendas and filters. Suits product dashboards and tools.",
+      "tags": "Component library / React / React Native / Templates / Product dashboards / Design system / Paid",
+      "notes": "Includes components, premium templates, design systems and AI tooling (skills and MCP) with AI credits. Pricing when saved: Web Hero or Mobile Hero $299 each, Super Hero $399, all perpetual, with optional update renewal at $99 or $129 a year. Teams buy seats, minimum two. This is a commercial product, and HeroUI Pro v2 is sold and licensed separately. With an AI agent: ask it for installable, previewable components or pages in your stack, start from the official examples, then swap in your theme colours, spacing and responsive layout.",
+      "license": "Commercial licence: Individual covers one person and Team is per seat. Use it in your projects, but do not share, publish or resell the components, templates or source.",
+      "previewNote": "Screenshot of the official site taken on 2026-11-06; saved for reference only — no sign-in, install or purchase."
+    }
+  },
+  {
+    "id": "website-beui-pro",
+    "kind": "website",
+    "title": "beUI Pro（动效区块与整站模板）",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "组件库 / 动效 / 落地页模板 / 渐变 / React / Next.js / React Native / shadcn / Pro 付费",
+    "description": "beUI 的付费版：358 个动效区块、页面区块、插画和组件，含 11 套完整模板，设计感强，适合做落地页和整站。免费版 beUI 开源，有 153 个 React 组件和 73 个 React Native 组件。",
+    "prompt": "beUI Pro（动效区块与整站模板）\n\n用途：beUI 的付费版：358 个动效区块、页面区块、插画和组件，含 11 套完整模板，设计感强，适合做落地页和整站。免费版 beUI 开源，有 153 个 React 组件和 73 个 React Native 组件。\n\n说明：基于 React、Next.js、Tailwind CSS 和 Motion。免费版用 shadcn CLI 安装，Pro 通过私有 registry、Agent Skill、MCP 或直接下载源码使用，代码进入你自己的项目。\n\n价格（收录时）：Web 按年 $129，Web 终身 $179，Mobile 终身 $149，Web 加 Mobile 终身 $249；部分模板也可单买，$39–$99。\n\n注意：按年方案不含全部插画和完整模板，想要整站模板要选终身版。买的时候按人算，队友要另买席位，席位分配后不能转让。\n\n给 AI 的用法：让 AI 按项目技术栈生成可安装、可预览的组件或页面，优先复制官方示例，再换成项目的主题色、间距和响应式布局。\n\n许可：免费版 MIT；Pro 为商业授权，按人计，可用于个人和客户项目，组件不公开发布。\n\n免费版：https://beui.dev/\nPro：https://pro.beui.dev/\nGitHub：https://github.com/starc007/ui-components\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "source": "https://pro.beui.dev/",
+    "officialUrl": "https://pro.beui.dev/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-beui-pro/official-site.png",
+      "alt": "beUI Pro 官网实际截图：放射状渐变光束背景上的标题 Bring better design to your next project，顶部标注 129 美元每年或 179 美元终身",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://pro.beui.dev/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-06 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "addedAt": "2026-11-06",
+    "verifiedAt": "2026-11-06",
+    "en": {
+      "title": "beUI Pro (motion blocks and full templates)",
+      "description": "The paid tier of beUI: 358 animated blocks, page blocks, illustrations and components, including 11 full templates, with a strong design voice for landing pages and whole sites. The free, open-source beUI has 153 React and 73 React Native components.",
+      "tags": "Component library / Motion / Landing templates / Gradients / React / Next.js / React Native / shadcn / Paid Pro",
+      "notes": "Built with React, Next.js, Tailwind CSS and Motion. Pro installs through a private registry, agent skill, MCP or source download. Pricing when saved: Web $129 a year or $179 lifetime, Mobile $149 lifetime, both $249 lifetime, with some templates sold singly at $39–$99. Yearly does not include all illustrations or full templates, so choose Lifetime for those. Seats are per person and cannot be transferred once accepted. With an AI agent: ask it for installable, previewable components or pages in your stack, start from the official examples, then swap in your theme colours, spacing and responsive layout.",
+      "license": "Free beUI is MIT. Pro is a commercial per-person licence covering personal and client projects, and its components are not published publicly.",
+      "previewNote": "Screenshot of the official site taken on 2026-11-06; saved for reference only — no sign-in, install or purchase."
+    },
+    "repository": "https://github.com/starc007/ui-components"
+  },
+  {
+    "id": "website-watermelon-ui",
+    "kind": "website",
+    "title": "Watermelon UI（免费 React 组件库）",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "组件库 / React / Tailwind / shadcn / 布局参考 / 落地页 / 仪表盘 / 开源 / 免费",
+    "description": "免费开源的 React 组件库，风格多样：有 600 多个组件和 100 多个动画，以及 Hero、定价、页脚等区块和仪表盘，适合找布局参考。可以复制代码或用 shadcn CLI 安装，不用注册。",
+    "prompt": "Watermelon UI（免费 React 组件库）\n\n用途：免费开源的 React 组件库，风格多样：有 600 多个组件和 100 多个动画，以及 Hero、定价、页脚等区块和仪表盘，适合找布局参考。可以复制代码或用 shadcn CLI 安装，不用注册。\n\n说明：基于 React 和 Tailwind CSS，改 CSS 变量就能套用自己的主题。\n\n注意：官网称全部免费并采用 MIT，所以它没有 Pro 授权问题。站方条款写明部分设计参考了公开作品，也提醒使用者自行检查代码、依赖、无障碍和授权。仓库 2026-10 才建立，收录时约 170 个 Star，比较年轻。官网各页写的组件数略有出入，首页是 600+。\n\n给 AI 的用法：让 AI 按项目技术栈生成可安装、可预览的组件或页面，优先复制官方示例，再换成项目的主题色、间距和响应式布局。\n\n许可：MIT，可免费用于个人和商业项目。\n\n官网：https://ui.watermelon.sh/\nGitHub：https://github.com/WatermelonCorp/watermelon-platform\n\n收录状态：仅收藏网站，未登录、安装或购买。",
+    "source": "https://ui.watermelon.sh/",
+    "officialUrl": "https://ui.watermelon.sh/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-watermelon-ui/official-site.png",
+      "alt": "Watermelon UI 官网实际截图：深色页面标题 Beautiful Components Built for builders，两侧是倾斜摆放的落地页模板示例",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://ui.watermelon.sh/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-06 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
+    "addedAt": "2026-11-06",
+    "verifiedAt": "2026-11-06",
+    "en": {
+      "title": "Watermelon UI (free React components)",
+      "description": "A free, open-source React component library in many styles: 600+ components and 100+ animations, plus blocks such as heroes, pricing and footers and full dashboards. Good for layout reference. Copy the code or install through the shadcn CLI, with no sign-up.",
+      "tags": "Component library / React / Tailwind / shadcn / Layout reference / Landing pages / Dashboards / Open source / Free",
+      "notes": "Built on React and Tailwind CSS, themed through CSS variables. The site says everything is free and MIT, so there is no Pro licence to consider. Its terms say some designs take inspiration from public work and ask you to review code, dependencies, accessibility and licensing yourself. The repository dates from October 2026 with about 170 stars when saved. Component counts differ slightly between pages; the home page says 600+. With an AI agent: ask it for installable, previewable components or pages in your stack, start from the official examples, then swap in your theme colours, spacing and responsive layout.",
+      "license": "MIT, free for personal and commercial use.",
+      "previewNote": "Screenshot of the official site taken on 2026-11-06; saved for reference only — no sign-in, install or purchase."
+    },
+    "repository": "https://github.com/WatermelonCorp/watermelon-platform"
+  },
+  {
     "id": "website-myfinder-device-battery",
     "kind": "website",
     "resourceType": "GitHub 项目",
