@@ -260,6 +260,7 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 
 /* Card actions: a local bookmark (favourite) beside the shared cloud like. */
 .dashboard .card .meta>span{max-width:calc(100% - 104px)}
+.dashboard .pricing-tag{display:inline-block;margin-inline-start:4px;padding:0 6px;border:1px solid currentColor;border-radius:999px;white-space:nowrap}
 .dashboard .card .card-acts{position:relative;z-index:2;display:flex;align-items:center;gap:2px;flex-shrink:0}
 .dashboard .card .card-body .bookmark{display:grid;place-items:center;min-width:32px;min-height:36px;padding:0;border:0;border-radius:8px;background:transparent;color:#9a9a9a;mix-blend-mode:normal;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .dashboard .card .card-body .bookmark svg{width:18px;height:18px;fill:transparent;stroke:currentColor;stroke-width:1.9;stroke-linejoin:round;transition:fill .25s ease}

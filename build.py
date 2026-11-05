@@ -14,6 +14,8 @@ for item in items:
     assert item.get('kind', 'prompt') in ('prompt', 'skill', 'website')
     if item.get('kind') in ('skill', 'website'):
         assert isinstance(item.get('description'), str) and item['description'].strip(), 'Skill/website requires a brief purpose'
+    if 'pricing' in item:
+        assert item.get('kind') in ('skill', 'website') and item['pricing'] in ('free', 'paid', 'partial'), f"Invalid pricing for {item['id']}"
     if item.get('kind') == 'website':
         url = urlparse(item.get('source', ''))
         assert url.scheme in ('http', 'https') and url.netloc, 'Website requires a valid address'
