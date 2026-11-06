@@ -2756,7 +2756,7 @@
   {
     "id": "website-voicestudio",
     "kind": "website",
-    "pricing": "free",
+    "pricing": "partial",
     "resourceType": "GitHub 项目",
     "title": "VoiceStudio（原 OmniVoice-Studio）",
     "category": "其他",
@@ -2772,25 +2772,26 @@
       "title": "VoiceStudio (formerly OmniVoice-Studio)",
       "description": "An open-source, fully local AI voice studio for voice cloning, voice design, video dubbing, dictation, transcription and audiobooks in 646 languages, with a local API and MCP for agents.",
       "tags": "AI voice / Voice cloning / Video dubbing / Audiobooks / Local / MCP",
-      "notes": "Listed as OmniVoice-Studio on the leaderboard; the repository has been renamed VoiceStudio (the old address redirects). The default engine is based on k2-fsa/OmniVoice.",
-      "license": "AGPL-3.0",
-      "previewNote": "Screenshot of the official site taken on 2026-10-24; saved for reference only — no sign-in, install or purchase."
+      "notes": "Listed as OmniVoice-Studio on the leaderboard; the repository has been renamed VoiceStudio (the old address redirects). The default engine is based on k2-fsa/OmniVoice. The local open-source edition is free. A paid Pro edition is also available.",
+      "license": "AGPL-3.0 for the app. Models and voices may have their own terms.",
+      "previewNote": "Voice cloning workspace with the bundled demo voice, as shown in the official README."
     },
-    "prompt": "VoiceStudio（原 OmniVoice-Studio）\n类型：GitHub 项目\n\n用途：开源、完全本地运行的 AI 语音创作工具，支持声音克隆、声音设计、视频配音、听写、转写和有声书制作，覆盖 646 种语言，并提供本地 API 与 MCP 供 Agent 调用。\n\n说明：榜单名称为 OmniVoice-Studio，仓库已更名为 VoiceStudio（原地址自动跳转）。默认引擎基于 k2-fsa/OmniVoice。\n\n许可：AGPL-3.0\n\n官网：https://voicestudio.sh\nGitHub：https://github.com/debpalash/VoiceStudio\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 10 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
+    "prompt": "VoiceStudio（原 OmniVoice-Studio）\n类型：GitHub 项目\n\n用途：开源、完全本地运行的 AI 语音创作工具，支持声音克隆、声音设计、视频配音、听写、转写和有声书制作，覆盖 646 种语言，并提供本地 API 与 MCP 供 Agent 调用。\n\n说明：榜单名称为 OmniVoice-Studio，仓库已更名为 VoiceStudio（原地址自动跳转）。默认引擎基于 k2-fsa/OmniVoice。\n\n版本：本地开源版免费，另有付费 Pro。\n\n许可：应用采用 AGPL-3.0。不同模型和音色可能有各自的授权条款。\n\n官网：https://voicestudio.sh\nGitHub：https://github.com/debpalash/VoiceStudio\n\n收录来源：「GitHub AI · 开源周榜」第 41 周（2026.10.05–10.11）第 10 名；GitHub 仓库已核实。\n\n收录状态：仅收藏，未安装、登录或执行。",
     "collection": "GitHub AI 开源周榜",
     "userProvidedRank": 10,
     "addedAt": "2026-10-24",
-    "verifiedAt": "2026-10-24",
+    "verifiedAt": "2026-11-07",
     "preview": {
       "type": "image",
-      "src": "assets/website-voicestudio/official-site.png",
-      "alt": "VoiceStudio（原 OmniVoice-Studio） 官方网页实际截图",
-      "width": 1280,
-      "height": 720
+      "src": "assets/website-voicestudio/voice-cloning.webp",
+      "alt": "VoiceStudio 官方 README 中的声音克隆工作区，使用内置示例声音",
+      "width": 1440,
+      "height": 1000
     },
-    "previewSource": "https://voicestudio.sh",
-    "previewNote": "2026-10-24 实际打开官网后的网页截图；仅收藏，未登录、安装或购买。",
-    "previewEvidence": "live-website-screenshot"
+    "previewSource": "https://github.com/debpalash/VoiceStudio/blob/main/docs/media/electron/voice-cloning.webp",
+    "previewNote": "官方 README 发布的声音克隆界面截图，展示内置示例声音。",
+    "previewEvidence": "author-published-functional-demo",
+    "documentation": "https://github.com/debpalash/VoiceStudio#documentation"
   },
   {
     "id": "cloisonne-enamel",
