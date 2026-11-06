@@ -1,5 +1,70 @@
 [
   {
+    "id": "website-periodic-table-3d",
+    "kind": "website",
+    "pricing": "free",
+    "verifiedAt": "2026-11-06",
+    "title": "3D 元素周期表（Ryan Sael）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "化学 / 元素周期表 / 3D / 交互可视化 / Ryan Sael",
+    "description": "把 118 个元素排成 3D 展台。切换熔点、密度等属性可比较柱高，点选元素可查看电子云、样品和实验演示。",
+    "prompt": "把 118 个元素排成 3D 展台。切换熔点、密度等属性可比较柱高，点选元素可查看电子云、样品和实验演示。\n\n可在周期表、原子、样品和演示四种视图之间切换。氧元素演示包括磁铁吸引液氧。\n\n项目原站：https://sael.net/periodic-table/",
+    "source": "https://sael.net/periodic-table/",
+    "officialUrl": "https://sael.net/periodic-table/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-periodic-table-3d/official-site.jpg",
+      "alt": "Ryan Sael 的 3D 元素周期表原站，展台上排列高低不同的元素柱",
+      "width": 1336,
+      "height": 623
+    },
+    "previewSource": "https://sael.net/periodic-table/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-06 实际访问原站时截取的 3D 展台。",
+    "addedAt": "2026-11-06",
+    "en": {
+      "title": "The Periodic Table in 3D (Ryan Sael)",
+      "description": "Explore 118 elements as columns in a 3D showroom. Change the property to compare column heights, or select an element to see its electron cloud, sample or demo.",
+      "tags": "Chemistry / Periodic table / 3D / Interactive visualization / Ryan Sael",
+      "notes": "Switch among table, atom, sample and demo views. The oxygen demo shows liquid oxygen held by a magnet.",
+      "previewNote": "3D showroom captured on the original site on 2026-11-06."
+    }
+  },
+  {
+    "id": "website-sukyn-portfolio",
+    "kind": "website",
+    "title": "悬浮纸张作品集（Sukyn Lee）",
+    "category": "其他",
+    "topics": [
+      "动效灵感"
+    ],
+    "tags": "作品集 / 悬浮纸张 / 滚动动效 / 瀑布流 / Sukyn Lee",
+    "description": "截图展示了一个把作品封面做成悬浮纸片的作品集。滚动时纸片弯曲摆动，也可切换到瀑布流浏览。独立演示链接待核实。",
+    "prompt": "截图展示了一个把作品封面做成悬浮纸片的作品集。滚动时纸片弯曲摆动，也可切换到瀑布流浏览。独立演示链接待核实。\n\n作品线索来自 @动动枪说AI 的图文截图。当前链接指向 Sukyn Lee 的 Behance 作者主页，独立互动作品集网址待核实。\n\n作者 Behance 主页：https://www.behance.net/1119809582a325/info",
+    "source": "https://www.behance.net/1119809582a325/info",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-sukyn-portfolio/reference.jpg",
+      "alt": "用户提供的悬浮纸张作品集截图，展示蓝粉渐变背景和页面内容",
+      "width": 938,
+      "height": 530
+    },
+    "previewSource": "用户提供的 @动动枪说AI 作品介绍截图",
+    "previewEvidence": "provided-project-screenshot",
+    "previewNote": "截图裁取自用户提供的作品介绍，独立站未核实。",
+    "addedAt": "2026-11-06",
+    "en": {
+      "title": "Floating Paper Portfolio (Sukyn Lee)",
+      "description": "A portfolio shown in the supplied screenshot with floating covers that bend as you scroll and an alternative masonry view. The interactive site URL is pending verification.",
+      "tags": "Portfolio / Floating paper / Scroll motion / Masonry / Sukyn Lee",
+      "notes": "The project reference comes from the supplied DongDongGun post. The link opens Sukyn Lee’s Behance profile. The standalone interactive portfolio URL is pending verification.",
+      "previewNote": "Cropped from the supplied project feature. The standalone site has yet to be verified."
+    }
+  },
+  {
     "id": "poetic-halftone-poster",
     "title": "照片转诗意复古印刷海报",
     "category": "其他",
