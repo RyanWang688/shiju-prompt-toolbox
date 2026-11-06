@@ -1,5 +1,42 @@
 [
   {
+    "id": "website-libretv",
+    "kind": "website",
+    "pricing": "free",
+    "title": "LibreTV（自托管视频聚合播放器）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "LibreSpark / 视频聚合 / 自托管 / Docker / HLS / IPTV / 开源",
+    "description": "可自托管的开源视频聚合搜索与播放器，支持跨源搜索、HLS 播放、续播和 IPTV，可用 Docker 部署。",
+    "prompt": "用途：可自托管的开源视频聚合搜索与播放器，支持跨源搜索、HLS 播放、续播和 IPTV，可用 Docker 部署。\n\n使用方式：部署后可配置点播或直播源。同名搜索结果可合并，播放时可切换来源。\n\n许可：AGPL-3.0。\n\n官网：https://libretv.is-an.org/\nGitHub：https://github.com/LibreSpark/LibreTV\n文档：https://libretv.is-an.org/wiki/",
+    "source": "https://libretv.is-an.org/",
+    "officialUrl": "https://libretv.is-an.org/",
+    "repository": "https://github.com/LibreSpark/LibreTV",
+    "documentation": "https://libretv.is-an.org/wiki/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-libretv/official-site.jpg",
+      "alt": "LibreTV 官网首页，展示项目介绍、部署、源码和演示入口",
+      "width": 1327,
+      "height": 619
+    },
+    "previewSource": "https://libretv.is-an.org/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-06 实际打开 LibreTV 官网时截取的首页。",
+    "addedAt": "2026-11-06",
+    "verifiedAt": "2026-11-06",
+    "en": {
+      "title": "LibreTV (self-hosted video aggregator)",
+      "description": "An open-source, self-hosted video search and player with cross-source search, HLS playback, resume and IPTV. Deployable with Docker.",
+      "tags": "LibreSpark / Video aggregation / Self-hosting / Docker / HLS / IPTV / Open source",
+      "notes": "Configure on-demand or live sources after deployment. Matching titles can be grouped and playback sources can be switched.",
+      "license": "AGPL-3.0.",
+      "previewNote": "Screenshot captured on the official LibreTV website on 2026-11-06."
+    }
+  },
+  {
     "id": "website-periodic-table-3d",
     "kind": "website",
     "pricing": "free",
