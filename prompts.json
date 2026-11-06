@@ -1,5 +1,41 @@
 [
   {
+    "id": "website-leibox",
+    "kind": "website",
+    "pricing": "free",
+    "title": "LeiBox（网页交互组件库）",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "tags": "组件库 / 网页交互 / UI 动效 / 免费",
+    "description": "免费网页交互组件库。可以直接试玩卡片、文件夹展开等动效，再查看组件文档和源码，适合为作品集和产品页面挑选交互效果。",
+    "prompt": "LeiBox（网页交互组件库）\n\n用途：免费网页交互组件库。可以直接试玩卡片、文件夹展开等动效，再查看组件文档和源码，适合为作品集和产品页面挑选交互效果。\n\n使用方式：先在组件目录试玩，再打开对应文档查看代码与接入说明。\n\n官网：https://leibox.pantoria.cn/\n组件目录：https://leibox.pantoria.cn/components\nGitHub：https://github.com/leishifu666/LeiBox",
+    "source": "https://leibox.pantoria.cn/",
+    "officialUrl": "https://leibox.pantoria.cn/",
+    "documentation": "https://leibox.pantoria.cn/docs",
+    "repository": "https://github.com/leishifu666/LeiBox",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-leibox/official-site.jpg",
+      "alt": "LeiBox 官网首页，展示主标题和浏览组件入口",
+      "width": 1336,
+      "height": 623
+    },
+    "previewSource": "https://leibox.pantoria.cn/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-06 实际打开 LeiBox 官网后的首页截图。",
+    "addedAt": "2026-11-06",
+    "verifiedAt": "2026-11-06",
+    "en": {
+      "title": "LeiBox (web interaction components)",
+      "description": "A free library of interactive web components. Try cards, expanding folders and other effects, then browse their docs and source code for use in portfolios and product pages.",
+      "tags": "Component library / Web interactions / UI animation / Free",
+      "notes": "Try an effect in the component gallery, then open its documentation for code and integration instructions.",
+      "previewNote": "Screenshot of the official LeiBox homepage taken on 2026-11-06."
+    }
+  },
+  {
     "id": "website-boardui",
     "kind": "website",
     "pricing": "partial",
