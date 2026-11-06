@@ -1,5 +1,66 @@
 [
   {
+    "id": "skill-l2c-motion-analysis",
+    "kind": "skill",
+    "title": "读懂动效（绫濑川 Skill，暂名）",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "tags": "动效分析 / AE / 参考视频 / 绫濑川 / 来源待核实",
+    "description": "截图作者提到的动效分析 Skill，目的是帮助 AI 读懂参考动画。暂用描述性标题，原项目名、仓库和使用说明待核实。",
+    "prompt": "来源：用户提供的 @l2c_绫濑川《AE 动画》第五期截图。作者在《アイス》复刻帖中提到一个帮助模型读懂动效的 Skill。截图中的 YouTube 链接是作品的 PV 参考。Skill 的正式名称、发布入口及实际输出待核实。",
+    "source": "用户提供的 @l2c_绫濑川《AE 动画》第五期截图",
+    "previewStatus": "pending",
+    "previewEvidence": "pending",
+    "previewNote": "现有画面来自作者的复刻帖，尚未核实它与这个 Skill 的输出关系。真实效果预览待补。",
+    "addedAt": "2026-11-06",
+    "en": {
+      "title": "Motion analysis (L2C Skill, provisional title)",
+      "description": "A Skill mentioned by the creator to help AI interpret reference animations. The official name, repository and usage instructions are pending verification.",
+      "tags": "Motion analysis / After Effects / Reference video / L2C / Source unverified",
+      "notes": "Source: the supplied screenshot of L2C’s fifth After Effects animation post about recreating アイス. The YouTube URL in the post points to the reference music video. The Skill’s official name, release link and actual output are pending verification.",
+      "previewNote": "The screenshot shows a frame from the recreation post. A verified preview of this Skill’s output is pending."
+    }
+  },
+  {
+    "id": "website-free-claude-code",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "free-claude-code（编程工具模型代理）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "AI 编程 / Claude Code / Codex / 模型代理 / 本地模型 / 开源",
+    "description": "开源模型代理，为 Claude Code、Codex 等编程工具接入第三方模型服务和本地模型。模型费用与免费额度由所选提供商决定。",
+    "prompt": "用途：开源模型代理，为 Claude Code、Codex 等编程工具接入第三方模型服务和本地模型。模型费用与免费额度由所选提供商决定。\n\n可用服务包括本地 Ollama 和多种云端提供商，云端服务可能需要单独的 API 密钥或订阅。项目代码采用 AGPL-3.0-only 许可。\n\n项目仓库：https://github.com/Alishahryar1/free-claude-code",
+    "source": "https://github.com/Alishahryar1/free-claude-code",
+    "officialUrl": "https://github.com/Alishahryar1/free-claude-code",
+    "repository": "https://github.com/Alishahryar1/free-claude-code",
+    "documentation": "https://github.com/Alishahryar1/free-claude-code#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-free-claude-code/official-demo.png",
+      "alt": "free-claude-code 作者 README 展示的 Claude Code 实际运行截图",
+      "width": 1713,
+      "height": 910
+    },
+    "previewSource": "https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/assets/pic.png",
+    "previewEvidence": "author-published-functional-demo",
+    "previewNote": "作者 README 发布的 Claude Code 运行示例，2026-11-06 核实。",
+    "addedAt": "2026-11-06",
+    "verifiedAt": "2026-11-06",
+    "en": {
+      "title": "free-claude-code (model proxy for coding tools)",
+      "description": "An open-source model proxy for tools such as Claude Code and Codex. It connects to third-party services and local models. Usage charges and free allowances depend on the provider.",
+      "tags": "AI coding / Claude Code / Codex / Model proxy / Local models / Open source",
+      "notes": "Supports local Ollama and multiple cloud providers. Cloud services may require a separate API key or subscription.",
+      "license": "AGPL-3.0-only.",
+      "previewNote": "Author-published Claude Code demo from the project README, verified on 2026-11-06."
+    }
+  },
+  {
     "id": "website-leibox",
     "kind": "website",
     "pricing": "free",
