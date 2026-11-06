@@ -1,5 +1,39 @@
 [
   {
+    "id": "pastel-gradients",
+    "title": "神仙渐变色 · 3D 色卡",
+    "category": "界面设计",
+    "topics": [
+      "卡片交互"
+    ],
+    "tags": "配色 / 渐变 / 粉彩 / 3D 色卡 / 汤圆十里",
+    "description": "把 8 组粉彩双色渐变放进一张 3D 卡片。点选色票查看渐变和十六进制色值，鼠标移动时卡面会随指针倾斜。",
+    "prompt": "把 8 组粉彩双色渐变放进一张 3D 卡片。点选色票查看渐变和十六进制色值，鼠标移动时卡面会随指针倾斜。\n\n01 这就是我想要的　#DDFFC2 → #EEE1FF\n02 一眼心动系列　#FFEAE1 → #B6FAFF\n03 美好从审美开始　#CFFFBD → #B9DFFF\n04 梦境的粉色泡泡　#DBDDFF → #FFD0D0\n05 所有的美好给你　#ACFFF1 → #FFDCDC\n06 这配色太上头　#FFFFD0 → #D8EFFF\n07 粉末天青一见倾心　#D89CA6 → #FFC5CE\n10 黄紫迷人眼　#FFFFD0 → #D2CDFF\n\n配色来自 @汤圆十里「设计知识分享」第 102 集截图。第 07 组按图中文字记录色值，左侧色号与截图中的青色外观有差异。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/pastel-gradients/index.html",
+      "alt": "可切换八组粉彩渐变的 3D 色卡"
+    },
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/pastel-gradients/cover.png",
+      "alt": "3D 色卡演示截图及八枚渐变色票",
+      "width": 1380,
+      "height": 900
+    },
+    "sourceNote": "配色来自 @汤圆十里「设计知识分享」第 102 集截图。第 07 组按图中文字记录色值，左侧色号与截图中的青色外观有差异。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "previewNote": "根据参考配色制作的交互演示。",
+    "addedAt": "2026-11-06",
+    "en": {
+      "title": "Pastel Gradients · 3D palette",
+      "description": "Eight pastel colour pairs in a single 3D card. Select a swatch to see the gradient and hex values, or move your pointer to tilt the card.",
+      "tags": "Colour palettes / Gradients / Pastel / 3D card / Tangyuan Shili",
+      "prompt": "Eight pastel colour pairs in a single 3D card.\n\n01 Lime & Lilac  #DDFFC2 → #EEE1FF\n02 Blush & Sky  #FFEAE1 → #B6FAFF\n03 Spring & Mist  #CFFFBD → #B9DFFF\n04 Dream Bubble  #DBDDFF → #FFD0D0\n05 Aqua & Rose  #ACFFF1 → #FFDCDC\n06 Cream & Ice  #FFFFD0 → #D8EFFF\n07 Powder & Pink  #D89CA6 → #FFC5CE\n10 Cream & Lavender  #FFFFD0 → #D2CDFF\n\nPalette reference: @Tangyuan Shili, episode 102. Palette 07 uses the printed hex code, which differs from the visible cyan in the reference.",
+      "previewNote": "Interactive demo based on the reference palettes."
+    }
+  },
+  {
     "id": "skill-l2c-motion-analysis",
     "kind": "skill",
     "title": "读懂动效（绫濑川 Skill，暂名）",
