@@ -1,5 +1,116 @@
 [
   {
+    "id": "website-sherlock",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Sherlock（跨平台用户名查询）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "用户名查询 / OSINT / 公开信息 / Python / CLI",
+    "description": "按用户名查询多个社交平台上的公开账号，适合核查自己的账号分布和公开资料。",
+    "prompt": "Sherlock（跨平台用户名查询）\n\n用途：按用户名查询多个社交平台上的公开账号，适合核查自己的账号分布和公开资料。\n\n说明：官方文档附查询示例、安装说明和支持站点清单。\n\n许可：MIT。\n\n官网：https://sherlockproject.xyz/\nGitHub：https://github.com/sherlock-project/sherlock",
+    "source": "https://sherlockproject.xyz/",
+    "officialUrl": "https://sherlockproject.xyz/",
+    "repository": "https://github.com/sherlock-project/sherlock",
+    "documentation": "https://github.com/sherlock-project/sherlock#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-sherlock/official-site.jpg",
+      "alt": "Sherlock（跨平台用户名查询）官方预览",
+      "width": 1216,
+      "height": 712
+    },
+    "previewSource": "https://sherlockproject.xyz/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-08 实际打开官方文档首页保存的截图。",
+    "addedAt": "2026-11-08",
+    "verifiedAt": "2026-11-08",
+    "en": {
+      "title": "Sherlock (cross-platform username search)",
+      "description": "Search public profiles by username across social platforms, useful for reviewing your own account footprint.",
+      "tags": "Username search / OSINT / Public profiles / Python / CLI",
+      "notes": "Official documentation includes sample output, installation instructions and supported sites.",
+      "license": "MIT.",
+      "previewNote": "Screenshot of the official documentation homepage captured on 2026-11-08."
+    }
+  },
+  {
+    "id": "website-swarm-cursors",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Swarm Cursors（Swarm Rebuild 网页动效）",
+    "category": "其他",
+    "topics": [
+      "动效灵感"
+    ],
+    "tags": "Swarm Rebuild / 浏览器扩展 / 群体光标 / 网页重绘 / 动效",
+    "description": "Chrome 扩展，用一群动态光标把当前网页逐步重绘出来，呈现画框、输入文字和复制元素的动画。",
+    "prompt": "Swarm Cursors（Swarm Rebuild 网页动效）\n\n用途：Chrome 扩展，用一群动态光标把当前网页逐步重绘出来，呈现画框、输入文字和复制元素的动画。\n\n说明：仓库提供 Chrome 商店入口、操作说明和实际演示。动效引擎改编自 Joel Califa 的 Swarm 网站。\n\n许可：作者暂未指定许可证；README 要求复用代码前向原动效作者 Joel Califa 确认。\n\n官网：https://github.com/DhvanilPatel/swarm-cursors\nGitHub：https://github.com/DhvanilPatel/swarm-cursors",
+    "source": "https://github.com/DhvanilPatel/swarm-cursors",
+    "officialUrl": "https://github.com/DhvanilPatel/swarm-cursors",
+    "repository": "https://github.com/DhvanilPatel/swarm-cursors",
+    "documentation": "https://github.com/DhvanilPatel/swarm-cursors#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-swarm-cursors/demo.webp",
+      "alt": "Swarm Cursors（Swarm Rebuild 网页动效）官方预览",
+      "width": 720,
+      "height": 450
+    },
+    "previewSource": "https://raw.githubusercontent.com/DhvanilPatel/swarm-cursors/main/media/demo.webp",
+    "previewEvidence": "author-published-functional-demo",
+    "previewNote": "官方 README 中的动态演示，保留作者原图。",
+    "addedAt": "2026-11-08",
+    "verifiedAt": "2026-11-08",
+    "en": {
+      "title": "Swarm Cursors (Swarm Rebuild)",
+      "description": "A Chrome extension that visually rebuilds a page with a swarm of animated cursors drawing boxes, typing and duplicating elements.",
+      "tags": "Swarm Rebuild / Browser extension / Cursor swarm / Page reconstruction / Motion",
+      "notes": "The repository links to its Chrome Web Store listing and demo. Parts of its motion engine are adapted from Joel Califa’s Swarm site.",
+      "license": "No licence specified yet. The README requests permission from original motion author Joel Califa before code reuse.",
+      "previewNote": "Original animated demo published in the official README."
+    }
+  },
+  {
+    "id": "website-mirofish",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "MiroFish（多智能体模拟推演）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "群体智能 / 多智能体 / 模拟推演 / 情景分析 / 知识图谱",
+    "description": "把资料与问题转成多智能体模拟环境，观察虚拟角色互动并生成推演报告，可用于舆情情景或故事发展探索。",
+    "prompt": "MiroFish（多智能体模拟推演）\n\n用途：把资料与问题转成多智能体模拟环境，观察虚拟角色互动并生成推演报告，可用于舆情情景或故事发展探索。\n\n说明：项目代码开源；运行需要配置模型 API 和 Zep，相关服务可能产生费用。官方提供预设案例的在线演示。\n\n许可：AGPL-3.0。\n\n官网：https://mirofish.ai/\nGitHub：https://github.com/666ghj/MiroFish",
+    "source": "https://mirofish.ai/",
+    "officialUrl": "https://mirofish.ai/",
+    "repository": "https://github.com/666ghj/MiroFish",
+    "documentation": "https://github.com/666ghj/MiroFish#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-mirofish/official-demo.png",
+      "alt": "MiroFish（多智能体模拟推演）官方预览",
+      "width": 1839,
+      "height": 1038
+    },
+    "previewSource": "https://github.com/666ghj/MiroFish/blob/main/static/image/Screenshot/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE1.png",
+    "previewEvidence": "author-published-functional-demo",
+    "previewNote": "官方 README 发布的运行界面截图。",
+    "addedAt": "2026-11-08",
+    "verifiedAt": "2026-11-08",
+    "en": {
+      "title": "MiroFish (multi-agent scenario simulation)",
+      "description": "Build multi-agent simulations from source materials and a question, explore interactions between virtual characters, and generate scenario reports.",
+      "tags": "Swarm intelligence / Multi-agent / Simulation / Scenario analysis / Knowledge graph",
+      "notes": "The code is open source. Running it requires model API and Zep configuration, which may incur service fees. An official demo includes prepared scenarios.",
+      "license": "AGPL-3.0.",
+      "previewNote": "Application screenshot published in the official README."
+    }
+  },
+  {
     "id": "website-libretv",
     "kind": "website",
     "pricing": "free",
