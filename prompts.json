@@ -1,5 +1,153 @@
 [
   {
+    "id": "website-t3-code",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "T3 Code（AI 编程工具控制台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "统一控制电脑上的 Claude Code、Codex、Cursor 等编程智能体，提供桌面、网页和手机端，可远程查看任务并继续对话。",
+    "tags": "AI 编程 / 控制台 / 手机远程 / Claude Code / Codex / Cursor",
+    "prompt": "T3 Code（AI 编程工具控制台）\n\n用途：统一控制电脑上的 Claude Code、Codex、Cursor 等编程智能体，提供桌面、网页和手机端，可远程查看任务并继续对话。\n\n说明：需要已安装并登录相应编程工具，模型订阅与服务费用沿用提供商方案。\n\n许可：MIT\n\n官网：https://t3.codes/\nGitHub：https://github.com/pingdotgg/t3code",
+    "source": "https://t3.codes/",
+    "officialUrl": "https://t3.codes/",
+    "repository": "https://github.com/pingdotgg/t3code",
+    "documentation": "https://github.com/pingdotgg/t3code#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-t3-code/official-site.jpg",
+      "alt": "T3 Code（AI 编程工具控制台）官网实拍",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://t3.codes/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方首页保存的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "T3 Code (coding agent control plane)",
+      "description": "Control coding agents such as Claude Code, Codex and Cursor from a desktop, browser or phone. Review tasks and continue conversations remotely.",
+      "tags": "AI agents / Developer tools / Collaboration",
+      "notes": "Requires a supported provider set up on the host machine. Provider subscriptions and service costs are separate.",
+      "license": "MIT",
+      "previewNote": "Official homepage captured on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-openmausbot",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "OpenMausBot（聊天式 AI 团队）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "在聊天界面中管理多个 AI 机器人，为其配置模型、电脑环境和应用连接，查看工作过程并处理操作确认。",
+    "tags": "AI 团队 / 聊天协作 / Claude / Codex / Composio / 云电脑",
+    "prompt": "OpenMausBot（聊天式 AI 团队）\n\n用途：在聊天界面中管理多个 AI 机器人，为其配置模型、电脑环境和应用连接，查看工作过程并处理操作确认。\n\n说明：支持通过 Composio 连接多种应用；可用电脑环境和本机控制能力因平台而异。模型、云电脑和连接服务费用独立。\n\n许可：Apache-2.0，enterprise 目录另有条款。\n\n官网：https://www.openmausbot.com/\nGitHub：https://github.com/milind-soni/OpenMausBot",
+    "source": "https://www.openmausbot.com/",
+    "officialUrl": "https://www.openmausbot.com/",
+    "repository": "https://github.com/milind-soni/OpenMausBot",
+    "documentation": "https://github.com/milind-soni/OpenMausBot#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-openmausbot/official-site.jpg",
+      "alt": "OpenMausBot（聊天式 AI 团队）官网实拍",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://www.openmausbot.com/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方首页保存的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "OpenMausBot (chat-based AI team)",
+      "description": "Manage AI bots in a chat interface with separate models, computer environments and connected apps. Follow their work and review approvals.",
+      "tags": "AI agents / Developer tools / Collaboration",
+      "notes": "Composio supplies app integrations. Computer capabilities vary by platform. Models, cloud computers and connected services have separate costs.",
+      "license": "Apache-2.0, except enterprise code under separate terms.",
+      "previewNote": "Official homepage captured on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-thinkrail",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "ThinkRail（JetBrains 智能体 IDE）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "JetBrains 的智能体开发环境，以 pi 为基础，结合独立 Git 工作区、对话、编辑器和持续维护的项目规格，支持并行推进任务。",
+    "tags": "JetBrains / 智能体 IDE / pi / Git worktree / 项目规格 / 并行任务",
+    "prompt": "ThinkRail（JetBrains 智能体 IDE）\n\n用途：JetBrains 的智能体开发环境，以 pi 为基础，结合独立 Git 工作区、对话、编辑器和持续维护的项目规格，支持并行推进任务。\n\n说明：每个工作区可使用自己的分支和目录。运行需配置模型提供商，模型费用依所选服务计算。\n\n许可：Apache-2.0\n\n官网：https://thinkrail.ai/\nGitHub：https://github.com/JetBrains/thinkrail",
+    "source": "https://thinkrail.ai/",
+    "officialUrl": "https://thinkrail.ai/",
+    "repository": "https://github.com/JetBrains/thinkrail",
+    "documentation": "https://github.com/JetBrains/thinkrail#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-thinkrail/official-site.jpg",
+      "alt": "ThinkRail（JetBrains 智能体 IDE）官网实拍",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://thinkrail.ai/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方首页保存的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "ThinkRail (JetBrains agentic IDE)",
+      "description": "JetBrains’ development environment around pi, combining isolated Git workspaces, chat, an editor and living project specs for parallel tasks.",
+      "tags": "AI agents / Developer tools / Collaboration",
+      "notes": "Workspaces can have separate branches and directories. A model provider is required and its usage costs apply.",
+      "license": "Apache-2.0",
+      "previewNote": "Official homepage captured on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-openmontage",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "OpenMontage（AI 视频制作工作室）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "让编程智能体根据自然语言完成视频调研、脚本、素材准备、剪辑和合成。支持从参考视频制定方案，也可用真实素材制作蒙太奇。",
+    "tags": "AI 视频 / 自动剪辑 / Remotion / FFmpeg / 参考视频 / 素材生成",
+    "prompt": "OpenMontage（AI 视频制作工作室）\n\n用途：让编程智能体根据自然语言完成视频调研、脚本、素材准备、剪辑和合成。支持从参考视频制定方案，也可用真实素材制作蒙太奇。\n\n说明：项目提供视频工作流、工具和技能资料。制作方案会考虑可用工具与成本；生成模型及素材服务可能收费。\n\n许可：AGPL-3.0\n\n官网：https://openmontage.video/\nGitHub：https://github.com/OpenMontageInc/OpenMontage",
+    "source": "https://openmontage.video/",
+    "officialUrl": "https://openmontage.video/",
+    "repository": "https://github.com/OpenMontageInc/OpenMontage",
+    "documentation": "https://github.com/OpenMontageInc/OpenMontage#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-openmontage/official-site.jpg",
+      "alt": "OpenMontage（AI 视频制作工作室）官网实拍",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://openmontage.video/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方首页保存的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "OpenMontage (agentic video production)",
+      "description": "An agent-driven production toolkit for research, scripting, assets, editing and composition from a natural-language brief. It also supports reference-led plans and real-footage montages.",
+      "tags": "AI video / Editing / Remotion / FFmpeg / Reference video",
+      "notes": "Provides workflows, tools and agent knowledge. Available tools shape the production plan and cost. Generative models and media services may charge separately.",
+      "license": "AGPL-3.0",
+      "previewNote": "Official homepage captured on 2026-11-09."
+    }
+  },
+  {
     "id": "skill-lsf-image-to-layered-psd",
     "kind": "skill",
     "pricing": "free",
