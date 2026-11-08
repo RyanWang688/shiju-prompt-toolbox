@@ -1,5 +1,190 @@
 [
   {
+    "id": "website-upscayl",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Upscayl（本地 AI 图片放大）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "在本地用 AI 放大图片，支持照片、插画与批量处理，提供 Windows、macOS 和 Linux 桌面版。",
+    "tags": "图片放大 / 超分辨率 / 画质修复 / 批量处理 / Upscoyl",
+    "prompt": "Upscayl（本地 AI 图片放大）\n\n用途：在本地用 AI 放大图片，支持照片、插画与批量处理，提供 Windows、macOS 和 Linux 桌面版。\n\n说明：本次收录开源桌面版，放大效果取决于模型和源图。使用前查看显卡与 Vulkan 兼容要求。另有独立云端产品。\n\n许可：AGPL-3.0\n\n官方入口：https://upscayl.org/\nGitHub：https://github.com/upscayl/upscayl",
+    "source": "https://upscayl.org/",
+    "officialUrl": "https://upscayl.org/",
+    "repository": "https://github.com/upscayl/upscayl",
+    "documentation": "https://github.com/upscayl/upscayl#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-upscayl/official-site.jpg",
+      "alt": "Upscayl（本地 AI 图片放大）官方预览",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://upscayl.org/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官网后的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Upscayl (local AI image upscaling)",
+      "description": "Upscale photos and illustrations locally with AI, including batch processing on Windows, macOS and Linux.",
+      "tags": "AI upscaling / Batch processing / Local",
+      "notes": "The open-source desktop edition is listed here. Results depend on the source and model. Check GPU and Vulkan requirements. A separate cloud product is available.",
+      "license": "AGPL-3.0",
+      "previewNote": "Official site screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-pdfmathtranslate",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "PDFMathTranslate（PDF2ZH 论文翻译）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "翻译科学 PDF 并尽量保留公式、图表和排版，生成便于对照阅读的双语文档，支持多种翻译服务与本地模型。",
+    "tags": "PDF 翻译 / 论文 / 双语对照 / 公式 / PDF2ZH / PDFedihTranslate",
+    "prompt": "PDFMathTranslate（PDF2ZH 论文翻译）\n\n用途：翻译科学 PDF 并尽量保留公式、图表和排版，生成便于对照阅读的双语文档，支持多种翻译服务与本地模型。\n\n说明：根据提供的用途描述，将 PDFedihTranslate 对应为 PDFMathTranslate。排版保留效果因文档而异，翻译引擎与模型 API 可能收费。\n\n许可：AGPL-3.0\n\n官方入口：https://github.com/PDFMathTranslate/PDFMathTranslate\nGitHub：https://github.com/PDFMathTranslate/PDFMathTranslate",
+    "source": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+    "officialUrl": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+    "repository": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+    "documentation": "https://github.com/PDFMathTranslate/PDFMathTranslate#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-pdfmathtranslate/author-preview.gif",
+      "alt": "PDFMathTranslate（PDF2ZH 论文翻译）官方预览",
+      "width": 1853,
+      "height": 1049
+    },
+    "previewSource": "https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/docs/images/preview.gif",
+    "previewEvidence": "author-published-functional-demo",
+    "previewNote": "官方 README 发布的实际界面或效果演示。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "PDFMathTranslate (PDF2ZH paper translation)",
+      "description": "Translate scientific PDFs while preserving formulas, charts and layout where possible, with bilingual output and multiple translation services or local models.",
+      "tags": "PDF translation / Scientific papers / Bilingual / PDF2ZH",
+      "notes": "Identified from the supplied description as PDFMathTranslate. Layout fidelity varies by document. Translation engines and model APIs may incur fees.",
+      "license": "AGPL-3.0",
+      "previewNote": "Actual interface or output demo published in the official README."
+    }
+  },
+  {
+    "id": "website-handy",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Handy（离线 AI 语音输入）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "通过快捷键录音，在本机识别语音并把文字输入当前应用。支持 Windows、macOS 和 Linux，可配置按住说话或切换录音。",
+    "tags": "语音输入 / 离线识别 / 本地运行 / Whisper / 快捷键",
+    "prompt": "Handy（离线 AI 语音输入）\n\n用途：通过快捷键录音，在本机识别语音并把文字输入当前应用。支持 Windows、macOS 和 Linux，可配置按住说话或切换录音。\n\n说明：首次需下载模型并配置所需权限。语音识别在本地运行，模型准备完成后可离线使用。\n\n许可：MIT\n\n官方入口：https://handy.computer/\nGitHub：https://github.com/cjpais/Handy",
+    "source": "https://handy.computer/",
+    "officialUrl": "https://handy.computer/",
+    "repository": "https://github.com/cjpais/Handy",
+    "documentation": "https://github.com/cjpais/Handy#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-handy/official-site.jpg",
+      "alt": "Handy（离线 AI 语音输入）官方预览",
+      "width": 1265,
+      "height": 720
+    },
+    "previewSource": "https://handy.computer/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官网后的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Handy (offline voice typing)",
+      "description": "Record with a shortcut, transcribe on your machine and insert text into the active app. Supports Windows, macOS and Linux, with hold-to-talk and toggle modes.",
+      "tags": "Voice typing / Offline / Whisper / Hotkeys",
+      "notes": "Download a model and configure the required permissions first. Local transcription works offline once the model is available.",
+      "license": "MIT",
+      "previewNote": "Official site screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-videolingo",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "VideoLingo（视频字幕翻译与配音）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "结合语音识别、语义断句、术语表、字幕翻译和配音，将视频制作成双语字幕或本地化配音版本。",
+    "tags": "视频翻译 / 双语字幕 / 语义断句 / 术语表 / AI 配音",
+    "prompt": "VideoLingo（视频字幕翻译与配音）\n\n用途：结合语音识别、语义断句、术语表、字幕翻译和配音，将视频制作成双语字幕或本地化配音版本。\n\n说明：提供本地界面，可配置识别、翻译和 TTS 服务。翻译与配音效果由音频和所选模型决定，部分 API 服务可能收费。\n\n许可：Apache-2.0\n\n官方入口：https://docs.videolingo.io/en-US\nGitHub：https://github.com/Huanshere/VideoLingo",
+    "source": "https://docs.videolingo.io/en-US",
+    "officialUrl": "https://docs.videolingo.io/en-US",
+    "repository": "https://github.com/Huanshere/VideoLingo",
+    "documentation": "https://github.com/Huanshere/VideoLingo#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-videolingo/official-site.jpg",
+      "alt": "VideoLingo（视频字幕翻译与配音）官方预览",
+      "width": 1265,
+      "height": 720
+    },
+    "previewSource": "https://docs.videolingo.io/en-US",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官网后的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "VideoLingo (video translation and dubbing)",
+      "description": "Create bilingual subtitles or localized dubbed videos using speech recognition, semantic segmentation, terminology, translation and TTS.",
+      "tags": "Video translation / Subtitles / Terminology / Dubbing",
+      "notes": "A local interface coordinates recognition, translation and TTS providers. Quality depends on audio and models. Some API services charge for usage.",
+      "license": "Apache-2.0",
+      "previewNote": "Official site screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-dogsc",
+    "kind": "website",
+    "pricing": "free",
+    "title": "DogSC（macOS 录屏与轻量剪辑）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "macOS 原生录屏与编辑工具，支持自动跟随、手动缩放、屏幕 3D、悬浮备忘录和录制标记，可继续剪辑并导出视频。",
+    "tags": "录屏 / 自动跟随 / 3D 运镜 / 提词备忘录 / 剪辑标记 / macOS",
+    "prompt": "DogSC（macOS 录屏与轻量剪辑）\n\n用途：macOS 原生录屏与编辑工具，支持自动跟随、手动缩放、屏幕 3D、悬浮备忘录和录制标记，可继续剪辑并导出视频。\n\n说明：要求 Apple Silicon Mac、macOS 14 或以上。悬浮备忘录排除于 DogSC 自身录制，标记可辅助定位口误和重点。\n\n许可：MIT\n\n官方入口：https://github.com/laogou717/dogsc\nGitHub：https://github.com/laogou717/dogsc",
+    "source": "https://github.com/laogou717/dogsc",
+    "officialUrl": "https://github.com/laogou717/dogsc",
+    "repository": "https://github.com/laogou717/dogsc",
+    "documentation": "https://github.com/laogou717/dogsc#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-dogsc/author-editor.png",
+      "alt": "DogSC（macOS 录屏与轻量剪辑）官方预览",
+      "width": 2400,
+      "height": 1283
+    },
+    "previewSource": "https://github.com/laogou717/dogsc/blob/main/docs/images/editor.png",
+    "previewEvidence": "author-published-functional-demo",
+    "previewNote": "官方 README 发布的实际界面或效果演示。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "DogSC (macOS screen recording and editing)",
+      "description": "A native macOS recorder and lightweight editor with auto-follow, zoom, screen 3D, floating notes and recording markers.",
+      "tags": "Screen recording / Editing / Camera motion / macOS",
+      "notes": "Requires an Apple Silicon Mac running macOS 14 or later. Floating notes are excluded from DogSC’s own recordings, and markers help locate mistakes or highlights.",
+      "license": "MIT",
+      "previewNote": "Actual interface or output demo published in the official README."
+    }
+  },
+  {
     "id": "website-t3-code",
     "kind": "website",
     "pricing": "partial",
