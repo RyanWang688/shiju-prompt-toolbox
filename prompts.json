@@ -1,5 +1,43 @@
 [
   {
+    "id": "skill-lsf-image-to-layered-psd",
+    "kind": "skill",
+    "pricing": "free",
+    "title": "图片拆层 · PS 普通版",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "tags": "lsf-image-to-layered-psd / Photoshop / PSD / 可编辑文字 / 图片拆层 / 雷师傅",
+    "description": "让 AI 将图片重建为 Photoshop 分层 PSD，交付独立透明 PNG 和完整背景。普通文字经字体核验后重建为可编辑文字层，适合海报拆层和后续改字。",
+    "prompt": "名称：lsf-image-to-layered-psd\n\n用途：让 AI 将图片重建为 Photoshop 分层 PSD，交付独立透明 PNG 和完整背景。普通文字经字体核验后重建为可编辑文字层，适合海报拆层和后续改字。\n\n说明：普通版免费开源，运行依赖图像处理能力、可用字体与相应编辑工具。生图服务、字体和 Photoshop 的费用单独计算。\n\n可输出原尺寸、2K、4K 或自定义尺寸。字体不确定时提供候选对比，特殊字标和复杂材质可能保留为图形或位图。\n\n许可：技能代码与原创文档采用 MIT；原图、字体、模型服务和示例素材按各自条款使用。\n\n来源：https://github.com/leishifu666/lsf-image-to-layered-psd",
+    "source": "https://github.com/leishifu666/lsf-image-to-layered-psd",
+    "officialUrl": "https://github.com/leishifu666/lsf-image-to-layered-psd",
+    "repository": "https://github.com/leishifu666/lsf-image-to-layered-psd",
+    "documentation": "https://github.com/leishifu666/lsf-image-to-layered-psd/blob/main/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-lsf-image-to-layered-psd/author-layer-preview.png",
+      "alt": "雷师傅用实际海报拆层 PNG 制作的展开图层演示",
+      "width": 1500,
+      "height": 1000
+    },
+    "previewSource": "https://github.com/leishifu666/lsf-image-to-layered-psd/blob/main/examples/cover/preview.png",
+    "previewEvidence": "author-published-layered-case",
+    "previewNote": "作者使用实际海报案例的 11 张 PNG，以 CSS 3D 展开为 6 个平面的预览。",
+    "addedAt": "2026-11-08",
+    "verifiedAt": "2026-11-08",
+    "en": {
+      "title": "Image to Layered PSD · Photoshop Edition",
+      "description": "An AI Skill for rebuilding images as layered Photoshop PSDs, transparent PNG assets and a complete background. Ordinary text is recreated as editable text after font verification, useful for poster editing.",
+      "tags": "lsf-image-to-layered-psd / Photoshop / PSD / Editable text / Image layers / Lei Skills",
+      "notes": "The public edition is free. It requires suitable image-processing tools and fonts. Image services, fonts and Photoshop may have separate costs. Supports original size, 2K, 4K or custom output. Uncertain fonts require candidate comparison. Special lettering and complex textures may remain graphics or bitmaps.",
+      "license": "MIT for the code and original Skill documentation. Source images, fonts, models, services and example media have their own terms.",
+      "previewNote": "Author’s preview uses 11 PNG assets from an actual poster case, displayed as six CSS 3D planes."
+    }
+  },
+  {
     "id": "website-sherlock",
     "kind": "website",
     "pricing": "free",
