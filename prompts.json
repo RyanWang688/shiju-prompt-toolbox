@@ -1,5 +1,40 @@
 [
   {
+    "id": "website-toolknit",
+    "kind": "website",
+    "title": "ToolKnit（免费在线工具箱）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "tags": "在线工具 / PDF / 图片压缩 / 移除背景 / 视频转 GIF / 音频转换 / 文本工具 / 免注册 / 中英双语",
+    "description": "免费在线工具箱，96 个工具按任务分类：PDF 转换与压缩、图片压缩和抠图、视频转 GIF、音频格式转换、字数统计和文本对比、计算器、番茄钟，还有白板、配色和瞄准练习等。打开浏览器就能用，不用注册。",
+    "prompt": "ToolKnit（免费在线工具箱）\n\n用途：免费在线工具箱，96 个工具按任务分类：PDF 转换与压缩、图片压缩和抠图、视频转 GIF、音频格式转换、字数统计和文本对比、计算器、番茄钟，还有白板、配色和瞄准练习等。打开浏览器就能用，不用注册。\n\n说明：分 PDF、图片、视频、音频、文本、实用计算、时间与效率、创意与练习、AI 辅助、生活与自测十类，可以搜索，也能把常用工具存成收藏组合（只存在当前浏览器）。有中文和英文界面。\n\n隐私：官方隐私政策写明，PDF、图片、音视频的转换和编辑在浏览器本地处理，不上传文件。但 AI 工具要接你自己配置的 AI 服务，文字会发给该服务商；服务器版文本转语音会把文字发到 ToolKnit 再转给外部语音服务；网站还用了 Google Analytics 等统计。敏感内容别放进联网功能。\n\n限制：同一浏览器每天共享 500 次使用额度，不是每个工具各 500 次。\n\n桌面版：另有 Windows 版 ToolKnit Desktop（v3.2），73 个桌面工具，带截图 OCR 和剪贴板历史。源码在 GitHub 公开，但许可是 PolyForm Noncommercial，只能非商业使用，不算常规开源。\n\n官网：https://toolknit.com/zh/\n桌面版：https://github.com/ZihangDong/toolknit-desktop\n隐私政策：https://toolknit.com/zh/privacy.html\n\n收录状态：仅收藏浏览，未上传文件或下载桌面版。",
+    "source": "https://toolknit.com/zh/",
+    "officialUrl": "https://toolknit.com/zh/",
+    "repository": "https://github.com/ZihangDong/toolknit-desktop",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-toolknit/official-site.png",
+      "alt": "ToolKnit 中文工具库页面实际截图：深色界面，标题“一个工具箱，许多种可能。”，下方是分类标签和 PDF 转图片、合并 PDF、压缩 PDF 等工具卡片",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://toolknit.com/zh/#tools",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-10 实际打开官网工具库后的网页截图；仅收藏，未上传文件或下载桌面版。",
+    "addedAt": "2026-11-10",
+    "verifiedAt": "2026-11-10",
+    "en": {
+      "title": "ToolKnit (free online toolbox)",
+      "description": "A free online toolbox with 96 tools sorted by task: PDF conversion and compression, image compression and background removal, video to GIF, audio conversion, word counts and text diffs, calculators, a Pomodoro timer, plus a whiteboard, colour tools and aim training. Runs in the browser with no sign-up.",
+      "tags": "Online tools / PDF / Image compression / Background removal / Video to GIF / Audio conversion / Text tools / No sign-up / Chinese and English",
+      "notes": "Ten categories, search and browser-only saved tool sets, in Chinese and English. The privacy policy says PDF, image, audio and video conversion runs locally in the browser without uploading files. AI tools send text to the provider you configure, server-backed text to speech goes through ToolKnit to an outside voice service, and the site uses Google Analytics and other analytics, so keep sensitive content out of online features. One browser shares 500 uses a day across all tools. A Windows app, ToolKnit Desktop (v3.2, 73 tools with screenshot OCR and clipboard history), has public source under the PolyForm Noncommercial licence, so it is for non-commercial use and is not conventional open source.",
+      "license": "Website: free to use. Desktop: PolyForm Noncommercial 1.0.0.",
+      "previewNote": "Screenshot of the official tool library taken on 2026-11-10; saved for reference only — no files uploaded and the desktop app not downloaded."
+    }
+  },
+  {
     "id": "website-munder-difflin",
     "kind": "website",
     "pricing": "partial",
