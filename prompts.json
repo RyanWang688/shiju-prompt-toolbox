@@ -1,5 +1,78 @@
 [
   {
+    "id": "website-hypit",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "Hypit（AI 视频工作流）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "从参考视频或文字简报创建可编辑的视频工作流，复用镜头结构、字幕、配乐和特效，批量生成不同版本。",
+    "tags": "AI 视频 / 视频结构复刻 / 批量变体 / Agent / 字幕",
+    "prompt": "Hypit（AI 视频工作流）\n\n用途：从参考视频或文字简报创建可编辑的视频工作流，复用镜头结构、字幕、配乐和特效，批量生成不同版本。\n\n说明：可搭配 Codex 等 Agent 使用。素材、旁白和字幕可以分别替换，字幕和效果可按词对齐。项目使用 Hypit Open Source License，托管服务及第三方模型 API 可能收费。\n\n官方入口：https://hypit.ai/\nGitHub：https://github.com/hypit-ai/hypit",
+    "source": "https://hypit.ai/",
+    "officialUrl": "https://hypit.ai/",
+    "repository": "https://github.com/hypit-ai/hypit",
+    "documentation": "https://hypit.ai/quickstart/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-hypit/official-site.jpg",
+      "alt": "Hypit（AI 视频工作流）官网截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://hypit.ai/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官网后的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Hypit (AI video workflows)",
+      "description": "Turn a reference video or brief into an editable workflow, then reuse its shot structure, captions, music and effects across variants.",
+      "tags": "AI video / Video workflows / Batch variants / Agents / Captions",
+      "notes": "Works with agents such as Codex. Replace footage, voice-over and captions separately, with word-level timing for captions and effects. Hosted services and third-party model APIs may charge.",
+      "license": "Hypit Open Source License",
+      "previewNote": "Official site screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-artcraft-crafting-apps",
+    "kind": "website",
+    "pricing": "free",
+    "title": "ArtCraft Crafting Apps（开源创作套件）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "ArtCraft 团队用 Rust 开发的免费创作工具套件，包含 PhotoCraft 修图、VectorCraft 矢量绘图、FilmCraft 视频剪辑和 PdfCraft 等应用。",
+    "tags": "ArtCraft / PhotoCraft / VectorCraft / FilmCraft / PdfCraft / Rust / 创作套件",
+    "prompt": "ArtCraft Crafting Apps（开源创作套件）\n\n用途：ArtCraft 团队用 Rust 开发的免费创作工具套件，包含 PhotoCraft 修图、VectorCraft 矢量绘图、FilmCraft 视频剪辑和 PdfCraft 等应用。\n\n说明：截图展示的是早期七款应用。官方目录现列 16 款，还覆盖摄影管理、动效、排版与界面设计。各应用独立发布，PhotoCraft 与 PdfCraft 仍标为早期 Alpha。\n\n官方入口：https://getartcraft.com/apps\nGitHub：https://github.com/storytold\n官方启动器：https://github.com/storytold/craft-launcher",
+    "source": "https://getartcraft.com/apps",
+    "officialUrl": "https://getartcraft.com/apps",
+    "repository": "https://github.com/storytold",
+    "documentation": "https://craft.wiki/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-artcraft-crafting-apps/official-site.jpg",
+      "alt": "ArtCraft Crafting Apps（开源创作套件）官网截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://getartcraft.com/apps",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官网后的网页截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "ArtCraft Crafting Apps (open-source creative suite)",
+      "description": "A free suite of Rust-based creative apps, including PhotoCraft for image editing, VectorCraft for illustration, FilmCraft for video editing and PdfCraft for PDFs.",
+      "tags": "ArtCraft / PhotoCraft / VectorCraft / FilmCraft / PdfCraft / Rust / Creative suite",
+      "notes": "The original reference showed seven apps. The official directory now lists 16, spanning photo management, motion graphics, publishing and interface design. Apps ship independently. PhotoCraft and PdfCraft are marked early alpha.",
+      "previewNote": "Official site screenshot taken on 2026-11-09."
+    }
+  },
+  {
     "id": "floral-paper-pinwheel",
     "title": "花纸风车 · 转动与花瓣散落",
     "category": "动画动效",
