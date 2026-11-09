@@ -1,5 +1,385 @@
 [
   {
+    "id": "website-munder-difflin",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "Munder Difflin（像素风 Agent 办公室）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "把 Codex、Claude Code、Kimi 等终端 Agent 集中到像素风办公室，查看任务状态、实时终端和 Agent 间的消息。",
+    "tags": "多 Agent / 像素办公室 / 任务协调 / 终端",
+    "license": "MIT",
+    "prompt": "Munder Difflin（像素风 Agent 办公室）\n\n用途\n把 Codex、Claude Code、Kimi 等终端 Agent 集中到像素风办公室，查看任务状态、实时终端和 Agent 间的消息。\n\n说明\n由协调 Agent 分派工作，并把超出预算、范围或涉及破坏性操作的决定交回用户。提供开源版本，部分功能属于 Pro。\n\n许可\nMIT\n\n官方入口\nhttps://munderdiffl.in/\n\nGitHub\nhttps://github.com/HarnessMD/munder-difflin",
+    "source": "https://munderdiffl.in/",
+    "officialUrl": "https://munderdiffl.in/",
+    "repository": "https://github.com/HarnessMD/munder-difflin",
+    "documentation": "https://github.com/HarnessMD/munder-difflin#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-munder-difflin/official-site.jpg",
+      "alt": "Munder Difflin（像素风 Agent 办公室）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://munderdiffl.in/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Munder Difflin (pixel-art agent office)",
+      "description": "Watch Codex, Claude Code, Kimi and other terminal agents work in a pixel-art office with live terminals, status and messages.",
+      "notes": "A coordinator routes work and escalates spending, scope and destructive actions to the user. An open-source build and paid Pro features are available.",
+      "tags": "Multi-agent / Pixel art / Task coordination / Terminal",
+      "license": "MIT",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-awesome-gpt-image-2",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Awesome GPT Image 2（生图案例与模板）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "浏览 GPT Image 2 和 2.5 的生图案例，按主题查找示例、完整提示词和可改写的模板。",
+    "tags": "生图提示词 / GPT Image 2 / GPT Image 2.5 / 模板 / 案例库",
+    "license": "MIT",
+    "prompt": "Awesome GPT Image 2（生图案例与模板）\n\n用途\n浏览 GPT Image 2 和 2.5 的生图案例，按主题查找示例、完整提示词和可改写的模板。\n\n说明\n仓库介绍列出 530+ 案例、20+ 套模板和可选的 Agent Skills。适合用已有构图、风格和排版作为海报或商品图的起点。\n\n许可\nMIT\n\n官方入口\nhttps://gpt-image2.canghe.ai/\n\nGitHub\nhttps://github.com/freestylefly/awesome-gpt-image-2",
+    "source": "https://gpt-image2.canghe.ai/",
+    "officialUrl": "https://gpt-image2.canghe.ai/",
+    "repository": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "documentation": "https://github.com/freestylefly/awesome-gpt-image-2#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-awesome-gpt-image-2/official-site.jpg",
+      "alt": "Awesome GPT Image 2（生图案例与模板）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://gpt-image2.canghe.ai/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Awesome GPT Image 2 (prompt gallery and templates)",
+      "description": "Browse GPT Image 2 and 2.5 examples by theme, with full prompts and reusable templates.",
+      "notes": "The repository lists 530+ cases, 20+ templates and optional agent skills. Use existing compositions, styles and layouts as starting points for posters or product images.",
+      "tags": "Image prompts / GPT Image 2 / GPT Image 2.5 / Templates / Gallery",
+      "license": "MIT",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-openai-codex",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "OpenAI Codex（开放智能体执行框架）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "Codex 的开源仓库提供 CLI、SDK 和 app-server，可把会话、工具调用、实时事件及审批接入自有应用。",
+    "tags": "OpenAI / Codex / Harness / SDK / app-server",
+    "license": "Apache-2.0",
+    "prompt": "OpenAI Codex（开放智能体执行框架）\n\n用途\nCodex 的开源仓库提供 CLI、SDK 和 app-server，可把会话、工具调用、实时事件及审批接入自有应用。\n\n说明\nCLI 可运行交互或自动化任务。SDK 适合从代码发起和恢复任务，app-server 适合需要掌控会话及审批流程的产品。模型访问另行配置。\n\n许可\nApache-2.0\n\n官方入口\nhttps://developers.openai.com/blog/codex-as-a-platform\n\nGitHub\nhttps://github.com/openai/codex",
+    "source": "https://developers.openai.com/blog/codex-as-a-platform",
+    "officialUrl": "https://developers.openai.com/blog/codex-as-a-platform",
+    "repository": "https://github.com/openai/codex",
+    "documentation": "https://developers.openai.com/codex/sdk",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-openai-codex/official-site.jpg",
+      "alt": "OpenAI Codex（开放智能体执行框架）官方页面截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://developers.openai.com/blog/codex-as-a-platform",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "OpenAI Codex (open agent harness)",
+      "description": "The open Codex repository provides a CLI, SDK and app-server for integrating conversations, tool calls, streamed events and approvals.",
+      "notes": "Use the CLI for interactive or automated jobs, the SDK for programmatic tasks, and app-server for products that manage sessions and approvals. Model access is configured separately.",
+      "tags": "OpenAI / Codex / Agent harness / SDK / app-server",
+      "license": "Apache-2.0",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-apache-maka",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Apache Maka（本地优先 Agent 工作台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "Apache 孵化中的 Agent 工作台，用追加式事件日志保留消息、工具调用、结果与权限决定，便于回放和排查。",
+    "tags": "Apache / 本地优先 / 事件日志 / 可观测性 / 审计",
+    "license": "Apache-2.0",
+    "prompt": "Apache Maka（本地优先 Agent 工作台）\n\n用途\nApache 孵化中的 Agent 工作台，用追加式事件日志保留消息、工具调用、结果与权限决定，便于回放和排查。\n\n说明\n桌面端、TUI 和 CLI 共用运行环境。会话与运行记录保存在本机，模型可连接本地模型、云端 API 或兼容网关。\n\n许可\nApache-2.0\n\n官方入口\nhttps://maka.apache.org/en/\n\nGitHub\nhttps://github.com/apache/maka",
+    "source": "https://maka.apache.org/en/",
+    "officialUrl": "https://maka.apache.org/en/",
+    "repository": "https://github.com/apache/maka",
+    "documentation": "https://github.com/apache/maka#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-apache-maka/official-site.jpg",
+      "alt": "Apache Maka（本地优先 Agent 工作台）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://maka.apache.org/en/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Apache Maka (local-first agent workspace)",
+      "description": "An Apache incubating agent workspace with an append-only record of messages, tool calls, results and permission decisions.",
+      "notes": "Desktop, TUI and CLI share one runtime. Sessions and execution records stay local. Connect a local model, cloud API or compatible gateway.",
+      "tags": "Apache / Local-first / Event log / Observability / Audit",
+      "license": "Apache-2.0",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-freellmapi",
+    "kind": "website",
+    "pricing": "free",
+    "title": "FreeLLMAPI（免费额度模型路由）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "把多家模型供应商的免费额度汇集到统一的 OpenAI 兼容接口，支持按能力和可用性路由及故障切换。",
+    "tags": "模型路由 / OpenAI 兼容 / 免费额度 / 故障切换",
+    "license": "MIT",
+    "prompt": "FreeLLMAPI（免费额度模型路由）\n\n用途\n把多家模型供应商的免费额度汇集到统一的 OpenAI 兼容接口，支持按能力和可用性路由及故障切换。\n\n说明\n收录时 README 列出 34 家供应商和 635 个模型端点。需要自行配置上游密钥，额度及聊天、嵌入、图像、音频等能力随供应商而异。项目定位为个人实验。\n\n许可\nMIT\n\n官方入口\nhttps://freellmapi.co/\n\nGitHub\nhttps://github.com/tashfeenahmed/freellmapi",
+    "source": "https://freellmapi.co/",
+    "officialUrl": "https://freellmapi.co/",
+    "repository": "https://github.com/tashfeenahmed/freellmapi",
+    "documentation": "https://github.com/tashfeenahmed/freellmapi#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-freellmapi/official-site.jpg",
+      "alt": "FreeLLMAPI（免费额度模型路由）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://freellmapi.co/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "FreeLLMAPI (free-tier model router)",
+      "description": "Unify multiple model providers’ free tiers behind an OpenAI-compatible API with capability-aware routing and failover.",
+      "notes": "At cataloging, the README listed 34 providers and 635 endpoints. Bring provider credentials. Quotas and support for chat, embeddings, images and audio vary by provider. The project is intended for personal experiments.",
+      "tags": "Model routing / OpenAI-compatible / Free tiers / Failover",
+      "license": "MIT",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-laya",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Laya（结构化决策模型）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "面向选择、评分和是非判断的开放权重模型，可通过一次前向推理输出指定类型的决策结果。",
+    "tags": "开放权重 / 结构化决策 / Jev / 分类 / 评分",
+    "license": "Apache-2.0",
+    "prompt": "Laya（结构化决策模型）\n\n用途\n面向选择、评分和是非判断的开放权重模型，可通过一次前向推理输出指定类型的决策结果。\n\n说明\n项目参考 Jev 的决策接口，提供可下载权重及服务代码，适合分类、筛选和路由等结构化任务。\n\n许可\nApache-2.0\n\n官方入口\nhttps://huggingface.co/convaiinnovations/laya\n\nGitHub\nhttps://github.com/NandhaKishorM/laya",
+    "source": "https://huggingface.co/convaiinnovations/laya",
+    "officialUrl": "https://huggingface.co/convaiinnovations/laya",
+    "repository": "https://github.com/NandhaKishorM/laya",
+    "documentation": "https://github.com/NandhaKishorM/laya#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-laya/official-site.jpg",
+      "alt": "Laya（结构化决策模型）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://huggingface.co/convaiinnovations/laya",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Laya (structured decision model)",
+      "description": "An open-weight model for choices, scores and yes/no judgments, returning typed decisions in one forward pass.",
+      "notes": "The project follows the Jev decision interface and provides downloadable weights and server code for classification, filtering and routing.",
+      "tags": "Open weights / Structured decisions / Jev / Classification / Scoring",
+      "license": "Apache-2.0",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "skill-cloudflare-security-audit",
+    "kind": "skill",
+    "pricing": "free",
+    "title": "Cloudflare Security Audit Skill（代码安全审计）",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "description": "引导编码 Agent 对代码库划定信任边界、规划审计覆盖面、追踪漏洞候选，并独立复核证据。",
+    "tags": "Cloudflare / 安全审计 / 威胁建模 / 独立复核",
+    "license": "MIT",
+    "prompt": "Cloudflare Security Audit Skill（代码安全审计）\n\n用途\n引导编码 Agent 对代码库划定信任边界、规划审计覆盖面、追踪漏洞候选，并独立复核证据。\n\n说明\n支持定向审查及完整审计。完整流程会保留覆盖记录、报告和机器可读的 findings.json，并区分已确认、待验证与排除的候选。\n\n许可\nMIT\n\n官方入口\nhttps://github.com/cloudflare/security-audit-skill\n\nGitHub\nhttps://github.com/cloudflare/security-audit-skill",
+    "source": "https://github.com/cloudflare/security-audit-skill",
+    "officialUrl": "https://github.com/cloudflare/security-audit-skill",
+    "repository": "https://github.com/cloudflare/security-audit-skill",
+    "documentation": "https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-cloudflare-security-audit/official-site.jpg",
+      "alt": "Cloudflare Security Audit Skill（代码安全审计）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://blog.cloudflare.com/build-your-own-vulnerability-harness/#it-all-starts-with-a-skill",
+    "previewEvidence": "author-published-workflow-case-study",
+    "previewNote": "Cloudflare 官方技术文章中公开的早期单仓库审计案例，截图展示团队实际采用的流程。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Cloudflare Security Audit Skill",
+      "description": "Guide a coding agent through trust-boundary mapping, coverage planning, vulnerability investigation and independent review.",
+      "notes": "Supports focused reviews and full audits. A full audit retains coverage records, a report and machine-readable findings.json with confirmed, unresolved and rejected findings.",
+      "tags": "Cloudflare / Security audit / Threat modeling / Independent verification",
+      "license": "MIT",
+      "previewNote": "Screenshot of Cloudflare’s account of its early single-repository audit workflow."
+    }
+  },
+  {
+    "id": "website-univer",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "Univer（可嵌入 Office SDK）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "在应用里嵌入电子表格、文档或演示能力，通过插件扩展编辑和计算，并支持浏览器及 Node.js 无界面处理。",
+    "tags": "Office SDK / 电子表格 / 文档 / 演示 / Node.js",
+    "license": "Apache-2.0",
+    "prompt": "Univer（可嵌入 Office SDK）\n\n用途\n在应用里嵌入电子表格、文档或演示能力，通过插件扩展编辑和计算，并支持浏览器及 Node.js 无界面处理。\n\n说明\n基础包采用 Apache 2.0。协作和文件转换等能力有 Pro 组件，具体支持范围以各模块文档为准。\n\n许可\nApache-2.0\n\n官方入口\nhttps://univer.ai/\n\nGitHub\nhttps://github.com/dream-num/univer",
+    "source": "https://univer.ai/",
+    "officialUrl": "https://univer.ai/",
+    "repository": "https://github.com/dream-num/univer",
+    "documentation": "https://github.com/dream-num/univer#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-univer/official-site.jpg",
+      "alt": "Univer（可嵌入 Office SDK）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://univer.ai/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Univer (embeddable Office SDK)",
+      "description": "Embed spreadsheet, document or slide capabilities and extend editing and calculation with plugins for browsers and headless Node.js.",
+      "notes": "Core packages use Apache 2.0. Collaboration and file conversion have Pro components. Availability varies by module.",
+      "tags": "Office SDK / Spreadsheets / Documents / Slides / Node.js",
+      "license": "Apache-2.0",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-google-ax",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Google AX（Agent Executor）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "用声明式配置调度 Agent 工作负载，管理任务隔离、工作区准备、网络访问策略和模型配置。",
+    "tags": "Google / Agent Executor / 工作负载编排 / YAML / 沙箱",
+    "license": "Apache-2.0",
+    "prompt": "Google AX（Agent Executor）\n\n用途\n用声明式配置调度 Agent 工作负载，管理任务隔离、工作区准备、网络访问策略和模型配置。\n\n说明\n核心资源为 Task、Workspace、Gateway 和 Model。面向批量 Agent 任务及评测，项目文档注明仍在积极开发。\n\n许可\nApache-2.0\n\n官方入口\nhttps://agentexecutor.io/\n\nGitHub\nhttps://github.com/google/ax",
+    "source": "https://agentexecutor.io/",
+    "officialUrl": "https://agentexecutor.io/",
+    "repository": "https://github.com/google/ax",
+    "documentation": "https://github.com/google/ax/blob/main/docs/concepts.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-google-ax/official-site.jpg",
+      "alt": "Google AX（Agent Executor）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://agentexecutor.io/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Google AX (Agent Executor)",
+      "description": "Declare and schedule agent workloads with isolated tasks, workspace setup, network access policies and model configuration.",
+      "notes": "The main resources are Task, Workspace, Gateway and Model. The runtime targets large batches of agent workloads and evaluations and is under active development.",
+      "tags": "Google / Agent Executor / Workload orchestration / YAML / Sandbox",
+      "license": "Apache-2.0",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
+    "id": "website-hindsight",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "Hindsight（Agent 长期记忆）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "把事实、经历、时间和实体关系整理成记忆，供 Agent 跨会话检索并结合证据形成回答。",
+    "tags": "Agent 记忆 / 事实 / 时间关系 / 检索 / MCP",
+    "license": "MIT",
+    "prompt": "Hindsight（Agent 长期记忆）\n\n用途\n把事实、经历、时间和实体关系整理成记忆，供 Agent 跨会话检索并结合证据形成回答。\n\n说明\nAPI 用 retain 写入、recall 检索、reflect 综合已有记忆。提供自托管方式与独立的托管服务。\n\n许可\nMIT\n\n官方入口\nhttps://hindsight.vectorize.io/\n\nGitHub\nhttps://github.com/vectorize-io/hindsight",
+    "source": "https://hindsight.vectorize.io/",
+    "officialUrl": "https://hindsight.vectorize.io/",
+    "repository": "https://github.com/vectorize-io/hindsight",
+    "documentation": "https://hindsight.vectorize.io/developer/api/quickstart",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-hindsight/official-site.jpg",
+      "alt": "Hindsight（Agent 长期记忆）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://hindsight.vectorize.io/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-09 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-09",
+    "verifiedAt": "2026-11-09",
+    "en": {
+      "title": "Hindsight (long-term agent memory)",
+      "description": "Organize facts, experiences, time and entity relationships so agents can recall and reason over them across sessions.",
+      "notes": "Use retain to store information, recall to retrieve memories and reflect to synthesize them. Both self-hosting and a separate managed service are available.",
+      "tags": "Agent memory / Facts / Temporal relationships / Retrieval / MCP",
+      "license": "MIT",
+      "previewNote": "Official page screenshot taken on 2026-11-09."
+    }
+  },
+  {
     "id": "website-hypit",
     "kind": "website",
     "pricing": "partial",
