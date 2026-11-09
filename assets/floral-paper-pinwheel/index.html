@@ -6,7 +6,7 @@
 <title>花纸风车</title>
 <style>
   * { box-sizing: border-box }
-  body { margin: 0; min-height: 100svh; display: grid; grid-template-rows: auto minmax(200px, 1fr) auto; background: #fcfbf7; color: #283a64; font: 14px/1.5 system-ui, sans-serif }
+  body { margin: 0; min-height: 100svh; display: grid; grid-template-rows: auto minmax(200px, 1fr) auto; background: #fffefa; color: #283a64; font: 14px/1.5 system-ui, sans-serif }
   header, footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px 18px; padding: 13px clamp(14px, 4vw, 48px) }
   header { border-bottom: 1px solid #3755971a }
   footer { border-top: 1px solid #3755971a }
@@ -15,7 +15,7 @@
   .index, .hint { color: #586585; font-size: 12px }
   .index { letter-spacing: .14em }
   .stage { position: relative; min-width: 0; min-height: 200px; overflow: hidden; display: grid; place-items: center }
-  svg { width: 100%; height: 100%; position: absolute; inset: 0; overflow: hidden }
+  canvas { width: 100%; height: 100%; position: absolute; inset: 0; overflow: hidden }
   .rotor-target { position: absolute; inset: 0; padding: 0; background: transparent; border: 0; cursor: pointer; border-radius: 0 }
   .rotor-target:focus-visible { outline-offset: -5px }
   .controls { display: flex; gap: 8px }
@@ -30,24 +30,7 @@
 <body>
 <header><h1 id="title">花纸风车</h1><span class="index" id="indexLabel">纸上动效 · 01</span></header>
 <main class="stage" id="stage" data-state="ready">
-  <svg viewBox="0 0 720 510" aria-hidden="true">
-    <defs>
-      <path id="blade" d="M0 0 C18 -48 24 -132 147 -121 L105 -26 Q53 -28 0 0Z"/>
-      <clipPath id="blade-clip"><use href="#blade"/></clipPath>
-      <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox">
-        <stop stop-color="#fff"/><stop offset=".63" stop-color="#f7f8fd"/><stop offset="1" stop-color="#dce5f7"/>
-      </linearGradient>
-      <linearGradient id="fold" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox">
-        <stop stop-color="#edf1fb"/><stop offset="1" stop-color="#fff"/>
-      </linearGradient>
-      <path id="petal" d="M0 0 Q-8 -6 -4 -12 Q2 -15 5 -9 Q6 -4 0 0Z"/>
-    </defs>
-    <path d="M360 219 Q352 338 326 510" fill="none" stroke="#5272b1" stroke-width="1.5"/>
-    <g id="stem-flowers"></g>
-    <g transform="translate(360 219)"><g id="rotor"></g></g>
-    <g id="air"></g>
-    <circle cx="360" cy="219" r="5.5" fill="#4e77bb" stroke="#fcfbf7" stroke-width="1.5"/>
-  </svg>
+  <canvas id="scene" aria-hidden="true"></canvas>
   <button type="button" class="rotor-target" id="target" aria-label="吹动纸风车"></button>
 </main>
 <footer>
@@ -60,148 +43,256 @@
 <p id="status" class="sr-only" aria-live="polite"></p>
 <script>
   const byId = id => document.getElementById(id);
-  const svgNS = 'http://www.w3.org/2000/svg';
   const stage = byId('stage');
-  const rotor = byId('rotor');
-  const air = byId('air');
-  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  const canvas = byId('scene');
+  const context = canvas.getContext('2d', { alpha: false });
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const english = new URLSearchParams(location.search).get('lang') === 'en';
-  const colors = ['#f5c32f', '#f18d38', '#df597e', '#278cc9', '#29aa94', '#935cba'];
-  const hub = { x: 360, y: 219 };
-  const paperPrint = [];
-  const launchPoints = [];
-  const stateText = english
-    ? { ready: 'Pinwheel ready.', burst: 'A gust scattered the petals.', clear: 'Petals dispersed.' }
-    : { ready: '风车已就绪。', burst: '风车转动，花瓣散开。', clear: '花瓣已飘散。' };
+  const colors = ['#ffca39', '#fa912f', '#ec507c', '#288cce', '#2cb59f', '#9c5bc0'];
+  const tau = Math.PI * 2;
+  const restAngle = -.10;
+  const duration = 3.4;
+  const front = new Path2D('M0 0 C-22 -52 -52 -109 12 -153 C43 -175 83 -180 123 -199 L64 -81 C39 -71 16 -34 0 0 Z');
+  const fold = new Path2D('M0 0 C21 -22 29 -71 64 -81 C47 -47 58 -28 82 -22 C45 -29 24 -20 0 0 Z');
+  const petal = new Path2D('M0 0 C-7 -3 -13 -12 -8 -17 C-3 -22 6 -18 9 -13 C10 -8 4 -2 0 0Z');
+  const stamps = [];
+  let seed = 231;
+  let width, height, ratio, scale, centerX, centerY;
+  let angle = restAngle;
+  let ink = 1;
+  let burst = null;
+  let frame = 0;
+
   if (english) {
     document.documentElement.lang = 'en';
     document.title = 'Flower Paper Pinwheel';
     byId('title').textContent = document.title;
     byId('indexLabel').textContent = 'PAPER MOTION · 01';
-    byId('hint').textContent = 'Tap the pinwheel and let the paper flowers take flight.';
+    byId('hint').textContent = 'Tap the pinwheel to scatter its paper petals.';
     byId('gust').textContent = 'Send a gust';
     byId('reset').textContent = 'Reset';
     byId('target').setAttribute('aria-label', 'Blow the pinwheel');
   }
-  function element(name, attrs, parent) {
-    const node = document.createElementNS(svgNS, name);
-    for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value);
-    parent.append(node);
-    return node;
-  }
-  function flower(parent, x, y, size, angle, color) {
-    const stamp = element('g', { transform: 'translate(' + x + ' ' + y + ') rotate(' + angle + ') scale(' + size + ')', fill: color }, parent);
-    for (let petal = 0; petal < 5; petal++) {
-      element('use', { href: '#petal', transform: 'rotate(' + petal * 72 + ')' }, stamp);
-    }
-    element('circle', { r: 1.8, fill: '#fff8e8' }, stamp);
-  }
-  const motifs = [
-    [41, -47, .91, 8], [57, -62, .58, 35], [57, -88, .75, 24],
-    [76, -73, 1.06, 65], [84, -108, .72, 12], [94, -87, .46, 33],
-    [111, -69, .7, 41], [110, -113, 1.02, 20], [130, -108, .55, 40],
-    [71, -98, .36, 0], [101, -101, .38, 13], [37, -66, .52, 6]
-  ];
-  for (let blade = 0; blade < 4; blade++) {
-    const shape = element('g', { transform: 'rotate(' + blade * 90 + ')' }, rotor);
-    element('use', { href: '#blade', fill: 'url(#paper)' }, shape);
-    const ink = element('g', { 'clip-path': 'url(#blade-clip)' }, shape);
-    paperPrint.push(ink);
-    motifs.forEach(([x, y, scale, tilt], index) => {
-      const color = colors[(index + blade * 2) % colors.length];
-      flower(ink, x, y, scale, tilt + blade * 11, color);
-      launchPoints.push({ x, y, turn: blade * 90, color });
-    });
-    element('path', { d: 'M0 0 Q58 -25 105 -26 L147 -121 Q111 -54 0 0Z', fill: 'url(#fold)', 'fill-opacity': '.86' }, shape);
-    element('use', { href: '#blade', fill: 'none', stroke: '#7590c5', 'stroke-width': '1.1', 'stroke-linejoin': 'round' }, shape);
-    element('path', { d: 'M0 0 Q66 -44 105 -26', fill: 'none', stroke: '#839ad0', 'stroke-opacity': '.65', 'stroke-width': '.85' }, shape);
-  }
-  flower(byId('stem-flowers'), 352, 314, .72, 14, colors[5]);
-  flower(byId('stem-flowers'), 344, 370, 1.05, 36, colors[2]);
-  flower(byId('stem-flowers'), 335, 438, .55, 23, colors[1]);
 
-  const rest = 12;
-  let angle = rest;
-  let frame = 0;
-  function state(name) {
-    if (stage.dataset.state === name) return;
-    stage.dataset.state = name;
-    byId('status').textContent = stateText[name];
+  function random() {
+    seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+    return seed / 4294967296;
   }
-  function paint(rotation, ink) {
-    angle = rotation;
-    rotor.setAttribute('transform', 'rotate(' + rotation + ')');
-    paperPrint.forEach(group => group.setAttribute('opacity', ink));
+
+  function flower(ctx, x, y, size, tilt, color) {
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(tilt);
+    ctx.scale(size, size);
+    ctx.fillStyle = color;
+    for (let index = 0; index < 5; index++) {
+      ctx.rotate(tau / 5 + (index - 2) * .035);
+      ctx.fill(petal);
+    }
+    ctx.fillStyle = '#fffae8';
+    ctx.beginPath();
+    ctx.arc(0, 0, 2.4, 0, tau);
+    ctx.fill();
+    ctx.restore();
   }
-  function reset() {
-    cancelAnimationFrame(frame);
-    air.replaceChildren();
-    paint(rest, 1);
-    state('ready');
+
+  // Cache the two complete paper wheels. Each animation frame blends these
+  // bitmaps, so flowers and paper curves never have to be redrawn per frame.
+  const edgeStamps = [
+    [-13,-66],[-22,-99],[-13,-125],[1,-143],[22,-156],[42,-170],
+    [65,-178],[85,-183],[108,-191],[88,-146],[80,-124],[65,-98],
+    [49,-69],[34,-55],[18,-38],[35,-113]
+  ];
+  const layers = [false, true].map(printed => {
+    const sheet = document.createElement('canvas');
+    sheet.width = sheet.height = 1060;
+    const ctx = sheet.getContext('2d');
+    ctx.setTransform(2, 0, 0, 2, 530, 530);
+    for (let blade = 0; blade < 4; blade++) {
+      const turn = blade * Math.PI / 2;
+      ctx.save();
+      ctx.rotate(turn);
+      const paper = ctx.createLinearGradient(-20, -190, 55, -25);
+      paper.addColorStop(0, '#fffffe');
+      paper.addColorStop(.68, '#fcfcfd');
+      paper.addColorStop(1, '#edf0f9');
+      ctx.fillStyle = paper;
+      ctx.fill(front);
+      if (printed) {
+        edgeStamps.forEach(([baseX, baseY], index) => {
+          const x = baseX + (random() - .5) * 15;
+          const y = baseY + (random() - .5) * 12;
+          const color = colors[(index + 2 * blade + Math.floor(random() * 4)) % colors.length];
+          const size = .21 + random() ** 1.6 * .85;
+          flower(ctx, x, y, size, random() * tau, color);
+          stamps.push({ x, y, turn, color });
+        });
+      }
+      ctx.lineJoin = 'round';
+      ctx.lineWidth = 1.25;
+      ctx.strokeStyle = '#7d96cc';
+      ctx.stroke(front);
+      const crease = ctx.createLinearGradient(11, -15, 57, -78);
+      crease.addColorStop(0, '#dbe3f5');
+      crease.addColorStop(.6, '#fafbff');
+      crease.addColorStop(1, '#eef1fa');
+      ctx.fillStyle = crease;
+      ctx.fill(fold);
+      ctx.lineWidth = .85;
+      ctx.strokeStyle = '#9cadd5';
+      ctx.stroke(fold);
+      ctx.restore();
+    }
+    return sheet;
+  });
+
+  function draw(particles = [], time = 0) {
+    context.setTransform(ratio, 0, 0, ratio, 0, 0);
+    context.fillStyle = '#fffefa';
+    context.fillRect(0, 0, width, height);
+    context.translate(centerX, centerY);
+    context.scale(scale, scale);
+
+    context.beginPath();
+    context.moveTo(0, 0);
+    const stemLength = (height - centerY) / scale;
+    context.lineTo(-stemLength * .142, stemLength);
+    context.lineWidth = 1.55;
+    context.strokeStyle = '#5879ba';
+    context.stroke();
+    flower(context, -14.5, 102, .63, .24, colors[5]);
+    flower(context, -22, 155, .85, .64, colors[2]);
+    flower(context, -39, 275, .48, .27, colors[1]);
+
+    context.save();
+    context.rotate(angle);
+    context.drawImage(layers[0], -265, -265, 530, 530);
+    if (ink > 0) {
+      context.globalAlpha = ink;
+      context.drawImage(layers[1], -265, -265, 530, 530);
+    }
+    context.restore();
+
+    context.fillStyle = '#4e83cb';
+    context.beginPath();
+    context.arc(0, 0, 4.7, 0, tau);
+    context.fill();
+
+    for (const particle of particles) {
+      const age = time - particle.delay;
+      if (age < 0 || age > particle.life) continue;
+      const sway = Math.sin(age * 5 + particle.phase) * 17 * age;
+      const x = particle.x + particle.vx * age + sway;
+      const y = particle.y + particle.vy * age + 89 * age * age;
+      const flip = .15 + .85 * Math.abs(Math.cos(age * particle.flutter + particle.phase));
+      context.save();
+      context.translate(x, y);
+      context.rotate(particle.phase + particle.spin * age);
+      context.scale(particle.size, particle.size * flip);
+      context.globalAlpha = Math.min(1, age * 30, (particle.life - age) * 3);
+      context.fillStyle = particle.color;
+      context.fill(petal);
+      context.restore();
+    }
   }
+
+  function resize() {
+    ({ width, height } = stage.getBoundingClientRect());
+    ratio = Math.min(devicePixelRatio || 1, 2);
+    canvas.width = Math.max(1, Math.round(width * ratio));
+    canvas.height = Math.max(1, Math.round(height * ratio));
+    scale = Math.min(width / 820, height / 670);
+    centerX = width * .5;
+    centerY = height * .435;
+    if (!burst) draw();
+  }
+
+  function setState(state) {
+    if (stage.dataset.state === state) return;
+    stage.dataset.state = state;
+    byId('status').textContent = {
+      ready: english ? 'Pinwheel ready.' : '风车已就绪。',
+      burst: english ? 'Petals in the wind.' : '花瓣随风散开。',
+      clear: english ? 'Paper blades revealed.' : '白纸叶片已露出。'
+    }[state];
+  }
+
+  function spin(time, initialSpeed) {
+    const slow = Math.exp(-time / .72);
+    const fast = Math.exp(-time / .12);
+    const coast = Math.exp(-time / .53);
+    return {
+      delta: initialSpeed * .53 * (1 - coast) + 22 * (.72 * (1 - slow) - .12 * (1 - fast)),
+      speed: initialSpeed * coast + 22 * (slow - fast)
+    };
+  }
+
   function gust() {
+    const now = performance.now();
+    const speed = burst ? spin((now - burst.started) / 1000, burst.speed).speed : 0;
     cancelAnimationFrame(frame);
-    air.replaceChildren();
-    state('burst');
-    if (motion.matches) {
-      paint(rest + 20, .18);
+    if (reducedMotion.matches) {
+      burst = null;
+      angle = restAngle + .24;
+      ink = 0;
+      draw();
+      setState('clear');
       return;
     }
-    const startAngle = angle;
-    const particles = Array.from({ length: 144 }, (_, index) => {
-      const point = launchPoints[index % launchPoints.length];
-      const delay = 90 + Math.random() * 450;
-      const flight = 850 + Math.random() * 1050;
-      const direction = Math.random() * Math.PI * 2;
-      const speed = 48 + Math.random() * 162;
+    setState('burst');
+    const initialAngle = angle;
+    const initialInk = ink > .05 ? ink : 1;
+    const particles = Array.from({ length: 210 }, (_, index) => {
+      const stamp = stamps[index % stamps.length];
+      const delay = .1 + random() * .5;
+      const turn = initialAngle + stamp.turn + spin(delay, speed).delta;
+      const cos = Math.cos(turn);
+      const sin = Math.sin(turn);
+      const x = stamp.x * cos - stamp.y * sin;
+      const y = stamp.x * sin + stamp.y * cos;
+      const direction = Math.atan2(y, x) + (random() - .5) * 1.5;
+      const distance = 42 + random() * 210;
       return {
-        node: element('use', { href: '#petal', fill: point.color, opacity: 0 }, air),
-        point, delay, flight, speed, direction,
-        size: .26 + Math.random() * .95,
-        spin: (Math.random() - .5) * 680,
-        tilt: Math.random() * 360
+        x, y, delay, color: stamp.color,
+        life: .9 + random() * 1.55,
+        vx: 95 + Math.cos(direction) * distance - y * .32,
+        vy: -85 + Math.sin(direction) * distance + x * .32,
+        size: index < 14 ? 1 + random() * 1.35 : .18 + random() ** 2 * .85,
+        phase: random() * tau, spin: (random() - .5) * 8, flutter: 4 + random() * 7
       };
     });
-    const start = performance.now();
-    const spinAngle = elapsed => {
-      const progress = Math.min(1, elapsed / 2800);
-      return startAngle + 550 * (1 - (1 - progress) ** 3);
-    };
-    function tick(now) {
-      const elapsed = now - start;
-      const ink = Math.max(0.03, 1 - Math.max(0, elapsed - 110) / 670);
-      paint(spinAngle(elapsed), ink);
-      for (const particle of particles) {
-        const age = elapsed - particle.delay;
-        if (age < 0 || age > particle.flight) {
-          particle.node.setAttribute('opacity', 0);
-          continue;
-        }
-        const { point, direction, speed } = particle;
-        const radians = (spinAngle(particle.delay) + point.turn) * Math.PI / 180;
-        const t = age / 1000;
-        const x = hub.x + point.x * Math.cos(radians) - point.y * Math.sin(radians) + (70 + speed * Math.cos(direction)) * t;
-        const y = hub.y + point.x * Math.sin(radians) + point.y * Math.cos(radians) + (speed * Math.sin(direction) - 92) * t + 72 * t * t;
-        const progress = age / particle.flight;
-        const flutter = .25 + .75 * Math.abs(Math.sin(particle.tilt + t * 9));
-        particle.node.setAttribute('transform', 'translate(' + x + ' ' + y + ') rotate(' + (particle.tilt + t * particle.spin) + ') scale(' + particle.size + ' ' + particle.size * flutter + ')');
-        particle.node.setAttribute('opacity', Math.min(1, age / 55, (1 - progress) * 4));
-      }
-      if (elapsed < 2800) {
-        frame = requestAnimationFrame(tick);
+    burst = { started: now, speed };
+    function animate(timestamp) {
+      const time = Math.min(duration, Math.max(0, (timestamp - now) / 1000));
+      const progress = Math.max(0, Math.min(1, (time - .13) / .76));
+      angle = initialAngle + spin(time, speed).delta;
+      ink = initialInk * (1 - progress * progress * (3 - 2 * progress));
+      draw(particles, time);
+      if (time < duration) {
+        frame = requestAnimationFrame(animate);
       } else {
-        air.replaceChildren();
-        paint(spinAngle(2800), .03);
-        state('clear');
+        burst = null;
+        setState('clear');
       }
     }
-    frame = requestAnimationFrame(tick);
+    frame = requestAnimationFrame(animate);
   }
+
+  function reset() {
+    cancelAnimationFrame(frame);
+    burst = null;
+    angle = restAngle;
+    ink = 1;
+    draw();
+    setState('ready');
+  }
+
   byId('target').addEventListener('click', gust);
   byId('gust').addEventListener('click', gust);
   byId('reset').addEventListener('click', reset);
-  motion.addEventListener('change', reset);
-  reset();
+  reducedMotion.addEventListener('change', reset);
+  new ResizeObserver(resize).observe(stage);
+  resize();
 </script>
 </body>
 </html>
