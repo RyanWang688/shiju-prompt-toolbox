@@ -52,10 +52,52 @@
   const tau = Math.PI * 2;
   const restAngle = -.10;
   const duration = 3.4;
+  const timeScale = 3;
   const front = new Path2D('M0 0 C-22 -52 -52 -109 12 -153 C43 -175 83 -180 123 -199 L64 -81 C39 -71 16 -34 0 0 Z');
   const fold = new Path2D('M0 0 C21 -22 29 -71 64 -81 C47 -47 58 -28 82 -22 C45 -29 24 -20 0 0 Z');
   const petal = new Path2D('M0 0 C-7 -3 -13 -12 -8 -17 C-3 -22 6 -18 9 -13 C10 -8 4 -2 0 0Z');
+  const flyingPetalShapes = [
+    new Path2D('M0 1 C-4 -3 -13 -10 -11 -16 C-10 -22 -3 -23 1 -20 C5 -24 13 -20 12 -14 C12 -8 5 -2 0 1Z'),
+    new Path2D('M0 1 C-4 -4 -10 -10 -9 -17 C-8 -23 -3 -27 1 -25 C6 -28 11 -23 10 -17 C9 -9 5 -3 0 1Z'),
+    new Path2D('M0 1 C-5 -2 -14 -7 -15 -12 C-17 -19 -8 -22 -4 -18 C0 -22 8 -19 10 -14 C12 -8 5 -2 0 1Z')
+  ];
   const stamps = [];
+
+  // Pre-render the petal faces and vein detail once, so flight only transforms sprites.
+  const petalFaces = colors.map(color => flyingPetalShapes.map(shape => [false, true].map(back => {
+    const sprite = document.createElement('canvas');
+    sprite.width = 112;
+    sprite.height = 128;
+    const ctx = sprite.getContext('2d');
+    ctx.setTransform(3, 0, 0, 3, 54, 91);
+    const tint = ctx.createLinearGradient(4, -25, -1, 0);
+    tint.addColorStop(0, back ? '#fff9ee' : '#fff2e2');
+    tint.addColorStop(back ? .82 : .48, color);
+    tint.addColorStop(1, '#fff0da');
+    ctx.fillStyle = tint;
+    ctx.fill(shape);
+    ctx.save();
+    ctx.clip(shape);
+    const light = ctx.createRadialGradient(-5, -16, 1, -5, -16, 14);
+    light.addColorStop(0, back ? '#fffaf182' : '#ffffff58');
+    light.addColorStop(1, '#ffffff00');
+    ctx.fillStyle = light;
+    ctx.fillRect(-18, -29, 36, 31);
+    ctx.lineCap = 'round';
+    ctx.lineWidth = .36;
+    ctx.strokeStyle = back ? '#fffaf09c' : '#fff9ee70';
+    ctx.beginPath();
+    for (const tip of [-7, -2, 4, 8]) {
+      ctx.moveTo(0, -.7);
+      ctx.quadraticCurveTo(tip * .36, -9, tip, -19 - Math.abs(tip) * .16);
+    }
+    ctx.stroke();
+    ctx.restore();
+    ctx.strokeStyle = color + (back ? '46' : '66');
+    ctx.lineWidth = .32;
+    ctx.stroke(shape);
+    return sprite;
+  })));
   let seed = 231;
   let width, height, ratio, scale, centerX, centerY;
   let angle = restAngle;
@@ -181,17 +223,20 @@
     for (const particle of particles) {
       const age = time - particle.delay;
       if (age < 0 || age > particle.life) continue;
-      const sway = Math.sin(age * 5 + particle.phase) * 17 * age;
-      const x = particle.x + particle.vx * age + sway;
-      const y = particle.y + particle.vy * age + 89 * age * age;
-      const flip = .15 + .85 * Math.abs(Math.cos(age * particle.flutter + particle.phase));
+      const travel = (1 - Math.exp(-age * .57)) / .57;
+      const breeze = 27 * age * age;
+      const sway = (Math.sin(age * particle.flutter + particle.phase) - Math.sin(particle.phase)) * 8 * age;
+      const x = particle.x + particle.vx * travel + breeze + sway;
+      const y = particle.y + particle.vy * travel + 55 * age * age + sway * .35;
+      const tilt = Math.cos(age * particle.flutter + particle.phase);
+      const thickness = .12 + .88 * Math.abs(tilt);
+      const fade = Math.min(1, age * 22, (particle.life - age) * 2.6);
       context.save();
       context.translate(x, y);
-      context.rotate(particle.phase + particle.spin * age);
-      context.scale(particle.size, particle.size * flip);
-      context.globalAlpha = Math.min(1, age * 30, (particle.life - age) * 3);
-      context.fillStyle = particle.color;
-      context.fill(petal);
+      context.rotate(particle.phase + particle.spin * age + Math.sin(age * 4 + particle.phase) * .24);
+      context.scale(particle.size * thickness, particle.size);
+      context.globalAlpha = fade * (.64 + .36 * thickness);
+      context.drawImage(particle.faces[tilt < 0 ? 1 : 0], -18, -91 / 3, 112 / 3, 128 / 3);
       context.restore();
     }
   }
@@ -229,7 +274,7 @@
 
   function gust() {
     const now = performance.now();
-    const speed = burst ? spin((now - burst.started) / 1000, burst.speed).speed : 0;
+    const speed = burst ? spin((now - burst.started) / (1000 * timeScale), burst.speed).speed : 0;
     cancelAnimationFrame(frame);
     if (reducedMotion.matches) {
       burst = null;
@@ -244,26 +289,27 @@
     const initialInk = ink > .05 ? ink : 1;
     const particles = Array.from({ length: 210 }, (_, index) => {
       const stamp = stamps[index % stamps.length];
-      const delay = .1 + random() * .5;
+      const delay = .07 + random() ** 1.5 * .57;
       const turn = initialAngle + stamp.turn + spin(delay, speed).delta;
       const cos = Math.cos(turn);
       const sin = Math.sin(turn);
       const x = stamp.x * cos - stamp.y * sin;
       const y = stamp.x * sin + stamp.y * cos;
-      const direction = Math.atan2(y, x) + (random() - .5) * 1.5;
-      const distance = 42 + random() * 210;
+      const direction = Math.atan2(y, x) + (random() - .5) * 1.3;
+      const reach = 44 + random() * 220;
+      const faces = petalFaces[colors.indexOf(stamp.color)][Math.floor(random() * flyingPetalShapes.length)];
       return {
-        x, y, delay, color: stamp.color,
-        life: .9 + random() * 1.55,
-        vx: 95 + Math.cos(direction) * distance - y * .32,
-        vy: -85 + Math.sin(direction) * distance + x * .32,
-        size: index < 14 ? 1 + random() * 1.35 : .18 + random() ** 2 * .85,
-        phase: random() * tau, spin: (random() - .5) * 8, flutter: 4 + random() * 7
+        x, y, delay, faces,
+        life: 1.2 + random() * (duration - delay - 1.2),
+        vx: 28 + Math.cos(direction) * reach - y * .19,
+        vy: -44 + Math.sin(direction) * reach + x * .19,
+        size: index < 10 ? .77 + random() * .61 : .16 + random() ** 2 * .66,
+        phase: random() * tau, spin: (random() - .5) * 5.5, flutter: 5 + random() * 8
       };
     });
     burst = { started: now, speed };
     function animate(timestamp) {
-      const time = Math.min(duration, Math.max(0, (timestamp - now) / 1000));
+      const time = Math.min(duration, Math.max(0, (timestamp - now) / (1000 * timeScale)));
       const progress = Math.max(0, Math.min(1, (time - .13) / .76));
       angle = initialAngle + spin(time, speed).delta;
       ink = initialInk * (1 - progress * progress * (3 - 2 * progress));
