@@ -1,5 +1,81 @@
 [
   {
+    "id": "website-gods-eye-view",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "God’s Eye View（3D 地球观测台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "在浏览器的 3D 地球上叠加航班、船舶、卫星、地震和天气等公开数据，支持追踪目标及切换夜视、红外等显示效果。",
+    "tags": "3D 地球 / 航班追踪 / 卫星 / 地震 / Cesium / GIS",
+    "license": "MIT",
+    "prompt": "God’s Eye View（3D 地球观测台）\n\n用途\n在浏览器的 3D 地球上叠加航班、船舶、卫星、地震和天气等公开数据，支持追踪目标及切换夜视、红外等显示效果。\n\n说明\n基础图层可在无 AI、无 API 密钥的情况下使用。船舶、火点等部分图层需对应供应商的密钥，云端语音与 AI 摘要需另行配置。部分交通数据属于模拟。\n\n许可\nMIT\n\n官方入口\nhttps://godseyeview.ai/\n\nGitHub\nhttps://github.com/bilawalsidhu/gods-eye-view",
+    "source": "https://godseyeview.ai/",
+    "officialUrl": "https://godseyeview.ai/",
+    "repository": "https://github.com/bilawalsidhu/gods-eye-view",
+    "documentation": "https://github.com/bilawalsidhu/gods-eye-view#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-gods-eye-view/official-site.jpg",
+      "alt": "God’s Eye View（3D 地球观测台）官网截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://godseyeview.ai/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-11 实际打开官网后的截图。",
+    "addedAt": "2026-11-11",
+    "verifiedAt": "2026-11-11",
+    "en": {
+      "title": "God’s Eye View (3D Earth observatory)",
+      "description": "Explore public aviation, vessel, satellite, earthquake and weather data on a 3D globe with object tracking and night-vision or infrared-style views.",
+      "tags": "3D globe / Flight tracking / Satellites / Earthquakes / Cesium / GIS",
+      "notes": "Basic layers work without AI or API keys. Some layers, including live vessels and active fires, need provider keys. Cloud voice and AI summaries require separate setup. Some traffic data is simulated.",
+      "license": "MIT",
+      "previewNote": "Official site screenshot taken on 2026-11-11."
+    }
+  },
+  {
+    "id": "website-openmaic",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "OpenMAIC（多智能体互动课堂）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "清华团队开发的多智能体课堂，可从主题或资料生成讲义、测验、白板和交互模拟，并让 AI 教师和同学参与讨论。",
+    "tags": "清华大学 / 多智能体 / AI 教师 / 课程生成 / 测验 / 白板",
+    "license": "MIT",
+    "prompt": "OpenMAIC（多智能体互动课堂）\n\n用途\n清华团队开发的多智能体课堂，可从主题或资料生成讲义、测验、白板和交互模拟，并让 AI 教师和同学参与讨论。\n\n说明\n课程工作台支持通过对话规划课程、逐页修改和重新生成。可在官网浏览公开课堂，也可以自部署并配置自己的模型服务。\n\n许可\nMIT\n\n官方入口\nhttps://open.maic.chat/\n\nGitHub\nhttps://github.com/THU-MAIC/OpenMAIC",
+    "source": "https://open.maic.chat/",
+    "officialUrl": "https://open.maic.chat/",
+    "repository": "https://github.com/THU-MAIC/OpenMAIC",
+    "documentation": "https://open.maic.chat/docs/getting-started",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-openmaic/official-site.jpg",
+      "alt": "OpenMAIC（多智能体互动课堂）官网截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://open.maic.chat/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-11 实际打开官网后的截图。",
+    "addedAt": "2026-11-11",
+    "verifiedAt": "2026-11-11",
+    "en": {
+      "title": "OpenMAIC (multi-agent classroom)",
+      "description": "Generate course slides, quizzes, whiteboards and interactive simulations from a topic or materials, with AI teachers and peers taking part.",
+      "tags": "Tsinghua University / Multi-agent / AI teacher / Course generation / Quizzes / Whiteboard",
+      "notes": "The course workbench supports conversational planning, page-by-page editing and regeneration. Browse public courses online or self-host with a configured model provider.",
+      "license": "MIT",
+      "previewNote": "Official site screenshot taken on 2026-11-11."
+    }
+  },
+  {
     "id": "website-toolknit",
     "kind": "website",
     "title": "ToolKnit（免费在线工具箱）",
@@ -6194,7 +6270,7 @@
     "officialUrl": "https://archify.si/",
     "repository": "https://github.com/tt-a1i/archify",
     "documentation": "https://github.com/tt-a1i/archify/blob/main/archify/SKILL.md",
-    "prompt": "Archify\n\n用途：把自然语言描述、计划或代码库整理为可探索的独立 HTML 图表，支持架构、工作流、时序、数据流、生命周期、ERD、类图、树图、时间线与瀑布图。也可按要求制作结论在前、带图表与来源的单页讲解。\n\n适合：系统架构沟通、API 调用链、数据关系、项目流程和计划梳理。查看图表时可聚焦节点、追踪路径、切换主题并导出；具体能力以官方文档为准。\n\n使用条件：作为 AI 编程代理的 Skill 使用，完整渲染与校验流程需要可执行 Node.js 的环境；生成的 HTML 可独立查看。\n\n官网：https://archify.si/\n源码：https://github.com/tt-a1i/archify\n说明：https://github.com/tt-a1i/archify/blob/main/archify/SKILL.md\n作者示例：https://archify.si/gallery.html\n\n开源许可：MIT。预览使用作者仓库公开的实际架构图示例，非本次生成。本次仅收录，未安装或执行 Skill。",
+    "prompt": "Archify\n\n用途：把自然语言描述、计划或代码库整理为可探索的独立 HTML 图表，支持架构、工作流、时序、数据流、生命周期、ERD、类图、树图、时间线与瀑布图。也可按要求制作结论在前、带图表与来源的单页讲解。\n\n适合：系统架构沟通、API 调用链、数据关系、项目流程和计划梳理。查看图表时可聚焦节点、追踪路径、切换主题并导出；具体能力以官方文档为准。\n\n校验与对比：结构化 JSON 可在渲染前校验，Architecture Delta 可对比两份通过校验的架构快照。\n\n使用条件：作为 AI 编程代理的 Skill 使用，完整渲染与校验流程需要可执行 Node.js 的环境；生成的 HTML 可独立查看。\n\n官网：https://archify.si/\n源码：https://github.com/tt-a1i/archify\n说明：https://github.com/tt-a1i/archify/blob/main/archify/SKILL.md\n作者示例：https://archify.si/gallery.html\n\n开源许可：MIT。预览使用作者仓库公开的实际架构图示例，非本次生成。本次仅收录，未安装或执行 Skill。",
     "preview": {
       "type": "image",
       "src": "assets/skill-archify/author-architecture.png",
@@ -6206,12 +6282,13 @@
     "previewEvidence": "author-repository-example",
     "previewNote": "作者仓库公开的真实架构图示例，原图未修改；非本次运行生成。来源与 MIT 许可保存在素材目录。",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23",
+    "verifiedAt": "2026-11-11",
     "en": {
       "title": "Archify",
       "description": "Turns ideas, workflows or codebases into standalone interactive HTML diagrams and one-page explainers. Great for architecture, API calls, data relationships and project plans.",
       "tags": "Architecture / Flowcharts / Sequence diagrams / Codebase visualization / Interactive HTML / Open source",
-      "previewNote": "A real architecture-diagram example published in the author's repository, unmodified; not generated here. Source and MIT licence are kept in the asset folder."
+      "previewNote": "A real architecture-diagram example published in the author's repository, unmodified; not generated here. Source and MIT licence are kept in the asset folder.",
+      "notes": " Validate structured JSON before rendering and compare two validated architecture snapshots with Architecture Delta."
     }
   },
   {
