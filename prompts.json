@@ -24,7 +24,7 @@
       "height": 900
     },
     "previewEvidence": "handcrafted-interactive-demo",
-    "previewNote": "点开卡片就是用这段提示词做出的成果，可以拖拽、缩放、切换时段；在线版：https://ryanwang688.github.io/jacaranda-corner/",
+    "previewNote": "提示词原作者：@土豆 | Tato（用户截图提供）。点开卡片就是本站作者用这段提示词做出的成果，可以拖拽、缩放、切换时段；在线版：https://ryanwang688.github.io/jacaranda-corner/",
     "addedAt": "2026-11-11",
     "verifiedAt": "2026-11-11",
     "en": {
@@ -33,7 +33,7 @@
       "tags": "Three.js / WebGL / 3D diorama / Jacaranda / Sydney / Toon shading / Day-night / Falling petals / Prompt",
       "prompt": "Use Three.js to build a Sydney jacaranda street-corner diorama that can be dragged to rotate and zoomed. Set it on a thin square base. The main subject is a cream-white three-storey heritage building whose two facades meet in a rounded corner, with a wrought-iron balcony and awning on the first floor and a purple slatted bench by the door. Several jacarandas enclose the building from both sides and behind, lower in front and taller at the back, with curving, forking branches, blossom clusters along the fine twigs and gaps in the canopy that let light through. Use a near-frontal three-quarter default camera looking slightly down, with the entrance, balcony and bench visible and a little of the roof showing. Give it the look of a Japanese anime background, with toon shading for the 3D miniature. Keep silhouettes clean and materials mostly flat colour with a few tonal steps, keeping glass reflections, metal highlights and contact shadows, without heavy black outlines. Reflect Sydney heritage streets, use a palette of cream white, blue-violet and warm yellow, and stress the warm–cool contrast between the purple canopy and warm lights. No photorealism, no vintage weathering filter, and a page with plenty of white space. Support day, dusk and night; at night the windows glow warm and street lamps light the blossoms, trunks and ground locally. Add swaying treetops and falling petals, keep interaction smooth, and deliver the HTML and source. Focus on the quality of the trees and lighting, matching the effect in the reference image I gave you.",
       "notes": "Prompt by @土豆 | Tato, shared by the user as a screenshot; the Chinese is kept verbatim. The reference image mentioned at the end belongs to the original author and is not included. The demo is what this site’s author built from the prompt; source at https://github.com/RyanWang688/jacaranda-corner.",
-      "previewNote": "Open the card to try the result built from this prompt — drag, zoom and change the time of day. Live version: https://ryanwang688.github.io/jacaranda-corner/"
+      "previewNote": "Prompt by @土豆 | Tato (shared by the user as a screenshot). Open the card to try what this site’s author built from it — drag, zoom and change the time of day. Live version: https://ryanwang688.github.io/jacaranda-corner/"
     },
     "sourceNote": "提示词原作者为 @土豆 | Tato，由用户截图提供；中文保留原文。末句提到的参考图是原作者使用的，没有附在这里。演示是本站作者用这段提示词做出的成果，源码见 https://github.com/RyanWang688/jacaranda-corner 。"
   },
