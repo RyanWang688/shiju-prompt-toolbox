@@ -1,20 +1,16 @@
 [
   {
     "id": "website-jacaranda-corner",
-    "kind": "website",
-    "resourceType": "GitHub 项目",
-    "title": "Jacaranda Corner（悉尼蓝花楹街角）",
+    "title": "悉尼蓝花楹街角 · Three.js 微缩场景",
     "category": "动画动效",
     "topics": [
-      "动效灵感"
+      "网页特效"
     ],
-    "tags": "Three.js / WebGL / 3D 微缩场景 / 蓝花楹 / 悉尼 / 三渲二 / 昼夜切换 / 花瓣粒子 / 自制项目",
-    "description": "我自己做的 Three.js 可交互微缩场景：悉尼街角一栋奶油白三层转角老楼，铁艺阳台、紫色长椅，被六棵蓝花楹围着，花瓣会飘落。可以拖拽旋转、缩放，在白天、黄昏和夜晚之间切换。",
-    "prompt": "Jacaranda Corner（悉尼蓝花楹街角）\n类型：GitHub 项目\n\n用途：我自己做的 Three.js 可交互微缩场景：悉尼街角一栋奶油白三层转角老楼，铁艺阳台、紫色长椅，被六棵蓝花楹围着，花瓣会飘落。可以拖拽旋转、缩放，在白天、黄昏和夜晚之间切换。\n\n说明：拖拽旋转，滚轮或双指缩放；左侧可以切换全景、长椅、环绕三个视角，以及白天、黄昏、夜晚三个时段，夜里窗户和路灯会亮起暖光。画面是三渲二风格，树梢轻摆、花瓣飘落；枝干程序化生成，约 5 万片实例化花片。\n\n运行：全部源码在一个 index.html 里，没有构建步骤；three.js 和字体从 CDN 加载，需要联网。用任意静态服务器打开即可，比如 python -m http.server 8630。\n\n在线演示：https://ryanwang688.github.io/jacaranda-corner/\nGitHub：https://github.com/RyanWang688/jacaranda-corner\n\n来源：本站作者自己的项目。",
-    "source": "https://github.com/RyanWang688/jacaranda-corner",
+    "tags": "Three.js / WebGL / 3D 微缩场景 / 蓝花楹 / 悉尼 / 三渲二 / 昼夜切换 / 花瓣飘落 / 提示词",
+    "description": "用 Three.js 搭一个可拖拽旋转、缩放的悉尼蓝花楹街角：奶油白圆弧转角老楼、铁艺阳台和紫色长椅，被蓝花楹围合，三渲二风格，支持白天、黄昏、夜晚切换和花瓣飘落。附按这段提示词做出的可交互演示。",
+    "prompt": "请用 Three.js 制作一个可拖拽旋转、缩放的悉尼蓝花楹街角微缩场景。场景搭建在方形薄底座上，主体为奶油白三层历史建筑，两面立面通过圆弧转角连接，二楼设铁艺阳台与雨棚，门前放置紫色木条长椅。多棵蓝花楹从建筑两侧和后方围合，前低后高，枝干弯曲分叉，花簇沿细枝分布，冠层保留透光空隙。默认镜头采用接近正面的三分之四视角，略微俯视，入口、阳台和长椅可见，屋顶少量露出。整体采用日式动画场景的美术风格，以三渲二明暗表现三维微缩景观。模型轮廓清晰，材质以纯色和少量色阶为主，保留玻璃反射、金属高光与接触阴影，不使用粗黑描边。建筑体现悉尼历史街区特征，配色以奶油白、蓝紫和暖黄为主，强调紫色花冠与暖灯的冷暖关系，不追求照片写实，也不添加复古做旧滤镜，页面使用留白设计。支持白天、黄昏、夜晚切换；夜间窗户发出暖光，路灯局部照亮花簇、树干和地面。加入树梢轻摆与花瓣飘落，保证交互流畅，交付 HTML 与源码。重点关注树和打光的质量，参考我给你的图片中的效果",
     "repository": "https://github.com/RyanWang688/jacaranda-corner",
-    "officialUrl": "https://ryanwang688.github.io/jacaranda-corner/",
-    "demo": "https://ryanwang688.github.io/jacaranda-corner/",
+    "demo": "assets/website-jacaranda-corner/index.html",
     "preview": {
       "type": "animation",
       "src": "assets/website-jacaranda-corner/index.html",
@@ -27,18 +23,19 @@
       "width": 1380,
       "height": 900
     },
-    "previewSource": "https://ryanwang688.github.io/jacaranda-corner/",
-    "previewEvidence": "live-website-screenshot",
-    "previewNote": "点开卡片就是项目本身，可以直接拖拽、缩放、切换时段；封面是 2026-11-11 实际打开在线版渲染的截图。",
+    "previewEvidence": "handcrafted-interactive-demo",
+    "previewNote": "点开卡片就是用这段提示词做出的成果，可以拖拽、缩放、切换时段；在线版：https://ryanwang688.github.io/jacaranda-corner/",
     "addedAt": "2026-11-11",
     "verifiedAt": "2026-11-11",
     "en": {
-      "title": "Jacaranda Corner (Sydney jacaranda street corner)",
-      "description": "My own interactive Three.js diorama: a cream three-storey corner building in Sydney with wrought-iron balconies and a purple bench, ringed by six jacaranda trees shedding petals. Drag to orbit, zoom, and switch between day, dusk and night.",
-      "tags": "Three.js / WebGL / 3D diorama / Jacaranda / Sydney / Toon shading / Day-night / Petal particles / My project",
-      "notes": "Drag to rotate and scroll or pinch to zoom. Switch between overview, bench and orbit views, and between daylight, golden hour and night, when windows and street lamps glow. Toon-style shading, swaying treetops and falling petals, with procedurally grown branches and about 50,000 instanced blossoms. All source is one index.html with no build step; three.js and fonts load from a CDN, so it needs a connection.",
-      "previewNote": "Open the card to use the project itself — drag, zoom and change the time of day. The cover is a real render of the live site captured on 2026-11-11."
-    }
+      "title": "Sydney Jacaranda Corner · Three.js Diorama",
+      "description": "A Three.js Sydney jacaranda street corner you can rotate and zoom: a cream heritage building with a rounded corner, iron balcony and purple bench, ringed by jacarandas, in toon shading with day, dusk and night and falling petals. Includes an interactive demo made from this prompt.",
+      "tags": "Three.js / WebGL / 3D diorama / Jacaranda / Sydney / Toon shading / Day-night / Falling petals / Prompt",
+      "prompt": "Use Three.js to build a Sydney jacaranda street-corner diorama that can be dragged to rotate and zoomed. Set it on a thin square base. The main subject is a cream-white three-storey heritage building whose two facades meet in a rounded corner, with a wrought-iron balcony and awning on the first floor and a purple slatted bench by the door. Several jacarandas enclose the building from both sides and behind, lower in front and taller at the back, with curving, forking branches, blossom clusters along the fine twigs and gaps in the canopy that let light through. Use a near-frontal three-quarter default camera looking slightly down, with the entrance, balcony and bench visible and a little of the roof showing. Give it the look of a Japanese anime background, with toon shading for the 3D miniature. Keep silhouettes clean and materials mostly flat colour with a few tonal steps, keeping glass reflections, metal highlights and contact shadows, without heavy black outlines. Reflect Sydney heritage streets, use a palette of cream white, blue-violet and warm yellow, and stress the warm–cool contrast between the purple canopy and warm lights. No photorealism, no vintage weathering filter, and a page with plenty of white space. Support day, dusk and night; at night the windows glow warm and street lamps light the blossoms, trunks and ground locally. Add swaying treetops and falling petals, keep interaction smooth, and deliver the HTML and source. Focus on the quality of the trees and lighting, matching the effect in the reference image I gave you.",
+      "notes": "Prompt by @土豆 | Tato, shared by the user as a screenshot; the Chinese is kept verbatim. The reference image mentioned at the end belongs to the original author and is not included. The demo is what this site’s author built from the prompt; source at https://github.com/RyanWang688/jacaranda-corner.",
+      "previewNote": "Open the card to try the result built from this prompt — drag, zoom and change the time of day. Live version: https://ryanwang688.github.io/jacaranda-corner/"
+    },
+    "sourceNote": "提示词原作者为 @土豆 | Tato，由用户截图提供；中文保留原文。末句提到的参考图是原作者使用的，没有附在这里。演示是本站作者用这段提示词做出的成果，源码见 https://github.com/RyanWang688/jacaranda-corner 。"
   },
   {
     "id": "website-gods-eye-view",
