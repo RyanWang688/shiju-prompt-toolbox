@@ -1,5 +1,46 @@
 [
   {
+    "id": "website-jacaranda-corner",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Jacaranda Corner（悉尼蓝花楹街角）",
+    "category": "动画动效",
+    "topics": [
+      "动效灵感"
+    ],
+    "tags": "Three.js / WebGL / 3D 微缩场景 / 蓝花楹 / 悉尼 / 三渲二 / 昼夜切换 / 花瓣粒子 / 自制项目",
+    "description": "我自己做的 Three.js 可交互微缩场景：悉尼街角一栋奶油白三层转角老楼，铁艺阳台、紫色长椅，被六棵蓝花楹围着，花瓣会飘落。可以拖拽旋转、缩放，在白天、黄昏和夜晚之间切换。",
+    "prompt": "Jacaranda Corner（悉尼蓝花楹街角）\n类型：GitHub 项目\n\n用途：我自己做的 Three.js 可交互微缩场景：悉尼街角一栋奶油白三层转角老楼，铁艺阳台、紫色长椅，被六棵蓝花楹围着，花瓣会飘落。可以拖拽旋转、缩放，在白天、黄昏和夜晚之间切换。\n\n说明：拖拽旋转，滚轮或双指缩放；左侧可以切换全景、长椅、环绕三个视角，以及白天、黄昏、夜晚三个时段，夜里窗户和路灯会亮起暖光。画面是三渲二风格，树梢轻摆、花瓣飘落；枝干程序化生成，约 5 万片实例化花片。\n\n运行：全部源码在一个 index.html 里，没有构建步骤；three.js 和字体从 CDN 加载，需要联网。用任意静态服务器打开即可，比如 python -m http.server 8630。\n\n在线演示：https://ryanwang688.github.io/jacaranda-corner/\nGitHub：https://github.com/RyanWang688/jacaranda-corner\n\n来源：本站作者自己的项目。",
+    "source": "https://github.com/RyanWang688/jacaranda-corner",
+    "repository": "https://github.com/RyanWang688/jacaranda-corner",
+    "officialUrl": "https://ryanwang688.github.io/jacaranda-corner/",
+    "demo": "https://ryanwang688.github.io/jacaranda-corner/",
+    "preview": {
+      "type": "animation",
+      "src": "assets/website-jacaranda-corner/index.html",
+      "alt": "可交互的悉尼蓝花楹街角 3D 场景"
+    },
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/website-jacaranda-corner/cover.jpg",
+      "alt": "Jacaranda Corner 实际渲染截图：奶油白转角老楼被紫色蓝花楹围绕，街面落满花瓣",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://ryanwang688.github.io/jacaranda-corner/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "点开卡片就是项目本身，可以直接拖拽、缩放、切换时段；封面是 2026-11-11 实际打开在线版渲染的截图。",
+    "addedAt": "2026-11-11",
+    "verifiedAt": "2026-11-11",
+    "en": {
+      "title": "Jacaranda Corner (Sydney jacaranda street corner)",
+      "description": "My own interactive Three.js diorama: a cream three-storey corner building in Sydney with wrought-iron balconies and a purple bench, ringed by six jacaranda trees shedding petals. Drag to orbit, zoom, and switch between day, dusk and night.",
+      "tags": "Three.js / WebGL / 3D diorama / Jacaranda / Sydney / Toon shading / Day-night / Petal particles / My project",
+      "notes": "Drag to rotate and scroll or pinch to zoom. Switch between overview, bench and orbit views, and between daylight, golden hour and night, when windows and street lamps glow. Toon-style shading, swaying treetops and falling petals, with procedurally grown branches and about 50,000 instanced blossoms. All source is one index.html with no build step; three.js and fonts load from a CDN, so it needs a connection.",
+      "previewNote": "Open the card to use the project itself — drag, zoom and change the time of day. The cover is a real render of the live site captured on 2026-11-11."
+    }
+  },
+  {
     "id": "website-gods-eye-view",
     "kind": "website",
     "pricing": "partial",
