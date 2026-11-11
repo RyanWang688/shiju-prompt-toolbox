@@ -1,5 +1,329 @@
 [
   {
+    "id": "website-jiangshan-map",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "江山时序（中国历史交互地图）",
+    "category": "其他",
+    "tags": "中国历史 / 历史地图 / 疆域演变 / 时间轴 / 古城 / 历史人物 / 交互地图 / 开源",
+    "description": "浏览器里的中国历史交互地图，覆盖战国（前 403 年）到现代的 18 个历史时期：拖动时间轴看各朝疆域和政区变化，点古城或关隘看历代地名沿革和发生在当地的大事，搜索历史人物还能在地图上画出生平行迹。",
+    "prompt": "江山时序（中国历史交互地图）\n类型：GitHub 项目\n\n用途：浏览器里的中国历史交互地图，覆盖战国（前 403 年）到现代的 18 个历史时期：拖动时间轴看各朝疆域和政区变化，点古城或关隘看历代地名沿革和发生在当地的大事，搜索历史人物还能在地图上画出生平行迹。\n\n说明：时间轴会显示当时在位的君主和年号；重大疆域节点会用虚线标出前后变化；可以叠加现代省界对照，也能看到黄河改道、古湖泊、长城、运河和丝路等随时代变化。界面有简体、繁体、英文和日文。\n\n使用：直接打开在线版就能用，不用安装。\n\n许可：GPL-3.0\n\nGitHub：https://github.com/DeanChensj/jiangshan-map\n在线版：https://deanchen.me/jiangshan-map/\n\n收录状态：仅收藏浏览，未下载源码。",
+    "source": "https://github.com/DeanChensj/jiangshan-map",
+    "repository": "https://github.com/DeanChensj/jiangshan-map",
+    "officialUrl": "https://deanchen.me/jiangshan-map/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-jiangshan-map/official-site.jpg",
+      "alt": "江山时序在线版实际截图：羊皮纸风格的战国地图，右侧是年代事件列表，底部是时间轴",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://deanchen.me/jiangshan-map/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-12 实际打开在线版后的网页截图；仅收藏浏览。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "Chronicles of the Realm (interactive atlas of Chinese history)",
+      "description": "An interactive atlas of Chinese history in the browser covering 18 periods from the Warring States (403 BCE) to the present. Scrub the timeline to watch borders and provinces change, click a city or pass to see its names and local events across eras, and search a historical figure to trace their life on the map.",
+      "tags": "Chinese history / Historical maps / Territory changes / Timeline / Ancient cities / Historical figures / Interactive map / Open source",
+      "notes": "The timeline shows the reigning monarch and era name, milestone maps outline what changed, a modern provincial overlay is available, and rivers, lakes, walls, canals and the Silk Road change with each era. Interface in Simplified and Traditional Chinese, English and Japanese. Use it online with nothing to install.",
+      "license": "GPL-3.0",
+      "previewNote": "Screenshot of the live site taken on 2026-11-12."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-ruview",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "RuView（WiFi 无接触人体感知）",
+    "category": "其他",
+    "tags": "WiFi 感知 / CSI / ESP32 / 呼吸心率 / 跌倒检测 / 无摄像头 / 边缘计算 / 开源",
+    "description": "用普通 WiFi 信号感知人体的开源系统：低成本 ESP32 采集信号扰动（CSI），推断有没有人、走动或静止、是否跌倒，还能无接触估算呼吸和心率，不用摄像头和穿戴设备，可完全离线运行。",
+    "prompt": "RuView（WiFi 无接触人体感知）\n类型：GitHub 项目\n\n用途：用普通 WiFi 信号感知人体的开源系统：低成本 ESP32 采集信号扰动（CSI），推断有没有人、走动或静止、是否跌倒，还能无接触估算呼吸和心率，不用摄像头和穿戴设备，可完全离线运行。\n\n说明：README 列出的指标里，呼吸 6–30 次/分、心率 40–120 次/分；单个 ESP32-S3 节点约 9 美元。另有 17 个关键点的无摄像头姿态估计和多传感器融合，其中部分能力 README 自己注明准确率还停留在合成数据、有待真实数据验证。\n\n注意：这不是医疗设备，呼吸心率读数只能作参考。需要自己烧录 ESP32 固件、搭建服务，门槛较高；项目也接 Cognitum Seed 等作者自家硬件。\n\n许可：MIT\n\nGitHub：https://github.com/ruvnet/RuView\n\n收录状态：仅收藏，未购买硬件或运行。",
+    "source": "https://github.com/ruvnet/RuView",
+    "repository": "https://github.com/ruvnet/RuView",
+    "officialUrl": "https://github.com/ruvnet/RuView",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-ruview/author-screen.jpg",
+      "alt": "RuView 官方界面图：深色观测台中间是 WiFi 推断的人体姿态，左侧显示心率 121、呼吸 24",
+      "width": 1200,
+      "height": 994
+    },
+    "previewSource": "https://github.com/ruvnet/RuView/blob/main/assets/v2-screen.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "官方仓库 README 里的界面截图；非本次运行成果。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "RuView (contactless WiFi sensing)",
+      "description": "An open-source system that senses people through ordinary WiFi: low-cost ESP32 boards capture signal disturbances (CSI) to detect presence, movement, stillness and falls and to estimate breathing and heart rate without cameras or wearables, fully offline.",
+      "tags": "WiFi sensing / CSI / ESP32 / Breathing and heart rate / Fall detection / Camera-free / Edge computing / Open source",
+      "notes": "The README lists breathing at 6–30 and heart rate at 40–120 per minute, with ESP32-S3 nodes from about $9. Camera-free 17-point pose and multi-sensor fusion are also included, and the README says some accuracy figures are still synthetic pending real-data validation. Not a medical device. Setup means flashing ESP32 firmware and running services, and the project ties into the author’s Cognitum Seed hardware.",
+      "license": "MIT",
+      "previewNote": "Interface screenshot from the official README — not output from this site."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-claude-mem",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Claude-Mem（编程 Agent 长期记忆）",
+    "category": "其他",
+    "tags": "Claude Code / Codex / 长期记忆 / 上下文 / 插件 / Agent / 开源",
+    "description": "给编程 Agent 加长期记忆：后台另开一个 Agent 记录每次会话做了什么、为什么这样做，压缩成摘要；下次开新会话时先注入一份简短索引，需要时再调出细节。支持 Claude Code、Codex、Cursor、OpenCode 等十几种工具。",
+    "prompt": "Claude-Mem（编程 Agent 长期记忆）\n类型：GitHub 项目\n\n用途：给编程 Agent 加长期记忆：后台另开一个 Agent 记录每次会话做了什么、为什么这样做，压缩成摘要；下次开新会话时先注入一份简短索引，需要时再调出细节。支持 Claude Code、Codex、Cursor、OpenCode 等十几种工具。\n\n说明：用 npx claude-mem install 安装，会自动找到本机的 Agent 让你选择；也能在 Claude Code 里通过插件市场安装。直接 npm install -g 只装 SDK，不会注册钩子。带记忆检索工具。\n\n注意：记忆默认存在本机 ~/.claude-mem，云同步要主动开启；匿名使用统计默认开启，可以用 npx claude-mem telemetry disable 关掉。官网另有付费的托管版 CMEM Pro。\n\n许可：Apache-2.0\n\nGitHub：https://github.com/thedotmack/claude-mem\n官网：https://claude-mem.ai/\n\n收录状态：仅收藏，未安装。",
+    "source": "https://github.com/thedotmack/claude-mem",
+    "repository": "https://github.com/thedotmack/claude-mem",
+    "officialUrl": "https://claude-mem.ai/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-claude-mem/official-site.jpg",
+      "alt": "Claude-Mem 官网实际截图：标题 All your context. Everywhere. All at once.，右侧是橙色花形标志",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://claude-mem.ai/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-12 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "Claude-Mem (long-term memory for coding agents)",
+      "description": "Long-term memory for coding agents: a second agent records what each session did and why, compresses it, and gives the next session a short index with details on demand. Works with Claude Code, Codex, Cursor, OpenCode and more than ten other tools.",
+      "tags": "Claude Code / Codex / Long-term memory / Context / Plugin / Agent / Open source",
+      "notes": "Install with npx claude-mem install, which finds your agents, or through the Claude Code plugin marketplace; npm install -g only installs the SDK. Memory lives in ~/.claude-mem and cloud sync is opt-in. Anonymous analytics are on by default and can be turned off with npx claude-mem telemetry disable. A paid hosted CMEM Pro is also offered.",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official site taken on 2026-11-12; saved for reference only — not installed or run."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-deeptutor",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "DeepTutor（港大开源 AI 私教）",
+    "category": "其他",
+    "tags": "AI 教育 / 个性化学习 / 知识库 / RAG / 测验 / 视频课 / Anki / 香港大学 / 开源",
+    "description": "香港大学数据智能实验室开源的个性化学习平台：上传课本、论文等资料建立知识库，可以讲题、测验、做研究、画图解，按掌握情况规划学习路径，还能导出带旁白的视频课和 Anki 记忆卡。",
+    "prompt": "DeepTutor（港大开源 AI 私教）\n类型：GitHub 项目\n\n用途：香港大学数据智能实验室开源的个性化学习平台：上传课本、论文等资料建立知识库，可以讲题、测验、做研究、画图解，按掌握情况规划学习路径，还能导出带旁白的视频课和 Anki 记忆卡。\n\n说明：同一个工作区里有对话、测验、研究、可视化、解题、掌握路径和阅读等模式，共享上下文；知识库支持 LlamaIndex、PageIndex、GraphRAG、LightRAG 等检索方式，回答带出处。\n\n使用：要自己配置大模型服务。可以下载桌面版，或用 Docker 运行网页版，也能 pip install \"deeptutor[full]\"（Python 3.11–3.14、Node.js 20.9+）。\n\n许可：Apache-2.0\n\nGitHub：https://github.com/HKUDS/DeepTutor\n文档：https://deeptutor.info/\n\n收录状态：仅收藏，未安装。",
+    "source": "https://github.com/HKUDS/DeepTutor",
+    "repository": "https://github.com/HKUDS/DeepTutor",
+    "officialUrl": "https://deeptutor.info/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-deeptutor/official-site.jpg",
+      "alt": "DeepTutor 文档站实际截图：深色页面标题 Personal tutoring, reimagined.，下方是学习工作区界面",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://deeptutor.info/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-12 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "DeepTutor (open-source AI tutor from HKU)",
+      "description": "An open-source personalised learning platform from the University of Hong Kong. Build a knowledge base from textbooks and papers, then get explanations, quizzes, research, diagrams and a learning path based on what you have mastered, with narrated video lessons and Anki decks to export.",
+      "tags": "AI education / Personalised learning / Knowledge base / RAG / Quizzes / Video lessons / Anki / HKU / Open source",
+      "notes": "Chat, quiz, research, visualise, solve, mastery path and reading modes share context, and knowledge bases use LlamaIndex, PageIndex, GraphRAG or LightRAG with citations. You configure your own model provider. Use the desktop app, Docker, or pip install \"deeptutor[full]\" (Python 3.11–3.14, Node.js 20.9+).",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official site taken on 2026-11-12; saved for reference only — not installed or run."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-omlx",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "oMLX（Mac 本地大模型推理）",
+    "category": "其他",
+    "tags": "macOS / Apple Silicon / MLX / 本地大模型 / KV 缓存 / OpenAI 兼容 API / 菜单栏 / 开源",
+    "description": "专为 Apple Silicon Mac 优化的本地大模型推理服务器，在菜单栏管理：KV 缓存分热（内存）和冷（SSD）两层，换了上下文也能复用之前的缓存，让 Claude Code 这类编程工具接本地模型更实用。",
+    "prompt": "oMLX（Mac 本地大模型推理）\n类型：GitHub 项目\n\n用途：专为 Apple Silicon Mac 优化的本地大模型推理服务器，在菜单栏管理：KV 缓存分热（内存）和冷（SSD）两层，换了上下文也能复用之前的缓存，让 Claude Code 这类编程工具接本地模型更实用。\n\n说明：支持连续批处理，提供 OpenAI 兼容接口；能常驻常用模型、按需换入大模型、设置上下文上限，支持文本、多模态、OCR 和 Embedding 等模型。\n\n使用：下载 .dmg 拖进应用程序即可，也能用 Homebrew 安装。需要 macOS 15 以上和 M 系列芯片；部分模型要完整 Xcode 编译原生内核才够快。\n\n许可：Apache-2.0\n\nGitHub：https://github.com/jundot/omlx\n官网：https://omlx.ai/\n\n收录状态：仅收藏，未安装。",
+    "source": "https://github.com/jundot/omlx",
+    "repository": "https://github.com/jundot/omlx",
+    "officialUrl": "https://omlx.ai/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-omlx/official-site.jpg",
+      "alt": "oMLX 官网实际截图：标题 Local AI, no more waiting on your Mac.，下方是服务统计面板",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://omlx.ai/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-12 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "oMLX (local LLMs on Mac)",
+      "description": "A local LLM inference server optimised for Apple Silicon and managed from the menu bar. It keeps the KV cache in a hot memory tier and a cold SSD tier, so earlier context stays reusable even when it changes, making local models practical for coding tools like Claude Code.",
+      "tags": "macOS / Apple Silicon / MLX / Local LLMs / KV cache / OpenAI-compatible API / Menu bar / Open source",
+      "notes": "Continuous batching and an OpenAI-compatible API, with pinned models, on-demand swaps, context limits, and text, vision, OCR and embedding models. Install the .dmg or use Homebrew. Needs macOS 15+ and Apple Silicon; some models need full Xcode to build native kernels for full speed.",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official site taken on 2026-11-12; saved for reference only — not installed or run."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-switchyard",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Switchyard（英伟达大模型路由）",
+    "category": "其他",
+    "tags": "大模型路由 / NVIDIA / Agent / 成本优化 / OpenAI / Anthropic / Rust / 开源",
+    "description": "NVIDIA NeMo 开源的大模型路由库：给 Agent 配一组强弱不同的模型，按任务难度或最近的工具调用情况决定每次请求交给哪个模型，在成功率、成本和延迟之间取平衡，同时保留 OpenAI 和 Anthropic 的原生接口。",
+    "prompt": "Switchyard（英伟达大模型路由）\n类型：GitHub 项目\n\n用途：NVIDIA NeMo 开源的大模型路由库：给 Agent 配一组强弱不同的模型，按任务难度或最近的工具调用情况决定每次请求交给哪个模型，在成功率、成本和延迟之间取平衡，同时保留 OpenAI 和 Anthropic 的原生接口。\n\n说明：核心是 Rust 写的 libsy，嵌进你自己的网关或 Agent 框架里，模型调用和密钥由你掌握；也能通过 OpenRouter、LiteLLM、NeMo Relay 使用。路由方式有 Auto、Task（模型判断任务）、Execution（按执行情况）和 Composite。\n\n注意：视频说的“REST 代理”只是其中的演示服务器，官方明确它不是受支持的生产方案。项目还在 1.0 之前，接口会变；官方也提醒，单次调用便宜不等于完成任务更便宜，要用自己的任务对比。\n\n许可：Apache-2.0\n\nGitHub：https://github.com/NVIDIA-NeMo/Switchyard\n文档：https://nvidia-nemo.github.io/Switchyard/\n\n收录状态：仅收藏，未安装。",
+    "source": "https://github.com/NVIDIA-NeMo/Switchyard",
+    "repository": "https://github.com/NVIDIA-NeMo/Switchyard",
+    "officialUrl": "https://nvidia-nemo.github.io/Switchyard/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-switchyard/official-site.jpg",
+      "alt": "Switchyard 官方文档站实际截图：深色页面介绍路由库，下方是选择接入方式的表格",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://nvidia-nemo.github.io/Switchyard/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-12 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "Switchyard (LLM routing from NVIDIA)",
+      "description": "An open-source LLM routing library from NVIDIA NeMo. Give an agent a pool of efficient and stronger models and it picks one per request from task difficulty or recent tool activity, balancing success, cost and latency while keeping native OpenAI and Anthropic APIs.",
+      "tags": "LLM routing / NVIDIA / Agents / Cost optimisation / OpenAI / Anthropic / Rust / Open source",
+      "notes": "The core is libsy in Rust, embedded in your own gateway or harness so you keep model calls and credentials; it is also available through OpenRouter, LiteLLM and NeMo Relay. Algorithms include Auto, Task, Execution and Composite. The standalone proxy server is for demos only and not a supported production path. Pre-1.0, so APIs will change, and cheaper calls do not guarantee cheaper completed tasks.",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official site taken on 2026-11-12; saved for reference only — not installed or run."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-needle",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Needle（端侧工具调用小模型）",
+    "category": "其他",
+    "tags": "端侧模型 / 工具调用 / 结构化提取 / Embedding / 离线 / 智能家居 / Cactus / 开源",
+    "description": "Cactus Compute 的端侧小模型：根据应用提供的函数挑出要调用的工具并填好参数，也能做结构化提取和文本向量，全程在设备上离线运行，适合手机、穿戴、机器人和智能家居。",
+    "prompt": "Needle（端侧工具调用小模型）\n类型：GitHub 项目\n\n用途：Cactus Compute 的端侧小模型：根据应用提供的函数挑出要调用的工具并填好参数，也能做结构化提取和文本向量，全程在设备上离线运行，适合手机、穿戴、机器人和智能家居。\n\n说明：Python 里用 @cactus.tool 定义函数，模型返回工具调用并可直接执行；遇到没有工具能处理的请求会返回空列表，而不是乱猜。同一个包还有语音转写 Whistle 和看图的 Mirage。\n\n更正：视频说的“约 4500 万参数、14–28MB 内存”像是旧版数据；现在的 Needle 3 是 2–20 层可选，参数 2900 万到 1.21 亿，单文件 8–29MB。原 needle 仓库已并入 cactus-compute/cactus。\n\n使用：pip install -U cactus-compute（Python 3.9+），首次使用会下载引擎和模型。匿名使用统计可用 CACTUS_TELEMETRY=0 关闭。\n\n许可：Apache-2.0\n\nGitHub：https://github.com/cactus-compute/cactus\n介绍：https://cactuscompute.com/needle\n\n收录状态：仅收藏，未安装。",
+    "source": "https://github.com/cactus-compute/cactus",
+    "repository": "https://github.com/cactus-compute/cactus",
+    "officialUrl": "https://cactuscompute.com/needle",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-needle/official-site.jpg",
+      "alt": "Needle 3 官方介绍页实际截图：深色页面标题 Needle 3，右侧列出 8–29 MB、29–121M 参数等数据",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://cactuscompute.com/needle",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-12 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "Needle (on-device tool-calling model)",
+      "description": "A small on-device model from Cactus Compute that picks which of your app’s functions to call and fills in the arguments, and also does structured extraction and text embeddings, all offline on phones, wearables, robots and smart-home devices.",
+      "tags": "On-device model / Tool calling / Structured extraction / Embeddings / Offline / Smart home / Cactus / Open source",
+      "notes": "Define functions with @cactus.tool in Python and the model returns calls it can execute, or an empty list when no tool fits. The same package includes Whistle for speech and Mirage for images. The video’s 45M parameters and 14–28 MB look like older figures: Needle 3 offers 2–20 layers, 29–121M parameters and 8–29 MB binaries, and the needle repository has moved into cactus-compute/cactus. Install with pip install -U cactus-compute (Python 3.9+); turn off anonymous analytics with CACTUS_TELEMETRY=0.",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official site taken on 2026-11-12; saved for reference only — not installed or run."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-omarchy",
+    "kind": "website",
+    "resourceType": "GitHub 项目",
+    "title": "Omarchy（DHH 的开发者 Linux）",
+    "category": "其他",
+    "tags": "Linux 发行版 / Arch / Hyprland / 开发环境 / DHH / 开箱即用 / 开源",
+    "description": "Ruby on Rails 作者 DHH 打造的开发者 Linux 发行版，装好就是一套配好的工作环境：顶部栏、快捷键、统一剪贴板、截图录屏、终端、Neovim、开发工具、Windows 虚拟机和系统快照都已预设。",
+    "prompt": "Omarchy（DHH 的开发者 Linux）\n类型：GitHub 项目\n\n用途：Ruby on Rails 作者 DHH 打造的开发者 Linux 发行版，装好就是一套配好的工作环境：顶部栏、快捷键、统一剪贴板、截图录屏、终端、Neovim、开发工具、Windows 虚拟机和系统快照都已预设。\n\n说明：用 ISO 安装，写进 U 盘后启动。可以整盘安装，也能装在空闲分区上和 Windows 双系统。\n\n注意：整盘安装会清空所选硬盘，先备份；默认全盘加密，开机输密码要用有线或 2.4G 键盘，蓝牙键盘不行；安装前要在 BIOS 关掉 Secure Boot 和 TPM；双系统要先关 Windows 的 BitLocker。想先体验，建议装在虚拟机里。\n\n许可：MIT\n\nGitHub：https://github.com/omacom/omarchy\n官网：https://omarchy.org/\n\n收录状态：仅收藏，未下载或安装。",
+    "source": "https://github.com/omacom/omarchy",
+    "repository": "https://github.com/omacom/omarchy",
+    "officialUrl": "https://omarchy.org/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-omarchy/official-site.jpg",
+      "alt": "Omarchy 官网实际截图：深色像素点阵背景，中间写着 Beautiful, fun & agentic Linux by DHH",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://omarchy.org/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-12 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "Omarchy (DHH’s Linux for developers)",
+      "description": "A developer Linux distribution from DHH, the creator of Ruby on Rails, that installs as a ready-made workspace with a top bar, hotkeys, unified clipboard, screenshots and recording, terminal, Neovim, dev tools, a Windows VM and system snapshots.",
+      "tags": "Linux distribution / Arch / Hyprland / Dev environment / DHH / Ready to use / Open source",
+      "notes": "Install from an ISO on a USB stick, either full-disk or into free space to dual-boot with Windows. A full-disk install wipes the drive, so back up first. It encrypts by default, so use a wired or 2.4 GHz keyboard for the boot password, not Bluetooth. Secure Boot and TPM must be off, and BitLocker off for dual boot. Try it in a VM first.",
+      "license": "MIT",
+      "previewNote": "Screenshot of the official site taken on 2026-11-12; saved for reference only — not installed or run."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "skill-hallmark",
+    "kind": "skill",
+    "resourceType": "Skill",
+    "title": "Hallmark（反 AI 味网页设计 Skill）",
+    "category": "其他",
+    "tags": "网页设计 / 反 AI 味 / 设计主题 / 落地页 / Claude Code / Codex / Cursor / Skill / 开源",
+    "description": "Together AI 出品的网页设计 Skill：从 50 套主题里挑 3 套，按访客要做的事来排版页面，再在真实浏览器里检查常见的 AI 味痕迹，最后由一个全新上下文的审查者把关。也能按名称重做或审查已有页面。",
+    "prompt": "Hallmark（反 AI 味网页设计 Skill）\n类型：Skill\n\n用途：Together AI 出品的网页设计 Skill：从 50 套主题里挑 3 套，按访客要做的事来排版页面，再在真实浏览器里检查常见的 AI 味痕迹，最后由一个全新上下文的审查者把关。也能按名称重做或审查已有页面。\n\n说明：主题是“材质”（纸张、字体、配色、组件和质感），不规定页面内容，同一主题两个需求会做出两个不同的页。检查分三层：底线（对比度、焦点、减少动效、编造事实、手机布局）不通过不交付；“惯性”问题如每个标题上的小眉标、全大写字距标签、标题里只染一个词，有理由可以保留；细节项不阻止交付。另带 755 张开放授权照片。\n\n使用：npx skills add nutlope/hallmark，在 Claude Code、Codex、Cursor、OpenCode 里使用；/hallmark redesign <路径> 重做页面并保留内容，/hallmark audit <路径> 只出报告。\n\n许可：MIT\n\nGitHub：https://github.com/Nutlope/hallmark\n官网：https://www.usehallmark.com/\n\n收录状态：仅收藏，未安装或执行。",
+    "source": "https://github.com/Nutlope/hallmark",
+    "repository": "https://github.com/Nutlope/hallmark",
+    "officialUrl": "https://www.usehallmark.com/",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-hallmark/official-site.jpg",
+      "alt": "Hallmark 官网实际截图：标题 The design skill that ends AI slop.，下方是多套主题做出的网页卡片",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://www.usehallmark.com/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-12 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "addedAt": "2026-11-12",
+    "verifiedAt": "2026-11-12",
+    "en": {
+      "title": "Hallmark (anti-AI-slop web design skill)",
+      "description": "A web design skill from Together AI that deals three of fifty themes, lays out the page around what the visitor came to do, checks it in a real browser for common AI tells, and hands the last word to a fresh-context reviewer. It can also redesign or audit an existing page by name.",
+      "tags": "Web design / Anti AI slop / Design themes / Landing pages / Claude Code / Codex / Cursor / Skill / Open source",
+      "notes": "Themes are materials such as paper, type, colour, components and texture, not page plans. Checks come in tiers: the floor (contrast, focus, reduced motion, invented facts, phone layout) blocks shipping; reflex defaults like eyebrows over every heading can be overruled with a reason; finish details never block. Includes 755 openly licensed photos. Install with npx skills add nutlope/hallmark for Claude Code, Codex, Cursor or OpenCode; /hallmark redesign keeps content and wiring, /hallmark audit only reports.",
+      "license": "MIT",
+      "previewNote": "Screenshot of the official site taken on 2026-11-12; saved for reference only — not installed or run."
+    },
+    "skillTopics": [
+      "视觉设计"
+    ]
+  },
+  {
     "id": "website-jacaranda-corner",
     "title": "悉尼蓝花楹街角 · Three.js 微缩场景",
     "category": "动画动效",
