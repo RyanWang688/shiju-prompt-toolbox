@@ -1726,26 +1726,32 @@
   {
     "id": "skill-l2c-motion-analysis",
     "kind": "skill",
-    "title": "读懂动效（绫濑川 Skill，暂名）",
+    "title": "llc-pv-skill（PV 与角色动画复刻）",
     "category": "动画动效",
     "skillTopics": [
       "动画视频"
     ],
-    "tags": "动效分析 / AE / 参考视频 / 绫濑川 / 来源待核实",
-    "description": "截图作者提到的动效分析 Skill，目的是帮助 AI 读懂参考动画。暂用描述性标题，原项目名、仓库和使用说明待核实。",
-    "prompt": "来源：用户提供的 @l2c_绫濑川《AE 动画》第五期截图。作者在《アイス》复刻帖中提到一个帮助模型读懂动效的 Skill。截图中的 YouTube 链接是作品的 PV 参考。Skill 的正式名称、发布入口及实际输出待核实。",
-    "source": "用户提供的 @l2c_绫濑川《AE 动画》第五期截图",
+    "tags": "PV 复刻 / 动效分析 / After Effects / 角色手书 / MV / L2D / 绫濑川",
+    "description": "按参考视频分段复刻文字 PV、角色手书和 MV，帮助 Agent 逐镜分析文字、角色、空间与镜头运动，支持换角色和可选 L2D 分件绑定。",
+    "prompt": "llc-pv-skill\n\n用途\n按参考视频分段复刻文字 PV、角色手书和 MV，帮助 Agent 逐镜分析文字、角色、空间与镜头运动，支持换角色和可选 L2D 分件绑定。\n\n工作流程\n当前版本 0.4.0-alpha.2。流程包括全片观察、约 20 秒自然分段、逐镜脚本、素材核对、制作及三轮全片对照。适合需要保留参考节奏、文字动画与角色表演的 AE 动画项目。\n\n使用条件\n基础观察需 Python、FFmpeg/ffprobe、ImageMagick 和字体。AE 制作另需 After Effects、Node.js 24+ 与可用的 AE MCP。安装步骤见 INSTALL.md。\n\n版本与许可\n0.4.0-alpha.2，MIT。输入音乐、字体及角色素材的许可由各自权利方决定。\n\n官方仓库\nhttps://github.com/Youtich-A/llc-pv-skill\n\n技能说明\nhttps://github.com/Youtich-A/llc-pv-skill/blob/main/SKILL.md\n\n安装说明\nhttps://github.com/Youtich-A/llc-pv-skill/blob/main/INSTALL.md",
+    "source": "https://github.com/Youtich-A/llc-pv-skill",
     "previewStatus": "pending",
     "previewEvidence": "pending",
-    "previewNote": "现有画面来自作者的复刻帖，尚未核实它与这个 Skill 的输出关系。真实效果预览待补。",
+    "previewNote": "官方仓库已确认。仓库未附成片演示素材，真实效果预览待补。",
     "addedAt": "2026-11-06",
     "en": {
-      "title": "Motion analysis (L2C Skill, provisional title)",
-      "description": "A Skill mentioned by the creator to help AI interpret reference animations. The official name, repository and usage instructions are pending verification.",
-      "tags": "Motion analysis / After Effects / Reference video / L2C / Source unverified",
-      "notes": "Source: the supplied screenshot of L2C’s fifth After Effects animation post about recreating アイス. The YouTube URL in the post points to the reference music video. The Skill’s official name, release link and actual output are pending verification.",
-      "previewNote": "The screenshot shows a frame from the recreation post. A verified preview of this Skill’s output is pending."
-    }
+      "title": "llc-pv-skill (PV and character animation recreation)",
+      "description": "Recreate typography PVs, character animations and music videos in segments, with shot-level analysis of type, characters, space and camera movement. Supports character replacement and optional L2D rigging.",
+      "tags": "PV recreation / Motion analysis / After Effects / Character animation / Music videos / L2D",
+      "notes": "Version 0.4.0-alpha.2. Observe the full reference, split at natural boundaries around 20 seconds, write shot scripts, check assets, produce each segment and run three full-reference review passes. Suitable for After Effects projects that preserve reference timing, typography and character performance. Basic observation needs Python, FFmpeg/ffprobe, ImageMagick and fonts. AE production also requires After Effects, Node.js 24+ and a working AE MCP connection. See INSTALL.md.",
+      "license": "MIT",
+      "previewNote": "Official repository verified. No finished-video demo assets are included. A verified output preview is pending."
+    },
+    "officialUrl": "https://github.com/Youtich-A/llc-pv-skill",
+    "repository": "https://github.com/Youtich-A/llc-pv-skill",
+    "documentation": "https://github.com/Youtich-A/llc-pv-skill/blob/main/INSTALL.md",
+    "license": "MIT",
+    "verifiedAt": "2026-11-14"
   },
   {
     "id": "website-free-claude-code",
