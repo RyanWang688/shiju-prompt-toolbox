@@ -1,5 +1,119 @@
 [
   {
+    "id": "website-shaders",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "Shaders（WebGPU 网页特效组件）",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "description": "可叠加、混合及遮罩的 WebGPU 特效组件，提供玻璃、金属、扭曲、渐变与鼠标拖尾等效果，适配 React、Vue、Svelte、Solid 和 JavaScript。",
+    "tags": "WebGPU / Shader / 玻璃 / 金属 / 鼠标拖尾 / React / Vue",
+    "license": "MIT",
+    "prompt": "Shaders（WebGPU 网页特效组件）\n\n用途\n可叠加、混合及遮罩的 WebGPU 特效组件，提供玻璃、金属、扭曲、渐变与鼠标拖尾等效果，适配 React、Vue、Svelte、Solid 和 JavaScript。\n\n说明\n官方介绍提供 200+ 基础组件，可在可视化编辑器实时调参并导出组件代码。另有 CLI、Agent Skill 和 MCP。核心引擎、组件与框架适配器使用 MIT，在线服务及 Pro 预设另有条款。\n\n许可\nMIT\n\n官网\nhttps://shaders.com/\n\nGitHub\nhttps://github.com/shader-effects-inc/shaders",
+    "source": "https://shaders.com/",
+    "officialUrl": "https://shaders.com/",
+    "repository": "https://github.com/shader-effects-inc/shaders",
+    "documentation": "https://shaders.com/docs/guide",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-shaders/official-site.jpg",
+      "alt": "Shaders（WebGPU 网页特效组件）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://shaders.com/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-13 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-13",
+    "verifiedAt": "2026-11-13",
+    "en": {
+      "title": "Shaders (WebGPU effects components)",
+      "description": "Compose, blend and mask WebGPU effects such as glass, metal, distortion, gradients and cursor trails in React, Vue, Svelte, Solid or JavaScript.",
+      "tags": "WebGPU / Shaders / Glass / Metal / Cursor trails / React / Vue",
+      "notes": "The official library lists 200+ base components. Tune effects in the visual editor and export component code. CLI, agent skill and MCP integrations are available. Core packages use MIT. Online services and Pro presets have separate terms.",
+      "license": "MIT",
+      "previewNote": "Official page screenshot taken on 2026-11-13."
+    }
+  },
+  {
+    "id": "website-anyps5",
+    "kind": "website",
+    "pricing": "free",
+    "title": "AnyPS5（PS5 程序移植实验）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "通过 Relinker 将 PS5 可执行程序转换成 Windows 或 Linux 的原生格式，并配合系统 PRX 库与着色器重编译运行。",
+    "tags": "PS5 / Relinker / Linux / Windows / Vulkan / 着色器重编译",
+    "license": "GPL-2.0-only",
+    "prompt": "AnyPS5（PS5 程序移植实验）\n\n用途\n通过 Relinker 将 PS5 可执行程序转换成 Windows 或 Linux 的原生格式，并配合系统 PRX 库与着色器重编译运行。\n\n说明\n项目仍在推进兼容性，具体结果查看官方 Game bring-up 讨论。官方提供浏览器转换器，文件在设备本地处理。不同游戏、硬件和版本的运行结果各异。\n\n许可\nGPL-2.0-only\n\n官网\nhttps://boykopovar.github.io/AnyPS5/\n\nGitHub\nhttps://github.com/boykopovar/AnyPS5",
+    "source": "https://boykopovar.github.io/AnyPS5/",
+    "officialUrl": "https://boykopovar.github.io/AnyPS5/",
+    "repository": "https://github.com/boykopovar/AnyPS5",
+    "documentation": "https://github.com/boykopovar/AnyPS5#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-anyps5/official-site.jpg",
+      "alt": "AnyPS5（PS5 程序移植实验）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://boykopovar.github.io/AnyPS5/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-13 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-13",
+    "verifiedAt": "2026-11-13",
+    "en": {
+      "title": "AnyPS5 (experimental PS5 application porting)",
+      "description": "Relink PS5 executables into native Windows or Linux formats, with host PRX libraries and a shader recompiler.",
+      "tags": "PS5 / Relinker / Linux / Windows / Vulkan / Shader recompilation",
+      "notes": "Compatibility is under active development. Check the official Game bring-up discussions for individual results. The official browser converter processes files locally. Outcomes depend on the game, hardware and version.",
+      "license": "GPL-2.0-only",
+      "previewNote": "Official page screenshot taken on 2026-11-13."
+    }
+  },
+  {
+    "id": "website-pavise",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Pavise（Windows 游戏资源管理）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "在游戏运行期间管理后台进程、CPU 核心与资源策略，支持逐游戏配置、动作及诊断日志，并在结束后按记录恢复。",
+    "tags": "Windows / 游戏 / 后台管理 / CPU / 资源编排 / 日志",
+    "license": "GPL-3.0",
+    "prompt": "Pavise（Windows 游戏资源管理）\n\n用途\n在游戏运行期间管理后台进程、CPU 核心与资源策略，支持逐游戏配置、动作及诊断日志，并在结束后按记录恢复。\n\n说明\n官网当前展示 3.3.0.8。需要 Windows 10 2004 或更新版本、.NET Framework 4.7.2 及管理员权限。功能可用性与实际效果取决于硬件、驱动和游戏。\n\n许可\nGPL-3.0\n\n官网\nhttps://pavise.club/\n\nGitHub\nhttps://github.com/dulaiduwang003/Pavise-Game",
+    "source": "https://pavise.club/",
+    "officialUrl": "https://pavise.club/",
+    "repository": "https://github.com/dulaiduwang003/Pavise-Game",
+    "documentation": "https://pavise.club/docs/v3/start/",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-pavise/official-site.jpg",
+      "alt": "Pavise（Windows 游戏资源管理）官方页面截图",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://pavise.club/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-13 实际打开官方页面后的截图。",
+    "addedAt": "2026-11-13",
+    "verifiedAt": "2026-11-13",
+    "en": {
+      "title": "Pavise (Windows game resource management)",
+      "description": "Manage background processes, CPU cores and resource policies during gameplay, with per-game configuration, action logs and recorded restoration.",
+      "tags": "Windows / Gaming / Background processes / CPU / Resource management / Logs",
+      "notes": "The official site currently shows 3.3.0.8. Requires Windows 10 2004 or later, .NET Framework 4.7.2 and administrator privileges. Feature availability and results depend on hardware, drivers and the game.",
+      "license": "GPL-3.0",
+      "previewNote": "Official page screenshot taken on 2026-11-13."
+    }
+  },
+  {
     "id": "website-jiangshan-map",
     "kind": "website",
     "resourceType": "GitHub 项目",
