@@ -1,0 +1,171 @@
+/* Glass switch: night on the left, daylight on the right. */
+.dashboard .top #themeToggle.theme-toggle {
+  --switch-width: 108px;
+  --switch-height: 54px;
+  --thumb-size: 48px;
+  --travel: 54px;
+  --rim: #ffc34c;
+  --rim-hot: #fffae1;
+  --bloom: #ffac19;
+  --pointer-x: 80%;
+  --pointer-y: 65%;
+  position: relative;
+  display: block;
+  flex: 0 0 var(--switch-width);
+  width: var(--switch-width);
+  height: var(--switch-height);
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  isolation: isolate;
+  border: 0 !important;
+  border-radius: 20px;
+  background: transparent !important;
+  color: #36312b !important;
+  box-shadow: none !important;
+  filter: none;
+  translate: none !important;
+  scale: none !important;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.dashboard .top #themeToggle[aria-pressed=true] {
+  --rim: #9aabff;
+  --rim-hot: #e6fcff;
+  --bloom: #6b78ff;
+  color: #fffdf3 !important;
+}
+#themeToggle span, #themeToggle svg { pointer-events: none; }
+#themeToggle .theme-track {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg,#deddd9,#ededea 52%,#d2d1cb);
+  box-shadow: inset 0 2px 4px #fff8,inset 0 -1px 1px #8a877f4d,0 3px 5px #514b3726,0 8px 18px #6b604125;
+  transition: background .55s ease, box-shadow .55s ease !important;
+}
+#themeToggle .theme-track::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border: 1px solid #fff5;
+  border-radius: inherit;
+  box-shadow: inset 0 2px 4px #2e2d2912;
+}
+#themeToggle[aria-pressed=true] .theme-track {
+  background: linear-gradient(145deg,#020304,#050609 60%,#08090d);
+  box-shadow: inset 0 2px 7px #000,0 1px 1px #fff1,0 6px 14px #0008;
+}
+#themeToggle[aria-pressed=true] .theme-track::after {border-color:#ffffff07;box-shadow:inset 0 -1px 1px #ffffff07;}
+#themeToggle .theme-thumb {
+  position: absolute;
+  z-index: 1;
+  left: 3px;
+  top: 3px;
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  border-radius: 16px;
+  transform: translateX(var(--travel));
+  transition: transform .86s cubic-bezier(.22,1,.3,1) !important;
+  will-change: transform;
+}
+#themeToggle[aria-pressed=true] .theme-thumb {transform:translateX(0);}
+#themeToggle .theme-aura {
+  position: absolute;
+  z-index: -1;
+  inset: -11px;
+  border-radius: 35%;
+  background: radial-gradient(ellipse at var(--pointer-x) var(--pointer-y),var(--bloom),transparent 67%);
+  opacity: .55;
+  filter: blur(11px);
+  transform: scale(1.22);
+  transition: opacity .3s ease,background .55s ease,transform .6s cubic-bezier(.22,1,.3,1) !important;
+}
+#themeToggle .theme-glass {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff8c;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at var(--pointer-x) var(--pointer-y),#ffc95f75,transparent 75%),linear-gradient(135deg,#ffffffb8,#ffffff3d 45%,#e6ded14d);
+  box-shadow: inset 1px 1px 2px #ffffffe6,inset -1px -1px 2px #fff7,0 3px 5px #74634640,0 7px 12px #74634624;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  transition: background .55s ease,border-color .55s ease,box-shadow .55s ease !important;
+}
+#themeToggle .theme-glass::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(125deg,#fff6 0,transparent 23%,transparent 60%,#fff1 100%);
+}
+#themeToggle[aria-pressed=true] .theme-glass {
+  border-color: #ffffff40;
+  background: radial-gradient(ellipse at var(--pointer-x) var(--pointer-y),#7a8aff54,transparent 75%),linear-gradient(135deg,#ffffff26,#b8c4f60d 43%,#a0a7e51a);
+  box-shadow: inset 1px 1px 2px #eef4ff70,inset -1px -1px 2px #b0bfff24,0 4px 10px #0008;
+}
+#themeToggle .theme-rim {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(0);
+}
+#themeToggle .theme-rim rect {
+  stroke-dasharray: 36 64;
+  stroke-dashoffset: 12;
+  stroke-linecap: round;
+  transform-origin: 24px 24px;
+  animation: theme-edge-orbit 6.4s linear infinite;
+}
+#themeToggle .rim-soft {stroke:var(--bloom);stroke-width:7;filter:blur(5px);opacity:.78;}
+#themeToggle .rim-bloom {stroke:var(--rim);stroke-width:2.5;filter:blur(1px);opacity:.95;}
+#themeToggle .rim-core {stroke:var(--rim-hot);stroke-width:.65;}
+#themeToggle .theme-pixels {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  overflow: visible;
+  fill: currentColor;
+  filter: drop-shadow(0 0 2px #fff4);
+}
+#themeToggle .theme-pixel {
+  transform: translate(var(--sx),var(--sy));
+  opacity: var(--so);
+  transition: transform .82s cubic-bezier(.22,1,.3,1) var(--pd),opacity .46s ease var(--pd),fill .5s ease !important;
+}
+#themeToggle[aria-pressed=true] .theme-pixel {transform:translate(var(--mx),var(--my));opacity:var(--mo);}
+.dashboard .top #themeToggle:focus-visible {outline:2px solid var(--rim);outline-offset:5px;}
+#themeToggle:focus-visible .theme-aura {opacity:.9;transform:scale(1.4);}
+#themeToggle:active .theme-glass {box-shadow:inset 0 1px 5px #0004,0 2px 5px #0003;}
+@media(hover:hover) and (pointer:fine) {
+  #themeToggle:hover .theme-aura {opacity:.95;transform:scale(1.4);}
+  #themeToggle:hover .rim-soft {opacity:1;}
+}
+@keyframes theme-edge-orbit {to{stroke-dashoffset:-88;}}
+@media(max-width:720px) {
+  .dashboard .top .brand small,.dashboard .top .brand-divider {display:none;}
+  .dashboard .top #themeToggle.theme-toggle {--switch-width:92px;--switch-height:46px;--thumb-size:40px;--travel:46px;border-radius:17px;}
+  #themeToggle .theme-thumb {border-radius:13px;}
+  #themeToggle .theme-pixels {width:27px;height:27px;left:calc(50% - 13.5px);top:calc(50% - 13.5px);}
+}
+@media(max-width:420px) {
+  .dashboard .top #themeToggle.theme-toggle {--switch-width:84px;--switch-height:44px;--thumb-size:38px;--travel:40px;border-radius:16px;}
+  .dashboard .top-actions {gap:7px;}
+  .dashboard .top .lang-switch .lang-option {padding-inline:8px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  #themeToggle *,#themeToggle *::after {animation:none !important;transition:none !important;}
+  #themeToggle .theme-thumb {will-change:auto;}
+}
+@media(forced-colors:active) {
+  .dashboard .top #themeToggle.theme-toggle {outline:1px solid ButtonText;color:ButtonText !important;}
+  #themeToggle .theme-aura,#themeToggle .theme-rim {display:none;}
+  #themeToggle .theme-glass {border:2px solid ButtonText;background:ButtonFace;}
+  #themeToggle .theme-pixels {fill:ButtonText;filter:none;}
+}

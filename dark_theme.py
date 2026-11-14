@@ -174,11 +174,11 @@ html[data-theme=dark] .dashboard #detail{background:#111113;color:#ededef;border
 html[data-theme=dark] dialog::backdrop{background:#000000b3;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 html[data-theme=dark] .rail-tooltip{background:#ededef;color:#09090b;box-shadow:0 8px 24px #000000b3}
 /* Header controls. */
-html[data-theme=dark] .lang-switch,html[data-theme=dark] .dashboard .top .theme-toggle{background:#111113;border-color:#ffffff1f}
+html[data-theme=dark] .lang-switch{background:#111113;border-color:#ffffff1f}
 /* Text that sits on the yellow accent stays dark. */
 @media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open):not(:disabled),a.visit-site,.rail-brand,select):hover{color:#191919!important}}
 html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{color:#191919!important}
-html[data-theme=dark] .dashboard .top .lang-switch .lang-option[aria-pressed=true],html[data-theme=dark] .dashboard .top .theme-toggle:hover{color:#191919}
+html[data-theme=dark] .dashboard .top .lang-switch .lang-option[aria-pressed=true]{color:#191919}
 html[data-theme=dark] ::selection{background:#ffd43b;color:#191919}
 """
 
