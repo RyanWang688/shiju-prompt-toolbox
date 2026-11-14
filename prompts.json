@@ -1,5 +1,379 @@
 [
   {
+    "id": "website-ziwei-doushu",
+    "kind": "website",
+    "pricing": "partial",
+    "title": "ziwei-doushu（紫微斗数排盘）",
+    "category": "其他",
+    "description": "基于倪海厦《天纪》体系的紫微斗数排盘引擎，整理四化、格局知识、古籍与解读数据，提供 Ouranic 在线体验。",
+    "tags": "传统文化 / 紫微斗数 / 排盘 / TypeScript / Ouranic",
+    "license": "代码 MIT；数据 CC BY 4.0；部分素材另有条款",
+    "prompt": "ziwei-doushu（紫微斗数排盘）\n\n用途\n基于倪海厦《天纪》体系的紫微斗数排盘引擎，整理四化、格局知识、古籍与解读数据，提供 Ouranic 在线体验。\n\n说明\n开源范围包含排盘算法、知识库和发布的数据集，不等同于线上完整 AI 解读后端。当前 v4.0 数据集提供约 67.5 万命盘的 13 维解读，线上服务有账号及专业版机制。用于传统文化学习与资料研究，解读属于传统术数内容。代码 MIT，数据 CC BY 4.0；古籍、倪师原话等素材按仓库各自条款使用。\n\n许可\n代码 MIT；数据 CC BY 4.0；部分素材另有条款\n\n官网\nhttps://ouranic.cn/\n\nGitHub\nhttps://github.com/Renhuai123/ziwei-doushu",
+    "source": "https://ouranic.cn/",
+    "officialUrl": "https://ouranic.cn/",
+    "repository": "https://github.com/Renhuai123/ziwei-doushu",
+    "documentation": "https://github.com/Renhuai123/ziwei-doushu#readme",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "ziwei-doushu (traditional charting engine)",
+      "description": "A traditional Zi Wei Dou Shu charting engine with transformation rules, pattern knowledge, classical texts and interpretation datasets; Ouranic offers an online experience.",
+      "tags": "ziwei-doushu (traditional charting engine)",
+      "notes": "The repository includes charting algorithms, knowledge and released datasets, rather than the full hosted AI interpretation backend. The v4.0 dataset covers about 675,000 charts across 13 dimensions. The hosted service has account and Pro features. Intended for traditional cultural study; interpretations reflect divination traditions. Code is MIT, datasets CC BY 4.0; classical texts and quoted teaching material have separate terms.",
+      "license": "Code MIT; data CC BY 4.0; selected materials have separate terms.",
+      "previewNote": "Official page screenshot captured on 2026-11-14."
+    },
+    "topics": [
+      "实用软件"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-ziwei-doushu/official-site.jpg",
+      "alt": "ziwei-doushu（紫微斗数排盘） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1270,
+      "height": 714
+    },
+    "previewSource": "https://ouranic.cn/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "website-astryx",
+    "kind": "website",
+    "pricing": "free",
+    "title": "Astryx（Meta 设计系统）",
+    "category": "其他",
+    "description": "Meta 开源的 React 设计系统，整合可访问组件、主题、深色模式和页面模板，提供面向开发者与 Agent 的文档及 CLI。",
+    "tags": "React / Meta / 设计系统 / StyleX / CLI / Agent",
+    "license": "MIT",
+    "prompt": "Astryx（Meta 设计系统）\n\n用途\nMeta 开源的 React 设计系统，整合可访问组件、主题、深色模式和页面模板，提供面向开发者与 Agent 的文档及 CLI。\n\n说明\n当前为 Beta，要求 React 19+。可通过 CLI 查询组件、模板和主题，用统一规范搭建后台、内部工具与业务页面。底层使用 StyleX，消费端可用现有 CSS、CSS Modules 或 Tailwind 覆盖样式。\n\n许可\nMIT\n\n官网\nhttps://astryx.atmeta.com/\n\nGitHub\nhttps://github.com/meta/astryx",
+    "source": "https://astryx.atmeta.com/",
+    "officialUrl": "https://astryx.atmeta.com/",
+    "repository": "https://github.com/meta/astryx",
+    "documentation": "https://astryx.atmeta.com/docs/getting-started",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Astryx (Meta design system)",
+      "description": "Meta’s open-source React design system combines accessible components, themes, dark mode, templates and agent-ready documentation and CLI tools.",
+      "tags": "Astryx (Meta design system)",
+      "notes": "Currently Beta and requires React 19+. Query components, templates and themes through the CLI to build consistent dashboards, internal tools and application pages. Internally authored with StyleX, with consumer overrides through CSS, CSS Modules or Tailwind.",
+      "license": "MIT",
+      "previewNote": "Official page screenshot captured on 2026-11-14."
+    },
+    "topics": [
+      "组件动画库"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-astryx/official-site.jpg",
+      "alt": "Astryx（Meta 设计系统） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://astryx.atmeta.com/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "website-67js",
+    "kind": "website",
+    "pricing": "free",
+    "title": "67js（Agent 驱动的 3D 引擎）",
+    "category": "其他",
+    "description": "通过 MCP 让 AI Agent 构建、布光、修改和检查 3D 场景，支持实时渲染与路径追踪静帧，提供可浏览的场景示例。",
+    "tags": "3D / WebGL / MCP / JavaScript / 实时渲染 / 路径追踪",
+    "license": "MIT",
+    "prompt": "67js（Agent 驱动的 3D 引擎）\n\n用途\n通过 MCP 让 AI Agent 构建、布光、修改和检查 3D 场景，支持实时渲染与路径追踪静帧，提供可浏览的场景示例。\n\n说明\nGlaze 用于实时画面，Cook 用于路径追踪静帧。引擎包含地形、植被、角色、液体、载具、GLB 导入导出及媒体导出等能力。MCP 工作流可让 Agent 修改场景后查看预览，适合用代码制作 3D 动画与交互演示；Node.js 要求 20.19+，渲染能力和速度取决于硬件与后端。\n\n许可\nMIT\n\n官网\nhttps://67js.codepawl.com/\n\nGitHub\nhttps://github.com/codepawl/67.js",
+    "source": "https://67js.codepawl.com/",
+    "officialUrl": "https://67js.codepawl.com/",
+    "repository": "https://github.com/codepawl/67.js",
+    "documentation": "https://67js.codepawl.com/docs.html",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "67js (agent-driven 3D engine)",
+      "description": "An MCP-driven JavaScript 3D engine for building, lighting, editing and reviewing scenes, with real-time rendering, path-traced stills and a live showcase.",
+      "tags": "67js (agent-driven 3D engine)",
+      "notes": "Glaze renders real-time frames and Cook path-traced stills. Features include terrain, vegetation, characters, liquids, vehicles, GLB import/export and media export. MCP lets an agent edit a scene and review its preview. Useful for code-driven 3D animation and interactive demonstrations. Node.js 20.19+ is required; rendering support and performance depend on hardware and backend.",
+      "license": "MIT",
+      "previewNote": "Official page screenshot captured on 2026-11-14."
+    },
+    "topics": [
+      "创作工具",
+      "组件动画库"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-67js/official-site.jpg",
+      "alt": "67js（Agent 驱动的 3D 引擎） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://67js.codepawl.com/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "skill-cangjie",
+    "kind": "skill",
+    "pricing": "partial",
+    "title": "Cangjie Skill（仓颉知识蒸馏）",
+    "category": "其他",
+    "description": "把书籍、长视频与播客中的方法论整理成可调用的 Agent Skills，保留来源、执行步骤与验证用例，适合知识复用。",
+    "tags": "知识蒸馏 / 书籍 / 视频 / 播客 / Agent Skills",
+    "license": "MIT",
+    "prompt": "Cangjie Skill（仓颉知识蒸馏）\n\n用途\n把书籍、长视频与播客中的方法论整理成可调用的 Agent Skills，保留来源、执行步骤与验证用例，适合知识复用。\n\n说明\nv2.5.0 先生成能力卡与 Capability Bundle，再编译为单 Skill 或带路由的技能包；本地工具链支持增量更新、修复、回滚与评测。视频处理不只依赖字幕，可结合画面证据；实际提取能力受原始素材与模型能力影响。使用时提供有权处理的材料，核对来源和生成技能的执行结果。\n\n许可\nMIT\n\n官网\nhttps://cangjie-skill.com/\n\nGitHub\nhttps://github.com/kangarooking/cangjie-skill",
+    "source": "https://cangjie-skill.com/",
+    "officialUrl": "https://cangjie-skill.com/",
+    "repository": "https://github.com/kangarooking/cangjie-skill",
+    "documentation": "https://github.com/kangarooking/cangjie-skill#readme",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Cangjie Skill (knowledge distillation)",
+      "description": "Distill methodologies from books, long-form videos and podcasts into callable agent skills with sources, procedures and validation cases.",
+      "tags": "Cangjie Skill (knowledge distillation)",
+      "notes": "Version 2.5.0 extracts capability cards and a Capability Bundle before compiling a single router skill or a compact skill pack. The local toolchain supports incremental updates, repair, rollback and evaluation. Video processing can incorporate visual evidence alongside transcripts. Results depend on source quality and model capabilities; check sources and test generated procedures.",
+      "license": "MIT",
+      "previewNote": "Instructions and official sources verified; an actual output preview is pending."
+    },
+    "skillTopics": [
+      "写作创作",
+      "开发工具"
+    ],
+    "previewStatus": "pending",
+    "previewEvidence": "pending",
+    "previewNote": "已核对实际说明与官方来源，真实产出效果预览待补。"
+  },
+  {
+    "id": "skill-modern-web-guidance",
+    "kind": "skill",
+    "pricing": "free",
+    "title": "Modern Web Guidance（现代 Web 开发指南）",
+    "category": "其他",
+    "description": "将现代 Web 平台知识、浏览器兼容性、性能与无障碍实践提供给编程 Agent，帮助选择原生 HTML、CSS 与浏览器 API。",
+    "tags": "Web / CSS / HTML / 浏览器兼容 / 无障碍 / 性能",
+    "license": "Apache-2.0",
+    "prompt": "Modern Web Guidance（现代 Web 开发指南）\n\n用途\n将现代 Web 平台知识、浏览器兼容性、性能与无障碍实践提供给编程 Agent，帮助选择原生 HTML、CSS 与浏览器 API。\n\n说明\n由 Chrome、Edge、Firefox、MDN 团队及社区维护。CLI 可搜索具体场景并按 ID 读取指南，也可安装到 Agent。适合开发弹窗、表单、响应式布局、动效和 Web Components，指导优先使用浏览器原生能力并设计合理回退。\n\n许可\nApache-2.0\n\n官网\nhttps://developer.chrome.com/docs/modern-web-guidance\n\nGitHub\nhttps://github.com/GoogleChrome/modern-web-guidance",
+    "source": "https://developer.chrome.com/docs/modern-web-guidance",
+    "officialUrl": "https://developer.chrome.com/docs/modern-web-guidance",
+    "repository": "https://github.com/GoogleChrome/modern-web-guidance",
+    "documentation": "https://github.com/GoogleChrome/modern-web-guidance#readme",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Modern Web Guidance",
+      "description": "Skills and searchable guidance that provide coding agents with modern web platform knowledge, browser compatibility, performance and accessibility practices.",
+      "tags": "Modern Web Guidance",
+      "notes": "Maintained by Chrome, Edge, Firefox and MDN teams and the web community. Search focused use cases and retrieve guides by ID through the CLI, or install the skills into an agent. Useful for dialogs, forms, responsive layouts, motion and Web Components, favoring native browser features and appropriate fallbacks.",
+      "license": "Apache-2.0",
+      "previewNote": "Instructions and official sources verified; an actual output preview is pending."
+    },
+    "skillTopics": [
+      "开发工具",
+      "视觉设计"
+    ],
+    "previewStatus": "pending",
+    "previewEvidence": "pending",
+    "previewNote": "已核对实际说明与官方来源，真实产出效果预览待补。"
+  },
+  {
+    "id": "skill-gif-factory",
+    "kind": "skill",
+    "pricing": "partial",
+    "title": "GIF 工厂（动态视觉创作）",
+    "category": "其他",
+    "description": "按需求制作角色表情包、光栅变画卡、动态海报、签名、电影片头、绘本及知识短片，配有作者作品与分类制作流程。",
+    "tags": "GIF / 表情包 / 动态海报 / 片头 / 动态签名 / 绘本",
+    "license": "MIT",
+    "prompt": "GIF 工厂（动态视觉创作）\n\n用途\n按需求制作角色表情包、光栅变画卡、动态海报、签名、电影片头、绘本及知识短片，配有作者作品与分类制作流程。\n\n说明\n对外名称为 GIF 工厂，Skill 调用名为 pixel-gif-sticker-pack。可提供图片、文字、角色、字体及音乐，入口根据用途选择流程，实际生成工具和依赖按功能准备；图像模型或服务可能另有费用。代码为 MIT，外部 Lemo-Opuscar 风格与案例遵循其独立署名及素材条款。\n\n许可\nMIT\n\n官网\nhttps://github.com/WoYun520/gif-factory\n\nGitHub\nhttps://github.com/WoYun520/gif-factory",
+    "source": "https://github.com/WoYun520/gif-factory",
+    "officialUrl": "https://github.com/WoYun520/gif-factory",
+    "repository": "https://github.com/WoYun520/gif-factory",
+    "documentation": "https://github.com/WoYun520/gif-factory/blob/main/GUIDE.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "GIF Factory (animated visual creation)",
+      "description": "Create character stickers, lenticular cards, animated posters, signatures, film titles, storybooks and knowledge shorts using documented workflows and author examples.",
+      "tags": "GIF Factory (animated visual creation)",
+      "notes": "The public name is GIF Factory and the entry skill is pixel-gif-sticker-pack. Supply images, text, characters, fonts or music and choose a workflow by purpose. Runtime tools vary by feature; model services may incur separate costs. Code uses MIT; external Lemo-Opuscar styles and examples retain their own attribution and media terms.",
+      "license": "MIT",
+      "previewNote": "Public author example from the repository, collected on 2026-11-14; not generated in this session."
+    },
+    "skillTopics": [
+      "图像创作",
+      "动画视频"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-gif-factory/author-example.gif",
+      "alt": "GIF 工厂（动态视觉创作） — 作者仓库公开的实际示例，2026-11-14 收录，非本次生成。",
+      "width": 240,
+      "height": 240
+    },
+    "previewSource": "https://raw.githubusercontent.com/WoYun520/gif-factory/main/docs/previews/illustrated-actions.gif",
+    "previewEvidence": "author-example",
+    "previewNote": "作者仓库公开的实际示例，2026-11-14 收录，非本次生成。"
+  },
+  {
+    "id": "skill-baoyu-xhs-images",
+    "kind": "skill",
+    "pricing": "partial",
+    "title": "baoyu-xhs-images（小红书图文卡片）",
+    "category": "其他",
+    "description": "把长文拆成 1–10 张风格统一的图文卡片，支持清单、步骤、对比等布局，适合小红书及社交媒体知识分享。",
+    "tags": "小红书图文卡片 / 宝玉 / 图像生成 / 内容创作",
+    "license": "MIT",
+    "prompt": "baoyu-xhs-images（小红书图文卡片）\n\n用途\n把长文拆成 1–10 张风格统一的图文卡片，支持清单、步骤、对比等布局，适合小红书及社交媒体知识分享。\n\n说明\n12 种视觉风格、8 种布局和 3 组配色；先分析内容与读者，再制定分图大纲和逐图提示词，最后调用图像后端。 需要可用的图像生成后端，相关服务费用另计；安装入口与依赖见仓库说明。\n\n许可\nMIT\n\n官网\nhttps://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-xhs-images/SKILL.md\n\nGitHub\nhttps://github.com/JimLiu/baoyu-skills",
+    "source": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-xhs-images/SKILL.md",
+    "officialUrl": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-xhs-images/SKILL.md",
+    "repository": "https://github.com/JimLiu/baoyu-skills",
+    "documentation": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-xhs-images/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "baoyu-xhs-images (Social image card series)",
+      "description": "Turn long-form content into 1–10 consistent image cards, using lists, steps and comparisons for social knowledge sharing.",
+      "tags": "baoyu-xhs-images (Social image card series)",
+      "notes": "Provides 12 visual styles, 8 layouts and 3 palettes. Analyze the content and audience, plan the card sequence and per-image prompts, then generate through an image backend. Requires an available image generation backend, whose service costs are separate. See the repository for installation and dependencies.",
+      "license": "MIT",
+      "previewNote": "Public author example from the repository, collected on 2026-11-14; not generated in this session."
+    },
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "previewSource": "https://raw.githubusercontent.com/JimLiu/baoyu-skills/main/screenshots/xhs-images-styles/fresh.webp",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-baoyu-xhs-images/author-example.webp",
+      "alt": "baoyu-xhs-images（小红书图文卡片） — 作者仓库公开的实际示例，2026-11-14 收录，非本次生成。",
+      "width": 896,
+      "height": 1200
+    },
+    "previewEvidence": "author-example",
+    "previewNote": "作者仓库公开的实际示例，2026-11-14 收录，非本次生成。"
+  },
+  {
+    "id": "skill-baoyu-infographic",
+    "kind": "skill",
+    "pricing": "partial",
+    "title": "baoyu-infographic（专业信息图）",
+    "category": "其他",
+    "description": "将复杂内容整理为信息图，支持流程、时间线、对比、分层等结构，适合报告摘要与知识可视化。",
+    "tags": "专业信息图 / 宝玉 / 图像生成 / 内容创作",
+    "license": "MIT",
+    "prompt": "baoyu-infographic（专业信息图）\n\n用途\n将复杂内容整理为信息图，支持流程、时间线、对比、分层等结构，适合报告摘要与知识可视化。\n\n说明\n以信息结构和视觉风格两个维度组合，当前说明列出 21 种布局和 22 种风格；先分析信息关系，再生成完整提示词和图像。 需要可用的图像生成后端，相关服务费用另计；安装入口与依赖见仓库说明。\n\n许可\nMIT\n\n官网\nhttps://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-infographic/SKILL.md\n\nGitHub\nhttps://github.com/JimLiu/baoyu-skills",
+    "source": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-infographic/SKILL.md",
+    "officialUrl": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-infographic/SKILL.md",
+    "repository": "https://github.com/JimLiu/baoyu-skills",
+    "documentation": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-infographic/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "baoyu-infographic (Professional infographics)",
+      "description": "Organize complex content into infographics, including flows, timelines, comparisons and hierarchies for reports and visual explanations.",
+      "tags": "baoyu-infographic (Professional infographics)",
+      "notes": "Combines information structure with visual style. Current documentation lists 21 layouts and 22 styles. Analyze relationships before producing the full prompt and image. Requires an available image generation backend, whose service costs are separate. See the repository for installation and dependencies.",
+      "license": "MIT",
+      "previewNote": "Public author example from the repository, collected on 2026-11-14; not generated in this session."
+    },
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "previewSource": "https://raw.githubusercontent.com/JimLiu/baoyu-skills/main/screenshots/infographic-layouts/comparison-table.webp",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-baoyu-infographic/author-example.webp",
+      "alt": "baoyu-infographic（专业信息图） — 作者仓库公开的实际示例，2026-11-14 收录，非本次生成。",
+      "width": 1376,
+      "height": 768
+    },
+    "previewEvidence": "author-example",
+    "previewNote": "作者仓库公开的实际示例，2026-11-14 收录，非本次生成。"
+  },
+  {
+    "id": "skill-baoyu-cover-image",
+    "kind": "skill",
+    "pricing": "partial",
+    "title": "baoyu-cover-image（文章封面）",
+    "category": "其他",
+    "description": "按类型、配色、渲染、文字与情绪五个维度设计文章封面，适合公众号、博客及社交媒体配图。",
+    "tags": "文章封面 / 宝玉 / 图像生成 / 内容创作",
+    "license": "MIT",
+    "prompt": "baoyu-cover-image（文章封面）\n\n用途\n按类型、配色、渲染、文字与情绪五个维度设计文章封面，适合公众号、博客及社交媒体配图。\n\n说明\n支持横屏、电影宽幅、方形等比例，通过封面类型、色板、渲染方式、文字量和氛围控制结果。 需要可用的图像生成后端，相关服务费用另计；安装入口与依赖见仓库说明。\n\n许可\nMIT\n\n官网\nhttps://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-cover-image/SKILL.md\n\nGitHub\nhttps://github.com/JimLiu/baoyu-skills",
+    "source": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-cover-image/SKILL.md",
+    "officialUrl": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-cover-image/SKILL.md",
+    "repository": "https://github.com/JimLiu/baoyu-skills",
+    "documentation": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-cover-image/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "baoyu-cover-image (Article cover images)",
+      "description": "Design article covers across type, palette, rendering, text and mood, suitable for blogs, newsletters and social posts.",
+      "tags": "baoyu-cover-image (Article cover images)",
+      "notes": "Supports widescreen, cinematic and square formats, controlling cover type, palette, rendering, text density and mood. Requires an available image generation backend, whose service costs are separate. See the repository for installation and dependencies.",
+      "license": "MIT",
+      "previewNote": "Public author example from the repository, collected on 2026-11-14; not generated in this session."
+    },
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "previewSource": "https://raw.githubusercontent.com/JimLiu/baoyu-skills/main/screenshots/cover-image-styles/bold-editorial.webp",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-baoyu-cover-image/author-example.webp",
+      "alt": "baoyu-cover-image（文章封面） — 作者仓库公开的实际示例，2026-11-14 收录，非本次生成。",
+      "width": 1584,
+      "height": 672
+    },
+    "previewEvidence": "author-example",
+    "previewNote": "作者仓库公开的实际示例，2026-11-14 收录，非本次生成。"
+  },
+  {
+    "id": "skill-baoyu-comic",
+    "kind": "skill",
+    "pricing": "partial",
+    "title": "baoyu-comic（知识漫画）",
+    "category": "其他",
+    "description": "将知识点、故事或教程改编为连续漫画，先写分镜与台词，再生成保持角色和画风一致的画面。",
+    "tags": "知识漫画 / 宝玉 / 图像生成 / 内容创作",
+    "license": "MIT",
+    "prompt": "baoyu-comic（知识漫画）\n\n用途\n将知识点、故事或教程改编为连续漫画，先写分镜与台词，再生成保持角色和画风一致的画面。\n\n说明\n提供多种画风、语气及版式，可先制作角色参考，再按分镜连续生成；适合教学漫画、人物故事和教程。 需要可用的图像生成后端，相关服务费用另计；安装入口与依赖见仓库说明。\n\n许可\nMIT\n\n官网\nhttps://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-comic/SKILL.md\n\nGitHub\nhttps://github.com/JimLiu/baoyu-skills",
+    "source": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-comic/SKILL.md",
+    "officialUrl": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-comic/SKILL.md",
+    "repository": "https://github.com/JimLiu/baoyu-skills",
+    "documentation": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-comic/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "baoyu-comic (Educational comics)",
+      "description": "Adapt knowledge, stories and tutorials into comics by planning panels and dialogue before generating consistent characters and visual style.",
+      "tags": "baoyu-comic (Educational comics)",
+      "notes": "Offers multiple art styles, tones and panel layouts, with character references followed by sequential page generation. Useful for educational stories, biographies and tutorials. Requires an available image generation backend, whose service costs are separate. See the repository for installation and dependencies.",
+      "license": "MIT",
+      "previewNote": "Public author example from the repository, collected on 2026-11-14; not generated in this session."
+    },
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "previewSource": "https://raw.githubusercontent.com/JimLiu/baoyu-skills/main/screenshots/comic-styles/warm.webp",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-baoyu-comic/author-example.webp",
+      "alt": "baoyu-comic（知识漫画） — 作者仓库公开的实际示例，2026-11-14 收录，非本次生成。",
+      "width": 896,
+      "height": 1200
+    },
+    "previewEvidence": "author-example",
+    "previewNote": "作者仓库公开的实际示例，2026-11-14 收录，非本次生成。"
+  },
+  {
     "id": "website-shaders",
     "kind": "website",
     "pricing": "partial",
@@ -3500,8 +3874,8 @@
     "officialUrl": "https://lemomo-ai.github.io/lemo-opuscar/",
     "source": "https://github.com/lemomo-ai/lemo-opuscar",
     "tags": "代码做片 / 风格提示词 / Claude Code / 逐帧渲染 / 配乐配音",
-    "description": "Claude Code 用的「用代码做片」风格工具箱：59 种现成风格（每种是风格提示词加一支纯代码做的样片），也能改出你自己的风格；agent 读导演和技术指南，逐帧渲染画面、写配乐、配音并混音，不用视频生成模型。",
-    "prompt": "Lemo-Opuscar\n类型：Claude Code 插件 / Skill\n\n用途：Claude Code 用的「用代码做片」风格工具箱：59 种现成风格（每种是风格提示词加一支纯代码做的样片），也能改出你自己的风格；agent 读导演和技术指南，逐帧渲染画面、写配乐、配音并混音，不用视频生成模型。\n\n用法：claude plugin marketplace add lemomo-ai/lemo-opuscar，再 claude plugin install lemo-opuscar@lemolab；之后直接说「用某某风格做一支 30 秒的片子，讲……」，或输入 /lemo-opuscar:lemo-opuscar 从入口选择。也可 clone 仓库后在仓库里运行 claude。\n\n说明：作者注明风格按 Claude Opus 5.5 调校，其他模型适配度不高；开工前只问一次主题细节、是否有自己的配音或素材、要不要先看分镜。代码和文档为 MIT，样片视频及静帧为 CC BY 4.0（须署名 LemoLab），少数配音不在该授权内。预览为作者仓库中的 OPUSCAR 98 风格总览图。\n\n风格图鉴：https://lemomo-ai.github.io/lemo-opuscar/\nGitHub：https://github.com/lemomo-ai/lemo-opuscar\n\n收录状态：仅收藏，未安装或执行。",
+    "description": "为编程 Agent 提供 99 种纯代码影片风格，按 15 个类别浏览，每种风格配有样片与制作说明，适合知识短片、新闻、发布视频和音乐视觉。",
+    "prompt": "Lemo-Opuscar\n\n为编程 Agent 提供 99 种纯代码影片风格，按 15 个类别浏览，每种风格配有样片与制作说明，适合知识短片、新闻、发布视频和音乐视觉。\n\n流程：先选风格并观看样片，再提供主题与素材，由 Agent 阅读导演及技术指南，写代码渲染画面并处理声音。可以修改或保存自己的风格。作者针对 Claude 调校，其他模型的复现效果可能不同。\n\n代码和文档 MIT；样片视频与静帧 CC BY 4.0，须署名 LemoLab，部分配音不包含在此许可内。现有封面为此前收录的作者风格总览，不代表当前完整清单。\n\n官网：https://lemomo-ai.github.io/lemo-opuscar/\nGitHub：https://github.com/lemomo-ai/lemo-opuscar",
     "preview": {
       "type": "image",
       "src": "assets/skill-lemo-opuscar/author-opuscar98-styles.jpg",
@@ -3513,12 +3887,12 @@
     "previewEvidence": "author-repository-example",
     "previewNote": "作者仓库中的 OPUSCAR 98 风格总览图（98 种风格、风格提示词与镜头设计示例），按 CC BY 4.0 署名 LemoLab；非本次运行成果。",
     "addedAt": "2026-10-25",
-    "verifiedAt": "2026-10-25",
+    "verifiedAt": "2026-11-14",
     "en": {
       "title": "Lemo-Opuscar",
-      "description": "A \"films made in code\" style toolbox for Claude Code: 59 ready-made styles (each a style prompt plus a demo film made purely in code), and you can remix your own; the agent reads director and technique guides, renders frames, writes the score, voices and mixes — no video model.",
+      "description": "99 code-made film styles in 15 categories for coding agents, each with a sample film and production guidance. Useful for explainers, news, launches and music visuals.",
       "tags": "Films in code / Style prompts / Claude Code / Frame-by-frame rendering / Score and voice-over",
-      "notes": "Install with claude plugin marketplace add lemomo-ai/lemo-opuscar, then claude plugin install lemo-opuscar@lemolab. The author tuned the styles for Claude Opus 5.5 and warns other models fit poorly.",
+      "notes": "Choose a style, watch its demo and provide your story and assets. The agent follows directing and technical guides to render frames and prepare sound. Styles are tuned for Claude; results with other models vary. Code/docs MIT; sample films and stills CC BY 4.0 with LemoLab attribution, excluding selected voice tracks. The existing cover is an earlier author overview, not the full current catalog.",
       "license": "Code and docs MIT; sample films and stills CC BY 4.0 (credit LemoLab)",
       "previewNote": "The OPUSCAR 98 style overview from the author's repository, credited to LemoLab under CC BY 4.0 — not output from this site."
     }
