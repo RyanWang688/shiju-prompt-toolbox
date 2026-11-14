@@ -18,8 +18,19 @@ advance();assert.equal(jobs.size,0,'No continuous rendering while idle');
 key('ArrowRight');advance(200);const interrupted=thumb.style.transform;key('ArrowLeft');assert.equal(thumb.style.transform,interrupted,'Reversal starts at the current position');advance();
 assert.equal(thumb.style.transform,'translate3d(0px,0,0)');assert.equal(jobs.size,0);
 events.pointerdown({button:0,clientX:10,pointerId:1});events.pointermove({clientX:190,clientY:100});advance(10);assert.ok(parseFloat(els.get('.rail-day').style.opacity)>.5);events.pointerup();advance();assert.equal(els.get('.rail-day').style.opacity,1);assert.equal(jobs.size,0);
+assert.equal(control.style['--edge'],-28,'Right endpoint light is at the lower-right corner');
+reduced=true;key('ArrowLeft');assert.equal(control.style['--edge'],22,'Left endpoint light is at the upper-left corner');
+for(const progress of [0,.25,.5,.75,1]){
+  events.pointerdown({button:0,clientX:0,pointerId:1});
+  events.pointermove({clientX:230*progress,clientY:0});advance(10);
+  assert.equal(control.style['--edge'],22-50*progress,'Edge follows the exact thumb progress');
+  assert.equal(control.style['--light-angle'],`${180*progress}deg`,'Aura follows the same progress');
+  events.pointerup();key('ArrowLeft');
+}
+events.pointermove({clientX:400,clientY:190});assert.equal(jobs.size,0,'Hover alone never schedules a light update');
+assert.equal(control.style['--edge'],22,'Hover does not change light position');
 const edge=control.style['--edge'];advance(1000);assert.equal(control.style['--edge'],edge,'Highlight does not drift while pointer and thumb rest');
 reduced=true;key('ArrowLeft');assert.equal(thumb.style.transform,'translate3d(0px,0,0)');assert.equal(jobs.size,0,'Reduced motion applies immediately');
 assert.ok(!html.includes('infinite'),'No idle CSS loops');
 assert.ok(html.includes('href="preview.html" download="glass-glow-switch.html"'),'Source download targets the standalone HTML');
-console.log('Glass switch: dragging, reversal, idle highlight stability, no idle frame loop and reduced motion passed.');
+console.log('Glass switch: position-linked light at five progress values, pointer independence, dragging, reversal, idle highlight stability, no idle frame loop and reduced motion passed.');
