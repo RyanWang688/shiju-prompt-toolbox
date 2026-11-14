@@ -201,20 +201,3 @@ assert.deepEqual([r.liked,r.count,r.reports],[false,4,['500']],'A failed like ro
 r=await likeHarness(async({click,setFail})=>{setFail({code:'23505'});click()});
 assert.deepEqual([r.liked,r.count,r.reports],[true,5,[]],'A duplicate like counts as already liked');
 console.log('Like ranking, ties, filtered ranking, rapid clicks, rollback and duplicate likes passed.');
-
-// Exercise the actual theme setter: rapid clicks settle on the latest state and timer.
-{
-  const setter=source.split('\n').find(line=>line.startsWith('function setTheme('));
-  const pending=new Map(),saved=[],classes=new Set(),root={dataset:{theme:'light'},classList:{toggle:(c,on)=>on?classes.add(c):classes.delete(c),remove:c=>classes.delete(c)}};
-  let timerId=0,paints=0,reduced=false;
-  const setTheme=new Function('document','currentTheme','matchMedia','localStorage','paintThemeToggle','setTimeout','clearTimeout',`let themeFadeTimer;const themeKey='shiju-theme-v1';${setter};return setTheme`)({documentElement:root},()=>root.dataset.theme,()=>({matches:reduced}),{setItem:(k,v)=>saved.push([k,v])},()=>paints++,fn=>{pending.set(++timerId,fn);return timerId},id=>pending.delete(id));
-  setTheme('dark');setTheme('light');setTheme('dark');
-  assert.equal(root.dataset.theme,'dark');assert.equal(paints,3);assert.equal(pending.size,1);assert.equal(saved.at(-1)[1],'dark');
-  for(const fn of pending.values())fn();assert.ok(!classes.has('theme-fade'));
-  const before=saved.length;reduced=true;setTheme('light',null,false);
-  assert.equal(root.dataset.theme,'light');assert.equal(saved.length,before);assert.ok(!classes.has('theme-fade'));
-  const themeCSS=readFileSync(new URL('./assets/theme-toggle.css',import.meta.url),'utf8');
-  assert.ok(themeCSS.includes('@media(prefers-reduced-motion:reduce)'));assert.ok(themeCSS.includes('animation:none !important'));
-  assert.ok(source.includes("const themeControl=$('themeToggle');paintThemeToggle();"),'Theme state paints before async content loads');
-}
-console.log('Theme rapid switching, persistence, system preference and reduced-motion checks passed.');

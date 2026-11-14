@@ -1,5 +1,39 @@
 [
   {
+    "id": "glass-glow-theme-switch",
+    "kind": "prompt",
+    "title": "玻璃光晕昼夜开关",
+    "category": "动画动效",
+    "topics": [
+      "按钮交互"
+    ],
+    "description": "可点击、可拖动的玻璃昼夜开关：冷暖高光跟随滑块和指针，停止即静止，像素月亮与太阳平滑切换。",
+    "tags": "按钮交互 / 玻璃质感 / 位置光晕 / 像素图标 / 高效动效",
+    "prompt": "用户原始要求\n还原成之前的按钮和交互反馈，然后把这个按钮改为提示词加入到项目中，提供预览，目前你这个按钮有问题，第一光圈不是停止时也会动态的，而是根据按钮所在位置光圈位置跟随变动，然后帧率太低了，质感很差，修复后加入到提示词卡片\n\n可复用实现提示词\n制作一个高质感的玻璃渐变发光昼夜开关。深色状态：近黑圆角轨道、位于左侧的半透明玻璃滑块、由细密方块组成的月牙与少量离散像素、冷蓝紫色高光。浅色状态：浅灰暖白轨道、位于右侧的奶白玻璃滑块、深色像素太阳、暖金色高光。比例约 2.1:1，滑块略小于轨道高度；使用薄亮边、柔和内反射、接触阴影与局部色散建立厚度，不要用大面积均匀霓虹描边。\n\n核心交互：点击切换，拖动滑块可连续预览，松开吸附至最近端点。边缘高光沿真实圆角轮廓分布，跟随滑块位置与鼠标方向变化；指针和滑块停止后，高光必须保持静止，禁止无限旋转、呼吸或自动扫光。冷暖光通过静态光层透明度交接。\n\n性能：使用 requestAnimationFrame 合并输入；滑块只更新 translate3d，图标和预先绘制的光层只更新 transform 与 opacity。模糊半径、阴影和 SVG 几何保持静态，不逐像素运行动画，不在每帧重建 DOM。位移按时间而非帧数推进，约 620ms 四次缓出；快速反向切换从当前位置继续。动画结束立即停止帧循环，避免空闲消耗。不得宣称未经测量的固定帧率。\n\n可用性：使用原生 button 和 role=switch、aria-checked，支持空格、回车、方向键与触屏拖动；兼容 prefers-reduced-motion。预览独立于宿主网站的主题偏好，提供中文和英文、单文件 HTML 源码下载。\n\n验收：1. 静止后两次采样的高光位置一致且无活动帧循环；2. 拖动时高光与滑块同步、无跟随滞后；3. 快速反向点击不跳回起点；4. 320px 手机和桌面均无横向溢出；5. 深浅状态、拖动、键盘与减少动态效果均可验证。",
+    "preview": {
+      "type": "animation",
+      "src": "assets/glass-glow-theme-switch/preview.html",
+      "alt": "玻璃光晕开关：点击或拖动交互预览"
+    },
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/glass-glow-theme-switch/card-preview.jpg",
+      "alt": "本次独立交互预览的实际浏览器截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewNote": "根据用户截图与修正要求编写的独立交互演示，非原作者源码；高光静止时不自动旋转。打开实际演示可下载单文件 HTML。",
+    "previewEvidence": "locally-implemented-browser-verified",
+    "addedAt": "2026-11-15",
+    "en": {
+      "title": "Glass Glow Day/Night Switch",
+      "description": "A draggable glass toggle with cool/warm highlights following the thumb and pointer, resting when movement stops, and pixel moon/sun icons.",
+      "tags": "Button interaction / Glass / Positional glow / Pixel icons / Efficient motion",
+      "prompt": "User request: restore the previous website theme button, collect this effect as a prompt card, correct the idle spinning highlight and improve motion and material quality.\n\nReusable implementation prompt\nBuild a premium glass day/night toggle with a roughly 2.1:1 rounded track. Night: nearly black track, left translucent glass thumb, a fine pixel crescent and scattered squares, cool blue-violet edge light. Day: warm pale-gray track, right milky glass thumb, dark pixel sun and gold edge light. Use thin highlights, internal reflections and contact shadows for depth.\n\nClick to toggle; drag for continuous progress and snap to the nearest endpoint on release. Highlights must follow the real rounded perimeter and respond to thumb position and pointer direction. When both stop, the highlight stays still: no infinite orbit, breathing or autonomous scanning. Crossfade prepainted cool/warm light layers.\n\nCoalesce input with requestAnimationFrame. Animate the thumb with translate3d and prepainted icon/light layers with transform and opacity. Keep blur radii, shadows and SVG geometry static; never rebuild DOM or animate every pixel per frame. Use time-based approximately 620ms quartic easing, reverse from the current position, and stop the frame loop when settled. Do not claim an unmeasured frame rate.\n\nUse a native button with role=switch and aria-checked, keyboard controls, touch dragging and prefers-reduced-motion. Keep the demo separate from host theme preferences; provide Chinese/English text and downloadable standalone HTML.\n\nVerify idle highlight stability and a stopped frame loop, synchronized dragging, rapid reversal without jumps, no horizontal overflow at 320px, and both themes, keyboard and reduced-motion operation.",
+      "previewNote": "Independent interactive demo implemented from the supplied screenshots and corrections, not the original author’s source. Highlights do not orbit while idle. Open the live demo to download standalone HTML."
+    }
+  },
+  {
     "id": "skill-tinycharts",
     "kind": "skill",
     "title": "Tinycharts（手绘交互图表）",
