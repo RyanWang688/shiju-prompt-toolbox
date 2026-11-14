@@ -1,5 +1,715 @@
 [
   {
+    "id": "skill-tinycharts",
+    "kind": "skill",
+    "title": "Tinycharts（手绘交互图表）",
+    "category": "其他",
+    "description": "把日常流程、时间线和结构画成可点击的手绘图表，由状态机控制步骤与分支，适合教学讲解和流程演示。",
+    "tags": "手绘 / 状态机 / 流程图 / 时间线 / 交互演示",
+    "pricing": "partial",
+    "license": "作者自定义许可：免费版仅个人非商业；Pro 另行授权",
+    "prompt": "Tinycharts（手绘交互图表）\n\n用途\n把日常流程、时间线和结构画成可点击的手绘图表，由状态机控制步骤与分支，适合教学讲解和流程演示。\n\n说明\n免费版含 9 类图表；Pro 含 28 类、中文支持与可编辑模板。免费版仅限个人非商业使用，商业项目需购买对应授权。生成单文件 HTML，需要 Python 3；部分验证需要 Node.js。\n\n许可\n作者自定义许可：免费版仅个人非商业；Pro 另行授权\n\n官方入口\nhttps://april-zhu.com/tinycharts",
+    "source": "https://april-zhu.com/tinycharts",
+    "officialUrl": "https://april-zhu.com/tinycharts",
+    "documentation": "https://april-zhu.com/tinycharts",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Tinycharts (hand-drawn interactive charts)",
+      "description": "Turn everyday processes, timelines and structures into playable hand-drawn charts with state-machine-controlled steps and branches for teaching and explanation.",
+      "tags": "Hand drawn / Statecharts / Flowcharts / Timelines / Interactive diagrams",
+      "notes": "Free includes 9 chart types; Pro includes 28, Chinese support and editable templates. The free license permits personal non-commercial use only; commercial work needs the appropriate paid license. Outputs a standalone HTML page. Python 3 is required; some checks need Node.js.",
+      "license": "Custom license: Free for personal non-commercial use; separate Pro terms.",
+      "previewNote": "Screenshot of the author’s live “A coffee, timed” example, captured on 2026-11-14; not generated here."
+    },
+    "skillTopics": [
+      "动画视频",
+      "视觉设计"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-tinycharts/official-preview.jpg",
+      "alt": "Tinycharts（手绘交互图表） — 2026-11-14 实际打开作者官网中「A coffee, timed」交互示例后的截图；非本次生成。",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://april-zhu.com/tinycharts",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开作者官网中「A coffee, timed」交互示例后的截图；非本次生成。"
+  },
+  {
+    "id": "skill-teardown",
+    "kind": "skill",
+    "title": "teardown（可拆解 3D 机械模拟）",
+    "category": "其他",
+    "description": "将机械原理制作成可拆解、可交互的 3D 模拟网页，联动显示运行数据，并支持自动导览与视频录制。",
+    "tags": "3D / 机械拆解 / 仿生机械 / 交互模拟 / 科普",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "teardown（可拆解 3D 机械模拟）\n\n用途\n将机械原理制作成可拆解、可交互的 3D 模拟网页，联动显示运行数据，并支持自动导览与视频录制。\n\n说明\n单个离线 HTML 内联 three.js 与字体，支持切面、子系统与相机视角；作者提供仿生机械与发动机等示例。需要 Node.js 20+ 和 Chromium，录制视频还需 ffmpeg，程序音效需 Python 3。数值反映所建模型，并非工程认证。\n\n许可\nMIT\n\n官方入口\nhttps://github.com/elvarofficial/teardown\n\nGitHub\nhttps://github.com/elvarofficial/teardown",
+    "source": "https://github.com/elvarofficial/teardown",
+    "officialUrl": "https://github.com/elvarofficial/teardown",
+    "documentation": "https://github.com/elvarofficial/teardown/blob/main/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "teardown (interactive 3D machine simulators)",
+      "description": "Build interactive 3D machine simulators with teardown controls, model-driven live readouts, automatic tours and video capture.",
+      "tags": "3D / Mechanical teardown / Biomimetics / Simulation / Explainers",
+      "notes": "Bundles three.js and fonts into one offline HTML file with cutaways, subsystem controls and camera views. Author examples include robotic organisms and engines. Requires Node.js 20+ and Chromium; video needs ffmpeg and procedural audio needs Python 3. Readouts describe the model, not engineering certification.",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-14. Original media preserved; not generated here."
+    },
+    "repository": "https://github.com/elvarofficial/teardown",
+    "skillTopics": [
+      "动画视频",
+      "开发工具"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-teardown/author-example.gif",
+      "alt": "teardown（可拆解 3D 机械模拟） 作者公开的真实示例",
+      "width": 880,
+      "height": 495
+    },
+    "previewSource": "https://raw.githubusercontent.com/elvarofficial/teardown/main/docs/bee.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-14 收录；保留原始媒体，非本次运行成果。"
+  },
+  {
+    "id": "skill-factory",
+    "kind": "skill",
+    "title": "factory-skill（微缩工厂流水线）",
+    "category": "其他",
+    "description": "根据产品与目标产量生成微缩 3D 工厂，在离散事件模拟中展示物料流、工位利用率、在制品与生产瓶颈。",
+    "tags": "3D / 工厂 / 流水线 / 离散事件 / 瓶颈分析",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "factory-skill（微缩工厂流水线）\n\n用途\n根据产品与目标产量生成微缩 3D 工厂，在离散事件模拟中展示物料流、工位利用率、在制品与生产瓶颈。\n\n说明\n点击工位可调整设备数、节拍和缓冲区，观察排队与瓶颈变化。输出自包含 HTML，脚本主要使用 Node 内置模块。当前模型有单一出口、不含返工循环及共享劳动力等限制，产能结果依赖输入的周期、故障率和良率假设。\n\n许可\nMIT\n\n官方入口\nhttps://www.airsup.ai/lab/factory-skill\n\nGitHub\nhttps://github.com/AirsupHQ/factory-skill",
+    "source": "https://www.airsup.ai/lab/factory-skill",
+    "officialUrl": "https://www.airsup.ai/lab/factory-skill",
+    "documentation": "https://github.com/AirsupHQ/factory-skill/blob/main/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "factory-skill (miniature factory simulations)",
+      "description": "Generate miniature 3D factories from a product and production target, with discrete-event material flow, utilization, work in progress and bottlenecks.",
+      "tags": "3D / Factory / Production lines / Discrete events / Bottlenecks",
+      "notes": "Adjust machine counts, cycle times and buffers to see queues and constraints change. Outputs self-contained HTML with scripts based on Node built-ins. Limits include one sink, no rework loops and no shared labor pool. Capacity depends on cycle-time, breakdown and yield assumptions.",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-14. Original media preserved; not generated here."
+    },
+    "repository": "https://github.com/AirsupHQ/factory-skill",
+    "skillTopics": [
+      "动画视频",
+      "开发工具"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-factory/author-example.gif",
+      "alt": "factory-skill（微缩工厂流水线） 作者公开的真实示例",
+      "width": 720,
+      "height": 405
+    },
+    "previewSource": "https://raw.githubusercontent.com/AirsupHQ/factory-skill/main/.github/assets/hero.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-14 收录；保留原始媒体，非本次运行成果。"
+  },
+  {
+    "id": "skill-machine",
+    "kind": "skill",
+    "title": "machine-skill（机械运转与剖切）",
+    "category": "其他",
+    "description": "制作带材质、灯光和计算读数的 3D 机械演示，支持剖切、爆炸、透视与故障模式，适合原理讲解和产品演示。",
+    "tags": "3D / three.js / 机械 / 爆炸图 / 剖切 / 物理模型",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "machine-skill（机械运转与剖切）\n\n用途\n制作带材质、灯光和计算读数的 3D 机械演示，支持剖切、爆炸、透视与故障模式，适合原理讲解和产品演示。\n\n说明\n输出 HTML 和可录制影片；three.js 0.170 通过 CDN 加载，页面并非完全离线。需要模型调研、尺寸与方程建模；录制依赖浏览器与 ffmpeg，结果精度取决于模型和输入假设。\n\n许可\nMIT\n\n官方入口\nhttps://www.airsup.ai/lab/skill\n\nGitHub\nhttps://github.com/AirsupHQ/machine-skill",
+    "source": "https://www.airsup.ai/lab/skill",
+    "officialUrl": "https://www.airsup.ai/lab/skill",
+    "documentation": "https://github.com/AirsupHQ/machine-skill/blob/main/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "machine-skill (machine operation and cutaways)",
+      "description": "Create 3D machine demonstrations with materials, lighting and computed readouts, plus cutaway, exploded, x-ray and failure modes for explainers and product demos.",
+      "tags": "3D / three.js / Machines / Exploded views / Cutaways / Physics models",
+      "notes": "Produces HTML and recordable films. three.js 0.170 is loaded from a CDN, so the page is not fully offline. Requires research, dimensions and equations; recording uses a browser and ffmpeg. Accuracy depends on the model and input assumptions.",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-14. Original media preserved; not generated here."
+    },
+    "repository": "https://github.com/AirsupHQ/machine-skill",
+    "skillTopics": [
+      "动画视频",
+      "开发工具"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-machine/author-example.webp",
+      "alt": "machine-skill（机械运转与剖切） 作者公开的真实示例",
+      "width": 880,
+      "height": 495
+    },
+    "previewSource": "https://raw.githubusercontent.com/AirsupHQ/machine-skill/main/.github/assets/hero.webp",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-14 收录；保留原始媒体，非本次运行成果。"
+  },
+  {
+    "id": "skill-seecode",
+    "kind": "skill",
+    "title": "SeeCode（可播放与导出的图解）",
+    "category": "其他",
+    "description": "由精简 JSON 规格生成可交互图解，覆盖架构、流程、时序和数据图表，适合技术文档、课件和步骤讲解。",
+    "tags": "流程图 / 架构图 / JSON / SVG / GIF / MP4",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "SeeCode（可播放与导出的图解）\n\n用途\n由精简 JSON 规格生成可交互图解，覆盖架构、流程、时序和数据图表，适合技术文档、课件和步骤讲解。\n\n说明\n当前提供 45 类图解，布局、动效、检查与导出由确定性脚本处理；可导入多种图表或数据格式，输出独立 HTML，并导出 SVG、PNG、GIF、MP4 等格式。模型负责表达规格，导出所需环境见官方文档。\n\n许可\nMIT\n\n官方入口\nhttps://github.com/Aryanutkarsh/SeeCode\n\nGitHub\nhttps://github.com/Aryanutkarsh/SeeCode",
+    "source": "https://github.com/Aryanutkarsh/SeeCode",
+    "officialUrl": "https://github.com/Aryanutkarsh/SeeCode",
+    "documentation": "https://github.com/Aryanutkarsh/SeeCode/blob/main/skills/seecode/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "SeeCode (animated, exportable diagrams)",
+      "description": "Turn compact JSON specifications into interactive architecture, flow, sequence and data diagrams for technical docs, slides and explanations.",
+      "tags": "Flowcharts / Architecture / JSON / SVG / GIF / MP4",
+      "notes": "Currently offers 45 diagram types. Deterministic scripts handle layout, motion, checking and export. Imports several diagram and data formats, produces standalone HTML and exports SVG, PNG, GIF and MP4. The agent writes the spec; export prerequisites are documented in the repository.",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-14. Original media preserved; not generated here."
+    },
+    "repository": "https://github.com/Aryanutkarsh/SeeCode",
+    "skillTopics": [
+      "视觉设计",
+      "动画视频",
+      "开发工具"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-seecode/author-example.gif",
+      "alt": "SeeCode（可播放与导出的图解） 作者公开的真实示例",
+      "width": 1994,
+      "height": 1203
+    },
+    "previewSource": "https://raw.githubusercontent.com/Aryanutkarsh/SeeCode/main/examples/media/export-sample.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-14 收录；保留原始媒体，非本次运行成果。"
+  },
+  {
+    "id": "skill-anatomy",
+    "kind": "skill",
+    "title": "Anatomy（等距机械原理图）",
+    "category": "其他",
+    "description": "将技术概念转为可交互的实体机构图，以精细等距部件、运行读数和动效解释机械与系统工作方式。",
+    "tags": "等距图 / 机械 / SVG / WebGL / 技术图解",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "Anatomy（等距机械原理图）\n\n用途\n将技术概念转为可交互的实体机构图，以精细等距部件、运行读数和动效解释机械与系统工作方式。\n\n说明\n支持 SVG、可选 WebGL 和 Beta 3D 模式，提供浅色与深色主题、键盘与减少动态效果支持。适合文档、博客与原理教学；不只限于线稿拆解，3D 模式仍处 Beta，复杂场景的性能需单独检查。\n\n许可\nMIT\n\n官方入口\nhttps://github.com/wheresryan22/anatomy\n\nGitHub\nhttps://github.com/wheresryan22/anatomy",
+    "source": "https://github.com/wheresryan22/anatomy",
+    "officialUrl": "https://github.com/wheresryan22/anatomy",
+    "documentation": "https://github.com/wheresryan22/anatomy/blob/main/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Anatomy (isometric mechanism explainers)",
+      "description": "Explain technical ideas through interactive physical mechanisms, detailed isometric parts, model-driven readouts and purposeful motion.",
+      "tags": "Isometric / Mechanisms / SVG / WebGL / Technical diagrams",
+      "notes": "Uses SVG, optional WebGL and Beta 3D, with light/dark themes, keyboard access and reduced-motion support. Useful for docs, articles and teaching; not limited to blueprint line art. The 3D mode is Beta and complex scenes need performance checks.",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-14. Original media preserved; not generated here."
+    },
+    "repository": "https://github.com/wheresryan22/anatomy",
+    "skillTopics": [
+      "视觉设计",
+      "动画视频"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-anatomy/author-example.webp",
+      "alt": "Anatomy（等距机械原理图） 作者公开的真实示例",
+      "width": 900,
+      "height": 940
+    },
+    "previewSource": "https://raw.githubusercontent.com/wheresryan22/anatomy/main/.github/assets/raptor-engine-firing.webp",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-14 收录；保留原始媒体，非本次运行成果。"
+  },
+  {
+    "id": "skill-anima",
+    "kind": "skill",
+    "title": "Anima（生物学交互图解）",
+    "category": "其他",
+    "description": "制作带来源的生物学交互图解，展示神经、细胞、分子与药理机制，适合生物科普和教学。",
+    "tags": "生物学 / 神经 / 细胞 / 分子 / 引用 / 交互图解",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "Anima（生物学交互图解）\n\n用途\n制作带来源的生物学交互图解，展示神经、细胞、分子与药理机制，适合生物科普和教学。\n\n说明\n官方定位为生物学可视化，包含 SVG、可选 WebGL、模型驱动读数与引用，不是通用理化实验模拟器。要求区分实证与机制假说，示意模型不能作为临床结论。需要 Node.js 20.10+，截图和验证另需 Chromium。\n\n许可\nMIT\n\n官方入口\nhttps://anima.arcumet.com\n\nGitHub\nhttps://github.com/Garinmckayl/anima",
+    "source": "https://anima.arcumet.com",
+    "officialUrl": "https://anima.arcumet.com",
+    "documentation": "https://github.com/Garinmckayl/anima/blob/main/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Anima (interactive biology figures)",
+      "description": "Create sourced interactive biology figures explaining neurons, cells, molecules and pharmacological mechanisms for science education.",
+      "tags": "Biology / Neurons / Cells / Molecules / Citations / Interactive figures",
+      "notes": "Officially focused on biology rather than general physics or chemistry experiments. Uses SVG, optional WebGL, model-driven readouts and citations, separating established evidence from hypotheses. Educational models are not clinical conclusions. Requires Node.js 20.10+; capture and verification additionally need Chromium.",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-14. Original media preserved; not generated here."
+    },
+    "repository": "https://github.com/Garinmckayl/anima",
+    "skillTopics": [
+      "视觉设计",
+      "动画视频"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-anima/author-example.gif",
+      "alt": "Anima（生物学交互图解） 作者公开的真实示例",
+      "width": 720,
+      "height": 486
+    },
+    "previewSource": "https://raw.githubusercontent.com/Garinmckayl/anima/main/assets/demo.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-14 收录；保留原始媒体，非本次运行成果。"
+  },
+  {
+    "id": "website-opendesign-motion",
+    "kind": "website",
+    "title": "OpenMotion（OpenDesign Motion）",
+    "category": "其他",
+    "description": "OpenDesign 的开源动效与视频工作室，用本地 Agent 和自备模型密钥制作、编辑并导出代码视频。",
+    "tags": "OpenDesign / OpenMotion / 动效 / 代码视频 / 自备密钥",
+    "pricing": "partial",
+    "license": "Apache-2.0",
+    "prompt": "OpenMotion（OpenDesign Motion）\n\n用途\nOpenDesign 的开源动效与视频工作室，用本地 Agent 和自备模型密钥制作、编辑并导出代码视频。\n\n说明\n当前官方动效入口使用 OpenMotion 名称并链接 nexu-io/openmotion；支持 Motion.md 分镜、品牌资料、素材生成、Studio 编辑和 MP4 导出，另保留 OpenDesign 工作台来源。软件 Apache-2.0，模型、托管和媒体服务费用另计；不同模型效果需实际验证，不将视频中的模型对比视为保证。\n\n许可\nApache-2.0\n\n官方入口\nhttps://open-design.ai/motion/\n\nGitHub\nhttps://github.com/nexu-io/openmotion\n\nOpenDesign 工作台仓库\nhttps://github.com/nexu-io/open-design",
+    "source": "https://open-design.ai/motion/",
+    "officialUrl": "https://open-design.ai/motion/",
+    "documentation": "https://github.com/nexu-io/openmotion#readme",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "OpenMotion (OpenDesign Motion)",
+      "description": "OpenDesign’s open-source motion and video studio uses local agents and your own model keys to create, edit and export code-driven videos.",
+      "tags": "OpenDesign / OpenMotion / Motion graphics / Code video / BYOK",
+      "notes": "The current official motion page is branded OpenMotion and links to nexu-io/openmotion. Supports Motion.md shot plans, brand kits, asset generation, Studio editing and MP4 export; the broader OpenDesign workspace is also linked. Software is Apache-2.0; model, hosting and media services may cost extra. Results vary by model; promotional comparisons are not guarantees.",
+      "license": "Apache-2.0",
+      "previewNote": "Official page captured on 2026-11-14; not output generated in this session."
+    },
+    "repository": "https://github.com/nexu-io/openmotion",
+    "topics": [
+      "创作工具",
+      "动效灵感"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-opendesign-motion/official-preview.jpg",
+      "alt": "OpenMotion（OpenDesign Motion） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://open-design.ai/motion/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "website-motionharness",
+    "kind": "website",
+    "title": "MotionHarness（帧驭）",
+    "category": "其他",
+    "description": "面向编程 Agent 的本地动效创作套件，通过 CLI 创建可编辑动画工程，提供浏览器预览、时间线与导出流程。",
+    "tags": "动效 / CLI / Agent / 时间线 / 浏览器预览",
+    "pricing": "partial",
+    "license": "npm 标记 UNLICENSED；使用及 Pro 条款见官网",
+    "prompt": "MotionHarness（帧驭）\n\n用途\n面向编程 Agent 的本地动效创作套件，通过 CLI 创建可编辑动画工程，提供浏览器预览、时间线与导出流程。\n\n说明\n官方入口为 motionharness.top，CLI 包名 @motionharness/cli；教程要求 Node.js 22.15+ 与 Chrome，本地使用无需登录，Pro 提供额外编辑能力。npm 元数据许可为 UNLICENSED，登记的源码仓库当前不可公开访问，不能按开源 MIT 工具介绍；具体使用与 Pro 条款以官网为准。\n\n许可\nnpm 标记 UNLICENSED；使用及 Pro 条款见官网\n\n官方入口\nhttps://motionharness.top/",
+    "source": "https://motionharness.top/",
+    "officialUrl": "https://motionharness.top/",
+    "documentation": "https://motionharness.top/guide/",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "MotionHarness",
+      "description": "A local motion-creation toolkit for coding agents, with CLI-created editable projects, browser previews, timelines and an export workflow.",
+      "tags": "Motion / CLI / Agent / Timeline / Browser preview",
+      "notes": "Officially at motionharness.top with the @motionharness/cli package. The guide requires Node.js 22.15+ and Chrome, with no sign-in for local use and extra editing features in Pro. npm metadata says UNLICENSED and its listed source repository is not publicly accessible. Do not assume an open-source MIT license; consult the official usage and Pro terms.",
+      "license": "npm package marked UNLICENSED; official usage and Pro terms apply.",
+      "previewNote": "Official page captured on 2026-11-14; not output generated in this session."
+    },
+    "topics": [
+      "创作工具",
+      "动效灵感"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-motionharness/official-preview.jpg",
+      "alt": "MotionHarness（帧驭） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://motionharness.top/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "skill-cross-border-ecommerce",
+    "kind": "skill",
+    "title": "AI 跨境电商运营工具箱",
+    "category": "其他",
+    "description": "将跨境运营 SOP 拆为市场调研、定价、商品文案、图像、视频、广告与评论分析七条工作流，适合出海运营团队。",
+    "tags": "跨境电商 / Shopee / Mercado Livre / 市场 / 广告 / SOP",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "AI 跨境电商运营工具箱\n\n用途\n将跨境运营 SOP 拆为市场调研、定价、商品文案、图像、视频、广告与评论分析七条工作流，适合出海运营团队。\n\n说明\n官方总入口为 sop-ecom-toolkit，侧重 Shopee 巴西站和 Mercado Livre，买家文案使用 PT-BR。提供 Prompt、输入模板、计算脚本和案例；需要真实商品、市场与经营数据，材料生成服务另行配置。当前仅收录工作流资料，不代运营账号。\n\n许可\nMIT\n\n官方入口\nhttps://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit\n\nGitHub\nhttps://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+    "source": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+    "officialUrl": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+    "documentation": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit/blob/main/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "AI Cross Border Ecommerce Agent Toolkit",
+      "description": "Seven reusable workflows for market research, pricing, listings, images, video, advertising and review analysis for cross-border sellers.",
+      "tags": "Cross-border commerce / Shopee / Mercado Livre / Research / Ads / SOP",
+      "notes": "The sop-ecom-toolkit router focuses on Shopee Brazil and Mercado Livre with buyer-facing PT-BR copy. Includes prompts, input templates, calculation scripts and cases. Requires real product, market and business data; generation services need separate setup. Collected as workflow documentation, not account operation.",
+      "license": "MIT",
+      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+    },
+    "repository": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+    "skillTopics": [
+      "开发工具",
+      "写作创作"
+    ],
+    "previewStatus": "pending",
+    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+  },
+  {
+    "id": "skill-agent-desktop",
+    "kind": "skill",
+    "title": "agent-desktop（桌面软件操控）",
+    "category": "其他",
+    "description": "Vercel Labs 的桌面操控 CLI 与 Agent Skill，读取系统无障碍树并按控件引用操作，适合桌面应用自动化。",
+    "tags": "桌面自动化 / 无障碍 / CLI / Vercel Labs / Windows / macOS",
+    "pricing": "partial",
+    "license": "Apache-2.0",
+    "prompt": "agent-desktop（桌面软件操控）\n\n用途\nVercel Labs 的桌面操控 CLI 与 Agent Skill，读取系统无障碍树并按控件引用操作，适合桌面应用自动化。\n\n说明\n支持 macOS、Windows、Linux，提供 CLI 与 C 库，观察、操作、复核循环由外部 Agent 执行。依赖目标应用暴露无障碍信息和系统权限；自绘画布、游戏或不可访问控件不保证可用。本次只收录，未授予桌面权限或安装。\n\n许可\nApache-2.0\n\n官方入口\nhttps://agent-browser.dev/desktop\n\nGitHub\nhttps://github.com/vercel-labs/agent-desktop",
+    "source": "https://agent-browser.dev/desktop",
+    "officialUrl": "https://agent-browser.dev/desktop",
+    "documentation": "https://github.com/vercel-labs/agent-desktop/blob/main/skills/agent-desktop/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "agent-desktop (desktop app automation)",
+      "description": "Vercel Labs’ CLI and Agent Skill reads native accessibility trees and operates referenced controls for desktop app automation.",
+      "tags": "Desktop automation / Accessibility / CLI / Vercel Labs / Windows / macOS",
+      "notes": "Supports macOS, Windows and Linux with a CLI and C library; the external agent performs the observe-act-verify loop. Depends on app accessibility support and OS permissions, so custom canvases, games and inaccessible controls may not work. Collected only; no desktop permissions granted or software installed.",
+      "license": "Apache-2.0",
+      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+    },
+    "repository": "https://github.com/vercel-labs/agent-desktop",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "previewStatus": "pending",
+    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+  },
+  {
+    "id": "website-dsh-superagent",
+    "kind": "website",
+    "title": "dsh-superagent-prototype（研究原型）",
+    "category": "其他",
+    "description": "面向单个 GitHub 仓库的主动编码 Agent 原型，将事件转为工单，在独立会话与目录执行任务，并提供人工介入面板。",
+    "tags": "DeepSeek Harness / Router / Worker / 工单 / 事件驱动",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "dsh-superagent-prototype（研究原型）\n\n用途\n面向单个 GitHub 仓库的主动编码 Agent 原型，将事件转为工单，在独立会话与目录执行任务，并提供人工介入面板。\n\n说明\n以 DeepSeek Harness bundle 发布，可接 GitHub 和可选飞书。官方明确：这是供参考的研究代码，不是正式 DeepSeek 产品，也不等同于文章描述的内部实现，部分架构方向尚未实现。配置涉及模型、仓库身份及运行环境；按部署文档评估后使用。\n\n许可\nMIT\n\n官方入口\nhttps://github.com/deepseek-ai/dsh-superagent-prototype\n\nGitHub\nhttps://github.com/deepseek-ai/dsh-superagent-prototype",
+    "source": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "officialUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "documentation": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "dsh-superagent-prototype (research prototype)",
+      "description": "A proactive coding-agent prototype for one GitHub repository, turning events into work items executed in separate sessions and directories with a human-attention panel.",
+      "tags": "DeepSeek Harness / Router / Worker / Work items / Events",
+      "notes": "Published as a DeepSeek Harness bundle for GitHub and optionally Feishu. The repository explicitly calls it research code, not an official DeepSeek product or the exact internal implementation in the article. Some architectural directions are not implemented. Setup involves a model, repository identity and runtime; consult deployment documentation.",
+      "license": "MIT",
+      "previewNote": "Official repository README captured on 2026-11-14, not a running panel or execution result."
+    },
+    "repository": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "topics": [
+      "实用软件"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-dsh-superagent/official-preview.jpg",
+      "alt": "dsh-superagent-prototype（研究原型） — 2026-11-14 官方仓库 README 页面截图，非运行面板或本次执行结果。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 官方仓库 README 页面截图，非运行面板或本次执行结果。"
+  },
+  {
+    "id": "skill-claude-seo",
+    "kind": "skill",
+    "title": "Claude SEO（网站与 AI 搜索审核）",
+    "category": "其他",
+    "description": "在 Claude Code 中分派专项 Agent 检查技术 SEO、内容、结构化数据与 AI 搜索可见性，输出按优先级排列的改进建议。",
+    "tags": "SEO / GEO / 内容审核 / 结构化数据 / 跨境电商",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "Claude SEO（网站与 AI 搜索审核）\n\n用途\n在 Claude Code 中分派专项 Agent 检查技术 SEO、内容、结构化数据与 AI 搜索可见性，输出按优先级排列的改进建议。\n\n说明\n官方仓库为 AgriciDaniel/claude-seo（用户材料中的 AgricDaniel 少了一个 i）。当前说明包含 26 个子技能和 19 个专项 Agent，覆盖本地、电商、多语言及可选数据扩展。需要 Claude Code 与 Python 3.11–3.14，模型与可选第三方数据成本另计；审核建议不保证排名提升。\n\n许可\nMIT\n\n官方入口\nhttps://claude-seo.md\n\nGitHub\nhttps://github.com/AgriciDaniel/claude-seo",
+    "source": "https://claude-seo.md",
+    "officialUrl": "https://claude-seo.md",
+    "documentation": "https://github.com/AgriciDaniel/claude-seo/blob/main/skills/seo/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Claude SEO (website and AI-search audits)",
+      "description": "Delegate technical SEO, content, structured data and AI-search visibility checks inside Claude Code, producing prioritized recommendations.",
+      "tags": "SEO / GEO / Content audits / Structured data / Commerce",
+      "notes": "The official repository is AgriciDaniel/claude-seo; the supplied spelling omitted an i. Current documentation lists 26 sub-skills and 19 specialist agents, covering local, commerce, international SEO and optional data extensions. Requires Claude Code and Python 3.11–3.14. Model and optional data services have separate costs; recommendations do not guarantee rankings.",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-14. Original media preserved; not generated here."
+    },
+    "repository": "https://github.com/AgriciDaniel/claude-seo",
+    "skillTopics": [
+      "开发工具",
+      "写作创作"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-claude-seo/author-example.gif",
+      "alt": "Claude SEO（网站与 AI 搜索审核） 作者公开的真实示例",
+      "width": 800,
+      "height": 450
+    },
+    "previewSource": "https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/screenshots/seo-audit-demo.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-14 收录；保留原始媒体，非本次运行成果。"
+  },
+  {
+    "id": "website-awesome-dsh-plugin",
+    "kind": "website",
+    "title": "Awesome DSH Plugin（社区插件索引）",
+    "category": "其他",
+    "description": "按功能分类浏览 DeepSeek Harness 社区插件，提供仓库、使用说明及可供插件发现页添加的索引来源。",
+    "tags": "DeepSeek Harness / 插件 / 索引 / 社区 / 开发工具",
+    "pricing": "free",
+    "license": "目录 CC0-1.0；插件分别授权",
+    "prompt": "Awesome DSH Plugin（社区插件索引）\n\n用途\n按功能分类浏览 DeepSeek Harness 社区插件，提供仓库、使用说明及可供插件发现页添加的索引来源。\n\n说明\n核实来源为 awesome-dsh-plugin/awesome-dsh-plugin 与同名官网，非名称相近的其他合集。目录采用 CC0，插件各有自己的许可和依赖；被目录收录不代表安全审计。索引和 dsh-market 是不同入口，具体兼容性以当前 DSH 与插件说明为准。\n\n许可\n目录 CC0-1.0；插件分别授权\n\n官方入口\nhttps://awesome-dsh-plugin.com/\n\nGitHub\nhttps://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+    "source": "https://awesome-dsh-plugin.com/",
+    "officialUrl": "https://awesome-dsh-plugin.com/",
+    "documentation": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin#readme",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Awesome DSH Plugin (community directory)",
+      "description": "Browse DeepSeek Harness community plugins by function, with repositories, usage information and an index source for plugin discovery.",
+      "tags": "DeepSeek Harness / Plugins / Directory / Community / Developer tools",
+      "notes": "Verified as awesome-dsh-plugin/awesome-dsh-plugin and its official site, distinct from similarly named lists. The directory is CC0; plugins retain their own licenses and dependencies. Listing is not a security audit. The index and dsh-market are separate entry paths; consult current DSH and plugin compatibility notes.",
+      "license": "Directory CC0-1.0; individual plugins have separate licenses.",
+      "previewNote": "Official page captured on 2026-11-14; not output generated in this session."
+    },
+    "repository": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+    "topics": [
+      "实用软件"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-awesome-dsh-plugin/official-preview.jpg",
+      "alt": "Awesome DSH Plugin（社区插件索引） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://awesome-dsh-plugin.com/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "website-see-through",
+    "kind": "website",
+    "title": "See-through（动漫角色语义分层）",
+    "category": "其他",
+    "description": "将单张动漫角色图拆分为头发、脸、眼睛、衣物等语义图层，补全遮挡区域并导出分层 PSD，辅助 2.5D 制作。",
+    "tags": "动漫 / 分层 / PSD / 2.5D / 遮挡补全",
+    "pricing": "partial",
+    "license": "代码 Apache-2.0；模型及依赖按各自许可",
+    "prompt": "See-through（动漫角色语义分层）\n\n用途\n将单张动漫角色图拆分为头发、脸、眼睛、衣物等语义图层，补全遮挡区域并导出分层 PSD，辅助 2.5D 制作。\n\n说明\nSIGGRAPH 2026 研究项目，最多 23 个语义图层，并非 2–3 层。官方提供 Hugging Face 与 ModelScope 演示；默认 bf16 在 1280 分辨率约需 12–16GB 显存，另有低显存方案。图层、遮挡补全与复杂细节需人工检查，PSD 输出不等于已绑定的 Live2D 模型。代码 Apache-2.0，模型与其他依赖各按其条款。\n\n许可\n代码 Apache-2.0；模型及依赖按各自许可\n\n官方入口\nhttps://huggingface.co/spaces/24yearsold/see-through-demo\n\nGitHub\nhttps://github.com/shitagaki-lab/see-through",
+    "source": "https://huggingface.co/spaces/24yearsold/see-through-demo",
+    "officialUrl": "https://huggingface.co/spaces/24yearsold/see-through-demo",
+    "documentation": "https://github.com/shitagaki-lab/see-through#readme",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "See-through (semantic anime layers)",
+      "description": "Decompose an anime character image into hair, face, eyes, clothing and other semantic layers, inpaint occlusions and export layered PSDs for 2.5D work.",
+      "tags": "Anime / Layers / PSD / 2.5D / Inpainting",
+      "notes": "A SIGGRAPH 2026 research project with up to 23 semantic layers, rather than 2–3. Official Hugging Face and ModelScope demos are available. Default bf16 inference at 1280 uses about 12–16GB VRAM, with low-memory options. Inspect layers, occlusion completion and complex details manually; a PSD is not a rigged Live2D model. Code Apache-2.0; model and dependency terms apply separately.",
+      "license": "Code Apache-2.0; models and dependencies have separate terms.",
+      "previewNote": "Official page captured on 2026-11-14; not output generated in this session."
+    },
+    "repository": "https://github.com/shitagaki-lab/see-through",
+    "topics": [
+      "创作工具"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-see-through/official-preview.jpg",
+      "alt": "See-through（动漫角色语义分层） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://huggingface.co/spaces/24yearsold/see-through-demo",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "skill-product-shots",
+    "kind": "skill",
+    "title": "product-shots（商品营销图工作流）",
+    "category": "其他",
+    "description": "从商品照片制作主图、A+ 详情模块、多角度拍摄图、广告与社交素材，适合跨境电商的视觉内容生产。",
+    "tags": "商品图 / A+ / 广告 / 多角度 / 电商 / 图像生成",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "product-shots（商品营销图工作流）\n\n用途\n从商品照片制作主图、A+ 详情模块、多角度拍摄图、广告与社交素材，适合跨境电商的视觉内容生产。\n\n说明\n开源 Agent Skills 套件，以统一 Brief 路由到五类业务技能，并通过图像生成后端出图。当前为 alpha，需要模型或网关配置与费用；生成图需复核真实商品参数、外观与目标平台要求，不能把模型生成结果视为物理准确性或平台合规保证。\n\n许可\nMIT\n\n官方入口\nhttps://github.com/motiful/product-shots\n\nGitHub\nhttps://github.com/motiful/product-shots",
+    "source": "https://github.com/motiful/product-shots",
+    "officialUrl": "https://github.com/motiful/product-shots",
+    "documentation": "https://github.com/motiful/product-shots/blob/main/skills/product-shots/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "product-shots (commerce visual workflows)",
+      "description": "Turn product photos into main images, A+ detail modules, multi-angle shoots, ads and social assets for cross-border commerce.",
+      "tags": "Product imagery / A+ / Ads / Multi-angle / Commerce / Image generation",
+      "notes": "An open Agent Skills suite routes a shared brief into five business workflows and an image-generation backend. Currently alpha; model or gateway setup and fees apply. Verify product parameters, appearance and platform rules; model output is not a guarantee of physical accuracy or marketplace compliance.",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-14. Original media preserved; not generated here."
+    },
+    "repository": "https://github.com/motiful/product-shots",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-product-shots/author-example.jpeg",
+      "alt": "product-shots（商品营销图工作流） 作者公开的真实示例",
+      "width": 1584,
+      "height": 672
+    },
+    "previewSource": "https://raw.githubusercontent.com/motiful/product-shots/main/assets/gallery/coffee-machine/detail-page/01-hero-band.jpeg",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-14 收录；保留原始媒体，非本次运行成果。"
+  },
+  {
+    "id": "website-yournextstore",
+    "kind": "website",
+    "title": "Your Next Store（AI 原生电商模板）",
+    "category": "其他",
+    "description": "面向 AI 编程工具的 Next.js 电商模板，提供商品、购物车和 Stripe 支付集成，适合搭建独立品牌商店。",
+    "tags": "Next.js / 电商 / Stripe / 独立站 / AI 编程",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "Your Next Store（AI 原生电商模板）\n\n用途\n面向 AI 编程工具的 Next.js 电商模板，提供商品、购物车和 Stripe 支付集成，适合搭建独立品牌商店。\n\n说明\n采用 Next.js 16 与类型化 Commerce Kit，提供 AGENTS.md 和在线示例。代码 MIT，可自部署；需要 YNS_API_KEY、商品数据与支付配置，托管、服务及 Stripe 费用另计。搭建速度取决于需求与环境，不承诺几分钟即可完成正式商店。\n\n许可\nMIT\n\n官方入口\nhttps://demo.yournextstore.com/\n\nGitHub\nhttps://github.com/yournextstore/yournextstore",
+    "source": "https://demo.yournextstore.com/",
+    "officialUrl": "https://demo.yournextstore.com/",
+    "documentation": "https://github.com/yournextstore/yournextstore#readme",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Your Next Store (AI-native commerce template)",
+      "description": "A Next.js commerce template for AI coding tools, with products, carts and Stripe integration for independent brand stores.",
+      "tags": "Next.js / Commerce / Stripe / Storefront / AI coding",
+      "notes": "Uses Next.js 16 and typed Commerce Kit APIs, with AGENTS.md and a live demo. MIT code can be self-hosted. Requires YNS_API_KEY, catalog data and payment setup; hosting, service and Stripe fees are separate. Delivery time depends on requirements and environment.",
+      "license": "MIT",
+      "previewNote": "Official page captured on 2026-11-14; not output generated in this session."
+    },
+    "repository": "https://github.com/yournextstore/yournextstore",
+    "topics": [
+      "创作工具",
+      "实用软件"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-yournextstore/official-preview.jpg",
+      "alt": "Your Next Store（AI 原生电商模板） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://demo.yournextstore.com/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "website-apify-mcp",
+    "kind": "website",
+    "title": "Apify MCP Server（网页数据工具接入）",
+    "category": "其他",
+    "description": "通过 MCP 连接 Apify Actors，让 Agent 搜索抓取工具、运行数据提取任务并读取结果，适合公开市场与竞品资料研究。",
+    "tags": "MCP / Apify / 网页数据 / Actors / 竞品研究",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "Apify MCP Server（网页数据工具接入）\n\n用途\n通过 MCP 连接 Apify Actors，让 Agent 搜索抓取工具、运行数据提取任务并读取结果，适合公开市场与竞品资料研究。\n\n说明\n官方提供远程 MCP 与本地服务部署，支持 OAuth 或 Apify Token。MCP 服务代码 MIT，Actors、代理与云端计算采用各自计费；可采集字段取决于具体 Actor 和来源网站，不保证获取非公开销量或内部数据。\n\n许可\nMIT\n\n官方入口\nhttps://mcp.apify.com/\n\nGitHub\nhttps://github.com/apify/apify-mcp-server",
+    "source": "https://mcp.apify.com/",
+    "officialUrl": "https://mcp.apify.com/",
+    "documentation": "https://docs.apify.com/platform/integrations/mcp",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Apify MCP Server (web data tools)",
+      "description": "Connect agents to Apify Actors through MCP to discover tools, run extraction tasks and read datasets for public-market and competitor research.",
+      "tags": "MCP / Apify / Web data / Actors / Competitor research",
+      "notes": "Supports hosted MCP and local deployment, with OAuth or an Apify token. The server code is MIT; Actors, proxies and cloud compute have separate pricing. Available fields depend on the Actor and source site, with no guarantee of private sales or internal data.",
+      "license": "MIT",
+      "previewNote": "Official page captured on 2026-11-14; not output generated in this session."
+    },
+    "repository": "https://github.com/apify/apify-mcp-server",
+    "topics": [
+      "实用软件"
+    ],
+    "preview": {
+      "type": "image",
+      "src": "assets/website-apify-mcp/official-preview.jpg",
+      "alt": "Apify MCP Server（网页数据工具接入） — 2026-11-14 实际打开官方页面后的截图。",
+      "width": 1265,
+      "height": 712
+    },
+    "previewSource": "https://mcp.apify.com/",
+    "previewEvidence": "live-website-screenshot",
+    "previewNote": "2026-11-14 实际打开官方页面后的截图。"
+  },
+  {
+    "id": "skill-internet-court",
+    "kind": "skill",
+    "title": "Internet Court（Agent 交易协议工具箱）",
+    "category": "其他",
+    "description": "将 Agent 身份、协商、授权、支付、托管与纠纷处理协议连接起来，适合研究 Agent 之间的合约与交易流程。",
+    "tags": "Agent 交易 / 合约 / x402 / 授权 / 托管 / 纠纷处理",
+    "pricing": "partial",
+    "license": "自有代码 MIT；vendored 技能按上游许可",
+    "prompt": "Internet Court（Agent 交易协议工具箱）\n\n用途\n将 Agent 身份、协商、授权、支付、托管与纠纷处理协议连接起来，适合研究 Agent 之间的合约与交易流程。\n\n说明\n以总路由 Skill、连接器和上游协议技能组织，覆盖 ERC-7710、x402 等协议。自有代码 MIT，vendored 技能保留上游许可；部分功能需要钱包、链上费用或服务凭据。这里只收藏协议资料，未连接钱包、授权支出或执行交易。\n\n许可\n自有代码 MIT；vendored 技能按上游许可\n\n官方入口\nhttps://internetcourt.org\n\nGitHub\nhttps://github.com/internet-court/internet-court-skill",
+    "source": "https://internetcourt.org",
+    "officialUrl": "https://internetcourt.org",
+    "documentation": "https://github.com/internet-court/internet-court-skill/blob/main/SKILL.md",
+    "addedAt": "2026-11-14",
+    "verifiedAt": "2026-11-14",
+    "en": {
+      "title": "Internet Court (agent commerce protocol toolkit)",
+      "description": "Connect agent identity, negotiation, permissions, payments, escrow and dispute-resolution protocols for agent-commerce research and integration.",
+      "tags": "Agent commerce / Contracts / x402 / Permissions / Escrow / Disputes",
+      "notes": "Organized as a router skill, connectors and vendored protocol skills covering ERC-7710, x402 and related standards. First-party code is MIT; vendored skills keep upstream licenses. Some functions require wallets, network fees or service credentials. Documentation collected only; no wallet connection, spending authorization or transaction performed.",
+      "license": "First-party code MIT; vendored skills retain upstream licenses.",
+      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+    },
+    "repository": "https://github.com/internet-court/internet-court-skill",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "previewStatus": "pending",
+    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+  },
+  {
     "id": "website-ziwei-doushu",
     "kind": "website",
     "pricing": "partial",
@@ -8037,31 +8747,23 @@
       "写作创作"
     ],
     "tags": "社媒运营 / 热点选题 / 信息检索 / 多平台调研",
-    "description": "为 AI Agent 提供网页、社交平台、视频和 RSS 的搜索与阅读能力，适合收集热点讨论、用户问题和选题资料。部分平台需要额外配置；它不是自动生成热点榜单的工具。",
+    "description": "为 AI Agent 补充跨平台搜索与只读阅读能力，支持帖子、评论、字幕、职位等内容获取，适合资料研究与选题采集。",
     "source": "https://github.com/Panniantong/Agent-Reach",
     "repository": "https://github.com/Panniantong/Agent-Reach",
     "officialUrl": "https://github.com/Panniantong/Agent-Reach",
     "documentation": "https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md",
     "addedAt": "2026-10-23",
-    "verifiedAt": "2026-10-23",
-    "previewStatus": "concept",
-    "previewEvidence": "concept-from-readme",
-    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
-    "prompt": "Agent-Reach\n\n用途：为 AI Agent 提供网页、社交平台、视频和 RSS 的搜索与阅读能力，适合收集热点讨论、用户问题和选题资料。部分平台需要额外配置；它不是自动生成热点榜单的工具。\n\n定位：用于获取和整理选题资料；热点筛选与最终选题仍由用户或 Agent 判断。\n\n预览：概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。\n\n官方入口：https://github.com/Panniantong/Agent-Reach\n官方仓库：https://github.com/Panniantong/Agent-Reach\n使用说明：https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md\n\n本次仅收录资料、链接与作者公开示例，未安装或执行 Skill。",
+    "verifiedAt": "2026-11-14",
+    "previewStatus": "pending",
+    "previewNote": "真实产出预览待补；已移除旧概念图，避免当作实际运行效果。",
+    "prompt": "Agent Reach\n\n用途：为 AI Agent 补充跨平台搜索与只读阅读能力，获取公开帖子、评论、字幕、职位等内容。\n\n当前说明：Agent 优先使用自身可用的搜索与阅读工具，Reach 补充缺口；通过 channels 查询可用渠道与动作。部分平台需要单独配置工具、网络或登录会话，不能把“零 API 费用”理解为全部渠道和基础设施都无成本。当前 Skill 只读，不用于发帖、评论、点赞或私信。\n\n许可：MIT。\n\n真实产出预览待补；本次未安装、登录或执行采集。\n\n官方仓库：https://github.com/Panniantong/Agent-Reach\nSkill：https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md",
     "en": {
       "title": "Agent-Reach",
-      "description": "Gives AI agents search and reading access to the web, social platforms, video and RSS — useful for gathering trending discussions, user questions and topic research. Some platforms need extra setup; it does not auto-generate trend rankings.",
+      "description": "Supplement agents with cross-platform search and read-only retrieval of posts, comments, subtitles and jobs for research and topic discovery.",
       "tags": "Social media / Trending topics / Research / Multi-platform",
-      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
-    },
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-agent-reach/concept.png",
-      "alt": "Agent-Reach 概念示意图（根据项目说明绘制，非真实界面）",
-      "width": 1380,
-      "height": 900
-    },
-    "conceptBasis": "https://github.com/Panniantong/Agent-Reach/blob/main/README.md"
+      "previewNote": "Actual output preview pending. The old concept image was removed to avoid presenting it as a real execution result.",
+      "notes": "Use available native search/read tools first, then Reach to fill gaps. Query channels for supported actions. Platforms can require separate tools, networking or sessions; zero API fees does not mean every dependency is cost-free. The current skill is read-only, excluding posting, comments, likes and messages. Not installed or executed in this session."
+    }
   },
   {
     "id": "skill-auto-redbook",
