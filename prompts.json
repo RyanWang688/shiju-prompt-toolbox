@@ -1028,15 +1028,24 @@
       "tags": "Cross-border commerce / Shopee / Mercado Livre / Research / Ads / SOP",
       "notes": "The sop-ecom-toolkit router focuses on Shopee Brazil and Mercado Livre with buyer-facing PT-BR copy. Includes prompts, input templates, calculation scripts and cases. Requires real product, market and business data; generation services need separate setup. Collected as workflow documentation, not account operation.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "repository": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
     "skillTopics": [
       "开发工具",
       "写作创作"
     ],
-    "previewStatus": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit/blob/main/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-cross-border-ecommerce/concept.png",
+      "alt": "AI 跨境电商运营工具箱 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-agent-desktop",
@@ -1059,14 +1068,22 @@
       "tags": "Desktop automation / Accessibility / CLI / Vercel Labs / Windows / macOS",
       "notes": "Supports macOS, Windows and Linux with a CLI and C library; the external agent performs the observe-act-verify loop. Depends on app accessibility support and OS permissions, so custom canvases, games and inaccessible controls may not work. Collected only; no desktop permissions granted or software installed.",
       "license": "Apache-2.0",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
     },
     "repository": "https://github.com/vercel-labs/agent-desktop",
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "previewEvidence": "author-repository-example",
+    "previewSource": "https://raw.githubusercontent.com/vercel-labs/agent-desktop/main/assets/Tutorial.gif",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-agent-desktop/author-example.gif",
+      "alt": "agent-desktop（桌面软件操控） 官方示例动图",
+      "width": 800,
+      "height": 449
+    }
   },
   {
     "id": "website-dsh-superagent",
@@ -1358,14 +1375,22 @@
       "tags": "Agent commerce / Contracts / x402 / Permissions / Escrow / Disputes",
       "notes": "Organized as a router skill, connectors and vendored protocol skills covering ERC-7710, x402 and related standards. First-party code is MIT; vendored skills keep upstream licenses. Some functions require wallets, network fees or service credentials. Documentation collected only; no wallet connection, spending authorization or transaction performed.",
       "license": "First-party code MIT; vendored skills retain upstream licenses.",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Screenshot of the official site taken on 2026-11-15; saved for reference only — not installed or run."
     },
     "repository": "https://github.com/internet-court/internet-court-skill",
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewNote": "2026-11-15 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewSource": "https://internetcourt.org",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-internet-court/official-site.jpg",
+      "alt": "Internet Court（Agent 交易协议工具箱） 官网截图",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "website-ziwei-doushu",
@@ -1504,15 +1529,22 @@
       "tags": "Cangjie Skill (knowledge distillation)",
       "notes": "Version 2.5.0 extracts capability cards and a Capability Bundle before compiling a single router skill or a compact skill pack. The local toolchain supports incremental updates, repair, rollback and evaluation. Video processing can incorporate visual evidence alongside transcripts. Results depend on source quality and model capabilities; check sources and test generated procedures.",
       "license": "MIT",
-      "previewNote": "Instructions and official sources verified; an actual output preview is pending."
+      "previewNote": "Screenshot of the official site taken on 2026-11-15; saved for reference only — not installed or run."
     },
     "skillTopics": [
       "写作创作",
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "已核对实际说明与官方来源，真实产出效果预览待补。"
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-15 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "previewSource": "https://cangjie-skill.com/",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-cangjie/official-site.jpg",
+      "alt": "Cangjie Skill（仓颉知识蒸馏） 官网截图",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-modern-web-guidance",
@@ -1536,15 +1568,22 @@
       "tags": "Modern Web Guidance",
       "notes": "Maintained by Chrome, Edge, Firefox and MDN teams and the web community. Search focused use cases and retrieve guides by ID through the CLI, or install the skills into an agent. Useful for dialogs, forms, responsive layouts, motion and Web Components, favoring native browser features and appropriate fallbacks.",
       "license": "Apache-2.0",
-      "previewNote": "Instructions and official sources verified; an actual output preview is pending."
+      "previewNote": "Screenshot of the official site taken on 2026-11-15; saved for reference only — not installed or run."
     },
     "skillTopics": [
       "开发工具",
       "视觉设计"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "已核对实际说明与官方来源，真实产出效果预览待补。"
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-15 实际打开官网后的网页截图；仅收藏，未安装或运行。",
+    "previewSource": "https://developer.chrome.com/docs/modern-web-guidance",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-modern-web-guidance/official-site.jpg",
+      "alt": "Modern Web Guidance（现代 Web 开发指南） 官网截图",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-gif-factory",
@@ -3477,9 +3516,9 @@
     "description": "按参考视频分段复刻文字 PV、角色手书和 MV，帮助 Agent 逐镜分析文字、角色、空间与镜头运动，支持换角色和可选 L2D 分件绑定。",
     "prompt": "llc-pv-skill\n\n用途\n按参考视频分段复刻文字 PV、角色手书和 MV，帮助 Agent 逐镜分析文字、角色、空间与镜头运动，支持换角色和可选 L2D 分件绑定。\n\n工作流程\n当前版本 0.4.0-alpha.2。流程包括全片观察、约 20 秒自然分段、逐镜脚本、素材核对、制作及三轮全片对照。适合需要保留参考节奏、文字动画与角色表演的 AE 动画项目。\n\n使用条件\n基础观察需 Python、FFmpeg/ffprobe、ImageMagick 和字体。AE 制作另需 After Effects、Node.js 24+ 与可用的 AE MCP。安装步骤见 INSTALL.md。\n\n版本与许可\n0.4.0-alpha.2，MIT。输入音乐、字体及角色素材的许可由各自权利方决定。\n\n官方仓库\nhttps://github.com/Youtich-A/llc-pv-skill\n\n技能说明\nhttps://github.com/Youtich-A/llc-pv-skill/blob/main/SKILL.md\n\n安装说明\nhttps://github.com/Youtich-A/llc-pv-skill/blob/main/INSTALL.md",
     "source": "https://github.com/Youtich-A/llc-pv-skill",
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "官方仓库已确认。仓库未附成片演示素材，真实效果预览待补。",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "addedAt": "2026-11-06",
     "en": {
       "title": "llc-pv-skill (PV and character animation recreation)",
@@ -3487,13 +3526,21 @@
       "tags": "PV recreation / Motion analysis / After Effects / Character animation / Music videos / L2D",
       "notes": "Version 0.4.0-alpha.2. Observe the full reference, split at natural boundaries around 20 seconds, write shot scripts, check assets, produce each segment and run three full-reference review passes. Suitable for After Effects projects that preserve reference timing, typography and character performance. Basic observation needs Python, FFmpeg/ffprobe, ImageMagick and fonts. AE production also requires After Effects, Node.js 24+ and a working AE MCP connection. See INSTALL.md.",
       "license": "MIT",
-      "previewNote": "Official repository verified. No finished-video demo assets are included. A verified output preview is pending."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "officialUrl": "https://github.com/Youtich-A/llc-pv-skill",
     "repository": "https://github.com/Youtich-A/llc-pv-skill",
     "documentation": "https://github.com/Youtich-A/llc-pv-skill/blob/main/INSTALL.md",
     "license": "MIT",
-    "verifiedAt": "2026-11-14"
+    "verifiedAt": "2026-11-14",
+    "conceptBasis": "https://github.com/Youtich-A/llc-pv-skill/blob/main/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-l2c-motion-analysis/concept.png",
+      "alt": "llc-pv-skill（PV 与角色动画复刻） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "website-free-claude-code",
@@ -9412,15 +9459,24 @@
     "documentation": "https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md",
     "addedAt": "2026-10-23",
     "verifiedAt": "2026-11-14",
-    "previewStatus": "pending",
-    "previewNote": "真实产出预览待补；已移除旧概念图，避免当作实际运行效果。",
+    "previewStatus": "concept",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
     "prompt": "Agent Reach\n\n用途：为 AI Agent 补充跨平台搜索与只读阅读能力，获取公开帖子、评论、字幕、职位等内容。\n\n当前说明：Agent 优先使用自身可用的搜索与阅读工具，Reach 补充缺口；通过 channels 查询可用渠道与动作。部分平台需要单独配置工具、网络或登录会话，不能把“零 API 费用”理解为全部渠道和基础设施都无成本。当前 Skill 只读，不用于发帖、评论、点赞或私信。\n\n许可：MIT。\n\n真实产出预览待补；本次未安装、登录或执行采集。\n\n官方仓库：https://github.com/Panniantong/Agent-Reach\nSkill：https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md",
     "en": {
       "title": "Agent-Reach",
       "description": "Supplement agents with cross-platform search and read-only retrieval of posts, comments, subtitles and jobs for research and topic discovery.",
       "tags": "Social media / Trending topics / Research / Multi-platform",
-      "previewNote": "Actual output preview pending. The old concept image was removed to avoid presenting it as a real execution result.",
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending.",
       "notes": "Use available native search/read tools first, then Reach to fill gaps. Query channels for supported actions. Platforms can require separate tools, networking or sessions; zero API fees does not mean every dependency is cost-free. The current skill is read-only, excluding posting, comments, likes and messages. Not installed or executed in this session."
+    },
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-agent-reach/concept.png",
+      "alt": "Agent-Reach 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
     }
   },
   {

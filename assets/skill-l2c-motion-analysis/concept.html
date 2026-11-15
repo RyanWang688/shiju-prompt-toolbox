@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>llc-pv-skill（PV 与角色动画复刻） — 概念示意图</title>
+<link rel="stylesheet" href="../concept-art-20261028.css">
+</head>
+<body>
+<main class="board">
+  <section class="copy">
+    <div class="kicker">MOTION ANALYSIS / AFTER EFFECTS</div>
+    <h1>llc-pv-skill（PV 与角色动画复刻）</h1>
+    <p class="sub">面向文字 PV、角色动画与 MV 复刻：按约 20 秒自然分段，逐镜解析排版、角色表演与运镜，支持角色替换与可选 L2D 绑定。</p>
+    <div class="facts">
+      <span>v0.4.0-alpha.2</span>
+      <span>Python + FFmpeg + AE MCP</span>
+      <span>MIT 开源许可</span>
+    </div>
+  </section>
+  <section class="stage">
+    <div class="flow">
+      <div class="step"><b>01 · 全片观察与 20 秒自然分段</b><span>结合 FFmpeg/ffprobe 与参考节奏切分段落，梳理文字动效、空间层次与角色表演结构。</span></div>
+      <div class="step"><b>02 · 逐镜脚本与素材核对</b><span>输出逐镜参数清单，校验字体、角色图层、音乐卡点与可选 Live2D 绑定素材。</span></div>
+      <div class="step"><b>03 · AE 制作与三轮全片对照</b><span>通过 Node.js 24+ 与 AE MCP 驱动 After Effects 分段合成，并执行三轮全片回看校准。</span></div>
+      <div class="out"><b>适用范围</b><span>需自备参考视频、字体与素材授权；基础观察依赖 Python、FFmpeg 与 ImageMagick。</span></div>
+    </div>
+  </section>
+  <footer class="badge"><b>概念示意图</b><span>根据官方 README / SKILL.md 绘制，不是真实界面或运行结果</span><span>Concept illustration — not a real screenshot</span></footer>
+</main>
+</body>
+</html>
