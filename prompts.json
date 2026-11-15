@@ -11386,5 +11386,153 @@
       "prompt": "List-to-grid layout morph (FLIP Layout Morph): record each item's rectangle before and after the switch, compensate in reverse with translate and scale, and ease each one along a curved path to its new cell, staggering neighbours by 3 frames; images are cropped to keep their aspect ratio, and no nodes are destroyed, rebuilt or reloaded along the way.",
       "previewNote": "Interactive demo hand-built from the prompt — not model output."
     }
+  },
+  {
+    "id": "skill-chatgpt-ecom-visual-commands",
+    "kind": "skill",
+    "title": "ChatGPT 电商做图指令集（5 大商业素材指令）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "整理 5 个高频 ChatGPT 电商产品出图指令：/ugc model、/meta ads、/explodedview、/3dbillboard 与 /producthero，附防变形锁定约束。",
+    "tags": "电商做图 / ChatGPT / 产品摄影 / 3D大屏 / 爆炸分解图 / UGC广告",
+    "pricing": "partial",
+    "prompt": "ChatGPT 电商做图指令集（5 大商业素材指令）\n\n使用方式\n上传清晰的产品原图后，输入对应指令与补充约束即可快速生成商业素材：\n\n1. 模特展示图：/ugc model\n生成真人模特手持或使用产品的自然生活化展示图。\n\n2. 社媒广告图：/meta ads\n一键制作适配 Facebook、Instagram 等信息流平台的广告素材。\n\n3. 结构分解图：/explodedview\n自动拆解产品内部结构与部件，生成科技感爆炸分解图。\n\n4. 户外大屏图：/3dbillboard\n将产品合成展示在街头大型裸眼 3D 户外广告牌上。\n\n5. 专业棚拍图：/producthero\n把普通产品照转化为影棚级布光与质感的商业主图大片。\n\n防跑偏锁定约束（推荐附带）\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。」\n\n官方入口\nhttps://chatgpt.com/",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图：根据指令说明绘制，不是真实界面或运行结果；真实预览待补。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-ecom-visual-commands/concept.png",
+      "alt": "ChatGPT 电商做图指令集（5 大商业素材指令）概念示意图（根据说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce Product Visual Commands (5 Shortcuts)",
+      "description": "Five practical ChatGPT product-image command workflows (/ugc model, /meta ads, /explodedview, /3dbillboard, /producthero) with a product-locking prompt constraint.",
+      "tags": "E-commerce visuals / ChatGPT / Product hero / 3D billboard / Exploded view / UGC",
+      "notes": "Upload a product photo and pair one of the five commands with a strict preservation constraint ('strictly preserve the original product shape, proportions, and colors; replace background and lighting only') to prevent distortion.",
+      "previewNote": "Concept illustration drawn from the command workflow — not a real interface or output; a real preview is still pending."
+    }
+  },
+  {
+    "id": "website-oink",
+    "kind": "website",
+    "title": "Oink（开源跨平台键鼠共享与多机互联工具）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "完全开源免费的跨设备键鼠共享软件（Oink Is Not only a KVM），支持 Windows 与 macOS 对等互联、毫秒级切屏、双向剪贴板、文件拖拽与音频转发。",
+    "tags": "键鼠共享 / 跨屏协同 / 开源软件 / Windows / macOS / KVM",
+    "pricing": "free",
+    "license": "GPL-3.0",
+    "prompt": "Oink（开源跨平台键鼠共享与多机互联工具）\n\n用途\n开源免费的跨设备键鼠共享工具（Oink Is Not only a KVM），用一套键鼠无缝控制多台 Windows 与 Mac 电脑。\n\n核心特性\n- 对等网络设计：不强求固定服务端/客户端，任意设备键鼠均可控制其他设备\n- 低延迟原生手感：局域网自动发现，默认加密传输\n- 跨机数据流转：支持双向剪贴板同步、跨屏文件拖拽与音频转发\n- 跨平台支持：Windows 10/11 (x64) 与 macOS 14.2+ (Apple Silicon / Intel)\n\n许可\nGPL-3.0\n\n官方仓库\nhttps://github.com/oinkvm/oink",
+    "source": "https://github.com/oinkvm/oink",
+    "officialUrl": "https://github.com/oinkvm/oink",
+    "repository": "https://github.com/oinkvm/oink",
+    "documentation": "https://github.com/oinkvm/oink#readme",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-oink/author-example.png",
+      "alt": "Oink 官方仓库横幅示例（banner-light.png）",
+      "width": 1720,
+      "height": 560
+    },
+    "previewSource": "https://raw.githubusercontent.com/oinkvm/oink/main/.github/assets/banner-light.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Oink (Open-Source Cross-Platform Keyboard & Mouse Sharing)",
+      "description": "Free, open-source peer-to-peer KVM software for Windows and macOS with low-latency cursor switching, clipboard sync, drag-and-drop file transfer, audio forwarding, and encrypted LAN transport.",
+      "tags": "KVM / Mouse sharing / Cross-platform / Open source / Windows / macOS",
+      "notes": "Peer-to-peer architecture without a rigid server/client split, LAN auto-discovery, and default encryption under GPL-3.0.",
+      "license": "GPL-3.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "skill-supervisor-skills",
+    "kind": "skill",
+    "title": "Supervisor-Skills（科研副导师全流程 AI Skill）",
+    "category": "写作表达",
+    "skillTopics": [
+      "写作创作",
+      "开发工具"
+    ],
+    "description": "将科研导师经验蒸馏为 AI Agent 可执行的双轨制 Skill，含 12 个子技能覆盖 Idea 评估、Vibe Coding/Figure/Writing、Flowchart 六段式引言、深度调研、润色与审稿。",
+    "tags": "科研写作 / 学术论文 / 科研副导师 / Vibe Research / Agent Skill / HKUSTDial",
+    "pricing": "free",
+    "prompt": "Supervisor-Skills（科研副导师全流程 AI Skill）\n\n用途\n由 HKUSTDial 开源，将资深科研导师经验提炼为“理论指南 + AI Skill”双轨制架构，陪伴完成从选题评估到论文投稿的全流程科研工作。\n\n核心能力（12 个子技能覆盖全流程）\n- Idea 评估：客观评估研究想法与打分，判断推进价值\n- Vibe Research 三支柱：指导 Vibe Coding、Vibe Figure 与 Vibe Writing\n- 论文写作：基于 Flowchart 思考模型产出六段式 Introduction，支持单段到整篇正文写作与事实溯源\n- 语言润色与模板：语法改错、去除 AI 腔、提供技术类与基准类论文模板\n- 深度调研与审稿：多视角检索、逐条引用校验、审稿人视角全面审查与图表规范指导\n\n支持环境\n可直接安装至 Claude Code、Cursor、Codex 等 AI 编程与科研助手。\n\n官方仓库\nhttps://github.com/HKUSTDial/Supervisor-Skills",
+    "source": "https://github.com/HKUSTDial/Supervisor-Skills",
+    "officialUrl": "https://github.com/HKUSTDial/Supervisor-Skills",
+    "repository": "https://github.com/HKUSTDial/Supervisor-Skills",
+    "documentation": "https://github.com/HKUSTDial/Supervisor-Skills#readme",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-supervisor-skills/author-example.png",
+      "alt": "Supervisor-Skills 官方仓库示例图（aflow_solution_overview.png）",
+      "width": 1280,
+      "height": 994
+    },
+    "previewSource": "https://raw.githubusercontent.com/HKUSTDial/Supervisor-Skills/main/assets/aflow_solution_overview.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Supervisor-Skills (AI Research Co-Supervisor Skill Suite)",
+      "description": "Distills research advisor experience into a dual-track theory guide and 12 AI Agent sub-skills covering idea evaluation, Vibe Coding/Figure/Writing, six-paragraph Flowchart introductions, deep surveys, polishing, and peer review.",
+      "tags": "Academic research / Paper writing / AI supervisor / Vibe Research / Agent Skill / HKUSTDial",
+      "notes": "Open-sourced by HKUSTDial with 12 modular sub-skills installable in Claude Code, Cursor, Codex, and other AI assistants.",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "website-lobehub",
+    "kind": "website",
+    "title": "LobeHub（开源多智能体协作与 AI 自主研发平台）",
+    "category": "其他",
+    "topics": [
+      "创作工具",
+      "实用软件"
+    ],
+    "description": "GitHub 超 8.5 万 Star 的开源 Agent 协作平台与工作区，支持多智能体协同编写代码、排查 Bug、提交 PR 与评审的研发闭环，人类工程师仅需最终验收。",
+    "tags": "多智能体协作 / AI 研发平台 / 开源社区 / Agent Workspace / PR 自动化",
+    "pricing": "partial",
+    "prompt": "LobeHub（开源多智能体协作与 AI 自主研发平台）\n\n用途\n开源多智能体协作平台与 AI 工作区（GitHub 8.5 万+ Star），支持团队将自研 Agent 系统接入研发与日常协作流程。\n\n核心模式\n- 多智能体协作闭环：由 Agent 自主调度任务、读取上下文、编写代码、查 Bug、提交 PR 与参与评审\n- 人类关键节点验收：开发者聚焦需求定义与最终代码合入审批\n- 开放生态：支持多模型接入、知识库/RAG、IM 机器人联动与本地部署\n\n官方入口\nhttps://lobehub.com\n\nGitHub\nhttps://github.com/lobehub/lobehub",
+    "source": "https://lobehub.com",
+    "officialUrl": "https://lobehub.com",
+    "repository": "https://github.com/lobehub/lobehub",
+    "documentation": "https://github.com/lobehub/lobehub#readme",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-lobehub/author-example.png",
+      "alt": "LobeHub 官方展示图（Lobe AI Super-agent 与 PR 权限协作界面）",
+      "width": 1968,
+      "height": 1042
+    },
+    "previewSource": "https://hub-apac-1.lobeobjects.space/blog/assets/a1c721a3cbe9cb8ec0f515217322b514.webp",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "LobeHub (Open-Source Multi-Agent Collaboration Platform)",
+      "description": "Open-source multi-agent workspace (85k+ GitHub stars) enabling autonomous coding, bug fixing, PR submission, and review workflows with human sign-off at key milestones.",
+      "tags": "Multi-agent / AI workspace / Open source / Autonomous R&D / PR workflow",
+      "notes": "Supports multi-model providers, knowledge bases/RAG, IM bot integrations, and self-hosted or cloud deployments.",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
+    }
   }
 ]
