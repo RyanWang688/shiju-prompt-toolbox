@@ -1,8 +1,8 @@
-﻿# Attribution
+# Attribution
 
 Author: heygen-com
 
-Source: https://raw.githubusercontent.com/heygen-com/hyperframes/main/docs/images/variable-object-edit/after.png
+Source: https://raw.githubusercontent.com/heygen-com/hyperframes/main/docs/public/images/studio-app/first-video-demo-v2.jpg
 
 Repository: https://github.com/heygen-com/hyperframes
 

@@ -21,14 +21,21 @@
       "tags": "Skill discovery / skills.sh / npx skills / Tooling / Vercel Labs",
       "notes": "Part of vercel-labs/skills. Identifies the domain and task, checks the skills.sh leaderboard first, then uses npx skills find, add and update. Documentation collected only; not installed here.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Screenshot of the official skills.sh homepage taken on 2026-11-15; saved for reference only."
     },
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-15 实际打开 skills.sh 官网首页的浏览器截图；仅收藏，未安装或执行。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-find-skills/official-site.jpg",
+      "alt": "skills.sh 官网首页实际截图，展示开放 Agent Skills 生态与安装量排行榜",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://skills.sh/"
   },
   {
     "id": "skill-grill-with-docs",
@@ -52,14 +59,22 @@
       "tags": "Design interview / ADR / Domain modeling / Docs / Matt Pocock",
       "notes": "From Matt Pocock’s engineering skills (explicit invocation with disable-model-invocation: true). Orchestrates both grilling and domain-modeling to clarify plans and write ADRs and glossaries.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-grill-with-docs/concept.png",
+      "alt": "grill-with-docs（方案拷问并同步沉淀文档） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-agent-browser",
@@ -121,15 +136,22 @@
       "tags": "CLI / Video rendering / Timeline / FFmpeg / HyperFrames / HeyGen",
       "notes": "Wraps npx hyperframes commands (many supporting --json) for init, capture, lint/check, snapshot, timeline edits and render. Requires Node.js 22+ and FFmpeg. Includes an opt-out usage beacon; optional HeyGen media or cloud features may incur credits.",
       "license": "Apache-2.0",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
     },
     "skillTopics": [
       "动画视频",
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-hyperframes-cli/author-example.jpg",
+      "alt": "hyperframes-cli（HTML 视频工程命令行渲染） 作者官方仓库公开的真实示例",
+      "width": 1600,
+      "height": 1000
+    },
+    "previewSource": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/docs/public/images/studio-app/script-demo-v2.jpg"
   },
   {
     "id": "skill-improve-codebase-architecture",
@@ -153,14 +175,22 @@
       "tags": "Refactoring / Architecture / Deep modules / Code quality / Matt Pocock",
       "notes": "From mattpocock/skills (disable-model-invocation: true). Pairs with codebase-design, GLOSSARY.md and docs/adr/, focusing on recent git log hotspots to turn shallow modules into deeper, testable interfaces.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/mattpocock/skills/blob/main/skills/engineering/improve-codebase-architecture/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-improve-codebase-architecture/concept.png",
+      "alt": "improve-codebase-architecture（代码架构深化重构） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-tdd",
@@ -184,14 +214,22 @@
       "tags": "TDD / Test-driven development / Testing / Red-green-refactor / Matt Pocock",
       "notes": "From mattpocock/skills. Enforces writing behavior-focused tests against pre-agreed public seams before implementing production code, respecting project GLOSSARY.md and ADRs.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-tdd/concept.png",
+      "alt": "tdd（红绿重构测试驱动开发） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-hyperframes",
@@ -223,12 +261,12 @@
     ],
     "preview": {
       "type": "image",
-      "src": "assets/skill-hyperframes/author-example.png",
-      "alt": "HyperFrames 官方仓库 docs/images/variable-object-edit/after.png 画面示例",
-      "width": 640,
-      "height": 360
+      "src": "assets/skill-hyperframes/author-example.jpg",
+      "alt": "hyperframes（HTML 动画创作与视频导出） 作者官方仓库公开的真实示例",
+      "width": 1600,
+      "height": 1000
     },
-    "previewSource": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/docs/images/variable-object-edit/after.png",
+    "previewSource": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/docs/public/images/studio-app/first-video-demo-v2.jpg",
     "previewEvidence": "author-repository-example",
     "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。"
   },
@@ -254,14 +292,22 @@
       "tags": "Repo setup / Scaffolding / AGENTS.md / Triage labels / Matt Pocock",
       "notes": "Explicit-invocation setup skill (disable-model-invocation: true). Inspects git remote, AGENTS.md/CLAUDE.md and existing docs before proposing and writing issue-tracker, triage-label and GLOSSARY/ADR conventions.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/mattpocock/skills/blob/main/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-setup-matt-pocock-skills/concept.png",
+      "alt": "setup-matt-pocock-skills（工程技能配置初始化） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-reddit-automation",
@@ -285,15 +331,23 @@
       "tags": "Reddit / Community growth / Lead discovery / Copywriting / Human-in-the-loop",
       "notes": "Published by flowkit-labs/skills (doany.ai team). Runs discovery across target subreddits and drafts disclosed, rule-respecting replies while keeping a human in the loop to review and post (never astroturfing). Connected services may have separate costs.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "写作创作",
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/flowkit-labs/skills/blob/main/reddit-automation/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-reddit-automation/concept.png",
+      "alt": "reddit-automation（Reddit 高意向线索发现与回复） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-media-use",
@@ -317,15 +371,22 @@
       "tags": "Multimodal media / Voiceover / SFX / Cutouts / Captions / HyperFrames",
       "notes": "Referred to as media-utils in the video; the active skill in heygen-com/hyperframes is media-use. Manages local media assets with npx hyperframes media-use resolve; free catalog tracks are available, while generated voice, avatar or video features use HeyGen credits or local/BYOK tools.",
       "license": "Apache-2.0",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
     },
     "skillTopics": [
       "动画视频",
       "图像创作"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-media-use/author-example.jpg",
+      "alt": "media-use（原 media-utils，多模态音视频素材处理） 作者官方仓库公开的真实示例",
+      "width": 960,
+      "height": 600
+    },
+    "previewSource": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/docs/public/images/studio-app/spots/show-timeline-v2.jpg"
   },
   {
     "id": "skill-handoff",
@@ -349,14 +410,22 @@
       "tags": "Context compaction / Handoff / Session continuity / Productivity / Matt Pocock",
       "notes": "From mattpocock/skills (often mistranscribed as handbuff in videos). Saves the handoff summary to the OS temp directory (%TEMP% on Windows) rather than the repo, cites existing artifact paths/URLs instead of duplicating them, and redacts secrets.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-handoff/concept.png",
+      "alt": "handoff（视频识别作 handbuff，上下文压缩交接） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-frontend-design",
@@ -380,15 +449,23 @@
       "tags": "Frontend design / UI aesthetics / Typography / Anti-slop / Anthropic",
       "notes": "Highlighted individually from anthropics/skills for quick reference. Advises studio-grade art direction: purposeful typography, subject-grounded layout and restrained motion while avoiding templated AI tells.",
       "license": "Apache-2.0 (see repository LICENSE.txt)",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "视觉设计",
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-frontend-design/concept.png",
+      "alt": "frontend-design（Anthropic 官方前端设计审美） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "skill-hyperframes-animation",
@@ -412,15 +489,22 @@
       "tags": "Animation / Transitions / Choreography / GSAP / HyperFrames",
       "notes": "Indexed on skills.sh as heygen-com/hyperframes/hyperframes-animation; in the latest main branch of heygen-com/hyperframes these rules are modularized under .agents/skills/ (motion-doctrine, cut-the-curve, seam-craft) to ensure continuous camera flow.",
       "license": "Apache-2.0",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
     },
     "skillTopics": [
       "动画视频",
       "视觉设计"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-hyperframes-animation/author-example.webp",
+      "alt": "hyperframes-animation（动效法则与转场编排） 作者官方仓库公开的真实示例",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/docs/public/images/hyperframes-logo-motion-1280-trimmed.webp"
   },
   {
     "id": "skill-triage",
@@ -444,14 +528,22 @@
       "tags": "Issue triage / PR management / State machine / Open source / Matt Pocock",
       "notes": "From mattpocock/skills (disable-model-invocation: true). Uses two category roles (bug/enhancement) and five state roles (needs-triage to wontfix), enforces non-conflicting labels and prepends an AI-triage disclaimer on posted comments.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "开发工具"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/mattpocock/skills/blob/main/skills/engineering/triage/SKILL.md",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-triage/concept.png",
+      "alt": "triage（GitHub Issue / PR 智能分诊） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "website-auto-ontology",
@@ -513,15 +605,23 @@
       "tags": "Game dev / Multi-agent / Claude Code / Workflows / Studio template",
       "notes": "Open-source studio template by Donchitos featuring /prototype briefs, scripted headless-browser QA checks, and Vite + TypeScript scaling (engine routes for Godot/Unity/Unreal exist in repo but are noted as untested). MIT licensed; requires Claude Code / API usage.",
       "license": "MIT",
-      "previewNote": "Actual output preview pending. Official documentation verified; no concept image or introduction page is presented as output."
+      "previewNote": "Concept illustration drawn from the official README / SKILL.md — not a real interface or output; a real preview is still pending."
     },
     "skillTopics": [
       "开发工具",
       "动画视频"
     ],
-    "previewStatus": "pending",
-    "previewEvidence": "pending",
-    "previewNote": "真实产出预览待补；已核对官方说明，未将介绍页或概念图当作运行成果。"
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "previewNote": "概念示意图：根据官方 README / SKILL.md 绘制，不是真实界面或运行结果；真实预览待补。",
+    "conceptBasis": "https://github.com/Donchitos/Claude-Code-Game-Studios#readme",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-claude-code-game-studios/concept.png",
+      "alt": "Claude Code Game Studios（游戏工作室多智能体协同） 概念示意图（根据项目说明绘制，非真实界面）",
+      "width": 1380,
+      "height": 900
+    }
   },
   {
     "id": "glass-glow-theme-switch",
