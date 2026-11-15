@@ -11388,42 +11388,6 @@
     }
   },
   {
-    "id": "skill-chatgpt-ecom-visual-commands",
-    "kind": "skill",
-    "title": "ChatGPT 电商做图指令集（5 大商业素材指令）",
-    "category": "界面设计",
-    "skillTopics": [
-      "图像创作",
-      "视觉设计"
-    ],
-    "description": "整理 5 个高频 ChatGPT 电商产品出图指令：/ugc model、/meta ads、/explodedview、/3dbillboard 与 /producthero，附防变形锁定约束。",
-    "tags": "电商做图 / ChatGPT / 产品摄影 / 3D大屏 / 爆炸分解图 / UGC广告",
-    "pricing": "partial",
-    "prompt": "ChatGPT 电商做图指令集（5 大商业素材指令）\n\n使用方式\n上传清晰的产品原图后，输入对应指令与补充约束即可快速生成商业素材：\n\n1. 模特展示图：/ugc model\n生成真人模特手持或使用产品的自然生活化展示图。\n\n2. 社媒广告图：/meta ads\n一键制作适配 Facebook、Instagram 等信息流平台的广告素材。\n\n3. 结构分解图：/explodedview\n自动拆解产品内部结构与部件，生成科技感爆炸分解图。\n\n4. 户外大屏图：/3dbillboard\n将产品合成展示在街头大型裸眼 3D 户外广告牌上。\n\n5. 专业棚拍图：/producthero\n把普通产品照转化为影棚级布光与质感的商业主图大片。\n\n防跑偏锁定约束（推荐附带）\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。」\n\n官方入口\nhttps://chatgpt.com/",
-    "source": "https://chatgpt.com/",
-    "officialUrl": "https://chatgpt.com/",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "previewStatus": "concept",
-    "previewEvidence": "concept-from-readme",
-    "conceptBasis": "https://chatgpt.com/",
-    "previewNote": "概念示意图：根据指令说明绘制，不是真实界面或运行结果；真实预览待补。",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-chatgpt-ecom-visual-commands/concept.png",
-      "alt": "ChatGPT 电商做图指令集（5 大商业素材指令）概念示意图（根据说明绘制，非真实界面）",
-      "width": 1380,
-      "height": 900
-    },
-    "en": {
-      "title": "ChatGPT E-Commerce Product Visual Commands (5 Shortcuts)",
-      "description": "Five practical ChatGPT product-image command workflows (/ugc model, /meta ads, /explodedview, /3dbillboard, /producthero) with a product-locking prompt constraint.",
-      "tags": "E-commerce visuals / ChatGPT / Product hero / 3D billboard / Exploded view / UGC",
-      "notes": "Upload a product photo and pair one of the five commands with a strict preservation constraint ('strictly preserve the original product shape, proportions, and colors; replace background and lighting only') to prevent distortion.",
-      "previewNote": "Concept illustration drawn from the command workflow — not a real interface or output; a real preview is still pending."
-    }
-  },
-  {
     "id": "website-oink",
     "kind": "website",
     "title": "Oink（开源跨平台键鼠共享与多机互联工具）",
@@ -11569,6 +11533,186 @@
       "tags": "Textbooks / PDF / Free education / K-12 / University / Open collection",
       "notes": "Organized by grade and subject without private watermarks, serving domestic learners and overseas Chinese families.",
       "previewNote": "Screenshot of the official repository page taken on 2026-11-15; saved for reference only."
+    }
+  },
+  {
+    "id": "skill-chatgpt-ugc-model",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/ugc model（模特展示图）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传产品原图后输入 /ugc model，生成真人模特手持或使用产品的自然生活化展示图，附防变形锁定约束。",
+    "tags": "电商做图 / ChatGPT / /ugc model / 模特展示 / UGC 素材",
+    "pricing": "partial",
+    "prompt": "指令：/ugc model（真人模特展示图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/ugc model\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 生成真人模特在自然光室内场景中手持并展示该产品的真实生活化照片，景深自然。」\n\n适用场景\n种草图文、详情页买家秀风格展示、短视频封面。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /ugc model 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-ugc-model/effect-preview.jpg",
+      "alt": "/ugc model 真人模特手持产品展示效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /ugc model (UGC Lifestyle Portrait)",
+      "description": "Upload a product photo and run /ugc model to generate a natural lifestyle photo of a real model holding or using the product, with product-locking constraints.",
+      "tags": "E-commerce / ChatGPT / /ugc model / UGC lifestyle / Model shot",
+      "notes": "Upload your product photo in ChatGPT, enter /ugc model, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place the product naturally in a sunlit lifestyle portrait held by a real model.'",
+      "previewNote": "Concept effect illustration demonstrating the /ugc model visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "skill-chatgpt-meta-ads",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/meta ads（社媒广告图）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传产品原图后输入 /meta ads，一键制作适合 Facebook、Instagram 等信息流投放的商业广告素材，附防变形约束。",
+    "tags": "电商做图 / ChatGPT / /meta ads / 社媒广告 / FB IG 素材",
+    "pricing": "partial",
+    "prompt": "指令：/meta ads（Facebook / Instagram 社媒广告图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/meta ads\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 制作适合 Facebook 与 Instagram 信息流投放的高转化商业广告构图，搭配石材底座、水珠与植物光影。」\n\n适用场景\nMeta 信息流广告投放、社交平台推广主图。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /meta ads 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-meta-ads/effect-preview.jpg",
+      "alt": "/meta ads 社媒广告素材效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /meta ads (Social Ad Creative)",
+      "description": "Upload a product photo and run /meta ads to generate high-converting Facebook and Instagram ad creatives with product-locking constraints.",
+      "tags": "E-commerce / ChatGPT / /meta ads / Social ads / Facebook Instagram",
+      "notes": "Upload your product photo in ChatGPT, enter /meta ads, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Compose a clean social feed ad creative with stone pedestal, water droplets, and botanical shadows.'",
+      "previewNote": "Concept effect illustration demonstrating the /meta ads visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "skill-chatgpt-explodedview",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/explodedview（结构分解图）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传产品原图后输入 /explodedview，自动拆解产品部件与内部层级，生成科技感爆炸分解图，附防变形约束。",
+    "tags": "电商做图 / ChatGPT / /explodedview / 爆炸分解图 / 产品结构",
+    "pricing": "partial",
+    "prompt": "指令：/explodedview（科技感产品结构爆炸分解图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/explodedview\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 将产品按垂直精密层级拆解悬浮于深色摄影棚背景中，呈现清晰的工艺结构与轮廓边缘光。」\n\n适用场景\n详情页卖点拆解、工业设计展示、功能结构说明图。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /explodedview 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-explodedview/effect-preview.jpg",
+      "alt": "/explodedview 产品结构爆炸分解效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /explodedview (Exploded Product View)",
+      "description": "Upload a product photo and run /explodedview to cleanly disassemble components into a futuristic studio exploded-view rendering.",
+      "tags": "E-commerce / ChatGPT / /explodedview / Exploded view / Product structure",
+      "notes": "Upload your product photo in ChatGPT, enter /explodedview, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Disassemble components vertically in mid-air against a dark studio backdrop with crisp rim lighting.'",
+      "previewNote": "Concept effect illustration demonstrating the /explodedview visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "skill-chatgpt-3dbillboard",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/3dbillboard（户外 3D 大屏图）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传产品原图后输入 /3dbillboard，将产品合成展示在街头大型转角裸眼 3D 户外广告牌上，附防变形约束。",
+    "tags": "电商做图 / ChatGPT / /3dbillboard / 裸眼3D大屏 / 户外广告",
+    "pricing": "partial",
+    "prompt": "指令：/3dbillboard（街头裸眼 3D 户外广告大屏）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/3dbillboard\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 将产品合成为繁华都市转角巨型曲面 LED 裸眼 3D 户外大屏画面，呈现破屏而出的立体视觉冲击。」\n\n适用场景\n品牌宣传海报、社媒吸睛预热图、户外大屏提案。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /3dbillboard 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-3dbillboard/effect-preview.jpg",
+      "alt": "/3dbillboard 街头裸眼 3D 户外大屏合成效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /3dbillboard (Anamorphic 3D Billboard)",
+      "description": "Upload a product photo and run /3dbillboard to showcase your product popping out of a giant curved city-corner 3D LED billboard.",
+      "tags": "E-commerce / ChatGPT / /3dbillboard / 3D billboard / Outdoor ad",
+      "notes": "Upload your product photo in ChatGPT, enter /3dbillboard, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place the product on a bustling dusk corner curved LED billboard with anamorphic 3D pop-out depth.'",
+      "previewNote": "Concept effect illustration demonstrating the /3dbillboard visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "skill-chatgpt-producthero",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/producthero（专业棚拍大片）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传普通产品照片后输入 /producthero，转化为影棚级布光、高光反射与奢华质感的商业主图大片，附防变形约束。",
+    "tags": "电商做图 / ChatGPT / /producthero / 专业棚拍 / 商业主图",
+    "pricing": "partial",
+    "prompt": "指令：/producthero（影棚级专业棚拍主图大片）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/producthero\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 置于湿润深色黑曜石台面上，使用精准轮廓光、体积光雾与镜面反射打造高端商业棚拍大片质感。」\n\n适用场景\n官网 Hero 主视觉、旗舰店首页头图、高端产品画册。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /producthero 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-producthero/effect-preview.jpg",
+      "alt": "/producthero 影棚级商业主图棚拍效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /producthero (Studio Hero Shot)",
+      "description": "Upload a product photo and run /producthero to transform an ordinary shot into a dramatic luxury studio hero photograph.",
+      "tags": "E-commerce / ChatGPT / /producthero / Studio photography / Hero shot",
+      "notes": "Upload your product photo in ChatGPT, enter /producthero, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place on dark wet obsidian stone with crisp specular highlights and volumetric studio rim lighting.'",
+      "previewNote": "Concept effect illustration demonstrating the /producthero visual style with a sample product — not a user-uploaded production run."
     }
   }
 ]
