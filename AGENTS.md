@@ -22,6 +22,7 @@
 - 用户可以告知要加入的 Skill；先读取该 Skill 的实际说明或用户提供的材料，再收录。不要把仅提及的 Skill 自动当作收藏，也不要因收录而安装或执行它。
 - 每次收录 Skill，卡片和回复都用一两句话简短介绍它做什么、适合什么任务。不要只说“已加入”。
 - 每个 Skill 优先使用真实效果预览：原作者公开的实际作品或演示，或按该 Skill 的工作流实际运行得到的输出 / 浏览器截图。2026-10-28 用户要求：实在找不到真实预览时，根据项目 README / SKILL.md 画一张概念示意图（`assets/<id>/concept.html` → `concept.png`，共用 `assets/concept-art-20261028.css`），数据里 `previewStatus: concept`、`previewEvidence: concept-from-readme`；图片底部、卡片标签「概念示意图」和预览说明三处都必须写明「根据 README 绘制，不是真实界面或运行结果」，README 地址放 `conceptBasis`，不作为「效果图原始出处」显示。找到真实预览后替换掉概念图。
+- **长期记忆（2026-11-15 补充）**：全站所有新增与已有条目（含提示词、Skills、实用网站）均须尽量补齐图片预览，不留无配图卡片；顺序为：**① 官方仓库真实预览图/动图 → ② 官方网站/仓库页面真实截图 → ③ 若无原图则生成概念示意图/效果图（标注为概念示意图，不冒充真实运行结果）**。
 - 预览保存到 `assets/<id>/`，设置 `preview`、`previewNote`、`previewSource`、`previewEvidence`，区分“作者真实示例”和“本次实际运行”。保留原始水印、来源和必要的许可说明，不把作者作品说成本次生成。此规则适用于已有和新增 Skills。
 - Skill 使用 `kind: "skill"`，保留名称、来源 `source`、用途 `description` 及说明 `prompt`；现有提示词缺省为 `kind: "prompt"`。不编造 Skills 示例。
 - 个人 1～5 星评分由用户决定；代理不代评。评分独立保存在当前浏览器的 `shiju-ratings-v1`，刷新后保留，不因仓库内容更新而覆盖。重复点击当前星级可清除评分。
