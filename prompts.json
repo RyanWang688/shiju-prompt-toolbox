@@ -11534,5 +11534,41 @@
       "notes": "Supports multi-model providers, knowledge bases/RAG, IM bot integrations, and self-hosted or cloud deployments.",
       "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
     }
+  },
+  {
+    "id": "website-chinatextbook",
+    "kind": "website",
+    "title": "ChinaTextbook（小学到大学免费高清 PDF 教材库）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 8.4 万+ Star 开源教育资源库，集中收录小学（含五·四学制）、初中、高中、大学高清 PDF 教材及数学练习题，免费无私人水印。",
+    "tags": "教材 / PDF / 免费教育资源 / 小初高 / 大学教材 / 开源合集",
+    "pricing": "free",
+    "prompt": "ChinaTextbook（小学到大学免费高清 PDF 教材库）\n\n用途\n集中收录并开源中国小学、小学（五·四学制）、初中、初中（五·四学制）、高中及大学各学科高清 PDF 教材与数学带答案练习题，方便国内学习者及海外华人家庭免费获取。\n\n特色\n- 免费开放、无私人水印\n- 按学段与学科目录整理，可直接在线浏览或下载对应 PDF\n\n官方仓库\nhttps://github.com/TapXWorld/ChinaTextbook",
+    "source": "https://github.com/TapXWorld/ChinaTextbook",
+    "officialUrl": "https://github.com/TapXWorld/ChinaTextbook",
+    "repository": "https://github.com/TapXWorld/ChinaTextbook",
+    "documentation": "https://github.com/TapXWorld/ChinaTextbook#readme",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-chinatextbook/official-site.jpg",
+      "alt": "ChinaTextbook 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/TapXWorld/ChinaTextbook",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-15 实际打开官方仓库页面后的截图；仅收藏，未批量下载。",
+    "en": {
+      "title": "ChinaTextbook (Free K-12 & University PDF Textbooks)",
+      "description": "Open GitHub repository (84k+ stars) collecting free, watermark-free PDF textbooks across elementary, middle, high school, and university levels in China.",
+      "tags": "Textbooks / PDF / Free education / K-12 / University / Open collection",
+      "notes": "Organized by grade and subject without private watermarks, serving domestic learners and overseas Chinese families.",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-15; saved for reference only."
+    }
   }
 ]
