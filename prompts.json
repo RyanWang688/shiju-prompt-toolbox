@@ -11435,7 +11435,7 @@
       "开发工具"
     ],
     "description": "将科研导师经验蒸馏为 AI Agent 可执行的双轨制 Skill，含 12 个子技能覆盖 Idea 评估、Vibe Coding/Figure/Writing、Flowchart 六段式引言、深度调研、润色与审稿。",
-    "tags": "科研写作 / 学术论文 / 科研副导师 / Vibe Research / Agent Skill / HKUSTDial",
+    "tags": "鸭博士 / 科研写作 / 学术论文 / 科研副导师 / Vibe Research / Agent Skill / HKUSTDial",
     "pricing": "free",
     "prompt": "Supervisor-Skills（科研副导师全流程 AI Skill）\n\n用途\n由 HKUSTDial 开源，将资深科研导师经验提炼为“理论指南 + AI Skill”双轨制架构，陪伴完成从选题评估到论文投稿的全流程科研工作。\n\n核心能力（12 个子技能覆盖全流程）\n- Idea 评估：客观评估研究想法与打分，判断推进价值\n- Vibe Research 三支柱：指导 Vibe Coding、Vibe Figure 与 Vibe Writing\n- 论文写作：基于 Flowchart 思考模型产出六段式 Introduction，支持单段到整篇正文写作与事实溯源\n- 语言润色与模板：语法改错、去除 AI 腔、提供技术类与基准类论文模板\n- 深度调研与审稿：多视角检索、逐条引用校验、审稿人视角全面审查与图表规范指导\n\n支持环境\n可直接安装至 Claude Code、Cursor、Codex 等 AI 编程与科研助手。\n\n官方仓库\nhttps://github.com/HKUSTDial/Supervisor-Skills",
     "source": "https://github.com/HKUSTDial/Supervisor-Skills",
@@ -11457,7 +11457,7 @@
     "en": {
       "title": "Supervisor-Skills (AI Research Co-Supervisor Skill Suite)",
       "description": "Distills research advisor experience into a dual-track theory guide and 12 AI Agent sub-skills covering idea evaluation, Vibe Coding/Figure/Writing, six-paragraph Flowchart introductions, deep surveys, polishing, and peer review.",
-      "tags": "Academic research / Paper writing / AI supervisor / Vibe Research / Agent Skill / HKUSTDial",
+      "tags": "Dr. Duck / Academic research / Paper writing / AI supervisor / Vibe Research / Agent Skill / HKUSTDial",
       "notes": "Open-sourced by HKUSTDial with 12 modular sub-skills installable in Claude Code, Cursor, Codex, and other AI assistants.",
       "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
     }
