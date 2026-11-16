@@ -1,5 +1,810 @@
 [
   {
+    "id": "website-craft-anything",
+    "kind": "website",
+    "title": "Craft Anything（净室黑盒逆向与 AI 复刻工具）",
+    "category": "其他",
+    "description": "ArtCraft 团队开源的 Rust 逆向与复刻引擎（3.4 万+ Star），内置 300+ 解析模块，遵循净室黑盒原则实现「拆解原项目 → AI 从零复刻 → 逐行对比迭代」闭环。",
+    "tags": "逆向工程 / 净室复刻 / Rust / AI编程 / MCP / Apache-2.0",
+    "pricing": "partial",
+    "prompt": "Craft Anything（净室黑盒逆向与 AI 复刻工具）\n\n用途\n集目标拆解、AI 从零编写完整可运行代码与逐行差异对比迭代于一体的开源逆向复刻引擎，支持桌面端、CLI 与 MCP，内置 300+ 解析模块。\n\n合规边界\n默认采用净室（Clean-room）黑盒交互观察，不触碰专有源码；仅限用于自有或已获授权项目。\n\n许可：Apache-2.0\n官方仓库：https://github.com/storytold/craft-anything",
+    "source": "https://github.com/storytold/craft-anything",
+    "officialUrl": "https://github.com/storytold/craft-anything",
+    "repository": "https://github.com/storytold/craft-anything",
+    "documentation": "https://github.com/storytold/craft-anything#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-craft-anything/author-example.png",
+      "alt": "Craft Anything 官方桌面端逆向复刻与相似度对比界面截图",
+      "width": 2160,
+      "height": 1350
+    },
+    "previewSource": "https://raw.githubusercontent.com/storytold/craft-anything/main/docs/images/project-website.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Craft Anything (Clean-Room Exploration & AI Recreation)",
+      "description": "34k+ star Rust engine by the ArtCraft team that studies apps/websites via 300+ clean-room inspectors and drives AI coding agents through iterative build-and-check loops.",
+      "tags": "Reverse engineering / Clean-room / Rust / AI coding / MCP / Apache-2.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here.",
+      "license": "Apache-2.0"
+    },
+    "license": "Apache-2.0",
+    "topics": [
+      "实用软件",
+      "创作工具"
+    ]
+  },
+  {
+    "id": "website-qqpet",
+    "kind": "website",
+    "title": "QQPet（QQ 宠物开源单机复刻版）",
+    "category": "其他",
+    "description": "现代技术单机复刻经典桌面 QQ 宠物，通过 Ruffle 模拟原版 Flash 动画，还原选蛋领养、打工上学、密室探险，并支持可选 OpenAI 接口闲聊。",
+    "tags": "QQ宠物 / 开源复刻 / Ruffle / Flash模拟 / 桌面宠物 / AI对话",
+    "pricing": "free",
+    "prompt": "QQPet（QQ 宠物开源单机复刻版）\n\n用途\n单机复刻经典桌面 QQ 宠物，通过 Ruffle 模拟运行旧版 Flash 动画，保留选蛋领养、成长升级、打工上学与小游戏，支持存档导入导出及可选 OpenAI 兼容对话接口。\n\n官网：https://pet.ankio.net/\n官方仓库：https://github.com/yibinliao/qqpet",
+    "source": "https://pet.ankio.net/",
+    "officialUrl": "https://pet.ankio.net/",
+    "repository": "https://github.com/yibinliao/qqpet",
+    "documentation": "https://github.com/yibinliao/qqpet#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-qqpet/author-example.png",
+      "alt": "QQPet 开源复刻版桌面企鹅交互菜单截图",
+      "width": 608,
+      "height": 450
+    },
+    "previewSource": "https://raw.githubusercontent.com/yibinliao/qqpet/main/docs/screenshots/pet.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "QQPet (Open-Source Retro Desktop Pet Remake)",
+      "description": "Offline modern remake of the classic QQ Pet using Ruffle Flash emulation, preserving adoption, growth, mini-games, save import/export, and optional OpenAI chat.",
+      "tags": "QQ Pet / Retro remake / Ruffle / Flash / Desktop pet / AI chat",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-openrig",
+    "kind": "website",
+    "title": "OpenRig（轻量级多编程 Agent 编排工具）",
+    "category": "其他",
+    "description": "通过 YAML 定义开发、审查、测试等角色团队并编排多编程 Agent 协同工作的工具，提供 TUI 终端监控面板、状态持久化与 MCP 服务。",
+    "tags": "多智能体编排 / 编程Agent / TUI / MCP / YAML / Apache-2.0",
+    "pricing": "free",
+    "prompt": "OpenRig（轻量级多编程 Agent 编排工具）\n\n用途\n使用 YAML 配置定义多 Agent 团队角色（开发、审查、测试等），通过本地守护进程、CLI、TUI 与 MCP 协同推进任务并持久化状态。\n\n运行环境\n推荐 macOS 或 Linux；Windows 环境需配合 WSL。\n\n许可：Apache-2.0\n官方仓库：https://github.com/mvschwarz/openrig",
+    "source": "https://github.com/mvschwarz/openrig",
+    "officialUrl": "https://github.com/mvschwarz/openrig",
+    "repository": "https://github.com/mvschwarz/openrig",
+    "documentation": "https://github.com/mvschwarz/openrig#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-openrig/author-example.gif",
+      "alt": "OpenRig 官方多 Agent 协同工作终端 TUI 动图",
+      "width": 1200,
+      "height": 726
+    },
+    "previewSource": "https://raw.githubusercontent.com/mvschwarz/openrig/main/assets/readme/openrig-agents-working.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "OpenRig (Multi-Coding-Agent Orchestrator)",
+      "description": "Lightweight orchestrator for coding agents configured via YAML with a terminal TUI, persistent state, tmux session management, and MCP server.",
+      "tags": "Multi-agent / Coding agents / TUI / MCP / YAML / Apache-2.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here.",
+      "license": "Apache-2.0"
+    },
+    "license": "Apache-2.0",
+    "topics": [
+      "实用软件",
+      "创作工具"
+    ]
+  },
+  {
+    "id": "skill-ppt-master",
+    "kind": "skill",
+    "title": "PPT Master（7.7 万+ Star 原生可编辑 PPTX 工作流）",
+    "category": "写作表达",
+    "description": "GitHub 7.7 万+ Star 的综合首选全能型 PPT Skill，采用“AI 生成 SVG 再转原生 .pptx”路径，文本、形状、图表与备注均可在 PowerPoint 自由编辑。",
+    "tags": "PPT Master / 原生PPTX / SVG转PPT / 全能PPT Skill / MIT",
+    "pricing": "free",
+    "prompt": "PPT Master（原生可编辑 PPTX 工作流）\n\n用途\n将参考文档（PDF/DOCX/URL/Markdown）转化为深度可编辑的原生 PowerPoint (.pptx) 文件，采用 AI 生成 SVG 再转 PPTX 路径，保留形状、图表、转场动画与演讲备注。\n\n使用条件\n需 Python 3.10+ 及具备文件读写与命令执行能力的 Agent。\n\n许可：MIT\n官方仓库：https://github.com/hugohe3/ppt-master",
+    "source": "https://github.com/hugohe3/ppt-master",
+    "officialUrl": "https://github.com/hugohe3/ppt-master",
+    "repository": "https://github.com/hugohe3/ppt-master",
+    "documentation": "https://github.com/hugohe3/ppt-master#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ppt-master/author-example.png",
+      "alt": "PPT Master 官方仓库原生 PPTX 转换示例截图",
+      "width": 960,
+      "height": 540
+    },
+    "previewSource": "https://raw.githubusercontent.com/hugohe3/ppt-master/main/docs/assets/screenshots/preview_attention_is_all_you_need.webp",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "PPT Master (Native Editable PPTX Workflow)",
+      "description": "77k+ star flagship presentation skill converting documents into natively editable .pptx files via an AI SVG-to-PPTX pipeline with charts, animations, and speaker notes.",
+      "tags": "PPT Master / Native PPTX / SVG to PPT / All-in-one / MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here.",
+      "license": "MIT"
+    },
+    "license": "MIT",
+    "skillTopics": [
+      "视觉设计",
+      "写作创作",
+      "开发工具"
+    ]
+  },
+  {
+    "id": "skill-frontend-slides",
+    "kind": "skill",
+    "title": "Frontend Slides（一线大厂风零依赖网页 PPT）",
+    "category": "动画动效",
+    "description": "GitHub 3.2 万+ Star 的前端幻灯片 Skill，先出视觉风格预览再生成零依赖单文件 16:9 HTML 演示文稿，并支持 .pptx 转网页。",
+    "tags": "Frontend Slides / 大厂风PPT / HTML幻灯片 / 16:9画布 / Agent Skill",
+    "pricing": "free",
+    "prompt": "Frontend Slides（一线大厂风零依赖网页 PPT）\n\n用途\n采用“先预览视觉风格再生成”的交互流程，输出零外部依赖的单文件 1920×1080 自适应 HTML 幻灯片，支持旧版 .ppt/.pptx 转网页。\n\n官方仓库\nhttps://github.com/zarazhangrui/frontend-slides",
+    "source": "https://github.com/zarazhangrui/frontend-slides",
+    "officialUrl": "https://github.com/zarazhangrui/frontend-slides",
+    "repository": "https://github.com/zarazhangrui/frontend-slides",
+    "documentation": "https://github.com/zarazhangrui/frontend-slides#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-frontend-slides/author-example.png",
+      "alt": "Frontend Slides 官方风格模板示例截图",
+      "width": 1920,
+      "height": 1080
+    },
+    "previewSource": "https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/main/screenshots/soft-editorial-4.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Frontend Slides (Zero-Dependency Big-Tech Web Decks)",
+      "description": "32k+ star skill featuring visual-first style discovery, zero-dependency 16:9 HTML decks, and legacy PPTX-to-web conversion.",
+      "tags": "Frontend Slides / Web deck / Zero dependency / 16:9 canvas / Agent Skill",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "skillTopics": [
+      "视觉设计",
+      "动画视频",
+      "开发工具"
+    ]
+  },
+  {
+    "id": "skill-guizang-ppt",
+    "kind": "skill",
+    "title": "Grayson PPT Skill / 归藏 PPT（Keynote 高审美排版）",
+    "category": "界面设计",
+    "description": "即 op7418/guizang-ppt-skill（2.9 万+ Star），主打杂志编辑风与 Keynote 级高级视觉排版质感，适合高端分享与主题演讲。",
+    "tags": "AI PPT / 归藏 / Grayson / Keynote风格 / 高级排版",
+    "pricing": "free",
+    "prompt": "Grayson PPT Skill / 归藏 PPT（Keynote 高审美排版）\n\n用途\n生成具备杂志编辑质感与 Keynote 演讲级留白美学的 HTML 幻灯片，适合技术分享、发布会与高端主题演讲。\n\n官方仓库\nhttps://github.com/op7418/guizang-ppt-skill",
+    "source": "https://github.com/op7418/guizang-ppt-skill",
+    "officialUrl": "https://github.com/op7418/guizang-ppt-skill",
+    "repository": "https://github.com/op7418/guizang-ppt-skill",
+    "documentation": "https://github.com/op7418/guizang-ppt-skill#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-guizang-ppt/author-example.png",
+      "alt": "guizang-ppt-skill 官方仓库杂志排版风示例",
+      "width": 4116,
+      "height": 2247
+    },
+    "previewSource": "https://github.com/user-attachments/assets/5dc316a2-401c-4e37-9123-ea081b6ae470",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Grayson / Guizang PPT Skill (Keynote Editorial Aesthetics)",
+      "description": "Popular skill (29k+ stars) for generating editorial magazine-style and Keynote-grade HTML slide decks.",
+      "tags": "AI PPT / Guizang / Grayson / Keynote style / Editorial layout",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "skillTopics": [
+      "视觉设计",
+      "写作创作"
+    ]
+  },
+  {
+    "id": "skill-dashi-ppt",
+    "kind": "skill",
+    "title": "Dash PPT Skill（现代审美与浏览器可编辑演示）",
+    "category": "界面设计",
+    "description": "Dashi PPT Skill（常称 Dash PPT），兼顾现代设计审美与数据可编辑性，支持浏览器内直接编辑并导出 HTML、PDF 与 PPTX。",
+    "tags": "AI PPT / Dash PPT / 现代审美 / 在线编辑 / PPTX导出",
+    "pricing": "free",
+    "prompt": "Dash PPT Skill（现代审美与浏览器可编辑演示）\n\n用途\n读取文档后生成兼具现代排版审美与可编辑性的演示文稿，支持多套视觉主题及 HTML / PDF / 可编辑 PPTX 导出。\n\n官方仓库\nhttps://github.com/chuspeeism/dashi-ppt-skill",
+    "source": "https://github.com/chuspeeism/dashi-ppt-skill",
+    "officialUrl": "https://github.com/chuspeeism/dashi-ppt-skill",
+    "repository": "https://github.com/chuspeeism/dashi-ppt-skill",
+    "documentation": "https://github.com/chuspeeism/dashi-ppt-skill#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-dashi-ppt/author-example.gif",
+      "alt": "Dash PPT Skill 官方演示动图",
+      "width": 960,
+      "height": 540
+    },
+    "previewSource": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/hero-result.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Dash PPT Skill (Dashi Browser-Editable Decks)",
+      "description": "Generates modern-aesthetic presentations editable directly in the browser with export to HTML, PDF, and editable PPTX.",
+      "tags": "AI PPT / Dashi PPT / Modern design / Browser editor / PPTX export",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "skillTopics": [
+      "视觉设计",
+      "动画视频"
+    ]
+  },
+  {
+    "id": "skill-html-ppt",
+    "kind": "skill",
+    "title": "HTML PPT Skill（轻量高动效 HTML 幻灯片）",
+    "category": "动画动效",
+    "description": "采用纯 HTML/CSS/JS 技术栈生成幻灯片的 Agent Skill，内置 24 套主题与 20+ 动效，具备轻量省 Token 与演讲者模式优势。",
+    "tags": "HTML PPT / 网页幻灯片 / 轻量省Token / 动效演示 / Agent Skill",
+    "pricing": "free",
+    "prompt": "HTML PPT Skill（轻量高动效 HTML 幻灯片）\n\n用途\n以纯静态 HTML 技术栈生成交互式网页幻灯片，内置 24 种主题、31 种版式与 20+ 动画效果，Token 消耗低且支持演讲者模式。\n\n官方仓库\nhttps://github.com/lewislulu/html-ppt-skill",
+    "source": "https://github.com/lewislulu/html-ppt-skill",
+    "officialUrl": "https://github.com/lewislulu/html-ppt-skill",
+    "repository": "https://github.com/lewislulu/html-ppt-skill",
+    "documentation": "https://github.com/lewislulu/html-ppt-skill#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-html-ppt/author-example.gif",
+      "alt": "HTML PPT Skill 官方动态演示动图",
+      "width": 800,
+      "height": 437
+    },
+    "previewSource": "https://raw.githubusercontent.com/lewislulu/html-ppt-skill/main/docs/readme/hero.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "HTML PPT Skill (Lightweight Animated Web Slides)",
+      "description": "Generates interactive HTML/CSS/JS slide decks with 24 themes, 31 layouts, 20+ animations, presenter mode, and low token overhead.",
+      "tags": "HTML PPT / Web slides / Low token / Animations / Agent Skill",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "skillTopics": [
+      "动画视频",
+      "视觉设计",
+      "开发工具"
+    ]
+  },
+  {
+    "id": "skill-codex-ppt",
+    "kind": "skill",
+    "title": "Codex PPT Skill（通用大模型绘图审美 PPT）",
+    "category": "界面设计",
+    "description": "深度结合大模型绘图能力与设计审美的通用 PPT Skill，覆盖多类主题风格，满足日常多数演示文稿制作需求。",
+    "tags": "AI PPT / Codex / 通用演示 / 视觉设计 / Agent Skill",
+    "pricing": "partial",
+    "prompt": "Codex PPT Skill（通用大模型绘图审美 PPT）\n\n用途\n结合模型图像生成与版式审美约束的通用 PPT Skill，适合在 Codex、Claude Code 等环境中快速生成多风格演示文稿。\n\n官方仓库\nhttps://github.com/ningzimu/codex-ppt-skill",
+    "source": "https://github.com/ningzimu/codex-ppt-skill",
+    "officialUrl": "https://github.com/ningzimu/codex-ppt-skill",
+    "repository": "https://github.com/ningzimu/codex-ppt-skill",
+    "documentation": "https://github.com/ningzimu/codex-ppt-skill#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-codex-ppt/author-example.png",
+      "alt": "Codex PPT Skill 官方生成幻灯片示例",
+      "width": 1320,
+      "height": 1088
+    },
+    "previewSource": "https://raw.githubusercontent.com/ningzimu/codex-ppt-skill/main/assets/slides_example.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Codex PPT Skill (General Visual Slide Generator)",
+      "description": "General-purpose presentation skill pairing LLM image generation with layout aesthetics for versatile slide creation.",
+      "tags": "AI PPT / Codex / General slides / Visual design / Agent Skill",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "skillTopics": [
+      "视觉设计",
+      "图像创作"
+    ]
+  },
+  {
+    "id": "skill-gorden-ppt",
+    "kind": "skill",
+    "title": "GuoDon PPT Skills（正式商务高信息密度 PPT）",
+    "category": "写作表达",
+    "description": "GuoDon Super PPT 的正式商务版，大幅提升页面信息密度，内置精修中文 PPTX 模板与无损文字替换工具。",
+    "tags": "AI PPT / 商务汇报 / 中文模板 / python-pptx / 高信息密度",
+    "pricing": "free",
+    "prompt": "GuoDon PPT Skills（正式商务高信息密度 PPT）\n\n用途\n专为正式商务汇报打造的原生 PPTX 构建 Skill，提供手工精修中文模板与基于 python-pptx 的无损文字编辑工具，信息密度高。\n\n官方仓库\nhttps://github.com/GordenSun/GordenPPTSkill",
+    "source": "https://github.com/GordenSun/GordenPPTSkill",
+    "officialUrl": "https://github.com/GordenSun/GordenPPTSkill",
+    "repository": "https://github.com/GordenSun/GordenPPTSkill",
+    "documentation": "https://github.com/GordenSun/GordenPPTSkill#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-gorden-ppt/author-example.jpg",
+      "alt": "GuoDon PPT Skills 官方商务模板展示示例",
+      "width": 1024,
+      "height": 576
+    },
+    "previewSource": "https://raw.githubusercontent.com/GordenSun/GordenPPTSkill/main/assets/showcase-1.jpg",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Gorden PPT Skill (Formal Business Chinese PPTX)",
+      "description": "AI-friendly PPT builder featuring hand-polished Chinese templates and non-destructive python-pptx editing for high-density business reports.",
+      "tags": "AI PPT / Business deck / Chinese templates / python-pptx / High density",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "skillTopics": [
+      "视觉设计",
+      "写作创作"
+    ]
+  },
+  {
+    "id": "skill-nanobanana-ppt",
+    "kind": "skill",
+    "title": "Nano Banana PPT Skills（高质量生图与转场动画 PPT）",
+    "category": "动画动效",
+    "description": "结合 AI 高质量生图与视频转场动画能力的 PPT Skill，适合需要强视觉冲击与动态演示效果的汇报场景。",
+    "tags": "AI PPT / Nano Banana / 动态演示 / AI生图 / 转场动画",
+    "pricing": "partial",
+    "prompt": "Nano Banana PPT Skills（高质量生图与转场动画 PPT）\n\n用途\n基于文档解析、AI 高质量配图与视频转场工具（如可灵/FFmpeg）生成具有动态视觉表现的演示文稿，适合发布会与动态汇报。\n\n官方仓库\nhttps://github.com/op7418/NanoBanana-PPT-Skills",
+    "source": "https://github.com/op7418/NanoBanana-PPT-Skills",
+    "officialUrl": "https://github.com/op7418/NanoBanana-PPT-Skills",
+    "repository": "https://github.com/op7418/NanoBanana-PPT-Skills",
+    "documentation": "https://github.com/op7418/NanoBanana-PPT-Skills#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-nanobanana-ppt/official-site.jpg",
+      "alt": "NanoBanana-PPT-Skills 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/op7418/NanoBanana-PPT-Skills",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-16 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "Nano Banana PPT Skills (Visual & Animated Slides)",
+      "description": "AI presentation skill combining high-quality image generation with video transition effects for dynamic, visually rich presentations.",
+      "tags": "AI PPT / Nano Banana / Animated slides / Image generation / Transitions",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-16; saved for reference only."
+    },
+    "skillTopics": [
+      "图像创作",
+      "动画视频",
+      "视觉设计"
+    ]
+  },
+  {
+    "id": "skill-gorden-super-ppt",
+    "kind": "skill",
+    "title": "GuoDon Super PPT Skills（生图转可编辑 PPTX 工作流）",
+    "category": "界面设计",
+    "description": "Gorden Sun 开源的先高质量生图再逆向转换为可编辑 PPT 组件的工作流 Skill，兼顾豪华视觉排版与后期可编辑性。",
+    "tags": "AI PPT / 图像转PPT / 可编辑PPTX / 视觉排版 / Agent Skill",
+    "pricing": "partial",
+    "prompt": "GuoDon Super PPT Skills（生图转可编辑 PPTX 工作流）\n\n用途\n采用“先生成高审美视觉幻灯片图片，再逆向解析转换为完全可编辑 .pptx 组件”的双阶段工作流，兼顾排版质感与二次修改需求。\n\n官方仓库\nhttps://github.com/GordenSun/GordenSuperPPTSkills",
+    "source": "https://github.com/GordenSun/GordenSuperPPTSkills",
+    "officialUrl": "https://github.com/GordenSun/GordenSuperPPTSkills",
+    "repository": "https://github.com/GordenSun/GordenSuperPPTSkills",
+    "documentation": "https://github.com/GordenSun/GordenSuperPPTSkills#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-gorden-super-ppt/author-example.png",
+      "alt": "GuoDon Super PPT Skills 官方可编辑 PPTX 转换示例",
+      "width": 2278,
+      "height": 1300
+    },
+    "previewSource": "https://raw.githubusercontent.com/GordenSun/GordenSuperPPTSkills/main/examples/example-editable-pptx.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Gorden Super PPT Skills (Image-to-Editable PPTX)",
+      "description": "Dual-stage presentation skill that generates visually rich slide images and converts them into fully editable PowerPoint (.pptx) components.",
+      "tags": "AI PPT / Image to PPTX / Editable slides / Visual layout / Agent Skill",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "skillTopics": [
+      "视觉设计",
+      "图像创作"
+    ]
+  },
+  {
+    "id": "skill-cyber-ppt",
+    "kind": "skill",
+    "title": "Cyber PPT（研报与高密度咨询风 PPT Skill）",
+    "category": "写作表达",
+    "description": "面向研报与数据分析的高密度可编辑 PPT Skill，生成前经过 15 道工序与 SCR 叙事自查，输出咨询级 PowerPoint。",
+    "tags": "AI PPT / 研报演示 / 咨询风格 / 数据分析 / Codex Skill",
+    "pricing": "free",
+    "prompt": "Cyber PPT（研报与高密度咨询风 PPT Skill）\n\n用途\n专为研报、商业分析与高密度汇报打造的 AI PPT Skill，生成前经过 15 道工序质量自查，支持 SCR 叙事结构与可编辑 .pptx 输出。\n\n官方仓库\nhttps://github.com/crazyykhllc-bit/CyberPPT",
+    "source": "https://github.com/crazyykhllc-bit/CyberPPT",
+    "officialUrl": "https://github.com/crazyykhllc-bit/CyberPPT",
+    "repository": "https://github.com/crazyykhllc-bit/CyberPPT",
+    "documentation": "https://github.com/crazyykhllc-bit/CyberPPT#readme",
+    "addedAt": "2026-11-16",
+    "verifiedAt": "2026-11-16",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-cyber-ppt/author-example.png",
+      "alt": "Cyber PPT 官方仓库配色与版式示例",
+      "width": 1672,
+      "height": 941
+    },
+    "previewSource": "https://raw.githubusercontent.com/crazyykhllc-bit/CyberPPT/main/assets/palette-samples/palette-01.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Cyber PPT (Consulting & Research Deck Skill)",
+      "description": "AI skill for high-density, editable consulting and research PowerPoint decks with 15 pre-output QA checks and SCR narrative structure.",
+      "tags": "AI PPT / Research deck / Consulting style / Data analysis / Codex Skill",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
+    },
+    "skillTopics": [
+      "视觉设计",
+      "写作创作"
+    ]
+  },
+  {
+    "id": "website-chinatextbook",
+    "kind": "website",
+    "title": "ChinaTextbook（小学到大学免费高清 PDF 教材库）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 8.4 万+ Star 开源教育资源库，集中收录小学（含五·四学制）、初中、高中、大学高清 PDF 教材及数学练习题，免费无私人水印。",
+    "tags": "教材 / PDF / 免费教育资源 / 小初高 / 大学教材 / 开源合集",
+    "pricing": "free",
+    "prompt": "ChinaTextbook（小学到大学免费高清 PDF 教材库）\n\n用途\n集中收录并开源中国小学、小学（五·四学制）、初中、初中（五·四学制）、高中及大学各学科高清 PDF 教材与数学带答案练习题，方便国内学习者及海外华人家庭免费获取。\n\n特色\n- 免费开放、无私人水印\n- 按学段与学科目录整理，可直接在线浏览或下载对应 PDF\n\n官方仓库\nhttps://github.com/TapXWorld/ChinaTextbook",
+    "source": "https://github.com/TapXWorld/ChinaTextbook",
+    "officialUrl": "https://github.com/TapXWorld/ChinaTextbook",
+    "repository": "https://github.com/TapXWorld/ChinaTextbook",
+    "documentation": "https://github.com/TapXWorld/ChinaTextbook#readme",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-chinatextbook/official-site.jpg",
+      "alt": "ChinaTextbook 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/TapXWorld/ChinaTextbook",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-15 实际打开官方仓库页面后的截图；仅收藏，未批量下载。",
+    "en": {
+      "title": "ChinaTextbook (Free K-12 & University PDF Textbooks)",
+      "description": "Open GitHub repository (84k+ stars) collecting free, watermark-free PDF textbooks across elementary, middle, high school, and university levels in China.",
+      "tags": "Textbooks / PDF / Free education / K-12 / University / Open collection",
+      "notes": "Organized by grade and subject without private watermarks, serving domestic learners and overseas Chinese families.",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-15; saved for reference only."
+    }
+  },
+  {
+    "id": "skill-chatgpt-producthero",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/producthero（专业棚拍大片）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传普通产品照片后输入 /producthero，转化为影棚级布光、高光反射与奢华质感的商业主图大片，附防变形约束。",
+    "tags": "电商做图 / ChatGPT / /producthero / 专业棚拍 / 商业主图",
+    "pricing": "partial",
+    "prompt": "指令：/producthero（影棚级专业棚拍主图大片）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/producthero\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 置于湿润深色黑曜石台面上，使用精准轮廓光、体积光雾与镜面反射打造高端商业棚拍大片质感。」\n\n适用场景\n官网 Hero 主视觉、旗舰店首页头图、高端产品画册。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /producthero 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-producthero/effect-preview.jpg",
+      "alt": "/producthero 影棚级商业主图棚拍效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /producthero (Studio Hero Shot)",
+      "description": "Upload a product photo and run /producthero to transform an ordinary shot into a dramatic luxury studio hero photograph.",
+      "tags": "E-commerce / ChatGPT / /producthero / Studio photography / Hero shot",
+      "notes": "Upload your product photo in ChatGPT, enter /producthero, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place on dark wet obsidian stone with crisp specular highlights and volumetric studio rim lighting.'",
+      "previewNote": "Concept effect illustration demonstrating the /producthero visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "skill-chatgpt-3dbillboard",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/3dbillboard（户外 3D 大屏图）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传产品原图后输入 /3dbillboard，将产品合成展示在街头大型转角裸眼 3D 户外广告牌上，附防变形约束。",
+    "tags": "电商做图 / ChatGPT / /3dbillboard / 裸眼3D大屏 / 户外广告",
+    "pricing": "partial",
+    "prompt": "指令：/3dbillboard（街头裸眼 3D 户外广告大屏）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/3dbillboard\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 将产品合成为繁华都市转角巨型曲面 LED 裸眼 3D 户外大屏画面，呈现破屏而出的立体视觉冲击。」\n\n适用场景\n品牌宣传海报、社媒吸睛预热图、户外大屏提案。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /3dbillboard 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-3dbillboard/effect-preview.jpg",
+      "alt": "/3dbillboard 街头裸眼 3D 户外大屏合成效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /3dbillboard (Anamorphic 3D Billboard)",
+      "description": "Upload a product photo and run /3dbillboard to showcase your product popping out of a giant curved city-corner 3D LED billboard.",
+      "tags": "E-commerce / ChatGPT / /3dbillboard / 3D billboard / Outdoor ad",
+      "notes": "Upload your product photo in ChatGPT, enter /3dbillboard, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place the product on a bustling dusk corner curved LED billboard with anamorphic 3D pop-out depth.'",
+      "previewNote": "Concept effect illustration demonstrating the /3dbillboard visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "skill-chatgpt-explodedview",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/explodedview（结构分解图）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传产品原图后输入 /explodedview，自动拆解产品部件与内部层级，生成科技感爆炸分解图，附防变形约束。",
+    "tags": "电商做图 / ChatGPT / /explodedview / 爆炸分解图 / 产品结构",
+    "pricing": "partial",
+    "prompt": "指令：/explodedview（科技感产品结构爆炸分解图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/explodedview\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 将产品按垂直精密层级拆解悬浮于深色摄影棚背景中，呈现清晰的工艺结构与轮廓边缘光。」\n\n适用场景\n详情页卖点拆解、工业设计展示、功能结构说明图。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /explodedview 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-explodedview/effect-preview.jpg",
+      "alt": "/explodedview 产品结构爆炸分解效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /explodedview (Exploded Product View)",
+      "description": "Upload a product photo and run /explodedview to cleanly disassemble components into a futuristic studio exploded-view rendering.",
+      "tags": "E-commerce / ChatGPT / /explodedview / Exploded view / Product structure",
+      "notes": "Upload your product photo in ChatGPT, enter /explodedview, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Disassemble components vertically in mid-air against a dark studio backdrop with crisp rim lighting.'",
+      "previewNote": "Concept effect illustration demonstrating the /explodedview visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "skill-chatgpt-meta-ads",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/meta ads（社媒广告图）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传产品原图后输入 /meta ads，一键制作适合 Facebook、Instagram 等信息流投放的商业广告素材，附防变形约束。",
+    "tags": "电商做图 / ChatGPT / /meta ads / 社媒广告 / FB IG 素材",
+    "pricing": "partial",
+    "prompt": "指令：/meta ads（Facebook / Instagram 社媒广告图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/meta ads\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 制作适合 Facebook 与 Instagram 信息流投放的高转化商业广告构图，搭配石材底座、水珠与植物光影。」\n\n适用场景\nMeta 信息流广告投放、社交平台推广主图。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /meta ads 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-meta-ads/effect-preview.jpg",
+      "alt": "/meta ads 社媒广告素材效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /meta ads (Social Ad Creative)",
+      "description": "Upload a product photo and run /meta ads to generate high-converting Facebook and Instagram ad creatives with product-locking constraints.",
+      "tags": "E-commerce / ChatGPT / /meta ads / Social ads / Facebook Instagram",
+      "notes": "Upload your product photo in ChatGPT, enter /meta ads, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Compose a clean social feed ad creative with stone pedestal, water droplets, and botanical shadows.'",
+      "previewNote": "Concept effect illustration demonstrating the /meta ads visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "skill-chatgpt-ugc-model",
+    "kind": "skill",
+    "title": "ChatGPT 电商指令：/ugc model（模特展示图）",
+    "category": "界面设计",
+    "skillTopics": [
+      "图像创作",
+      "视觉设计"
+    ],
+    "description": "上传产品原图后输入 /ugc model，生成真人模特手持或使用产品的自然生活化展示图，附防变形锁定约束。",
+    "tags": "电商做图 / ChatGPT / /ugc model / 模特展示 / UGC 素材",
+    "pricing": "partial",
+    "prompt": "指令：/ugc model（真人模特展示图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/ugc model\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 生成真人模特在自然光室内场景中手持并展示该产品的真实生活化照片，景深自然。」\n\n适用场景\n种草图文、详情页买家秀风格展示、短视频封面。",
+    "source": "https://chatgpt.com/",
+    "officialUrl": "https://chatgpt.com/",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "previewStatus": "concept",
+    "previewEvidence": "concept-from-readme",
+    "conceptBasis": "https://chatgpt.com/",
+    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /ugc model 商业视觉效果示意，非用户实拍原图运行结果。",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chatgpt-ugc-model/effect-preview.jpg",
+      "alt": "/ugc model 真人模特手持产品展示效果图（AI 生成效果示例）",
+      "width": 1376,
+      "height": 768
+    },
+    "en": {
+      "title": "ChatGPT E-Commerce: /ugc model (UGC Lifestyle Portrait)",
+      "description": "Upload a product photo and run /ugc model to generate a natural lifestyle photo of a real model holding or using the product, with product-locking constraints.",
+      "tags": "E-commerce / ChatGPT / /ugc model / UGC lifestyle / Model shot",
+      "notes": "Upload your product photo in ChatGPT, enter /ugc model, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place the product naturally in a sunlit lifestyle portrait held by a real model.'",
+      "previewNote": "Concept effect illustration demonstrating the /ugc model visual style with a sample product — not a user-uploaded production run."
+    }
+  },
+  {
+    "id": "website-lobehub",
+    "kind": "website",
+    "title": "LobeHub（开源多智能体协作与 AI 自主研发平台）",
+    "category": "其他",
+    "topics": [
+      "创作工具",
+      "实用软件"
+    ],
+    "description": "GitHub 超 8.5 万 Star 的开源 Agent 协作平台与工作区，支持多智能体协同编写代码、排查 Bug、提交 PR 与评审的研发闭环，人类工程师仅需最终验收。",
+    "tags": "多智能体协作 / AI 研发平台 / 开源社区 / Agent Workspace / PR 自动化",
+    "pricing": "partial",
+    "prompt": "LobeHub（开源多智能体协作与 AI 自主研发平台）\n\n用途\n开源多智能体协作平台与 AI 工作区（GitHub 8.5 万+ Star），支持团队将自研 Agent 系统接入研发与日常协作流程。\n\n核心模式\n- 多智能体协作闭环：由 Agent 自主调度任务、读取上下文、编写代码、查 Bug、提交 PR 与参与评审\n- 人类关键节点验收：开发者聚焦需求定义与最终代码合入审批\n- 开放生态：支持多模型接入、知识库/RAG、IM 机器人联动与本地部署\n\n官方入口\nhttps://lobehub.com\n\nGitHub\nhttps://github.com/lobehub/lobehub",
+    "source": "https://lobehub.com",
+    "officialUrl": "https://lobehub.com",
+    "repository": "https://github.com/lobehub/lobehub",
+    "documentation": "https://github.com/lobehub/lobehub#readme",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-lobehub/author-example.png",
+      "alt": "LobeHub 官方展示图（Lobe AI Super-agent 与 PR 权限协作界面）",
+      "width": 1968,
+      "height": 1042
+    },
+    "previewSource": "https://hub-apac-1.lobeobjects.space/blog/assets/a1c721a3cbe9cb8ec0f515217322b514.webp",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "LobeHub (Open-Source Multi-Agent Collaboration Platform)",
+      "description": "Open-source multi-agent workspace (85k+ GitHub stars) enabling autonomous coding, bug fixing, PR submission, and review workflows with human sign-off at key milestones.",
+      "tags": "Multi-agent / AI workspace / Open source / Autonomous R&D / PR workflow",
+      "notes": "Supports multi-model providers, knowledge bases/RAG, IM bot integrations, and self-hosted or cloud deployments.",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "skill-supervisor-skills",
+    "kind": "skill",
+    "title": "Supervisor-Skills（科研副导师全流程 AI Skill）",
+    "category": "写作表达",
+    "skillTopics": [
+      "写作创作",
+      "开发工具"
+    ],
+    "description": "将科研导师经验蒸馏为 AI Agent 可执行的双轨制 Skill，含 12 个子技能覆盖 Idea 评估、Vibe Coding/Figure/Writing、Flowchart 六段式引言、深度调研、润色与审稿。",
+    "tags": "鸭博士 / 科研写作 / 学术论文 / 科研副导师 / Vibe Research / Agent Skill / HKUSTDial",
+    "pricing": "free",
+    "prompt": "Supervisor-Skills（科研副导师全流程 AI Skill）\n\n用途\n由 HKUSTDial 开源，将资深科研导师经验提炼为“理论指南 + AI Skill”双轨制架构，陪伴完成从选题评估到论文投稿的全流程科研工作。\n\n核心能力（12 个子技能覆盖全流程）\n- Idea 评估：客观评估研究想法与打分，判断推进价值\n- Vibe Research 三支柱：指导 Vibe Coding、Vibe Figure 与 Vibe Writing\n- 论文写作：基于 Flowchart 思考模型产出六段式 Introduction，支持单段到整篇正文写作与事实溯源\n- 语言润色与模板：语法改错、去除 AI 腔、提供技术类与基准类论文模板\n- 深度调研与审稿：多视角检索、逐条引用校验、审稿人视角全面审查与图表规范指导\n\n支持环境\n可直接安装至 Claude Code、Cursor、Codex 等 AI 编程与科研助手。\n\n官方仓库\nhttps://github.com/HKUSTDial/Supervisor-Skills",
+    "source": "https://github.com/HKUSTDial/Supervisor-Skills",
+    "officialUrl": "https://github.com/HKUSTDial/Supervisor-Skills",
+    "repository": "https://github.com/HKUSTDial/Supervisor-Skills",
+    "documentation": "https://github.com/HKUSTDial/Supervisor-Skills#readme",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-supervisor-skills/author-example.png",
+      "alt": "Supervisor-Skills 官方仓库示例图（aflow_solution_overview.png）",
+      "width": 1280,
+      "height": 994
+    },
+    "previewSource": "https://raw.githubusercontent.com/HKUSTDial/Supervisor-Skills/main/assets/aflow_solution_overview.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Supervisor-Skills (AI Research Co-Supervisor Skill Suite)",
+      "description": "Distills research advisor experience into a dual-track theory guide and 12 AI Agent sub-skills covering idea evaluation, Vibe Coding/Figure/Writing, six-paragraph Flowchart introductions, deep surveys, polishing, and peer review.",
+      "tags": "Dr. Duck / Academic research / Paper writing / AI supervisor / Vibe Research / Agent Skill / HKUSTDial",
+      "notes": "Open-sourced by HKUSTDial with 12 modular sub-skills installable in Claude Code, Cursor, Codex, and other AI assistants.",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "website-oink",
+    "kind": "website",
+    "title": "Oink（开源跨平台键鼠共享与多机互联工具）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "完全开源免费的跨设备键鼠共享软件（Oink Is Not only a KVM），支持 Windows 与 macOS 对等互联、毫秒级切屏、双向剪贴板、文件拖拽与音频转发。",
+    "tags": "键鼠共享 / 跨屏协同 / 开源软件 / Windows / macOS / KVM",
+    "pricing": "free",
+    "license": "GPL-3.0",
+    "prompt": "Oink（开源跨平台键鼠共享与多机互联工具）\n\n用途\n开源免费的跨设备键鼠共享工具（Oink Is Not only a KVM），用一套键鼠无缝控制多台 Windows 与 Mac 电脑。\n\n核心特性\n- 对等网络设计：不强求固定服务端/客户端，任意设备键鼠均可控制其他设备\n- 低延迟原生手感：局域网自动发现，默认加密传输\n- 跨机数据流转：支持双向剪贴板同步、跨屏文件拖拽与音频转发\n- 跨平台支持：Windows 10/11 (x64) 与 macOS 14.2+ (Apple Silicon / Intel)\n\n许可\nGPL-3.0\n\n官方仓库\nhttps://github.com/oinkvm/oink",
+    "source": "https://github.com/oinkvm/oink",
+    "officialUrl": "https://github.com/oinkvm/oink",
+    "repository": "https://github.com/oinkvm/oink",
+    "documentation": "https://github.com/oinkvm/oink#readme",
+    "addedAt": "2026-11-15",
+    "verifiedAt": "2026-11-15",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-oink/author-example.png",
+      "alt": "Oink 官方仓库横幅示例（banner-light.png）",
+      "width": 1720,
+      "height": 560
+    },
+    "previewSource": "https://raw.githubusercontent.com/oinkvm/oink/main/.github/assets/banner-light.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Oink (Open-Source Cross-Platform Keyboard & Mouse Sharing)",
+      "description": "Free, open-source peer-to-peer KVM software for Windows and macOS with low-latency cursor switching, clipboard sync, drag-and-drop file transfer, audio forwarding, and encrypted LAN transport.",
+      "tags": "KVM / Mouse sharing / Cross-platform / Open source / Windows / macOS",
+      "notes": "Peer-to-peer architecture without a rigid server/client split, LAN auto-discovery, and default encryption under GPL-3.0.",
+      "license": "GPL-3.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
+    }
+  },
+  {
     "id": "skill-find-skills",
     "kind": "skill",
     "title": "find-skills（AI 技能发现与安装）",
@@ -11397,810 +12202,5 @@
       "previewNote": "Interactive demo hand-built from the prompt — not model output."
     },
     "kind": "prompt"
-  },
-  {
-    "id": "website-oink",
-    "kind": "website",
-    "title": "Oink（开源跨平台键鼠共享与多机互联工具）",
-    "category": "其他",
-    "topics": [
-      "实用软件"
-    ],
-    "description": "完全开源免费的跨设备键鼠共享软件（Oink Is Not only a KVM），支持 Windows 与 macOS 对等互联、毫秒级切屏、双向剪贴板、文件拖拽与音频转发。",
-    "tags": "键鼠共享 / 跨屏协同 / 开源软件 / Windows / macOS / KVM",
-    "pricing": "free",
-    "license": "GPL-3.0",
-    "prompt": "Oink（开源跨平台键鼠共享与多机互联工具）\n\n用途\n开源免费的跨设备键鼠共享工具（Oink Is Not only a KVM），用一套键鼠无缝控制多台 Windows 与 Mac 电脑。\n\n核心特性\n- 对等网络设计：不强求固定服务端/客户端，任意设备键鼠均可控制其他设备\n- 低延迟原生手感：局域网自动发现，默认加密传输\n- 跨机数据流转：支持双向剪贴板同步、跨屏文件拖拽与音频转发\n- 跨平台支持：Windows 10/11 (x64) 与 macOS 14.2+ (Apple Silicon / Intel)\n\n许可\nGPL-3.0\n\n官方仓库\nhttps://github.com/oinkvm/oink",
-    "source": "https://github.com/oinkvm/oink",
-    "officialUrl": "https://github.com/oinkvm/oink",
-    "repository": "https://github.com/oinkvm/oink",
-    "documentation": "https://github.com/oinkvm/oink#readme",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-oink/author-example.png",
-      "alt": "Oink 官方仓库横幅示例（banner-light.png）",
-      "width": 1720,
-      "height": 560
-    },
-    "previewSource": "https://raw.githubusercontent.com/oinkvm/oink/main/.github/assets/banner-light.png",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Oink (Open-Source Cross-Platform Keyboard & Mouse Sharing)",
-      "description": "Free, open-source peer-to-peer KVM software for Windows and macOS with low-latency cursor switching, clipboard sync, drag-and-drop file transfer, audio forwarding, and encrypted LAN transport.",
-      "tags": "KVM / Mouse sharing / Cross-platform / Open source / Windows / macOS",
-      "notes": "Peer-to-peer architecture without a rigid server/client split, LAN auto-discovery, and default encryption under GPL-3.0.",
-      "license": "GPL-3.0",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
-    }
-  },
-  {
-    "id": "skill-supervisor-skills",
-    "kind": "skill",
-    "title": "Supervisor-Skills（科研副导师全流程 AI Skill）",
-    "category": "写作表达",
-    "skillTopics": [
-      "写作创作",
-      "开发工具"
-    ],
-    "description": "将科研导师经验蒸馏为 AI Agent 可执行的双轨制 Skill，含 12 个子技能覆盖 Idea 评估、Vibe Coding/Figure/Writing、Flowchart 六段式引言、深度调研、润色与审稿。",
-    "tags": "鸭博士 / 科研写作 / 学术论文 / 科研副导师 / Vibe Research / Agent Skill / HKUSTDial",
-    "pricing": "free",
-    "prompt": "Supervisor-Skills（科研副导师全流程 AI Skill）\n\n用途\n由 HKUSTDial 开源，将资深科研导师经验提炼为“理论指南 + AI Skill”双轨制架构，陪伴完成从选题评估到论文投稿的全流程科研工作。\n\n核心能力（12 个子技能覆盖全流程）\n- Idea 评估：客观评估研究想法与打分，判断推进价值\n- Vibe Research 三支柱：指导 Vibe Coding、Vibe Figure 与 Vibe Writing\n- 论文写作：基于 Flowchart 思考模型产出六段式 Introduction，支持单段到整篇正文写作与事实溯源\n- 语言润色与模板：语法改错、去除 AI 腔、提供技术类与基准类论文模板\n- 深度调研与审稿：多视角检索、逐条引用校验、审稿人视角全面审查与图表规范指导\n\n支持环境\n可直接安装至 Claude Code、Cursor、Codex 等 AI 编程与科研助手。\n\n官方仓库\nhttps://github.com/HKUSTDial/Supervisor-Skills",
-    "source": "https://github.com/HKUSTDial/Supervisor-Skills",
-    "officialUrl": "https://github.com/HKUSTDial/Supervisor-Skills",
-    "repository": "https://github.com/HKUSTDial/Supervisor-Skills",
-    "documentation": "https://github.com/HKUSTDial/Supervisor-Skills#readme",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-supervisor-skills/author-example.png",
-      "alt": "Supervisor-Skills 官方仓库示例图（aflow_solution_overview.png）",
-      "width": 1280,
-      "height": 994
-    },
-    "previewSource": "https://raw.githubusercontent.com/HKUSTDial/Supervisor-Skills/main/assets/aflow_solution_overview.png",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Supervisor-Skills (AI Research Co-Supervisor Skill Suite)",
-      "description": "Distills research advisor experience into a dual-track theory guide and 12 AI Agent sub-skills covering idea evaluation, Vibe Coding/Figure/Writing, six-paragraph Flowchart introductions, deep surveys, polishing, and peer review.",
-      "tags": "Dr. Duck / Academic research / Paper writing / AI supervisor / Vibe Research / Agent Skill / HKUSTDial",
-      "notes": "Open-sourced by HKUSTDial with 12 modular sub-skills installable in Claude Code, Cursor, Codex, and other AI assistants.",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
-    }
-  },
-  {
-    "id": "website-lobehub",
-    "kind": "website",
-    "title": "LobeHub（开源多智能体协作与 AI 自主研发平台）",
-    "category": "其他",
-    "topics": [
-      "创作工具",
-      "实用软件"
-    ],
-    "description": "GitHub 超 8.5 万 Star 的开源 Agent 协作平台与工作区，支持多智能体协同编写代码、排查 Bug、提交 PR 与评审的研发闭环，人类工程师仅需最终验收。",
-    "tags": "多智能体协作 / AI 研发平台 / 开源社区 / Agent Workspace / PR 自动化",
-    "pricing": "partial",
-    "prompt": "LobeHub（开源多智能体协作与 AI 自主研发平台）\n\n用途\n开源多智能体协作平台与 AI 工作区（GitHub 8.5 万+ Star），支持团队将自研 Agent 系统接入研发与日常协作流程。\n\n核心模式\n- 多智能体协作闭环：由 Agent 自主调度任务、读取上下文、编写代码、查 Bug、提交 PR 与参与评审\n- 人类关键节点验收：开发者聚焦需求定义与最终代码合入审批\n- 开放生态：支持多模型接入、知识库/RAG、IM 机器人联动与本地部署\n\n官方入口\nhttps://lobehub.com\n\nGitHub\nhttps://github.com/lobehub/lobehub",
-    "source": "https://lobehub.com",
-    "officialUrl": "https://lobehub.com",
-    "repository": "https://github.com/lobehub/lobehub",
-    "documentation": "https://github.com/lobehub/lobehub#readme",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-lobehub/author-example.png",
-      "alt": "LobeHub 官方展示图（Lobe AI Super-agent 与 PR 权限协作界面）",
-      "width": 1968,
-      "height": 1042
-    },
-    "previewSource": "https://hub-apac-1.lobeobjects.space/blog/assets/a1c721a3cbe9cb8ec0f515217322b514.webp",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-15 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "LobeHub (Open-Source Multi-Agent Collaboration Platform)",
-      "description": "Open-source multi-agent workspace (85k+ GitHub stars) enabling autonomous coding, bug fixing, PR submission, and review workflows with human sign-off at key milestones.",
-      "tags": "Multi-agent / AI workspace / Open source / Autonomous R&D / PR workflow",
-      "notes": "Supports multi-model providers, knowledge bases/RAG, IM bot integrations, and self-hosted or cloud deployments.",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-15. Original media preserved; not generated here."
-    }
-  },
-  {
-    "id": "website-chinatextbook",
-    "kind": "website",
-    "title": "ChinaTextbook（小学到大学免费高清 PDF 教材库）",
-    "category": "其他",
-    "topics": [
-      "实用软件"
-    ],
-    "description": "GitHub 8.4 万+ Star 开源教育资源库，集中收录小学（含五·四学制）、初中、高中、大学高清 PDF 教材及数学练习题，免费无私人水印。",
-    "tags": "教材 / PDF / 免费教育资源 / 小初高 / 大学教材 / 开源合集",
-    "pricing": "free",
-    "prompt": "ChinaTextbook（小学到大学免费高清 PDF 教材库）\n\n用途\n集中收录并开源中国小学、小学（五·四学制）、初中、初中（五·四学制）、高中及大学各学科高清 PDF 教材与数学带答案练习题，方便国内学习者及海外华人家庭免费获取。\n\n特色\n- 免费开放、无私人水印\n- 按学段与学科目录整理，可直接在线浏览或下载对应 PDF\n\n官方仓库\nhttps://github.com/TapXWorld/ChinaTextbook",
-    "source": "https://github.com/TapXWorld/ChinaTextbook",
-    "officialUrl": "https://github.com/TapXWorld/ChinaTextbook",
-    "repository": "https://github.com/TapXWorld/ChinaTextbook",
-    "documentation": "https://github.com/TapXWorld/ChinaTextbook#readme",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-chinatextbook/official-site.jpg",
-      "alt": "ChinaTextbook 官方 GitHub 仓库页面截图",
-      "width": 1380,
-      "height": 900
-    },
-    "previewSource": "https://github.com/TapXWorld/ChinaTextbook",
-    "previewEvidence": "author-official-site-screenshot",
-    "previewNote": "2026-11-15 实际打开官方仓库页面后的截图；仅收藏，未批量下载。",
-    "en": {
-      "title": "ChinaTextbook (Free K-12 & University PDF Textbooks)",
-      "description": "Open GitHub repository (84k+ stars) collecting free, watermark-free PDF textbooks across elementary, middle, high school, and university levels in China.",
-      "tags": "Textbooks / PDF / Free education / K-12 / University / Open collection",
-      "notes": "Organized by grade and subject without private watermarks, serving domestic learners and overseas Chinese families.",
-      "previewNote": "Screenshot of the official repository page taken on 2026-11-15; saved for reference only."
-    }
-  },
-  {
-    "id": "skill-chatgpt-ugc-model",
-    "kind": "skill",
-    "title": "ChatGPT 电商指令：/ugc model（模特展示图）",
-    "category": "界面设计",
-    "skillTopics": [
-      "图像创作",
-      "视觉设计"
-    ],
-    "description": "上传产品原图后输入 /ugc model，生成真人模特手持或使用产品的自然生活化展示图，附防变形锁定约束。",
-    "tags": "电商做图 / ChatGPT / /ugc model / 模特展示 / UGC 素材",
-    "pricing": "partial",
-    "prompt": "指令：/ugc model（真人模特展示图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/ugc model\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 生成真人模特在自然光室内场景中手持并展示该产品的真实生活化照片，景深自然。」\n\n适用场景\n种草图文、详情页买家秀风格展示、短视频封面。",
-    "source": "https://chatgpt.com/",
-    "officialUrl": "https://chatgpt.com/",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "previewStatus": "concept",
-    "previewEvidence": "concept-from-readme",
-    "conceptBasis": "https://chatgpt.com/",
-    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /ugc model 商业视觉效果示意，非用户实拍原图运行结果。",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-chatgpt-ugc-model/effect-preview.jpg",
-      "alt": "/ugc model 真人模特手持产品展示效果图（AI 生成效果示例）",
-      "width": 1376,
-      "height": 768
-    },
-    "en": {
-      "title": "ChatGPT E-Commerce: /ugc model (UGC Lifestyle Portrait)",
-      "description": "Upload a product photo and run /ugc model to generate a natural lifestyle photo of a real model holding or using the product, with product-locking constraints.",
-      "tags": "E-commerce / ChatGPT / /ugc model / UGC lifestyle / Model shot",
-      "notes": "Upload your product photo in ChatGPT, enter /ugc model, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place the product naturally in a sunlit lifestyle portrait held by a real model.'",
-      "previewNote": "Concept effect illustration demonstrating the /ugc model visual style with a sample product — not a user-uploaded production run."
-    }
-  },
-  {
-    "id": "skill-chatgpt-meta-ads",
-    "kind": "skill",
-    "title": "ChatGPT 电商指令：/meta ads（社媒广告图）",
-    "category": "界面设计",
-    "skillTopics": [
-      "图像创作",
-      "视觉设计"
-    ],
-    "description": "上传产品原图后输入 /meta ads，一键制作适合 Facebook、Instagram 等信息流投放的商业广告素材，附防变形约束。",
-    "tags": "电商做图 / ChatGPT / /meta ads / 社媒广告 / FB IG 素材",
-    "pricing": "partial",
-    "prompt": "指令：/meta ads（Facebook / Instagram 社媒广告图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/meta ads\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 制作适合 Facebook 与 Instagram 信息流投放的高转化商业广告构图，搭配石材底座、水珠与植物光影。」\n\n适用场景\nMeta 信息流广告投放、社交平台推广主图。",
-    "source": "https://chatgpt.com/",
-    "officialUrl": "https://chatgpt.com/",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "previewStatus": "concept",
-    "previewEvidence": "concept-from-readme",
-    "conceptBasis": "https://chatgpt.com/",
-    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /meta ads 商业视觉效果示意，非用户实拍原图运行结果。",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-chatgpt-meta-ads/effect-preview.jpg",
-      "alt": "/meta ads 社媒广告素材效果图（AI 生成效果示例）",
-      "width": 1376,
-      "height": 768
-    },
-    "en": {
-      "title": "ChatGPT E-Commerce: /meta ads (Social Ad Creative)",
-      "description": "Upload a product photo and run /meta ads to generate high-converting Facebook and Instagram ad creatives with product-locking constraints.",
-      "tags": "E-commerce / ChatGPT / /meta ads / Social ads / Facebook Instagram",
-      "notes": "Upload your product photo in ChatGPT, enter /meta ads, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Compose a clean social feed ad creative with stone pedestal, water droplets, and botanical shadows.'",
-      "previewNote": "Concept effect illustration demonstrating the /meta ads visual style with a sample product — not a user-uploaded production run."
-    }
-  },
-  {
-    "id": "skill-chatgpt-explodedview",
-    "kind": "skill",
-    "title": "ChatGPT 电商指令：/explodedview（结构分解图）",
-    "category": "界面设计",
-    "skillTopics": [
-      "图像创作",
-      "视觉设计"
-    ],
-    "description": "上传产品原图后输入 /explodedview，自动拆解产品部件与内部层级，生成科技感爆炸分解图，附防变形约束。",
-    "tags": "电商做图 / ChatGPT / /explodedview / 爆炸分解图 / 产品结构",
-    "pricing": "partial",
-    "prompt": "指令：/explodedview（科技感产品结构爆炸分解图）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/explodedview\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 将产品按垂直精密层级拆解悬浮于深色摄影棚背景中，呈现清晰的工艺结构与轮廓边缘光。」\n\n适用场景\n详情页卖点拆解、工业设计展示、功能结构说明图。",
-    "source": "https://chatgpt.com/",
-    "officialUrl": "https://chatgpt.com/",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "previewStatus": "concept",
-    "previewEvidence": "concept-from-readme",
-    "conceptBasis": "https://chatgpt.com/",
-    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /explodedview 商业视觉效果示意，非用户实拍原图运行结果。",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-chatgpt-explodedview/effect-preview.jpg",
-      "alt": "/explodedview 产品结构爆炸分解效果图（AI 生成效果示例）",
-      "width": 1376,
-      "height": 768
-    },
-    "en": {
-      "title": "ChatGPT E-Commerce: /explodedview (Exploded Product View)",
-      "description": "Upload a product photo and run /explodedview to cleanly disassemble components into a futuristic studio exploded-view rendering.",
-      "tags": "E-commerce / ChatGPT / /explodedview / Exploded view / Product structure",
-      "notes": "Upload your product photo in ChatGPT, enter /explodedview, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Disassemble components vertically in mid-air against a dark studio backdrop with crisp rim lighting.'",
-      "previewNote": "Concept effect illustration demonstrating the /explodedview visual style with a sample product — not a user-uploaded production run."
-    }
-  },
-  {
-    "id": "skill-chatgpt-3dbillboard",
-    "kind": "skill",
-    "title": "ChatGPT 电商指令：/3dbillboard（户外 3D 大屏图）",
-    "category": "界面设计",
-    "skillTopics": [
-      "图像创作",
-      "视觉设计"
-    ],
-    "description": "上传产品原图后输入 /3dbillboard，将产品合成展示在街头大型转角裸眼 3D 户外广告牌上，附防变形约束。",
-    "tags": "电商做图 / ChatGPT / /3dbillboard / 裸眼3D大屏 / 户外广告",
-    "pricing": "partial",
-    "prompt": "指令：/3dbillboard（街头裸眼 3D 户外广告大屏）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/3dbillboard\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 将产品合成为繁华都市转角巨型曲面 LED 裸眼 3D 户外大屏画面，呈现破屏而出的立体视觉冲击。」\n\n适用场景\n品牌宣传海报、社媒吸睛预热图、户外大屏提案。",
-    "source": "https://chatgpt.com/",
-    "officialUrl": "https://chatgpt.com/",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "previewStatus": "concept",
-    "previewEvidence": "concept-from-readme",
-    "conceptBasis": "https://chatgpt.com/",
-    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /3dbillboard 商业视觉效果示意，非用户实拍原图运行结果。",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-chatgpt-3dbillboard/effect-preview.jpg",
-      "alt": "/3dbillboard 街头裸眼 3D 户外大屏合成效果图（AI 生成效果示例）",
-      "width": 1376,
-      "height": 768
-    },
-    "en": {
-      "title": "ChatGPT E-Commerce: /3dbillboard (Anamorphic 3D Billboard)",
-      "description": "Upload a product photo and run /3dbillboard to showcase your product popping out of a giant curved city-corner 3D LED billboard.",
-      "tags": "E-commerce / ChatGPT / /3dbillboard / 3D billboard / Outdoor ad",
-      "notes": "Upload your product photo in ChatGPT, enter /3dbillboard, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place the product on a bustling dusk corner curved LED billboard with anamorphic 3D pop-out depth.'",
-      "previewNote": "Concept effect illustration demonstrating the /3dbillboard visual style with a sample product — not a user-uploaded production run."
-    }
-  },
-  {
-    "id": "skill-chatgpt-producthero",
-    "kind": "skill",
-    "title": "ChatGPT 电商指令：/producthero（专业棚拍大片）",
-    "category": "界面设计",
-    "skillTopics": [
-      "图像创作",
-      "视觉设计"
-    ],
-    "description": "上传普通产品照片后输入 /producthero，转化为影棚级布光、高光反射与奢华质感的商业主图大片，附防变形约束。",
-    "tags": "电商做图 / ChatGPT / /producthero / 专业棚拍 / 商业主图",
-    "pricing": "partial",
-    "prompt": "指令：/producthero（影棚级专业棚拍主图大片）\n\n使用方式\n1. 在 ChatGPT（https://chatgpt.com/）上传清晰的产品原图\n2. 输入指令：/producthero\n3. 补充防跑偏锁定约束：\n「严格保留原图产品的形状、比例、材质与颜色，不要修改产品主体结构与文字标识，仅替换背景、场景与光影环境。 置于湿润深色黑曜石台面上，使用精准轮廓光、体积光雾与镜面反射打造高端商业棚拍大片质感。」\n\n适用场景\n官网 Hero 主视觉、旗舰店首页头图、高端产品画册。",
-    "source": "https://chatgpt.com/",
-    "officialUrl": "https://chatgpt.com/",
-    "addedAt": "2026-11-15",
-    "verifiedAt": "2026-11-15",
-    "previewStatus": "concept",
-    "previewEvidence": "concept-from-readme",
-    "conceptBasis": "https://chatgpt.com/",
-    "previewNote": "概念示意图 / 效果示例：使用示例产品图生成的 /producthero 商业视觉效果示意，非用户实拍原图运行结果。",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-chatgpt-producthero/effect-preview.jpg",
-      "alt": "/producthero 影棚级商业主图棚拍效果图（AI 生成效果示例）",
-      "width": 1376,
-      "height": 768
-    },
-    "en": {
-      "title": "ChatGPT E-Commerce: /producthero (Studio Hero Shot)",
-      "description": "Upload a product photo and run /producthero to transform an ordinary shot into a dramatic luxury studio hero photograph.",
-      "tags": "E-commerce / ChatGPT / /producthero / Studio photography / Hero shot",
-      "notes": "Upload your product photo in ChatGPT, enter /producthero, and append: 'Strictly preserve the original product's shape, proportions, material, and colors; do not alter its structure or label markings—replace only the background, scene, and lighting. Place on dark wet obsidian stone with crisp specular highlights and volumetric studio rim lighting.'",
-      "previewNote": "Concept effect illustration demonstrating the /producthero visual style with a sample product — not a user-uploaded production run."
-    }
-  },
-  {
-    "id": "skill-cyber-ppt",
-    "kind": "skill",
-    "title": "Cyber PPT（研报与高密度咨询风 PPT Skill）",
-    "category": "写作表达",
-    "description": "面向研报与数据分析的高密度可编辑 PPT Skill，生成前经过 15 道工序与 SCR 叙事自查，输出咨询级 PowerPoint。",
-    "tags": "AI PPT / 研报演示 / 咨询风格 / 数据分析 / Codex Skill",
-    "pricing": "free",
-    "prompt": "Cyber PPT（研报与高密度咨询风 PPT Skill）\n\n用途\n专为研报、商业分析与高密度汇报打造的 AI PPT Skill，生成前经过 15 道工序质量自查，支持 SCR 叙事结构与可编辑 .pptx 输出。\n\n官方仓库\nhttps://github.com/crazyykhllc-bit/CyberPPT",
-    "source": "https://github.com/crazyykhllc-bit/CyberPPT",
-    "officialUrl": "https://github.com/crazyykhllc-bit/CyberPPT",
-    "repository": "https://github.com/crazyykhllc-bit/CyberPPT",
-    "documentation": "https://github.com/crazyykhllc-bit/CyberPPT#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-cyber-ppt/author-example.png",
-      "alt": "Cyber PPT 官方仓库配色与版式示例",
-      "width": 1672,
-      "height": 941
-    },
-    "previewSource": "https://raw.githubusercontent.com/crazyykhllc-bit/CyberPPT/main/assets/palette-samples/palette-01.png",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Cyber PPT (Consulting & Research Deck Skill)",
-      "description": "AI skill for high-density, editable consulting and research PowerPoint decks with 15 pre-output QA checks and SCR narrative structure.",
-      "tags": "AI PPT / Research deck / Consulting style / Data analysis / Codex Skill",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "skillTopics": [
-      "视觉设计",
-      "写作创作"
-    ]
-  },
-  {
-    "id": "skill-gorden-super-ppt",
-    "kind": "skill",
-    "title": "GuoDon Super PPT Skills（生图转可编辑 PPTX 工作流）",
-    "category": "界面设计",
-    "description": "Gorden Sun 开源的先高质量生图再逆向转换为可编辑 PPT 组件的工作流 Skill，兼顾豪华视觉排版与后期可编辑性。",
-    "tags": "AI PPT / 图像转PPT / 可编辑PPTX / 视觉排版 / Agent Skill",
-    "pricing": "partial",
-    "prompt": "GuoDon Super PPT Skills（生图转可编辑 PPTX 工作流）\n\n用途\n采用“先生成高审美视觉幻灯片图片，再逆向解析转换为完全可编辑 .pptx 组件”的双阶段工作流，兼顾排版质感与二次修改需求。\n\n官方仓库\nhttps://github.com/GordenSun/GordenSuperPPTSkills",
-    "source": "https://github.com/GordenSun/GordenSuperPPTSkills",
-    "officialUrl": "https://github.com/GordenSun/GordenSuperPPTSkills",
-    "repository": "https://github.com/GordenSun/GordenSuperPPTSkills",
-    "documentation": "https://github.com/GordenSun/GordenSuperPPTSkills#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-gorden-super-ppt/author-example.png",
-      "alt": "GuoDon Super PPT Skills 官方可编辑 PPTX 转换示例",
-      "width": 2278,
-      "height": 1300
-    },
-    "previewSource": "https://raw.githubusercontent.com/GordenSun/GordenSuperPPTSkills/main/examples/example-editable-pptx.png",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Gorden Super PPT Skills (Image-to-Editable PPTX)",
-      "description": "Dual-stage presentation skill that generates visually rich slide images and converts them into fully editable PowerPoint (.pptx) components.",
-      "tags": "AI PPT / Image to PPTX / Editable slides / Visual layout / Agent Skill",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "skillTopics": [
-      "视觉设计",
-      "图像创作"
-    ]
-  },
-  {
-    "id": "skill-nanobanana-ppt",
-    "kind": "skill",
-    "title": "Nano Banana PPT Skills（高质量生图与转场动画 PPT）",
-    "category": "动画动效",
-    "description": "结合 AI 高质量生图与视频转场动画能力的 PPT Skill，适合需要强视觉冲击与动态演示效果的汇报场景。",
-    "tags": "AI PPT / Nano Banana / 动态演示 / AI生图 / 转场动画",
-    "pricing": "partial",
-    "prompt": "Nano Banana PPT Skills（高质量生图与转场动画 PPT）\n\n用途\n基于文档解析、AI 高质量配图与视频转场工具（如可灵/FFmpeg）生成具有动态视觉表现的演示文稿，适合发布会与动态汇报。\n\n官方仓库\nhttps://github.com/op7418/NanoBanana-PPT-Skills",
-    "source": "https://github.com/op7418/NanoBanana-PPT-Skills",
-    "officialUrl": "https://github.com/op7418/NanoBanana-PPT-Skills",
-    "repository": "https://github.com/op7418/NanoBanana-PPT-Skills",
-    "documentation": "https://github.com/op7418/NanoBanana-PPT-Skills#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-nanobanana-ppt/official-site.jpg",
-      "alt": "NanoBanana-PPT-Skills 官方 GitHub 仓库页面截图",
-      "width": 1380,
-      "height": 900
-    },
-    "previewSource": "https://github.com/op7418/NanoBanana-PPT-Skills",
-    "previewEvidence": "author-official-site-screenshot",
-    "previewNote": "2026-11-16 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
-    "en": {
-      "title": "Nano Banana PPT Skills (Visual & Animated Slides)",
-      "description": "AI presentation skill combining high-quality image generation with video transition effects for dynamic, visually rich presentations.",
-      "tags": "AI PPT / Nano Banana / Animated slides / Image generation / Transitions",
-      "previewNote": "Screenshot of the official repository page taken on 2026-11-16; saved for reference only."
-    },
-    "skillTopics": [
-      "图像创作",
-      "动画视频",
-      "视觉设计"
-    ]
-  },
-  {
-    "id": "skill-gorden-ppt",
-    "kind": "skill",
-    "title": "GuoDon PPT Skills（正式商务高信息密度 PPT）",
-    "category": "写作表达",
-    "description": "GuoDon Super PPT 的正式商务版，大幅提升页面信息密度，内置精修中文 PPTX 模板与无损文字替换工具。",
-    "tags": "AI PPT / 商务汇报 / 中文模板 / python-pptx / 高信息密度",
-    "pricing": "free",
-    "prompt": "GuoDon PPT Skills（正式商务高信息密度 PPT）\n\n用途\n专为正式商务汇报打造的原生 PPTX 构建 Skill，提供手工精修中文模板与基于 python-pptx 的无损文字编辑工具，信息密度高。\n\n官方仓库\nhttps://github.com/GordenSun/GordenPPTSkill",
-    "source": "https://github.com/GordenSun/GordenPPTSkill",
-    "officialUrl": "https://github.com/GordenSun/GordenPPTSkill",
-    "repository": "https://github.com/GordenSun/GordenPPTSkill",
-    "documentation": "https://github.com/GordenSun/GordenPPTSkill#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-gorden-ppt/author-example.jpg",
-      "alt": "GuoDon PPT Skills 官方商务模板展示示例",
-      "width": 1024,
-      "height": 576
-    },
-    "previewSource": "https://raw.githubusercontent.com/GordenSun/GordenPPTSkill/main/assets/showcase-1.jpg",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Gorden PPT Skill (Formal Business Chinese PPTX)",
-      "description": "AI-friendly PPT builder featuring hand-polished Chinese templates and non-destructive python-pptx editing for high-density business reports.",
-      "tags": "AI PPT / Business deck / Chinese templates / python-pptx / High density",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "skillTopics": [
-      "视觉设计",
-      "写作创作"
-    ]
-  },
-  {
-    "id": "skill-codex-ppt",
-    "kind": "skill",
-    "title": "Codex PPT Skill（通用大模型绘图审美 PPT）",
-    "category": "界面设计",
-    "description": "深度结合大模型绘图能力与设计审美的通用 PPT Skill，覆盖多类主题风格，满足日常多数演示文稿制作需求。",
-    "tags": "AI PPT / Codex / 通用演示 / 视觉设计 / Agent Skill",
-    "pricing": "partial",
-    "prompt": "Codex PPT Skill（通用大模型绘图审美 PPT）\n\n用途\n结合模型图像生成与版式审美约束的通用 PPT Skill，适合在 Codex、Claude Code 等环境中快速生成多风格演示文稿。\n\n官方仓库\nhttps://github.com/ningzimu/codex-ppt-skill",
-    "source": "https://github.com/ningzimu/codex-ppt-skill",
-    "officialUrl": "https://github.com/ningzimu/codex-ppt-skill",
-    "repository": "https://github.com/ningzimu/codex-ppt-skill",
-    "documentation": "https://github.com/ningzimu/codex-ppt-skill#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-codex-ppt/author-example.png",
-      "alt": "Codex PPT Skill 官方生成幻灯片示例",
-      "width": 1320,
-      "height": 1088
-    },
-    "previewSource": "https://raw.githubusercontent.com/ningzimu/codex-ppt-skill/main/assets/slides_example.png",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Codex PPT Skill (General Visual Slide Generator)",
-      "description": "General-purpose presentation skill pairing LLM image generation with layout aesthetics for versatile slide creation.",
-      "tags": "AI PPT / Codex / General slides / Visual design / Agent Skill",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "skillTopics": [
-      "视觉设计",
-      "图像创作"
-    ]
-  },
-  {
-    "id": "skill-html-ppt",
-    "kind": "skill",
-    "title": "HTML PPT Skill（轻量高动效 HTML 幻灯片）",
-    "category": "动画动效",
-    "description": "采用纯 HTML/CSS/JS 技术栈生成幻灯片的 Agent Skill，内置 24 套主题与 20+ 动效，具备轻量省 Token 与演讲者模式优势。",
-    "tags": "HTML PPT / 网页幻灯片 / 轻量省Token / 动效演示 / Agent Skill",
-    "pricing": "free",
-    "prompt": "HTML PPT Skill（轻量高动效 HTML 幻灯片）\n\n用途\n以纯静态 HTML 技术栈生成交互式网页幻灯片，内置 24 种主题、31 种版式与 20+ 动画效果，Token 消耗低且支持演讲者模式。\n\n官方仓库\nhttps://github.com/lewislulu/html-ppt-skill",
-    "source": "https://github.com/lewislulu/html-ppt-skill",
-    "officialUrl": "https://github.com/lewislulu/html-ppt-skill",
-    "repository": "https://github.com/lewislulu/html-ppt-skill",
-    "documentation": "https://github.com/lewislulu/html-ppt-skill#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-html-ppt/author-example.gif",
-      "alt": "HTML PPT Skill 官方动态演示动图",
-      "width": 800,
-      "height": 437
-    },
-    "previewSource": "https://raw.githubusercontent.com/lewislulu/html-ppt-skill/main/docs/readme/hero.gif",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "HTML PPT Skill (Lightweight Animated Web Slides)",
-      "description": "Generates interactive HTML/CSS/JS slide decks with 24 themes, 31 layouts, 20+ animations, presenter mode, and low token overhead.",
-      "tags": "HTML PPT / Web slides / Low token / Animations / Agent Skill",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "skillTopics": [
-      "动画视频",
-      "视觉设计",
-      "开发工具"
-    ]
-  },
-  {
-    "id": "skill-dashi-ppt",
-    "kind": "skill",
-    "title": "Dash PPT Skill（现代审美与浏览器可编辑演示）",
-    "category": "界面设计",
-    "description": "Dashi PPT Skill（常称 Dash PPT），兼顾现代设计审美与数据可编辑性，支持浏览器内直接编辑并导出 HTML、PDF 与 PPTX。",
-    "tags": "AI PPT / Dash PPT / 现代审美 / 在线编辑 / PPTX导出",
-    "pricing": "free",
-    "prompt": "Dash PPT Skill（现代审美与浏览器可编辑演示）\n\n用途\n读取文档后生成兼具现代排版审美与可编辑性的演示文稿，支持多套视觉主题及 HTML / PDF / 可编辑 PPTX 导出。\n\n官方仓库\nhttps://github.com/chuspeeism/dashi-ppt-skill",
-    "source": "https://github.com/chuspeeism/dashi-ppt-skill",
-    "officialUrl": "https://github.com/chuspeeism/dashi-ppt-skill",
-    "repository": "https://github.com/chuspeeism/dashi-ppt-skill",
-    "documentation": "https://github.com/chuspeeism/dashi-ppt-skill#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-dashi-ppt/author-example.gif",
-      "alt": "Dash PPT Skill 官方演示动图",
-      "width": 960,
-      "height": 540
-    },
-    "previewSource": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/hero-result.gif",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Dash PPT Skill (Dashi Browser-Editable Decks)",
-      "description": "Generates modern-aesthetic presentations editable directly in the browser with export to HTML, PDF, and editable PPTX.",
-      "tags": "AI PPT / Dashi PPT / Modern design / Browser editor / PPTX export",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "skillTopics": [
-      "视觉设计",
-      "动画视频"
-    ]
-  },
-  {
-    "id": "skill-guizang-ppt",
-    "kind": "skill",
-    "title": "Grayson PPT Skill / 归藏 PPT（Keynote 高审美排版）",
-    "category": "界面设计",
-    "description": "即 op7418/guizang-ppt-skill（2.9 万+ Star），主打杂志编辑风与 Keynote 级高级视觉排版质感，适合高端分享与主题演讲。",
-    "tags": "AI PPT / 归藏 / Grayson / Keynote风格 / 高级排版",
-    "pricing": "free",
-    "prompt": "Grayson PPT Skill / 归藏 PPT（Keynote 高审美排版）\n\n用途\n生成具备杂志编辑质感与 Keynote 演讲级留白美学的 HTML 幻灯片，适合技术分享、发布会与高端主题演讲。\n\n官方仓库\nhttps://github.com/op7418/guizang-ppt-skill",
-    "source": "https://github.com/op7418/guizang-ppt-skill",
-    "officialUrl": "https://github.com/op7418/guizang-ppt-skill",
-    "repository": "https://github.com/op7418/guizang-ppt-skill",
-    "documentation": "https://github.com/op7418/guizang-ppt-skill#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-guizang-ppt/author-example.png",
-      "alt": "guizang-ppt-skill 官方仓库杂志排版风示例",
-      "width": 4116,
-      "height": 2247
-    },
-    "previewSource": "https://github.com/user-attachments/assets/5dc316a2-401c-4e37-9123-ea081b6ae470",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Grayson / Guizang PPT Skill (Keynote Editorial Aesthetics)",
-      "description": "Popular skill (29k+ stars) for generating editorial magazine-style and Keynote-grade HTML slide decks.",
-      "tags": "AI PPT / Guizang / Grayson / Keynote style / Editorial layout",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "skillTopics": [
-      "视觉设计",
-      "写作创作"
-    ]
-  },
-  {
-    "id": "skill-frontend-slides",
-    "kind": "skill",
-    "title": "Frontend Slides（一线大厂风零依赖网页 PPT）",
-    "category": "动画动效",
-    "description": "GitHub 3.2 万+ Star 的前端幻灯片 Skill，先出视觉风格预览再生成零依赖单文件 16:9 HTML 演示文稿，并支持 .pptx 转网页。",
-    "tags": "Frontend Slides / 大厂风PPT / HTML幻灯片 / 16:9画布 / Agent Skill",
-    "pricing": "free",
-    "prompt": "Frontend Slides（一线大厂风零依赖网页 PPT）\n\n用途\n采用“先预览视觉风格再生成”的交互流程，输出零外部依赖的单文件 1920×1080 自适应 HTML 幻灯片，支持旧版 .ppt/.pptx 转网页。\n\n官方仓库\nhttps://github.com/zarazhangrui/frontend-slides",
-    "source": "https://github.com/zarazhangrui/frontend-slides",
-    "officialUrl": "https://github.com/zarazhangrui/frontend-slides",
-    "repository": "https://github.com/zarazhangrui/frontend-slides",
-    "documentation": "https://github.com/zarazhangrui/frontend-slides#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-frontend-slides/author-example.png",
-      "alt": "Frontend Slides 官方风格模板示例截图",
-      "width": 1920,
-      "height": 1080
-    },
-    "previewSource": "https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/main/screenshots/soft-editorial-4.png",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Frontend Slides (Zero-Dependency Big-Tech Web Decks)",
-      "description": "32k+ star skill featuring visual-first style discovery, zero-dependency 16:9 HTML decks, and legacy PPTX-to-web conversion.",
-      "tags": "Frontend Slides / Web deck / Zero dependency / 16:9 canvas / Agent Skill",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "skillTopics": [
-      "视觉设计",
-      "动画视频",
-      "开发工具"
-    ]
-  },
-  {
-    "id": "skill-ppt-master",
-    "kind": "skill",
-    "title": "PPT Master（7.7 万+ Star 原生可编辑 PPTX 工作流）",
-    "category": "写作表达",
-    "description": "GitHub 7.7 万+ Star 的综合首选全能型 PPT Skill，采用“AI 生成 SVG 再转原生 .pptx”路径，文本、形状、图表与备注均可在 PowerPoint 自由编辑。",
-    "tags": "PPT Master / 原生PPTX / SVG转PPT / 全能PPT Skill / MIT",
-    "pricing": "free",
-    "prompt": "PPT Master（原生可编辑 PPTX 工作流）\n\n用途\n将参考文档（PDF/DOCX/URL/Markdown）转化为深度可编辑的原生 PowerPoint (.pptx) 文件，采用 AI 生成 SVG 再转 PPTX 路径，保留形状、图表、转场动画与演讲备注。\n\n使用条件\n需 Python 3.10+ 及具备文件读写与命令执行能力的 Agent。\n\n许可：MIT\n官方仓库：https://github.com/hugohe3/ppt-master",
-    "source": "https://github.com/hugohe3/ppt-master",
-    "officialUrl": "https://github.com/hugohe3/ppt-master",
-    "repository": "https://github.com/hugohe3/ppt-master",
-    "documentation": "https://github.com/hugohe3/ppt-master#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/skill-ppt-master/author-example.png",
-      "alt": "PPT Master 官方仓库原生 PPTX 转换示例截图",
-      "width": 960,
-      "height": 540
-    },
-    "previewSource": "https://raw.githubusercontent.com/hugohe3/ppt-master/main/docs/assets/screenshots/preview_attention_is_all_you_need.webp",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "PPT Master (Native Editable PPTX Workflow)",
-      "description": "77k+ star flagship presentation skill converting documents into natively editable .pptx files via an AI SVG-to-PPTX pipeline with charts, animations, and speaker notes.",
-      "tags": "PPT Master / Native PPTX / SVG to PPT / All-in-one / MIT",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here.",
-      "license": "MIT"
-    },
-    "license": "MIT",
-    "skillTopics": [
-      "视觉设计",
-      "写作创作",
-      "开发工具"
-    ]
-  },
-  {
-    "id": "website-openrig",
-    "kind": "website",
-    "title": "OpenRig（轻量级多编程 Agent 编排工具）",
-    "category": "其他",
-    "description": "通过 YAML 定义开发、审查、测试等角色团队并编排多编程 Agent 协同工作的工具，提供 TUI 终端监控面板、状态持久化与 MCP 服务。",
-    "tags": "多智能体编排 / 编程Agent / TUI / MCP / YAML / Apache-2.0",
-    "pricing": "free",
-    "prompt": "OpenRig（轻量级多编程 Agent 编排工具）\n\n用途\n使用 YAML 配置定义多 Agent 团队角色（开发、审查、测试等），通过本地守护进程、CLI、TUI 与 MCP 协同推进任务并持久化状态。\n\n运行环境\n推荐 macOS 或 Linux；Windows 环境需配合 WSL。\n\n许可：Apache-2.0\n官方仓库：https://github.com/mvschwarz/openrig",
-    "source": "https://github.com/mvschwarz/openrig",
-    "officialUrl": "https://github.com/mvschwarz/openrig",
-    "repository": "https://github.com/mvschwarz/openrig",
-    "documentation": "https://github.com/mvschwarz/openrig#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-openrig/author-example.gif",
-      "alt": "OpenRig 官方多 Agent 协同工作终端 TUI 动图",
-      "width": 1200,
-      "height": 726
-    },
-    "previewSource": "https://raw.githubusercontent.com/mvschwarz/openrig/main/assets/readme/openrig-agents-working.gif",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "OpenRig (Multi-Coding-Agent Orchestrator)",
-      "description": "Lightweight orchestrator for coding agents configured via YAML with a terminal TUI, persistent state, tmux session management, and MCP server.",
-      "tags": "Multi-agent / Coding agents / TUI / MCP / YAML / Apache-2.0",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here.",
-      "license": "Apache-2.0"
-    },
-    "license": "Apache-2.0",
-    "topics": [
-      "实用软件",
-      "创作工具"
-    ]
-  },
-  {
-    "id": "website-qqpet",
-    "kind": "website",
-    "title": "QQPet（QQ 宠物开源单机复刻版）",
-    "category": "其他",
-    "description": "现代技术单机复刻经典桌面 QQ 宠物，通过 Ruffle 模拟原版 Flash 动画，还原选蛋领养、打工上学、密室探险，并支持可选 OpenAI 接口闲聊。",
-    "tags": "QQ宠物 / 开源复刻 / Ruffle / Flash模拟 / 桌面宠物 / AI对话",
-    "pricing": "free",
-    "prompt": "QQPet（QQ 宠物开源单机复刻版）\n\n用途\n单机复刻经典桌面 QQ 宠物，通过 Ruffle 模拟运行旧版 Flash 动画，保留选蛋领养、成长升级、打工上学与小游戏，支持存档导入导出及可选 OpenAI 兼容对话接口。\n\n官网：https://pet.ankio.net/\n官方仓库：https://github.com/yibinliao/qqpet",
-    "source": "https://pet.ankio.net/",
-    "officialUrl": "https://pet.ankio.net/",
-    "repository": "https://github.com/yibinliao/qqpet",
-    "documentation": "https://github.com/yibinliao/qqpet#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-qqpet/author-example.png",
-      "alt": "QQPet 开源复刻版桌面企鹅交互菜单截图",
-      "width": 608,
-      "height": 450
-    },
-    "previewSource": "https://raw.githubusercontent.com/yibinliao/qqpet/main/docs/screenshots/pet.png",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "QQPet (Open-Source Retro Desktop Pet Remake)",
-      "description": "Offline modern remake of the classic QQ Pet using Ruffle Flash emulation, preserving adoption, growth, mini-games, save import/export, and optional OpenAI chat.",
-      "tags": "QQ Pet / Retro remake / Ruffle / Flash / Desktop pet / AI chat",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here."
-    },
-    "topics": [
-      "实用软件"
-    ]
-  },
-  {
-    "id": "website-craft-anything",
-    "kind": "website",
-    "title": "Craft Anything（净室黑盒逆向与 AI 复刻工具）",
-    "category": "其他",
-    "description": "ArtCraft 团队开源的 Rust 逆向与复刻引擎（3.4 万+ Star），内置 300+ 解析模块，遵循净室黑盒原则实现「拆解原项目 → AI 从零复刻 → 逐行对比迭代」闭环。",
-    "tags": "逆向工程 / 净室复刻 / Rust / AI编程 / MCP / Apache-2.0",
-    "pricing": "partial",
-    "prompt": "Craft Anything（净室黑盒逆向与 AI 复刻工具）\n\n用途\n集目标拆解、AI 从零编写完整可运行代码与逐行差异对比迭代于一体的开源逆向复刻引擎，支持桌面端、CLI 与 MCP，内置 300+ 解析模块。\n\n合规边界\n默认采用净室（Clean-room）黑盒交互观察，不触碰专有源码；仅限用于自有或已获授权项目。\n\n许可：Apache-2.0\n官方仓库：https://github.com/storytold/craft-anything",
-    "source": "https://github.com/storytold/craft-anything",
-    "officialUrl": "https://github.com/storytold/craft-anything",
-    "repository": "https://github.com/storytold/craft-anything",
-    "documentation": "https://github.com/storytold/craft-anything#readme",
-    "addedAt": "2026-11-16",
-    "verifiedAt": "2026-11-16",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-craft-anything/author-example.png",
-      "alt": "Craft Anything 官方桌面端逆向复刻与相似度对比界面截图",
-      "width": 2160,
-      "height": 1350
-    },
-    "previewSource": "https://raw.githubusercontent.com/storytold/craft-anything/main/docs/images/project-website.png",
-    "previewEvidence": "author-repository-example",
-    "previewNote": "作者官方仓库公开的真实示例，2026-11-16 收录；保留原始媒体，非本次运行成果。",
-    "en": {
-      "title": "Craft Anything (Clean-Room Exploration & AI Recreation)",
-      "description": "34k+ star Rust engine by the ArtCraft team that studies apps/websites via 300+ clean-room inspectors and drives AI coding agents through iterative build-and-check loops.",
-      "tags": "Reverse engineering / Clean-room / Rust / AI coding / MCP / Apache-2.0",
-      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-16. Original media preserved; not generated here.",
-      "license": "Apache-2.0"
-    },
-    "license": "Apache-2.0",
-    "topics": [
-      "实用软件",
-      "创作工具"
-    ]
   }
 ]
