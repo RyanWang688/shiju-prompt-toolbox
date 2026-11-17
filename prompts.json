@@ -1,5 +1,425 @@
 [
   {
+    "id": "website-changedetection-io",
+    "kind": "website",
+    "title": "changedetection.io（开源通用网页变化与补货监控）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 最火的自托管通用网页变化监控工具（Python + Playwright），支持无头渲染、CSS/XPath 局部提取、内建 Restock 补货检测与多渠道推送。",
+    "tags": "网页监控 / 补货监控 / Playwright / 自托管 / Discord / Telegram",
+    "pricing": "free",
+    "prompt": "changedetection.io（开源通用网页变化与补货监控）\n\n用途\n无需针对特定网站编写解析代码，支持 Playwright 无头渲染、CSS/XPath 局部区域提取（如监控缺货/有货按钮文字变化）及内建 Restock 补货检测，支持 Discord、Telegram、邮件与 Webhook 推送。\n\n官方仓库\nhttps://github.com/dgtlmoon/changedetection.io",
+    "source": "https://github.com/dgtlmoon/changedetection.io",
+    "officialUrl": "https://github.com/dgtlmoon/changedetection.io",
+    "repository": "https://github.com/dgtlmoon/changedetection.io",
+    "documentation": "https://github.com/dgtlmoon/changedetection.io#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-changedetection-io/author-example.png",
+      "alt": "changedetection.io 官方自托管网页监控面板截图",
+      "width": 1401,
+      "height": 1030
+    },
+    "previewSource": "https://raw.githubusercontent.com/dgtlmoon/changedetection.io/master/docs/screenshot.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "changedetection.io (Self-Hosted Web Change & Restock Monitor)",
+      "description": "Popular self-hosted web change and restock monitor (Python + Playwright) with CSS/XPath extraction and Discord, Telegram, email, and webhook alerts.",
+      "tags": "Web monitor / Restock / Playwright / Self-hosted / Webhook",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "website-monitor-stooock",
+    "kind": "website",
+    "title": "monitor_stooock（AI 智能识别网页补货监控）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "结合大模型 API 智能识别网页补货状态的监控工具（PHP + AI），只需提供网址和自然语言规则即可解析并推送 Telegram 通知。",
+    "tags": "网页监控 / AI解析 / 补货提醒 / Telegram / PHP",
+    "pricing": "free",
+    "prompt": "monitor_stooock（AI 智能识别网页补货监控）\n\n用途\n结合大模型 API 智能识别任意网页补货状态，只需配置目标网址和自然语言判断规则即可自动解析并通过 Telegram 发送补货提醒。\n\n官方仓库\nhttps://github.com/chunkburst/monitor_stooock",
+    "source": "https://github.com/chunkburst/monitor_stooock",
+    "officialUrl": "https://github.com/chunkburst/monitor_stooock",
+    "repository": "https://github.com/chunkburst/monitor_stooock",
+    "documentation": "https://github.com/chunkburst/monitor_stooock#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-monitor-stooock/official-site.jpg",
+      "alt": "chunkburst/monitor_stooock 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/chunkburst/monitor_stooock",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "monitor_stooock (LLM-Powered Restock Monitor)",
+      "description": "PHP + LLM web restock monitor that evaluates stock availability using natural-language rules and sends Telegram notifications.",
+      "tags": "Restock monitor / LLM / Telegram / PHP",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
+    "id": "website-streetmerchant",
+    "kind": "website",
+    "title": "streetmerchant（海外电商经典开源库存监控机器人）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "海外经典的开源库存监控机器人（TypeScript / Node.js），支持 Amazon、Best Buy、Walmart、Target、Newegg 等主流零售商与多渠道实时告警。",
+    "tags": "库存监控 / 海外电商 / TypeScript / Node.js / Discord / Telegram",
+    "pricing": "free",
+    "prompt": "streetmerchant（海外电商经典开源库存监控机器人）\n\n用途\n支持 Amazon、Best Buy、Walmart、Target、Newegg 等主流海外零售商的库存监控，自带控制台界面、自动打开购买页及 Discord / Telegram / Slack 等多渠道通知。\n\n官方仓库\nhttps://github.com/jef/streetmerchant",
+    "source": "https://github.com/jef/streetmerchant",
+    "officialUrl": "https://github.com/jef/streetmerchant",
+    "repository": "https://github.com/jef/streetmerchant",
+    "documentation": "https://github.com/jef/streetmerchant#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-streetmerchant/author-example.png",
+      "alt": "streetmerchant 官方横幅与项目展示图",
+      "width": 1000,
+      "height": 200
+    },
+    "previewSource": "https://raw.githubusercontent.com/jef/streetmerchant/main/docs/assets/images/streetmerchant-banner.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "streetmerchant (Open-Source Retail Stock Alert Bot)",
+      "description": "Classic TypeScript/Node.js inventory monitor supporting Amazon, Best Buy, Walmart, Target, and Newegg with multi-channel alerts.",
+      "tags": "Stock monitor / E-commerce / TypeScript / Node.js / Alerts",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "website-product-checker",
+    "kind": "website",
+    "title": "product-checker（轻量 Python 海外电商价格与补货监控）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "轻量级 Python 监控脚本，支持 Amazon、Target、Walmart、GameStop 等平台的价格与补货检测，自带图形管理界面与 Discord Webhook 提醒。",
+    "tags": "补货监控 / 价格监控 / Python / Discord Webhook / 海外电商",
+    "pricing": "free",
+    "prompt": "product-checker（轻量 Python 海外电商价格与补货监控）\n\n用途\n面向 Amazon、Target、Walmart、GameStop 等平台的轻量级 Python 库存与价格监控脚本，提供 URL 与 Webhook 管理界面并通过 Discord 发送补货提醒。\n\n官方仓库\nhttps://github.com/tnware/product-checker",
+    "source": "https://github.com/tnware/product-checker",
+    "officialUrl": "https://github.com/tnware/product-checker",
+    "repository": "https://github.com/tnware/product-checker",
+    "documentation": "https://github.com/tnware/product-checker#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-product-checker/author-example.png",
+      "alt": "product-checker 官方桌面 GUI 监控界面截图",
+      "width": 995,
+      "height": 514
+    },
+    "previewSource": "https://raw.githubusercontent.com/tnware/product-checker/master/img/gui.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "product-checker (Lightweight Python Stock & Price Monitor)",
+      "description": "Lightweight Python script monitoring Amazon, Target, Walmart, and GameStop stock and prices with a GUI and Discord Webhook alerts.",
+      "tags": "Stock monitor / Price tracker / Python / Discord Webhook",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "website-pokemon-stock-monitor",
+    "kind": "website",
+    "title": "pokemon-stock-monitor（宝可梦卡牌专用补货监控脚本）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "针对宝可梦卡牌（Pokémon TCG）热门零售渠道的 Python 专用补货监控脚本，及时捕捉补货上架动态。",
+    "tags": "宝可梦卡牌 / 补货监控 / Python / 特定品类监控",
+    "pricing": "free",
+    "prompt": "pokemon-stock-monitor（宝可梦卡牌专用补货监控脚本）\n\n用途\n面向宝可梦卡牌（Pokémon TCG）的专用 Python 库存与补货监控脚本，适合潮玩卡牌抢购补货提醒。\n\n官方仓库\nhttps://github.com/nearyou/pokemon-stock-monitor",
+    "source": "https://github.com/nearyou/pokemon-stock-monitor",
+    "officialUrl": "https://github.com/nearyou/pokemon-stock-monitor",
+    "repository": "https://github.com/nearyou/pokemon-stock-monitor",
+    "documentation": "https://github.com/nearyou/pokemon-stock-monitor#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-pokemon-stock-monitor/official-site.jpg",
+      "alt": "nearyou/pokemon-stock-monitor 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/nearyou/pokemon-stock-monitor",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "pokemon-stock-monitor (Pokemon Card Restock Monitor)",
+      "description": "Dedicated Python stock monitor tracking restocks for Pokemon TCG collectibles across supported retailers.",
+      "tags": "Pokemon cards / Restock monitor / Python",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
+    "id": "website-costinel",
+    "kind": "website",
+    "title": "costinel（Puppeteer 无头浏览器 VPS 补货监控）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "基于 Node.js 与 Puppeteer 的 VPS 补货监控工具，模拟真实浏览器绕过基础反爬抓取搬瓦工、DMIT 等商家库存，支持 Telegram 通知。",
+    "tags": "VPS监控 / 补货提醒 / Node.js / Puppeteer / Telegram",
+    "pricing": "free",
+    "prompt": "costinel（Puppeteer 无头浏览器 VPS 补货监控）\n\n用途\n使用 Node.js + Puppeteer 模拟真实浏览器抓取缺货 VPS 商家（如 BandwagonHost、DMIT、Spartan Host 等）库存变化，并推送 Telegram 通知。\n\n官方仓库\nhttps://github.com/harrisonwang/costinel",
+    "source": "https://github.com/harrisonwang/costinel",
+    "officialUrl": "https://github.com/harrisonwang/costinel",
+    "repository": "https://github.com/harrisonwang/costinel",
+    "documentation": "https://github.com/harrisonwang/costinel#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-costinel/official-site.jpg",
+      "alt": "harrisonwang/costinel 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/harrisonwang/costinel",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "costinel (Puppeteer VPS Restock Monitor)",
+      "description": "Node.js + Puppeteer browser-based VPS inventory monitor with Telegram notifications for frequently out-of-stock providers.",
+      "tags": "VPS monitor / Restock / Node.js / Puppeteer / Telegram",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
+    "id": "website-vpsmonitorbot",
+    "kind": "website",
+    "title": "VPSMonitorBot（轻量 Python VPS 补货 Telegram 机器人）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "基于 Python requests 的轻量级 VPS 库存监控机器人，配置简单低占用，实时检测缺货机型补货并推送 Telegram 告警。",
+    "tags": "VPS监控 / Telegram Bot / Python / 补货告警",
+    "pricing": "free",
+    "prompt": "VPSMonitorBot（轻量 Python VPS 补货 Telegram 机器人）\n\n用途\n基于 Python requests 轮询目标 VPS 套餐页面，配置简单、资源占用极低，检测到补货后立即通过 Telegram Bot 发送告警。\n\n官方仓库\nhttps://github.com/jinqians/VPSMonitorBot",
+    "source": "https://github.com/jinqians/VPSMonitorBot",
+    "officialUrl": "https://github.com/jinqians/VPSMonitorBot",
+    "repository": "https://github.com/jinqians/VPSMonitorBot",
+    "documentation": "https://github.com/jinqians/VPSMonitorBot#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-vpsmonitorbot/author-example.png",
+      "alt": "VPSMonitorBot 官方运行与 Telegram 告警示例图",
+      "width": 1314,
+      "height": 500
+    },
+    "previewSource": "http://vps.jinqians.com/wp-content/uploads/2024/11/112501.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "VPSMonitorBot (Lightweight Python VPS Telegram Bot)",
+      "description": "Lightweight requests-based Python VPS stock monitor sending instant Telegram alerts on restocks.",
+      "tags": "VPS monitor / Telegram Bot / Python / Restock alert",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "website-vps-restock-monitoring",
+    "kind": "website",
+    "title": "vps-restock-monitoring（极简 Python VPS 补货监控脚本）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "面向热门缺货 VPS 商家的极简 Python 补货监控脚本，基于 requests 轮询库存并支持 Telegram 即时推送告警。",
+    "tags": "VPS监控 / Python / 补货监控 / Telegram告警",
+    "pricing": "free",
+    "prompt": "vps-restock-monitoring（极简 Python VPS 补货监控脚本）\n\n用途\n针对 BandwagonHost、DMIT、Spartan Host 等经常缺货的 VPS 商家进行轻量级库存轮询，支持 Telegram 告警通知。\n\n官方仓库\nhttps://github.com/yuehex15/vps-restock-monitoring",
+    "source": "https://github.com/yuehex15/vps-restock-monitoring",
+    "officialUrl": "https://github.com/yuehex15/vps-restock-monitoring",
+    "repository": "https://github.com/yuehex15/vps-restock-monitoring",
+    "documentation": "https://github.com/yuehex15/vps-restock-monitoring#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-vps-restock-monitoring/official-site.jpg",
+      "alt": "yuehex15/vps-restock-monitoring 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/yuehex15/vps-restock-monitoring",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "vps-restock-monitoring (Simple Python VPS Restock Script)",
+      "description": "Simple requests-based Python script for monitoring out-of-stock VPS plans with Telegram alerts.",
+      "tags": "VPS monitor / Python / Restock / Telegram",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
+    "id": "website-spartanhost-monitor",
+    "kind": "website",
+    "title": "spartanhost-monitor（Spartan Host 专用库存监控面板）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "专门监控 Spartan Host（斯巴达）VPS 库存的 Node.js 项目，自带前端实时库存展示页与邮件订阅提醒功能。",
+    "tags": "VPS监控 / Spartan Host / Node.js / 邮件订阅 / 库存面板",
+    "pricing": "free",
+    "prompt": "spartanhost-monitor（Spartan Host 专用库存监控面板）\n\n用途\n专注监控 Spartan Host 热门断货套餐库存状态，提供前端可视化展示页及邮件订阅补货通知。\n\n官方仓库\nhttps://github.com/yokopro/spartanhost-monitor",
+    "source": "https://github.com/yokopro/spartanhost-monitor",
+    "officialUrl": "https://github.com/yokopro/spartanhost-monitor",
+    "repository": "https://github.com/yokopro/spartanhost-monitor",
+    "documentation": "https://github.com/yokopro/spartanhost-monitor#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-spartanhost-monitor/official-site.jpg",
+      "alt": "yokopro/spartanhost-monitor 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/yokopro/spartanhost-monitor",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "spartanhost-monitor (Spartan Host Stock Dashboard)",
+      "description": "Node.js monitor dedicated to tracking Spartan Host VPS stock with a web frontend and email subscription alerts.",
+      "tags": "VPS monitor / Spartan Host / Node.js / Email alerts",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
+    "id": "website-sku-spider",
+    "kind": "website",
+    "title": "sku_spider（国内电商京东/淘宝/拼多多 SKU 监控）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "基于 Python / FastAPI / Playwright 的国内电商 SKU 监控平台，支持京东、淘宝、拼多多、闲鱼库存与价格监控、历史趋势图表及企业微信告警。",
+    "tags": "SKU监控 / 京东 / 淘宝 / 拼多多 / Playwright / 企业微信告警",
+    "pricing": "free",
+    "prompt": "sku_spider（国内电商京东/淘宝/拼多多 SKU 监控）\n\n用途\n支持京东、淘宝、拼多多、闲鱼等国内平台的商品 SKU 库存与价格监控，内置 FastAPI 服务、历史价格趋势图表与企业微信告警。\n\n官方仓库\nhttps://github.com/Mrright36988/sku_spider",
+    "source": "https://github.com/Mrright36988/sku_spider",
+    "officialUrl": "https://github.com/Mrright36988/sku_spider",
+    "repository": "https://github.com/Mrright36988/sku_spider",
+    "documentation": "https://github.com/Mrright36988/sku_spider#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-sku-spider/official-site.jpg",
+      "alt": "Mrright36988/sku_spider 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/Mrright36988/sku_spider",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "sku_spider (CN E-Commerce SKU & Price Monitor)",
+      "description": "Python/FastAPI/Playwright SKU monitor for JD, Taobao, Pinduoduo, and Xianyu with price history charts and WeCom alerts.",
+      "tags": "SKU monitor / CN E-commerce / FastAPI / Playwright / WeCom",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
+    "id": "website-jdautoshopping",
+    "kind": "website",
+    "title": "jdAutoShopping（京东商品补货监控与自动加购脚本）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "针对京东平台的 Python 自动化脚本，支持指定商品补货监控、预约抢购及自动加购下单流程辅助。",
+    "tags": "京东监控 / 补货抢购 / Python / 自动加购",
+    "pricing": "free",
+    "prompt": "jdAutoShopping（京东商品补货监控与自动加购脚本）\n\n用途\n面向京东商品的补货监控、预约与自动加购下单辅助 Python 脚本。\n\n官方仓库\nhttps://github.com/ziwux/jdAutoShopping",
+    "source": "https://github.com/ziwux/jdAutoShopping",
+    "officialUrl": "https://github.com/ziwux/jdAutoShopping",
+    "repository": "https://github.com/ziwux/jdAutoShopping",
+    "documentation": "https://github.com/ziwux/jdAutoShopping#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-jdautoshopping/official-site.jpg",
+      "alt": "ziwux/jdAutoShopping 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/ziwux/jdAutoShopping",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "jdAutoShopping (JD Restock & Auto-Cart Script)",
+      "description": "Python script for JD.com restock monitoring, reservation, and automated add-to-cart workflows.",
+      "tags": "JD.com / Restock monitor / Python / Automation",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
+    "id": "website-jd-shopper",
+    "kind": "website",
+    "title": "jd-shopper（京东预约与补货监控下单脚本）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "经典的京东商品补货监控、预约与自动化下单 Python 脚本，支持多账号与库存检测触发。",
+    "tags": "京东监控 / 补货下单 / Python / 自动化脚本",
+    "pricing": "free",
+    "prompt": "jd-shopper（京东预约与补货监控下单脚本）\n\n用途\n针对京东平台的商品库存补货监控、预约及自动化加购下单辅助脚本。\n\n官方仓库\nhttps://github.com/gerrampard/jd-shopper",
+    "source": "https://github.com/gerrampard/jd-shopper",
+    "officialUrl": "https://github.com/gerrampard/jd-shopper",
+    "repository": "https://github.com/gerrampard/jd-shopper",
+    "documentation": "https://github.com/gerrampard/jd-shopper#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-jd-shopper/author-example.jpg",
+      "alt": "jd-shopper 官方仓库横幅图",
+      "width": 1250,
+      "height": 750
+    },
+    "previewSource": "https://raw.githubusercontent.com/gerrampard/jd-shopper/master/Docs/img/banner.jpg",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "jd-shopper (JD Stock Monitor & Checkout Script)",
+      "description": "Python script for monitoring JD.com product restocks, reservations, and automated checkout workflows.",
+      "tags": "JD.com / Stock monitor / Python / Automation",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    }
+  },
+  {
     "id": "website-ung220z-tool",
     "kind": "website",
     "title": "ung220z-tool（九联光猫自查与桥接配置工具）",
