@@ -1,5 +1,81 @@
 [
   {
+    "id": "website-aitoearn",
+    "kind": "website",
+    "title": "AitoEarn（一人公司 AI 自媒体运营智能体）",
+    "category": "其他",
+    "topics": [
+      "创作工具",
+      "实用软件"
+    ],
+    "description": "GitHub 2.8 万+ Star 的开源 OPC（一人公司）AI 自媒体智能体，通过 AI Agent 自动化完成内容创作、多平台分发、互动与商业变现。",
+    "tags": "自媒体运营 / OPC / 一人公司 / 内容分发 / AI Agent / MIT",
+    "pricing": "partial",
+    "license": "MIT",
+    "prompt": "AitoEarn（一人公司 AI 自媒体运营智能体）\n\n用途\n面向一人公司（OPC）、创作者、品牌与企业的开源 AI 自媒体增长与分发平台（GitHub 2.8 万+ Star），覆盖内容创作、热点追踪、多平台定时发布与数据变现闭环。\n\n许可：MIT\n官网：https://aitoearn.ai/\n官方仓库：https://github.com/yikart/AiToEarn",
+    "source": "https://aitoearn.ai/",
+    "officialUrl": "https://aitoearn.ai/",
+    "repository": "https://github.com/yikart/AiToEarn",
+    "documentation": "https://github.com/yikart/AiToEarn#readme",
+    "addedAt": "2026-11-17",
+    "verifiedAt": "2026-11-17",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-aitoearn/author-example.png",
+      "alt": "AitoEarn 官方 Agent Mode 操作界面截图",
+      "width": 3376,
+      "height": 1368
+    },
+    "previewSource": "https://raw.githubusercontent.com/yikart/AiToEarn/main/presentation/agent_0.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-17 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "AitoEarn (AI Social Media Agent for One-Person Companies)",
+      "description": "28k+ star open-source AI social media agent platform helping solo creators and brands automate content creation, multi-platform publishing, engagement, and monetization.",
+      "tags": "Social media / OPC / Solo creator / Content publishing / AI Agent / MIT",
+      "license": "MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-17. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "skill-rea-video",
+    "kind": "skill",
+    "title": "REA Video（逆向分析并复刻一切视频的 Agent Skill）",
+    "category": "动画动效",
+    "skillTopics": [
+      "动画视频",
+      "开发工具"
+    ],
+    "description": "面向 Claude Code 与 Codex 的视频逆向复刻 Skill：逐个镜头拆解实拍、AI 生成或代码动画构成，并指导分镜与复刻实现。",
+    "tags": "视频复刻 / 镜头拆解 / 逆向分析 / Claude Code / Codex / Apache-2.0",
+    "pricing": "partial",
+    "license": "Apache-2.0",
+    "prompt": "REA Video（逆向分析并复刻一切视频的 Agent Skill）\n\n用途\n由 JuneYaooo 开源（GitHub 9.7k+ Star），让 Claude Code 或 Codex 逐个镜头分析参考视频是实拍、AI 生成还是代码渲染，拆解画面元素、运镜与音频节奏，并输出可复刻的执行方案。\n\n运行环境\nPython ≥ 3.10，运行于 Claude Code / Codex。\n\n许可：Apache-2.0\n官网：https://www.reavideo.ai/\n官方仓库：https://github.com/JuneYaooo/rea-video",
+    "source": "https://github.com/JuneYaooo/rea-video",
+    "officialUrl": "https://www.reavideo.ai/",
+    "repository": "https://github.com/JuneYaooo/rea-video",
+    "documentation": "https://github.com/JuneYaooo/rea-video#readme",
+    "addedAt": "2026-11-17",
+    "verifiedAt": "2026-11-17",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-rea-video/author-example.gif",
+      "alt": "REA Video 官方原片与 AI 复刻版对比动图",
+      "width": 440,
+      "height": 392
+    },
+    "previewSource": "https://raw.githubusercontent.com/JuneYaooo/rea-video/main/docs/cases/demo.gif",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-17 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "REA Video (Reverse Engineer & Recreate Any Video Skill)",
+      "description": "9.7k+ star Agent Skill for Claude Code and Codex that inspects videos shot by shot—identifying live footage, AI generation, or code animation—and guides faithful recreation.",
+      "tags": "Video recreation / Shot breakdown / Reverse engineering / Claude Code / Codex / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-17. Original media preserved; not generated here."
+    }
+  },
+  {
     "id": "website-craft-anything",
     "kind": "website",
     "title": "Craft Anything（净室黑盒逆向与 AI 复刻工具）",
