@@ -1,5 +1,39 @@
 [
   {
+    "id": "website-ethanenglish",
+    "kind": "website",
+    "title": "EthanEnglish（生活场景英语听说读写交互学习网）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "完全免费的生活场景英语学习网站（48 集约 360 分钟），集听力精听、阅读批注生词本、无提示主动拼写训练、原视频笔记及本地音视频/字幕自定义课程于一体。",
+    "tags": "英语学习 / 听力拼写 / 生活场景 / 本地字幕导入 / 免费网站",
+    "pricing": "free",
+    "prompt": "EthanEnglish（生活场景英语听说读写交互学习网）\n\n内容与场景\n已收录 48 集（约 360 分钟）生活化英语内容，覆盖日常起居（起床、关闹钟、拉窗帘）、日常轨迹（上班、上课、运动、做饭）与休闲出行场景。\n\n四大核心板块\n1. 听力板块：独立中英字幕开关，支持连贯播放与左右方向键逐句切换精听\n2. 阅读板块：纯英文/中英对照，单击存生词、框选存词组、例句收藏与一键批注\n3. 拼写板块：无首字母联想，必须完整拼对才进下一题；支持 ~ 键重听、长按 Tab 临时看原句\n4. 视频与本地工具：原视频配核心笔记，并支持上传本地视频/音频与字幕生成专属课程；免登录本地保存，登录后云端跨设备同步。\n\n官方网址\nhttps://ethanenglish.cn",
+    "source": "https://ethanenglish.cn",
+    "officialUrl": "https://ethanenglish.cn",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-ethanenglish/official-site.jpg",
+      "alt": "EthanEnglish 官网页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://ethanenglish.cn",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官网后的网页截图；仅收藏，未注册登录。",
+    "en": {
+      "title": "EthanEnglish (Daily-Life English Practice Platform)",
+      "description": "Free daily-life English learning site (48 episodes, ~360 min) combining listening with toggleable subtitles, click-to-save reading notes, hint-free active spelling drills, video notes, and local media/subtitle import.",
+      "tags": "English learning / Listening & spelling / Daily scenes / Subtitle import / Free",
+      "notes": "Works without login (local browser storage) and supports optional cloud sync across devices.",
+      "previewNote": "Screenshot of the official site taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
     "id": "website-changedetection-io",
     "kind": "website",
     "title": "changedetection.io（开源通用网页变化与补货监控）",
