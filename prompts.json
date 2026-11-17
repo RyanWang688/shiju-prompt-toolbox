@@ -1,5 +1,40 @@
 [
   {
+    "id": "skill-oil-dev-skills",
+    "kind": "skill",
+    "title": "oil-dev-skills（6 合 1 复杂项目 AI 研发协同 Skill 套件）",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "description": "开源 6 合 1 开发工作流 Skill 套件，包含 oil-explore、oil-plan、oil-delegate、oil-code-review、oil-bug-fix 与 oil-govern，解决复杂代码库的上下文过载与多 Agent 协作治理难题。",
+    "tags": "开发工作流 / 多Agent协同 / 代码审查 / Bug定位 / 仓库治理 / Agent Skill",
+    "pricing": "free",
+    "prompt": "oil-dev-skills（6 合 1 复杂项目 AI 研发协同 Skill 套件）\n\n核心 6 大子 Skill\n1. oil-explore：派发轻量/并行子 Agent 探索 Monorepo 或存量代码，保护主上下文\n2. oil-plan：用人类可读语言聚焦业务边界与方案评审，沉淀任务分工偏好\n3. oil-delegate：在当前对话中调用 Codex 等其他 AI Agent 执行子任务并返回 Markdown 摘要\n4. oil-code-review：分级代码审查，普通改动快速自查，核心模块强制深度审查并跑测试\n5. oil-bug-fix：追查历史提交与根本原因，复杂 Bug 召集多子 Agent 共识后修复\n6. oil-govern：治理过期文档、失效链接、测试冗余与分支/工作树状态，建议配为每日定时任务\n\n安装方式\n在支持 Skill 的 AI 编程助手中发送仓库地址 https://github.com/oil-oil/oil-dev-skills 即可引导安装。\n\n官方仓库\nhttps://github.com/oil-oil/oil-dev-skills",
+    "source": "https://github.com/oil-oil/oil-dev-skills",
+    "officialUrl": "https://github.com/oil-oil/oil-dev-skills",
+    "repository": "https://github.com/oil-oil/oil-dev-skills",
+    "documentation": "https://github.com/oil-oil/oil-dev-skills#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-oil-dev-skills/official-site.jpg",
+      "alt": "oil-oil/oil-dev-skills 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/oil-oil/oil-dev-skills",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "oil-dev-skills (6-in-1 Complex Project Dev Skill Suite)",
+      "description": "Open-source suite of 6 collaborating dev skills (oil-explore, oil-plan, oil-delegate, oil-code-review, oil-bug-fix, oil-govern) for managing context, multi-agent delegation, tiered reviews, root-cause bug fixes, and repo governance.",
+      "tags": "Dev workflow / Multi-agent / Code review / Bug fix / Repo governance / Agent Skill",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
     "id": "website-ethanenglish",
     "kind": "website",
     "title": "EthanEnglish（生活场景英语听说读写交互学习网）",
