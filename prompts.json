@@ -1,5 +1,41 @@
 [
   {
+    "id": "website-ung220z-tool",
+    "kind": "website",
+    "title": "ung220z-tool（九联光猫自查与桥接配置工具）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "针对九联/Unionman UNG220Z 中国移动光猫的开源工具，用于在自有设备上找回管理与超管密码、读取宽带/WiFi配置、迁移配置或改桥接与安全自查。",
+    "tags": "光猫工具 / 改桥接 / 超管密码 / UNG220Z / 开源软件",
+    "pricing": "free",
+    "prompt": "ung220z-tool（九联光猫自查与桥接配置工具）\n\n用途\n针对 UNG220Z（九联/Unionman 中国移动光猫）的开源一键工具，用于在自有设备上找回忘记的超管/管理密码、查看宽带账号与 WiFi 密钥、迁移宽带配置、改桥接拨号或进行安全自查。\n\n使用边界\n仅限用于自己拥有控制权或已获授权的自有设备。\n\n官方仓库\nhttps://github.com/Hut-hzf/ung220z-tool",
+    "source": "https://github.com/Hut-hzf/ung220z-tool",
+    "officialUrl": "https://github.com/Hut-hzf/ung220z-tool",
+    "repository": "https://github.com/Hut-hzf/ung220z-tool",
+    "documentation": "https://github.com/Hut-hzf/ung220z-tool#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-ung220z-tool/official-site.jpg",
+      "alt": "ung220z-tool 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/Hut-hzf/ung220z-tool",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未运行。",
+    "en": {
+      "title": "ung220z-tool (Unionman UNG220Z Optical Modem Utility)",
+      "description": "Open-source utility for Unionman UNG220Z optical modems to recover admin/super-admin credentials, inspect broadband/Wi-Fi settings, migrate configs, or perform self-audits on your own device.",
+      "tags": "Optical modem / Bridge mode / Admin recovery / UNG220Z / Open source",
+      "notes": "For use only on your own authorized hardware.",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only."
+    }
+  },
+  {
     "id": "website-misterdownloadmanager",
     "kind": "website",
     "title": "Mister Download Manager（MDM 开源多线程下载器）",
