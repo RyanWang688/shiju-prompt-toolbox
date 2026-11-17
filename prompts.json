@@ -1,5 +1,371 @@
 [
   {
+    "id": "website-misterdownloadmanager",
+    "kind": "website",
+    "title": "Mister Download Manager（MDM 开源多线程下载器）",
+    "category": "其他",
+    "description": "Rust 从零编写的开源免费多线程下载器（主打替代 IDM），支持动态分块与断点续传、浏览器接管、视频/播单/字幕/磁力/种子下载，以及手机远程、NAS 与 AI 接入。",
+    "tags": "下载工具 / 多线程下载 / IDM替代 / Rust / 开源软件 / GPL-3.0",
+    "pricing": "free",
+    "prompt": "Mister Download Manager（MDM 开源多线程下载器）\n\n用途\n由 Rust 从零编写的开源免费高速下载管理器，主打替代付费软件 IDM。\n\n核心功能\n- 多线程动态分块下载与断点续传，解决大文件下载慢、易断线问题\n- 浏览器插件接管下载，支持网页视频、播单、字幕、磁力链与种子文件\n- 扩展能力：定时任务、手机局域网远程控制、NAS 部署及接入 AI 助手\n\n许可：GPL-3.0\n官网：https://misterdownloadmanager.com\n官方仓库：https://github.com/anefzaoui/misterdownloadmanager",
+    "source": "https://misterdownloadmanager.com",
+    "officialUrl": "https://misterdownloadmanager.com",
+    "repository": "https://github.com/anefzaoui/misterdownloadmanager",
+    "documentation": "https://github.com/anefzaoui/misterdownloadmanager#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-misterdownloadmanager/official-site.jpg",
+      "alt": "Mister Download Manager 官网首页截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://misterdownloadmanager.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官网/官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "Mister Download Manager (Open-Source Rust Download Manager)",
+      "description": "Free, open-source multi-threaded download manager written in Rust as an IDM alternative, supporting dynamic chunking, browser takeover, video/playlist/torrent downloads, NAS, and mobile remote control.",
+      "tags": "Download manager / Multi-threaded / IDM alternative / Rust / GPL-3.0",
+      "previewNote": "Screenshot of the official site/repository taken on 2026-11-18; saved for reference only.",
+      "license": "GPL-3.0"
+    },
+    "license": "GPL-3.0",
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "skill-unslop",
+    "kind": "skill",
+    "title": "unslop（一屏一屏消除页面 AI 廉价感 Skill）",
+    "category": "界面设计",
+    "description": "GitHub 1.7 万+ Star 的 Claude 设计审查 Skill，逐屏检查并重构 AI 味过重的 Vibecoded 界面，将其打磨为克制、有设计感的专业 UI。",
+    "tags": "UI设计 / 去AI味 / 前端重构 / Claude Skill / CC-BY-4.0",
+    "pricing": "free",
+    "prompt": "unslop（一屏一屏消除页面 AI 廉价感 Skill）\n\n用途\n将 AI 快速生成的粗糙原型页面逐屏审视并改写，去除千篇一律的模板感与视觉噪音，对齐现代专业 UI 设计规范。\n\n许可：CC-BY-4.0\n官方仓库：https://github.com/heydamir/unslop",
+    "source": "https://github.com/heydamir/unslop",
+    "officialUrl": "https://github.com/heydamir/unslop",
+    "repository": "https://github.com/heydamir/unslop",
+    "documentation": "https://github.com/heydamir/unslop#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-unslop/author-example.png",
+      "alt": "unslop 官方界面设计参考图（story-dashboard-frames.webp）",
+      "width": 2400,
+      "height": 1200
+    },
+    "previewSource": "https://raw.githubusercontent.com/heydamir/unslop/main/skills/unslop/references/refs/story-dashboard-frames.webp",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "unslop (De-Slop Vibecoded UI Design Skill)",
+      "description": "17k+ star Claude skill that audits and refactors AI-looking vibecoded interfaces screen by screen into intentional, well-crafted UI.",
+      "tags": "UI design / De-slop / Frontend polish / Claude Skill / CC-BY-4.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here.",
+      "license": "CC-BY-4.0"
+    },
+    "license": "CC-BY-4.0",
+    "skillTopics": [
+      "视觉设计",
+      "开发工具"
+    ]
+  },
+  {
+    "id": "website-andee",
+    "kind": "website",
+    "title": "Andee（手机与 Mac 原生 App 自动操作智能体）",
+    "category": "其他",
+    "description": "运行在手机与 Mac 上的 AI 操作智能体，无需 Root、越狱或第三方集成，像真人一样直接点击并操作任意手机与桌面 App。",
+    "tags": "手机自动化 / Mac自动化 / GUI Agent / 跨端操控",
+    "pricing": "partial",
+    "prompt": "Andee（手机与 Mac 原生 App 自动操作智能体）\n\n用途\n直接部署在手机或 Mac 上，像真人一样识别界面并点击操作各类日常 App，无需 Root 或开放接口。\n\n官网：https://heyandee.com\n官方仓库：https://github.com/kuafuai/andee",
+    "source": "https://heyandee.com",
+    "officialUrl": "https://heyandee.com",
+    "repository": "https://github.com/kuafuai/andee",
+    "documentation": "https://github.com/kuafuai/andee#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-andee/author-example.png",
+      "alt": "Andee 官方仓库封面与手机/Mac 操控示意",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://raw.githubusercontent.com/kuafuai/andee/main/images/cover.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Andee (Phone & Mac App Automation Agent)",
+      "description": "GUI agent running on your phone or Mac that operates any app naturally without integrations or root access.",
+      "tags": "Mobile automation / Mac automation / GUI Agent",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    },
+    "topics": [
+      "实用软件",
+      "创作工具"
+    ]
+  },
+  {
+    "id": "skill-billion-context",
+    "kind": "skill",
+    "title": "billion-context（超长会话上下文动态压缩插件）",
+    "category": "其他",
+    "description": "面向超长周期编程会话的上下文主动剪枝（ACP）插件，把动辄数亿 Token 的长会话动态压缩进小窗口，保持 Claude/OpenCode 长期稳定运行。",
+    "tags": "上下文压缩 / Context Pruning / Claude Code / OpenCode / Agent插件",
+    "pricing": "free",
+    "prompt": "billion-context（超长会话上下文动态压缩插件）\n\n用途\n通过主动上下文剪枝（Active Context Pruning）让单次会话可跨越数周与极大规模 Token 而不爆窗、不降智。\n\n官方仓库：https://github.com/ranxianglei/billion-context",
+    "source": "https://github.com/ranxianglei/billion-context",
+    "officialUrl": "https://github.com/ranxianglei/billion-context",
+    "repository": "https://github.com/ranxianglei/billion-context",
+    "documentation": "https://github.com/ranxianglei/billion-context#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-billion-context/official-site.jpg",
+      "alt": "billion-context 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/ranxianglei/billion-context",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官网/官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "billion-context (Active Context Pruning Plugin)",
+      "description": "Context-compression plugin enabling month-long coding sessions by actively pruning context into a lean, high-signal window.",
+      "tags": "Context compression / ACP / Claude Code / OpenCode",
+      "previewNote": "Screenshot of the official site/repository taken on 2026-11-18; saved for reference only."
+    },
+    "skillTopics": [
+      "开发工具"
+    ]
+  },
+  {
+    "id": "website-learnharness",
+    "kind": "website",
+    "title": "LearnHarness（用 Agent 攻克高难度知识的学习框架）",
+    "category": "其他",
+    "description": "面向深度学习与硬核学科的 Agent 学习框架（9.8k+ Star），构建个性化学习路径、苏格拉底式教学对话与知识图谱。",
+    "tags": "AI学习框架 / 知识图谱 / 教学智能体 / AGPL-3.0",
+    "pricing": "free",
+    "prompt": "LearnHarness（用 Agent 攻克高难度知识的学习框架）\n\n用途\n围绕硬核概念构建结构化学习路径，结合 AI 教学会话与知识图谱追踪掌握度。\n\n许可：AGPL-3.0\n官网：https://learnharness.ai\n官方仓库：https://github.com/amosblomqvist/learnharness",
+    "source": "https://learnharness.ai",
+    "officialUrl": "https://learnharness.ai",
+    "repository": "https://github.com/amosblomqvist/learnharness",
+    "documentation": "https://github.com/amosblomqvist/learnharness#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-learnharness/author-example.png",
+      "alt": "LearnHarness 官方教学会话界面截图",
+      "width": 3160,
+      "height": 2203
+    },
+    "previewSource": "https://raw.githubusercontent.com/amosblomqvist/learnharness/main/docs/assets/teaching-session.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "LearnHarness (Agent Framework for Hard Learning)",
+      "description": "9.8k+ star AGPL-3.0 agent harness designed to help learners master difficult subjects with structured paths, tutoring sessions, and knowledge graphs.",
+      "tags": "AI learning / Knowledge graph / Tutoring agent / AGPL-3.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here.",
+      "license": "AGPL-3.0"
+    },
+    "license": "AGPL-3.0",
+    "topics": [
+      "实用软件",
+      "创作工具"
+    ]
+  },
+  {
+    "id": "website-kiri",
+    "kind": "website",
+    "title": "Kiri（Rust 编写的轻量级跨平台容器运行时）",
+    "category": "其他",
+    "description": "用 Rust 开发的轻量高速容器运行时，兼容 Docker Engine API 与 Docker Compose，主打替代 Docker Desktop 与 OrbStack。",
+    "tags": "容器运行时 / Rust / Docker替代 / 轻量虚拟机 / 跨平台",
+    "pricing": "free",
+    "prompt": "Kiri（Rust 编写的轻量级跨平台容器运行时）\n\n用途\n支持 macOS、Windows 与 Linux 的轻量容器运行时，无缝兼容 docker CLI 与 Compose。\n\n官方仓库：https://github.com/libracoder/kiri",
+    "source": "https://github.com/libracoder/kiri",
+    "officialUrl": "https://github.com/libracoder/kiri",
+    "repository": "https://github.com/libracoder/kiri",
+    "documentation": "https://github.com/libracoder/kiri#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-kiri/author-example.png",
+      "alt": "Kiri 官方桌面窗口界面截图",
+      "width": 2530,
+      "height": 1584
+    },
+    "previewSource": "https://raw.githubusercontent.com/libracoder/kiri/main/docs/images/kiri-window.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Kiri (Lightweight Rust Container Runtime)",
+      "description": "Fast, lightweight cross-platform container runtime written in Rust and compatible with the Docker Engine API.",
+      "tags": "Container runtime / Rust / Docker alternative / Cross-platform",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-rune",
+    "kind": "website",
+    "title": "Rune（专为 AI 智能体打造的 Rust 原生 UI 框架）",
+    "category": "界面设计",
+    "description": "OpenCode 团队（Anomaly）基于 Rust 与 wgpu 打造的 GPU 渲染原生 UI 框架，支持无头模式快照与元素树导出，方便 AI Agent 自主编写并验收界面。",
+    "tags": "UI框架 / Rust / wgpu / AI原生 / 无头测试 / 跨平台",
+    "pricing": "free",
+    "prompt": "Rune（专为 AI 智能体打造的 Rust 原生 UI 框架）\n\n用途\n基于 wgpu、Taffy 与 AccessKit 的 GPU 原生跨平台 UI 框架，内置无头运行与 PNG 快照验证能力，专为编程智能体自主开发和验证 UI 设计。\n\n官方仓库：https://github.com/anomalyco/rune",
+    "source": "https://github.com/anomalyco/rune",
+    "officialUrl": "https://github.com/anomalyco/rune",
+    "repository": "https://github.com/anomalyco/rune",
+    "documentation": "https://github.com/anomalyco/rune#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-rune/author-example.png",
+      "alt": "Rune 框架渲染原生界面示例截图",
+      "width": 2560,
+      "height": 1640
+    },
+    "previewSource": "https://raw.githubusercontent.com/anomalyco/rune/main/demo/opencode/session-top.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Rune (Agent-Driven Rust Native UI Framework)",
+      "description": "GPU-rendered cross-platform Rust UI framework by Anomaly (wgpu + Taffy) with headless snapshot and tree inspection built for AI coding agents.",
+      "tags": "UI framework / Rust / wgpu / AI-native / Headless testing",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    },
+    "topics": [
+      "组件动画库",
+      "创作工具"
+    ]
+  },
+  {
+    "id": "skill-claude-animated-shorts",
+    "kind": "skill",
+    "title": "claude-animated-shorts（本机渲染竖屏 3D 动画短片 Skill）",
+    "category": "动画动效",
+    "description": "免费开源的 Claude 动画短片 Skill，结合 Three.js 在 3D 世界中渲染 2D 角色故事，本地一键生成竖屏动画短视频。",
+    "tags": "竖屏动画 / 短视频 / Three.js / Claude Skill / MIT",
+    "pricing": "free",
+    "prompt": "claude-animated-shorts（本机渲染竖屏 3D 动画短片 Skill）\n\n用途\n用 Three.js 在本地构建 3D 场景与 2D 角色表演，快速输出竖屏故事动画短片。\n\n许可：MIT\n官方仓库：https://github.com/mromidev/claude-animated-shorts",
+    "source": "https://github.com/mromidev/claude-animated-shorts",
+    "officialUrl": "https://github.com/mromidev/claude-animated-shorts",
+    "repository": "https://github.com/mromidev/claude-animated-shorts",
+    "documentation": "https://github.com/mromidev/claude-animated-shorts#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-claude-animated-shorts/official-site.jpg",
+      "alt": "claude-animated-shorts 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/mromidev/claude-animated-shorts",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官网/官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "claude-animated-shorts (Local Vertical Animated Shorts Skill)",
+      "description": "Free MIT Claude skill that renders vertical 2D-in-3D animated story shorts locally using Three.js.",
+      "tags": "Animated shorts / Vertical video / Three.js / Claude Skill / MIT",
+      "previewNote": "Screenshot of the official site/repository taken on 2026-11-18; saved for reference only.",
+      "license": "MIT"
+    },
+    "license": "MIT",
+    "skillTopics": [
+      "动画视频",
+      "开发工具"
+    ]
+  },
+  {
+    "id": "website-zapfast",
+    "kind": "website",
+    "title": "ZapFast（Rust 原生轻量 WhatsApp 桌面客户端）",
+    "category": "其他",
+    "description": "99%+ 纯 Rust（egui）编写的轻量桌面 WhatsApp 客户端，亚秒级启动、内存仅约 150–200MB，告别臃肿的 Electron 网页套壳。",
+    "tags": "WhatsApp客户端 / Rust / egui / 轻量桌面应用",
+    "pricing": "free",
+    "prompt": "ZapFast（Rust 原生轻量 WhatsApp 桌面客户端）\n\n用途\n采用 Rust 与 egui 构建的原生桌面客户端，支持多账号、消息媒体、语音与本地加密归档，显著降低内存占用。\n\n官方仓库：https://github.com/crmne/zapfast",
+    "source": "https://github.com/crmne/zapfast",
+    "officialUrl": "https://github.com/crmne/zapfast",
+    "repository": "https://github.com/crmne/zapfast",
+    "documentation": "https://github.com/crmne/zapfast#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-zapfast/author-example.png",
+      "alt": "ZapFast 官方原生桌面客户端界面截图",
+      "width": 1800,
+      "height": 1360
+    },
+    "previewSource": "https://raw.githubusercontent.com/crmne/zapfast/main/docs/screenshot.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "ZapFast (Native Rust WhatsApp Desktop Client)",
+      "description": "Lightweight native WhatsApp desktop client written in Rust with egui for sub-second startup and low memory footprint.",
+      "tags": "WhatsApp client / Rust / egui / Native desktop",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    },
+    "topics": [
+      "实用软件"
+    ]
+  },
+  {
+    "id": "website-experiential",
+    "kind": "website",
+    "title": "Experiential（开源 AI 模型统一网关与花费管控）",
+    "category": "其他",
+    "description": "Apache-2.0 开源的 OpenAI 兼容模型网关与路由器，用一个入口统一纳管本地与云端 1000+ 模型，支持硬性预算上限、模型白名单与 OTel 链路追踪。",
+    "tags": "模型网关 / LLM Router / 预算管控 / OpenTelemetry / Apache-2.0",
+    "pricing": "free",
+    "prompt": "Experiential（开源 AI 模型统一网关与花费管控）\n\n用途\n统一路由本地、开源与商业大模型请求，提供按天/周/月硬性预算上限、按智能体/团队分配模型白名单以及全链路 Token 归因统计。\n\n许可：Apache-2.0\n官方仓库：https://github.com/experientiallabs/experiential",
+    "source": "https://github.com/experientiallabs/experiential",
+    "officialUrl": "https://github.com/experientiallabs/experiential",
+    "repository": "https://github.com/experientiallabs/experiential",
+    "documentation": "https://github.com/experientiallabs/experiential#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-experiential/author-example.png",
+      "alt": "Experiential 官方模型网关与路由工作流架构图",
+      "width": 3824,
+      "height": 1912
+    },
+    "previewSource": "https://raw.githubusercontent.com/experientiallabs/experiential/main/assets/experiential-workflow.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Experiential (Open-Source AI Model Gateway & Spend Control)",
+      "description": "Apache-2.0 OpenAI-compatible model gateway and router unifying 1,000+ local and frontier models with hard budget caps, allowlists, and OTel tracing.",
+      "tags": "Model gateway / LLM router / Spend control / OpenTelemetry / Apache-2.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here.",
+      "license": "Apache-2.0"
+    },
+    "license": "Apache-2.0",
+    "topics": [
+      "实用软件",
+      "创作工具"
+    ]
+  },
+  {
     "id": "website-video-highlighter",
     "kind": "website",
     "title": "VideoHighlighter（本地 AI 视频高光自动剪辑工具）",
