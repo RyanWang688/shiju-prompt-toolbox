@@ -1,5 +1,148 @@
 [
   {
+    "id": "website-qwen-code",
+    "kind": "website",
+    "title": "Qwen Code（通义千问开源终端 AI 编程智能体）",
+    "category": "其他",
+    "topics": [
+      "创作工具",
+      "实用软件"
+    ],
+    "description": "阿里云 Qwen 团队开源的终端优先 AI 编程智能体，支持自动记忆、Skills、子 Agent、MCP 与多模型接入，并提供 CLI、Web UI 及 IDE 插件形态。",
+    "tags": "AI编程 / 终端Agent / Qwen / MCP / 开源CLI",
+    "pricing": "free",
+    "prompt": "Qwen Code（通义千问开源终端 AI 编程智能体）\n\n用途\n由 QwenLM 开源的终端优先 AI 编程助手，支持自动记忆、Skills、子智能体团队、MCP 协议与多模型提供商（Qwen、OpenAI、Anthropic、Gemini、Ollama/vLLM），提供 CLI、Web UI 与 IDE 插件。\n\n官方仓库\nhttps://github.com/QwenLM/qwen-code",
+    "source": "https://github.com/QwenLM/qwen-code",
+    "officialUrl": "https://github.com/QwenLM/qwen-code",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-qwen-code/official-preview.png",
+      "alt": "Qwen Code 官方 README 终端界面预览图",
+      "width": 1743,
+      "height": 902
+    },
+    "previewSource": "https://img.alicdn.com/imgextra/i1/O1CN01DXWdF8BDUdD3XPhl_!!6000000001721-2-tps-1743-902.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方公开的真实示例图，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Qwen Code (Open-Source Terminal AI Coding Agent)",
+      "description": "Open-source terminal-first AI coding agent by Alibaba Qwen supporting auto-memory, skills, sub-agents, MCP, and multi-provider models across CLI, Web UI, and IDE plugins.",
+      "tags": "AI coding / Terminal Agent / Qwen / MCP / Open source",
+      "previewNote": "Real public image from the author’s official repository/docs, collected on 2026-11-18."
+    },
+    "repository": "https://github.com/QwenLM/qwen-code",
+    "documentation": "https://github.com/QwenLM/qwen-code#readme"
+  },
+  {
+    "id": "website-ag-ui",
+    "kind": "website",
+    "title": "AG-UI（智能体与前端用户交互开放协议）",
+    "category": "界面设计",
+    "topics": [
+      "创作工具",
+      "实用软件"
+    ],
+    "description": "轻量级事件驱动的 Agent-User Interaction 开放协议，以 SSE 流式连接后端智能体与前端 UI，实现实时状态同步、生成式界面与人工审批中断。",
+    "tags": "Agent协议 / AG-UI / 生成式UI / 状态同步 / SSE / 开源",
+    "pricing": "free",
+    "prompt": "AG-UI（智能体与前端用户交互开放协议）\n\n用途\n与 MCP（连接工具）、A2A（连接智能体）互补，专门标准化后端 AI Agent 与前端用户界面的实时通信，支持流式事件、双向状态同步、生成式 UI 与 Human-in-the-Loop 审批。\n\n官网文档：https://docs.ag-ui.com/introduction\n官方仓库：https://github.com/ag-ui-protocol/ag-ui",
+    "source": "https://docs.ag-ui.com/introduction",
+    "officialUrl": "https://docs.ag-ui.com/introduction",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-ag-ui/official-overview.png",
+      "alt": "AG-UI 官方文档与生态合作概览图",
+      "width": 2949,
+      "height": 1492
+    },
+    "previewSource": "https://mintcdn.com/tawkitai/p1KIIAcVU0goF39y/images/ag-ui-overview-with-partners.png?fit=max&auto=format&n=p1KIIAcVU0goF39y&q=85&s=62e8ee85a2e1623d1bfbbea76227ca99",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方公开的真实示例图，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "AG-UI (Agent-User Interaction Open Protocol)",
+      "description": "Lightweight event-driven protocol standardizing real-time streaming, bidirectional state sync, generative UI, and human-in-the-loop workflows between AI agents and frontends.",
+      "tags": "Agent protocol / AG-UI / Generative UI / State sync / Open source",
+      "previewNote": "Real public image from the author’s official repository/docs, collected on 2026-11-18."
+    },
+    "repository": "https://github.com/ag-ui-protocol/ag-ui",
+    "documentation": "https://github.com/ag-ui-protocol/ag-ui#readme"
+  },
+  {
+    "id": "website-loopforge",
+    "kind": "website",
+    "title": "LoopForge（腾讯开源 AI 研发流与编程智能体治理平台）",
+    "category": "其他",
+    "topics": [
+      "实用软件",
+      "创作工具"
+    ],
+    "description": "腾讯开源的 AI 软件研发全生命周期（SDLC）编排与治理平台，以有向 SOP 图、沙盒执行和人工审批关卡托管 Claude Code、Codex 等长程编程任务。",
+    "tags": "AI研发平台 / SOP编排 / 编程Agent / 人工审批 / 腾讯开源",
+    "pricing": "free",
+    "prompt": "LoopForge（腾讯开源 AI 研发流与编程智能体治理平台）\n\n用途\n面向长程 AI 编程任务的自托管治理与交付平台，通过有向 SOP 流程、自动化脚本检查与集中审批收件箱管理 Claude Code、CodeBuddy、Codex 等编程智能体。\n\n官方网址\nhttps://loopforge.cn/",
+    "source": "https://loopforge.cn/",
+    "officialUrl": "https://loopforge.cn/",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-loopforge/official-promo.jpg",
+      "alt": "LoopForge 官网宣传与平台工作流概览图",
+      "width": 1920,
+      "height": 1080
+    },
+    "previewSource": "https://loopforge.cn/demo/media/loopforge-promo-en.jpg?v=12",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方公开的真实示例图，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "LoopForge (AI SDLC & Coding-Agent Governance Platform)",
+      "description": "Open-source platform by Tencent for governing long-horizon AI coding workflows using directed SOP graphs, sandboxed execution, and human-in-the-loop approval gates.",
+      "tags": "AI SDLC / Agent orchestration / SOP governance / Tencent",
+      "previewNote": "Real public image from the author’s official repository/docs, collected on 2026-11-18."
+    }
+  },
+  {
+    "id": "website-tensorfold",
+    "kind": "website",
+    "title": "TensorFold（Zig 编写的本地高性能 LLM 推理引擎）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "纯 Zig 编写的开源本地大模型推理引擎（2.3k+ Star），原生支持 Apple Metal、CUDA 与 Vulkan 加速，零 Python 依赖并提供 OpenAI/Anthropic 兼容接口。",
+    "tags": "LLM推理引擎 / Zig / Metal / CUDA / 本地部署 / Apache-2.0",
+    "pricing": "free",
+    "prompt": "TensorFold（Zig 编写的本地高性能 LLM 推理引擎）\n\n用途\n独立二进制本地大模型推理引擎，原生运行 Metal / CUDA / Vulkan 内核，无需安装 Python 或 PyTorch，支持精确投机解码与 OpenAI/Anthropic 兼容 API。\n\n许可：Apache-2.0\n官方仓库：https://github.com/ashhart/TensorFold",
+    "source": "https://github.com/ashhart/TensorFold",
+    "officialUrl": "https://github.com/ashhart/TensorFold",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-tensorfold/official-site.png",
+      "alt": "ashhart/TensorFold 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/ashhart/TensorFold",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-18 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "TensorFold (Native Zig Local LLM Inference Engine)",
+      "description": "Apache-2.0 local LLM inference engine written in Zig with native Metal, CUDA, and Vulkan kernels, exact speculative decoding, and OpenAI/Anthropic-compatible APIs.",
+      "tags": "LLM inference / Zig / Metal / CUDA / Local AI / Apache-2.0",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-18; saved for reference only.",
+      "license": "Apache-2.0"
+    },
+    "repository": "https://github.com/ashhart/TensorFold",
+    "documentation": "https://github.com/ashhart/TensorFold#readme",
+    "license": "Apache-2.0"
+  },
+  {
     "id": "skill-oil-dev-skills",
     "kind": "skill",
     "title": "oil-dev-skills（6 合 1 复杂项目 AI 研发协同 Skill 套件）",
