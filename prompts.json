@@ -1,5 +1,43 @@
 [
   {
+    "id": "website-video-highlighter",
+    "kind": "website",
+    "title": "VideoHighlighter（本地 AI 视频高光自动剪辑工具）",
+    "category": "动画动效",
+    "topics": [
+      "创作工具",
+      "实用软件"
+    ],
+    "description": "支持完全本地运行的开源 AI 视频分析与高光剪辑工具，综合画面变化、人物动作、物体、声音与字幕为片段打分，展示评分时间轴并自动拼接导出集锦。",
+    "tags": "AI剪辑 / 视频高光 / 本地运行 / Ollama / 评分时间轴 / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "VideoHighlighter（本地 AI 视频高光自动剪辑工具）\n\n用途\n将数小时的长视频交由本地 AI 自动分析画面变化、人物动作、物体、音频峰值与字幕关键词，为不同片段打分并解释入选理由，展示可视化评分时间轴，支持自定义规则筛选特定事件并导出高光集锦视频。\n\n核心特性\n- 完全本地离线可运行，基础分析无需外部 API 密钥，可选配合 Ollama 进行增强分析\n- 多维信号打分：场景切换、运动事件、音频峰值、目标检测、动作识别与字幕检索\n- 可视化时间轴与剪辑导出：支持微调片段并直接渲染合并成片\n\n许可：AGPL-3.0\n官方仓库：https://github.com/Aseiel/VideoHighlighter",
+    "source": "https://github.com/Aseiel/VideoHighlighter",
+    "officialUrl": "https://github.com/Aseiel/VideoHighlighter",
+    "repository": "https://github.com/Aseiel/VideoHighlighter",
+    "documentation": "https://github.com/Aseiel/VideoHighlighter#readme",
+    "addedAt": "2026-11-17",
+    "verifiedAt": "2026-11-17",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-video-highlighter/author-example.png",
+      "alt": "VideoHighlighter 官方评分时间轴与高光剪辑界面截图（TimelineViewer.png）",
+      "width": 2327,
+      "height": 1032
+    },
+    "previewSource": "https://raw.githubusercontent.com/Aseiel/VideoHighlighter/main/assets/TimelineViewer.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-17 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "VideoHighlighter (Local AI Video Highlight Editor)",
+      "description": "Open-source local AI video analyzer and highlight editor that scores scenes, actions, objects, audio peaks, and transcripts on an interactive timeline and exports compiled highlight reels.",
+      "tags": "AI video editing / Highlights / Local offline / Ollama / Timeline / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-17. Original media preserved; not generated here."
+    }
+  },
+  {
     "id": "website-aitoearn",
     "kind": "website",
     "title": "AitoEarn（一人公司 AI 自媒体运营智能体）",
