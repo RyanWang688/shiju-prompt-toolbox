@@ -1,5 +1,188 @@
 [
   {
+    "id": "website-rustdesk",
+    "kind": "website",
+    "title": "RustDesk（开源全平台远程控制软件）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 近 13 万 Star 的免费开源远程控制工具，支持 Windows、macOS、Android 与 iOS，免注册即开即用，并支持自建中继服务器保障隐私合规。",
+    "tags": "远程控制 / 开源软件 / 跨平台 / 自建中继 / TeamViewer替代",
+    "pricing": "free",
+    "prompt": "RustDesk（开源全平台远程控制软件）\n\n用途\n全平台开源远程桌面控制工具（支持 Windows、macOS、Linux、Android、iOS），替代向日葵与 TeamViewer，打开即可获取设备 ID 与密码建立连接，支持自建中继与端到端加密。\n\n许可：AGPL-3.0\n官网：https://rustdesk.com/\n官方仓库：https://github.com/rustdesk/rustdesk",
+    "source": "https://rustdesk.com/",
+    "officialUrl": "https://rustdesk.com/",
+    "repository": "https://github.com/rustdesk/rustdesk",
+    "documentation": "https://github.com/rustdesk/rustdesk#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-rustdesk/author-example.png",
+      "alt": "RustDesk 官方桌面远程控制界面截图",
+      "width": 1368,
+      "height": 684
+    },
+    "previewSource": "https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "RustDesk (Open-Source Remote Desktop Software)",
+      "description": "130k+ star open-source remote desktop alternative to TeamViewer across Windows, macOS, Linux, Android, and iOS with self-hosting support.",
+      "tags": "Remote desktop / Open source / Cross-platform / Self-hosted / AGPL-3.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here.",
+      "license": "AGPL-3.0"
+    },
+    "license": "AGPL-3.0"
+  },
+  {
+    "id": "website-localsend",
+    "kind": "website",
+    "title": "LocalSend（跨设备局域网高速文件互传）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 9.8 万 Star 的跨平台开源局域网传输工具，同一 Wi-Fi 下自动发现设备、点对点发送原文件，无需登录或公网服务器，打造全平台 AirDrop。",
+    "tags": "文件传输 / 局域网互传 / AirDrop替代 / 跨平台 / 开源",
+    "pricing": "free",
+    "prompt": "LocalSend（跨设备局域网高速文件互传）\n\n用途\n开源跨平台局域网点对点文件与文本互传工具（支持 Windows、macOS、Linux、Android、iOS），无需账号或外网连接，文件不经云端中转，跑满本地带宽。\n\n许可：MIT\n官网：https://localsend.org/\n官方仓库：https://github.com/localsend/localsend",
+    "source": "https://localsend.org/",
+    "officialUrl": "https://localsend.org/",
+    "repository": "https://github.com/localsend/localsend",
+    "documentation": "https://github.com/localsend/localsend#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-localsend/author-example.png",
+      "alt": "LocalSend 官方桌面端文件传输界面截图",
+      "width": 2000,
+      "height": 1182
+    },
+    "previewSource": "https://localsend.org/img/screenshot-pc.webp",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "LocalSend (Cross-Platform Local File Sharing)",
+      "description": "98k+ star open-source AirDrop alternative for sharing files over local Wi-Fi across Windows, macOS, Linux, iOS, and Android without internet or accounts.",
+      "tags": "File sharing / LAN transfer / AirDrop alternative / Cross-platform / MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here.",
+      "license": "MIT"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "website-stirling-pdf",
+    "kind": "website",
+    "title": "Stirling-PDF（本地离线全能 PDF 处理套件）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 9.6 万 Star 的本地自托管 PDF 工具箱，集成合并、拆分、压缩、转 Word、电子签名与 OCR 等 60+ 功能，完整中文界面且支持自动化流水线。",
+    "tags": "PDF工具 / 本地离线 / OCR识别 / 自动化流水线 / 开源",
+    "pricing": "free",
+    "prompt": "Stirling-PDF（本地离线全能 PDF 处理套件）\n\n用途\n完全在本地运行的开源 PDF 处理工具集，支持合并、拆分、压缩、格式互转、电子签名、水印与 OCR 识别等 60+ 操作，提供完整中文界面及多步批量流水线。\n\n许可：GPL-3.0\n官网：https://www.stirlingpdf.com/\n官方仓库：https://github.com/Stirling-Tools/Stirling-PDF",
+    "source": "https://www.stirlingpdf.com/",
+    "officialUrl": "https://www.stirlingpdf.com/",
+    "repository": "https://github.com/Stirling-Tools/Stirling-PDF",
+    "documentation": "https://github.com/Stirling-Tools/Stirling-PDF#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-stirling-pdf/author-example.png",
+      "alt": "Stirling-PDF 官方全能 PDF 工具箱主页截图",
+      "width": 3200,
+      "height": 1800
+    },
+    "previewSource": "https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/main/docs/images/home-light.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Stirling-PDF (Local All-in-One PDF Suite)",
+      "description": "96k+ star self-hosted, offline-capable PDF toolkit with 60+ operations including merge, split, compress, Word conversion, e-signing, OCR, and automated pipelines.",
+      "tags": "PDF tools / Self-hosted / Offline / OCR / Pipelines / GPL-3.0",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here.",
+      "license": "GPL-3.0"
+    },
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "website-mole",
+    "kind": "website",
+    "title": "Mole（开源跨平台电脑清理与系统优化工具）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "7.5 万+ Star 的开源系统清理与监控工具（开源版 CleanMyMac），支持 Mac 与 Windows，整合缓存清理、彻底卸载残留、磁盘分析与 CPU/内存监控。",
+    "tags": "系统清理 / CleanMyMac替代 / 磁盘分析 / 彻底卸载 / 开源",
+    "pricing": "free",
+    "prompt": "Mole（开源跨平台电脑清理与系统优化工具）\n\n用途\n整合深度清理（mo clean）、残留卸载（mo uninstall）、磁盘分析（mo analyze）、系统监控（mo status）与开发依赖清理（mo purge），支持 Mac 与 Windows，清理前列出确认清单防止误删。\n\n官方仓库\nhttps://github.com/tw93/Mole",
+    "source": "https://github.com/tw93/Mole",
+    "officialUrl": "https://github.com/tw93/Mole",
+    "repository": "https://github.com/tw93/Mole",
+    "documentation": "https://github.com/tw93/Mole#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-mole/author-example.png",
+      "alt": "tw93/Mole 官方项目展示图",
+      "width": 2593,
+      "height": 1458
+    },
+    "previewSource": "https://raw.githubusercontent.com/tw93/Mole/main/docs/img/big-mole.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Mole (Open-Source System Cleaner & Optimizer)",
+      "description": "75k+ star open-source CleanMyMac alternative for Mac and Windows combining deep cache cleaning, thorough app uninstallation, disk analysis, and live system monitoring.",
+      "tags": "System cleaner / CleanMyMac alternative / Disk analyzer / Uninstaller",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here."
+    }
+  },
+  {
+    "id": "website-motrix",
+    "kind": "website",
+    "title": "Motrix（清爽无广告开源多协议下载器）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 5.8 万 Star 的清爽开源下载管理器，支持 HTTP、BT 种子与磁力链接，可配浏览器扩展接管下载或部署在 NAS，现已推出全新底层重写版本。",
+    "tags": "下载器 / BT磁力 / 多协议 / 浏览器接管 / NAS部署 / MIT",
+    "pricing": "free",
+    "prompt": "Motrix（清爽无广告开源多协议下载器）\n\n用途\n无广告、无会员限制的跨平台开源下载管理器，全面支持 HTTP、FTP、BitTorrent 与磁力链接，配合浏览器扩展接管下载，支持 Headless/Docker 部署在 NAS。\n\n许可：MIT\n官网：https://motrix.app/\n官方仓库：https://github.com/agalwood/Motrix",
+    "source": "https://motrix.app/",
+    "officialUrl": "https://motrix.app/",
+    "repository": "https://github.com/agalwood/Motrix",
+    "documentation": "https://github.com/agalwood/Motrix#readme",
+    "addedAt": "2026-11-18",
+    "verifiedAt": "2026-11-18",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-motrix/author-example.png",
+      "alt": "Motrix 官方多协议下载管理界面截图",
+      "width": 2340,
+      "height": 1820
+    },
+    "previewSource": "https://cdn.nlark.com/yuque/0/2020/png/129147/1589782238501-e7b39166-da58-4152-ae34-65a061cafa48.png",
+    "previewEvidence": "author-repository-example",
+    "previewNote": "作者官方仓库公开的真实示例，2026-11-18 收录；保留原始媒体，非本次运行成果。",
+    "en": {
+      "title": "Motrix (Clean Open-Source Multi-Protocol Downloader)",
+      "description": "58k+ star ad-free open-source download manager supporting HTTP, BitTorrent, and magnet links with browser extensions and headless NAS deployment.",
+      "tags": "Download manager / BitTorrent / Magnet / NAS / MIT",
+      "previewNote": "Real public example from the author’s official repository, collected on 2026-11-18. Original media preserved; not generated here.",
+      "license": "MIT"
+    },
+    "license": "MIT"
+  },
+  {
     "id": "website-qwen-code",
     "kind": "website",
     "title": "Qwen Code（通义千问开源终端 AI 编程智能体）",
