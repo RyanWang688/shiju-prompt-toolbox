@@ -1,5 +1,42 @@
 [
   {
+    "id": "website-typewords",
+    "kind": "website",
+    "title": "TypeWords（开源打字背单词与英语学习工具）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 1.2 万+ Star 的开源免费背单词工具，通过打字输入强化肌肉记忆并结合复习算法记忆，内置四六级、专四专八、雅思托福等词库并支持自定义导入。",
+    "tags": "背单词 / 打字记忆 / 英语学习 / 四六级雅思 / 开源免费 / GPL-3.0",
+    "pricing": "free",
+    "license": "GPL-3.0",
+    "prompt": "TypeWords（开源打字背单词与英语学习工具）\n\n用途\n完全开源免费的英语打字背单词工具，无需注册即可直接练习。通过反复打字输入形成肌肉记忆，结合间隔复习算法巩固词汇。\n\n核心特点\n- 内置丰富词库：四六级、专四专八、雅思、托福、新概念等\n- 支持自定义导入生词表与本地进度保存\n- 支持网页在线使用及本地部署\n\n许可：GPL-3.0\n官网：https://typewords.cc\n官方仓库：https://github.com/zyronon/TypeWords",
+    "source": "https://typewords.cc",
+    "officialUrl": "https://typewords.cc",
+    "repository": "https://github.com/zyronon/TypeWords",
+    "documentation": "https://github.com/zyronon/TypeWords#readme",
+    "addedAt": "2026-11-19",
+    "verifiedAt": "2026-11-19",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-typewords/official-site.jpg",
+      "alt": "TypeWords 官网在线背单词界面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://typewords.cc",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-19 实际打开官网后的网页截图；仅收藏，未注册登录。",
+    "en": {
+      "title": "TypeWords (Open-Source Typing Vocabulary Trainer)",
+      "description": "12k+ star GPL-3.0 open-source vocabulary trainer building muscle memory through typing practice and spaced repetition, with built-in CET-4/6, TEM, IELTS, TOEFL, and custom wordlists.",
+      "tags": "Vocabulary / Typing practice / English learning / IELTS TOEFL / GPL-3.0",
+      "license": "GPL-3.0",
+      "previewNote": "Screenshot of the official site taken on 2026-11-19; saved for reference only."
+    }
+  },
+  {
     "id": "skill-agency-agents",
     "kind": "skill",
     "title": "Agency Agents（16 万+ Star 多部门 AI 专家数字员工套件）",
