@@ -1,5 +1,44 @@
 [
   {
+    "id": "skill-agency-agents",
+    "kind": "skill",
+    "title": "Agency Agents（16 万+ Star 多部门 AI 专家数字员工套件）",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具",
+      "写作创作",
+      "视觉设计"
+    ],
+    "description": "GitHub 超 16 万 Star 的开源多部门 AI 专家角色库，打包技术开发、UI/UX 设计、数据分析、出海营销、测试运维与学术研究等角色，直接接入 Claude/Cursor/Codex/Windsurf。",
+    "tags": "AI专家团队 / 数字员工 / 多部门角色 / Cursor / Claude Code / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "Agency Agents（多部门 AI 专家数字员工套件）\n\n用途\n将一整套经过验证的跨部门 AI 专家角色打包为可复用配置，帮助一人公司或独立开发者在创业 MVP、黑客松、营销策划与全栈开发中调用对应专家协同推进。\n\n内置部门与角色\n- 技术开发：架构师、前端、后端、小程序开发、代码审核\n- 设计与数据：UI/UX 设计、数据处理、知识库构建\n- 业务增长：媒体分析、文案撰写、出海营销、多平台运营策略\n- 综合支撑：项目管理、测试、运维、财务、游戏开发、学术研究\n\n许可：MIT\n官方仓库：https://github.com/msitarzewski/agency-agents\n中文版参考：https://github.com/jnMetaCode/agency-agents-zh",
+    "source": "https://github.com/msitarzewski/agency-agents",
+    "officialUrl": "https://github.com/msitarzewski/agency-agents",
+    "repository": "https://github.com/msitarzewski/agency-agents",
+    "documentation": "https://github.com/msitarzewski/agency-agents#readme",
+    "addedAt": "2026-11-19",
+    "verifiedAt": "2026-11-19",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-agency-agents/official-site.jpg",
+      "alt": "msitarzewski/agency-agents 官方 GitHub 仓库页面截图",
+      "width": 1380,
+      "height": 900
+    },
+    "previewSource": "https://github.com/msitarzewski/agency-agents",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-19 实际打开官方仓库页面后的截图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "Agency Agents (169k+ Star Multi-Department AI Specialists)",
+      "description": "169k+ star MIT-licensed collection of specialized AI agent personas across engineering, UI/UX design, data, marketing, testing, ops, finance, and academic research for Claude Code, Cursor, Codex, and Windsurf.",
+      "tags": "AI agency / Specialist personas / Multi-department / Cursor / Claude Code / MIT",
+      "license": "MIT",
+      "previewNote": "Screenshot of the official repository page taken on 2026-11-19; saved for reference only."
+    }
+  },
+  {
     "id": "website-rustdesk",
     "kind": "website",
     "title": "RustDesk（开源全平台远程控制软件）",
