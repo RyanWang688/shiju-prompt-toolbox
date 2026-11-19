@@ -1,5 +1,228 @@
 [
   {
+    "id": "website-sure",
+    "kind": "website",
+    "title": "Sure（开源本地记账与 AI 个人理财应用）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "社区接棒 Maybe Finance 维护的开源个人记账理财应用（1.6 万+ Star），支持本地电脑与手机端部署，提供收支追踪、净资产可视化视图与内置 AI 理财规划助手。",
+    "tags": "记账理财 / 个人财务 / AI理财助手 / 自托管 / Maybe Finance / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "Sure（开源本地记账与 AI 个人理财应用）\n\n用途\n由社区延续 Maybe Finance 打造的开源个人财务与资产管理应用，支持完全自托管或本地部署，帮助梳理日常收支、净资产走势与多账户预算。\n\n核心特点\n- 收支流水、资产负债表与净资产趋势可视化视图\n- 支持多币种、分类预算与自动记账规则\n- 内置 AI 理财助手，可围绕储蓄与财务规划提问\n- Docker 一键本地部署，数据完全自主掌控\n\n许可：AGPL-3.0\n官网：https://sure.am\n官方仓库：https://github.com/we-promise/sure",
+    "source": "https://sure.am",
+    "officialUrl": "https://sure.am",
+    "repository": "https://github.com/we-promise/sure",
+    "documentation": "https://github.com/we-promise/sure#readme",
+    "addedAt": "2026-11-20",
+    "verifiedAt": "2026-11-20",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-sure/official-preview.webp",
+      "alt": "Sure 官方 README 个人财务与净资产面板截图",
+      "width": 2620,
+      "height": 1775
+    },
+    "previewSource": "https://github.com/we-promise/sure",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-20 取自官方仓库 README 实机界面截图；仅收藏，未部署运行。",
+    "en": {
+      "title": "Sure (Open-Source Self-Hosted Personal Finance App)",
+      "description": "Community-maintained successor to Maybe Finance (16k+ stars) for self-hosted income, expense, and net worth tracking with multi-currency budgets and a built-in AI financial assistant.",
+      "tags": "Personal finance / Net worth / Self-hosted / AI assistant / Maybe Finance / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Screenshot from the official repository README; saved for reference only."
+    }
+  },
+  {
+    "id": "website-open-code-review",
+    "kind": "website",
+    "title": "Open Code Review（阿里开源混合架构 AI 代码审查助手）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "阿里巴巴开源的生产级 AI 代码审查工具（5.4 万+ Star），采用确定性静态分析流水线 + LLM Agent 混合架构，审查精度高且 Token 消耗仅为常规 Agent 的约 1/9。",
+    "tags": "代码审查 / 静态分析 / 省Token / 阿里巴巴 / CLI / MCP / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "Open Code Review（阿里开源混合架构 AI 代码审查助手）\n\n用途\n历经阿里巴巴内部大规模工程实践打磨后开源的 AI 代码审查 CLI（ocr），通过确定性规则层先收敛 Diff 上下文，再由 Judge Agent 给出行级精准审查意见。\n\n核心特点\n- 确定性流水线 + LLM 混合架构，Token 开销约为通用 Agent 的 1/9\n- 内置多语言安全与缺陷规则集（NPE、线程安全、XSS、SQL 注入等）\n- 支持独立 CLI、GitHub Actions / GitLab CI 及 Claude Code / Cursor / MCP 集成\n\n许可：Apache-2.0\n官网：https://open-codereview.ai\n官方仓库：https://github.com/alibaba/open-code-review",
+    "source": "https://open-codereview.ai",
+    "officialUrl": "https://open-codereview.ai",
+    "repository": "https://github.com/alibaba/open-code-review",
+    "documentation": "https://github.com/alibaba/open-code-review#readme",
+    "addedAt": "2026-11-20",
+    "verifiedAt": "2026-11-20",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-open-code-review/official-preview.png",
+      "alt": "alibaba/open-code-review 官方 README 核心亮点架构图",
+      "width": 2560,
+      "height": 536
+    },
+    "previewSource": "https://github.com/alibaba/open-code-review",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-20 取自官方仓库 README 亮点架构图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "Open Code Review (Alibaba Hybrid AI Code Review CLI)",
+      "description": "54k+ star Apache-2.0 code review CLI from Alibaba combining deterministic static pipelines with an LLM Judge Agent for line-level precision at ~1/9th the token cost.",
+      "tags": "Code review / Static analysis / Token-saving / Alibaba / CLI / MCP / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Architecture highlights graphic from the official repository README; saved for reference only."
+    }
+  },
+  {
+    "id": "skill-chrome-devtools-mcp",
+    "kind": "skill",
+    "title": "Chrome DevTools MCP（Google 官方浏览器调试与性能 MCP）",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "description": "Google Chrome 团队官方开源的 MCP 服务器（5.8 万+ Star），让 Claude、Cursor、Copilot 等 AI 代理直接操控真实 Chrome 浏览器，查看控制台报错、网络请求并录制性能 Trace。",
+    "tags": "MCP / Chrome DevTools / 浏览器自动化 / 性能分析 / Google / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "Chrome DevTools MCP（Google 官方浏览器调试与性能 MCP）\n\n用途\n由 Chrome DevTools 团队官方维护的 Model Context Protocol 服务，为编程 Agent 赋予真实浏览器控制、DOM/控制台排查、网络监控与 Lighthouse/Trace 性能分析能力。\n\n核心特点\n- 模拟点击、输入、上传与响应式视口测试\n- 读取带 SourceMap 的控制台报错、DOM 快照与完整网络请求\n- 一键录制性能追踪（Performance Trace）并输出优化洞察\n\n许可：Apache-2.0\n官方文档：https://developer.chrome.com/docs/devtools/agents\n官方仓库：https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "source": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "officialUrl": "https://developer.chrome.com/docs/devtools/agents",
+    "repository": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "documentation": "https://github.com/ChromeDevTools/chrome-devtools-mcp#readme",
+    "addedAt": "2026-11-20",
+    "verifiedAt": "2026-11-20",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-chrome-devtools-mcp/official-site.png",
+      "alt": "Chrome for Developers 官方 Chrome DevTools MCP 文档页截图",
+      "width": 1024,
+      "height": 668
+    },
+    "previewSource": "https://developer.chrome.com/docs/devtools/agents",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-20 实际打开 Chrome for Developers 官方文档页面后的截图；仅收藏。",
+    "en": {
+      "title": "Chrome DevTools MCP (Official Browser Debugging & Trace Server)",
+      "description": "58k+ star Apache-2.0 MCP server from the Chrome DevTools team letting AI coding agents inspect console errors, network requests, DOM snapshots, and performance traces in real Chrome.",
+      "tags": "MCP / Chrome DevTools / Browser automation / Performance / Google / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official Chrome for Developers documentation page taken on 2026-11-20; saved for reference only."
+    }
+  },
+  {
+    "id": "website-plannotator",
+    "kind": "website",
+    "title": "Plannotator（浏览器内 AI 方案/网页批注与多 Agent 收件箱）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 1.3 万+ Star 的开源本地批注工作台，支持在浏览器中对 AI 生成的执行方案、代码 Diff 与网页原型直接划线批注，并通过统一收件箱协同多个 Agent 并行工作。",
+    "tags": "网页批注 / 代码审查 / 多智能体协作 / 人工审核 / Claude Code / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "Plannotator（浏览器内 AI 方案/网页批注与多 Agent 收件箱）\n\n用途\n专为长时运行编程 Agent 设计的本地浏览器审阅工作台，无需在终端里用大段文字解释哪里不对，直接在页面或计划书上划线批注并一键回传给对应 Agent。\n\n核心特点\n- 交互式计划/Spec 划线、删除与行内批注反馈\n- 统一 Inbox 收件箱：集中承接多个并行 Agent 的提问、Diff 与 HTML 原型\n- 支持 Claude Code、Codex、OpenCode、Gemini CLI、Git/jj 等生态\n\n许可：Apache-2.0\n官网：https://plannotator.ai\n官方仓库：https://github.com/backnotprop/plannotator",
+    "source": "https://plannotator.ai",
+    "officialUrl": "https://plannotator.ai",
+    "repository": "https://github.com/backnotprop/plannotator",
+    "documentation": "https://github.com/backnotprop/plannotator#readme",
+    "addedAt": "2026-11-20",
+    "verifiedAt": "2026-11-20",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-plannotator/official-banner.webp",
+      "alt": "backnotprop/plannotator 官方 README 横幅展示图",
+      "width": 1500,
+      "height": 500
+    },
+    "previewSource": "https://github.com/backnotprop/plannotator",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-20 取自官方仓库 README 展示图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "Plannotator (In-Browser Plan, Diff & Multi-Agent Inbox)",
+      "description": "13k+ star Apache-2.0 local browser workspace to visually annotate AI-generated plans, code diffs, and HTML previews, and manage multiple concurrent coding agents from a unified inbox.",
+      "tags": "Plan review / Code annotation / Multi-agent / Inbox / Claude Code / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Banner image from the official repository README; saved for reference only."
+    }
+  },
+  {
+    "id": "skill-ffmpeg-skill",
+    "kind": "skill",
+    "title": "ffmpeg-skill（42 项本地 AI 视频剪辑与自动质检 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频",
+      "开发工具"
+    ],
+    "description": "面向编程 Agent 的开源本地视频编辑技能与 MCP 服务，内置 42 个 FFmpeg 类型化工具，支持字幕、横竖屏重构、静音裁剪与响度均衡，纯本地运行无需 API Key 且自动质检成品。",
+    "tags": "FFmpeg / 视频剪辑 / 动画视频 / MCP / 本地运行 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "ffmpeg-skill（42 项本地 AI 视频剪辑与自动质检 Skill）\n\n用途\n将 FFmpeg / ffprobe 封装为 42 个带机器可读契约的 Python 工具与 MCP 服务，让 Claude Code、Cursor、Codex 按照「Probe → Edit → Check → Look」闭环可靠完成本地视频处理。\n\n核心特点\n- 42 项常见及进阶视频能力：关键帧无损剪辑、9:16 横竖屏转换、自动字幕、静音剪除、LUFS 音量均衡\n- 全程本地运行，视频不出本机、无需任何云端 API Key\n- 编辑完成后自动调用 Check / Look 生成检验报告与接触表\n\n许可：MIT\n官方仓库：https://github.com/kajisho5/ffmpeg-skill",
+    "source": "https://github.com/kajisho5/ffmpeg-skill",
+    "officialUrl": "https://www.npmjs.com/package/ffmpeg-skill",
+    "repository": "https://github.com/kajisho5/ffmpeg-skill",
+    "documentation": "https://github.com/kajisho5/ffmpeg-skill#readme",
+    "addedAt": "2026-11-20",
+    "verifiedAt": "2026-11-20",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ffmpeg-skill/official-og.png",
+      "alt": "kajisho5/ffmpeg-skill 官方 README 功能概览图",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://github.com/kajisho5/ffmpeg-skill",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-20 取自官方仓库 README 概览图；仅收藏，未安装或运行。",
+    "en": {
+      "title": "ffmpeg-skill (42 Local AI Video Editing & QA Tools)",
+      "description": "MIT-licensed local video editor for AI coding agents bundling 42 typed FFmpeg tools and an MCP server for cuts, captions, vertical reframing, silence removal, and loudness with automated Probe-Edit-Check-Look verification.",
+      "tags": "FFmpeg / Video editing / MCP / Local-first / Claude Code / MIT",
+      "license": "MIT",
+      "previewNote": "Overview graphic from the official repository README; saved for reference only."
+    }
+  },
+  {
+    "id": "website-codex-security",
+    "kind": "website",
+    "title": "Codex Security（OpenAI 官方代码安全扫描与补丁验证工具）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "OpenAI 官方开源的代码安全扫描 CLI 与 TypeScript SDK（1.4 万+ Star），可根据代码库上下文自动构建威胁模型、扫描漏洞、生成并验证安全补丁，支持集成 GitHub 工作流。",
+    "tags": "安全审计 / 漏洞扫描 / OpenAI / Codex / GitHub Actions / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "Codex Security（OpenAI 官方代码安全扫描与补丁验证工具）\n\n用途\nOpenAI 官方推出的应用安全（AppSec）工具集，在 Codex、终端 CLI（cs scan）或 GitHub Actions 中自动完成代码威胁建模、高危漏洞排查与补丁生成验证。\n\n核心特点\n- 针对认证/授权等关键路径自动建立上下文威胁模型并深度扫描\n- 不仅标记风险，还会尝试验证候选漏洞并生成/校验修复补丁\n- 支持输出 SARIF/JSON/Markdown 报告并接入 GitHub PR 自动化检查\n\n许可：Apache-2.0\n官方文档：https://developers.openai.com/codex/security\n官方仓库：https://github.com/openai/codex-security",
+    "source": "https://developers.openai.com/codex/security",
+    "officialUrl": "https://developers.openai.com/codex/security",
+    "repository": "https://github.com/openai/codex-security",
+    "documentation": "https://github.com/openai/codex-security#readme",
+    "addedAt": "2026-11-20",
+    "verifiedAt": "2026-11-20",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-codex-security/official-site.png",
+      "alt": "OpenAI Codex Security 官方文档与漏洞概览界面截图",
+      "width": 1024,
+      "height": 668
+    },
+    "previewSource": "https://developers.openai.com/codex/security",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-20 实际打开 OpenAI Codex Security 官方文档页面后的截图；仅收藏。",
+    "en": {
+      "title": "Codex Security (Official OpenAI AppSec Scanner & Patch Verifier)",
+      "description": "14k+ star Apache-2.0 AppSec CLI and TypeScript SDK from OpenAI that builds codebase threat models, scans vulnerabilities, and generates/validates security patches in Codex and GitHub workflows.",
+      "tags": "Security audit / Vulnerability scanner / OpenAI / Codex / CI/CD / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Screenshot of the official OpenAI Codex Security docs page taken on 2026-11-20; saved for reference only."
+    }
+  },
+  {
     "id": "website-typewords",
     "kind": "website",
     "title": "TypeWords（开源打字背单词与英语学习工具）",
