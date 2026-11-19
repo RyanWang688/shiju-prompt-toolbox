@@ -30,14 +30,17 @@ for item in items:
         path = (root / preview['src']).resolve()
         assert path.is_relative_to((root / 'assets').resolve()) and path.is_file()
 data = json.dumps(items, ensure_ascii=False).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')
+import sys
+sys.path.insert(0, str(root))
+import graph_builder
+graph_data = graph_builder.build(root, items).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')
 template = (root / 'index.template.html').read_text(encoding='utf-8')
 assert template.count('__PROMPTS__') == 1
-(root / 'index.html').write_text(template.replace('__PROMPTS__', data), encoding='utf-8')
+assert template.count('__GRAPH__') == 1
+(root / 'index.html').write_text(template.replace('__PROMPTS__', data).replace('__GRAPH__', graph_data), encoding='utf-8')
 print(f'Built index.html with {len(items)} prompts.')
 
 # Night mode: regenerate the dark stylesheet from the light one so the two never drift apart.
-import sys
-sys.path.insert(0, str(root))
 import dark_theme
 print(f'Wrote assets/dashboard-dark.css with {dark_theme.build(root)} dark selectors.')
 

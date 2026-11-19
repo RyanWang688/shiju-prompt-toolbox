@@ -176,10 +176,43 @@ html[data-theme=dark] .rail-tooltip{background:#ededef;color:#09090b;box-shadow:
 /* Header controls. */
 html[data-theme=dark] .lang-switch,html[data-theme=dark] .dashboard .top .theme-toggle{background:#111113;border-color:#ffffff1f}
 /* Text that sits on the yellow accent stays dark. */
-@media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open):not(:disabled),a.visit-site,.rail-brand,select):hover{color:#191919!important}}
-html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{color:#191919!important}
+@media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.graph-btn,.graph-pill,.graph-close,.graph-rel-item,.graph-seg-btn,.graph-gear):not(:disabled),a.visit-site:not(.gi-visit),.rail-brand,select):hover{color:#191919!important}}
+html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.graph-btn,.graph-pill,.graph-close,.graph-rel-item,.graph-seg-btn,.graph-gear):not(:disabled),a.visit-site:not(.gi-visit),.rail-brand,select):focus-visible{color:#191919!important}
 html[data-theme=dark] .dashboard .top .lang-switch .lang-option[aria-pressed=true],html[data-theme=dark] .dashboard .top .theme-toggle:hover{color:#191919}
 html[data-theme=dark] ::selection{background:#ffd43b;color:#191919}
+/* Obsidian dark mode for Knowledge Graph & toolbar switch. */
+html[data-theme=dark] .dashboard .view-switch{background:#111113;border-color:#ffffff16}
+html[data-theme=dark] .dashboard .view-btn{color:#8e8e96}
+html[data-theme=dark] .dashboard .view-btn:hover{background:#ffffff0d;color:#ededef}
+html[data-theme=dark] .dashboard .view-btn[aria-pressed=true]{background:#ffd43b;color:#191919}
+html[data-theme=dark] .graph-stage{background:#0b0b0e;border-color:#ffffff14}
+html[data-theme=dark] .graph-legend,html[data-theme=dark] .graph-gear,html[data-theme=dark] .graph-settings,html[data-theme=dark] .graph-controls,html[data-theme=dark] .graph-inspector,html[data-theme=dark] .graph-tooltip,html[data-theme=dark] .graph-hint{background:#141418d9;border-color:#ffffff16;color:#ededef;box-shadow:0 20px 44px -16px #000}
+html[data-theme=dark] .graph-pill{color:#a1a1aa}
+html[data-theme=dark] .graph-pill.active{background:#ffffff12;color:#ededef}
+html[data-theme=dark] .graph-pill:hover{background:#ffffff18;color:#ededef}
+html[data-theme=dark] .graph-pill .dot-hub{border-color:#ffd43b}
+html[data-theme=dark] .graph-pill .dot-skill{background:#a78bfa}
+html[data-theme=dark] .graph-pill .dot-website{background:#38bdf8}
+html[data-theme=dark] .graph-pill .dot-prompt{background:#fbbf24}
+html[data-theme=dark] .graph-stat,html[data-theme=dark] .graph-hint,html[data-theme=dark] .gi-desc,html[data-theme=dark] .gi-tags,html[data-theme=dark] .gi-empty-rel,html[data-theme=dark] .graph-tooltip span{color:#a1a1aa;border-color:#ffffff14}
+html[data-theme=dark] .graph-search-nav{background:#18181fe6;border-color:#ffd43b66}
+html[data-theme=dark] .graph-hit-label,html[data-theme=dark] .gi-title,html[data-theme=dark] .graph-tooltip b,html[data-theme=dark] .graph-set-row,html[data-theme=dark] .graph-set-col{color:#ededef}
+html[data-theme=dark] .graph-seg{background:#09090b}
+html[data-theme=dark] .graph-seg-btn{color:#a1a1aa}
+html[data-theme=dark] .graph-seg-btn.active{background:#23232b;color:#ededef}
+html[data-theme=dark] .graph-btn,html[data-theme=dark] .graph-close{background:#1b1b21;border-color:#ffffff1a;color:#ededef}
+html[data-theme=dark] .graph-btn:hover,html[data-theme=dark] .graph-close:hover{background:#272730;border-color:#ffffff33}
+html[data-theme=dark] .gi-badge{background:#ffffff10;color:#c4c4cc}
+html[data-theme=dark] .gi-badge.gi-hub{background:#ffd43b;color:#191919}
+html[data-theme=dark] .gi-cover{background:#18181b;border-color:#ffffff14}
+html[data-theme=dark] .gi-head,html[data-theme=dark] .gi-sec-label,html[data-theme=dark] .gi-foot,html[data-theme=dark] .graph-set-actions{border-color:#ffffff14;color:#a1a1aa}
+html[data-theme=dark] .dashboard a.visit-site.gi-visit{background:#1b1b21;border-color:#ffffff1a;color:#ededef}
+html[data-theme=dark] .dashboard a.visit-site.gi-visit:hover{background:#272730;border-color:#ffffff33;color:#ededef}
+html[data-theme=dark] .graph-rel-item{background:#18181f;border-color:#ffffff12;color:#ededef}
+html[data-theme=dark] .graph-rel-item:hover{background:#ffd43b1a;border-color:#ffd43b80}
+html[data-theme=dark] .gi-rel-reason{background:#ffffff10;color:#a1a1aa}
+html[data-theme=dark] .gi-fav[aria-pressed=true]{background:#ffd43b24;border-color:#ffd43b;color:#ffd43b}
+html[data-theme=dark] .graph-set-row input{accent-color:#ffd43b}
 """
 
 def build(root):
