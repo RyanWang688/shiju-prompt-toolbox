@@ -13974,5 +13974,36 @@
       "license": "MIT",
       "previewNote": "Official OpenBot site preview image captured on 2026-11-21; saved for reference only."
     }
+  },
+  {
+    "id": "mask-retouch-photo-tension",
+    "kind": "prompt",
+    "title": "模拟蒙版修图（单轴大光影提升照片张力）",
+    "category": "其他",
+    "topics": [
+      "图像创作"
+    ],
+    "tags": "AI修图 / 蒙版光影 / 商业摄影后期 / 高对比度 / 修图前vs修图后 / GPT",
+    "description": "不重绘物体、严格保留原图构图与材质的商业级蒙版修图提示词。以单条全局明暗轴线与超大羽化线性渐变塑造大面积深暗与清透亮部，显著提升照片的电影级视觉张力。",
+    "prompt": "严格保留原图主体身份、构图、透视、结构、材质、纹理及真实反射，仅通过光色、亮度、对比度与蒙版进行摄影后期，绝不重绘物体。\n\n以顶级商业摄影标准，自适应分析原图光照与空间关系，主动采用更大胆、更深沉的明暗塑造，允许大面积暗部接近深黑，显著提高整体光比，但保留必要层次。\n\n以大光影统领小光影，优先使用少量高强度、超大块羽化的方向性线性渐变。严格遵循同轴互补原则：整张画面只建立一条贯穿全局的主明暗轴线，主光方向形成连续、完整、宽阔的大面积亮部，**亮度最高的一侧必须形成覆盖整个对应方向的大面积连续亮区，而非仅在角落、边缘或局部形成一束亮光；亮部应沿整条明暗轴线的垂直方向充分铺展，保持同一明暗位置上的亮度整体一致，不得向两侧衰减形成聚光效果。**反方向形成连续、完整、深沉的大面积暗部，两者之间仅通过一条超宽、平滑、自然的羽化过渡带衔接。所有明暗变化必须沿同一轴线单向、连续、渐进地变化，**同一轴线位置上的不同区域必须服从统一的亮度分布，不得出现横向收窄、局部亮度峰值或亮区面积不足。**不得出现独立亮区、局部聚光、环绕主体的亮圈或多个互不连贯的明暗区域。亮部与暗部必须各自构成完整统一的大块面，而非多个局部蒙版拼接。禁止夹光、交叉压暗及零碎分区。\n\n主体内部同样进行多区域塑形，不以整体提亮主体或机械暗角代替精细蒙版。主体与环境必须共同服从同一条全局明暗轴线，主体内部的精细塑形只能强化原有结构和材质层次，不得破坏整体光场的连续性，不得为了突出主体而单独提亮主体或压暗其周围环境。重点保护主体关键轮廓、高光及材质细节，非关键区域大胆沉入暗部。亮部清透克制，暗部厚重纯净，中间调适度收缩，形成鲜明视觉张力。\n\n禁止新增光源、无线性渐变感、地面反光、全局压暗、畸形光影、光照割裂感、投影、虚假反射、机械暗角、碎光斑、孤立聚光、HDR及过度锐化。智能清理、修补画面视觉干扰，原色去灰增强，最终呈现大面积深暗、高对比、局部通透、干净、强方向、强反差且自然真实的高级电影级摄影质感。",
+    "sourceNote": "用户提供的《模拟蒙版修图提示词，提升照片张力》（出图：GPT）及 Before/After 对比图。",
+    "preview": {
+      "type": "image",
+      "src": "assets/mask-retouch-photo-tension/before-after.jpg",
+      "alt": "红色法拉利俯拍图蒙版修图 Before 与 After 对比效果",
+      "width": 470,
+      "height": 629
+    },
+    "previewSource": "用户提供的 GPT 蒙版修图 Before/After 实测对比截图",
+    "previewEvidence": "author-published-output",
+    "previewNote": "GPT 蒙版修图 Before/After 对比示例，已裁去手机状态栏与底部界面。",
+    "addedAt": "2026-11-21",
+    "en": {
+      "title": "Simulated Mask Retouching (Single-Axis Dramatic Photo Tension)",
+      "description": "Commercial-grade AI photo retouching prompt that preserves original geometry and materials while sculpting bold single-axis linear gradient lighting, deep clean shadows, and cinematic contrast without redrawing objects.",
+      "tags": "AI retouching / Mask lighting / Commercial photography / High contrast / Before & After / GPT",
+      "prompt": "Strictly preserve the original subject's identity, composition, perspective, geometry, materials, textures, and authentic reflections. Perform photographic post-processing solely through lighting, colour, luminance, contrast, and masking—never redraw or alter objects.\n\nFollowing top-tier commercial photography standards, adaptively analyse the original lighting and spatial structure to apply bolder, deeper tonal sculpting. Allow large shadow regions to drop near deep black, significantly increasing overall lighting contrast while preserving essential detail and separation.\n\nLet macro lighting govern micro lighting, prioritising a small number of high-strength, ultra-broad feathered directional linear gradients. Strictly follow the coaxial complementary principle: establish a single master tonal axis across the entire frame. The key-light side must form a continuous, unified, expansive bright field—the brightest side must span the entire corresponding edge as a broad continuous luminous zone rather than a narrow beam at a corner or edge, spreading evenly perpendicular to the tonal axis with consistent luminance along each iso-line and no spotlight falloff toward the sides. The opposite side must form a continuous, unified, deep shadow field, joined by a single ultra-wide, smooth, natural feathered transition band. All luminance shifts must progress unidirectionally, continuously, and monotonically along this single axis, with consistent brightness across the same axial position—no lateral narrowing, local hot spots, or undersized highlight regions. Avoid isolated bright patches, local spotlights, halos around the subject, or disconnected tonal islands. Both highlights and shadows must read as cohesive broad planes rather than stitched local masks. Avoid pincer lighting, cross-darkening, and fragmented zones.\n\nApply multi-zone tonal sculpting inside the subject as well, without relying on flat subject brightening or mechanical vignettes. Both subject and environment must obey the same global tonal axis; internal sculpting may only enhance existing form and material depth without breaking global light continuity or artificially brightening the subject / darkening its immediate halo. Protect key silhouettes, specular highlights, and material textures while letting non-essential areas sink boldly into deep shadow. Keep highlights crisp and restrained, shadows rich and clean, and midtones moderately compressed for strong visual tension.\n\nAvoid adding new light sources, losing linear gradient coherence, fake ground reflections, flat global darkening, distorted lighting, disconnected illumination, artificial cast shadows, mechanical vignettes, scattered light blotches, isolated spotlights, HDR look, or oversharpening. Clean up minor visual distractions, remove haze while enriching true colours, and deliver a cinematic, high-contrast, directional, clean, and naturally authentic photographic finish.",
+      "previewNote": "Before/After GPT mask retouching comparison with phone UI cropped out."
+    }
   }
 ]
