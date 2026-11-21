@@ -311,7 +311,6 @@
           <div class="wf-beam" aria-hidden="true"></div>
           <div class="wf-hero-head">
             <div>
-              <span class="wf-kicker">WORKFLOW COMPOSER · ZERO-CONFLICT ENGINE</span>
               <h2 class="wf-title" data-wi="描述你的项目需求，自动搭配零冲突工作流"></h2>
               <p class="wf-sub" data-wi="基于工具箱现有 Skills、实用网站与提示词，按「筹备 → 核心 → 精修 → 交付」自动组合，并隔离互斥 Skill 冲突。"></p>
             </div>

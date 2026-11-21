@@ -186,7 +186,6 @@ html[data-theme=dark] .dashboard .view-btn{color:#8e8e96}
 html[data-theme=dark] .dashboard .view-btn:hover{background:#ffffff0d;color:#ededef}
 html[data-theme=dark] .dashboard .view-btn[aria-pressed=true]{background:#ffd43b;color:#191919}
 html[data-theme=dark] .wf-hero{background:radial-gradient(640px circle at var(--mx,85%) var(--my,15%),#ffd43b14,transparent 55%),#121216;border-color:#ffffff16;box-shadow:0 24px 60px -24px #000}
-html[data-theme=dark] .wf-kicker{background:#ffd43b18;border-color:#ffd43b45;color:#ffd43b}
 html[data-theme=dark] .wf-title,html[data-theme=dark] .wf-recipe-badge,html[data-theme=dark] .wf-step-title{color:#f4f4f5}
 html[data-theme=dark] .wf-sub,html[data-theme=dark] .wf-recipe-sub,html[data-theme=dark] .wf-step-desc,html[data-theme=dark] .wf-diagnosis,html[data-theme=dark] .wf-diag-right{color:#a1a1aa}
 html[data-theme=dark] .wf-input-wrap{background:#0b0b0e;border-color:#ffffff1c}
