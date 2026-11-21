@@ -1,5 +1,227 @@
 [
   {
+    "id": "website-n8n",
+    "kind": "website",
+    "title": "n8n（21 万+ Star 开源 AI 工作流自动化平台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 21 万+ Star 的可视化工作流与 AI Agent 编排平台，支持 400+ 应用节点、Webhook、定时任务与代码节点混合编写，可自托管将繁琐重复工作全自动串联。",
+    "tags": "工作流自动化 / AI Agent / 自托管 / 低代码 / 效率工具 / Fair-code",
+    "pricing": "free",
+    "license": "Sustainable Use License",
+    "prompt": "n8n（21 万+ Star 开源 AI 工作流自动化平台）\n\n用途\n将多平台消息通知、数据同步、AI 大模型摘要与定时巡检串联成可视化自动化流水线，替代手动重复操作。\n\n核心特点\n- 可视化节点编排 + JavaScript/Python 代码节点自由混用，兼顾零代码与工程灵活性\n- 原生内置 AI Agent、RAG 知识库与 MCP 工具节点，支持接入任意大模型\n- 支持 Docker 一键私有化部署，数据完全留存在本地\n\n官网：https://n8n.io\n官方仓库：https://github.com/n8n-io/n8n",
+    "source": "https://n8n.io",
+    "officialUrl": "https://n8n.io",
+    "repository": "https://github.com/n8n-io/n8n",
+    "documentation": "https://docs.n8n.io",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-n8n/cover.jpg",
+      "alt": "n8n AI workflow automation platform 官方封面",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://n8n.io",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自 n8n 官网官方预览图；仅收藏。",
+    "en": {
+      "title": "n8n (211k+ Star Open-Source AI Workflow Automation Platform)",
+      "description": "211k+ star visual workflow & AI agent automation platform with 400+ integrations, custom JS/Python nodes, and self-hosted Docker deployment.",
+      "tags": "Workflow automation / AI Agent / Self-hosted / Low-code / Productivity",
+      "license": "Sustainable Use License",
+      "previewNote": "Official preview image from n8n.io on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-excalidraw",
+    "kind": "website",
+    "title": "Excalidraw（13.6 万+ Star 手绘风协作白板与架构图工具）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 13.6 万+ Star 的免费开源手绘风虚拟白板（MIT），打开网页即可绘制系统架构图、流程图与产品草图，支持端到端加密多人实时协作、Mermaid 转图表与矢量导出。",
+    "tags": "白板工具 / 架构图 / 流程图 / 手绘风 / 协作 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "Excalidraw（13.6 万+ Star 手绘风协作白板与架构图工具）\n\n用途\n零门槛快速画出兼具设计感与清晰度的手绘风系统架构图、流程图与方案原型，适合技术文档、汇报展示与团队头脑风暴。\n\n核心特点\n- 极简流畅的手绘质感线条，支持无限画布、矢量 PNG/SVG 导出与海量社区素材库\n- 支持端到端加密的实时多人协作白板\n- 原生支持 Mermaid 文本一键生成流程图，可本地自托管或直接在线使用\n\n许可：MIT\n官网：https://excalidraw.com\n官方仓库：https://github.com/excalidraw/excalidraw",
+    "source": "https://excalidraw.com",
+    "officialUrl": "https://excalidraw.com",
+    "repository": "https://github.com/excalidraw/excalidraw",
+    "documentation": "https://docs.excalidraw.com",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-excalidraw/cover.jpg",
+      "alt": "Excalidraw 手绘风开源协作白板官方封面",
+      "width": 1200,
+      "height": 675
+    },
+    "previewSource": "https://excalidraw.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自 Excalidraw 官网官方预览图；仅收藏。",
+    "en": {
+      "title": "Excalidraw (136k+ Star Hand-Drawn Collaborative Whiteboard)",
+      "description": "136k+ star MIT-licensed virtual whiteboard for hand-drawn architecture diagrams, flowcharts, Mermaid-to-diagram conversion, and E2E-encrypted collaboration.",
+      "tags": "Whiteboard / Architecture diagram / Flowchart / Collaboration / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image from excalidraw.com on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-appflowy",
+    "kind": "website",
+    "title": "AppFlowy（7.9 万+ Star 开源本地优先 AI 笔记与协同工作台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 7.9 万+ Star 的 Notion 开源替代品（AGPL-3.0），集文档、多维表格、看板、日历与本地 AI 助手于一体，支持数据完全私有化存储与跨平台离线编辑。",
+    "tags": "知识库 / Notion替代 / 项目管理 / 看板 / AI 笔记 / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "AppFlowy（7.9 万+ Star 开源本地优先 AI 笔记与协同工作台）\n\n用途\n搭建个人或团队的一站式项目看板、Wiki 知识库与日程工作台，彻底摆脱闭源云端笔记的锁定与隐私顾虑。\n\n核心特点\n- 一体化融合文档、Grid 多维表格、Kanban 看板与日历视图\n- 原生集成 AI 写作、总结与问答助手，支持自定义本地/云端模型\n- 基于 Rust 与 Flutter 构建，跨平台流畅离线运行且支持自托管同步\n\n许可：AGPL-3.0\n官网：https://appflowy.com\n官方仓库：https://github.com/appflowy-io/appflowy",
+    "source": "https://appflowy.com",
+    "officialUrl": "https://appflowy.com",
+    "repository": "https://github.com/appflowy-io/appflowy",
+    "documentation": "https://docs.appflowy.io",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-appflowy/cover.jpg",
+      "alt": "AppFlowy 开源 AI 知识库与项目管理界面预览",
+      "width": 1280,
+      "height": 672
+    },
+    "previewSource": "https://appflowy.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自 AppFlowy 官网官方界面预览图；仅收藏。",
+    "en": {
+      "title": "AppFlowy (79k+ Star Open-Source AI Workspace & Notion Alternative)",
+      "description": "79k+ star AGPL-3.0 local-first Notion alternative combining docs, databases, kanban boards, calendars, and AI assistance with full data ownership.",
+      "tags": "Workspace / Notion alternative / Kanban / Wiki / AI notes / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Official UI preview image from appflowy.com on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-memos",
+    "kind": "website",
+    "title": "Memos（6.4 万+ Star 轻量级开源自托管碎片笔记与闪念备忘）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 6.4 万+ Star 的极简开源碎片笔记应用（MIT），像发朋友圈一样随时记录灵感、待办与代码片段，纯 Markdown 存储、零臃肿功能，Docker 秒级部署。",
+    "tags": "碎片笔记 / 自托管 / Markdown / 知识管理 / Docker / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "Memos（6.4 万+ Star 轻量级开源自托管碎片笔记与闪念备忘）\n\n用途\n搭建私有化的灵感闪念墙与每日工作日志流，随时随地用 Markdown 记下想法、截图与链接，并通过标签快速检索。\n\n核心特点\n- 极简时间线交互，支持完整 Markdown、标签过滤、热力图与资源库\n- 隐私优先，所有笔记保存在本地 SQLite/PostgreSQL，无任何追踪\n- 单个 Docker 容器即可秒级启动，提供 REST/gRPC API 方便接入各种快捷指令与 AI\n\n许可：MIT\n官网：https://usememos.com\n官方仓库：https://github.com/usememos/memos",
+    "source": "https://usememos.com",
+    "officialUrl": "https://usememos.com",
+    "repository": "https://github.com/usememos/memos",
+    "documentation": "https://usememos.com/docs",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-memos/cover.jpg",
+      "alt": "Memos 开源轻量级碎片笔记官方封面",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://usememos.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自 Memos 官网官方预览图；仅收藏。",
+    "en": {
+      "title": "Memos (64k+ Star Lightweight Self-Hosted Note-Taking App)",
+      "description": "64k+ star MIT-licensed privacy-first micro-note & memo hub with Markdown, tag filtering, heatmaps, and instant Docker deployment.",
+      "tags": "Note-taking / Self-hosted / Markdown / Knowledge base / Docker / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image from usememos.com on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-cherry-studio",
+    "kind": "website",
+    "title": "Cherry Studio（5.3 万+ Star 全能多模型桌面 AI 生产力客户端）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 5.3 万+ Star 的跨平台桌面 AI 工作台（AGPL-3.0），统一接入云端大模型与本地 Ollama，支持多模型同屏对比、本地 RAG 知识库、MCP 工具调用与数百个预设助手。",
+    "tags": "AI 客户端 / 多模型聚合 / 本地知识库 / MCP / Ollama / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "Cherry Studio（5.3 万+ Star 全能多模型桌面 AI 生产力客户端）\n\n用途\n在 Mac、Windows、Linux 桌面端一站式管理所有主流大模型 API 与本地模型，结合本地文档知识库与 MCP 工具高效完成写作、翻译、分析与编程任务。\n\n核心特点\n- 支持 OpenAI、Claude、Gemini、DeepSeek 及本地 Ollama 等几十家服务商统一切换\n- 内置本地文件 RAG 知识库、划词翻译、多模型并行回答与 MCP 插件生态\n- 界面精致流畅、开箱即用，支持 WebDAV 云端备份配置与对话记录\n\n许可：AGPL-3.0\n官网：https://cherryai.com\n官方仓库：https://github.com/CherryHQ/cherry-studio",
+    "source": "https://cherryai.com",
+    "officialUrl": "https://cherryai.com",
+    "repository": "https://github.com/CherryHQ/cherry-studio",
+    "documentation": "https://docs.cherry-ai.com",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-cherry-studio/cover.jpg",
+      "alt": "Cherry Studio 跨平台桌面 AI 客户端官方介绍卡片",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://github.com/CherryHQ/cherry-studio",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-22 取自 CherryHQ/cherry-studio 官方 GitHub 封面图；仅收藏。",
+    "en": {
+      "title": "Cherry Studio (53k+ Star Cross-Platform Desktop AI Workspace)",
+      "description": "53k+ star AGPL-3.0 desktop AI client supporting cloud & local Ollama models, multi-model side-by-side chat, local RAG knowledge bases, and MCP tools.",
+      "tags": "AI client / Multi-model / Local RAG / MCP / Ollama / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Official repository social card from CherryHQ/cherry-studio on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-it-tools",
+    "kind": "website",
+    "title": "IT-Tools（4.1 万+ Star 开发者与日常百宝箱在线工具集）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 4.1 万+ Star 的开源在线工具百宝箱（GPL-3.0），内置 80+ 高频小工具（JSON/YAML 转换、正则测试、JWT 解析、密码生成、二维码、颜色转换等），纯本地浏览器计算、支持 Docker 自托管。",
+    "tags": "效率百宝箱 / 开发者工具 / JSON格式化 / 自托管 / 在线工具 / GPL-3.0",
+    "pricing": "free",
+    "license": "GPL-3.0",
+    "prompt": "IT-Tools（4.1 万+ Star 开发者与日常百宝箱在线工具集）\n\n用途\n替代充满广告与隐私风险的杂乱在线小工具网站，在一个极简快速的界面中搞定编解码、格式转换、加解密、时间戳、正则调试等高频日常需求。\n\n核心特点\n- 收录 80+ 实用小工具，支持 Ctrl+K 全局秒搜与常用工具收藏\n- 所有处理均在浏览器本地完成，敏感文本与 Token 不上传服务器\n- 支持 Docker 一键内网自托管，适合个人效率工作台与团队内网部署\n\n许可：GPL-3.0\n官网：https://it-tools.tech\n官方仓库：https://github.com/CorentinTh/it-tools",
+    "source": "https://it-tools.tech",
+    "officialUrl": "https://it-tools.tech",
+    "repository": "https://github.com/CorentinTh/it-tools",
+    "documentation": "https://github.com/CorentinTh/it-tools#readme",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-it-tools/cover.jpg",
+      "alt": "IT-Tools 开源开发者与日常百宝箱工具集官方预览",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://it-tools.tech",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自 it-tools.tech 官方预览图；仅收藏。",
+    "en": {
+      "title": "IT-Tools (41k+ Star Handy Open-Source Utility Toolbox)",
+      "description": "41k+ star GPL-3.0 collection of 80+ privacy-first browser utilities (JSON/YAML, regex, JWT, UUID, QR, hash, color converters) with instant Docker self-hosting.",
+      "tags": "Utility toolbox / Developer tools / Converters / Self-hosted / GPL-3.0",
+      "license": "GPL-3.0",
+      "previewNote": "Official banner image from it-tools.tech on 2026-11-22; saved for reference only."
+    }
+  },
+  {
     "id": "mask-retouch-photo-tension",
     "kind": "prompt",
     "title": "模拟蒙版修图（单轴大光影提升照片张力）",
