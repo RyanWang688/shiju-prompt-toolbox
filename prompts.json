@@ -13863,5 +13863,116 @@
       "previewNote": "Interactive demo hand-built from the prompt — not model output."
     },
     "kind": "prompt"
+  },
+  {
+    "id": "website-concat",
+    "kind": "website",
+    "title": "Concat（全平台本地离线开源视频剪辑软件，自带 MCP 接口）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 1.9 万+ Star 的跨平台开源视频剪辑工具，支持 Mac、Windows 与移动端全本地离线运行，内置自动字幕、人声分离、声音克隆与智能抠图，并提供 MCP / JSON-RPC 接口支持 AI 自动剪辑。",
+    "tags": "视频剪辑 / 离线工具 / MCP / 自动字幕 / 声音克隆 / 智能抠图 / Rust / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "Concat（全平台本地离线开源视频剪辑软件，自带 MCP 接口）\n\n用途\n作为云端剪辑软件的本地优先免费开源替代品，基于 Rust 与 GPU 合成器打造，在本地设备离线完成多轨剪辑、AI 语音与视觉特效处理，并可直接通过内置 MCP Server 交由 AI Agent 自动剪辑。\n\n核心特点\n- 全平台支持（Mac / Windows / 移动端），所有素材与 AI 推理均在本地离线运行，保护隐私\n- 内置自动字幕、人声分离、声音克隆、智能抠图、关键帧动画与 4K 导出\n- 原生提供 JSON-RPC API 与 MCP 接口（concat --mcp），支持 AI 直接操控时间线与批处理任务\n\n许可：AGPL-3.0\n官网：https://concat.standalones.org\n官方仓库：https://github.com/jub0t/Concat",
+    "source": "https://concat.standalones.org",
+    "officialUrl": "https://concat.standalones.org",
+    "repository": "https://github.com/jub0t/Concat",
+    "documentation": "https://github.com/jub0t/Concat#readme",
+    "addedAt": "2026-11-21",
+    "verifiedAt": "2026-11-21",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-concat/cover.jpg",
+      "alt": "Concat 开源本地视频剪辑软件主界面与多轨时间线截图",
+      "width": 1280,
+      "height": 712
+    },
+    "previewSource": "https://github.com/jub0t/Concat",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-21 取自 jub0t/Concat 官方仓库 README 编辑器实机截图；仅收藏。",
+    "en": {
+      "title": "Concat (Local-First Cross-Platform Open-Source Video Editor with MCP)",
+      "description": "19k+ star Rust-powered local-first video editor for Mac, Windows, and mobile with offline auto-captions, voice isolation, voice cloning, background removal, and a built-in MCP / JSON-RPC server for AI editing.",
+      "tags": "Video editor / Local-first / MCP / Auto-captions / Voice cloning / Rust / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Official editor screenshot from jub0t/Concat README on 2026-11-21; saved for reference only."
+    }
+  },
+  {
+    "id": "website-skillspector",
+    "kind": "website",
+    "title": "SkillSpector（NVIDIA 官方 AI Skill 安全风险扫描器）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "英伟达（NVIDIA）官方开源的 AI Agent Skill 安全扫描工具（2.7 万+ Star），内置 71 种漏洞与恶意模式规则，支持在安装前扫描 Claude Code、Codex 与 MCP 技能并输出 0–100 风险评分。",
+    "tags": "安全扫描 / NVIDIA / Skill 审计 / 提示词注入 / MCP / Claude Code / Codex / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "SkillSpector（NVIDIA 官方 AI Skill 安全风险扫描器）\n\n用途\n专门用于在安装第三方 AI 技能（SKILL.md 与配套脚本）前进行自动化安全体检，防范提示词注入、数据外泄、越权调用与恶意供应链风险。\n\n核心特点\n- 内置 71 种安全漏洞与 Agent 专属风险规则，支持 Claude Code、Codex 与 MCP 生态\n- 结合静态分析（AST、污点追踪、YARA 规则、OSV.dev 依赖 CVE 排查）与可选 LLM 语义复核\n- 自动输出 0–100 风险评分、严重级别与整改建议，可集成进 GitHub Actions CI/CD\n\n许可：Apache-2.0\n官方文档：https://docs.nvidia.com/skills/scanning-agent-skills\n官方仓库：https://github.com/NVIDIA/SkillSpector",
+    "source": "https://docs.nvidia.com/skills/scanning-agent-skills",
+    "officialUrl": "https://docs.nvidia.com/skills/scanning-agent-skills",
+    "repository": "https://github.com/NVIDIA/SkillSpector",
+    "documentation": "https://github.com/NVIDIA/SkillSpector#readme",
+    "addedAt": "2026-11-21",
+    "verifiedAt": "2026-11-21",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-skillspector/cover.jpg",
+      "alt": "NVIDIA/SkillSpector 官方 GitHub 仓库卡片",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/NVIDIA/SkillSpector",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-21 取自 NVIDIA/SkillSpector 官方 GitHub 预览卡片；仅收藏。",
+    "en": {
+      "title": "SkillSpector (Official NVIDIA AI Agent Skill Security Scanner)",
+      "description": "27k+ star Apache-2.0 security scanner by NVIDIA that audits Claude Code, Codex, and MCP skills before installation across 71 vulnerability rules and outputs a 0–100 risk score.",
+      "tags": "Security scanner / NVIDIA / Skill audit / Prompt injection / MCP / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Official GitHub preview card from NVIDIA/SkillSpector on 2026-11-21; saved for reference only."
+    }
+  },
+  {
+    "id": "website-openbot",
+    "kind": "website",
+    "title": "OpenBot（CopilotKit 开源自托管 AI 员工工作台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "CopilotKit 团队推出的开源自托管 AI 员工工作台（1.3 万+ Star），支持自由接入任意模型与 Agent 框架，提供免终端预编译桌面安装包，并在本地策略网关治理下监控 AI 自动操作浏览器与工具。",
+    "tags": "AI 工作台 / 自托管 / CopilotKit / Agent / 浏览器自动化 / 策略治理 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "OpenBot（CopilotKit 开源自托管 AI 员工工作台）\n\n用途\n面向个人与企业的开源自托管 AI 协同工作台，作为封闭云端 AI Bot 平台的开放替代方案，让用户完全掌控模型、Agent、数据与基础设施。\n\n核心特点\n- Bring-Your-Own-Everything：自由接入 OpenAI、Claude、Gemini、DeepSeek 等模型以及 LangChain、CrewAI、Claude Agent SDK 等框架\n- 提供 Mac / Windows 预编译桌面安装包，无需操作终端即可启动并实时监控 AI 操作浏览器与工具\n- 内置基于 CEL 的策略安全网关、完整审计日志与「Teach a Bot」一键录制成可复用 Skill 能力\n\n许可：MIT\n官网：https://open.bot\n官方仓库：https://github.com/CopilotKit/OpenBot",
+    "source": "https://open.bot",
+    "officialUrl": "https://open.bot",
+    "repository": "https://github.com/CopilotKit/OpenBot",
+    "documentation": "https://github.com/CopilotKit/OpenBot#readme",
+    "addedAt": "2026-11-21",
+    "verifiedAt": "2026-11-21",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-openbot/cover.jpg",
+      "alt": "OpenBot 开源企业级 AI Agent 工作台官网封面图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://open.bot",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-21 取自 OpenBot 官方站点预览图；仅收藏。",
+    "en": {
+      "title": "OpenBot (Open-Source Self-Hosted AI Coworker Workspace by CopilotKit)",
+      "description": "13k+ star MIT-licensed self-hostable AI agent workspace from CopilotKit with prebuilt desktop apps, bring-your-own models/agents, CEL policy governance, and live browser/tool automation monitoring.",
+      "tags": "AI workspace / Self-hosted / CopilotKit / Agent / Browser automation / MIT",
+      "license": "MIT",
+      "previewNote": "Official OpenBot site preview image captured on 2026-11-21; saved for reference only."
+    }
   }
 ]

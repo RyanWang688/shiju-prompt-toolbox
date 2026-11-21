@@ -29,7 +29,7 @@ CONFLICT_GROUPS = {
         "en": "Mutually exclusive core video editing engine (pick one primary editor per workflow)",
         "ids": {
             "skill-ffmpeg-skill", "skill-fredtalk", "website-openmontage", "website-video-highlighter",
-            "website-opencut", "website-hypit",
+            "website-opencut", "website-hypit", "website-concat",
         },
         "keywords": ["视频剪辑", "口播视频", "自动剪辑", "视频高光"],
     },
