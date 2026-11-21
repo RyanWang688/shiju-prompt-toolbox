@@ -159,7 +159,7 @@ html[data-theme=dark] .rail-button:hover img,html[data-theme=dark] .rail-button.
 html[data-theme=dark] body.dashboard .icon-rail .rail-group .rail-button:is(:hover,:focus-visible,:active){background-color:#ffffff0f!important}
 html[data-theme=dark] body.dashboard .icon-rail .rail-group .rail-button.active,html[data-theme=dark] body.dashboard .icon-rail .rail-group .rail-button.active:is(:hover,:focus-visible,:active){background-color:#ffffff17!important;border-color:#ffffff24!important;box-shadow:inset 0 1px 0 #ffffff14!important}
 html[data-theme=dark] body.dashboard .rail-button.active:before{background:#ffd43b}
-html[data-theme=dark] .rail-button:focus-visible{outline:2px solid #ffd43b99;outline-offset:2px}
+html[data-theme=dark] .rail-button:focus-visible{outline:none}
 html[data-theme=dark] .icon-rail .rail-separator{border-top-color:#ffffff1f}
 html[data-theme=dark] .cat-card,html[data-theme=dark] .skill-topics,html[data-theme=dark] .dashboard .empty.start{background:#111113;border-color:#ffffff12}
 /* Inputs sit flush with the page; borders brighten on hover, the yellow focus ring stays. */

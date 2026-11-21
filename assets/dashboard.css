@@ -1,7 +1,7 @@
 /* Dashboard layout. Shared card, dialog and storage behavior stays in the page. */
 body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line:#dedede;--accent:#ffd43b;--on:#191919;--rail:76px;--card-hover:#d9a600;background:var(--bg)}
 .dashboard button:hover{filter:none;border-color:#a3a3a3}
-.dashboard :is(button,a,input,select,textarea):focus-visible{outline:3px solid #191919;outline-offset:3px}
+.dashboard :is(button,a,input,select,textarea,[tabindex]):is(:focus,:focus-visible){outline:none!important}
 .skip-link{position:fixed;left:90px;top:-70px;z-index:100;background:var(--panel);padding:10px 18px;border:2px solid #191919;border-radius:8px}.skip-link:focus{top:12px}
 .icon-rail{position:fixed;inset:0 auto 0 0;width:var(--rail);z-index:30;background:#eeeeee;border-right:1px solid #dedede;display:flex;align-items:center;flex-direction:column;padding:20px 0 12px}
 .rail-brand{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:#ffd43b;border:1px solid #d9a600;margin-bottom:22px;flex-shrink:0}
@@ -39,9 +39,9 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 .dashboard .card-foot>span{font-size:11px;line-height:1.7}.dashboard .visit-site{min-height:40px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;padding:8px 13px;background:#f5f5f5;color:#191919;border:1px solid #dedede;border-radius:10px}
 .dashboard .card .visit-site:hover{background:#fff;border-color:#191919}
 .dashboard .card .card-open{position:absolute;inset:0;z-index:1;width:100%;height:100%;min-height:0;margin:0;padding:0;border:0;border-radius:18px;background:transparent;box-shadow:none;cursor:pointer}
-.dashboard .card .card-open:hover{background:transparent;border:0;box-shadow:none}.dashboard .card .card-open:focus-visible{outline:3px solid #191919;outline-offset:4px}
+.dashboard .card .card-open:hover{background:transparent;border:0;box-shadow:none}.dashboard .card .card-open:focus-visible{outline:none}
 .dashboard .card :is(.star,.visit-site){position:relative;z-index:2}
-.dashboard .card:focus-within{border-color:#191919;box-shadow:0 4px 18px #19191910}
+.dashboard .card:focus-within{box-shadow:0 4px 18px #19191910}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 
 .dashboard #detail{width:min(940px,calc(100vw - 44px));max-height:88dvh;border-radius:22px;padding:28px;overscroll-behavior:contain}
@@ -60,7 +60,7 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 .skill-topics[hidden]{display:none}.topic-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:13px}.topic-heading>span{font-size:13px;font-weight:600;color:#191919}.topic-heading small{font-size:11px;color:#595959}
 .topic-list{display:flex;gap:8px;flex-wrap:wrap}.dashboard .topic-chip{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:8px 13px;min-height:44px;border:1px solid #dedede;border-radius:24px;color:#595959;background:#f5f5f5;font-size:12px;transition:background-color .18s,border-color .18s,color .18s,transform .18s}
 .topic-chip small{font-size:10px;min-width:20px;padding:2px 5px;border-radius:12px;background:#eeeeee;color:#595959;line-height:16px}.dashboard .topic-chip.active{background:#ffd43b;border-color:#d9a600;color:#191919}.topic-chip.active small{background:#ffd43b;color:#191919}.dashboard .topic-chip:hover{background:#eeeeee;border-color:#d9a600;transform:translateY(-1px)}
-.dashboard .topic-chip:focus-visible{outline:3px solid #191919;outline-offset:3px}
+.dashboard .topic-chip:focus-visible{outline:none}
 @media(max-width:720px){.skill-topics{padding:15px 12px;margin-bottom:18px}.topic-heading{align-items:flex-start;flex-direction:column;gap:4px;margin-bottom:11px}.topic-list{gap:7px}.dashboard .topic-chip{padding:7px 10px;gap:6px;flex:0 1 auto}.topic-chip small{min-width:18px}}
 @media(prefers-reduced-motion:reduce){.dashboard .topic-chip{transition:none}.dashboard .topic-chip:hover{transform:none}}
 
@@ -124,7 +124,7 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 .dashboard .top .lang-switch .lang-option[aria-pressed=true]{color:var(--ink)}
 .dashboard .top .lang-switch .lang-option:is(:hover,:focus-visible,:active){background-color:transparent!important;border-color:transparent!important;box-shadow:none!important;translate:none;scale:none}
 .dashboard .top .lang-switch .lang-option:hover{color:var(--ink)!important}
-.dashboard .top .lang-switch .lang-option:focus-visible{outline:3px solid var(--ink);outline-offset:1px}
+.dashboard .top .lang-switch .lang-option:focus-visible{outline:none}
 @media(hover:hover) and (pointer:fine){.lang-switch:hover{translate:0 -2px;box-shadow:0 5px 0 #19191912,0 8px 18px #ffd43b26}}
 :root.lang-vt::view-transition-old(root),:root.lang-vt::view-transition-new(root){animation:none;mix-blend-mode:normal}
 ::view-transition-old(lang-switch){display:none}
@@ -139,7 +139,7 @@ body.dashboard{--bg:#f5f5f5;--panel:#ffffff;--ink:#191919;--muted:#595959;--line
 .topic-indicator{border:0;border-radius:3px;background:var(--ink);box-shadow:none}
 .dashboard .skill-topics .topic-list .topic-chip,.dashboard .skill-topics .topic-list .topic-chip:is(.active,:hover,:focus-visible,:active){flex-shrink:0;min-height:44px;padding:8px 14px 12px;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;translate:none!important;scale:none!important;font-size:13px;font-weight:600;color:var(--muted)!important}
 .dashboard .skill-topics .topic-list .topic-chip.active{color:var(--ink)!important}
-.dashboard .skill-topics .topic-list .topic-chip:focus-visible{outline:3px solid var(--ink);outline-offset:-3px}
+.dashboard .skill-topics .topic-list .topic-chip:focus-visible{outline:none}
 .dashboard .skill-topics .topic-list .topic-chip small{background:transparent!important;color:var(--muted)!important}
 .dashboard .skill-topics .topic-list .topic-chip.active small{color:var(--ink)!important}
 @media(max-width:720px){.dashboard .skill-topics .topic-list .topic-chip{padding:8px 10px 12px}}
@@ -177,7 +177,7 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 /* Sidebar hover: a quiet white tint only — no yellow fill, black border, lift or press. */
 .dashboard .icon-rail .rail-group .rail-button:is(:hover,:focus-visible,:active){background-color:#f8f8f8!important;border-color:transparent!important;color:var(--muted)!important;box-shadow:none!important;translate:none!important;scale:none!important}
 .dashboard .icon-rail .rail-group .rail-button.active:is(:hover,:focus-visible,:active){background-color:#fff!important;border-color:#dedede!important;box-shadow:0 2px 5px #19191909!important}
-.dashboard .icon-rail .rail-group .rail-button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dashboard .icon-rail .rail-group .rail-button:focus-visible{outline:none}
 
 /* Logo (拾句): a quote pair on a line of text, the second quote picked up off the line.
    Yellow tile elsewhere; black tile with a yellow mark while all content is shown. */
@@ -191,7 +191,7 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 .brand-ring{position:absolute;inset:-1px;border:2px solid #ffd43b;border-radius:14px;opacity:0;pointer-events:none}
 .dashboard .icon-rail .rail-brand.rail-brand:is(:hover,:focus-visible,:active){background-color:#ffd43b!important;border-color:transparent!important;color:#191919!important;box-shadow:inset 0 0 0 1px #d9a60059!important;translate:none!important;scale:none!important}
 .dashboard .icon-rail .rail-brand.rail-brand.is-home,.dashboard .icon-rail .rail-brand.rail-brand.is-home:is(:hover,:focus-visible,:active){background-color:#191919!important;color:#ffd43b!important;box-shadow:0 6px 16px #19191926!important}
-.dashboard .icon-rail .rail-brand:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.dashboard .icon-rail .rail-brand:focus-visible{outline:none}
 @media(hover:hover) and (pointer:fine){.rail-brand:hover .brand-q2{transform:translateY(-7px) rotate(-22deg)}}
 @media(prefers-reduced-motion:reduce){.dashboard .icon-rail .rail-brand,.brand-q2{transition:none}}
 
@@ -225,7 +225,7 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 .cat-share small{display:block;margin-top:6px;font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .cat-arrow{display:grid;place-items:center;flex-shrink:0;width:36px;height:36px;border:1px solid var(--ink);border-radius:50%;font-size:16px;transition:background-color .25s ease,rotate .4s cubic-bezier(.2,.9,.22,1)}
 .dashboard .cat-card .cat-open{position:absolute;inset:0;z-index:6;width:100%;height:100%;margin:0;padding:0;border:0;border-radius:18px;background:transparent;box-shadow:none;cursor:pointer}
-.dashboard .cat-card .cat-open:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.dashboard .cat-card .cat-open:focus-visible{outline:none}
 .cat-card:is(:hover,:focus-within){border-color:var(--ink);box-shadow:0 16px 34px #19191914}
 .cat-card:is(:hover,:focus-within) .cat-arrow{background:var(--accent);rotate:-45deg}
 .cat-card:is(:hover,:focus-within) .cat-meter i{background:#d9a600}
@@ -245,7 +245,7 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 
 /* Like burst: the heart pops grey to red and the count rolls; no button fill or lift. */
 .dashboard .card .card-body .like{min-width:0;min-height:36px;padding:0 4px;display:inline-flex;align-items:center;gap:5px;border:0;border-radius:8px;background:transparent;color:#9a9a9a;mix-blend-mode:normal;cursor:pointer;-webkit-tap-highlight-color:transparent}
-.dashboard .card .card-body .like:focus-visible{outline:2px solid #ff3b5c;outline-offset:2px}
+.dashboard .card .card-body .like:focus-visible{outline:none}
 .dashboard .like-heart{position:relative;display:grid;place-items:center;width:22px;height:22px}
 .dashboard .like-heart svg{width:20px;height:20px;overflow:visible;fill:transparent;stroke:currentColor;stroke-width:1.9;stroke-linejoin:round;transition:fill .3s ease,stroke .3s ease}
 .dashboard .card .card-body .like[aria-pressed=true]{color:#ff3b5c}
@@ -265,7 +265,7 @@ body.topic-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}
 .dashboard .card .card-body .bookmark{display:grid;place-items:center;min-width:32px;min-height:36px;padding:0;border:0;border-radius:8px;background:transparent;color:#9a9a9a;mix-blend-mode:normal;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .dashboard .card .card-body .bookmark svg{width:18px;height:18px;fill:transparent;stroke:currentColor;stroke-width:1.9;stroke-linejoin:round;transition:fill .25s ease}
 .dashboard .card .card-body .bookmark[aria-pressed=true]{color:#f2b705}.dashboard .card .card-body .bookmark[aria-pressed=true] svg{fill:#f2b705}
-.dashboard .card .card-body .bookmark:focus-visible{outline:2px solid #f2b705;outline-offset:2px}
+.dashboard .card .card-body .bookmark:focus-visible{outline:none}
 .dashboard .card .card-body .like[aria-disabled=true]{opacity:.55;cursor:default}
 /* Sort menu: a quiet field matching the search box, with a soft ring instead of the black frame and yellow fill. */
 .dashboard .sort-menu{position:relative;flex:0 0 auto}
@@ -350,14 +350,14 @@ html.theme-fade *,html.theme-fade *::before,html.theme-fade *::after{transition:
 .fav-pick{position:relative;display:flex;align-items:center;min-width:0;border:1px solid #dedede;border-radius:12px;background:#fff;transition:border-color .18s,box-shadow .18s,translate .24s cubic-bezier(.2,.9,.22,1)}
 .fav-pick:hover{border-color:#a3a3a3;box-shadow:0 8px 20px -10px #19191933;translate:0 -2px}
 .dashboard .fav-pick-open{display:flex;align-items:center;gap:12px;flex:1;min-width:0;min-height:0;padding:10px 4px 10px 10px;border:0;border-radius:12px;background:transparent;color:var(--ink);text-align:left;cursor:pointer}
-.dashboard .fav-pick-open:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dashboard .fav-pick-open:focus-visible{outline:none}
 .fav-pick img{flex-shrink:0;width:64px;height:44px;border-radius:7px;object-fit:cover;object-position:left top;background:#eeeeee;border:1px solid #eeeeee}
 .fav-pick-text{display:grid;gap:3px;min-width:0}
 .fav-pick-text b{overflow:hidden;font-size:13px;line-height:1.35;white-space:nowrap;text-overflow:ellipsis}
 .fav-pick-text small{overflow:hidden;font-size:11px;color:var(--muted);white-space:nowrap;text-overflow:ellipsis}
 .dashboard .fav-pick-save{display:grid;place-items:center;flex-shrink:0;width:38px;height:38px;margin-right:6px;padding:0;border:0;border-radius:9px;background:transparent;color:#8a8a8a;cursor:pointer;transition:background-color .18s,color .18s}
 .dashboard .fav-pick-save:hover{background:#fff4c2;color:#e0a800}
-.dashboard .fav-pick-save:focus-visible{outline:2px solid var(--ink);outline-offset:1px}
+.dashboard .fav-pick-save:focus-visible{outline:none}
 .fav-pick-save svg{width:18px;height:18px;fill:transparent;stroke:currentColor;stroke-width:1.9;stroke-linejoin:round;transition:fill .25s}
 .dashboard .fav-pick-save[aria-pressed=true]{color:#e0a800}.fav-pick-save[aria-pressed=true] svg{fill:#ffd43b}
 .dashboard .empty.start.empty-favorites .empty-note{display:flex;align-items:center;justify-content:center;gap:8px;max-width:none;margin:0;padding:14px 20px;border-top:1px solid #eeeeee;font-size:12px}
@@ -373,7 +373,7 @@ html.theme-fade *,html.theme-fade *::before,html.theme-fade *::after{transition:
 .dashboard .view-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 .dashboard .view-btn:hover{background:#f4f4f2;color:var(--ink)}
 .dashboard .view-btn[aria-pressed=true]{background:#191919;color:#ffd43b;box-shadow:0 2px 6px #1919191f}
-.dashboard .view-btn:focus-visible{outline:2px solid #d9a600;outline-offset:1px}
+.dashboard .view-btn:focus-visible{outline:none}
 .dashboard .grid[hidden],.dashboard .sort-menu[hidden]{display:none!important}
 
 /* Workflow Studio: Conflict-Free Project Stack Composer. */
@@ -396,9 +396,9 @@ body.dashboard.is-workflow-mode .search,body.dashboard.is-workflow-mode .skill-t
 
 .wf-form{margin-top:18px}
 .wf-input-wrap{display:flex;align-items:center;gap:10px;padding:6px 6px 6px 14px;border:1.5px solid #d4d4d4;border-radius:14px;background:#fafafa;transition:border-color .18s,background-color .18s,box-shadow .18s}
-.wf-input-wrap:focus-within{border-color:#191919;background:#fff;box-shadow:0 0 0 4px #ffd43b38}
+.wf-input-wrap:focus-within{border-color:#d9a600;background:#fff;box-shadow:0 0 0 3px #ffd43b45}
 .wf-input-icon{width:18px;height:18px;flex-shrink:0;fill:#d9a600}
-.wf-input-wrap input{flex:1 1 0;min-width:0;border:0;background:transparent;color:#191919;font-size:14px;padding:8px 0;outline:none}
+.wf-input-wrap input{flex:1 1 0;min-width:0;border:0;background:transparent;color:#191919;font-size:14px;padding:8px 0;outline:none!important;box-shadow:none!important}
 .wf-input-wrap input::placeholder{color:#8a8a8a}
 .wf-submit{min-height:42px!important;padding:0 20px!important;border-radius:10px!important;font-size:13px!important;font-weight:700;flex-shrink:0}
 
