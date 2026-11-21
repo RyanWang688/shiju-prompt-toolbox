@@ -1,5 +1,36 @@
 [
   {
+    "id": "torn-paper-collage-poster",
+    "kind": "prompt",
+    "title": "摄影撕纸拼贴海报",
+    "category": "其他",
+    "topics": [
+      "图像创作"
+    ],
+    "tags": "生图提示词 / 撕纸拼贴 / 摄影海报 / 2:3 / 复古版画 / Cooper说",
+    "description": "把照片做成 2:3 竖版手工摄影撕纸拼贴海报。自动提取原图配色用于染色撕边纸与古典衬线字，配半透明纸胶带、单色版画印花与英文短句。",
+    "prompt": "将我上传的参考图制作成一张精致的摄影撕纸拼贴海报，2:3 竖版。自主完成配色、英文文案与排版，只输出成图。\n\n【主体】\n保留原图主体的辨识度、比例、姿态、真实细节及对象之间的关系。单体采用精细摄影抠图；完整场景保留必要环境，以不规则撕边摄影纸片融入画面。主体保持真实摄影质感，不转为插画，不增添无关对象。\n\n【配色】\n从原图提取主色、辅助色和暗部深色，分别用于染色纸、装饰与文字；搭配暖白或象牙白底纸。可调整明度与饱和度以突出主体，但保留主体本色。不要固定套用靛蓝或其他统一配色。\n\n【构图】\n左侧约占画面 60%—68%，铺大幅不规则撕边染色纸，主体放大置于左侧及中部。少量主体轮廓跨过纸边，形成叠压，但不遮挡文字。右侧保留充足浅色空间：右上两行大标题，右侧中部为小图标、细竖线与短句。重要部位与文字不得被裁切。\n\n【拼贴细节】\n暖白纤维底纸、细腻染色纸纹、自然毛边与浅色纸芯、薄而柔和的接触阴影。左上和右下各一小条半透明米色纸胶带。左下叠一块略倾斜的暖白撕边纸，印有根据主体提炼的单色复古版画纹样；右下叠 2—3 块协调色纸。装饰克制，纸张干净，仅轻微做旧。\n\n【文字】\n根据主体和画面情绪创作简短、自然的英文文案：\n— 右上两行标题，每行优先一个短词；第一行表达主体或意象，第二行表达气质、色彩或状态。\n— 标题采用优雅的高对比度古典衬线字体，第一行正体、第二行斜体，颜色来自原图。\n— 右侧短句约 6—12 个英文单词，分 3—5 行，衬线斜体、左对齐；上方配主题相关的微型单色剪影，左侧配细竖线。\n文案贴合图片，不用通用励志口号。拼写准确，字号适配留白，不压缩字形、不溢出。移除原图中无关的版式文字，不添加额外文案。\n\n【整体效果】\n像真实手工拼贴作品的高质量正面扫描：摄影清晰，纸纹细腻，胶带自然，版式疏朗，复古字体与印花精致。避免过度泛黄、污渍、厚重投影、白色抠图描边、杂乱装饰、卡通化。全幅海报，无相框、桌面展示背景或水印。",
+    "sourceNote": "用户提供的 Cooper说《把照片交给这个提示词吧！》截图。",
+    "preview": {
+      "type": "image",
+      "src": "assets/torn-paper-collage-poster/petal-haven.jpg",
+      "alt": "Cooper说发布的 Petal haven 蜂鸟郁金香摄影撕纸拼贴海报示例",
+      "width": 416,
+      "height": 618
+    },
+    "previewSource": "用户提供的 Cooper说作品截图（第 2 张 Petal haven）",
+    "previewEvidence": "author-published-output",
+    "previewNote": "Cooper说发布的 Petal haven 示例，预览裁去截图上下的应用界面。",
+    "addedAt": "2026-11-21",
+    "en": {
+      "title": "Photographic Torn-Paper Collage Poster",
+      "description": "Turn a photo into a 2:3 vertical handmade torn-paper collage poster with image-sampled dyed paper, translucent tape, vintage engraving scrap, and classical serif English typography.",
+      "tags": "Image prompt / Torn-paper collage / Photo poster / 2:3 / Vintage engraving / Cooper",
+      "prompt": "Turn my uploaded reference image into a refined photographic torn-paper collage poster in a vertical 2:3 format. Autonomously design the colour palette, English copy, and typography, and output only the finished poster.\n\n[Subject]\nPreserve the subject's likeness, proportions, pose, real-world details, and relationships between objects. Use crisp photographic cutouts for isolated subjects; for full scenes, keep essential context integrated as irregular torn-edge photographic paper pieces. Keep the subject's authentic photographic texture without turning it into illustration or adding unrelated objects.\n\n[Palette]\nSample primary, accent, and deep shadow colours from the reference image for the dyed paper, accents, and typography, paired with a warm-white or ivory base sheet. Adjust lightness and saturation to make the subject stand out while preserving its true colours. Do not default to indigo or any fixed palette.\n\n[Composition]\nCover roughly 60–68% of the left side with a large irregular torn-edge dyed paper sheet, placing the enlarged subject across the left and centre. Let small parts of the subject's silhouette overlap the torn paper edge without covering any text. Leave generous light negative space on the right: a two-line headline at the top right, and a small icon, thin vertical rule, and short caption in the middle right. Never crop key details or text.\n\n[Collage Details]\nWarm-white fibrous base paper, fine dyed paper grain, natural deckled fibres with a pale paper core, and thin soft contact shadows. Add one small strip of translucent beige masking tape at the top left and bottom right. Layer a slightly tilted warm-white torn scrap at the bottom left printed with a monochrome vintage engraving motif inspired by the subject, and 2–3 harmonizing colour scraps at the bottom right. Keep decoration restrained, paper clean, and ageing minimal.\n\n[Typography]\nWrite short, natural English copy tailored to the subject and mood:\n— Top-right two-line headline, preferably one short word per line: line 1 expresses the subject or imagery, line 2 expresses its mood, colour, or state.\n— Set the headline in an elegant high-contrast classical serif font (upright on line 1, italic on line 2) using colours sampled from the image.\n— Middle-right caption of ~6–12 English words across 3–5 left-aligned italic serif lines, topped with a tiny monochrome subject silhouette and flanked on the left by a thin vertical line.\nKeep copy specific to the photo rather than generic motivational slogans. Ensure accurate spelling, clean sizing within margins, no condensed glyphs, and no overflow. Remove any unrelated text from the source image and add no extra copy.\n\n[Overall Look]\nA high-resolution flat front scan of an authentic handmade collage: sharp photography, tactile paper grain, natural tape, airy layout, and refined vintage typography and engraving. Avoid heavy yellowing, stains, harsh drop shadows, white cutout outlines, cluttered embellishments, or cartoon styling. Full-bleed poster with no frame, tabletop mockup, or watermark.",
+      "previewNote": "Petal haven example shared by Cooper. The app interface above and below the poster was cropped out."
+    }
+  },
+  {
     "id": "website-sure",
     "kind": "website",
     "title": "Sure（开源本地记账与 AI 个人理财应用）",
