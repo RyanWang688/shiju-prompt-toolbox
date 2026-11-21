@@ -378,9 +378,7 @@ html.theme-fade *,html.theme-fade *::before,html.theme-fade *::after{transition:
 
 /* Workflow Studio: Conflict-Free Project Stack Composer. */
 ::view-transition{pointer-events:none}
-body.dashboard.is-workflow-mode .dashboard-heading{margin-bottom:14px}
-body.dashboard.is-workflow-mode .dashboard-heading p{display:none}
-body.dashboard.is-workflow-mode .toolbar{justify-content:flex-end;margin-bottom:14px}
+body.dashboard.is-workflow-mode .toolbar{justify-content:flex-end}
 body.dashboard.is-workflow-mode .search,body.dashboard.is-workflow-mode .skill-topics,body.dashboard.is-workflow-mode .results{display:none!important}
 
 .workflow-stage{display:flex;flex-direction:column;gap:20px}
