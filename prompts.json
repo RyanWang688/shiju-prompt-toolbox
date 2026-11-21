@@ -1,5 +1,147 @@
 [
   {
+    "id": "mask-retouch-photo-tension",
+    "kind": "prompt",
+    "title": "模拟蒙版修图（单轴大光影提升照片张力）",
+    "category": "其他",
+    "topics": [
+      "图像创作"
+    ],
+    "tags": "AI修图 / 蒙版光影 / 商业摄影后期 / 高对比度 / 修图前vs修图后 / GPT",
+    "description": "不重绘物体、严格保留原图构图与材质的商业级蒙版修图提示词。以单条全局明暗轴线与超大羽化线性渐变塑造大面积深暗与清透亮部，显著提升照片的电影级视觉张力。",
+    "prompt": "严格保留原图主体身份、构图、透视、结构、材质、纹理及真实反射，仅通过光色、亮度、对比度与蒙版进行摄影后期，绝不重绘物体。\n\n以顶级商业摄影标准，自适应分析原图光照与空间关系，主动采用更大胆、更深沉的明暗塑造，允许大面积暗部接近深黑，显著提高整体光比，但保留必要层次。\n\n以大光影统领小光影，优先使用少量高强度、超大块羽化的方向性线性渐变。严格遵循同轴互补原则：整张画面只建立一条贯穿全局的主明暗轴线，主光方向形成连续、完整、宽阔的大面积亮部，**亮度最高的一侧必须形成覆盖整个对应方向的大面积连续亮区，而非仅在角落、边缘或局部形成一束亮光；亮部应沿整条明暗轴线的垂直方向充分铺展，保持同一明暗位置上的亮度整体一致，不得向两侧衰减形成聚光效果。**反方向形成连续、完整、深沉的大面积暗部，两者之间仅通过一条超宽、平滑、自然的羽化过渡带衔接。所有明暗变化必须沿同一轴线单向、连续、渐进地变化，**同一轴线位置上的不同区域必须服从统一的亮度分布，不得出现横向收窄、局部亮度峰值或亮区面积不足。**不得出现独立亮区、局部聚光、环绕主体的亮圈或多个互不连贯的明暗区域。亮部与暗部必须各自构成完整统一的大块面，而非多个局部蒙版拼接。禁止夹光、交叉压暗及零碎分区。\n\n主体内部同样进行多区域塑形，不以整体提亮主体或机械暗角代替精细蒙版。主体与环境必须共同服从同一条全局明暗轴线，主体内部的精细塑形只能强化原有结构和材质层次，不得破坏整体光场的连续性，不得为了突出主体而单独提亮主体或压暗其周围环境。重点保护主体关键轮廓、高光及材质细节，非关键区域大胆沉入暗部。亮部清透克制，暗部厚重纯净，中间调适度收缩，形成鲜明视觉张力。\n\n禁止新增光源、无线性渐变感、地面反光、全局压暗、畸形光影、光照割裂感、投影、虚假反射、机械暗角、碎光斑、孤立聚光、HDR及过度锐化。智能清理、修补画面视觉干扰，原色去灰增强，最终呈现大面积深暗、高对比、局部通透、干净、强方向、强反差且自然真实的高级电影级摄影质感。",
+    "sourceNote": "用户提供的《模拟蒙版修图提示词，提升照片张力》（出图：GPT）及 Before/After 对比图。",
+    "preview": {
+      "type": "image",
+      "src": "assets/mask-retouch-photo-tension/before-after.jpg",
+      "alt": "红色法拉利俯拍图蒙版修图 Before 与 After 对比效果",
+      "width": 470,
+      "height": 629
+    },
+    "previewSource": "用户提供的 GPT 蒙版修图 Before/After 实测对比截图",
+    "previewEvidence": "author-published-output",
+    "previewNote": "GPT 蒙版修图 Before/After 对比示例，已裁去手机状态栏与底部界面。",
+    "addedAt": "2026-11-21",
+    "en": {
+      "title": "Simulated Mask Retouching (Single-Axis Dramatic Photo Tension)",
+      "description": "Commercial-grade AI photo retouching prompt that preserves original geometry and materials while sculpting bold single-axis linear gradient lighting, deep clean shadows, and cinematic contrast without redrawing objects.",
+      "tags": "AI retouching / Mask lighting / Commercial photography / High contrast / Before & After / GPT",
+      "prompt": "Strictly preserve the original subject's identity, composition, perspective, geometry, materials, textures, and authentic reflections. Perform photographic post-processing solely through lighting, colour, luminance, contrast, and masking—never redraw or alter objects.\n\nFollowing top-tier commercial photography standards, adaptively analyse the original lighting and spatial structure to apply bolder, deeper tonal sculpting. Allow large shadow regions to drop near deep black, significantly increasing overall lighting contrast while preserving essential detail and separation.\n\nLet macro lighting govern micro lighting, prioritising a small number of high-strength, ultra-broad feathered directional linear gradients. Strictly follow the coaxial complementary principle: establish a single master tonal axis across the entire frame. The key-light side must form a continuous, unified, expansive bright field—the brightest side must span the entire corresponding edge as a broad continuous luminous zone rather than a narrow beam at a corner or edge, spreading evenly perpendicular to the tonal axis with consistent luminance along each iso-line and no spotlight falloff toward the sides. The opposite side must form a continuous, unified, deep shadow field, joined by a single ultra-wide, smooth, natural feathered transition band. All luminance shifts must progress unidirectionally, continuously, and monotonically along this single axis, with consistent brightness across the same axial position—no lateral narrowing, local hot spots, or undersized highlight regions. Avoid isolated bright patches, local spotlights, halos around the subject, or disconnected tonal islands. Both highlights and shadows must read as cohesive broad planes rather than stitched local masks. Avoid pincer lighting, cross-darkening, and fragmented zones.\n\nApply multi-zone tonal sculpting inside the subject as well, without relying on flat subject brightening or mechanical vignettes. Both subject and environment must obey the same global tonal axis; internal sculpting may only enhance existing form and material depth without breaking global light continuity or artificially brightening the subject / darkening its immediate halo. Protect key silhouettes, specular highlights, and material textures while letting non-essential areas sink boldly into deep shadow. Keep highlights crisp and restrained, shadows rich and clean, and midtones moderately compressed for strong visual tension.\n\nAvoid adding new light sources, losing linear gradient coherence, fake ground reflections, flat global darkening, distorted lighting, disconnected illumination, artificial cast shadows, mechanical vignettes, scattered light blotches, isolated spotlights, HDR look, or oversharpening. Clean up minor visual distractions, remove haze while enriching true colours, and deliver a cinematic, high-contrast, directional, clean, and naturally authentic photographic finish.",
+      "previewNote": "Before/After GPT mask retouching comparison with phone UI cropped out."
+    }
+  },
+  {
+    "id": "website-concat",
+    "kind": "website",
+    "title": "Concat（全平台本地离线开源视频剪辑软件，自带 MCP 接口）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 1.9 万+ Star 的跨平台开源视频剪辑工具，支持 Mac、Windows 与移动端全本地离线运行，内置自动字幕、人声分离、声音克隆与智能抠图，并提供 MCP / JSON-RPC 接口支持 AI 自动剪辑。",
+    "tags": "视频剪辑 / 离线工具 / MCP / 自动字幕 / 声音克隆 / 智能抠图 / Rust / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "Concat（全平台本地离线开源视频剪辑软件，自带 MCP 接口）\n\n用途\n作为云端剪辑软件的本地优先免费开源替代品，基于 Rust 与 GPU 合成器打造，在本地设备离线完成多轨剪辑、AI 语音与视觉特效处理，并可直接通过内置 MCP Server 交由 AI Agent 自动剪辑。\n\n核心特点\n- 全平台支持（Mac / Windows / 移动端），所有素材与 AI 推理均在本地离线运行，保护隐私\n- 内置自动字幕、人声分离、声音克隆、智能抠图、关键帧动画与 4K 导出\n- 原生提供 JSON-RPC API 与 MCP 接口（concat --mcp），支持 AI 直接操控时间线与批处理任务\n\n许可：AGPL-3.0\n官网：https://concat.standalones.org\n官方仓库：https://github.com/jub0t/Concat",
+    "source": "https://concat.standalones.org",
+    "officialUrl": "https://concat.standalones.org",
+    "repository": "https://github.com/jub0t/Concat",
+    "documentation": "https://github.com/jub0t/Concat#readme",
+    "addedAt": "2026-11-21",
+    "verifiedAt": "2026-11-21",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-concat/cover.jpg",
+      "alt": "Concat 开源本地视频剪辑软件主界面与多轨时间线截图",
+      "width": 1280,
+      "height": 712
+    },
+    "previewSource": "https://github.com/jub0t/Concat",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-21 取自 jub0t/Concat 官方仓库 README 编辑器实机截图；仅收藏。",
+    "en": {
+      "title": "Concat (Local-First Cross-Platform Open-Source Video Editor with MCP)",
+      "description": "19k+ star Rust-powered local-first video editor for Mac, Windows, and mobile with offline auto-captions, voice isolation, voice cloning, background removal, and a built-in MCP / JSON-RPC server for AI editing.",
+      "tags": "Video editor / Local-first / MCP / Auto-captions / Voice cloning / Rust / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Official editor screenshot from jub0t/Concat README on 2026-11-21; saved for reference only."
+    }
+  },
+  {
+    "id": "website-skillspector",
+    "kind": "website",
+    "title": "SkillSpector（NVIDIA 官方 AI Skill 安全风险扫描器）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "英伟达（NVIDIA）官方开源的 AI Agent Skill 安全扫描工具（2.7 万+ Star），内置 71 种漏洞与恶意模式规则，支持在安装前扫描 Claude Code、Codex 与 MCP 技能并输出 0–100 风险评分。",
+    "tags": "安全扫描 / NVIDIA / Skill 审计 / 提示词注入 / MCP / Claude Code / Codex / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "SkillSpector（NVIDIA 官方 AI Skill 安全风险扫描器）\n\n用途\n专门用于在安装第三方 AI 技能（SKILL.md 与配套脚本）前进行自动化安全体检，防范提示词注入、数据外泄、越权调用与恶意供应链风险。\n\n核心特点\n- 内置 71 种安全漏洞与 Agent 专属风险规则，支持 Claude Code、Codex 与 MCP 生态\n- 结合静态分析（AST、污点追踪、YARA 规则、OSV.dev 依赖 CVE 排查）与可选 LLM 语义复核\n- 自动输出 0–100 风险评分、严重级别与整改建议，可集成进 GitHub Actions CI/CD\n\n许可：Apache-2.0\n官方文档：https://docs.nvidia.com/skills/scanning-agent-skills\n官方仓库：https://github.com/NVIDIA/SkillSpector",
+    "source": "https://docs.nvidia.com/skills/scanning-agent-skills",
+    "officialUrl": "https://docs.nvidia.com/skills/scanning-agent-skills",
+    "repository": "https://github.com/NVIDIA/SkillSpector",
+    "documentation": "https://github.com/NVIDIA/SkillSpector#readme",
+    "addedAt": "2026-11-21",
+    "verifiedAt": "2026-11-21",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-skillspector/cover.jpg",
+      "alt": "NVIDIA/SkillSpector 官方 GitHub 仓库卡片",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/NVIDIA/SkillSpector",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-21 取自 NVIDIA/SkillSpector 官方 GitHub 预览卡片；仅收藏。",
+    "en": {
+      "title": "SkillSpector (Official NVIDIA AI Agent Skill Security Scanner)",
+      "description": "27k+ star Apache-2.0 security scanner by NVIDIA that audits Claude Code, Codex, and MCP skills before installation across 71 vulnerability rules and outputs a 0–100 risk score.",
+      "tags": "Security scanner / NVIDIA / Skill audit / Prompt injection / MCP / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Official GitHub preview card from NVIDIA/SkillSpector on 2026-11-21; saved for reference only."
+    }
+  },
+  {
+    "id": "website-openbot",
+    "kind": "website",
+    "title": "OpenBot（CopilotKit 开源自托管 AI 员工工作台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "CopilotKit 团队推出的开源自托管 AI 员工工作台（1.3 万+ Star），支持自由接入任意模型与 Agent 框架，提供免终端预编译桌面安装包，并在本地策略网关治理下监控 AI 自动操作浏览器与工具。",
+    "tags": "AI 工作台 / 自托管 / CopilotKit / Agent / 浏览器自动化 / 策略治理 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "OpenBot（CopilotKit 开源自托管 AI 员工工作台）\n\n用途\n面向个人与企业的开源自托管 AI 协同工作台，作为封闭云端 AI Bot 平台的开放替代方案，让用户完全掌控模型、Agent、数据与基础设施。\n\n核心特点\n- Bring-Your-Own-Everything：自由接入 OpenAI、Claude、Gemini、DeepSeek 等模型以及 LangChain、CrewAI、Claude Agent SDK 等框架\n- 提供 Mac / Windows 预编译桌面安装包，无需操作终端即可启动并实时监控 AI 操作浏览器与工具\n- 内置基于 CEL 的策略安全网关、完整审计日志与「Teach a Bot」一键录制成可复用 Skill 能力\n\n许可：MIT\n官网：https://open.bot\n官方仓库：https://github.com/CopilotKit/OpenBot",
+    "source": "https://open.bot",
+    "officialUrl": "https://open.bot",
+    "repository": "https://github.com/CopilotKit/OpenBot",
+    "documentation": "https://github.com/CopilotKit/OpenBot#readme",
+    "addedAt": "2026-11-21",
+    "verifiedAt": "2026-11-21",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-openbot/cover.jpg",
+      "alt": "OpenBot 开源企业级 AI Agent 工作台官网封面图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://open.bot",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-21 取自 OpenBot 官方站点预览图；仅收藏。",
+    "en": {
+      "title": "OpenBot (Open-Source Self-Hosted AI Coworker Workspace by CopilotKit)",
+      "description": "13k+ star MIT-licensed self-hostable AI agent workspace from CopilotKit with prebuilt desktop apps, bring-your-own models/agents, CEL policy governance, and live browser/tool automation monitoring.",
+      "tags": "AI workspace / Self-hosted / CopilotKit / Agent / Browser automation / MIT",
+      "license": "MIT",
+      "previewNote": "Official OpenBot site preview image captured on 2026-11-21; saved for reference only."
+    }
+  },
+  {
     "id": "torn-paper-collage-poster",
     "kind": "prompt",
     "title": "摄影撕纸拼贴海报",
@@ -13863,147 +14005,5 @@
       "previewNote": "Interactive demo hand-built from the prompt — not model output."
     },
     "kind": "prompt"
-  },
-  {
-    "id": "website-concat",
-    "kind": "website",
-    "title": "Concat（全平台本地离线开源视频剪辑软件，自带 MCP 接口）",
-    "category": "其他",
-    "topics": [
-      "创作工具"
-    ],
-    "description": "GitHub 1.9 万+ Star 的跨平台开源视频剪辑工具，支持 Mac、Windows 与移动端全本地离线运行，内置自动字幕、人声分离、声音克隆与智能抠图，并提供 MCP / JSON-RPC 接口支持 AI 自动剪辑。",
-    "tags": "视频剪辑 / 离线工具 / MCP / 自动字幕 / 声音克隆 / 智能抠图 / Rust / AGPL-3.0",
-    "pricing": "free",
-    "license": "AGPL-3.0",
-    "prompt": "Concat（全平台本地离线开源视频剪辑软件，自带 MCP 接口）\n\n用途\n作为云端剪辑软件的本地优先免费开源替代品，基于 Rust 与 GPU 合成器打造，在本地设备离线完成多轨剪辑、AI 语音与视觉特效处理，并可直接通过内置 MCP Server 交由 AI Agent 自动剪辑。\n\n核心特点\n- 全平台支持（Mac / Windows / 移动端），所有素材与 AI 推理均在本地离线运行，保护隐私\n- 内置自动字幕、人声分离、声音克隆、智能抠图、关键帧动画与 4K 导出\n- 原生提供 JSON-RPC API 与 MCP 接口（concat --mcp），支持 AI 直接操控时间线与批处理任务\n\n许可：AGPL-3.0\n官网：https://concat.standalones.org\n官方仓库：https://github.com/jub0t/Concat",
-    "source": "https://concat.standalones.org",
-    "officialUrl": "https://concat.standalones.org",
-    "repository": "https://github.com/jub0t/Concat",
-    "documentation": "https://github.com/jub0t/Concat#readme",
-    "addedAt": "2026-11-21",
-    "verifiedAt": "2026-11-21",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-concat/cover.jpg",
-      "alt": "Concat 开源本地视频剪辑软件主界面与多轨时间线截图",
-      "width": 1280,
-      "height": 712
-    },
-    "previewSource": "https://github.com/jub0t/Concat",
-    "previewEvidence": "author-official-readme-screenshot",
-    "previewNote": "2026-11-21 取自 jub0t/Concat 官方仓库 README 编辑器实机截图；仅收藏。",
-    "en": {
-      "title": "Concat (Local-First Cross-Platform Open-Source Video Editor with MCP)",
-      "description": "19k+ star Rust-powered local-first video editor for Mac, Windows, and mobile with offline auto-captions, voice isolation, voice cloning, background removal, and a built-in MCP / JSON-RPC server for AI editing.",
-      "tags": "Video editor / Local-first / MCP / Auto-captions / Voice cloning / Rust / AGPL-3.0",
-      "license": "AGPL-3.0",
-      "previewNote": "Official editor screenshot from jub0t/Concat README on 2026-11-21; saved for reference only."
-    }
-  },
-  {
-    "id": "website-skillspector",
-    "kind": "website",
-    "title": "SkillSpector（NVIDIA 官方 AI Skill 安全风险扫描器）",
-    "category": "其他",
-    "topics": [
-      "实用软件"
-    ],
-    "description": "英伟达（NVIDIA）官方开源的 AI Agent Skill 安全扫描工具（2.7 万+ Star），内置 71 种漏洞与恶意模式规则，支持在安装前扫描 Claude Code、Codex 与 MCP 技能并输出 0–100 风险评分。",
-    "tags": "安全扫描 / NVIDIA / Skill 审计 / 提示词注入 / MCP / Claude Code / Codex / Apache-2.0",
-    "pricing": "free",
-    "license": "Apache-2.0",
-    "prompt": "SkillSpector（NVIDIA 官方 AI Skill 安全风险扫描器）\n\n用途\n专门用于在安装第三方 AI 技能（SKILL.md 与配套脚本）前进行自动化安全体检，防范提示词注入、数据外泄、越权调用与恶意供应链风险。\n\n核心特点\n- 内置 71 种安全漏洞与 Agent 专属风险规则，支持 Claude Code、Codex 与 MCP 生态\n- 结合静态分析（AST、污点追踪、YARA 规则、OSV.dev 依赖 CVE 排查）与可选 LLM 语义复核\n- 自动输出 0–100 风险评分、严重级别与整改建议，可集成进 GitHub Actions CI/CD\n\n许可：Apache-2.0\n官方文档：https://docs.nvidia.com/skills/scanning-agent-skills\n官方仓库：https://github.com/NVIDIA/SkillSpector",
-    "source": "https://docs.nvidia.com/skills/scanning-agent-skills",
-    "officialUrl": "https://docs.nvidia.com/skills/scanning-agent-skills",
-    "repository": "https://github.com/NVIDIA/SkillSpector",
-    "documentation": "https://github.com/NVIDIA/SkillSpector#readme",
-    "addedAt": "2026-11-21",
-    "verifiedAt": "2026-11-21",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-skillspector/cover.jpg",
-      "alt": "NVIDIA/SkillSpector 官方 GitHub 仓库卡片",
-      "width": 1200,
-      "height": 600
-    },
-    "previewSource": "https://github.com/NVIDIA/SkillSpector",
-    "previewEvidence": "author-official-site-screenshot",
-    "previewNote": "2026-11-21 取自 NVIDIA/SkillSpector 官方 GitHub 预览卡片；仅收藏。",
-    "en": {
-      "title": "SkillSpector (Official NVIDIA AI Agent Skill Security Scanner)",
-      "description": "27k+ star Apache-2.0 security scanner by NVIDIA that audits Claude Code, Codex, and MCP skills before installation across 71 vulnerability rules and outputs a 0–100 risk score.",
-      "tags": "Security scanner / NVIDIA / Skill audit / Prompt injection / MCP / Apache-2.0",
-      "license": "Apache-2.0",
-      "previewNote": "Official GitHub preview card from NVIDIA/SkillSpector on 2026-11-21; saved for reference only."
-    }
-  },
-  {
-    "id": "website-openbot",
-    "kind": "website",
-    "title": "OpenBot（CopilotKit 开源自托管 AI 员工工作台）",
-    "category": "其他",
-    "topics": [
-      "实用软件"
-    ],
-    "description": "CopilotKit 团队推出的开源自托管 AI 员工工作台（1.3 万+ Star），支持自由接入任意模型与 Agent 框架，提供免终端预编译桌面安装包，并在本地策略网关治理下监控 AI 自动操作浏览器与工具。",
-    "tags": "AI 工作台 / 自托管 / CopilotKit / Agent / 浏览器自动化 / 策略治理 / MIT",
-    "pricing": "free",
-    "license": "MIT",
-    "prompt": "OpenBot（CopilotKit 开源自托管 AI 员工工作台）\n\n用途\n面向个人与企业的开源自托管 AI 协同工作台，作为封闭云端 AI Bot 平台的开放替代方案，让用户完全掌控模型、Agent、数据与基础设施。\n\n核心特点\n- Bring-Your-Own-Everything：自由接入 OpenAI、Claude、Gemini、DeepSeek 等模型以及 LangChain、CrewAI、Claude Agent SDK 等框架\n- 提供 Mac / Windows 预编译桌面安装包，无需操作终端即可启动并实时监控 AI 操作浏览器与工具\n- 内置基于 CEL 的策略安全网关、完整审计日志与「Teach a Bot」一键录制成可复用 Skill 能力\n\n许可：MIT\n官网：https://open.bot\n官方仓库：https://github.com/CopilotKit/OpenBot",
-    "source": "https://open.bot",
-    "officialUrl": "https://open.bot",
-    "repository": "https://github.com/CopilotKit/OpenBot",
-    "documentation": "https://github.com/CopilotKit/OpenBot#readme",
-    "addedAt": "2026-11-21",
-    "verifiedAt": "2026-11-21",
-    "preview": {
-      "type": "image",
-      "src": "assets/website-openbot/cover.jpg",
-      "alt": "OpenBot 开源企业级 AI Agent 工作台官网封面图",
-      "width": 1200,
-      "height": 630
-    },
-    "previewSource": "https://open.bot",
-    "previewEvidence": "author-official-site-screenshot",
-    "previewNote": "2026-11-21 取自 OpenBot 官方站点预览图；仅收藏。",
-    "en": {
-      "title": "OpenBot (Open-Source Self-Hosted AI Coworker Workspace by CopilotKit)",
-      "description": "13k+ star MIT-licensed self-hostable AI agent workspace from CopilotKit with prebuilt desktop apps, bring-your-own models/agents, CEL policy governance, and live browser/tool automation monitoring.",
-      "tags": "AI workspace / Self-hosted / CopilotKit / Agent / Browser automation / MIT",
-      "license": "MIT",
-      "previewNote": "Official OpenBot site preview image captured on 2026-11-21; saved for reference only."
-    }
-  },
-  {
-    "id": "mask-retouch-photo-tension",
-    "kind": "prompt",
-    "title": "模拟蒙版修图（单轴大光影提升照片张力）",
-    "category": "其他",
-    "topics": [
-      "图像创作"
-    ],
-    "tags": "AI修图 / 蒙版光影 / 商业摄影后期 / 高对比度 / 修图前vs修图后 / GPT",
-    "description": "不重绘物体、严格保留原图构图与材质的商业级蒙版修图提示词。以单条全局明暗轴线与超大羽化线性渐变塑造大面积深暗与清透亮部，显著提升照片的电影级视觉张力。",
-    "prompt": "严格保留原图主体身份、构图、透视、结构、材质、纹理及真实反射，仅通过光色、亮度、对比度与蒙版进行摄影后期，绝不重绘物体。\n\n以顶级商业摄影标准，自适应分析原图光照与空间关系，主动采用更大胆、更深沉的明暗塑造，允许大面积暗部接近深黑，显著提高整体光比，但保留必要层次。\n\n以大光影统领小光影，优先使用少量高强度、超大块羽化的方向性线性渐变。严格遵循同轴互补原则：整张画面只建立一条贯穿全局的主明暗轴线，主光方向形成连续、完整、宽阔的大面积亮部，**亮度最高的一侧必须形成覆盖整个对应方向的大面积连续亮区，而非仅在角落、边缘或局部形成一束亮光；亮部应沿整条明暗轴线的垂直方向充分铺展，保持同一明暗位置上的亮度整体一致，不得向两侧衰减形成聚光效果。**反方向形成连续、完整、深沉的大面积暗部，两者之间仅通过一条超宽、平滑、自然的羽化过渡带衔接。所有明暗变化必须沿同一轴线单向、连续、渐进地变化，**同一轴线位置上的不同区域必须服从统一的亮度分布，不得出现横向收窄、局部亮度峰值或亮区面积不足。**不得出现独立亮区、局部聚光、环绕主体的亮圈或多个互不连贯的明暗区域。亮部与暗部必须各自构成完整统一的大块面，而非多个局部蒙版拼接。禁止夹光、交叉压暗及零碎分区。\n\n主体内部同样进行多区域塑形，不以整体提亮主体或机械暗角代替精细蒙版。主体与环境必须共同服从同一条全局明暗轴线，主体内部的精细塑形只能强化原有结构和材质层次，不得破坏整体光场的连续性，不得为了突出主体而单独提亮主体或压暗其周围环境。重点保护主体关键轮廓、高光及材质细节，非关键区域大胆沉入暗部。亮部清透克制，暗部厚重纯净，中间调适度收缩，形成鲜明视觉张力。\n\n禁止新增光源、无线性渐变感、地面反光、全局压暗、畸形光影、光照割裂感、投影、虚假反射、机械暗角、碎光斑、孤立聚光、HDR及过度锐化。智能清理、修补画面视觉干扰，原色去灰增强，最终呈现大面积深暗、高对比、局部通透、干净、强方向、强反差且自然真实的高级电影级摄影质感。",
-    "sourceNote": "用户提供的《模拟蒙版修图提示词，提升照片张力》（出图：GPT）及 Before/After 对比图。",
-    "preview": {
-      "type": "image",
-      "src": "assets/mask-retouch-photo-tension/before-after.jpg",
-      "alt": "红色法拉利俯拍图蒙版修图 Before 与 After 对比效果",
-      "width": 470,
-      "height": 629
-    },
-    "previewSource": "用户提供的 GPT 蒙版修图 Before/After 实测对比截图",
-    "previewEvidence": "author-published-output",
-    "previewNote": "GPT 蒙版修图 Before/After 对比示例，已裁去手机状态栏与底部界面。",
-    "addedAt": "2026-11-21",
-    "en": {
-      "title": "Simulated Mask Retouching (Single-Axis Dramatic Photo Tension)",
-      "description": "Commercial-grade AI photo retouching prompt that preserves original geometry and materials while sculpting bold single-axis linear gradient lighting, deep clean shadows, and cinematic contrast without redrawing objects.",
-      "tags": "AI retouching / Mask lighting / Commercial photography / High contrast / Before & After / GPT",
-      "prompt": "Strictly preserve the original subject's identity, composition, perspective, geometry, materials, textures, and authentic reflections. Perform photographic post-processing solely through lighting, colour, luminance, contrast, and masking—never redraw or alter objects.\n\nFollowing top-tier commercial photography standards, adaptively analyse the original lighting and spatial structure to apply bolder, deeper tonal sculpting. Allow large shadow regions to drop near deep black, significantly increasing overall lighting contrast while preserving essential detail and separation.\n\nLet macro lighting govern micro lighting, prioritising a small number of high-strength, ultra-broad feathered directional linear gradients. Strictly follow the coaxial complementary principle: establish a single master tonal axis across the entire frame. The key-light side must form a continuous, unified, expansive bright field—the brightest side must span the entire corresponding edge as a broad continuous luminous zone rather than a narrow beam at a corner or edge, spreading evenly perpendicular to the tonal axis with consistent luminance along each iso-line and no spotlight falloff toward the sides. The opposite side must form a continuous, unified, deep shadow field, joined by a single ultra-wide, smooth, natural feathered transition band. All luminance shifts must progress unidirectionally, continuously, and monotonically along this single axis, with consistent brightness across the same axial position—no lateral narrowing, local hot spots, or undersized highlight regions. Avoid isolated bright patches, local spotlights, halos around the subject, or disconnected tonal islands. Both highlights and shadows must read as cohesive broad planes rather than stitched local masks. Avoid pincer lighting, cross-darkening, and fragmented zones.\n\nApply multi-zone tonal sculpting inside the subject as well, without relying on flat subject brightening or mechanical vignettes. Both subject and environment must obey the same global tonal axis; internal sculpting may only enhance existing form and material depth without breaking global light continuity or artificially brightening the subject / darkening its immediate halo. Protect key silhouettes, specular highlights, and material textures while letting non-essential areas sink boldly into deep shadow. Keep highlights crisp and restrained, shadows rich and clean, and midtones moderately compressed for strong visual tension.\n\nAvoid adding new light sources, losing linear gradient coherence, fake ground reflections, flat global darkening, distorted lighting, disconnected illumination, artificial cast shadows, mechanical vignettes, scattered light blotches, isolated spotlights, HDR look, or oversharpening. Clean up minor visual distractions, remove haze while enriching true colours, and deliver a cinematic, high-contrast, directional, clean, and naturally authentic photographic finish.",
-      "previewNote": "Before/After GPT mask retouching comparison with phone UI cropped out."
-    }
   }
 ]
