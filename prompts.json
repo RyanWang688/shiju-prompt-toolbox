@@ -1,5 +1,745 @@
 [
   {
+    "id": "website-open-webui",
+    "kind": "website",
+    "title": "Open WebUI（15.9 万+ Star 开源自托管 AI 对话与知识库平台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 15.9 万+ Star 的全能本地 AI Web 界面，无缝接入 Ollama 与 OpenAI 兼容接口，支持本地 RAG 知识库、联网搜索、多模型对话与权限管理。",
+    "tags": "AI 工作台 / Ollama / 本地知识库 / 自托管 / 多模型 / OpenAI",
+    "pricing": "free",
+    "license": "Open WebUI License",
+    "prompt": "Open WebUI（15.9 万+ Star 开源自托管 AI 对话与知识库平台）\n\n用途\nGitHub 15.9 万+ Star 的全能本地 AI Web 界面，无缝接入 Ollama 与 OpenAI 兼容接口，支持本地 RAG 知识库、联网搜索、多模型对话与权限管理。\n\n官网：https://openwebui.com\n官方仓库：https://github.com/open-webui/open-webui",
+    "source": "https://openwebui.com",
+    "officialUrl": "https://openwebui.com",
+    "repository": "https://github.com/open-webui/open-webui",
+    "documentation": "https://docs.openwebui.com",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-open-webui/cover.jpg",
+      "alt": "Open WebUI (159k+ Star Self-Hosted AI Platform) 官方预览图",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://openwebui.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Open WebUI (159k+ Star Self-Hosted AI Platform)",
+      "description": "159k+ star extensible self-hosted AI interface for Ollama and OpenAI-compatible models with built-in RAG, web search, and RBAC.",
+      "tags": "AI workspace / Ollama / Self-hosted / RAG / Multi-model",
+      "license": "Open WebUI License",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-immich",
+    "kind": "website",
+    "title": "Immich（11.9 万+ Star 高性能开源私有云相册与视频备份）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 11.9 万+ Star 的自托管相册管理方案（AGPL-3.0），支持手机自动备份、人脸与场景 AI 语义搜索、时间轴浏览与多端同步。",
+    "tags": "私有云相册 / 自托管 / AI 搜图 / 手机备份 / Docker / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "Immich（11.9 万+ Star 高性能开源私有云相册与视频备份）\n\n用途\nGitHub 11.9 万+ Star 的自托管相册管理方案（AGPL-3.0），支持手机自动备份、人脸与场景 AI 语义搜索、时间轴浏览与多端同步。\n\n官网：https://immich.app\n官方仓库：https://github.com/immich-app/immich",
+    "source": "https://immich.app",
+    "officialUrl": "https://immich.app",
+    "repository": "https://github.com/immich-app/immich",
+    "documentation": "https://immich.app/docs",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-immich/cover.jpg",
+      "alt": "Immich (119k+ Star Self-Hosted Photo & Video Backup) 官方预览图",
+      "width": 1024,
+      "height": 576
+    },
+    "previewSource": "https://immich.app",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Immich (119k+ Star Self-Hosted Photo & Video Backup)",
+      "description": "119k+ star high-performance self-hosted photo and video backup solution with mobile sync and local ML smart search.",
+      "tags": "Photo backup / Self-hosted / ML search / Mobile sync / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-zed",
+    "kind": "website",
+    "title": "Zed（9.5 万+ Star Rust 打造极速原生协同代码编辑器）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 9.5 万+ Star 的高性能开源代码编辑器（Rust + GPU 渲染），启动与编辑毫秒级响应，内置 AI 编程助手、ACP/MCP 协议与实时多人结对编程。",
+    "tags": "代码编辑器 / Rust / AI 编程 / 结对协作 / 极速工具 / GPL-3.0",
+    "pricing": "free",
+    "license": "GPL-3.0",
+    "prompt": "Zed（9.5 万+ Star Rust 打造极速原生协同代码编辑器）\n\n用途\nGitHub 9.5 万+ Star 的高性能开源代码编辑器（Rust + GPU 渲染），启动与编辑毫秒级响应，内置 AI 编程助手、ACP/MCP 协议与实时多人结对编程。\n\n官网：https://zed.dev\n官方仓库：https://github.com/zed-industries/zed",
+    "source": "https://zed.dev",
+    "officialUrl": "https://zed.dev",
+    "repository": "https://github.com/zed-industries/zed",
+    "documentation": "https://zed.dev/docs",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-zed/cover.jpg",
+      "alt": "Zed (95k+ Star High-Performance Rust Code Editor) 官方预览图",
+      "width": 1280,
+      "height": 672
+    },
+    "previewSource": "https://zed.dev",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Zed (95k+ Star High-Performance Rust Code Editor)",
+      "description": "95k+ star GPU-accelerated Rust code editor built for speed, real-time collaboration, and integrated AI agent workflows.",
+      "tags": "Code editor / Rust / AI coding / Collaboration / Performance",
+      "license": "GPL-3.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-syncthing",
+    "kind": "website",
+    "title": "Syncthing（9 万+ Star 去中心化开源跨设备文件实时同步）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 9 万+ Star 的安全开源点对点文件同步工具（MPL-2.0），无需第三方云盘即可在电脑、手机与 NAS 间加密实时同步任意文件夹。",
+    "tags": "文件同步 / 点对点 / 隐私安全 / 跨平台 / 备份 / MPL-2.0",
+    "pricing": "free",
+    "license": "MPL-2.0",
+    "prompt": "Syncthing（9 万+ Star 去中心化开源跨设备文件实时同步）\n\n用途\nGitHub 9 万+ Star 的安全开源点对点文件同步工具（MPL-2.0），无需第三方云盘即可在电脑、手机与 NAS 间加密实时同步任意文件夹。\n\n官网：https://syncthing.net\n官方仓库：https://github.com/syncthing/syncthing",
+    "source": "https://syncthing.net",
+    "officialUrl": "https://syncthing.net",
+    "repository": "https://github.com/syncthing/syncthing",
+    "documentation": "https://docs.syncthing.net",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-syncthing/cover.jpg",
+      "alt": "Syncthing (90k+ Star Open-Source P2P File Sync) 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://syncthing.net",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Syncthing (90k+ Star Open-Source P2P File Sync)",
+      "description": "90k+ star continuous, encrypted peer-to-peer file synchronization across desktop, mobile, and servers without cloud lock-in.",
+      "tags": "File sync / P2P / Privacy / Cross-platform / MPL-2.0",
+      "license": "MPL-2.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-lobe-chat",
+    "kind": "website",
+    "title": "LobeChat（8.5 万+ Star 开源可扩展多智能体 AI 工作区）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 8.5 万+ Star 的高颜值开源 AI 协作工作台，支持多模型切换、知识库、Artifacts 实时预览、插件市场与语音交互，支持一键部署。",
+    "tags": "AI 工作台 / 多智能体 / Artifacts / 知识库 / 插件生态 / 自托管",
+    "pricing": "free",
+    "license": "LobeHub Community License",
+    "prompt": "LobeChat（8.5 万+ Star 开源可扩展多智能体 AI 工作区）\n\n用途\nGitHub 8.5 万+ Star 的高颜值开源 AI 协作工作台，支持多模型切换、知识库、Artifacts 实时预览、插件市场与语音交互，支持一键部署。\n\n官网：https://lobehub.com\n官方仓库：https://github.com/lobehub/lobe-chat",
+    "source": "https://lobehub.com",
+    "officialUrl": "https://lobehub.com",
+    "repository": "https://github.com/lobehub/lobe-chat",
+    "documentation": "https://lobehub.com/docs",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-lobe-chat/cover.jpg",
+      "alt": "LobeChat (85k+ Star Extensible Multi-Agent AI Workspace) 官方预览图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://lobehub.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "LobeChat (85k+ Star Extensible Multi-Agent AI Workspace)",
+      "description": "85k+ star modern AI workspace supporting multi-model chat, artifacts, knowledge bases, voice, and rich plugin ecosystems.",
+      "tags": "AI workspace / Agents / Artifacts / Knowledge base / Self-hosted",
+      "license": "LobeHub Community License",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-hoppscotch",
+    "kind": "website",
+    "title": "Hoppscotch（8 万+ Star 开源轻量级 API 调试与协作平台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 8 万+ Star 的免费开源 API 开发调试套件（MIT），支持 REST / GraphQL / WebSocket / gRPC，界面清爽极速，是 Postman 的轻量开源替代。",
+    "tags": "API 调试 / Postman替代 / REST / GraphQL / 开发者工具 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "Hoppscotch（8 万+ Star 开源轻量级 API 调试与协作平台）\n\n用途\nGitHub 8 万+ Star 的免费开源 API 开发调试套件（MIT），支持 REST / GraphQL / WebSocket / gRPC，界面清爽极速，是 Postman 的轻量开源替代。\n\n官网：https://hoppscotch.io\n官方仓库：https://github.com/hoppscotch/hoppscotch",
+    "source": "https://hoppscotch.io",
+    "officialUrl": "https://hoppscotch.io",
+    "repository": "https://github.com/hoppscotch/hoppscotch",
+    "documentation": "https://docs.hoppscotch.io",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-hoppscotch/cover.jpg",
+      "alt": "Hoppscotch (80k+ Star Open-Source API Dev Ecosystem) 官方预览图",
+      "width": 1280,
+      "height": 672
+    },
+    "previewSource": "https://hoppscotch.io",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Hoppscotch (80k+ Star Open-Source API Dev Ecosystem)",
+      "description": "80k+ star MIT-licensed lightweight API testing suite for REST, GraphQL, WebSocket, and team collections.",
+      "tags": "API client / REST / GraphQL / Developer tools / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-affine",
+    "kind": "website",
+    "title": "AFFiNE（7.6 万+ Star 文档+白板融合的本地优先知识工作台）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 7.6 万+ Star 的 Notion + Miro 合体开源替代品，支持在同一画布中无缝切换结构化文档、无限白板与多维数据库，本地优先离线可用。",
+    "tags": "知识库 / 无限白板 / Notion替代 / 本地优先 / 协同办公 / 自托管",
+    "pricing": "free",
+    "license": "MIT / Enterprise",
+    "prompt": "AFFiNE（7.6 万+ Star 文档+白板融合的本地优先知识工作台）\n\n用途\nGitHub 7.6 万+ Star 的 Notion + Miro 合体开源替代品，支持在同一画布中无缝切换结构化文档、无限白板与多维数据库，本地优先离线可用。\n\n官网：https://affine.pro\n官方仓库：https://github.com/toeverything/AFFiNE",
+    "source": "https://affine.pro",
+    "officialUrl": "https://affine.pro",
+    "repository": "https://github.com/toeverything/AFFiNE",
+    "documentation": "https://docs.affine.pro",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-affine/cover.jpg",
+      "alt": "AFFiNE (76k+ Star Local-First Docs & Whiteboard Workspace) 官方预览图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://affine.pro",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "AFFiNE (76k+ Star Local-First Docs & Whiteboard Workspace)",
+      "description": "76k+ star all-in-one local-first workspace merging Notion-style docs, databases, and Miro-style infinite whiteboards.",
+      "tags": "Knowledge base / Whiteboard / Notion alternative / Local-first",
+      "license": "MIT / Enterprise",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-vaultwarden",
+    "kind": "website",
+    "title": "Vaultwarden（7.1 万+ Star 轻量级 Rust 自托管密码管理器）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 7.1 万+ Star 的 Bitwarden 兼容轻量服务端（AGPL-3.0），用 Rust 编写仅需极少内存即可自托管全平台密码库与 2FA 验证码同步。",
+    "tags": "密码管理 / 自托管 / Rust / 隐私安全 / Bitwarden兼容 / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "Vaultwarden（7.1 万+ Star 轻量级 Rust 自托管密码管理器）\n\n用途\nGitHub 7.1 万+ Star 的 Bitwarden 兼容轻量服务端（AGPL-3.0），用 Rust 编写仅需极少内存即可自托管全平台密码库与 2FA 验证码同步。\n\n官网：https://github.com/dani-garcia/vaultwarden\n官方仓库：https://github.com/dani-garcia/vaultwarden",
+    "source": "https://github.com/dani-garcia/vaultwarden",
+    "officialUrl": "https://github.com/dani-garcia/vaultwarden",
+    "repository": "https://github.com/dani-garcia/vaultwarden",
+    "documentation": "https://github.com/dani-garcia/vaultwarden/wiki",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-vaultwarden/cover.jpg",
+      "alt": "Vaultwarden (71k+ Star Lightweight Self-Hosted Password Manager) 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/dani-garcia/vaultwarden",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Vaultwarden (71k+ Star Lightweight Self-Hosted Password Manager)",
+      "description": "71k+ star Rust implementation of the Bitwarden server API for lightweight, private, cross-device password management.",
+      "tags": "Password manager / Self-hosted / Rust / Security / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-alacritty",
+    "kind": "website",
+    "title": "Alacritty（6.6 万+ Star GPU 加速跨平台极速终端模拟器）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 6.6 万+ Star 的开源 GPU 加速终端（Apache-2.0），专注极致渲染性能与极简配置，支持 Vi 模式快捷复制与跨平台流畅开发体验。",
+    "tags": "终端模拟器 / GPU加速 / Rust / 极简配置 / 开发者效率 / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "Alacritty（6.6 万+ Star GPU 加速跨平台极速终端模拟器）\n\n用途\nGitHub 6.6 万+ Star 的开源 GPU 加速终端（Apache-2.0），专注极致渲染性能与极简配置，支持 Vi 模式快捷复制与跨平台流畅开发体验。\n\n官网：https://alacritty.org\n官方仓库：https://github.com/alacritty/alacritty",
+    "source": "https://alacritty.org",
+    "officialUrl": "https://alacritty.org",
+    "repository": "https://github.com/alacritty/alacritty",
+    "documentation": "https://alacritty.org/config-alacritty.html",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-alacritty/cover.jpg",
+      "alt": "Alacritty (66k+ Star GPU-Accelerated Terminal Emulator) 官方预览图",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://alacritty.org",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Alacritty (66k+ Star GPU-Accelerated Terminal Emulator)",
+      "description": "66k+ star Apache-2.0 cross-platform OpenGL terminal emulator focused on simplicity and blazing performance.",
+      "tags": "Terminal / GPU-accelerated / Rust / Developer tools / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-nocodb",
+    "kind": "website",
+    "title": "NocoDB（6.5 万+ Star 开源自托管 Airtable 多维表格替代）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 6.5 万+ Star 的开源无代码多维表格平台（AGPL-3.0），一键将任意 MySQL/PostgreSQL/SQLite 数据库变成可视化表格、看板、日历与表单。",
+    "tags": "多维表格 / 无代码 / Airtable替代 / 数据库可视化 / 自托管 / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "NocoDB（6.5 万+ Star 开源自托管 Airtable 多维表格替代）\n\n用途\nGitHub 6.5 万+ Star 的开源无代码多维表格平台（AGPL-3.0），一键将任意 MySQL/PostgreSQL/SQLite 数据库变成可视化表格、看板、日历与表单。\n\n官网：https://nocodb.com\n官方仓库：https://github.com/nocodb/nocodb",
+    "source": "https://nocodb.com",
+    "officialUrl": "https://nocodb.com",
+    "repository": "https://github.com/nocodb/nocodb",
+    "documentation": "https://docs.nocodb.com",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-nocodb/cover.jpg",
+      "alt": "NocoDB (65k+ Star Open-Source Airtable Alternative) 官方预览图",
+      "width": 1280,
+      "height": 671
+    },
+    "previewSource": "https://nocodb.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "NocoDB (65k+ Star Open-Source Airtable Alternative)",
+      "description": "65k+ star no-code smart spreadsheet platform turning any SQL database into collaborative grids, kanban, and forms.",
+      "tags": "Smart spreadsheet / No-code / Airtable alternative / Self-hosted",
+      "license": "AGPL-3.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-marktext",
+    "kind": "website",
+    "title": "MarkText（6.4 万+ Star 极简所见即所得开源 Markdown 编辑器）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 6.4 万+ Star 的免费开源跨平台 Markdown 编辑器（MIT），支持实时所见即所得排版、数学公式、流程图与多种专注写作主题。",
+    "tags": "Markdown 编辑器 / 所见即所得 / 写作工具 / 跨平台 / 开源 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "MarkText（6.4 万+ Star 极简所见即所得开源 Markdown 编辑器）\n\n用途\nGitHub 6.4 万+ Star 的免费开源跨平台 Markdown 编辑器（MIT），支持实时所见即所得排版、数学公式、流程图与多种专注写作主题。\n\n官网：https://www.marktext.me\n官方仓库：https://github.com/marktext/marktext",
+    "source": "https://www.marktext.me",
+    "officialUrl": "https://www.marktext.me",
+    "repository": "https://github.com/marktext/marktext",
+    "documentation": "https://github.com/marktext/marktext#readme",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-marktext/cover.jpg",
+      "alt": "MarkText (64k+ Star Realtime WYSIWYG Markdown Editor) 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://www.marktext.me",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "MarkText (64k+ Star Realtime WYSIWYG Markdown Editor)",
+      "description": "64k+ star MIT-licensed cross-platform Markdown editor with distraction-free live preview, math, and diagram support.",
+      "tags": "Markdown editor / WYSIWYG / Writing / Cross-platform / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-drawio",
+    "kind": "website",
+    "title": "draw.io Desktop（6.4 万+ Star 离线开源全能流程图与架构图软件）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 6.4 万+ Star 的经典离线绘图桌面应用（GPL-3.0），内置海量 UML、云架构、电路与商业流程图图形库，纯本地文件存储不依赖联网。",
+    "tags": "流程图 / 架构图 / UML / 离线桌面端 / 绘图工具 / GPL-3.0",
+    "pricing": "free",
+    "license": "GPL-3.0",
+    "prompt": "draw.io Desktop（6.4 万+ Star 离线开源全能流程图与架构图软件）\n\n用途\nGitHub 6.4 万+ Star 的经典离线绘图桌面应用（GPL-3.0），内置海量 UML、云架构、电路与商业流程图图形库，纯本地文件存储不依赖联网。\n\n官网：https://www.diagrams.net\n官方仓库：https://github.com/jgraph/drawio-desktop",
+    "source": "https://www.diagrams.net",
+    "officialUrl": "https://www.diagrams.net",
+    "repository": "https://github.com/jgraph/drawio-desktop",
+    "documentation": "https://www.drawio.com/doc/",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-drawio/cover.jpg",
+      "alt": "draw.io Desktop (64k+ Star Offline Diagramming & Flowchart App) 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://www.diagrams.net",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "draw.io Desktop (64k+ Star Offline Diagramming & Flowchart App)",
+      "description": "64k+ star GPL-3.0 local desktop diagram editor packed with templates for architecture, UML, network, and flowcharts.",
+      "tags": "Diagramming / Flowcharts / Architecture / Offline / GPL-3.0",
+      "license": "GPL-3.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-plane",
+    "kind": "website",
+    "title": "Plane（6.2 万+ Star 开源现代项目管理与敏捷看板平台）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 6.2 万+ Star 的开源项目管理工作台（AGPL-3.0），对标 Linear 与 Jira，内置 Issue 追踪、冲刺周期、模块拆解、文档 Pages 与自托管支持。",
+    "tags": "项目管理 / 敏捷看板 / Jira替代 / Linear替代 / 团队协作 / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "Plane（6.2 万+ Star 开源现代项目管理与敏捷看板平台）\n\n用途\nGitHub 6.2 万+ Star 的开源项目管理工作台（AGPL-3.0），对标 Linear 与 Jira，内置 Issue 追踪、冲刺周期、模块拆解、文档 Pages 与自托管支持。\n\n官网：https://plane.so\n官方仓库：https://github.com/makeplane/plane",
+    "source": "https://plane.so",
+    "officialUrl": "https://plane.so",
+    "repository": "https://github.com/makeplane/plane",
+    "documentation": "https://docs.plane.so",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-plane/cover.jpg",
+      "alt": "Plane (62k+ Star Open-Source Linear & Jira Alternative) 官方预览图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://plane.so",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Plane (62k+ Star Open-Source Linear & Jira Alternative)",
+      "description": "62k+ star AGPL-3.0 modern project management suite for issues, sprints, roadmaps, and team pages.",
+      "tags": "Project management / Kanban / Issue tracker / Self-hosted / AGPL-3.0",
+      "license": "AGPL-3.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-penpot",
+    "kind": "website",
+    "title": "Penpot（6.2 万+ Star 开源免费跨平台 UI/UX 协同设计平台）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 6.2 万+ Star 的 Figma 开源替代品（MPL-2.0），原生基于 SVG、CSS Flex/Grid 构建设计系统，设计师与前端开发在同一语言体系下实时协作。",
+    "tags": "UI设计 / Figma替代 / 开源设计 / 原型协作 / CSS Grid / MPL-2.0",
+    "pricing": "free",
+    "license": "MPL-2.0",
+    "prompt": "Penpot（6.2 万+ Star 开源免费跨平台 UI/UX 协同设计平台）\n\n用途\nGitHub 6.2 万+ Star 的 Figma 开源替代品（MPL-2.0），原生基于 SVG、CSS Flex/Grid 构建设计系统，设计师与前端开发在同一语言体系下实时协作。\n\n官网：https://penpot.app\n官方仓库：https://github.com/penpot/penpot",
+    "source": "https://penpot.app",
+    "officialUrl": "https://penpot.app",
+    "repository": "https://github.com/penpot/penpot",
+    "documentation": "https://help.penpot.app",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-penpot/cover.jpg",
+      "alt": "Penpot (62k+ Star Open-Source Design & Prototyping Platform) 官方预览图",
+      "width": 1280,
+      "height": 752
+    },
+    "previewSource": "https://penpot.app",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Penpot (62k+ Star Open-Source Design & Prototyping Platform)",
+      "description": "62k+ star MPL-2.0 web-based Figma alternative using open web standards (SVG, CSS Flex/Grid) for design-to-code teams.",
+      "tags": "UI design / Figma alternative / Prototyping / Design tokens / MPL-2.0",
+      "license": "MPL-2.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-starship",
+    "kind": "website",
+    "title": "Starship（6 万+ Star 极速高颜值跨 Shell 终端提示符）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 6 万+ Star 的 Rust 终端提示符工具（ISC），毫秒级显示 Git 分支状态、Node/Python/Rust 环境版本与耗时，开箱即用适配 Zsh/Bash/PowerShell。",
+    "tags": "终端美化 / Shell 提示符 / Rust / Git 状态 / 开发者效率 / ISC",
+    "pricing": "free",
+    "license": "ISC",
+    "prompt": "Starship（6 万+ Star 极速高颜值跨 Shell 终端提示符）\n\n用途\nGitHub 6 万+ Star 的 Rust 终端提示符工具（ISC），毫秒级显示 Git 分支状态、Node/Python/Rust 环境版本与耗时，开箱即用适配 Zsh/Bash/PowerShell。\n\n官网：https://starship.rs\n官方仓库：https://github.com/starship/starship",
+    "source": "https://starship.rs",
+    "officialUrl": "https://starship.rs",
+    "repository": "https://github.com/starship/starship",
+    "documentation": "https://starship.rs/config/",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-starship/cover.jpg",
+      "alt": "Starship (60k+ Star Minimal, Blazing-Fast Cross-Shell Prompt) 官方预览图",
+      "width": 512,
+      "height": 512
+    },
+    "previewSource": "https://starship.rs",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Starship (60k+ Star Minimal, Blazing-Fast Cross-Shell Prompt)",
+      "description": "60k+ star ISC-licensed Rust shell prompt showing Git status, runtime versions, and command timings across any shell.",
+      "tags": "Shell prompt / Terminal / Rust / Developer tools / ISC",
+      "license": "ISC",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-joplin",
+    "kind": "website",
+    "title": "Joplin（5.7 万+ Star 开源隐私优先端到端加密多端笔记）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 5.7 万+ Star 的跨平台开源笔记与待办应用，支持桌面/手机端 Markdown 编辑、网页剪藏插件、端到端加密与 WebDAV/S3 自由同步。",
+    "tags": "隐私笔记 / 端到端加密 / Markdown / 网页剪藏 / 多端同步 / AGPL-3.0",
+    "pricing": "free",
+    "license": "AGPL-3.0",
+    "prompt": "Joplin（5.7 万+ Star 开源隐私优先端到端加密多端笔记）\n\n用途\nGitHub 5.7 万+ Star 的跨平台开源笔记与待办应用，支持桌面/手机端 Markdown 编辑、网页剪藏插件、端到端加密与 WebDAV/S3 自由同步。\n\n官网：https://joplinapp.org\n官方仓库：https://github.com/laurent22/joplin",
+    "source": "https://joplinapp.org",
+    "officialUrl": "https://joplinapp.org",
+    "repository": "https://github.com/laurent22/joplin",
+    "documentation": "https://joplinapp.org/help/",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-joplin/cover.jpg",
+      "alt": "Joplin (57k+ Star Privacy-Focused E2EE Note-Taking App) 官方预览图",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://joplinapp.org",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Joplin (57k+ Star Privacy-Focused E2EE Note-Taking App)",
+      "description": "57k+ star open-source note-taking and to-do app with E2E encryption, web clipper, Markdown, and WebDAV/S3 sync.",
+      "tags": "Notes / E2E encryption / Markdown / Web clipper / Cross-platform",
+      "license": "AGPL-3.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-flowise",
+    "kind": "website",
+    "title": "Flowise（5.5 万+ Star 开源拖拽式 AI Agent 与 RAG 编排工具）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 5.5 万+ Star 的可视化大模型工作流搭建工具，通过连线拖拽即可快速组合多 Agent 协作、文档检索 RAG 与 API 接口发布。",
+    "tags": "AI 工作流 / 可视化编排 / RAG / 多智能体 / 低代码 / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "Flowise（5.5 万+ Star 开源拖拽式 AI Agent 与 RAG 编排工具）\n\n用途\nGitHub 5.5 万+ Star 的可视化大模型工作流搭建工具，通过连线拖拽即可快速组合多 Agent 协作、文档检索 RAG 与 API 接口发布。\n\n官网：https://flowiseai.com\n官方仓库：https://github.com/FlowiseAI/Flowise",
+    "source": "https://flowiseai.com",
+    "officialUrl": "https://flowiseai.com",
+    "repository": "https://github.com/FlowiseAI/Flowise",
+    "documentation": "https://docs.flowiseai.com",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-flowise/cover.jpg",
+      "alt": "Flowise (55k+ Star Visual AI Agent & RAG Flow Builder) 官方预览图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://flowiseai.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Flowise (55k+ Star Visual AI Agent & RAG Flow Builder)",
+      "description": "55k+ star drag-and-drop UI to build, test, and deploy custom LLM orchestration, RAG pipelines, and AI agents.",
+      "tags": "AI workflow / Visual builder / RAG / Agents / Low-code",
+      "license": "Apache-2.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-dbeaver",
+    "kind": "website",
+    "title": "DBeaver（5.2 万+ Star 全能开源跨平台数据库管理客户端）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 5.2 万+ Star 的免费通用数据库 IDE（Apache-2.0），支持 MySQL、PostgreSQL、SQLite、ClickHouse 等上百种数据源，提供 ER 图、SQL 补全与数据导出。",
+    "tags": "数据库客户端 / SQL 工具 / ER图 / 开发者工具 / 跨平台 / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "DBeaver（5.2 万+ Star 全能开源跨平台数据库管理客户端）\n\n用途\nGitHub 5.2 万+ Star 的免费通用数据库 IDE（Apache-2.0），支持 MySQL、PostgreSQL、SQLite、ClickHouse 等上百种数据源，提供 ER 图、SQL 补全与数据导出。\n\n官网：https://dbeaver.io\n官方仓库：https://github.com/dbeaver/dbeaver",
+    "source": "https://dbeaver.io",
+    "officialUrl": "https://dbeaver.io",
+    "repository": "https://github.com/dbeaver/dbeaver",
+    "documentation": "https://dbeaver.com/docs/dbeaver/",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-dbeaver/cover.jpg",
+      "alt": "DBeaver (52k+ Star Universal Open-Source Database Client) 官方预览图",
+      "width": 1000,
+      "height": 500
+    },
+    "previewSource": "https://dbeaver.io",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "DBeaver (52k+ Star Universal Open-Source Database Client)",
+      "description": "52k+ star Apache-2.0 universal SQL client & database manager supporting MySQL, PostgreSQL, SQLite, ER diagrams, and more.",
+      "tags": "Database client / SQL / ER diagram / Developer tools / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-calcom",
+    "kind": "website",
+    "title": "Cal.com（5 万+ Star 开源日程预约与会议调度基础设施）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 5 万+ Star 的 Calendly 开源替代品（MIT），支持个人与团队日程预约、时区自动换算、日历双向同步与工作流自动提醒。",
+    "tags": "日程预约 / 会议调度 / 时间管理 / Calendly替代 / 自托管 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "Cal.com（5 万+ Star 开源日程预约与会议调度基础设施）\n\n用途\nGitHub 5 万+ Star 的 Calendly 开源替代品（MIT），支持个人与团队日程预约、时区自动换算、日历双向同步与工作流自动提醒。\n\n官网：https://cal.com\n官方仓库：https://github.com/calcom/cal.com",
+    "source": "https://cal.com",
+    "officialUrl": "https://cal.com",
+    "repository": "https://github.com/calcom/cal.com",
+    "documentation": "https://cal.com/docs",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-calcom/cover.jpg",
+      "alt": "Cal.com (50k+ Star Open-Source Scheduling Infrastructure) 官方预览图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://cal.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Cal.com (50k+ Star Open-Source Scheduling Infrastructure)",
+      "description": "50k+ star MIT-licensed open-source Calendly alternative with timezone sync, team booking, and workflow automation.",
+      "tags": "Scheduling / Calendar / Productivity / Self-hosted / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
+    "id": "website-bruno",
+    "kind": "website",
+    "title": "Bruno（4.8 万+ Star Git 友好的本地离线开源 API 测试 IDE）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 4.8 万+ Star 的轻量级开源 API 客户端（MIT），接口集合直接以纯文本保存在本地文件夹中，无云端强制登录，原生支持用 Git 进行团队版本管理。",
+    "tags": "API 测试 / Git友好 / 本地离线 / Postman替代 / 开发者工具 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "Bruno（4.8 万+ Star Git 友好的本地离线开源 API 测试 IDE）\n\n用途\nGitHub 4.8 万+ Star 的轻量级开源 API 客户端（MIT），接口集合直接以纯文本保存在本地文件夹中，无云端强制登录，原生支持用 Git 进行团队版本管理。\n\n官网：https://www.usebruno.com\n官方仓库：https://github.com/usebruno/bruno",
+    "source": "https://www.usebruno.com",
+    "officialUrl": "https://www.usebruno.com",
+    "repository": "https://github.com/usebruno/bruno",
+    "documentation": "https://docs.usebruno.com",
+    "addedAt": "2026-11-22",
+    "verifiedAt": "2026-11-22",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-bruno/cover.jpg",
+      "alt": "Bruno (48k+ Star Git-Friendly Offline API Testing IDE) 官方预览图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://www.usebruno.com",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-22 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Bruno (48k+ Star Git-Friendly Offline API Testing IDE)",
+      "description": "48k+ star MIT-licensed fast, offline-first API client storing collections directly as plain-text files for clean Git versioning.",
+      "tags": "API testing / Offline-first / Git-friendly / Developer tools / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image captured on 2026-11-22; saved for reference only."
+    }
+  },
+  {
     "id": "website-n8n",
     "kind": "website",
     "title": "n8n（21 万+ Star 开源 AI 工作流自动化平台）",
