@@ -176,61 +176,55 @@ html[data-theme=dark] .rail-tooltip{background:#ededef;color:#09090b;box-shadow:
 /* Header controls. */
 html[data-theme=dark] .lang-switch,html[data-theme=dark] .dashboard .top .theme-toggle{background:#111113;border-color:#ffffff1f}
 /* Text that sits on the yellow accent stays dark. */
-@media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.graph-btn,.graph-pill,.graph-close,.graph-rel-item,.graph-seg-btn,.graph-gear,.graph-expand,.graph-hit-trigger,.graph-hit-item,.gi-subchip,.gi-local-btn,.graph-depth-btn):not(:disabled),a.visit-site:not(.gi-visit),.rail-brand,select):hover{color:#191919!important}}
-html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.graph-btn,.graph-pill,.graph-close,.graph-rel-item,.graph-seg-btn,.graph-gear,.graph-expand,.graph-hit-trigger,.graph-hit-item,.gi-subchip,.gi-local-btn,.graph-depth-btn):not(:disabled),a.visit-site:not(.gi-visit),.rail-brand,select):focus-visible{color:#191919!important}
+@media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.wf-preset-chip,.wf-shield-btn,.wf-copy-btn,.wf-step-detail,.wf-step-swap,.wf-swap-close,.wf-swap-opt):not(:disabled),a.visit-site,.rail-brand,select):hover{color:#191919!important}}
+html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.wf-preset-chip,.wf-shield-btn,.wf-copy-btn,.wf-step-detail,.wf-step-swap,.wf-swap-close,.wf-swap-opt):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{color:#191919!important}
 html[data-theme=dark] .dashboard .top .lang-switch .lang-option[aria-pressed=true],html[data-theme=dark] .dashboard .top .theme-toggle:hover{color:#191919}
 html[data-theme=dark] ::selection{background:#ffd43b;color:#191919}
-/* Obsidian dark mode for Knowledge Graph v2 & toolbar switch. */
+/* Obsidian dark mode for Workflow Studio & toolbar switch. */
 html[data-theme=dark] .dashboard .view-switch{background:#111113;border-color:#ffffff16}
 html[data-theme=dark] .dashboard .view-btn{color:#8e8e96}
 html[data-theme=dark] .dashboard .view-btn:hover{background:#ffffff0d;color:#ededef}
 html[data-theme=dark] .dashboard .view-btn[aria-pressed=true]{background:#ffd43b;color:#191919}
-html[data-theme=dark] .graph-stage{background:#0b0b0e;border-color:#ffffff14}
-html[data-theme=dark] .graph-legend,html[data-theme=dark] .graph-depth-switch,html[data-theme=dark] .graph-expand,html[data-theme=dark] .graph-gear,html[data-theme=dark] .graph-settings,html[data-theme=dark] .graph-controls,html[data-theme=dark] .graph-inspector,html[data-theme=dark] .graph-tooltip,html[data-theme=dark] .graph-hint{background:#141418dc;border-color:#ffffff16;color:#ededef;box-shadow:0 20px 44px -16px #000}
-html[data-theme=dark] .graph-pill{color:#a1a1aa}
-html[data-theme=dark] .graph-pill.active{background:#ffffff12;color:#ededef}
-html[data-theme=dark] .graph-pill:hover{background:#ffffff18;color:#ededef}
-html[data-theme=dark] .graph-pill.is-focused{background:#ffd43b;color:#191919;border-color:#ffd43b}
-html[data-theme=dark] .graph-pill.is-focused:hover{background:#ffd43b;color:#191919}
-html[data-theme=dark] .graph-pill .dot-hub{border-color:#ffd43b}
-html[data-theme=dark] .graph-pill .dot-skill{background:#a78bfa}
-html[data-theme=dark] .graph-pill .dot-website{background:#38bdf8}
-html[data-theme=dark] .graph-pill .dot-prompt{background:#fbbf24}
-html[data-theme=dark] .graph-depth-btn{color:#a1a1aa}
-html[data-theme=dark] .graph-depth-btn:hover{background:#ffffff12;color:#ededef}
-html[data-theme=dark] .graph-depth-btn.active{background:#ffd43b;color:#191919}
-html[data-theme=dark] .graph-expand[aria-pressed=true]{background:#ffd43b;color:#191919;border-color:#ffd43b}
-html[data-theme=dark] .graph-stat,html[data-theme=dark] .graph-hint,html[data-theme=dark] .gi-desc,html[data-theme=dark] .gi-tags,html[data-theme=dark] .gi-empty-rel,html[data-theme=dark] .graph-tooltip span,html[data-theme=dark] .gi-title-n{color:#a1a1aa;border-color:#ffffff14}
-html[data-theme=dark] .graph-search-nav{background:#18181fe6;border-color:#ffd43b66}
-html[data-theme=dark] .graph-hit-trigger{color:#ededef}
-html[data-theme=dark] .graph-hit-trigger:hover{background:#ffffff12}
-html[data-theme=dark] .graph-hit-label,html[data-theme=dark] .gi-title,html[data-theme=dark] .graph-tooltip b,html[data-theme=dark] .graph-set-row,html[data-theme=dark] .graph-set-col{color:#ededef}
-html[data-theme=dark] .graph-hit-dropdown{background:#16161cf8;border-color:#ffffff1a;box-shadow:0 24px 52px -16px #000}
-html[data-theme=dark] .graph-hit-item{color:#ededef}
-html[data-theme=dark] .graph-hit-item:hover,html[data-theme=dark] .graph-hit-item.active{background:#ffd43b1e;border-color:#ffd43b80}
-html[data-theme=dark] .ghi-badge{background:#ffffff12;color:#a1a1aa}
-html[data-theme=dark] .graph-seg,html[data-theme=dark] .gi-depth-seg{background:#09090b}
-html[data-theme=dark] .graph-seg-btn{color:#a1a1aa}
-html[data-theme=dark] .graph-seg-btn.active{background:#23232b;color:#ededef}
-html[data-theme=dark] .graph-btn,html[data-theme=dark] .graph-close{background:#1b1b21;border-color:#ffffff1a;color:#ededef}
-html[data-theme=dark] .graph-btn:hover,html[data-theme=dark] .graph-close:hover{background:#272730;border-color:#ffffff33}
-html[data-theme=dark] .gi-local-btn.is-active{background:#ffd43b;color:#191919;border-color:#ffd43b}
-html[data-theme=dark] .gi-badge,html[data-theme=dark] .gi-concept-tag{background:#ffffff10;color:#c4c4cc}
-html[data-theme=dark] .gi-badge.gi-hub{background:#ffd43b;color:#191919}
-html[data-theme=dark] .gi-subchip{background:#18181f;border-color:#ffffff14;color:#a1a1aa}
-html[data-theme=dark] .gi-subchip:hover{background:#272730;color:#ededef}
-html[data-theme=dark] .gi-subchip.active{background:#ffd43b;border-color:#ffd43b;color:#191919}
-html[data-theme=dark] .gi-filter-input{background:#0d0d11;border-color:#ffffff1a;color:#ededef}
-html[data-theme=dark] .gi-filter-input:focus{background:#141418;border-color:#ffd43b}
-html[data-theme=dark] .gi-cover{background:#18181b;border-color:#ffffff14}
-html[data-theme=dark] .gi-head,html[data-theme=dark] .gi-sec-label,html[data-theme=dark] .gi-foot,html[data-theme=dark] .graph-set-actions{border-color:#ffffff14;color:#a1a1aa}
-html[data-theme=dark] .dashboard a.visit-site.gi-visit{background:#1b1b21;border-color:#ffffff1a;color:#ededef}
-html[data-theme=dark] .dashboard a.visit-site.gi-visit:hover{background:#272730;border-color:#ffffff33;color:#ededef}
-html[data-theme=dark] .graph-rel-item{background:#18181f;border-color:#ffffff12;color:#ededef}
-html[data-theme=dark] .graph-rel-item:hover{background:#ffd43b1a;border-color:#ffd43b80}
-html[data-theme=dark] .gi-rel-reason{background:#ffffff10;color:#a1a1aa}
-html[data-theme=dark] .gi-fav[aria-pressed=true]{background:#ffd43b24;border-color:#ffd43b;color:#ffd43b}
-html[data-theme=dark] .graph-set-row input{accent-color:#ffd43b}
+html[data-theme=dark] .wf-hero{background:radial-gradient(640px circle at var(--mx,85%) var(--my,15%),#ffd43b14,transparent 55%),#121216;border-color:#ffffff16;box-shadow:0 24px 60px -24px #000}
+html[data-theme=dark] .wf-kicker{background:#ffd43b18;border-color:#ffd43b45;color:#ffd43b}
+html[data-theme=dark] .wf-title,html[data-theme=dark] .wf-recipe-badge,html[data-theme=dark] .wf-step-title{color:#f4f4f5}
+html[data-theme=dark] .wf-sub,html[data-theme=dark] .wf-recipe-sub,html[data-theme=dark] .wf-step-desc,html[data-theme=dark] .wf-diagnosis,html[data-theme=dark] .wf-diag-right{color:#a1a1aa}
+html[data-theme=dark] .wf-input-wrap{background:#0b0b0e;border-color:#ffffff1c}
+html[data-theme=dark] .wf-input-wrap:focus-within{background:#09090b;border-color:#ffd43b;box-shadow:0 0 0 4px #ffd43b24}
+html[data-theme=dark] .wf-input-wrap input{color:#f4f4f5}
+html[data-theme=dark] .wf-input-wrap input::placeholder{color:#71717a}
+html[data-theme=dark] .wf-preset-chip{background:#18181f;border-color:#ffffff16;color:#c4c4cc}
+html[data-theme=dark] .wf-preset-chip:hover{background:#23232c;border-color:#ffffff33;color:#f4f4f5}
+html[data-theme=dark] .wf-preset-chip.active{background:#ffd43b;border-color:#ffd43b;color:#191919}
+html[data-theme=dark] .wf-diag-tag{background:#16161c;border-color:#ffffff16;color:#ededef}
+html[data-theme=dark] .wf-recipe{background:radial-gradient(520px circle at var(--mx,50%) var(--my,0%),#ffd43b0e,transparent 55%),#121216;border-color:#ffffff14;box-shadow:0 20px 52px -24px #000}
+html[data-theme=dark] .wf-recipe:hover{border-color:#ffffff28}
+html[data-theme=dark] .wf-shield-btn{background:#10b9811a;border-color:#10b9814d;color:#6ee7b7}
+html[data-theme=dark] .wf-shield-btn:hover{background:#10b98129;border-color:#34d399}
+html[data-theme=dark] .wf-shield-note{background:#064e3b38;border-color:#10b98144;color:#a7f3d0}
+html[data-theme=dark] .wf-copy-btn{background:#1b1b22;border-color:#ffffff1a;color:#ededef}
+html[data-theme=dark] .wf-copy-btn:hover{background:#ffd43b;border-color:#ffd43b;color:#191919}
+html[data-theme=dark] .wf-copy-btn.is-copied{background:#10b98124;border-color:#34d399;color:#6ee7b7}
+html[data-theme=dark] .wf-conn-line{background:#ffffff30}
+html[data-theme=dark] .wf-step{background:#18181f;border-color:#ffffff14}
+html[data-theme=dark] .wf-step:hover{background:#1d1d26;border-color:#ffd43b80;box-shadow:0 18px 36px -18px #000}
+html[data-theme=dark] .wf-stage-pill{color:#a1a1aa}
+html[data-theme=dark] .wf-kind-pill.is-skill{background:#a78bfa22;color:#c4b5fd}
+html[data-theme=dark] .wf-kind-pill.is-web{background:#38bdf822;color:#7dd3fc}
+html[data-theme=dark] .wf-kind-pill.is-prompt{background:#fbbf2422;color:#fde68a}
+html[data-theme=dark] .wf-step-thumb{border-color:#ffffff14;background:#0e0e12}
+html[data-theme=dark] .wf-step-thumb-text{background:linear-gradient(135deg,#1d1d26,#131319);color:#f4f4f5}
+html[data-theme=dark] .wf-step-foot{border-color:#ffffff12}
+html[data-theme=dark] .wf-step-detail{background:#23232c;border-color:#ffffff1c;color:#ededef}
+html[data-theme=dark] .wf-step-detail:hover{background:#ffd43b;border-color:#ffd43b;color:#191919}
+html[data-theme=dark] .wf-step-swap{border-color:#ffffff18;color:#a1a1aa}
+html[data-theme=dark] .wf-step-swap:hover,html[data-theme=dark] .wf-step-swap[aria-expanded=true]{background:#ffd43b20;border-color:#ffd43b80;color:#ffd43b}
+html[data-theme=dark] .wf-swap-pop{background:#16161df8;border-color:#ffffff1f;box-shadow:0 22px 48px -16px #000}
+html[data-theme=dark] .wf-swap-head{color:#a1a1aa}
+html[data-theme=dark] .wf-swap-close{background:#23232c;border-color:#ffffff1c;color:#ededef}
+html[data-theme=dark] .wf-swap-opt{background:#1d1d26;border-color:#ffffff14;color:#ededef}
+html[data-theme=dark] .wf-swap-opt:hover{background:#ffd43b1e;border-color:#ffd43b80}
+html[data-theme=dark] .wf-swap-opt-tag{background:#ffffff12;color:#a1a1aa}
 """
 
 def build(root):

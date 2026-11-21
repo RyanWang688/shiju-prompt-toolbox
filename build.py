@@ -32,12 +32,12 @@ for item in items:
 data = json.dumps(items, ensure_ascii=False).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')
 import sys
 sys.path.insert(0, str(root))
-import graph_builder
-graph_data = graph_builder.build(root, items).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')
+import workflow_builder
+workflow_data = workflow_builder.build(root, items).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')
 template = (root / 'index.template.html').read_text(encoding='utf-8')
 assert template.count('__PROMPTS__') == 1
-assert template.count('__GRAPH__') == 1
-(root / 'index.html').write_text(template.replace('__PROMPTS__', data).replace('__GRAPH__', graph_data), encoding='utf-8')
+assert template.count('__WORKFLOW__') == 1
+(root / 'index.html').write_text(template.replace('__PROMPTS__', data).replace('__WORKFLOW__', workflow_data), encoding='utf-8')
 print(f'Built index.html with {len(items)} prompts.')
 
 # Night mode: regenerate the dark stylesheet from the light one so the two never drift apart.
