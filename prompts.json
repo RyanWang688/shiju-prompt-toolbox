@@ -1,5 +1,42 @@
 [
   {
+    "id": "skill-elephant-goldfish-model",
+    "kind": "skill",
+    "title": "Elephant-Goldfish Model (EGM 大象金鱼双角色评审插件)",
+    "category": "其他",
+    "skillTopics": [
+      "开发工具"
+    ],
+    "description": "Google 开源的 AI 规格设计与评审插件（2.2 万+ Star，Apache-2.0）。通过长记忆「大象」编写规格文档与零记忆「金鱼」独立冷评审的双角色机制，彻底消除长对话上下文漂移与盲区，适配 Claude Code、Codex 与 Antigravity。",
+    "tags": "AI 评审 / 规格驱动开发 / 双角色 / 上下文隔离 / Google / Claude Code / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "Elephant-Goldfish Model (EGM 大象金鱼双角色评审插件)\n\n用途\n解决 AI 编程中长对话导致的上下文漂移与「自己审自己」盲区：由具备完整项目背景记忆的「大象」先访谈并起草结构化规格（Spec），再交由完全不继承讨论历史的「金鱼」无状态子智能体冷启动独立审查，提前暴露隐含假设、边界漏洞与架构缺陷。\n\n核心机制\n- 大象角色（/egm-brainstorm、/egm-draft）：深入理解项目上下文与需求，输出清晰可审计的 .md 设计文档\n- 金鱼角色（/egm-review、/egm-review-loop）：零历史记忆冷评审草稿与代码库，找出未言明假设与设计隐患\n- 多工具原生适配：支持 Claude Code、Codex、Antigravity 与 Cursor 等环境\n\n许可：Apache-2.0\n官方仓库：https://github.com/google/elephant-goldfish-model",
+    "source": "https://github.com/google/elephant-goldfish-model",
+    "officialUrl": "https://github.com/google/elephant-goldfish-model",
+    "repository": "https://github.com/google/elephant-goldfish-model",
+    "documentation": "https://github.com/google/elephant-goldfish-model#readme",
+    "addedAt": "2026-11-23",
+    "verifiedAt": "2026-11-23",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-elephant-goldfish-model/cover.jpg",
+      "alt": "Google Elephant-Goldfish Model 大象与金鱼双角色机制官方示意图",
+      "width": 1280,
+      "height": 672
+    },
+    "previewSource": "https://github.com/google/elephant-goldfish-model",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-23 取自 google/elephant-goldfish-model 官方仓库封面图；仅收藏。",
+    "en": {
+      "title": "Elephant-Goldfish Model (EGM Dual-Role Spec & Review Plugin)",
+      "description": "22k+ star Apache-2.0 open-source plugin from Google splitting AI agents into a context-rich Elephant (brainstorm & draft specs) and zero-memory Goldfish reviewers to eliminate context drift and blind spots.",
+      "tags": "AI review / Spec-driven development / Dual-role / Context isolation / Google / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Official diagram from google/elephant-goldfish-model on 2026-11-23; saved for reference only."
+    }
+  },
+  {
     "id": "website-open-webui",
     "kind": "website",
     "title": "Open WebUI（15.9 万+ Star 开源自托管 AI 对话与知识库平台）",
