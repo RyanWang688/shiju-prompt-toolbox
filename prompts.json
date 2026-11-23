@@ -12,22 +12,27 @@
     "prompt": "请仅使用单个自包含的 HTML 文件，打造一段 Dribbble 级别的丝滑 UI 动效序列（零 After Effects、零外部视频素材），实现从按钮 → 加载器 → 灵动岛播放器 → 音量滑块 → 液态切换 Tab（Day/Week/Month）→ 数据折线图 → ⌘K 命令筛选面板，最终无缝回到初始按钮的首尾循环动画。\n\n必须严格遵守以下 5 条硬核工程约束：\n\n1. 彻底禁用 CSS 过渡和定时器\n- 禁止使用 CSS transition、@keyframes、setTimeout 或 setInterval 驱动动画。\n- 所有元素的位置、尺寸、圆角、透明度与形变样式，必须全部写入纯函数 `seek(t)`，由时间 `t` 直接计算出当前帧的确定性状态（确保 Headless 浏览器逐帧截图时绝不掉帧、绝不同步错位）。\n\n2. 真正物理级的“双弹簧拉伸（Dual-Spring Stretching）”\n- 制作液态 Tab 指示器和开关滑块时，让元素的前沿（leading edge）和后沿（trailing edge）分别套用两套参数不同的弹簧阻尼函数，从而在移动瞬间产生果冻般的拉伸形变与阻尼回弹手感。\n\n3. 严选克制的视觉黑名单\n- 统一采用暖灰底色（#EEEDE8 左右）+ 黑白极简组件 + Geist 字体家族与精细 1px 描边/柔和投影。\n- 明令禁止廉价的弹跳缓动（bouncy easing）、粒子爆炸、霓虹发光和彩色渐变边框。\n\n4. 卡死 120 BPM 音乐节拍（如配合配乐/导出）\n- 以 120 BPM（每拍 0.5 秒）为时间轴基准，共编排 7 个小节，每一拍精准触发一次 UI 状态切换、形变或曲线绘制。\n\n5. 支持 Playwright + FFmpeg 子帧运动模糊导出\n- 提供确定性时间步进接口 `window.seek(t)`，方便 Playwright 每 1 帧采样 4 个子帧（subframes），再通过 FFmpeg `tmix` 滤镜混叠输出 60fps 电影级自然运动模糊成片。",
     "sourceNote": "用户提供的 Egguy 拆解 @twoclipping Claude UI 动效提示词截图。",
     "preview": {
-      "type": "image",
-      "src": "assets/dribbble-html-motion-prompt/cover.jpg",
-      "alt": "Day/Week/Month 液态切换 Tab UI 动效预览",
-      "width": 228,
-      "height": 224
+      "type": "animation",
+      "src": "assets/dribbble-html-motion-prompt/preview.html",
+      "alt": "Dribbble 级丝滑 HTML UI 动效：可交互演示"
     },
     "previewSource": "用户提供的 Egguy 动效演示截图裁剪",
     "previewEvidence": "author-published-output",
-    "previewNote": "Egguy 展示的 HTML 液态 Tab 动效帧，已裁去截图底部评论区。",
+    "previewNote": "根据提示词手工编写的纯 seek(t) 双弹簧可交互 HTML 动效演示；卡片封面采用静态帧以保持列表流畅。",
     "addedAt": "2026-11-23",
     "en": {
       "title": "Dribbble-Grade HTML UI Motion Prompt (Dual-Spring + Deterministic seek(t))",
       "description": "5-rule engineering prompt for generating Dribbble-grade continuous UI motion in a single HTML file: pure seek(t) state, dual-spring leading/trailing stretch, restrained warm-gray/B&W aesthetic, 120 BPM beat-sync, and Playwright+FFmpeg subframe motion blur.",
       "tags": "UI motion / HTML animation / Dual-spring / seek(t) / Dribbble / Prompt engineering",
       "prompt": "Create a single self-contained HTML file that renders a Dribbble-grade continuous UI motion sequence (zero After Effects, zero external video assets): button -> loader -> Dynamic Island music player -> volume slider -> liquid segmented Tab (Day/Week/Month) -> animated data line chart -> ⌘K command palette, looping seamlessly back to the initial button.\n\nStrictly enforce these 5 engineering constraints:\n\n1. No CSS Transitions or Timers\n- Never drive motion with CSS `transition`, `@keyframes`, `setTimeout`, or `setInterval`.\n- Compute every element's position, size, radius, opacity, and morph inside a pure deterministic `seek(t)` function so headless frame capture never drops frames or drifts out of sync.\n\n2. True Dual-Spring Leading/Trailing Edge Stretching\n- For liquid tab indicators and sliding pills, apply two distinct spring-damper curves to the leading edge and trailing edge so the pill stretches and settles with realistic physical viscosity.\n\n3. Restrained Visual Blacklist\n- Use a warm-gray canvas, crisp black-and-white minimal components, Geist typography, and subtle shadows.\n- Strictly forbid cheap bouncy easing, particle explosions, neon glows, and rainbow gradient borders.\n\n4. Locked 120 BPM Beat Grid\n- Choreograph across 7 bars at 120 BPM (0.5s per beat), triggering each UI morph, state transition, or chart draw cleanly on the beat.\n\n5. Playwright + FFmpeg Subframe Motion Blur Ready\n- Expose `window.seek(t)` so Playwright can sample 4 subframes per frame and blend them with FFmpeg `tmix` into a 60fps cinematic motion-blurred video.",
-      "previewNote": "Cropped UI motion frame from Egguy's demo."
+      "previewNote": "Interactive seek(t) dual-spring HTML motion study built from the prompt; card grid uses a static frame for fast scrolling."
+    },
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/dribbble-html-motion-prompt/cover.jpg",
+      "alt": "Day/Week/Month 液态切换 Tab UI 动效预览",
+      "width": 228,
+      "height": 224
     }
   },
   {
