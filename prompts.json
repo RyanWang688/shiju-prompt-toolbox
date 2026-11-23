@@ -1,5 +1,77 @@
 [
   {
+    "id": "website-nospeaker",
+    "kind": "website",
+    "title": "nospeaker（用 MacBook 触控板触觉马达发声唱歌的开源黑科技）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 开源创意硬件实验项目（MIT）：无需扬声器，通过每秒 4000 次高频驱动 MacBook 触控板内的 Force Touch 线性马达，让触控板直接开口说话、唱歌、Rap，还能当作触感乐器演奏。",
+    "tags": "Mac 工具 / 触控板 / 硬件黑客 / 音频合成 / 开源实验 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "nospeaker（用 MacBook 触控板触觉马达发声唱歌的开源黑科技）\n\n用途\n在 Mac 静音或无扬声器环境下，将触控板内用于模拟按压手感的 Taptic/Force Touch 马达以 4000Hz 高频驱动为物理发声单元，实现语音播报、歌声/Rap 合成与玻璃触控板乐器交互。\n\n核心特点\n- 一条命令即可运行，全程不占用系统扬声器\n- 支持说话、唱歌、Rap 音频驱动，手指轻触触控板还能感受实时机械共振\n- 极客硬件玩法典范，源码完全开源（MIT）\n\n许可：MIT\n官方仓库：https://github.com/os6/nospeaker",
+    "source": "https://github.com/os6/nospeaker",
+    "officialUrl": "https://github.com/os6/nospeaker",
+    "repository": "https://github.com/os6/nospeaker",
+    "documentation": "https://github.com/os6/nospeaker#readme",
+    "addedAt": "2026-11-23",
+    "verifiedAt": "2026-11-23",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-nospeaker/cover.jpg",
+      "alt": "os6/nospeaker GitHub 官方预览卡片",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/os6/nospeaker",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-23 取自 os6/nospeaker 官方 GitHub 仓库卡片；仅收藏。",
+    "en": {
+      "title": "nospeaker (Make Your MacBook Trackpad Talk via Haptic Motor)",
+      "description": "MIT-licensed open-source Mac experiment that drives the MacBook Force Touch trackpad actuator at 4000Hz so your trackpad can talk, sing, rap, and play music without speakers.",
+      "tags": "macOS / Trackpad / Haptics / Hardware hack / Audio / MIT",
+      "license": "MIT",
+      "previewNote": "Official GitHub preview card from os6/nospeaker on 2026-11-23; saved for reference only."
+    }
+  },
+  {
+    "id": "website-keycat",
+    "kind": "website",
+    "title": "KeyCat（菜单栏桌面宠物小黑猫：跟着键鼠互动的可爱伴侣）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "开源菜单栏桌面宠物应用（支持 macOS 13+ 通用二进制及 PC）：小黑猫会跟着键盘敲击同步动爪、跟着鼠标指针转头，烦躁时还会甩尾捶桌，工作陪伴解压神器。",
+    "tags": "桌面宠物 / macOS / 菜单栏工具 / 小黑猫 / 键盘互动 / 开源应用",
+    "pricing": "free",
+    "prompt": "KeyCat（菜单栏桌面宠物小黑猫：跟着键鼠互动的可爱伴侣）\n\n用途\n驻留在系统菜单栏与桌面的轻量级互动宠物，敲代码或写文档时实时响应你的键盘与鼠标动作，增添桌面趣味陪伴感。\n\n核心特点\n- 实时同步键盘敲击动作与鼠标指针视线追踪，提供黑猫、橘猫、白猫等多种造型\n- 带有丰富的情绪反馈（好奇歪头、烦躁甩尾捶桌等）\n- 轻量驻留菜单栏，提供 Releases 预编译安装包开箱即用\n\n下载地址：https://github.com/ElloboDK/KeyCat/releases\n官方仓库：https://github.com/ElloboDK/KeyCat",
+    "source": "https://github.com/ElloboDK/KeyCat",
+    "officialUrl": "https://github.com/ElloboDK/KeyCat/releases",
+    "repository": "https://github.com/ElloboDK/KeyCat",
+    "documentation": "https://github.com/ElloboDK/KeyCat#readme",
+    "addedAt": "2026-11-23",
+    "verifiedAt": "2026-11-23",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-keycat/cover.jpg",
+      "alt": "KeyCat 官方多款桌面宠物猫咪互动状态展示图",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://github.com/ElloboDK/KeyCat",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-23 取自 ElloboDK/KeyCat 官方仓库 README 展示图；仅收藏。",
+    "en": {
+      "title": "KeyCat (Desktop Menu Bar Cat Reacting to Keyboard & Mouse)",
+      "description": "Lightweight open-source desktop pet (macOS 13+ universal & PC) that taps paws with your keystrokes, tracks your cursor with its eyes, and slams the desk when annoyed.",
+      "tags": "Desktop pet / macOS / Menu bar / Keyboard companion / Open source",
+      "previewNote": "Official illustration from ElloboDK/KeyCat README on 2026-11-23; saved for reference only."
+    }
+  },
+  {
     "id": "skill-elephant-goldfish-model",
     "kind": "skill",
     "title": "Elephant-Goldfish Model (EGM 大象金鱼双角色评审插件)",
