@@ -482,7 +482,9 @@
   </div>
 
   <script>
-    const isEn = new URLSearchParams(location.search).get('lang') === 'en';
+    const params = new URLSearchParams(location.search);
+    const isEn = params.get('lang') === 'en';
+    const initialT = params.has('t') ? parseFloat(params.get('t')) : null;
     const DURATION = 14.0; // 7 bars at 120 BPM (2.0s per bar)
     const $ = id => document.getElementById(id);
     const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
@@ -552,7 +554,7 @@
     chartPath.style.strokeDasharray = pathLen;
 
     let currentT = 0;
-    let playing = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let playing = initialT !== null ? false : !matchMedia('(prefers-reduced-motion: reduce)').matches;
     let manualTabLock = false;
     let manualTabTarget = 2;
     let manualVolOverride = null;
@@ -834,7 +836,7 @@
     $('scrubber').addEventListener('pointerup', () => { scrubbing = false; });
 
     updatePlayBtn();
-    window.seek(playing ? 0 : 5.9);
+    window.seek(initialT !== null && !Number.isNaN(initialT) ? initialT : (playing ? 0 : 5.9));
     requestAnimationFrame(tick);
   </script>
 </body>
