@@ -1,5 +1,38 @@
 [
   {
+    "id": "website-nuancelabs",
+    "kind": "website",
+    "title": "Nuance Labs（自然面对面音视频对话式 AI 基础模型）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "专注打造自然面对面交互的音视频对话式 AI 实验室（Visual Conversational AI），通过交互式音视频基础模型捕捉微表情、停顿与语气变化，让 AI 像真人一样自然沟通，并提供体验入口与开发者 API。",
+    "tags": "对话式 AI / 音视频基础模型 / 数字人交互 / 实时语音 / API",
+    "pricing": "free",
+    "prompt": "Nuance Labs（自然面对面音视频对话式 AI 基础模型）\n\n用途\n构建具有真人沟通神态、语气停顿与微表情反馈的实时面对面视觉对话 AI（Visual Conversational AI），可用于沉浸式交互体验与音视频 AI 应用开发。\n\n核心特点\n- 交互式音视频基础模型，能够理解并表达说话之外的停顿、语气转折与细微神态\n- 官网提供「Meet Our AIs」在线体验入口及开发者 API 接入通道\n\n官网：https://www.nuancelabs.ai/",
+    "source": "https://www.nuancelabs.ai/",
+    "officialUrl": "https://www.nuancelabs.ai/",
+    "addedAt": "2026-11-23",
+    "verifiedAt": "2026-11-23",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-nuancelabs/cover.jpg",
+      "alt": "Nuance Labs 官方预览图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://www.nuancelabs.ai/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-23 取自 nuancelabs.ai 官网官方预览图；仅收藏。",
+    "en": {
+      "title": "Nuance Labs (Natural Face-to-Face Visual Conversational AI)",
+      "description": "AI research lab building interactive audio-visual foundation models for natural, human-like face-to-face conversational AI with subtle pauses, tone shifts, and developer API access.",
+      "tags": "Conversational AI / Audio-visual foundation model / Digital human / Realtime / API",
+      "previewNote": "Official preview image from nuancelabs.ai on 2026-11-23; saved for reference only."
+    }
+  },
+  {
     "id": "website-nospeaker",
     "kind": "website",
     "title": "nospeaker（用 MacBook 触控板触觉马达发声唱歌的开源黑科技）",
