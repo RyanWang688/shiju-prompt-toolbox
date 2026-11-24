@@ -1,5 +1,42 @@
 [
   {
+    "id": "website-obscura",
+    "kind": "website",
+    "title": "Obscura（3.7 万+ Star Rust 轻量级 AI 无头浏览器引擎）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 3.7 万+ Star 的 Rust 独立无头浏览器引擎（Apache-2.0），专为 AI 智能体与网页抓取设计：单实例内存仅约 30MB、平均加载约 85ms，零 Chromium 依赖，自带反指纹与追踪拦截，原生支持 CDP、Playwright、Puppeteer 与 MCP 协议。",
+    "tags": "无头浏览器 / Rust / AI Agent / 网页抓取 / Playwright / MCP / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "Obscura（3.7 万+ Star Rust 轻量级 AI 无头浏览器引擎）\n\n用途\n面向机器自动化与 AI Agent 的轻量级无头浏览器运行引擎，替代动辄数百 MB 内存的 Chromium 无头实例，用于高速网页渲染、自动化操作与干净文本/Markdown 抓取。\n\n核心特点\n- 极简轻量：Rust 原生实现（内置 V8 / deno_core），单实例内存约 30MB、平均加载约 85ms、单二进制零外部依赖\n- 自带隐身与拦截：默认修补 webdriver 特征、支持指纹随机化与追踪/广告域名屏蔽\n- 生态兼容：提供标准 CDP WebSocket 接口，可直接接入 Playwright、Puppeteer 与 MCP 服务\n\n适用注意\n定位为面向 AI 自动化的无头工具（不涉及传统桌面浏览器扩展生态），超复杂前端页面的标准兼容性需结合具体业务评估。\n\n许可：Apache-2.0\n官网：https://obscura.sh\n官方仓库：https://github.com/h4ckf0r0day/obscura",
+    "source": "https://obscura.sh",
+    "officialUrl": "https://obscura.sh",
+    "repository": "https://github.com/h4ckf0r0day/obscura",
+    "documentation": "https://github.com/h4ckf0r0day/obscura#readme",
+    "addedAt": "2026-11-24",
+    "verifiedAt": "2026-11-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-obscura/cover.jpg",
+      "alt": "h4ckf0r0day/obscura 官方 GitHub 仓库卡片",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/h4ckf0r0day/obscura",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-24 取自 h4ckf0r0day/obscura 官方 GitHub 仓库卡片；仅收藏。",
+    "en": {
+      "title": "Obscura (37k+ Star Rust Headless Browser Engine for AI Agents)",
+      "description": "37k+ star Apache-2.0 standalone headless browser engine written in Rust (~30MB RAM, ~85ms load, zero Chromium deps) with built-in anti-fingerprinting, tracker blocking, and native CDP / Playwright / Puppeteer / MCP compatibility.",
+      "tags": "Headless browser / Rust / AI Agent / Web scraping / Playwright / MCP / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Official GitHub preview card from h4ckf0r0day/obscura on 2026-11-24; saved for reference only."
+    }
+  },
+  {
     "id": "website-bongocat",
     "kind": "website",
     "title": "BongoCat（2.4 万+ Star 开源跨平台键鼠互动桌面萌宠原版）",

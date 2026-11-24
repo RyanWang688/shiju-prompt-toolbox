@@ -78,7 +78,7 @@ CONFLICT_GROUPS = {
     "cg:browser-auto": {
         "zh": "浏览器控制驱动互斥（同一会话保持一套浏览器控制协议更稳定）",
         "en": "Mutually exclusive browser automation driver (keep one active protocol per session)",
-        "ids": {"skill-chrome-devtools-mcp", "skill-agent-browser"},
+        "ids": {"skill-chrome-devtools-mcp", "skill-agent-browser", "website-obscura"},
         "keywords": ["chrome devtools", "无头浏览器", "headless browser", "playwright"],
     },
     "cg:de-ai-writing": {
