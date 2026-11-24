@@ -1,5 +1,42 @@
 [
   {
+    "id": "website-bongocat",
+    "kind": "website",
+    "title": "BongoCat（2.4 万+ Star 开源跨平台键鼠互动桌面萌宠原版）",
+    "category": "其他",
+    "topics": [
+      "实用软件"
+    ],
+    "description": "GitHub 2.4 万+ Star 的开源跨平台桌面宠物代表作（ayangweb/BongoCat，Apache-2.0），支持 Windows、macOS 与 Linux，实时同步你的键盘敲击、鼠标点击与手柄操作，内置模型库并支持导入自定义小黑猫等 Live2D/PNG 皮肤。",
+    "tags": "桌面宠物 / BongoCat / 键鼠互动 / 跨平台 / Live2D 皮肤 / Apache-2.0",
+    "pricing": "free",
+    "license": "Apache-2.0",
+    "prompt": "BongoCat（2.4 万+ Star 开源跨平台键鼠互动桌面萌宠原版）\n\n用途\n在工作、编程或直播时让可爱的桌面宠物猫咪实时跟随你的键盘打字、鼠标移动点击与手柄输入做出拍打动作，并支持导入社区海量自定义皮肤模型（如罗小黑/小黑猫等）。\n\n核心特点\n- 基于 Tauri + Rust 构建，支持 macOS、Windows 与 Linux，轻量低占用\n- 实时同步键鼠/手柄输入，支持窗口置顶、鼠标穿透、自定义快捷键与模型库一键切换\n- 配套官方模型皮肤汇总仓库 Awesome-BongoCat，兼容导入 Bongo-Cat-Mver 皮肤\n\n许可：Apache-2.0\n官方仓库：https://github.com/ayangweb/BongoCat\n模型皮肤库：https://github.com/ayangweb/Awesome-BongoCat",
+    "source": "https://github.com/ayangweb/BongoCat",
+    "officialUrl": "https://github.com/ayangweb/BongoCat",
+    "repository": "https://github.com/ayangweb/BongoCat",
+    "documentation": "https://github.com/ayangweb/Awesome-BongoCat",
+    "addedAt": "2026-11-24",
+    "verifiedAt": "2026-11-24",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-bongocat/cover.jpg",
+      "alt": "ayangweb/BongoCat 官方桌面设置与萌宠界面截图",
+      "width": 1280,
+      "height": 1031
+    },
+    "previewSource": "https://github.com/ayangweb/BongoCat",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-24 取自 ayangweb/BongoCat 官方仓库 README 实机截图；仅收藏。",
+    "en": {
+      "title": "BongoCat (24k+ Star Cross-Platform Interactive Desktop Pet)",
+      "description": "24k+ star Apache-2.0 cross-platform interactive desktop pet (ayangweb/BongoCat) for macOS, Windows, and Linux that reacts live to keyboard, mouse, and gamepad inputs with custom Live2D skin support.",
+      "tags": "Desktop pet / BongoCat / Keyboard & mouse / Cross-platform / Live2D / Apache-2.0",
+      "license": "Apache-2.0",
+      "previewNote": "Official screenshot from ayangweb/BongoCat README on 2026-11-24; saved for reference only."
+    }
+  },
+  {
     "id": "dribbble-html-motion-prompt",
     "kind": "prompt",
     "title": "Dribbble 级丝滑 HTML UI 动效提示词（双弹簧 + seek(t) 确定性渲染）",
