@@ -1,5 +1,41 @@
 [
   {
+    "id": "remotion-toggle-switch-motion",
+    "kind": "prompt",
+    "title": "Remotion 拨杆切换逐帧动效（24f 光标 / 12f 按压 0.86 / 8f 位移）",
+    "category": "其他",
+    "topics": [
+      "按钮交互"
+    ],
+    "description": "根据 Remotion 逐帧调试要点制作的可交互拨杆切换演示：24 帧画外光标滑入、12 帧保持 0.86 按压手感、严格 8 帧拨杆位移、图标宽度归零防留缝与完整因果链防抽搐。点开卡片即可直接点击拨杆或拖动帧轴逐帧检视。",
+    "tags": "拨杆切换 / Remotion / 逐帧动效 / 按钮交互 / 因果链 / 交互演示",
+    "prompt": "用 Remotion（React 程序化视频）制作高还原度拨杆切换（Toggle Switch）UI 动效时，必须严格遵守以下逐帧调试参数与因果链规范：\n\n1. 光标轨迹（24 帧）\n- 光标从画外平滑滑入目标拨杆上方，全程设为 24 帧（60fps 下约 400ms），缓出到位，避免生硬甩入。\n\n2. 按压反馈（12 帧保持 still 0.86）\n- 光标抵达并按下时，拨杆滑块（thumb）与光标同步缩放至 0.86，并静止保持 12 帧（still 0.86），确保按压与点击手感连贯真实。\n\n3. 拨杆位移（严格 8 帧）\n- 释放瞬间触发 thumb 位移，切换过程严格控制在 8 帧完成，避免过快瞬移或拖沓感。\n\n4. 图标收缩与因果链时序（宽归零防留缝）\n- 弹簧弹出新图标前，需先将旧图标容器宽度收缩归零（width: 0），防止切换过程中出现空白缝隙。\n- 严格对齐因果链（光标滑入 24f → 按压保持 12f → 拨杆位移 8f → 宽度归零交接 → 弹簧弹出图标），杜绝多段动画时间轴重叠导致 UI 抽搐。",
+    "sourceNote": "用户提供的 Remotion 拨杆切换逐帧调试要点。",
+    "addedAt": "2026-11-26",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/remotion-toggle-switch-motion/cover.jpg",
+      "alt": "Remotion 拨杆切换逐帧动效交互演示封面",
+      "width": 1200,
+      "height": 750
+    },
+    "preview": {
+      "type": "animation",
+      "src": "assets/remotion-toggle-switch-motion/preview.html",
+      "alt": "Remotion 拨杆切换逐帧动效：可交互演示"
+    },
+    "previewSource": "根据用户提示词手工编写的 60fps 逐帧因果链可交互 HTML 演示",
+    "previewEvidence": "author-published-output",
+    "previewNote": "严格按 24f 光标滑入、12f 按压 0.86、8f 拨杆位移与宽度归零防留缝制作的可交互演示；卡片封面采用高清实时渲染帧。",
+    "en": {
+      "title": "Remotion Frame-Accurate Toggle Switch Motion (24f Cursor / 12f Press 0.86 / 8f Thumb)",
+      "description": "Interactive 60fps toggle switch motion study implementing exact frame rules: 24f off-canvas cursor slide-in, 12f hold at scale(0.86), strict 8f thumb travel, and zero-gap icon width collapse.",
+      "tags": "Toggle switch / Remotion / Frame-by-frame / Button interaction / Causal chain",
+      "prompt": "When crafting a crisp Toggle Switch UI motion sequence in Remotion (programmatic React video), strictly follow these frame-by-frame timing and causal chain parameters (60fps):\n\n1. Cursor Trajectory (24 frames)\n- Slide the cursor smoothly in from off-canvas over 24 frames with clean ease-out instead of snapping or whipping in abruptly.\n\n2. Press Feedback (12 frames still at 0.86)\n- On click, compress the thumb and cursor to scale(0.86) and hold still for 12 frames so the tactile press registers clearly.\n\n3. Thumb Displacement (Strictly 8 frames)\n- Execute the thumb travel strictly over 8 frames—neither teleporting nor dragging sluggishly.\n\n4. Icon Width Collapse & Causal Chain (Zero-Gap Handoff)\n- Collapse the outgoing icon slot width to 0px before the incoming icon springs open to avoid layout gaps.\n- Sequence the causal chain cleanly (24f cursor -> 12f press at 0.86 -> 8f thumb travel -> width-to-0 handoff -> spring icon pop) so overlapping timelines never cause UI twitching.",
+      "previewNote": "Interactive 60fps causal-chain demo built from the prompt rules; card uses a crisp 1200x750 render."
+    }
+  },
+  {
     "id": "website-comfyui",
     "kind": "website",
     "title": "ComfyUI（14.8 万+ Star 节点式本地 AI 图像与视频生成引擎）",

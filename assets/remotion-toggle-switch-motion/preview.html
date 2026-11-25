@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Remotion 拨杆切换逐帧动效 · 交互演示</title>
+  <style>
+    * { box-sizing: border-box; user-select: none; -webkit-user-select: none; }
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #f4f3ef;
+      color: #18181b;
+      font-family: "Inter", "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+
+    .app {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px 20px 14px;
+      background: radial-gradient(circle at 50% 42%, #ffffff 0%, #f1efe9 75%);
+    }
+
+    .hud-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 11px;
+      color: #71717a;
+      z-index: 4;
+    }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 700;
+      color: #18181b;
+    }
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #18181b;
+    }
+    .telemetry {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .telemetry b { color: #18181b; }
+
+    /* Center Interactive Stage */
+    .stage {
+      position: relative;
+      flex: 1;
+      display: grid;
+      place-items: center;
+      min-height: 0;
+    }
+
+    .card-surface {
+      position: relative;
+      width: 340px;
+      height: 196px;
+      border-radius: 26px;
+      background: #ffffff;
+      border: 1px solid rgba(24, 24, 27, 0.08);
+      box-shadow: 0 26px 56px -22px rgba(24, 24, 27, 0.16), 0 6px 18px -6px rgba(24, 24, 27, 0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      overflow: hidden;
+    }
+
+    .switch-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Leading/trailing icon slot whose width collapses cleanly to 0 before spring pop */
+    .icon-slot {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      height: 28px;
+      flex-shrink: 0;
+    }
+    .icon-slot svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* The Toggle Switch */
+    .toggle {
+      position: relative;
+      width: 108px;
+      height: 58px;
+      padding: 5px;
+      border: 0;
+      border-radius: 999px;
+      background: #e4e4e7;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.08);
+      outline: none;
+    }
+    .thumb {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.1);
+      display: grid;
+      place-items: center;
+      transform-origin: center center;
+    }
+    .thumb-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #d4d4d8;
+    }
+
+    .state-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #71717a;
+      letter-spacing: 0.2px;
+    }
+
+    /* Animated Cursor sliding in from off-canvas (24 frames) */
+    .cursor {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 28px;
+      height: 28px;
+      pointer-events: none;
+      z-index: 6;
+      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.22));
+      transform-origin: 4px 2px;
+    }
+
+    /* Frame Spec Badges */
+    .specs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      z-index: 4;
+    }
+    .spec-pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(24, 24, 27, 0.1);
+      background: rgba(255, 255, 255, 0.78);
+      font-size: 11px;
+      font-weight: 600;
+      color: #52525b;
+      cursor: pointer;
+    }
+    .spec-pill.active {
+      background: #18181b;
+      border-color: #18181b;
+      color: #ffd43b;
+    }
+
+    .scrub-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(24, 24, 27, 0.08);
+      border-radius: 12px;
+      padding: 6px 12px;
+      z-index: 4;
+    }
+    .play-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      border: 0;
+      background: #18181b;
+      color: #ffffff;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      outline: none;
+    }
+    .play-btn svg { width: 12px; height: 12px; fill: currentColor; }
+    .scrubber {
+      position: relative;
+      flex: 1;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      touch-action: none;
+    }
+    .scrub-rail {
+      position: relative;
+      width: 100%;
+      height: 4px;
+      border-radius: 999px;
+      background: #e4e4e7;
+      overflow: hidden;
+    }
+    .scrub-prog {
+      position: absolute;
+      inset: 0 auto 0 0;
+      background: #18181b;
+    }
+    .scrub-knob {
+      position: absolute;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #18181b;
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+      transform: translate(-50%, -50%);
+    }
+    .scrub-hint {
+      font-size: 10.5px;
+      color: #71717a;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="hud-top">
+      <div class="kicker">
+        <span class="dot"></span>
+        <span id="hudTitle">REMOTION TOGGLE · 逐帧因果链</span>
+      </div>
+      <div class="telemetry">
+        <span>60 FPS · <b id="frameReadout">F00 / 90</b></span>
+        <span id="scaleReadout">scale 1.00</span>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="card-surface" id="cardSurface">
+        <div class="switch-row">
+          <!-- Outgoing Moon Icon (collapses width to 0 before Sun springs in) -->
+          <span class="icon-slot" id="slotOff" style="color:#52525b">
+            <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </span>
+
+          <button type="button" class="toggle" id="toggleBtn" aria-label="Toggle switch">
+            <span class="thumb" id="thumb"><span class="thumb-dot" id="thumbDot"></span></span>
+          </button>
+
+          <!-- Incoming Sun Icon (width stays 0 until causal handoff, then springs open) -->
+          <span class="icon-slot" id="slotOn" style="color:#d97706">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></svg>
+          </span>
+        </div>
+        <div class="state-label" id="stateLabel">点击拨杆或拖动帧轴体验</div>
+
+        <!-- Off-canvas sliding cursor (24 frames) -->
+        <svg class="cursor" id="cursor" viewBox="0 0 24 24">
+          <path d="M5 3l14 10-6.2 1.2L9.5 20 5 3z" fill="#18181b" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="specs" id="specPills"></div>
+
+    <div class="scrub-bar">
+      <button type="button" class="play-btn" id="playBtn" aria-label="Play / Pause"></button>
+      <div class="scrubber" id="scrubber">
+        <div class="scrub-rail"><div class="scrub-prog" id="scrubProg"></div></div>
+        <div class="scrub-knob" id="scrubKnob"></div>
+      </div>
+      <span class="scrub-hint" id="scrubHint">支持直接点击拨杆 · 拖动逐帧检视</span>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const isEn = params.get('lang') === 'en';
+    const initialF = params.has('f') ? parseFloat(params.get('f')) : null;
+    const FPS = 60;
+    const TOTAL_FRAMES = 90; // 1.5s causal chain loop
+    const $ = id => document.getElementById(id);
+    const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+    const lerp = (a, b, t) => a + (b - a) * t;
+    const invLerp = (a, b, v) => clamp((v - a) / (b - a), 0, 1);
+
+    const easeOutCubic = x => 1 - Math.pow(1 - clamp(x, 0, 1), 3);
+    const easeInOutCubic = x => {
+      const t = clamp(x, 0, 1);
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    };
+    const springPop = x => {
+      const t = clamp(x, 0, 1);
+      if (t === 0) return 0;
+      if (t >= 1) return 1;
+      return 1 - Math.exp(-7.5 * t) * Math.cos(t * 9.5);
+    };
+
+    const PHASES = isEn
+      ? [
+          { f: 10, start: 0, end: 24, label: '24f Cursor Slide-In' },
+          { f: 30, start: 24, end: 36, label: '12f Press (still 0.86)' },
+          { f: 40, start: 36, end: 44, label: '8f Thumb Travel' },
+          { f: 52, start: 44, end: 90, label: 'Width 0 -> Spring Icon' },
+        ]
+      : [
+          { f: 10, start: 0, end: 24, label: '24帧 光标滑入' },
+          { f: 30, start: 24, end: 36, label: '12帧 按压(0.86)' },
+          { f: 40, start: 36, end: 44, label: '8帧 拨杆位移' },
+          { f: 52, start: 44, end: 90, label: '宽度归零→弹簧弹出' },
+        ];
+
+    if (isEn) {
+      $('hudTitle').textContent = 'REMOTION TOGGLE · FRAME-ACCURATE CAUSAL CHAIN';
+      $('scrubHint').textContent = 'Click toggle directly · Scrub frames';
+    }
+
+    const specPills = $('specPills');
+    specPills.innerHTML = PHASES.map((p, i) => `<button type="button" class="spec-pill" data-jump="${p.f}" data-idx="${i}">${p.label}</button>`).join('');
+
+    let currentFrame = 0;
+    let playing = initialF !== null ? false : !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let manualMode = false;
+    let manualIsOn = false;
+    let manualTimerFrame = 0;
+
+    function mixColor(c1, c2, t) {
+      const k = clamp(t, 0, 1);
+      return `rgb(${Math.round(lerp(c1[0], c2[0], k))},${Math.round(lerp(c1[1], c2[1], k))},${Math.round(lerp(c1[2], c2[2], k))})`;
+    }
+
+    // Pure frame-deterministic renderer (matches Remotion useCurrentFrame() mental model)
+    window.renderFrame = function renderFrame(rawF) {
+      const f = ((rawF % TOTAL_FRAMES) + TOTAL_FRAMES) % TOTAL_FRAMES;
+      currentFrame = f;
+
+      // 1. Cursor trajectory: 24 frames (F0..F24) sliding in from off-canvas bottom-right
+      let curX = 186, curY = 104, curOp = 1, curScale = 1;
+      if (f < 24) {
+        const p = easeOutCubic(invLerp(0, 24, f));
+        curX = lerp(360, 146, p);
+        curY = lerp(225, 94, p);
+        curOp = clamp(p * 2.5, 0, 1);
+      } else if (f < 36) {
+        // 2. Press & hold 12 frames (F24..F36) at still 0.86!
+        curX = 146; curY = 94;
+        const pressIn = easeOutCubic(invLerp(24, 26, f));
+        curScale = lerp(1, 0.86, pressIn);
+      } else if (f < 44) {
+        // 3. Release & thumb travel 8 frames (F36..F44)
+        const p = easeInOutCubic(invLerp(36, 44, f));
+        curX = lerp(146, 196, p);
+        curY = 94;
+        curScale = lerp(0.86, 1, clamp(p * 2, 0, 1));
+      } else if (f < 70) {
+        curX = 196; curY = 94; curScale = 1;
+      } else {
+        // Exit smoothly at end of cycle so loop restarts cleanly from off-canvas
+        const p = easeInOutCubic(invLerp(70, 88, f));
+        curX = lerp(196, 360, p);
+        curY = lerp(94, 225, p);
+        curOp = 1 - p;
+      }
+
+      if (manualMode) curOp = 0;
+
+      const cursorEl = $('cursor');
+      cursorEl.style.opacity = curOp.toFixed(3);
+      cursorEl.style.transform = `translate(${curX.toFixed(1)}px, ${curY.toFixed(1)}px) scale(${curScale.toFixed(3)})`;
+
+      // 2. Thumb press (12f still 0.86) + 3. Thumb displacement (strictly 8 frames: F36..F44)
+      let thumbX = 0, thumbScale = 1, toggleProg = 0;
+      if (f >= 24 && f < 36) {
+        const pIn = easeOutCubic(invLerp(24, 26, f));
+        thumbScale = lerp(1, 0.86, pIn);
+      } else if (f >= 36 && f < 44) {
+        const pMove = easeInOutCubic(invLerp(36, 44, f));
+        toggleProg = pMove;
+        thumbX = lerp(0, 50, pMove);
+        thumbScale = lerp(0.86, 1, clamp(pMove * 1.6, 0, 1));
+      } else if (f >= 44 && f < 74) {
+        toggleProg = 1;
+        thumbX = 50;
+        thumbScale = 1;
+      } else if (f >= 74) {
+        const pReset = easeInOutCubic(invLerp(74, 82, f));
+        toggleProg = 1 - pReset;
+        thumbX = lerp(50, 0, pReset);
+      }
+
+      $('thumb').style.transform = `translateX(${thumbX.toFixed(2)}px) scale(${thumbScale.toFixed(3)})`;
+      $('toggleBtn').style.backgroundColor = mixColor([228, 228, 231], [24, 24, 27], toggleProg);
+      $('thumbDot').style.backgroundColor = mixColor([212, 212, 216], [255, 212, 59], toggleProg);
+
+      // 4. Icon width-to-0 collapse before spring pop (prevents gap / UI twitch!)
+      // Outgoing icon collapses width 28 -> 0 during F36..F42; incoming icon stays width 0 until F43, then springs 0 -> 28 during F43..F56
+      let offW = 28, offScale = 1, onW = 0, onScale = 0;
+      if (f < 36) {
+        offW = 28; offScale = 1; onW = 0; onScale = 0;
+      } else if (f < 43) {
+        const c = easeInOutCubic(invLerp(36, 42, f));
+        offW = lerp(28, 0, c);
+        offScale = lerp(1, 0, c);
+        onW = 0; onScale = 0;
+      } else if (f < 74) {
+        const s = springPop(invLerp(43, 56, f));
+        offW = 0; offScale = 0;
+        onW = lerp(0, 28, clamp(s, 0, 1.08));
+        onScale = Math.max(0, s);
+      } else {
+        const r = easeInOutCubic(invLerp(74, 82, f));
+        onW = lerp(28, 0, r);
+        onScale = 1 - r;
+        offW = lerp(0, 28, r);
+        offScale = r;
+      }
+
+      $('slotOff').style.width = `${offW.toFixed(1)}px`;
+      $('slotOff').style.transform = `scale(${offScale.toFixed(3)})`;
+      $('slotOn').style.width = `${onW.toFixed(1)}px`;
+      $('slotOn').style.transform = `scale(${onScale.toFixed(3)})`;
+
+      // Telemetry + Scrubber
+      const fInt = Math.floor(f);
+      $('frameReadout').textContent = `F${String(fInt).padStart(2, '0')} / ${TOTAL_FRAMES}`;
+      $('scaleReadout').textContent = `scale ${thumbScale.toFixed(2)}`;
+
+      const pct = (f / TOTAL_FRAMES) * 100;
+      $('scrubProg').style.width = `${pct.toFixed(2)}%`;
+      $('scrubKnob').style.left = `${pct.toFixed(2)}%`;
+
+      specPills.querySelectorAll('.spec-pill').forEach((b, idx) => {
+        const ph = PHASES[idx];
+        b.classList.toggle('active', f >= ph.start && f < ph.end);
+      });
+
+      if (!manualMode) {
+        if (f >= 24 && f < 36) {
+          $('stateLabel').textContent = isEn ? 'Pressing · Holding 12 frames at 0.86' : '按压反馈 · 保持 12 帧 still 0.86';
+        } else if (f >= 36 && f < 44) {
+          $('stateLabel').textContent = isEn ? 'Thumb switching · Strictly 8 frames' : '拨杆位移 · 严格控制在 8 帧';
+        } else if (f >= 44 && f < 60) {
+          $('stateLabel').textContent = isEn ? 'Width collapsed to 0 -> Spring icon pop' : '宽度归零无留缝 → 图标弹簧弹出';
+        } else {
+          $('stateLabel').textContent = isEn ? 'Click toggle directly or scrub frames' : '点击拨杆或拖动帧轴体验';
+        }
+      }
+    };
+
+    function updatePlayBtn() {
+      $('playBtn').innerHTML = playing
+        ? '<svg viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>'
+        : '<svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg>';
+    }
+
+    let lastTs = 0;
+    function tick(ts) {
+      if (!lastTs) lastTs = ts;
+      const dt = Math.min(0.05, (ts - lastTs) / 1000);
+      lastTs = ts;
+      if (playing) {
+        if (manualMode) {
+          // Run exact causal click sequence (24..58) or reverse (74..82)
+          manualTimerFrame += dt * FPS;
+          if (manualIsOn) {
+            const target = Math.min(58, manualTimerFrame);
+            window.renderFrame(target);
+            if (target >= 58) playing = false, updatePlayBtn();
+          } else {
+            const target = Math.min(84, manualTimerFrame);
+            window.renderFrame(target);
+            if (target >= 84) playing = false, updatePlayBtn();
+          }
+        } else {
+          window.renderFrame(currentFrame + dt * FPS);
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+
+    $('toggleBtn').addEventListener('click', () => {
+      manualMode = true;
+      manualIsOn = !manualIsOn;
+      manualTimerFrame = manualIsOn ? 24 : 74;
+      playing = true;
+      updatePlayBtn();
+      $('stateLabel').textContent = manualIsOn
+        ? (isEn ? 'Manual Click: 12f press -> 8f thumb -> spring' : '手动触发：12帧按压(0.86) → 8帧位移 → 弹簧')
+        : (isEn ? 'Manual Reset: Off' : '手动复位：关闭状态');
+    });
+
+    $('playBtn').addEventListener('click', () => {
+      manualMode = false;
+      playing = !playing;
+      updatePlayBtn();
+    });
+
+    specPills.addEventListener('click', e => {
+      const btn = e.target.closest('[data-jump]');
+      if (!btn) return;
+      manualMode = false;
+      playing = false;
+      updatePlayBtn();
+      window.renderFrame(Number(btn.dataset.jump));
+    });
+
+    let scrubbing = false;
+    function scrubTo(clientX) {
+      const rect = $('scrubber').getBoundingClientRect();
+      const p = clamp((clientX - rect.left) / rect.width, 0, 1);
+      manualMode = false;
+      window.renderFrame(p * TOTAL_FRAMES);
+    }
+    $('scrubber').addEventListener('pointerdown', e => {
+      scrubbing = true;
+      playing = false;
+      updatePlayBtn();
+      scrubTo(e.clientX);
+      $('scrubber').setPointerCapture(e.pointerId);
+    });
+    $('scrubber').addEventListener('pointermove', e => { if (scrubbing) scrubTo(e.clientX); });
+    $('scrubber').addEventListener('pointerup', () => { scrubbing = false; });
+
+    updatePlayBtn();
+    window.renderFrame(initialF !== null && !Number.isNaN(initialF) ? initialF : (playing ? 0 : 40));
+    requestAnimationFrame(tick);
+  </script>
+</body>
+</html>
