@@ -120,12 +120,12 @@ CONFLICT_GROUPS = {
 
 DOMAINS = [
     ("video", "视频剪辑与动效", "Video & Editing", [
-        "剪辑", "视频", "ffmpeg", "remotion", "hyperframes", "字幕", "口播", "配音", "宣传片", "短视频",
+        "视频剪辑", "剪辑", "视频", "ffmpeg", "remotion", "hyperframes", "字幕", "口播", "配音", "宣传片", "短视频",
         "录屏", "镜头", "高光", "音视频", "视频复刻", "视频制作", "opencut", "videolingo", "fredtalk",
         "openmontage", "video", "editing", "caption", "subtitle", "audio", "voice", "motion", "shorts",
     ]),
     ("coding", "AI 编程与全栈工程", "AI Coding & Engineering", [
-        "开发", "编程", "代码", "架构", "重构", "审查", "测试", "安全", "漏洞", "调试", "mcp", "codex",
+        "代码审查", "安全扫描", "开发", "编程", "代码", "架构", "重构", "审查", "测试", "安全", "漏洞", "调试", "mcp", "codex",
         "claude code", "cursor", "agent", "skill", "工作流", "上下文", "token", "批注", "浏览器", "tdd",
         "git", "pr", "issue", "rust", "cli", "coding", "review", "security", "debug", "workflow", "engineering",
     ]),
@@ -135,7 +135,7 @@ DOMAINS = [
         "微交互", "弹簧", "webgl", "three.js", "css", "web", "frontend", "animation", "layout", "interaction",
     ]),
     ("writing", "写作与深度科研", "Writing & Research", [
-        "写作", "论文", "科研", "学术", "小说", "文案", "去ai", "humanizer", "知识库", "笔记", "obsidian",
+        "科研写作", "知识整理", "资料蒸馏", "写作", "论文", "科研", "学术", "小说", "文案", "去ai", "humanizer", "知识库", "笔记", "obsidian",
         "蒸馏", "调研", "阅读", "总结", "文档", "研究", "writing", "paper", "academic", "research", "blog",
     ]),
     ("ppt", "PPT 与视觉汇报", "Slides & Presentations", [
@@ -153,10 +153,14 @@ DOMAINS = [
     ("reverse", "逆向分析与产品复刻", "Reverse Engineering", [
         "逆向", "复刻", "拆解", "黑盒", "爬虫", "抓取", "scraping", "crawl", "rea", "clean-room", "reverse",
     ]),
+    ("language", "语言学习与英语练习", "Language Learning", [
+        "英语", "英文", "口语", "背单词", "单词", "听力", "精听", "雅思", "托福", "四六级",
+        "english", "vocabulary", "speaking", "listening", "ielts", "toefl", "typewords", "kouyu",
+    ]),
     ("productivity", "效率工具与本地办公", "Productivity & Local Apps", [
         "效率", "办公", "pdf", "表格", "文档", "下载", "清理", "远程", "互传", "记账", "理财", "求职",
-        "简历", "面试", "英语", "背单词", "监控", "补货", "自动化", "桌面", "离线", "本地", "finance",
-        "office", "utility", "desktop", "download", "learn", "english",
+        "简历", "面试", "监控", "补货", "自动化", "桌面", "离线", "本地", "finance",
+        "office", "utility", "desktop", "download",
     ]),
 ]
 
@@ -217,6 +221,8 @@ PRESETS = [
         "queryEn": "Reverse engineering, web scraping, and clean-room reconstruction workflow",
         "domain": "reverse",
     },
+    {"id": "preset-language", "zh": "英语学习与口语", "en": "English Learning",
+     "queryZh": "学习英语，练习口语听力和背单词", "queryEn": "English speaking, listening and vocabulary practice", "domain": "language"},
 ]
 
 PLAN_SIGNALS = [
@@ -236,6 +242,12 @@ SHIP_SIGNALS = [
 ]
 
 
+def contains(text: str, term: str) -> bool:
+    if term.isascii():
+        return re.search(r"(?<![a-z0-9])" + re.escape(term) + r"(?![a-z0-9])", text) is not None
+    return term in text
+
+
 def item_kind(item: dict) -> str:
     k = item.get("kind")
     return k if k in ("skill", "website") else "prompt"
@@ -247,7 +259,7 @@ def assign_conflict_group(item: dict, blob: str) -> str | None:
         if iid in meta["ids"]:
             return cg_id
     for cg_id, meta in CONFLICT_GROUPS.items():
-        if any(kw in blob for kw in meta["keywords"]):
+        if any(contains(blob, kw) for kw in meta["keywords"]):
             # Only apply keyword-based conflict grouping to skills & active tools, never passive prompts
             if item_kind(item) != "prompt":
                 return cg_id
@@ -256,6 +268,8 @@ def assign_conflict_group(item: dict, blob: str) -> str | None:
 
 def assign_stage(item: dict, blob: str, cg: str | None) -> int:
     kind = item_kind(item)
+    if item['id'] in {'website-typewords', 'website-ethanenglish', 'skill-kouyu'}:
+        return 1  # Alternative learning engines, not artificial Plan/Polish/Ship stages.
     # Explicit conflict-group stage anchors
     if cg in ("cg:video-code-engine", "cg:video-cut-core", "cg:code-orchestrator", "cg:ppt-engine"):
         return 1
@@ -264,9 +278,9 @@ def assign_stage(item: dict, blob: str, cg: str | None) -> int:
     if cg in ("cg:code-review", "cg:browser-auto", "cg:stock-monitor"):
         return 3
 
-    p_score = sum(1 for k in PLAN_SIGNALS if k in blob)
-    pol_score = sum(1 for k in POLISH_SIGNALS if k in blob)
-    ship_score = sum(1 for k in SHIP_SIGNALS if k in blob)
+    p_score = sum(1 for k in PLAN_SIGNALS if contains(blob, k))
+    pol_score = sum(1 for k in POLISH_SIGNALS if contains(blob, k))
+    ship_score = sum(1 for k in SHIP_SIGNALS if contains(blob, k))
 
     if kind == "prompt":
         return 2 if pol_score >= p_score else 1
@@ -288,13 +302,16 @@ def score_domains(item: dict, title_tags: str, full_blob: str) -> dict[str, int]
     out: dict[str, int] = {}
     topics = " ".join(item.get("skillTopics") or item.get("topics") or []).lower()
     for d_id, _, _, kws in DOMAINS:
+        # Interface language and English text in a design example are not language-learning capabilities.
+        if d_id == 'language' and not re.search(r'英语|口语|背单词|英文学习|english.{0,15}(learn|practic)|vocabulary|kouyu|typewords', title_tags):
+            continue
         sc = 0
         for kw in kws:
-            if kw in title_tags:
+            if contains(title_tags, kw):
                 sc += 4
-            elif kw in topics:
+            elif contains(topics, kw):
                 sc += 3
-            elif kw in full_blob:
+            elif contains(full_blob, kw):
                 sc += 1
         if sc > 0:
             out[d_id] = min(30, sc)
@@ -358,7 +375,7 @@ def build(root: Path, items: list[dict]) -> str:
         indexed.append(entry)
 
     payload = {
-        "version": 1,
+        "version": 2,
         "stages": STAGES,
         "domains": [{"id": d, "zh": zh, "en": en, "kws": kws} for d, zh, en, kws in DOMAINS],
         "conflictGroups": {k: {"zh": v["zh"], "en": v["en"]} for k, v in CONFLICT_GROUPS.items()},

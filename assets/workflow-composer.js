@@ -1,4 +1,4 @@
-/* Shiju Workflow Studio: Conflict-Free AI Project Stack Composer (zero external deps). */
+/* Shiju Workflow Studio: Evidence-ranked Project Stack Composer (zero external deps). */
 (() => {
   'use strict';
 
@@ -13,132 +13,104 @@
     let currentRecipes = [];
     let openSwapKey = null; // `${recipeIdx}:${stepIdx}`
     let openShieldIdx = null;
-    let scanTimer = 0;
 
     const RECIPE_PROFILES = [
       {
-        badgeZh: '方案 01 · 主推全链路',
+        badgeZh: '方案 01 · 优先推荐',
         badgeEn: 'Stack 01 · Recommended',
-        subZh: '围绕核心需求优先匹配高完成度主力工具，各阶段职责清晰无重叠',
-        subEn: 'Balanced end-to-end stack with clear stage boundaries and zero overlapping skills',
+        subZh: '按需求相关性优先排序，只组合有匹配证据的条目',
+        subEn: 'Ranked by relevance, using only items with matching evidence',
         kindBoost: { s: 1.18, w: 1.05, p: 0.92 },
       },
       {
-        badgeZh: '方案 02 · 进阶专业流',
+        badgeZh: '方案 02 · 替代组合',
         badgeEn: 'Stack 02 · Pro Alternative',
-        subZh: '切换不同核心主力引擎，适合追求定制化、自动化或代码级控制的场景',
-        subEn: 'Alternative core engine tuned for deeper automation and customizable control',
+        subZh: '优先尝试不同的核心工具；缺少合适条目的阶段保持空缺',
+        subEn: 'Try another core tool; leave unsupported stages unfilled',
         kindBoost: { s: 1.22, w: 1.0, p: 0.95 },
       },
       {
-        badgeZh: '方案 03 · 轻量敏捷流',
+        badgeZh: '方案 03 · 轻量组合',
         badgeEn: 'Stack 03 · Agile & Visual',
-        subZh: '兼顾上手速度、视觉质感与灵感参考，快速跑通从想法到成品',
-        subEn: 'Fast-start mix combining practical web tools, visual polish, and ready prompts',
+        subZh: '相关性优先，在同等匹配下略优先网站与提示词',
+        subEn: 'Relevance first, with a small preference for websites and prompts',
         kindBoost: { s: 1.02, w: 1.18, p: 1.15 },
       },
     ];
 
-    function tokenizeQuery(q) {
-      const clean = (q || '').trim().toLowerCase();
-      if (!clean) return [];
-      const tokens = new Set();
-      // ASCII words
-      for (const w of clean.match(/[a-z0-9][a-z0-9_.-]{1,24}/g) || []) tokens.add(w);
-      // Chinese segments + bigrams for natural Chinese matching
+    const STOP = new Set('ai a an the i we my our to for of in on with and or from is it want need make build create use tool tools project workflow learn learning study 学习 我想 想要 需要 一个 一些 帮我 工具 项目 工作 流程 可以 如何 怎么 进行 自动 智能 推荐 搭配 使用 实现'.split(' '));
+    const normalize = text => String(text || '').normalize('NFKC').toLowerCase();
+    function hasTerm(text, term) {
+      if (/^[a-z0-9_.+-]+$/.test(term)) {
+        const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return new RegExp(`(^|[^a-z0-9])${escaped}(?=$|[^a-z0-9])`, 'i').test(text);
+      }
+      return text.includes(term);
+    }
+    function tokenizeQuery(query) {
+      const q = normalize(query), tokens = new Set();
+      for (const word of q.match(/[a-z0-9][a-z0-9_.+-]*/g) || []) if (!STOP.has(word) && word.length > 1) tokens.add(word);
+      for (const dom of cfg.workflowData.domains || []) for (const kw of dom.kws) {
+        if (!STOP.has(kw) && hasTerm(q, kw)) tokens.add(kw);
+      }
+      const clean = q.replace(/我想要?|想要|需要|帮我|请问|如何|怎么|学习|使用|一个|一些|工具|项目|工作流|推荐|搭配|进行|可以/g, ' ');
       for (const seg of clean.match(/[\u4e00-\u9fff]{2,}/g) || []) {
-        tokens.add(seg);
-        if (seg.length > 2) {
-          for (let i = 0; i <= seg.length - 2; i++) tokens.add(seg.slice(i, i + 2));
+        if (seg.length <= 8) tokens.add(seg);
+        for (let n = 2; n <= 3; n++) for (let i = 0; i <= seg.length - n; i++) {
+          const t = seg.slice(i, i + n);
+          if (!STOP.has(t) && !/[的与和或及并了在我想要需个把为地得]/.test(t)) tokens.add(t);
         }
       }
       return [...tokens];
     }
-
-    function detectIntent(query) {
-      const q = (query || '').trim().toLowerCase();
-      const tokens = tokenizeQuery(q);
-      const domains = cfg.workflowData.domains || [];
-      const domainScores = [];
-
-      for (const dom of domains) {
-        let sc = 0;
-        for (const kw of dom.kws) {
-          if (q.includes(kw)) sc += kw.length >= 3 ? 6 : 4;
-          else if (tokens.some(t => t.length >= 2 && (kw.includes(t) || t.includes(kw)))) sc += 2;
-        }
-        if (sc > 0) domainScores.push({ id: dom.id, zh: dom.zh, en: dom.en, score: sc });
-      }
-      domainScores.sort((a, b) => b.score - a.score);
-
-      // Fallback when user enters a very narrow or novel term: infer top domain from direct item hits
-      if (!domainScores.length && q) {
-        const items = cfg.getItems();
-        const inferred = new Map();
-        for (const it of items) {
-          const s = cfg.searchScore(it, q);
-          if (s <= 0) continue;
-          const meta = indexById.get(it.id);
-          if (!meta) continue;
-          for (const [did, dsc] of Object.entries(meta.d || {})) {
-            inferred.set(did, (inferred.get(did) || 0) + dsc * Math.min(8, s / 120));
-          }
-        }
-        for (const dom of domains) {
-          const v = inferred.get(dom.id) || 0;
-          if (v > 0) domainScores.push({ id: dom.id, zh: dom.zh, en: dom.en, score: Math.round(v) });
-        }
-        domainScores.sort((a, b) => b.score - a.score);
-      }
-
-      if (!domainScores.length) {
-        const first = domains[0];
-        if (first) domainScores.push({ id: first.id, zh: first.zh, en: first.en, score: 5 });
-      }
-
-      return {
-        query: q,
-        tokens,
-        primary: domainScores[0],
-        secondary: domainScores[1] && domainScores[1].score >= domainScores[0].score * 0.42 ? domainScores[1] : null,
-        allDomains: domainScores.slice(0, 3),
-      };
+    function itemText(item) {
+      return [normalize(`${item.title || ''} ${item.en?.title || ''}`),
+        normalize(`${item.tags || ''} ${item.en?.tags || ''}`),
+        normalize(`${item.description || ''} ${item.en?.description || ''}`)];
     }
-
+    function detectIntent(query) {
+      const q = normalize(query).trim(), tokens = tokenizeQuery(q), domains = cfg.workflowData.domains || [];
+      const texts = cfg.getItems().map(itemText);
+      // Corpus frequency makes specific capabilities outrank ubiquitous implementation words.
+      const weights = new Map(tokens.map(t => [t, Math.log(1 + texts.length / (1 + texts.filter(fields => fields.some(f => hasTerm(f, t))).length))]));
+      let domainScores = domains.map(dom => {
+        const hits = dom.kws.filter(kw => !STOP.has(kw) && hasTerm(q, kw));
+        return { ...dom, score: hits.reduce((sum, kw) => sum + (weights.get(kw) || 1), 0) };
+      }).filter(d => d.score > 0).sort((a, b) => b.score - a.score);
+      const buildingSite = /(开发|搭建|构建|制作|build|develop|create).*(网站|网页|应用|website|frontend|\bapp\b)/i.test(q);
+      if (buildingSite) {
+        const frontend = domains.find(d => d.id === 'frontend');
+        domainScores = [{ ...frontend, score: 100 }, ...domainScores.filter(d => d.id !== 'frontend')];
+      }
+      // No arbitrary default domain, and no inference from prompt bodies or repository boilerplate.
+      return { query: q, tokens, weights, primary: domainScores[0] || null,
+        secondary: domainScores[1]?.score >= domainScores[0]?.score * .65 ? domainScores[1] : null,
+        allDomains: domainScores.slice(0, 2), buildingSite, learning: /^(学习|学会|学|learn\b|study\b)/.test(q) };
+    }
+    function relevance(item, intent) {
+      const fields = itemText(item);
+      const hits = intent.tokens.filter(t => fields.some(f => hasTerm(f, t)));
+      // Count a phrase once, rather than inflating scores with every overlapping Chinese bigram.
+      const distinct = hits.filter(t => !hits.some(longer => longer.length > t.length && longer.includes(t)));
+      const scored = distinct.map(t => ({ term: t, score: (intent.weights.get(t) || 1) *
+        (hasTerm(fields[0], t) ? 12 : hasTerm(fields[1], t) ? 9 : 5) }));
+      scored.sort((a, b) => b.score - a.score);
+      return { score: scored.reduce((sum, hit) => sum + hit.score, 0), reasons: scored.slice(0, 3).map(h => h.term) };
+    }
     function scoreItemForIntent(item, meta, intent, kindBoost) {
-      let sc = 0;
-      const d = meta.d || {};
-      if (intent.primary && d[intent.primary.id]) {
-        sc += d[intent.primary.id] * 3.4;
-      }
-      if (intent.secondary && d[intent.secondary.id]) {
-        sc += d[intent.secondary.id] * 1.9;
-      }
-      for (const extra of intent.allDomains.slice(2)) {
-        if (d[extra.id]) sc += d[extra.id] * 0.8;
-      }
-
-      // Direct semantic & keyword relevance from user free-text
-      if (intent.query) {
-        const direct = cfg.searchScore(item, intent.query);
-        if (direct > 0) sc += Math.min(55, direct * 0.065);
-        const hay = `${item.title || ''} ${item.tags || ''} ${item.description || ''} ${(item.en?.title) || ''} ${(item.en?.tags) || ''}`.toLowerCase();
-        let tokHits = 0;
-        for (const t of intent.tokens) {
-          if (t.length >= 2 && hay.includes(t)) tokHits++;
-        }
-        sc += Math.min(28, tokHits * 4.5);
-      }
-
-      if (sc <= 0) return 0;
-      const kb = kindBoost[meta.k] || 1;
-      return sc * (meta.q || 1) * kb;
+      const match = relevance(item, intent);
+      // Domain, preview completeness and content type can rank relevant tools; none can admit an unrelated tool.
+      if (match.score < 8) return 0;
+      if (intent.primary && (meta.d?.[intent.primary.id] || 0) < 4) return 0;
+      if (intent.learning && !/(学习|练习|背单词|课程|教材|教程|教学|入门|tutor|learning|practice|course|tutorial)/i.test(itemText(item).join(' '))) return 0;
+      if (intent.buildingSite && (meta.d?.frontend || 0) < 6) return 0;
+      const domainFit = intent.primary ? Math.min(8, meta.d?.[intent.primary.id] || 0) : 0;
+      return (match.score + domainFit) * (kindBoost[meta.k] || 1);
     }
 
     function buildSingleRecipe(profile, intent, bannedCoreIds, bannedCoreGroups, usedAcrossFirst) {
       const items = cfg.getItems();
       const scoredByStage = [[], [], [], []];
-      const allScored = [];
 
       for (const item of items) {
         const meta = indexById.get(item.id);
@@ -147,11 +119,13 @@
         if (sc < 6) continue;
         const entry = { item, meta, sc };
         scoredByStage[meta.st]?.push(entry);
-        allScored.push(entry);
       }
 
-      for (const bucket of scoredByStage) bucket.sort((a, b) => b.sc - a.sc);
-      allScored.sort((a, b) => b.sc - a.sc);
+      const relevanceFloor = Math.max(6, ...scoredByStage.flat().map(c => c.sc * .32));
+      for (const bucket of scoredByStage) {
+        bucket.splice(0, bucket.length, ...bucket.filter(c => c.sc >= relevanceFloor));
+        bucket.sort((a, b) => b.sc - a.sc || a.item.id.localeCompare(b.item.id));
+      }
 
       const usedIds = new Set();
       const usedCgs = new Set();
@@ -159,7 +133,7 @@
       const isolatedConflicts = new Set();
 
       const pickForStage = (stIdx, diversifyCore = false) => {
-        const pool = scoredByStage[stIdx].length ? scoredByStage[stIdx] : allScored;
+        const pool = scoredByStage[stIdx];
         let chosen = null;
 
         // Pass 1: try fresh item + fresh conflict group (+ diversified core engine across recipes)
@@ -194,52 +168,35 @@
           }
         }
 
-        // Pass 3: fallback to best global non-conflicting item if stage bucket was sparse
-        if (!chosen) {
-          for (const cand of allScored) {
-            if (usedIds.has(cand.item.id)) continue;
-            if (cand.meta.cg && usedCgs.has(cand.meta.cg)) {
-              isolatedConflicts.add(cand.meta.cg);
-              continue;
-            }
-            chosen = cand;
-            break;
-          }
-        }
-
         if (!chosen) return;
         usedIds.add(chosen.item.id);
         if (chosen.meta.cg) usedCgs.add(chosen.meta.cg);
-
-        // Collect safe swap alternatives (same stage or same conflict group, not conflicting with OTHER slots)
-        const alts = [];
-        for (const cand of pool) {
-          if (cand.item.id === chosen.item.id || usedIds.has(cand.item.id)) continue;
-          const conflictsWithOther = cand.meta.cg && usedCgs.has(cand.meta.cg) && cand.meta.cg !== chosen.meta.cg;
-          if (conflictsWithOther) continue;
-          if (cand.meta.cg && cand.meta.cg === chosen.meta.cg) {
-            isolatedConflicts.add(cand.meta.cg);
-          }
-          alts.push(cand);
-          if (alts.length >= 4) break;
-        }
 
         steps[stIdx] = {
           stageIdx: stIdx,
           item: chosen.item,
           meta: chosen.meta,
           score: chosen.sc,
-          alternatives: alts,
+          reasons: relevance(chosen.item, intent).reasons,
+          alternatives: [],
         };
       };
 
       // Pick Core Engine (stage 1) first to anchor the entire stack, then Plan (0), Polish (2), Ship (3)
       pickForStage(1, true);
+      if (scoredByStage[1].length && !steps[1]) return {steps: []};
       pickForStage(0, false);
       pickForStage(2, false);
       pickForStage(3, false);
 
       const finalSteps = steps.filter(Boolean);
+      // Compute alternatives AFTER every slot is filled. Earlier slots must not suggest
+      // a replacement that is already selected or conflicts with a later slot.
+      for (const step of finalSteps) {
+        const others = finalSteps.filter(s => s !== step);
+        step.alternatives = scoredByStage[step.stageIdx].filter(c => c.item.id !== step.item.id &&
+          !others.some(o => o.item.id === c.item.id || (c.meta.cg && c.meta.cg === o.meta.cg))).slice(0, 4);
+      }
       const skillCount = finalSteps.filter(s => s.meta.k === 's').length;
       const activeCgs = finalSteps.map(s => s.meta.cg).filter(Boolean);
       const hasConflict = new Set(activeCgs).size !== activeCgs.length;
@@ -247,6 +204,9 @@
       return {
         profile,
         steps: finalSteps,
+        intent,
+        relevanceFloor,
+        missingStages: [0, 1, 2, 3].filter(st => !steps[st]),
         skillCount,
         isolatedConflictGroups: [...isolatedConflicts],
         conflictFree: !hasConflict,
@@ -269,6 +229,8 @@
           usedAcrossFirst
         );
         if (!rec.steps.length) continue;
+        const uniqueIds = rec.steps.map(s => s.item.id).sort().join('|');
+        if (recipes.some(r => r.steps.map(s => s.item.id).sort().join('|') === uniqueIds)) continue;
         // Avoid identical duplicate recipes
         const sig = rec.steps.map(s => s.item.id).join('|');
         if (recipes.some(r => r.steps.map(s => s.item.id).join('|') === sig)) continue;
@@ -311,8 +273,8 @@
           <div class="wf-beam" aria-hidden="true"></div>
           <div class="wf-hero-head">
             <div>
-              <h2 class="wf-title" data-wi="描述你的项目需求，自动搭配零冲突工作流"></h2>
-              <p class="wf-sub" data-wi="基于工具箱现有 Skills、实用网站与提示词，按「筹备 → 核心 → 精修 → 交付」自动组合，并隔离互斥 Skill 冲突。"></p>
+              <h2 class="wf-title" data-wi="描述你的项目需求，搭配相关工具与工作流"></h2>
+              <p class="wf-sub" data-wi="基于收录内容的标题、标签与用途匹配；只组合相关工具，缺少的阶段保持空缺，并检查已知互斥规则。"></p>
             </div>
           </div>
           <form class="wf-form" id="wfForm">
@@ -375,10 +337,10 @@
         <div class="wf-diag-left">
           <span class="wf-diag-dot" aria-hidden="true"></span>
           <span>${esc(cfg.tr('已识别方向'))}</span>
-          ${domainChips}
+          ${domainChips || esc(lang === 'en' ? 'No confident category — direct matches only' : '暂未识别明确方向，仅按具体词匹配')}
         </div>
         <div class="wf-diag-right">
-          ${esc(cfg.tr('从 {n} 项内容中生成 {m} 套零冲突流程').replace('{n}', totalItems).replace('{m}', recipes.length))}
+          ${esc(cfg.tr('从 {n} 项内容中匹配 {m} 套相关组合').replace('{n}', totalItems).replace('{m}', recipes.length))}
         </div>
       `;
 
@@ -390,20 +352,23 @@
       if (!listEl) return;
       const lang = cfg.getLang();
 
+      if (!currentRecipes.length) {
+        listEl.innerHTML = `<section class="wf-recipe"><h3>${esc(lang === 'en' ? 'No relevant tools found' : '暂未找到相关工具')}</h3><p>${esc(lang === 'en' ? 'Add a concrete task, output or tool name. The library may not cover this need; unrelated tools will not be inserted.' : '请补充具体任务、目标产物或工具名称。当前内容库可能尚未覆盖这个需求，不会用无关工具补齐。')}</p></section>`;
+        return;
+      }
       listEl.innerHTML = currentRecipes.map((rec, rIdx) => {
         const badge = lang === 'en' ? rec.profile.badgeEn : rec.profile.badgeZh;
         const sub = lang === 'en' ? rec.profile.subEn : rec.profile.subZh;
         const isolatedN = rec.isolatedConflictGroups.length;
-        const shieldLabel = isolatedN
-          ? cfg.tr('0 冲突 · 已隔离 {n} 组互斥').replace('{n}', isolatedN)
-          : cfg.tr('0 冲突 · 全阶段兼容');
+        const shieldLabel = lang === 'en' ? 'No known rule conflicts' : '未发现已知规则冲突';
         const shieldOpen = openShieldIdx === rIdx;
 
         const shieldDetailHtml = shieldOpen ? `
           <div class="wf-shield-note">
             <strong>${esc(cfg.tr('冲突检测报告'))}</strong>
+            <p>${esc(lang === 'en' ? 'Checked against curated exclusion groups only. Execution compatibility is not verified.' : '仅检查收录的互斥分组，不代表已验证实际运行兼容性。')}</p>
             ${isolatedN ? `<ul>${rec.isolatedConflictGroups.map(cg => `<li>${esc(conflictText(cg))}</li>`).join('')}</ul>`
-            : `<p>${esc(cfg.tr('当前组合内所有 Skill 与工具分属不同执行阶段，无同名规则覆盖或管线冲突。'))}</p>`}
+            : `<p>${esc(cfg.tr('未命中已收录的互斥分组；工具间的数据格式、依赖和实际运行仍需确认。'))}</p>`}
           </div>
         ` : '';
 
@@ -453,6 +418,7 @@
                 <div class="wf-step-body">
                   <h4 class="wf-step-title">${esc(title)}</h4>
                   <p class="wf-step-desc">${esc(desc)}</p>
+                  <p class="wf-recipe-sub">${esc(lang === 'en' ? 'Matches: ' : '匹配依据：')}${esc(st.reasons.join(' · '))}</p>
                 </div>
                 <div class="wf-step-foot">
                   <button type="button" class="wf-step-detail" data-wf-open="${esc(item.id)}">${esc(cfg.tr('查看详情'))}</button>
@@ -471,6 +437,7 @@
               <div class="wf-recipe-meta">
                 <span class="wf-recipe-badge">${esc(badge)}</span>
                 <p class="wf-recipe-sub">${esc(sub)}</p>
+                ${rec.missingStages.length ? `<p class="wf-recipe-sub">${esc(lang === 'en' ? 'No suitable match for: ' : '未找到合适条目的阶段：')}${esc(rec.missingStages.map(idx => stageMeta(idx).name).join(' · '))}</p>` : ''}
               </div>
               <div class="wf-recipe-acts">
                 <button type="button" class="wf-shield-btn" data-wf-shield="${rIdx}" aria-expanded="${shieldOpen}">
@@ -490,7 +457,7 @@
       }).join('');
     }
 
-    function runCompose(query, withScan = true) {
+    function runCompose(query) {
       currentQuery = (query || '').trim();
       const input = hostEl?.querySelector('#wfInput');
       if (input && input.value !== currentQuery) input.value = currentQuery;
@@ -503,19 +470,8 @@
         btn.setAttribute('aria-pressed', String(!!matched));
       });
 
-      const hero = hostEl?.querySelector('#wfHero');
-      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      clearTimeout(scanTimer);
-      if (withScan && hero && !reduce) {
-        hero.classList.add('is-scanning');
-        scanTimer = setTimeout(() => {
-          hero.classList.remove('is-scanning');
-          renderResults(true);
-        }, 280);
-      } else {
-        hero?.classList.remove('is-scanning');
-        renderResults(!reduce);
-      }
+      // Results are computed immediately; do not hold fresh recommendations behind a cosmetic timer.
+      renderResults(!window.matchMedia('(prefers-reduced-motion: reduce)').matches);
     }
 
     async function copyRecipeMarkdown(rIdx, btnEl) {
@@ -527,8 +483,8 @@
         `# ${header}${currentQuery ? ` — ${currentQuery}` : ''}`,
         '',
         lang === 'en'
-          ? `Conflict Check: Passed (0 conflicting Skills/engines across ${rec.steps.length} stages)`
-          : `冲突校验：通过（共 ${rec.steps.length} 阶段，0 组 Skill 互斥冲突）`,
+          ? `Known exclusion groups checked only; runtime compatibility is not verified.`
+          : `仅检查已知互斥分组，未验证实际运行兼容性。`,
         '',
       ];
       rec.steps.forEach((st, idx) => {
@@ -539,10 +495,12 @@
         const url = links[0]?.url ? ` (${links[0].url})` : '';
         lines.push(`${idx + 1}. **[${sm.name}] ${title}** [${kindLabel(st.item)}]${url}`);
         if (desc) lines.push(`   ${desc}`);
+        lines.push(`   ${lang === 'en' ? 'Matches' : '匹配依据'}: ${st.reasons.join(' · ')}`);
       });
+      if (rec.missingStages.length) lines.push('', `${lang === 'en' ? 'Unfilled stages' : '未匹配阶段'}: ${rec.missingStages.map(idx => stageMeta(idx).name).join(' · ')}`);
       try {
         await navigator.clipboard.writeText(lines.join('\n'));
-        cfg.toast(cfg.tr('✓ 已复制整套零冲突流程清单'));
+        cfg.toast(cfg.tr('✓ 已复制推荐组合与匹配依据'));
         if (btnEl) {
           const span = btnEl.querySelector('span');
           const orig = cfg.tr('复制整套流程');
@@ -565,12 +523,21 @@
       const picked = st?.alternatives[aIdx];
       if (!rec || !st || !picked) return;
 
-      const prev = { item: st.item, meta: st.meta, sc: st.score };
+      const others = rec.steps.filter(s => s !== st);
+      if (picked.meta.st !== st.stageIdx || others.some(s => s.item.id === picked.item.id || (picked.meta.cg && s.meta.cg === picked.meta.cg))) return;
       st.item = picked.item;
       st.meta = picked.meta;
       st.score = picked.sc;
-      st.alternatives.splice(aIdx, 1, prev);
+      st.reasons = relevance(picked.item, rec.intent).reasons;
 
+      // Rebuild safe alternatives against the final selection after every swap.
+      for (const step of rec.steps) {
+        step.alternatives = cfg.getItems().map(item => ({item, meta: indexById.get(item.id)}))
+          .filter(c => c.meta?.st === step.stageIdx && c.item.id !== step.item.id &&
+            !rec.steps.some(o => o !== step && (o.item.id === c.item.id || (c.meta.cg && c.meta.cg === o.meta.cg))))
+          .map(c => ({...c, sc: scoreItemForIntent(c.item, c.meta, rec.intent, rec.profile.kindBoost)}))
+          .filter(c => c.sc >= rec.relevanceFloor).sort((a, b) => b.sc - a.sc || a.item.id.localeCompare(b.item.id)).slice(0, 4);
+      }
       // Recompute conflict-free check
       const cgs = rec.steps.map(s => s.meta.cg).filter(Boolean);
       rec.conflictFree = new Set(cgs).size === cgs.length;
