@@ -1,5 +1,78 @@
 [
   {
+    "id": "website-comfyui",
+    "kind": "website",
+    "title": "ComfyUI（14.8 万+ Star 节点式本地 AI 图像与视频生成引擎）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 14.8 万+ Star 的模块化扩散模型图形界面与后端（GPL-3.0），以节点工作流驱动本地图像、视频与音频生成，提供 Windows 桌面版、模板库与庞大的插件生态，可本地运行 MiniMax H3 等开源视频模型。",
+    "tags": "ComfyUI / 节点工作流 / 本地部署 / AI 视频 / 扩散模型 / 桌面版 / GPL-3.0",
+    "pricing": "free",
+    "license": "GPL-3.0",
+    "prompt": "ComfyUI（14.8 万+ Star 节点式本地 AI 图像与视频生成引擎）\n\n用途\n以可视化节点图搭建并运行本地扩散模型工作流，覆盖文生图、图生视频、文生视频与音频生成，数据与模型全部留在本机。\n\n核心特点\n- 模块化节点图，工作流可保存分享，内置模板库开箱即用\n- 提供 Windows 桌面版安装包，支持本地部署与模型目录迁移\n- 插件生态庞大，持续适配新开源模型（如 MiniMax H3）\n\n部署教程见本站「ComfyUI 本地部署 MiniMax H3 开源视频模型实操指南」。\n\n许可：GPL-3.0\n官网：https://www.comfy.org/\n官方仓库：https://github.com/Comfy-Org/ComfyUI",
+    "source": "https://www.comfy.org/",
+    "officialUrl": "https://www.comfy.org/",
+    "repository": "https://github.com/Comfy-Org/ComfyUI",
+    "documentation": "https://docs.comfy.org/",
+    "addedAt": "2026-11-25",
+    "verifiedAt": "2026-11-25",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-comfyui/cover.jpg",
+      "alt": "ComfyUI 官方预览图",
+      "width": 1200,
+      "height": 630
+    },
+    "previewSource": "https://www.comfy.org/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-25 取自 ComfyUI 官方站点预览图；仅收藏。",
+    "en": {
+      "title": "ComfyUI (148k+ Star Node-Based Local AI Image & Video Engine)",
+      "description": "148k+ star GPL-3.0 modular diffusion GUI and backend with node workflows, a template library, a Windows desktop app, and a large plugin ecosystem for running local image, video, and audio models such as MiniMax H3.",
+      "tags": "ComfyUI / Node workflow / Local deployment / AI video / Diffusion / GPL-3.0",
+      "license": "GPL-3.0",
+      "previewNote": "Official preview image from comfy.org on 2026-11-25; saved for reference only."
+    }
+  },
+  {
+    "id": "comfyui-minimax-h3-guide",
+    "kind": "skill",
+    "title": "ComfyUI 本地部署 MiniMax H3 开源视频模型实操指南",
+    "category": "其他",
+    "description": "Windows 本地跑通 MiniMax H3 文生视频的完整教程：桌面版装到非系统盘、升级 0.40+、下载 5 个模型文件、80G 虚拟内存与 580+ 驱动、提示词与显存报错处理，以及 cp313/cu131 预编译 whl 解决插件编译失败。",
+    "tags": "教程 / ComfyUI / MiniMax H3 / 本地部署 / 文生视频 / 虚拟内存 / CUDA 13",
+    "prompt": "在本地部署 ComfyUI 并运行 MiniMax H3 开源视频模型的实操指南（Windows）\n\n一、安装 ComfyUI 桌面版\n- 从官网下载 Windows 桌面版安装包，首次启动选择本地部署。\n- 安装路径必须改到 D 盘或其他非系统盘，并把模型、输入、输出文件夹一并迁移，避免模型体积过大占满 C 盘。\n- 安装过程中开启国内镜像，保证 2 个多 G 的运行环境与依赖包顺利下载。\n\n二、更新到最新版本\n- 在软件设置中检查更新，需升级到 0.40 及以上版本（内置 H3 节点，版本过旧在模板库里找不到对应模型）。\n- 更新前系统会自动创建快照以便回滚；建议关闭自动更新，防止第三方插件未适配新版核心而报错。\n\n三、加载模板并下载模型\n- 模板库 → 视频分类 → 选择不带 Max 或皇冠标识的本地版 MiniMax H3 文生视频模板。\n- 首次打开会提示下载 5 个模型文件：\n  1. 主模型（约 20G）：画面生成与音频文本编码 → diffusion_models\n  2. 文本编码器（约 15G）：解析提示词语义 → text_encoders\n  3. 视频 VAE 与音频 VAE（共约 5G）：把结果解码为画面与音频 → vae\n  4. 加速 LoRA（约 2G）：采样步数从 20 步压缩到 8 步 → loras\n- 自动下载失败时，可从国内镜像站（HF-Mirror 或魔搭）手动下载并放入上述对应文件夹。\n\n四、配置虚拟内存与显卡驱动\n- 5 个模型总量超过 40G，32G 物理内存环境需用硬盘做后备：高级系统设置中把 D 盘虚拟内存自定义为 80G（初始大小与最大值均设为 81920 MB）。\n- 显卡驱动更新到 580 以上以适配 CUDA 13；可在系统硬件安装设置中选择“否”，禁止 Windows 自动覆盖驱动。\n- 开始生成前关闭浏览器以释放内存。\n\n五、编写提示词并运行视频\n- 提示词越详细越好：写清主体特征、场景环境、动作镜头与台词音效。\n- 首次运行保持模板默认：768p、24fps、Turbo 模式（8 步），时长控制在 15 秒以内。\n- 提示显存不足时不要盲目降参数：先完全退出 ComfyUI 并重新打开以清空显存残留，仍报错再适当缩小分辨率。\n\n六、解决插件安装编译报错\n- 新版 ComfyUI 基于 Python 3.13 和 CUDA 13，部分第三方插件的底层依赖尚无预编译版本，易出现 “failed building wheel”。\n- 解决：在软件设置“关于”页确认 Python 与 PyTorch 版本 → 到对应依赖包发布页下载文件名匹配 cp313 与 cu131 的预编译 .whl → 用 ComfyUI 内置 pip 本地安装。\n\n官方入口：https://www.comfy.org/ ｜ 仓库：https://github.com/Comfy-Org/ComfyUI\n模型权重（官方重打包）：https://huggingface.co/Comfy-Org/MiniMax-H3",
+    "sourceNote": "用户提供的 ComfyUI 本地部署 MiniMax H3 视频介绍整理。",
+    "addedAt": "2026-11-25",
+    "preview": {
+      "type": "image",
+      "src": "assets/comfyui-minimax-h3-guide/cover.jpg",
+      "alt": "MiniMax H3 ComfyUI 官方权重页预览",
+      "width": 1200,
+      "height": 648
+    },
+    "previewSource": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-25 取自官方站点预览图；教程正文由视频介绍整理，未逐项实测。",
+    "en": {
+      "title": "Run MiniMax H3 Open-Source Video Model Locally with ComfyUI (Windows Guide)",
+      "description": "End-to-end Windows walkthrough for MiniMax H3 text-to-video in ComfyUI: install the desktop app off the system drive, upgrade to 0.40+, fetch the 5 model files, set an 80GB page file and 580+ driver, write prompts, and fix wheel build errors with cp313/cu131 wheels.",
+      "tags": "Tutorial / ComfyUI / MiniMax H3 / Local deployment / Text-to-video / CUDA 13",
+      "prompt": "Local MiniMax H3 text-to-video with ComfyUI on Windows\n\n1. Install ComfyUI Desktop\n- Download the Windows desktop installer and choose local deployment on first launch.\n- Change the install path to D: or another non-system drive and move the models, input, and output folders too, so large models do not fill C:.\n- Enable the China mirror during setup so the 2GB+ runtime and dependencies download reliably.\n\n2. Update to the latest version\n- Check for updates in Settings and upgrade to 0.40 or later (it ships the H3 nodes; older versions will not show the model in the template library).\n- A snapshot is created before updating for rollback; consider turning off auto-update so third-party plugins that have not adapted to the new core do not break.\n\n3. Load the template and download models\n- Template Library > Video > pick the local MiniMax H3 text-to-video template (without the Max or crown badge).\n- The first open prompts for 5 model files:\n  1. Main model (~20GB): picture generation and audio-text encoding -> diffusion_models\n  2. Text encoder (~15GB): prompt semantics -> text_encoders\n  3. Video VAE and audio VAE (~5GB total): decode results to picture and audio -> vae\n  4. Speed-up LoRA (~2GB): cuts sampling from 20 to 8 steps -> loras\n- If auto-download fails, download manually from a mirror (HF-Mirror or ModelScope) into those folders.\n\n4. Virtual memory and GPU driver\n- The 5 models exceed 40GB, so on 32GB RAM use disk as backup: set a custom D: page file of 80GB (initial and maximum both 81920 MB).\n- Update the GPU driver to 580+ for CUDA 13; in Windows hardware install settings choose \"No\" to stop automatic driver replacement.\n- Close the browser before generating to free memory.\n\n5. Write the prompt and run\n- Be detailed: subject traits, scene, action and camera, dialogue and sound.\n- First run: keep the template defaults of 768p, 24fps, Turbo (8 steps), under 15 seconds.\n- On out-of-VRAM errors, fully quit and reopen ComfyUI to clear residual VRAM before lowering resolution.\n\n6. Plugin build errors\n- The new ComfyUI uses Python 3.13 and CUDA 13; some plugin dependencies lack prebuilt wheels and fail with \"failed building wheel\".\n- Fix: check the Python and PyTorch versions under Settings > About, download a prebuilt .whl whose name matches cp313 and cu131 from the package's release page, and install it with ComfyUI's bundled pip.\n\nOfficial: https://www.comfy.org/ | Repo: https://github.com/Comfy-Org/ComfyUI\nWeights: https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "previewNote": "Official site preview image; tutorial text was compiled from the video summary and not individually re-tested."
+    },
+    "skillTopics": [
+      "动画视频"
+    ],
+    "pricing": "free",
+    "officialUrl": "https://www.comfy.org/",
+    "source": "https://www.comfy.org/",
+    "repository": "https://github.com/Comfy-Org/ComfyUI",
+    "verifiedAt": "2026-11-25"
+  },
+  {
     "id": "website-obscura",
     "kind": "website",
     "title": "Obscura（3.7 万+ Star Rust 轻量级 AI 无头浏览器引擎）",
