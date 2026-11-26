@@ -1,5 +1,40 @@
 [
   {
+    "id": "website-convbased-studio",
+    "kind": "website",
+    "title": "Convbased Studio（云端实时 AI 变声与 RVC 语音合成工作台）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "无需高配本地显卡即可在浏览器直接体验的云端实时 AI 变声与语音合成工作台（weights.chat），结合高质量开源 RVC 预训练底模与 Convbased Studio SDK，支持低延迟实时变声、定制声音模型训练与插件集成。",
+    "tags": "AI 变声 / 语音合成 / RVC 模型 / 实时音频 / 云端工作台 / VST3",
+    "pricing": "free",
+    "prompt": "Convbased Studio（云端实时 AI 变声与 RVC 语音合成工作台）\n\n用途\n提供零硬件门槛的浏览器端云端实时 AI 变声与检索式语音转换（RVC）体验，适合语音通话、游戏直播、配音创作与自定义音色微调。\n\n核心特点\n- 云端低延迟实时变声与音频转换，免去本地部署复杂 Python 与高显存环境\n- 开源 Convbased-Studio 高质量 RVC 预训练底模（GitHub），加速中文等声音模型训练与微调\n- 配套 @convbased/sdk 开发者工具与插件集成能力\n\n官网：https://weights.chat\n文档：https://docs.weights.chat\n官方仓库：https://github.com/Convbased/Convbased-Studio",
+    "source": "https://weights.chat",
+    "officialUrl": "https://weights.chat",
+    "repository": "https://github.com/Convbased/Convbased-Studio",
+    "documentation": "https://docs.weights.chat",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-convbased-studio/cover.jpg",
+      "alt": "Convbased Studio（weights.chat）官网首屏界面截图",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://weights.chat",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 实际打开 weights.chat 官网首页后的截图；仅收藏。",
+    "en": {
+      "title": "Convbased Studio (Cloud Real-Time AI Voice Conversion & RVC Workbench)",
+      "description": "Zero-GPU cloud real-time AI voice conversion and RVC synthesis workbench (weights.chat), backed by open-source Convbased-Studio pretrained base models and developer SDK.",
+      "tags": "AI voice conversion / Speech synthesis / RVC / Real-time audio / Cloud workbench / SDK",
+      "previewNote": "Screenshot of the official weights.chat homepage captured on 2026-11-26; saved for reference only."
+    }
+  },
+  {
     "id": "skill-ojo-design-skills",
     "kind": "skill",
     "title": "OJO Design Skills（AI 编程智能体 UI/UX 设计与反模板感插件套件）",
