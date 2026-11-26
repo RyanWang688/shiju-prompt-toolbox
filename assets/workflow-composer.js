@@ -409,12 +409,12 @@
 
           return `
             <div class="wf-step-wrap" style="--si:${sIdx}">
-              <article class="wf-step ${kindCls}" data-wf-step="${swapKey}">
+              <article class="wf-step ${kindCls}" draggable="true" data-drag-card="${esc(item.id)}" data-wf-step="${swapKey}">
                 <div class="wf-step-top">
                   <span class="wf-stage-pill"><b>0${sIdx + 1}</b> ${esc(sm.name)}</span>
                   <span class="wf-kind-pill ${kindCls}">${esc(kindLabel(item))}</span>
                 </div>
-                ${cover ? `<div class="wf-step-thumb"><img src="${esc(cover)}" alt="${esc(title)}" loading="lazy"></div>` : `<div class="wf-step-thumb wf-step-thumb-text"><span>${esc(kindLabel(item))}</span><strong>${esc(title.slice(0, 18))}</strong></div>`}
+                ${cover ? `<div class="wf-step-thumb"><img src="${esc(cover)}" draggable="false" alt="${esc(title)}" loading="lazy"></div>` : `<div class="wf-step-thumb wf-step-thumb-text"><span>${esc(kindLabel(item))}</span><strong>${esc(title.slice(0, 18))}</strong></div>`}
                 <div class="wf-step-body">
                   <h4 class="wf-step-title">${esc(title)}</h4>
                   <p class="wf-step-desc">${esc(desc)}</p>

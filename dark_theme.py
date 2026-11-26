@@ -224,6 +224,8 @@ html[data-theme=dark] .wf-swap-close{background:#23232c;border-color:#ffffff1c;c
 html[data-theme=dark] .wf-swap-opt{background:#1d1d26;border-color:#ffffff14;color:#ededef}
 html[data-theme=dark] .wf-swap-opt:hover{background:#ffd43b1e;border-color:#ffd43b80}
 html[data-theme=dark] .wf-swap-opt-tag{background:#ffffff12;color:#a1a1aa}
+html[data-theme=dark] .dashboard .card.is-dragging,html[data-theme=dark] .wf-step.is-dragging{border-color:#ffd43b;box-shadow:0 20px 44px -14px #000}
+html[data-theme=dark] .drag-ghost{background:#111116;border-color:#ffd43b99}
 """
 
 def build(root):
