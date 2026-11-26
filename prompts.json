@@ -1,5 +1,42 @@
 [
   {
+    "id": "skill-ojo-design-skills",
+    "kind": "skill",
+    "title": "OJO Design Skills（AI 编程智能体 UI/UX 设计与反模板感插件套件）",
+    "category": "其他",
+    "skillTopics": [
+      "视觉设计"
+    ],
+    "description": "开源可复用 AI UI/UX 设计技能套件（MIT，适配 Claude Code、Codex、ZCode 等）：区分「稳健实用（Convention）」与「品牌创新（Innovation）」双轨道，提供设计令牌、组件规范、动效准则与反 AI 廉价模板感护栏。",
+    "tags": "UI/UX 设计 / 反模板感 / Design Tokens / Claude Code / Codex / Skill / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "OJO Design Skills（AI 编程智能体 UI/UX 设计与反模板感插件套件）\n\n用途\n为 Claude Code、Codex、ZCode 等编程智能体提供结构化的 UI/UX 设计决策能力，替代千篇一律的紫蓝渐变、灰框占位与单色调「AI 味」界面。\n\n核心机制\n- 双轨设计路径：支持偏向高可用性与效率产品的「Convention Track」，以及强调品牌叙事、材质隐喻与差异化视觉识别的「Innovation Track」\n- 全链路设计规范：涵盖 Design Tokens、组件状态配方、动效细节规范与反模板感（Anti-Slop）自查护栏\n- 提供快捷安装脚本，可一键接入主流 AI 编程客户端\n\n许可：MIT\n官网：https://ojo.art\n官方仓库：https://github.com/touchine-ojo/OJO-Design-Skills",
+    "source": "https://github.com/touchine-ojo/OJO-Design-Skills",
+    "officialUrl": "https://ojo.art",
+    "repository": "https://github.com/touchine-ojo/OJO-Design-Skills",
+    "documentation": "https://github.com/touchine-ojo/OJO-Design-Skills#readme",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ojo-design-skills/cover.jpg",
+      "alt": "OJO Design Skills 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://ojo.art",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 取自 OJO 官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "OJO Design Skills (UI/UX & Anti-Slop Skill Bundle for AI Agents)",
+      "description": "MIT-licensed reusable UI/UX design skills for Claude Code, Codex, and ZCode featuring Convention vs. Innovation tracks, design tokens, component recipes, motion specs, and anti-AI-slop guardrails.",
+      "tags": "UI/UX design / Anti-slop / Design tokens / Claude Code / Codex / Skill / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image from ojo.art / GitHub on 2026-11-26; saved for reference only."
+    }
+  },
+  {
     "id": "skill-reanimate",
     "kind": "skill",
     "title": "reanimate（逐帧参考现有动画并验证复刻效果的 Agent Skill）",

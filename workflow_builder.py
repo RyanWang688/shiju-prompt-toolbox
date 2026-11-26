@@ -52,7 +52,7 @@ CONFLICT_GROUPS = {
     "cg:ui-aesthetic": {
         "zh": "全局 UI 审美约束 Skill 互斥（避免两套视觉规则在排版与配色上打架）",
         "en": "Mutually exclusive UI taste/aesthetic rulebook (prevents conflicting layout & style directives)",
-        "ids": {"skill-frontend-design", "skill-unslop", "skill-impeccable", "skill-ui-ux-pro-max"},
+        "ids": {"skill-frontend-design", "skill-unslop", "skill-impeccable", "skill-ui-ux-pro-max", "skill-ojo-design-skills"},
         "keywords": ["去ai味", "反模板感", "ui 审美", "de-slop"],
     },
     "cg:ppt-engine": {
