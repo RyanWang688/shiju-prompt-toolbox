@@ -55,5 +55,6 @@ assert.match(siteZh.html, /href="https:\/\/n8n\.io"/);
 assert.ok(html.includes('assets/card-drag.js'), 'index.html includes card-drag.js');
 assert.ok(html.includes('draggable="true" data-kind='), 'Grid cards have draggable="true"');
 assert.ok(wfSource.includes('draggable="true" data-drag-card='), 'Workflow step cards have draggable="true" and data-drag-card');
+assert.ok(!dragSource.includes("setData('DownloadURL'"), 'Must not set DownloadURL so Electron/Agent text drops are never hijacked as empty virtual files');
 
-console.log('Card drag checks passed: Skill install payload, Prompt payload, Website payload, DownloadURL filename, and HTML/Workflow draggable wiring.');
+console.log('Card drag checks passed: Skill install payload, Prompt payload, Website payload, pure text/plain Agent drop compatibility, and HTML/Workflow draggable wiring.');

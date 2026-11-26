@@ -173,9 +173,9 @@
         e.dataTransfer.setData('application/x-shiju-card+json', payload.json);
         if (payload.uriList) e.dataTransfer.setData('text/uri-list', payload.uriList);
         if (payload.html) e.dataTransfer.setData('text/html', payload.html);
-        // Chromium DownloadURL: enables dragging cards straight into local folders / Desktop as .md files
-        const dataUrl = `data:text/markdown;charset=utf-8,${encodeURIComponent(payload.markdown)}`;
-        e.dataTransfer.setData('DownloadURL', `text/markdown:${payload.filename}:${dataUrl}`);
+        // Note: Do NOT set Chromium DownloadURL here — on Windows it advertises a virtual
+        // CFSTR_FILEDESCRIPTOR file that causes Electron apps (Antigravity / VS Code / Cursor)
+        // to intercept the drop as an unreadable empty file instead of inserting text/plain.
       } catch {
         // Fallback already populated via text/plain
       }
