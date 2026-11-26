@@ -1,5 +1,264 @@
 [
   {
+    "id": "skill-reanimate",
+    "kind": "skill",
+    "title": "reanimate（逐帧参考现有动画并验证复刻效果的 Agent Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "GitHub 2,500+ Star 的开源 Claude Code Skill（MIT）：可从网页链接、录屏 MP4/GIF 或 Lottie 中逐帧拆解时间轴、弹簧与缓动曲线，写回代码并自动对比验证复刻是否一致。",
+    "tags": "动画复刻 / 逐帧拆解 / 缓动提取 / Claude Code / Agent Skill / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "reanimate（逐帧参考现有动画并验证复刻效果的 Agent Skill）\n\n用途\nGitHub 2,500+ Star 的开源 Claude Code Skill（MIT）：可从网页链接、录屏 MP4/GIF 或 Lottie 中逐帧拆解时间轴、弹簧与缓动曲线，写回代码并自动对比验证复刻是否一致。\n\n官方仓库：https://github.com/NiazMorshed2007/reanimate",
+    "source": "https://github.com/NiazMorshed2007/reanimate",
+    "officialUrl": "https://github.com/NiazMorshed2007/reanimate",
+    "repository": "https://github.com/NiazMorshed2007/reanimate",
+    "documentation": "https://github.com/NiazMorshed2007/reanimate#readme",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-reanimate/cover.jpg",
+      "alt": "reanimate (Frame-by-Frame Animation Reverse-Engineering Skill) 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/NiazMorshed2007/reanimate",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 取自官方仓库预览图；仅收藏。",
+    "en": {
+      "title": "reanimate (Frame-by-Frame Animation Reverse-Engineering Skill)",
+      "description": "2.5k+ star MIT Claude Code skill that reverse-engineers any web or video animation frame by frame—extracting springs, easing, and timing—and verifies the rebuilt motion matches.",
+      "tags": "Animation reverse-engineering / Frame-by-frame / Easing / Claude Code / MIT",
+      "license": "MIT",
+      "previewNote": "Official repository preview card on 2026-11-26; saved for reference only."
+    }
+  },
+  {
+    "id": "skill-motion-design-skill",
+    "kind": "skill",
+    "title": "motion-design-skill（LottieFiles 官方 AI 动画节奏与缓动设计规范）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "LottieFiles 开源的通用动效设计 Skill（3,600+ Star，MIT）：将迪士尼 12 条动画法则、节奏编排、缓动曲线与视觉层次直接注入 AI 编程助手，让代码生成的动画不再僵硬。",
+    "tags": "动效法则 / 节奏与缓动 / LottieFiles / UI 动画 / Agent Skill / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "motion-design-skill（LottieFiles 官方 AI 动画节奏与缓动设计规范）\n\n用途\nLottieFiles 开源的通用动效设计 Skill（3,600+ Star，MIT）：将迪士尼 12 条动画法则、节奏编排、缓动曲线与视觉层次直接注入 AI 编程助手，让代码生成的动画不再僵硬。\n\n官方仓库：https://github.com/LottieFiles/motion-design-skill",
+    "source": "https://github.com/LottieFiles/motion-design-skill",
+    "officialUrl": "https://github.com/LottieFiles/motion-design-skill",
+    "repository": "https://github.com/LottieFiles/motion-design-skill",
+    "documentation": "https://github.com/LottieFiles/motion-design-skill#readme",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-motion-design-skill/cover.jpg",
+      "alt": "motion-design-skill (LottieFiles Motion Timing & Easing Principles) 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/LottieFiles/motion-design-skill",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 取自官方仓库预览图；仅收藏。",
+    "en": {
+      "title": "motion-design-skill (LottieFiles Motion Timing & Easing Principles)",
+      "description": "3.6k+ star MIT skill by LottieFiles teaching AI agents Disney's 12 animation principles, timing charts, easing curves, and choreography before writing animation code.",
+      "tags": "Motion design / Timing & easing / LottieFiles / UI animation / MIT",
+      "license": "MIT",
+      "previewNote": "Official repository preview card on 2026-11-26; saved for reference only."
+    }
+  },
+  {
+    "id": "skill-cinetic",
+    "kind": "skill",
+    "title": "cinetic（用代码导演电影感产品宣传片与动态影像的 Agent Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "开源 AI 动画导演技能（1,300+ Star，MIT）：基于 Remotion 或 HyperFrames，将编程 Agent 转化为短片导演，完成脚本分镜、节拍对齐、转场与电影级代码动画成片。",
+    "tags": "电影感动画 / 代码做片 / Remotion / 分镜导演 / Agent Skill / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "cinetic（用代码导演电影感产品宣传片与动态影像的 Agent Skill）\n\n用途\n开源 AI 动画导演技能（1,300+ Star，MIT）：基于 Remotion 或 HyperFrames，将编程 Agent 转化为短片导演，完成脚本分镜、节拍对齐、转场与电影级代码动画成片。\n\n官方仓库：https://github.com/Leonxlnx/cinetic",
+    "source": "https://github.com/Leonxlnx/cinetic",
+    "officialUrl": "https://github.com/Leonxlnx/cinetic",
+    "repository": "https://github.com/Leonxlnx/cinetic",
+    "documentation": "https://github.com/Leonxlnx/cinetic#readme",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-cinetic/cover.jpg",
+      "alt": "cinetic (Cinematic Launch Films & Motion Design from Code) 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/Leonxlnx/cinetic",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 取自官方仓库预览图；仅收藏。",
+    "en": {
+      "title": "cinetic (Cinematic Launch Films & Motion Design from Code)",
+      "description": "1.3k+ star MIT agent skill turning coding agents into film directors for cinematic product launch films and motion design with Remotion or HyperFrames.",
+      "tags": "Cinematic motion / Code-to-video / Remotion / Agent skill / MIT",
+      "license": "MIT",
+      "previewNote": "Official repository preview card on 2026-11-26; saved for reference only."
+    }
+  },
+  {
+    "id": "website-tweakpane",
+    "kind": "website",
+    "title": "Tweakpane（4,700+ Star 极简实时滑块调参面板库）",
+    "category": "其他",
+    "topics": [
+      "组件动画库"
+    ],
+    "description": "GitHub 4,700+ Star 的紧凑型 GUI 调参库（MIT），用滑块、旋钮与色板实时微调动画速度、弹簧阻尼、着色器与关键帧参数，告别反复改代码刷新。",
+    "tags": "滑块调参 / GUI 面板 / 动画微调 / 创意编程 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "Tweakpane（4,700+ Star 极简实时滑块调参面板库）\n\n用途\nGitHub 4,700+ Star 的紧凑型 GUI 调参库（MIT），用滑块、旋钮与色板实时微调动画速度、弹簧阻尼、着色器与关键帧参数，告别反复改代码刷新。\n\n官网：https://tweakpane.github.io/docs/\n官方仓库：https://github.com/cocopon/tweakpane",
+    "source": "https://tweakpane.github.io/docs/",
+    "officialUrl": "https://tweakpane.github.io/docs/",
+    "repository": "https://github.com/cocopon/tweakpane",
+    "documentation": "https://tweakpane.github.io/docs/",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-tweakpane/cover.jpg",
+      "alt": "Tweakpane (4.7k+ Star Compact GUI for Fine-Tuning Motion Parameters) 官方预览图",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://tweakpane.github.io/docs/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Tweakpane (4.7k+ Star Compact GUI for Fine-Tuning Motion Parameters)",
+      "description": "4.7k+ star MIT compact GUI library with sliders, knobs, and monitors for fine-tuning animation springs, timing, and creative coding parameters live.",
+      "tags": "Parameter tuning / GUI / Creative coding / Animation / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image on 2026-11-26; saved for reference only."
+    }
+  },
+  {
+    "id": "website-openverse",
+    "kind": "website",
+    "title": "Openverse（WordPress 开源免费 CC 版权音效、音乐与图片搜索引擎）",
+    "category": "其他",
+    "topics": [
+      "设计素材"
+    ],
+    "description": "WordPress 维护的开源免版权媒体搜索引擎（MIT），聚合数亿条 CC 协议免费音效、背景音乐与高清图片素材，适合 AI 动画与视频项目合法配乐。",
+    "tags": "免费音效 / 免版权音乐 / CC 协议 / 视频配乐 / 素材搜索 / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "Openverse（WordPress 开源免费 CC 版权音效、音乐与图片搜索引擎）\n\n用途\nWordPress 维护的开源免版权媒体搜索引擎（MIT），聚合数亿条 CC 协议免费音效、背景音乐与高清图片素材，适合 AI 动画与视频项目合法配乐。\n\n官网：https://openverse.org\n官方仓库：https://github.com/WordPress/openverse",
+    "source": "https://openverse.org",
+    "officialUrl": "https://openverse.org",
+    "repository": "https://github.com/WordPress/openverse",
+    "documentation": "https://openverse.org/about",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-openverse/cover.jpg",
+      "alt": "Openverse (Openly-Licensed Audio, Music & Media Search Engine) 官方预览图",
+      "width": 1280,
+      "height": 640
+    },
+    "previewSource": "https://openverse.org",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "Openverse (Openly-Licensed Audio, Music & Media Search Engine)",
+      "description": "MIT-licensed open media search engine maintained by WordPress indexing openly-licensed sound effects, music tracks, and photography for video and animation.",
+      "tags": "Free audio / Royalty-free music / Creative Commons / Media search / MIT",
+      "license": "MIT",
+      "previewNote": "Official preview image on 2026-11-26; saved for reference only."
+    }
+  },
+  {
+    "id": "website-librosa",
+    "kind": "website",
+    "title": "librosa（9,100+ Star Python 音频与音乐节拍鼓点分析库）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 9,100+ Star 的 Python 音频与音乐信号分析标准库（ISC），可精准提取 BPM 节拍、鼓点 Onset 与频谱能量，让 AI 代码动画严丝合缝地跟着音乐节奏卡点变化。",
+    "tags": "音乐节拍 / 鼓点分析 / Python / 音画同步 / 音频处理 / ISC",
+    "pricing": "free",
+    "license": "ISC",
+    "prompt": "librosa（9,100+ Star Python 音频与音乐节拍鼓点分析库）\n\n用途\nGitHub 9,100+ Star 的 Python 音频与音乐信号分析标准库（ISC），可精准提取 BPM 节拍、鼓点 Onset 与频谱能量，让 AI 代码动画严丝合缝地跟着音乐节奏卡点变化。\n\n官网：https://librosa.org/\n官方仓库：https://github.com/librosa/librosa",
+    "source": "https://librosa.org/",
+    "officialUrl": "https://librosa.org/",
+    "repository": "https://github.com/librosa/librosa",
+    "documentation": "https://librosa.org/doc/latest/index.html",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-librosa/cover.jpg",
+      "alt": "librosa (9.1k+ Star Python Audio & Music Beat Analysis Library) 官方预览图",
+      "width": 716,
+      "height": 294
+    },
+    "previewSource": "https://librosa.org/",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "librosa (9.1k+ Star Python Audio & Music Beat Analysis Library)",
+      "description": "9.1k+ star ISC-licensed Python library for music and audio analysis—extracting BPM beats, onsets, and spectral curves to lock animations to music.",
+      "tags": "Beat detection / Audio analysis / Python / Music sync / ISC",
+      "license": "ISC",
+      "previewNote": "Official preview image on 2026-11-26; saved for reference only."
+    }
+  },
+  {
+    "id": "website-whisperx",
+    "kind": "website",
+    "title": "WhisperX（2.5 万+ Star 词级精准时间戳开源语音识别与字幕生成）",
+    "category": "其他",
+    "topics": [
+      "创作工具"
+    ],
+    "description": "GitHub 2.5 万+ Star 的高速开源语音转写工具（BSD-2-Clause），通过强对齐模型生成精确到单个词组时间戳的字幕与说话人分离，完美适配动态卡点字幕动画。",
+    "tags": "词级字幕 / 语音识别 / 时间戳对齐 / Whisper / 视频字幕 / BSD-2-Clause",
+    "pricing": "free",
+    "license": "BSD-2-Clause",
+    "prompt": "WhisperX（2.5 万+ Star 词级精准时间戳开源语音识别与字幕生成）\n\n用途\nGitHub 2.5 万+ Star 的高速开源语音转写工具（BSD-2-Clause），通过强对齐模型生成精确到单个词组时间戳的字幕与说话人分离，完美适配动态卡点字幕动画。\n\n官网：https://github.com/m-bain/whisperX\n官方仓库：https://github.com/m-bain/whisperX",
+    "source": "https://github.com/m-bain/whisperX",
+    "officialUrl": "https://github.com/m-bain/whisperX",
+    "repository": "https://github.com/m-bain/whisperX",
+    "documentation": "https://github.com/m-bain/whisperX#readme",
+    "addedAt": "2026-11-26",
+    "verifiedAt": "2026-11-26",
+    "preview": {
+      "type": "image",
+      "src": "assets/website-whisperx/cover.jpg",
+      "alt": "WhisperX (25k+ Star Word-Level Timestamp Speech Recognition) 官方预览图",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/m-bain/whisperX",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-26 取自官方站点/仓库预览图；仅收藏。",
+    "en": {
+      "title": "WhisperX (25k+ Star Word-Level Timestamp Speech Recognition)",
+      "description": "25k+ star BSD-2-Clause ASR tool delivering accurate word-level timestamps and speaker diarization for synchronized kinetic captions.",
+      "tags": "Word-level captions / ASR / Speech-to-text / Whisper / Video",
+      "license": "BSD-2-Clause",
+      "previewNote": "Official preview image on 2026-11-26; saved for reference only."
+    }
+  },
+  {
     "id": "remotion-toggle-switch-motion",
     "kind": "prompt",
     "title": "Remotion 拨杆切换逐帧动效（24f 光标 / 12f 按压 0.86 / 8f 位移）",

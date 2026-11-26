@@ -21,6 +21,7 @@ CONFLICT_GROUPS = {
         "ids": {
             "skill-remotion-skills", "skill-remotion-3d", "skill-video-shotcraft", "skill-create-onboarding-video",
             "skill-hyperframes", "skill-hyperframes-cli", "skill-lemo-opuscar", "skill-claude-animated-shorts",
+            "skill-cinetic",
         },
         "keywords": ["remotion", "hyperframes", "代码做片", "竖屏 3d 动画"],
     },
@@ -123,6 +124,8 @@ DOMAINS = [
         "视频剪辑", "剪辑", "视频", "ffmpeg", "remotion", "hyperframes", "字幕", "口播", "配音", "宣传片", "短视频",
         "录屏", "镜头", "高光", "音视频", "视频复刻", "视频制作", "opencut", "videolingo", "fredtalk",
         "openmontage", "video", "editing", "caption", "subtitle", "audio", "voice", "motion", "shorts",
+        "reanimate", "motion-design-skill", "cinetic", "tweakpane", "openverse", "librosa", "whisperx",
+        "节拍", "缓动", "词级字幕", "动画工作室",
     ]),
     ("coding", "AI 编程与全栈工程", "AI Coding & Engineering", [
         "代码审查", "安全扫描", "开发", "编程", "代码", "架构", "重构", "审查", "测试", "安全", "漏洞", "调试", "mcp", "codex",
@@ -171,6 +174,14 @@ PRESETS = [
         "en": "Video Editing",
         "queryZh": "我想做视频剪辑，包含素材字幕配音、主力剪辑和成品发布",
         "queryEn": "Video editing pipeline with captions, cutting, motion, and publishing",
+        "domain": "video",
+    },
+    {
+        "id": "preset-animation",
+        "zh": "AI 动画工作室",
+        "en": "AI Animation Studio",
+        "queryZh": "我想做专业工作室级 AI 动画，需要逐帧参考动画、优化节奏缓动、滑块调参、配乐节拍、词级字幕和 FFmpeg 导出",
+        "queryEn": "AI animation studio workflow with frame-by-frame motion reference, easing, beat sync, word-level captions, and FFmpeg export",
         "domain": "video",
     },
     {
@@ -268,6 +279,17 @@ def assign_conflict_group(item: dict, blob: str) -> str | None:
 
 def assign_stage(item: dict, blob: str, cg: str | None) -> int:
     kind = item_kind(item)
+    STAGE_OVERRIDES = {
+        "skill-reanimate": 0,
+        "website-openverse": 0,
+        "website-librosa": 0,
+        "skill-motion-design-skill": 2,
+        "website-tweakpane": 2,
+        "website-whisperx": 2,
+        "skill-ffmpeg-skill": 3,
+    }
+    if item["id"] in STAGE_OVERRIDES:
+        return STAGE_OVERRIDES[item["id"]]
     if item['id'] in {'website-typewords', 'website-ethanenglish', 'skill-kouyu'}:
         return 1  # Alternative learning engines, not artificial Plan/Polish/Ship stages.
     # Explicit conflict-group stage anchors
