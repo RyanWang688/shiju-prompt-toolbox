@@ -1,5 +1,6 @@
 (() => {
   const escHtml = s => String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const textToHtml = s => escHtml(s).replace(/\n/g, '<br>');
 
   function safeFilename(item, fallback = 'card') {
     const raw = String(item?.id || fallback).toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '');
@@ -59,7 +60,7 @@
         title,
         text,
         uriList: '', // Omit text/uri-list so AI chat inputs always receive the full install instruction
-        html: '',
+        html: textToHtml(text),
         filename,
         markdown: md,
         badge: lang === 'en' ? 'Skill · Drop into Agent to install' : 'Skill · 拖入 Agent 自动安装',
@@ -91,7 +92,7 @@
         title,
         text: promptBody,
         uriList: '', // Omit text/uri-list so dropping into any AI/editor writes the exact prompt
-        html: '',
+        html: textToHtml(promptBody),
         filename,
         markdown: md,
         badge: lang === 'en' ? 'Prompt · Drop to insert prompt' : '提示词 · 拖入自动写入',
@@ -166,7 +167,7 @@
       if (!item || !e.dataTransfer) return;
 
       const payload = buildDragPayload(item, cfg);
-      e.dataTransfer.effectAllowed = 'copy';
+      e.dataTransfer.effectAllowed = 'all';
 
       try {
         e.dataTransfer.setData('text/plain', payload.text);

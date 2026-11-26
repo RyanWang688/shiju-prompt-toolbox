@@ -22,6 +22,7 @@ assert.equal(skillZh.action, 'install-skill');
 assert.equal(skillZh.uriList, '', 'Skill omits text/uri-list so Agent receives install instruction');
 assert.match(skillZh.text, /安装并配置这个 Agent Skill/);
 assert.match(skillZh.text, /NiazMorshed2007\/reanimate/);
+assert.ok(skillZh.html.includes('<br>') && skillZh.html.includes('安装并配置这个 Agent Skill'), 'Skill includes text/html for rich-text composers');
 assert.equal(safeFilename(skill), 'skill-reanimate.md');
 assert.ok(skillZh.markdown.includes(skillZh.text));
 
@@ -30,6 +31,7 @@ assert.equal(skillEn.action, 'install-skill');
 assert.equal(skillEn.uriList, '');
 assert.match(skillEn.text, /Please install and configure this Agent Skill/);
 assert.match(skillEn.text, /SKILL\.md \/ README/);
+assert.ok(skillEn.html.includes('<br>') && skillEn.html.includes('Please install and configure this Agent Skill'));
 
 // 2. Prompt card -> exact prompt body, NO text/uri-list
 const prompt = items.find(i => i.id === 'dribbble-html-motion-prompt');
@@ -38,6 +40,7 @@ const promptZh = buildDragPayload(prompt, { getLang: () => 'zh', tx: txZh });
 assert.equal(promptZh.action, 'insert-prompt');
 assert.equal(promptZh.uriList, '', 'Prompt omits text/uri-list so target receives prompt body');
 assert.equal(promptZh.text, prompt.prompt);
+assert.ok(promptZh.html.includes('<br>') && promptZh.html.includes('seek(t)'), 'Prompt includes text/html for rich-text composers');
 
 const promptEn = buildDragPayload(prompt, { getLang: () => 'en', tx: txEn });
 assert.equal(promptEn.text, prompt.en.prompt);
@@ -54,7 +57,52 @@ assert.match(siteZh.html, /href="https:\/\/n8n\.io"/);
 // 4. HTML & Workflow wiring checks
 assert.ok(html.includes('assets/card-drag.js'), 'index.html includes card-drag.js');
 assert.ok(html.includes('draggable="true" data-kind='), 'Grid cards have draggable="true"');
+assert.ok(html.includes('class="card-open" draggable="true"'), 'Card overlay button has draggable="true"');
 assert.ok(wfSource.includes('draggable="true" data-drag-card='), 'Workflow step cards have draggable="true" and data-drag-card');
+assert.ok(dragSource.includes("effectAllowed = 'all'"), 'Sets effectAllowed = all for rich-text Electron / Windows OLE targets');
 assert.ok(!dragSource.includes("setData('DownloadURL'"), 'Must not set DownloadURL so Electron/Agent text drops are never hijacked as empty virtual files');
 
-console.log('Card drag checks passed: Skill install payload, Prompt payload, Website payload, pure text/plain Agent drop compatibility, and HTML/Workflow draggable wiring.');
+// 5. End-to-end ShijuDrag.init() runtime test with synthetic dragstart + dragend from .card-open
+const listeners = {};
+const bodyChildren = [];
+const documentStub = {
+  addEventListener: (ev, fn) => { listeners[ev] = fn; },
+  createElement: () => ({ className: '', innerHTML: '', remove() {} }),
+  body: { appendChild: el => bodyChildren.push(el) },
+};
+const initContext = {
+  window: {},
+  document: documentStub,
+  requestAnimationFrame: fn => fn(),
+};
+vm.runInNewContext(dragSource, initContext);
+initContext.window.ShijuDrag.init({ getItems: () => items, getLang: () => 'zh', tx: txZh });
+
+for (const testId of ['skill-reanimate', 'dribbble-html-motion-prompt']) {
+  const classes = new Set();
+  const cardEl = {
+    dataset: { card: testId },
+    classList: { add: c => classes.add(c), remove: c => classes.delete(c) },
+  };
+  const targetEl = {
+    closest: sel => (sel.includes('.card[data-card]') ? cardEl : null),
+  };
+  const droppedData = new Map();
+  const dt = {
+    effectAllowed: '',
+    setData: (type, val) => droppedData.set(type, val),
+    setDragImage: () => {},
+  };
+  listeners.dragstart({ target: targetEl, dataTransfer: dt });
+  assert.equal(dt.effectAllowed, 'all', `${testId}: effectAllowed must be all`);
+  assert.ok(droppedData.get('text/plain')?.length > 0, `${testId}: text/plain populated`);
+  assert.ok(droppedData.get('text/html')?.includes('<br>'), `${testId}: text/html populated`);
+  assert.ok(droppedData.has('application/x-shiju-card+json'), `${testId}: structured JSON populated`);
+  assert.ok(!droppedData.has('text/uri-list'), `${testId}: omits text/uri-list`);
+  assert.ok(!droppedData.has('DownloadURL'), `${testId}: omits DownloadURL`);
+  assert.ok(classes.has('is-dragging'), `${testId}: marks card .is-dragging`);
+  listeners.dragend();
+  assert.ok(!classes.has('is-dragging'), `${testId}: clears .is-dragging on dragend`);
+}
+
+console.log('Card drag checks passed: Skill & Prompt rich HTML/plain payloads, effectAllowed=all, card-open draggable wiring, and init() dragstart/dragend lifecycle.');
