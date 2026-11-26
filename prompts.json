@@ -1,5 +1,41 @@
 [
   {
+    "id": "skill-stageshow",
+    "kind": "skill",
+    "title": "Stageshow（Benji Taylor 开源产品交互演示与 Bento UI 动效 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "视觉设计",
+      "动画视频"
+    ],
+    "description": "GitHub 4,200+ Star（benjitaylor/skills）明星产品 UI 动效技能：教 AI 编程助手在 React 中构建高质感产品界面演示（浏览器/手机窗口、Bento 网格、仪表盘卡片）与带自然光标点击交互的循环动效，并自带对齐与动画自检闭环。",
+    "tags": "产品演示 / UI 动效 / 光标交互 / Bento 网格 / React / Agent Skill / Claude Code",
+    "pricing": "free",
+    "prompt": "Stageshow（Benji Taylor 开源产品交互演示与 Bento UI 动效 Skill）\n\n安装命令\nnpx skills add benjitaylor/skills --skill stageshow\n\n用途\n教 Claude Code、Codex、Cursor 等 AI 编程智能体用 React 构建高还原度的拟真产品界面插图与交互演示（浏览器窗口、移动端模型、Bento 网格、终端卡片），搭配有目的性的移动光标、点击高亮与循环状态切换，替代千篇一律的通用网页模板。\n\n核心特点\n- 覆盖产品视窗、仪表盘、功能卡片、终端与移动端 Mockup 等丰富场景组件\n- 内置带意图感的光标轨迹（悬停、点击、状态切换）与循环交互编排规范\n- 提供自检与录制工具链，让 Agent 自主检查对齐偏差与动效缺陷\n\n官方仓库：https://github.com/benjitaylor/skills\n技能目录：https://github.com/benjitaylor/skills/tree/main/skills/stageshow",
+    "source": "https://github.com/benjitaylor/skills/tree/main/skills/stageshow",
+    "officialUrl": "https://github.com/benjitaylor/skills/tree/main/skills/stageshow",
+    "repository": "https://github.com/benjitaylor/skills",
+    "documentation": "https://github.com/benjitaylor/skills/tree/main/skills/stageshow",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-stageshow/cover.jpg",
+      "alt": "benjitaylor/skills 官方 GitHub 仓库预览卡片",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/benjitaylor/skills",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-27 取自 benjitaylor/skills 官方 GitHub 仓库卡片；仅收藏。",
+    "en": {
+      "title": "Stageshow (Benji Taylor Product UI & Cursor-Demo Agent Skill)",
+      "description": "4.2k+ star agent skill (benjitaylor/skills) teaching Claude Code, Codex, and Cursor to craft convincing React faux product UIs, bento grids, dashboards, and looping interactive cursor walkthroughs with built-in alignment self-checks.",
+      "tags": "Product demo / UI motion / Cursor walkthrough / Bento grid / React / Agent skill",
+      "previewNote": "Official GitHub preview card from benjitaylor/skills on 2026-11-27; saved for reference only."
+    }
+  },
+  {
     "id": "website-convbased-studio",
     "kind": "website",
     "title": "Convbased Studio（云端实时 AI 变声与 RVC 语音合成工作台）",
