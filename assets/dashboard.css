@@ -519,6 +519,34 @@ body.dashboard.is-workflow-mode .search,body.dashboard.is-workflow-mode .skill-t
 .drag-ghost-tag{display:inline-flex;width:max-content;padding:2px 8px;border-radius:999px;background:#ffd43b;color:#191919;font-size:10px;font-weight:700;letter-spacing:.2px}
 .drag-ghost-title{font-size:13px;line-height:1.35;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
+/* Multi-select batch drag mode */
+.dashboard .multi-toggle{display:inline-flex;align-items:center;gap:6px;height:46px;min-height:0;padding:0 13px;border:1px solid #dedede;border-radius:9px;background:#fff;color:#595959;font-size:12.5px;font-weight:600;flex-shrink:0;cursor:pointer;transition:background-color .16s,border-color .16s,color .16s}
+.dashboard .multi-toggle[hidden]{display:none}
+.dashboard .multi-toggle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dashboard .multi-toggle:hover{border-color:#a3a3a3;color:#191919}
+.dashboard .multi-toggle[aria-pressed=true]{background:#191919;border-color:#191919;color:#ffd43b}
+.card-select-badge{position:absolute;top:12px;left:12px;z-index:4;display:none;place-items:center;width:24px;height:24px;border-radius:8px;border:1.5px solid #d4d4d8;background:#ffffffeb;box-shadow:0 4px 12px #19191926;color:transparent;pointer-events:none;transition:background-color .14s,border-color .14s,color .14s,transform .16s}
+.card-select-badge svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+body.is-multi-select .dashboard .card .card-select-badge{display:grid}
+body.is-multi-select .dashboard .card{cursor:pointer}
+body.is-multi-select .dashboard .card.is-selected{border-color:#d9a600;box-shadow:0 0 0 2px #ffd43b80,0 14px 32px -14px #19191933}
+body.is-multi-select .dashboard .card.is-selected .card-select-badge{background:#ffd43b;border-color:#d9a600;color:#191919;transform:scale(1.06)}
+.multi-dock{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:8px;max-width:calc(100vw - 24px);padding:8px 10px 8px 14px;border:1px solid #d4d4d4;border-radius:16px;background:#ffffffee;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 20px 50px -14px #19191944}
+.multi-dock[hidden]{display:none}
+.multi-count{font-size:12.5px;font-weight:700;color:#191919;white-space:nowrap;font-variant-numeric:tabular-nums}
+.multi-drag-pill{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 13px;border-radius:10px;background:#ffd43b;color:#191919;font-size:12.5px;font-weight:700;white-space:nowrap;cursor:grab;user-select:none;box-shadow:0 4px 12px -4px #d9a60066}
+.multi-drag-pill:active{cursor:grabbing}
+.multi-drag-pill.is-disabled{opacity:.45;pointer-events:none}
+.multi-drag-pill svg{width:14px;height:14px;fill:currentColor}
+.multi-dock-btn{min-height:36px;padding:0 12px;border:1px solid #dedede;border-radius:10px;background:#fff;color:#191919;font-size:12px;font-weight:650;white-space:nowrap;cursor:pointer}
+.multi-dock-btn:hover:not(:disabled){background:#191919;border-color:#191919;color:#ffd43b}
+.multi-dock-btn.is-muted{color:#595959;background:transparent}
+.multi-dock-btn:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:720px){
+ .dashboard .multi-toggle{height:44px;padding:0 10px}
+ .multi-dock{flex-wrap:wrap;justify-content:center;bottom:14px;padding:8px 10px}
+}
+
 /* Prompt / Source code toggle & collapsible code block in detail dialog. */
 .detail-mode-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0 10px;flex-wrap:wrap}
 .detail-mode-bar[hidden]{display:none}

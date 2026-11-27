@@ -176,8 +176,8 @@ html[data-theme=dark] .rail-tooltip{background:#ededef;color:#09090b;box-shadow:
 /* Header controls. */
 html[data-theme=dark] .lang-switch,html[data-theme=dark] .dashboard .top .theme-toggle{background:#111113;border-color:#ffffff1f}
 /* Text that sits on the yellow accent stays dark. */
-@media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.wf-preset-chip,.wf-shield-btn,.wf-copy-btn,.wf-step-detail,.wf-step-swap,.wf-swap-close,.wf-swap-opt):not(:disabled),a.visit-site,.rail-brand,select):hover{color:#191919!important}}
-html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.wf-preset-chip,.wf-shield-btn,.wf-copy-btn,.wf-step-detail,.wf-step-swap,.wf-swap-close,.wf-swap-opt):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{color:#191919!important}
+@media(hover:hover) and (pointer:fine){html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.multi-toggle,.multi-dock-btn,.wf-preset-chip,.wf-shield-btn,.wf-copy-btn,.wf-step-detail,.wf-step-swap,.wf-swap-close,.wf-swap-opt):not(:disabled),a.visit-site,.rail-brand,select):hover{color:#191919!important}}
+html[data-theme=dark] .dashboard :is(button:not(.card-open,.like,.bookmark,.sort-trigger,.fav-pick-open,.view-btn,.multi-toggle,.multi-dock-btn,.wf-preset-chip,.wf-shield-btn,.wf-copy-btn,.wf-step-detail,.wf-step-swap,.wf-swap-close,.wf-swap-opt):not(:disabled),a.visit-site,.rail-brand,select):focus-visible{color:#191919!important}
 html[data-theme=dark] .dashboard .top .lang-switch .lang-option[aria-pressed=true],html[data-theme=dark] .dashboard .top .theme-toggle:hover{color:#191919}
 html[data-theme=dark] ::selection{background:#ffd43b;color:#191919}
 /* Obsidian dark mode for Workflow Studio & toolbar switch. */
@@ -226,6 +226,16 @@ html[data-theme=dark] .wf-swap-opt:hover{background:#ffd43b1e;border-color:#ffd4
 html[data-theme=dark] .wf-swap-opt-tag{background:#ffffff12;color:#a1a1aa}
 html[data-theme=dark] .dashboard .card.is-dragging,html[data-theme=dark] .wf-step.is-dragging{border-color:#ffd43b;box-shadow:0 20px 44px -14px #000}
 html[data-theme=dark] .drag-ghost{background:#111116;border-color:#ffd43b99}
+html[data-theme=dark] .dashboard .multi-toggle{background:#111113;border-color:#ffffff16;color:#a1a1aa}
+html[data-theme=dark] .dashboard .multi-toggle:hover{border-color:#ffffff33;color:#ededef}
+html[data-theme=dark] .dashboard .multi-toggle[aria-pressed=true]{background:#ffd43b;border-color:#ffd43b;color:#191919}
+html[data-theme=dark] .card-select-badge{background:#18181feb;border-color:#ffffff2e}
+html[data-theme=dark] body.is-multi-select .dashboard .card.is-selected{border-color:#ffd43b;box-shadow:0 0 0 2px #ffd43b55,0 16px 36px -14px #000}
+html[data-theme=dark] .multi-dock{background:#16161df2;border-color:#ffffff1f;box-shadow:0 24px 60px -14px #000}
+html[data-theme=dark] .multi-count{color:#f4f4f5}
+html[data-theme=dark] .multi-dock-btn{background:#23232c;border-color:#ffffff1c;color:#ededef}
+html[data-theme=dark] .multi-dock-btn.is-muted{background:transparent;color:#a1a1aa}
+html[data-theme=dark] .multi-dock-btn:hover:not(:disabled){background:#ffd43b;border-color:#ffd43b;color:#191919}
 """
 
 def build(root):

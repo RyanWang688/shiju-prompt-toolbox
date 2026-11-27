@@ -9,7 +9,7 @@ const wfSource = readFileSync(new URL('./assets/workflow-composer.js', import.me
 
 const context = { window: {} };
 vm.runInNewContext(dragSource, context);
-const { buildDragPayload, safeFilename } = context.window.ShijuDrag;
+const { buildDragPayload, buildBatchDragPayload, safeFilename } = context.window.ShijuDrag;
 
 const txZh = (i, k) => i[k] || '';
 const txEn = (i, k) => (i.en && i.en[k]) || i[k] || '';
@@ -105,4 +105,16 @@ for (const testId of ['skill-reanimate', 'dribbble-html-motion-prompt']) {
   assert.ok(!classes.has('is-dragging'), `${testId}: clears .is-dragging on dragend`);
 }
 
-console.log('Card drag checks passed: Skill & Prompt rich HTML/plain payloads, effectAllowed=all, card-open draggable wiring, and init() dragstart/dragend lifecycle.');
+// 6. Batch multi-select drag payload test
+const s2 = items.find(i => i.id === 'skill-cinetic');
+assert.ok(s2, 'skill-cinetic exists');
+const batchZh = buildBatchDragPayload([skill, s2], { getLang: () => 'zh', tx: txZh });
+assert.equal(batchZh.action, 'batch-install-skills');
+assert.equal(batchZh.count, 2);
+assert.match(batchZh.text, /批量安装并配置以下 2 个 Agent Skills/);
+assert.match(batchZh.text, /NiazMorshed2007\/reanimate/);
+assert.match(batchZh.text, /Leonxlnx\/cinetic/);
+assert.ok(batchZh.html.includes('<br>'));
+assert.ok(html.includes('id="multiSelectBtn"') && html.includes('id="multiDock"') && html.includes('data-drag-batch="1"'), 'HTML includes multi-select button and batch drag dock');
+
+console.log('Card drag checks passed: Skill & Prompt rich HTML/plain payloads, batch multi-skill drag payload, effectAllowed=all, and init() lifecycle.');

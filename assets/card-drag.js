@@ -144,6 +144,84 @@
     };
   }
 
+  function buildBatchDragPayload(itemsList, opts = {}) {
+    const list = Array.isArray(itemsList) ? itemsList.filter(Boolean) : [];
+    if (list.length <= 1) return list[0] ? buildDragPayload(list[0], opts) : null;
+
+    const lang = opts.getLang ? opts.getLang() : 'zh';
+    const tx = opts.tx || ((i, k) => i[k] || '');
+    const skills = list.filter(i => i.kind === 'skill');
+    const prompts = list.filter(i => i.kind !== 'skill' && i.kind !== 'website');
+    const sites = list.filter(i => i.kind === 'website');
+    const parts = [];
+
+    if (skills.length) {
+      parts.push(
+        lang === 'en'
+          ? `Please batch-install and configure these ${skills.length} Agent Skills:`
+          : `请帮我批量安装并配置以下 ${skills.length} 个 Agent Skills：`
+      );
+      skills.forEach((it, idx) => {
+        const title = tx(it, 'title') || it.title || it.id;
+        const url = primaryUrlOf(it, opts.resourceLinks);
+        const desc = tx(it, 'description') || it.description || '';
+        parts.push(
+          lang === 'en'
+            ? `${idx + 1}. ${title}${url ? ` — Repo: ${url}` : ''}${desc ? ` (${desc})` : ''}`
+            : `${idx + 1}. 《${title}》${url ? ` — 仓库：${url}` : ''}${desc ? `（${desc}）` : ''}`
+        );
+      });
+      parts.push(
+        lang === 'en'
+          ? 'Please inspect each SKILL.md / README and complete the installation for all of them.'
+          : '请逐一读取对应仓库的 SKILL.md 或 README 安装说明，直接为我完成批量安装与配置。'
+      );
+    }
+
+    if (prompts.length) {
+      if (parts.length) parts.push('');
+      parts.push(lang === 'en' ? `Prompts (${prompts.length}):` : `以下 ${prompts.length} 条提示词：`);
+      prompts.forEach((it, idx) => {
+        const title = tx(it, 'title') || it.title || it.id;
+        const body = (lang === 'en' && it.en?.prompt) ? it.en.prompt : (it.prompt || tx(it, 'description') || title);
+        parts.push(`${idx + 1}. 【${title}】\n${body}`);
+      });
+    }
+
+    if (sites.length) {
+      if (parts.length) parts.push('');
+      parts.push(lang === 'en' ? `Reference Sites (${sites.length}):` : `以下 ${sites.length} 个项目参考：`);
+      sites.forEach((it, idx) => {
+        const title = tx(it, 'title') || it.title || it.id;
+        const url = primaryUrlOf(it, opts.resourceLinks);
+        parts.push(`${idx + 1}. ${title}${url ? ` (${url})` : ''}`);
+      });
+    }
+
+    const text = parts.join('\n');
+    const title = lang === 'en' ? `${list.length} selected items` : `已选 ${list.length} 项内容`;
+    const badge = lang === 'en'
+      ? `Batch (${list.length}) · Drop into Agent`
+      : `批量拖拽 ${list.length} 项 · 拖入 Agent 一键安装`;
+
+    return {
+      kind: skills.length === list.length ? 'skill' : 'batch',
+      action: skills.length ? 'batch-install-skills' : 'batch-insert',
+      count: list.length,
+      title,
+      text,
+      uriList: '',
+      html: textToHtml(text),
+      badge,
+      json: JSON.stringify({
+        schema: 'shiju.batch.v1',
+        count: list.length,
+        items: list.map(i => ({ id: i.id, kind: i.kind, url: primaryUrlOf(i, opts.resourceLinks) })),
+        text,
+      }),
+    };
+  }
+
   function createDragGhost(payload) {
     const ghost = document.createElement('div');
     ghost.className = `drag-ghost is-${payload.kind}`;
@@ -158,15 +236,33 @@
 
     document.addEventListener('dragstart', e => {
       if (e.target.closest('input, textarea, .wf-swap-pop')) return;
+      const batchEl = e.target.closest('[data-drag-batch]');
       const cardEl = e.target.closest('[data-drag-card], .card[data-card]');
-      if (!cardEl) return;
+      if (!batchEl && !cardEl) return;
 
-      const id = cardEl.dataset.dragCard || cardEl.dataset.card;
-      if (!id || id.startsWith('cat:') || id.startsWith('group:')) return;
-      const item = (cfg.getItems?.() || []).find(i => i.id === id);
-      if (!item || !e.dataTransfer) return;
+      const allItems = cfg.getItems?.() || [];
+      const selectedSet = cfg.getSelectedIds?.();
+      let payload = null;
 
-      const payload = buildDragPayload(item, cfg);
+      if (batchEl) {
+        if (!selectedSet || !selectedSet.size) return;
+        const selectedItems = allItems.filter(i => selectedSet.has(i.id));
+        payload = buildBatchDragPayload(selectedItems, cfg);
+      } else {
+        const id = cardEl.dataset.dragCard || cardEl.dataset.card;
+        if (!id || id.startsWith('cat:') || id.startsWith('group:')) return;
+        if (selectedSet && selectedSet.size > 1 && selectedSet.has(id)) {
+          const selectedItems = allItems.filter(i => selectedSet.has(i.id));
+          payload = buildBatchDragPayload(selectedItems, cfg);
+        } else {
+          const item = allItems.find(i => i.id === id);
+          if (!item) return;
+          payload = buildDragPayload(item, cfg);
+        }
+      }
+
+      if (!payload || !e.dataTransfer) return;
+
       e.dataTransfer.effectAllowed = 'all';
 
       try {
@@ -174,15 +270,12 @@
         e.dataTransfer.setData('application/x-shiju-card+json', payload.json);
         if (payload.uriList) e.dataTransfer.setData('text/uri-list', payload.uriList);
         if (payload.html) e.dataTransfer.setData('text/html', payload.html);
-        // Note: Do NOT set Chromium DownloadURL here — on Windows it advertises a virtual
-        // CFSTR_FILEDESCRIPTOR file that causes Electron apps (Antigravity / VS Code / Cursor)
-        // to intercept the drop as an unreadable empty file instead of inserting text/plain.
       } catch {
         // Fallback already populated via text/plain
       }
 
-      activeCard = cardEl;
-      cardEl.classList.add('is-dragging');
+      activeCard = batchEl || cardEl;
+      activeCard.classList.add('is-dragging');
 
       if (typeof e.dataTransfer.setDragImage === 'function') {
         const ghost = createDragGhost(payload);
@@ -199,5 +292,5 @@
     });
   }
 
-  window.ShijuDrag = { init, buildDragPayload, safeFilename };
+  window.ShijuDrag = { init, buildDragPayload, buildBatchDragPayload, safeFilename };
 })();
