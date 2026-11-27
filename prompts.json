@@ -1,5 +1,41 @@
 [
   {
+    "id": "otp-verification-deck",
+    "kind": "prompt",
+    "title": "OTP 验证码实体卡牌叠牌动效（无穿模 3D 叠牌 + 节律扫光 + Web Audio 音效）",
+    "category": "动画动效",
+    "topics": [
+      "卡片交互"
+    ],
+    "description": "零依赖原生 HTML/CSS/WAAPI/Web Audio 实现的 OTP 实体卡牌验证组件：哑光工作台桌面（底部无凹槽留坑）、带内嵌细线与倒置角标的 4 张实色卡牌、独立透视消除 3D 穿模、从底到顶丝滑叠牌、快甩慢停节律扫光，以及逐状态同步的程序化卡牌拟音。",
+    "tags": "OTP 验证 / 卡片交互 / 叠牌动效 / WAAPI / Web Audio / 节律光效 / 源码",
+    "prompt": "请使用零依赖原生 HTML + CSS + Web Animations API (WAAPI) + Web Audio API，构建一个「OTP 验证码实体卡牌叠牌动效」组件（完整源码已收录在仓库 assets/otp-verification-deck/）：\n\n1. 哑光工作台与实体卡牌质感（底部不留坑）\n- 使用深炭黑哑光桌面（#0b0b0d + 细颗粒噪点）与克制实色卡片面板（#121215），去除多余霓虹光斑与顶部胶囊标签。\n- 卡片下方不挖凹槽/留坑；卡牌采用 74×100px 实体牌面，具备多层厚度底边投影、5px 内嵌发丝线框以及左上/右下倒置序号角标（01–04）。\n- 聚焦卡片微幅上浮并带 rotateX(4deg) 倾斜；输入数字时触发下压→弹性回弹手感和遮罩文字防叠影过渡（Kinetic Typography）。\n\n2. 无 3D 穿模的丝滑叠牌与发牌编排\n- 将 perspective: 1100px 独立置于每张 .slot 而非父容器 preserve-3d，配合确定性 z-index (10–13) 与实色亮度层级（STACK_BRIGHTNESS: 0.72→1，保持 opacity: 1），彻底消除聚拢时的 Z-Buffer 穿模与边框透底。\n- 4 位填满后依次展开扇形牌手（[-16°, -5.5°, 5.5°, 16°]）并扫过对角高光；随后从底到顶（01→04）沿平滑弧线顺滑叠拢至动态计算的舞台中心。\n- 验证成功（1234）时顶牌执行 rotateY(-12deg) 3D 翻扣锁定，光束闭合为完整青绿边框并扩散单圈细线波纹、绘制对勾。\n- 验证失败（其他 4 位码）时触发双拍红光闪动与阻尼旋转抖动，随后从顶到底（04→01）如发牌般弧线拍回桌面并自动复位。\n\n3. 节律光学扫光\n- 环绕光束采用快甩慢停鞭扫曲线（cubic-bezier(0.76, 0, 0.24, 1)，920ms/拍），同步驱动光尾伸缩、高光引导尖端（glint）与桌面底部反光同频呼吸。\n\n4. 纯代码程序化 Web Audio 同步音效（sound.js）\n- 内建白噪声缓冲、带通/高通滤波器与动态压缩器，随动画时间轴及 0.4× 慢放倍率同步触发：聚焦摩擦声、双层按压敲击声、退格抽离声、扇形刷牌声、叠牌落桌闷响、扫光呼啸泛音、成功大九和弦玻璃余韵、失败双拍闷敲以及发牌拍桌声。",
+    "sourceNote": "根据用户提供的 OTP 叠牌动效视频重新设计并优化源码。",
+    "addedAt": "2026-11-27",
+    "cardPreview": {
+      "type": "image",
+      "src": "assets/otp-verification-deck/cover.png",
+      "alt": "OTP 验证码实体卡牌叠牌动效封面",
+      "width": 1200,
+      "height": 750
+    },
+    "preview": {
+      "type": "animation",
+      "src": "assets/otp-verification-deck/preview.html",
+      "alt": "OTP 验证码实体卡牌叠牌动效：可交互演示"
+    },
+    "previewSource": "本次手工编写的原生 HTML/CSS/WAAPI/Web Audio 可交互演示（assets/otp-verification-deck/）",
+    "previewEvidence": "author-published-output",
+    "previewNote": "哑光工作台质感 + 4 张实色卡牌（无底坑、无 3D 穿模）+ 节律光学扫光 + 纯代码 Web Audio 同步音效；点开卡片即可直接交互测试 1234 / 5829 与 0.4× 慢放。",
+    "en": {
+      "title": "OTP Verification Physical Card Deck Motion (Zero-Clip 3D Stack + Rhythmic Beam + Web Audio)",
+      "description": "Zero-dependency HTML/CSS/WAAPI/Web Audio OTP card deck component: matte desk surface with no recessed wells, 4 opaque physical card slabs with inner frames and corner index pips, isolated per-card 3D perspective eliminating Z-buffer clipping, bottom-to-top gather, top-to-bottom deal-back, whip-cadence orbital beam, and synced procedural Foley.",
+      "tags": "OTP verification / Card interaction / Deck stack / WAAPI / Web Audio / Rhythmic glow / Source code",
+      "prompt": "Build a zero-dependency OTP Verification Physical Card Deck motion component in plain HTML, CSS, Web Animations API (WAAPI), and Web Audio API (full source included under assets/otp-verification-deck/):\n\n1. Matte Studio Surface & Physical Card Craft (No Wells Underneath)\n- Use a deep matte charcoal desk (#0b0b0d with subtle fractal grain) and restrained panel (#121215) free of neon blobs or top pill badges.\n- Omit recessed wells under slots; style each 74x100px card slab with layered thickness shadows, a 5px inset hairline frame, and inverted corner index pips (01–04).\n- Lift the focused card with subtle rotateX(4deg) perspective; animate a tactile press-down rebound on digit entry and masked kinetic typography to prevent overlapping ghost text.\n\n2. Zero-Clip 3D Stacking & Continuous Choreography\n- Keep perspective: 1100px isolated on each .slot instead of preserve-3d on the parent container, pairing deterministic z-index (10–13) with opaque brightness stepping (0.72 to 1) so cards never slice or bleed through each other.\n- Fan the 4 cards into a playing-card arc ([-16deg, -5.5deg, 5.5deg, 16deg]) with specular sheen sweep, then gather bottom-to-top (01->04) along a smooth arc to the dynamically computed stage center.\n- On valid code (1234), perform a synchronized rotateY(-12deg) 3D snap, lock the orbital beam into a solid teal border, emit a single hairline ripple ring, and draw the checkmark.\n- On invalid code, fire a double-beat crimson flash and rotational rattle, then deal cards back top-to-bottom (04->01) onto the clean desk before resetting.\n\n3. Rhythmic Optical Light Beam\n- Drive the orbital SVG perimeter stroke with whip-cadence easing (cubic-bezier(0.76, 0, 0.24, 1), 920ms/beat), pulsing stroke length, a bright leading glint, and a synced desk under-glow.\n\n4. Procedural Web Audio Foley Engine (sound.js)\n- Synthesize all sounds with Web Audio (noise buffer, bandpass/highpass filters, dynamics compressor) scaled to slow-mo timing: focus lift brush, two-layer press tap, backspace release, fan swish, stack lock thud, rhythmic beam whoosh, major-9th success shimmer, double-beat error knock, and deal-back desk slap.",
+      "previewNote": "Matte desk surface + 4 opaque physical cards (no wells, zero 3D clipping) + rhythmic orbital beam + procedural Web Audio Foley; open the card to test 1234 / 5829 and 0.4x slow-mo live."
+    }
+  },
+  {
     "id": "skill-stageshow",
     "kind": "skill",
     "title": "Stageshow（Benji Taylor 开源产品交互演示与 Bento UI 动效 Skill）",
