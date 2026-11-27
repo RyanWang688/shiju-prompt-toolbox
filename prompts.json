@@ -1,5 +1,626 @@
 [
   {
+    "id": "skill-vibe-motion-skills",
+    "kind": "skill",
+    "title": "Vibe Motion Skills（1,800+ Star 开源 AI 动效与视频技能合集）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "GitHub 1,800+ Star 的 Vibe Motion 官方 Agent Skills 合集：一条命令即可安装 17 个程序化动效技能，涵盖品牌发布片、Logo 矢量化动效、3D 地球飞线、克拉尼粒子、鱼眼屏摄、打字机、黑胶唱片与迪士尼 12 原则等。",
+    "tags": "Vibe Motion / Remotion / 动效合集 / Agent Skill / Claude Code / Codex",
+    "pricing": "free",
+    "prompt": "Vibe Motion Skills（1,800+ Star 开源 AI 动效与视频技能合集）\n\n一键安装\nnpx skills add vibe-motion/skills\n\n用途\n为 Claude Code、Codex 等 AI 编程智能体一次性配备整套程序化动画与视频制作技能库（共 17 个专项 Skill，支持方向键/空格按需勾选安装）。\n\n官方仓库：https://github.com/vibe-motion/skills",
+    "source": "https://github.com/vibe-motion/skills",
+    "officialUrl": "https://github.com/vibe-motion/skills",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "Vibe Motion Skills (1.8k+ Star Open-Source AI Motion Skill Suite)",
+      "description": "1.8k+ star official vibe-motion agent skill suite (npx skills add vibe-motion/skills) bundling 17 procedural motion skills for brand launch films, 3D Earth routes, Chladni particles, fisheye effects, and Disney animation rules.",
+      "tags": "Vibe Motion / Remotion / Motion suite / Agent skill / Claude Code"
+    }
+  },
+  {
+    "id": "skill-vibe-motion-sound",
+    "kind": "skill",
+    "title": "vibe-motion/sound（720+ Star AI 动画工作室级音效搜索引擎 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "Vibe Motion 开源的 AI 智能体专用音效引擎（720+ Star），一站式检索 Pixabay、Freesound、Mixkit 与 Kenney 免费音效，并基于人工反馈排序，为代码生成的动画精准配音。",
+    "tags": "Vibe Motion / 音效搜索 / 视频配音 / Agent Skill / Claude Code",
+    "pricing": "free",
+    "prompt": "vibe-motion/sound（AI 动画工作室级音效搜索引擎 Skill）\n\n用途\n让编程智能体在制作 Remotion 或网页动效时自动搜索、筛选并下载高品质免费音效素材（聚合 Pixabay、Freesound、Mixkit、Kenney）。\n\n官方仓库：https://github.com/vibe-motion/sound",
+    "source": "https://github.com/vibe-motion/sound",
+    "officialUrl": "https://github.com/vibe-motion/sound",
+    "repository": "https://github.com/vibe-motion/sound",
+    "documentation": "https://github.com/vibe-motion/sound",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "vibe-motion/sound (720+ Star Studio-Grade SFX Search for Agents)",
+      "description": "720+ star agent SFX search engine by vibe-motion querying Pixabay, Freesound, Mixkit, and Kenney ranked by human feedback.",
+      "tags": "Vibe Motion / Sound effects / Audio / Agent skill"
+    }
+  },
+  {
+    "id": "skill-vibe-motion-auto-motion",
+    "kind": "skill",
+    "title": "vibe-motion/auto-motion（550+ Star SRT 字幕自动拆镜生成动效视频流）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "Vibe Motion 开源全自动视频流水线（550+ Star）：输入 transcription.srt 字幕文件，由 Codex / Claude Code 自动拆解分镜并调用动效技能拼装渲染为完整 final.mp4 视频。",
+    "tags": "Vibe Motion / 自动分镜 / SRT 转视频 / Codex / Claude Code",
+    "pricing": "free",
+    "prompt": "vibe-motion/auto-motion（SRT 字幕自动拆镜生成动效视频流）\n\n用途\n从一段语音转录的 SRT 字幕出发，由 AI 自动规划分镜脚本、生成动态图形片段并合成为完整成片。\n\n官方仓库：https://github.com/vibe-motion/auto-motion",
+    "source": "https://github.com/vibe-motion/auto-motion",
+    "officialUrl": "https://github.com/vibe-motion/auto-motion",
+    "repository": "https://github.com/vibe-motion/auto-motion",
+    "documentation": "https://github.com/vibe-motion/auto-motion",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "vibe-motion/auto-motion (550+ Star Automated SRT-to-Motion Workflow)",
+      "description": "550+ star automated SRT-to-motion video workflow orchestrating Codex CLI and Claude Code from transcription.srt to final.mp4.",
+      "tags": "Vibe Motion / Auto motion / SRT to video / Codex / Claude Code"
+    }
+  },
+  {
+    "id": "skill-perspective-illusion",
+    "kind": "skill",
+    "title": "perspective-illusion（日式透视错觉循环 3D 变焦视频 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "制作日式透视错觉风格的循环插画 3D 视频：长焦平面场景通过推拉变焦和环绕运镜展开纵深，适用于街道、路口、车站、商店、房间或屋顶等场景。",
+    "tags": "Vibe Motion / 透视错觉 / 3D 运镜 / 循环动画 / Agent Skill",
+    "pricing": "free",
+    "prompt": "perspective-illusion（日式透视错觉循环 3D 变焦视频 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill perspective-illusion\n\n用途\n制作日式透视错觉风格的循环插画 3D 视频：长焦平面场景通过推拉变焦和环绕运镜展开纵深，适用于街道、路口、车站、商店、房间或屋顶等场景。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/perspective-illusion",
+    "source": "https://github.com/vibe-motion/skills/tree/main/perspective-illusion",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/perspective-illusion",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/perspective-illusion",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "perspective-illusion (Japanese Perspective-Illusion 3D Loop Skill)",
+      "description": "Generates looping Japanese perspective-illusion 3D zoom and orbit animations from flat illustrated scenes.",
+      "tags": "Vibe Motion / 透视错觉 / 3D 运镜 / 循环动画 / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-perspective-illusion/cover.jpg",
+      "alt": "perspective-illusion（日式透视错觉循环 3D 变焦视频 Skill） 官方演示预览",
+      "width": 540,
+      "height": 304
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/perspective-illusion",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-brand-launch-video-star",
+    "kind": "skill",
+    "title": "brand-launch-video-star（官网品牌素材一键生成 15–30s 宣传片 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "从公司官网、品牌资料或产品图出发，先核验 Logo、字体、配色与功能，再编排快节奏、强视觉的 15–30 秒 SaaS / 消费品牌产品发布宣传片。",
+    "tags": "Vibe Motion / 产品宣传片 / 品牌视频 / SaaS 发布 / Agent Skill",
+    "pricing": "free",
+    "prompt": "brand-launch-video-star（官网品牌素材一键生成 15–30s 宣传片 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill brand-launch-video-star\n\n用途\n从公司官网、品牌资料或产品图出发，先核验 Logo、字体、配色与功能，再编排快节奏、强视觉的 15–30 秒 SaaS / 消费品牌产品发布宣传片。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/brand-launch-video-star",
+    "source": "https://github.com/vibe-motion/skills/tree/main/brand-launch-video-star",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/brand-launch-video-star",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/brand-launch-video-star",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "brand-launch-video-star (15-30s Product Launch Video Skill)",
+      "description": "Produces fast-paced 15-30s product launch videos directly from a website URL, brand assets, logo, and typography.",
+      "tags": "Vibe Motion / 产品宣传片 / 品牌视频 / SaaS 发布 / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-brand-launch-video-star/cover.jpg",
+      "alt": "brand-launch-video-star（官网品牌素材一键生成 15–30s 宣传片 Skill） 官方演示预览",
+      "width": 360,
+      "height": 204
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/brand-launch-video-star",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-fisheye-motion",
+    "kind": "skill",
+    "title": "fisheye-motion（屏摄风格鱼眼畸变 + 摩尔纹 + 暗角动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "基于 WebGL 与 Remotion 制作屏摄风格鱼眼畸变效果：桶形畸变 + 摩尔纹 + 暗角，支持对任意图片做推镜聚焦与黄色标注滑入动画。",
+    "tags": "Vibe Motion / 鱼眼畸变 / WebGL / Remotion / 屏摄风",
+    "pricing": "free",
+    "prompt": "fisheye-motion（屏摄风格鱼眼畸变 + 摩尔纹 + 暗角动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill fisheye-motion\n\n用途\n基于 WebGL 与 Remotion 制作屏摄风格鱼眼畸变效果：桶形畸变 + 摩尔纹 + 暗角，支持对任意图片做推镜聚焦与黄色标注滑入动画。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/fisheye-motion",
+    "source": "https://github.com/vibe-motion/skills/tree/main/fisheye-motion",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/fisheye-motion",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/fisheye-motion",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "fisheye-motion (Screen-Photo Fisheye, Moire & Vignette Motion Skill)",
+      "description": "WebGL/React + Remotion skill creating barrel distortion, moire, vignette, and callout focus zooms.",
+      "tags": "Vibe Motion / 鱼眼畸变 / WebGL / Remotion / 屏摄风",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-fisheye-motion/cover.jpg",
+      "alt": "fisheye-motion（屏摄风格鱼眼畸变 + 摩尔纹 + 暗角动画 Skill） 官方演示预览",
+      "width": 540,
+      "height": 551
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/fisheye-motion",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-colorize",
+    "kind": "skill",
+    "title": "colorize（黑白→彩色旋转模糊丁达尔旋焦上色转场 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "黑白到彩色的电影感上色转场：单彩渐变 + 动感旋转模糊 + 丁达尔旋焦，支持图片、视频、iPhone 实况照片与安卓动态照片多素材拼接。",
+    "tags": "Vibe Motion / 黑白上色 / 丁达尔转场 / 实况照片 / Agent Skill",
+    "pricing": "free",
+    "prompt": "colorize（黑白→彩色旋转模糊丁达尔旋焦上色转场 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill colorize\n\n用途\n黑白到彩色的电影感上色转场：单彩渐变 + 动感旋转模糊 + 丁达尔旋焦，支持图片、视频、iPhone 实况照片与安卓动态照片多素材拼接。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/colorize",
+    "source": "https://github.com/vibe-motion/skills/tree/main/colorize",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/colorize",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/colorize",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "colorize (B&W-to-Color Spin-Blur & Tyndall Reveal Skill)",
+      "description": "Creates black-and-white to color reveal transitions with rotational blur and Tyndall glow for photos, video, and Live Photos.",
+      "tags": "Vibe Motion / 黑白上色 / 丁达尔转场 / 实况照片 / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-colorize/cover.jpg",
+      "alt": "colorize（黑白→彩色旋转模糊丁达尔旋焦上色转场 Skill） 官方演示预览",
+      "width": 440,
+      "height": 248
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/colorize",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-disney-animation-rule-skill",
+    "kind": "skill",
+    "title": "disney-animation-rule-skill（迪士尼动画 12 原则程序化动效 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "将迪士尼动画 12 条经典原则应用到代码驱动动画（Web、SVG、Canvas、React、Remotion、3D 与 UI），专治动画僵硬、轻飘、机械或缺乏表现力。",
+    "tags": "Vibe Motion / 迪士尼12原则 / 缓动节奏 / Remotion / Agent Skill",
+    "pricing": "free",
+    "prompt": "disney-animation-rule-skill（迪士尼动画 12 原则程序化动效 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill disney-animation-rule-skill\n\n用途\n将迪士尼动画 12 条经典原则应用到代码驱动动画（Web、SVG、Canvas、React、Remotion、3D 与 UI），专治动画僵硬、轻飘、机械或缺乏表现力。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/disney-animation-rule-skill",
+    "source": "https://github.com/vibe-motion/skills/tree/main/disney-animation-rule-skill",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/disney-animation-rule-skill",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/disney-animation-rule-skill",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "disney-animation-rule-skill (12 Principles of Animation for Code)",
+      "description": "Applies Disney's 12 animation principles to programmatic Web, SVG, Canvas, React, Remotion, and 3D motion.",
+      "tags": "Vibe Motion / 迪士尼12原则 / 缓动节奏 / Remotion / Agent Skill"
+    }
+  },
+  {
+    "id": "skill-claude-typer",
+    "kind": "skill",
+    "title": "claude-typer（Claude Code CLI 风格命令行打字机动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "把任意提示词文本快速转换为极具极客质感的 Claude Code CLI 风格打字机演示动画，适合技术教程与 AI 工具发布片。",
+    "tags": "Vibe Motion / 打字机动画 / CLI 演示 / Claude Code / Agent Skill",
+    "pricing": "free",
+    "prompt": "claude-typer（Claude Code CLI 风格命令行打字机动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill claude-typer\n\n用途\n把任意提示词文本快速转换为极具极客质感的 Claude Code CLI 风格打字机演示动画，适合技术教程与 AI 工具发布片。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/claude-typer",
+    "source": "https://github.com/vibe-motion/skills/tree/main/claude-typer",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/claude-typer",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/claude-typer",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "claude-typer (Claude Code CLI Typing Animation Skill)",
+      "description": "Converts prompt text into authentic Claude Code CLI typing animation demos.",
+      "tags": "Vibe Motion / 打字机动画 / CLI 演示 / Claude Code / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-claude-typer/cover.jpg",
+      "alt": "claude-typer（Claude Code CLI 风格命令行打字机动画 Skill） 官方演示预览",
+      "width": 692,
+      "height": 410
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/claude-typer",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-ruler-progress-render",
+    "kind": "skill",
+    "title": "ruler-progress-render（刻度尺进度条与可配置文字动效 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "生成精密刻度尺样式的进度条动画，支持自由配置进度百分比、文字标签与节奏。",
+    "tags": "Vibe Motion / 尺子进度条 / 信息图动效 / Agent Skill",
+    "pricing": "free",
+    "prompt": "ruler-progress-render（刻度尺进度条与可配置文字动效 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill ruler-progress-render\n\n用途\n生成精密刻度尺样式的进度条动画，支持自由配置进度百分比、文字标签与节奏。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/ruler-progress-render",
+    "source": "https://github.com/vibe-motion/skills/tree/main/ruler-progress-render",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/ruler-progress-render",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/ruler-progress-render",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "ruler-progress-render (Precision Ruler Progress Animation Skill)",
+      "description": "Generates configurable precision ruler progress bar animations with custom labels.",
+      "tags": "Vibe Motion / 尺子进度条 / 信息图动效 / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-ruler-progress-render/cover.jpg",
+      "alt": "ruler-progress-render（刻度尺进度条与可配置文字动效 Skill） 官方演示预览",
+      "width": 540,
+      "height": 297
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/ruler-progress-render",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-procedural-fish-render",
+    "kind": "skill",
+    "title": "procedural-fish-render（程序化循环游动鱼群动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "生成自然摆尾、路径平滑循环游动的程序化鱼群（Procedural Fish）动效，适合创意背景与视觉实验。",
+    "tags": "Vibe Motion / 程序化动画 / 鱼群游动 / 生成艺术 / Agent Skill",
+    "pricing": "free",
+    "prompt": "procedural-fish-render（程序化循环游动鱼群动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill procedural-fish-render\n\n用途\n生成自然摆尾、路径平滑循环游动的程序化鱼群（Procedural Fish）动效，适合创意背景与视觉实验。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/procedural-fish-render",
+    "source": "https://github.com/vibe-motion/skills/tree/main/procedural-fish-render",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/procedural-fish-render",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/procedural-fish-render",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "procedural-fish-render (Procedural Swimming Fish Loop Skill)",
+      "description": "Generates smooth looping procedural swimming fish animations.",
+      "tags": "Vibe Motion / 程序化动画 / 鱼群游动 / 生成艺术 / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-procedural-fish-render/cover.jpg",
+      "alt": "procedural-fish-render（程序化循环游动鱼群动画 Skill） 官方演示预览",
+      "width": 480,
+      "height": 480
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/procedural-fish-render",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-remotion-candlestick",
+    "kind": "skill",
+    "title": "remotion-candlestick（Remotion 金融 K 线蜡烛图逐帧动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "在 Remotion 中创建带动画的金融 K 线蜡烛图，涵盖 Yahoo Finance 数据获取、Canvas 逐帧绘制与深色交易终端风格导出。",
+    "tags": "Vibe Motion / K线图 / 金融可视化 / Remotion / Canvas",
+    "pricing": "free",
+    "prompt": "remotion-candlestick（Remotion 金融 K 线蜡烛图逐帧动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill remotion-candlestick\n\n用途\n在 Remotion 中创建带动画的金融 K 线蜡烛图，涵盖 Yahoo Finance 数据获取、Canvas 逐帧绘制与深色交易终端风格导出。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/remotion-candlestick",
+    "source": "https://github.com/vibe-motion/skills/tree/main/remotion-candlestick",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/remotion-candlestick",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/remotion-candlestick",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "remotion-candlestick (Animated Financial Candlestick Chart Skill)",
+      "description": "Builds dark trading-terminal animated candlestick charts in Remotion with live Yahoo Finance data and Canvas frame rendering.",
+      "tags": "Vibe Motion / K线图 / 金融可视化 / Remotion / Canvas",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-remotion-candlestick/cover.jpg",
+      "alt": "remotion-candlestick（Remotion 金融 K 线蜡烛图逐帧动画 Skill） 官方演示预览",
+      "width": 440,
+      "height": 248
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/remotion-candlestick",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-light-spotlight-render",
+    "kind": "skill",
+    "title": "light-spotlight-render（摆动聚光灯扫过文字 Reveal 动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "生成摆动聚光灯扫过文字的 Reveal 动画 HTML，支持配置文本内容、摆幅角度、灯罩缩放、辉光与背景色。",
+    "tags": "Vibe Motion / 聚光灯动画 / 文字动效 / HTML / Agent Skill",
+    "pricing": "free",
+    "prompt": "light-spotlight-render（摆动聚光灯扫过文字 Reveal 动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill light-spotlight-render\n\n用途\n生成摆动聚光灯扫过文字的 Reveal 动画 HTML，支持配置文本内容、摆幅角度、灯罩缩放、辉光与背景色。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/light-spotlight-render",
+    "source": "https://github.com/vibe-motion/skills/tree/main/light-spotlight-render",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/light-spotlight-render",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/light-spotlight-render",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "light-spotlight-render (Swinging Spotlight Text Reveal Skill)",
+      "description": "Generates interactive swinging spotlight text-reveal HTML animations with configurable glow and swing.",
+      "tags": "Vibe Motion / 聚光灯动画 / 文字动效 / HTML / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-light-spotlight-render/cover.jpg",
+      "alt": "light-spotlight-render（摆动聚光灯扫过文字 Reveal 动画 Skill） 官方演示预览",
+      "width": 382,
+      "height": 240
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/light-spotlight-render",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-printed-curtain-render",
+    "kind": "skill",
+    "title": "printed-curtain-render（可交互 p5.js 物理线帘布料动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "把 PNG/JPG/WebP 图片与文字织进可交互 p5.js 线帘物理模拟中，图案会随独立丝线拉伸、折叠与散开，输出离线 HTML 与参数面板。",
+    "tags": "Vibe Motion / p5.js / 物理模拟 / 线帘交互 / Agent Skill",
+    "pricing": "free",
+    "prompt": "printed-curtain-render（可交互 p5.js 物理线帘布料动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill printed-curtain-render\n\n用途\n把 PNG/JPG/WebP 图片与文字织进可交互 p5.js 线帘物理模拟中，图案会随独立丝线拉伸、折叠与散开，输出离线 HTML 与参数面板。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/printed-curtain-render",
+    "source": "https://github.com/vibe-motion/skills/tree/main/printed-curtain-render",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/printed-curtain-render",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/printed-curtain-render",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "printed-curtain-render (Interactive p5.js Printed Rope-Curtain Skill)",
+      "description": "Weaves images and text into an interactive p5.js rope-curtain physics simulation with live controls.",
+      "tags": "Vibe Motion / p5.js / 物理模拟 / 线帘交互 / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-printed-curtain-render/cover.jpg",
+      "alt": "printed-curtain-render（可交互 p5.js 物理线帘布料动画 Skill） 官方演示预览",
+      "width": 240,
+      "height": 320
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/printed-curtain-render",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-remotion-3d-ticker",
+    "kind": "skill",
+    "title": "remotion-3d-ticker（Remotion 无限循环 3D 照片墙滚动动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "生成基于 Remotion 的无限循环 3D 照片滚动墙/瀑布流动画，支持自由配置图片列数、滚动方向与速度。",
+    "tags": "Vibe Motion / 3D 照片墙 / Remotion / 瀑布流 / Agent Skill",
+    "pricing": "free",
+    "prompt": "remotion-3d-ticker（Remotion 无限循环 3D 照片墙滚动动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill remotion-3d-ticker\n\n用途\n生成基于 Remotion 的无限循环 3D 照片滚动墙/瀑布流动画，支持自由配置图片列数、滚动方向与速度。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/remotion-3d-ticker",
+    "source": "https://github.com/vibe-motion/skills/tree/main/remotion-3d-ticker",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/remotion-3d-ticker",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/remotion-3d-ticker",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "remotion-3d-ticker (Infinite 3D Photo Wall Ticker in Remotion)",
+      "description": "Creates infinite-loop 3D photo ticker / waterfall walls in Remotion with configurable columns and speed.",
+      "tags": "Vibe Motion / 3D 照片墙 / Remotion / 瀑布流 / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-remotion-3d-ticker/cover.jpg",
+      "alt": "remotion-3d-ticker（Remotion 无限循环 3D 照片墙滚动动画 Skill） 官方演示预览",
+      "width": 1280,
+      "height": 720
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/remotion-3d-ticker",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-remotion-vinyl-player",
+    "kind": "skill",
+    "title": "remotion-vinyl-player（黑胶唱片机旋转与歌名跑马灯动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "生成优雅逼真的黑胶唱片机音乐播放器动画，支持自定义专辑封面、歌曲信息、唱片无限旋转与无缝跑马灯文字。",
+    "tags": "Vibe Motion / 黑胶唱片 / 音乐播放器 / Remotion / Agent Skill",
+    "pricing": "free",
+    "prompt": "remotion-vinyl-player（黑胶唱片机旋转与歌名跑马灯动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill remotion-vinyl-player\n\n用途\n生成优雅逼真的黑胶唱片机音乐播放器动画，支持自定义专辑封面、歌曲信息、唱片无限旋转与无缝跑马灯文字。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/remotion-vinyl-player",
+    "source": "https://github.com/vibe-motion/skills/tree/main/remotion-vinyl-player",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/remotion-vinyl-player",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/remotion-vinyl-player",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "remotion-vinyl-player (Realistic Vinyl Player & Marquee Skill)",
+      "description": "Generates realistic spinning vinyl record player animations with custom album art and marquee track info.",
+      "tags": "Vibe Motion / 黑胶唱片 / 音乐播放器 / Remotion / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-remotion-vinyl-player/cover.jpg",
+      "alt": "remotion-vinyl-player（黑胶唱片机旋转与歌名跑马灯动画 Skill） 官方演示预览",
+      "width": 660,
+      "height": 1068
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/remotion-vinyl-player",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-threejs-earth-render",
+    "kind": "skill",
+    "title": "threejs-earth-render（Three.js 3D 地球城市航线飞线动画 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "克隆并调用 vibe-motion/threejs-earth，结合 Puppeteer 渲染 16:9 Three.js 3D 地球航线飞行动画并导出 GIF/MP4。",
+    "tags": "Vibe Motion / Three.js / 3D 地球 / 航线飞线 / Puppeteer",
+    "pricing": "free",
+    "prompt": "threejs-earth-render（Three.js 3D 地球城市航线飞线动画 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill threejs-earth-render\n\n用途\n克隆并调用 vibe-motion/threejs-earth，结合 Puppeteer 渲染 16:9 Three.js 3D 地球航线飞行动画并导出 GIF/MP4。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/threejs-earth-render",
+    "source": "https://github.com/vibe-motion/skills/tree/main/threejs-earth-render",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/threejs-earth-render",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/threejs-earth-render",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "threejs-earth-render (Three.js 3D Earth Flight Routes Skill)",
+      "description": "Renders 16:9 Three.js 3D Earth flight-route transitions via Puppeteer for GIF/MP4 export.",
+      "tags": "Vibe Motion / Three.js / 3D 地球 / 航线飞线 / Puppeteer",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-threejs-earth-render/cover.jpg",
+      "alt": "threejs-earth-render（Three.js 3D 地球城市航线飞线动画 Skill） 官方演示预览",
+      "width": 448,
+      "height": 252
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/threejs-earth-render",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-3d-chladni-render",
+    "kind": "skill",
+    "title": "3d-chladni-render（3D 克拉尼粒子声沙与宇宙网音频可视化 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "调用 3D-Chladni 确定性导出器生成动态声沙、模态声沙与宇宙网 3D 粒子动画，支持音频驱动、灯光与透明 ProRes 导出。",
+    "tags": "Vibe Motion / 克拉尼图形 / 3D 粒子 / 音频可视化 / Agent Skill",
+    "pricing": "free",
+    "prompt": "3d-chladni-render（3D 克拉尼粒子声沙与宇宙网音频可视化 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill 3d-chladni-render\n\n用途\n调用 3D-Chladni 确定性导出器生成动态声沙、模态声沙与宇宙网 3D 粒子动画，支持音频驱动、灯光与透明 ProRes 导出。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/3d-chladni-render",
+    "source": "https://github.com/vibe-motion/skills/tree/main/3d-chladni-render",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/3d-chladni-render",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/3d-chladni-render",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "3d-chladni-render (3D Chladni Particle & Audio-Reactive Skill)",
+      "description": "Exports deterministic 3D Chladni acoustic sand and cosmic-web particle animations with audio reactivity.",
+      "tags": "Vibe Motion / 克拉尼图形 / 3D 粒子 / 音频可视化 / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-3d-chladni-render/cover.jpg",
+      "alt": "3d-chladni-render（3D 克拉尼粒子声沙与宇宙网音频可视化 Skill） 官方演示预览",
+      "width": 304,
+      "height": 172
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/3d-chladni-render",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
+    "id": "skill-wechat-2d-render",
+    "kind": "skill",
+    "title": "wechat-2d-render（微信聊天气泡 2D 动效与透明视频导出 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频"
+    ],
+    "description": "渲染逼真的微信聊天对话 2D 动效视频，支持消息气泡逐条弹出与透明背景 Remotion 视频导出。",
+    "tags": "Vibe Motion / 微信聊天动画 / 2D 气泡 / Remotion / Agent Skill",
+    "pricing": "free",
+    "prompt": "wechat-2d-render（微信聊天气泡 2D 动效与透明视频导出 Skill）\n\n安装命令\nnpx skills add vibe-motion/skills --skill wechat-2d-render\n\n用途\n渲染逼真的微信聊天对话 2D 动效视频，支持消息气泡逐条弹出与透明背景 Remotion 视频导出。\n\n仓库：https://github.com/vibe-motion/skills\n技能目录：https://github.com/vibe-motion/skills/tree/main/wechat-2d-render",
+    "source": "https://github.com/vibe-motion/skills/tree/main/wechat-2d-render",
+    "officialUrl": "https://github.com/vibe-motion/skills/tree/main/wechat-2d-render",
+    "repository": "https://github.com/vibe-motion/skills",
+    "documentation": "https://github.com/vibe-motion/skills/tree/main/wechat-2d-render",
+    "addedAt": "2026-11-27",
+    "verifiedAt": "2026-11-27",
+    "en": {
+      "title": "wechat-2d-render (WeChat 2D Chat Bubble Motion Skill)",
+      "description": "Renders WeChat 2D chat bubble animations with transparent background Remotion export.",
+      "tags": "Vibe Motion / 微信聊天动画 / 2D 气泡 / Remotion / Agent Skill",
+      "previewNote": "Key frame extracted from vibe-motion official demo GIF on 2026-11-27; saved for reference only."
+    },
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-wechat-2d-render/cover.jpg",
+      "alt": "wechat-2d-render（微信聊天气泡 2D 动效与透明视频导出 Skill） 官方演示预览",
+      "width": 390,
+      "height": 791
+    },
+    "previewSource": "https://github.com/vibe-motion/skills/tree/main/wechat-2d-render",
+    "previewEvidence": "author-official-readme-screenshot",
+    "previewNote": "2026-11-27 取自 vibe-motion 官方演示 GIF 关键帧；仅收藏。"
+  },
+  {
     "id": "otp-verification-deck",
     "kind": "prompt",
     "title": "OTP 验证码实体卡牌叠牌动效（无穿模 3D 叠牌 + 节律扫光 + Web Audio 音效）",
