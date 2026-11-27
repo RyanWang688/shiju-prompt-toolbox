@@ -115,6 +115,6 @@ assert.match(batchZh.text, /批量安装并配置以下 2 个 Agent Skills/);
 assert.match(batchZh.text, /NiazMorshed2007\/reanimate/);
 assert.match(batchZh.text, /Leonxlnx\/cinetic/);
 assert.ok(batchZh.html.includes('<br>'));
-assert.ok(html.includes('id="multiSelectBtn"') && html.includes('id="multiDock"') && html.includes('data-drag-batch="1"'), 'HTML includes multi-select button and batch drag dock');
+assert.ok(html.includes('id="multiSelectBtn"') && html.includes('id="multiDock"') && html.includes('data-drag-batch="1"') && html.includes('selectCardRange'), 'HTML includes multi-select button, batch drag dock, and Shift range selection');
 
 console.log('Card drag checks passed: Skill & Prompt rich HTML/plain payloads, batch multi-skill drag payload, effectAllowed=all, and init() lifecycle.');

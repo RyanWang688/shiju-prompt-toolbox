@@ -230,9 +230,11 @@ html[data-theme=dark] .dashboard .multi-toggle{background:#111113;border-color:#
 html[data-theme=dark] .dashboard .multi-toggle:hover{border-color:#ffffff33;color:#ededef}
 html[data-theme=dark] .dashboard .multi-toggle[aria-pressed=true]{background:#ffd43b;border-color:#ffd43b;color:#191919}
 html[data-theme=dark] .card-select-badge{background:#18181feb;border-color:#ffffff2e}
-html[data-theme=dark] body.is-multi-select .dashboard .card.is-selected{border-color:#ffd43b;box-shadow:0 0 0 2px #ffd43b55,0 16px 36px -14px #000}
+html[data-theme=dark] .dashboard .card.is-selected{border-color:#ffd43b;background:#1c190f;box-shadow:0 0 0 2.5px #ffd43bcc,0 18px 40px -14px #000}
+html[data-theme=dark] .dashboard .card.is-selected .card-body{background:#1c190f;border-radius:0 0 17px 17px}
 html[data-theme=dark] .multi-dock{background:#16161df2;border-color:#ffffff1f;box-shadow:0 24px 60px -14px #000}
 html[data-theme=dark] .multi-count{color:#f4f4f5}
+html[data-theme=dark] .multi-hint{color:#a1a1aa}
 html[data-theme=dark] .multi-dock-btn{background:#23232c;border-color:#ffffff1c;color:#ededef}
 html[data-theme=dark] .multi-dock-btn.is-muted{background:transparent;color:#a1a1aa}
 html[data-theme=dark] .multi-dock-btn:hover:not(:disabled){background:#ffd43b;border-color:#ffd43b;color:#191919}
