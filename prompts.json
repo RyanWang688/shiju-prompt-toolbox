@@ -1,5 +1,43 @@
 [
   {
+    "id": "skill-scroll-world",
+    "kind": "skill",
+    "title": "scroll-world（1.1 万+ Star 品牌滚动 3D 穿越官网生成 Skill）",
+    "category": "其他",
+    "skillTopics": [
+      "动画视频",
+      "视觉设计"
+    ],
+    "description": "GitHub 1.1 万+ Star 现象级开源 Agent Skill（oso95/scroll-world，MIT）：只需一句话或品牌资料，即可联动 AI 图生视频生成无缝一镜到底的镜头素材，并写出 Apple 官网级滚轮控制 3D 世界穿越式落地页。",
+    "tags": "滚动视差 / 3D 世界 / 一镜到底 / 官网落地页 / Apple 风格 / Agent Skill / MIT",
+    "pricing": "free",
+    "license": "MIT",
+    "prompt": "scroll-world（1.1 万+ Star 品牌滚动 3D 穿越官网生成 Skill）\n\n安装命令\nnpx skills add oso95/scroll-world\n\n用途\n将任意品牌、文章或产品简介转化为可随鼠标滚轮控制镜头推进/回退的 3D 穿越式落地页（Scroll-Scrubbed Fly-Through Landing Page），打造如 Apple 发布会级无缝一镜到底的网页视觉体验。\n\n核心特点\n- 滚轮即镜头时间轴：把网页滚动位置映射为无缝连续的 3D 镜头推进控制\n- 联动 AI 视觉素材生成连贯无剪辑感的场景过渡帧与视频流\n- 完整生成前端滚轮擦洗（Scroll-Scrubbing）与页面交互代码，适配 Claude Code、Codex 与 Cursor\n\n许可：MIT\n官方仓库：https://github.com/oso95/scroll-world",
+    "source": "https://github.com/oso95/scroll-world",
+    "officialUrl": "https://github.com/oso95/scroll-world",
+    "repository": "https://github.com/oso95/scroll-world",
+    "documentation": "https://github.com/oso95/scroll-world#readme",
+    "addedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "preview": {
+      "type": "image",
+      "src": "assets/skill-scroll-world/cover.jpg",
+      "alt": "oso95/scroll-world 官方 GitHub 仓库卡片",
+      "width": 1200,
+      "height": 600
+    },
+    "previewSource": "https://github.com/oso95/scroll-world",
+    "previewEvidence": "author-official-site-screenshot",
+    "previewNote": "2026-11-28 取自 oso95/scroll-world 官方 GitHub 仓库卡片；仅收藏。",
+    "en": {
+      "title": "scroll-world (11k+ Star Scrollable 3D Fly-Through Landing Page Skill)",
+      "description": "11k+ star MIT agent skill (oso95/scroll-world) turning any brand brief or article into a seamless, Apple-style scroll-scrubbed 3D fly-through landing page.",
+      "tags": "Scroll-scrubbing / 3D world / Fly-through / Landing page / Agent skill / MIT",
+      "license": "MIT",
+      "previewNote": "Official GitHub preview card from oso95/scroll-world on 2026-11-28; saved for reference only."
+    }
+  },
+  {
     "id": "skill-vibe-motion-skills",
     "kind": "skill",
     "title": "Vibe Motion Skills（1,800+ Star 开源 AI 动效与视频技能合集）",
